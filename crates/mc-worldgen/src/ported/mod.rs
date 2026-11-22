@@ -52,3 +52,7 @@ pub mod structure_processor;
 pub mod any_of_predicate;
 pub mod all_of_predicate;
 pub mod replaceable_predicate;
+pub mod structure_piece_serialization_context;
+pub mod above_root_placement;
+pub mod root_placer_type;
+pub mod mangrove_root_placement;

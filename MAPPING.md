@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **712** across **239** classes.
+Total mapped Java symbols: **733** across **245** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -357,6 +357,10 @@ Total mapped Java symbols: **712** across **239** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.ResourceKey#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 71 | `new` |
+| `net.minecraft.server.MinecraftServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 17 | `get_resource_manager` |
+| `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
+| `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
+| `net.minecraft.server.MinecraftServer#registryAccess` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 26 | `registry_access` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |
@@ -656,6 +660,8 @@ Total mapped Java symbols: **712** across **239** classes.
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 44 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 49 | `get_min_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 49 | `get_min_block_z` |
+| `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 36 | `get_server` |
+| `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 41 | `get_server` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.block.state.BlockState#isAir` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 17 | `is_air` |
@@ -788,6 +794,20 @@ Total mapped Java symbols: **712** across **239** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 30 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 13 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 23 | `new` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#<init>` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 16 | `new` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootPlacementChance` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 29 | `above_root_placement_chance` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootProvider` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 24 | `above_root_provider` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#<init>` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 47 | `new` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#canGrowThrough` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 66 | `can_grow_through` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#maxRootLength` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 86 | `max_root_length` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#maxRootWidth` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 81 | `max_root_width` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#muddyRootsIn` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 71 | `muddy_roots_in` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#muddyRootsProvider` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 76 | `muddy_roots_provider` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#randomSkewChance` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 91 | `random_skew_chance` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#<init>` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 65 | `new` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#MANGROVE_ROOT_PLACER` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 76 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#codec` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 70 | `codec` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#register` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 58 | `register` |
 | `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
 | `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
 | `net.minecraft.world.level.levelgen.placement.CaveSurface#CODEC` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 30 | `get_direction` |
@@ -831,6 +851,8 @@ Total mapped Java symbols: **712** across **239** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#spawns` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 33 | `spawns` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride$BoundingBoxType#getSerializedName` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 47 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 1 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext#fromLevel` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 47 | `from_level` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces.BuriedTreasurePiece#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 82 | `new` |
