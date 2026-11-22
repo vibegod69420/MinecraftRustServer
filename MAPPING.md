@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2031** across **558** classes.
+Total mapped Java symbols: **2036** across **559** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1105,6 +1105,12 @@ Total mapped Java symbols: **2031** across **558** classes.
 | `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#handle` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 29 | `handle` |
 | `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#isTerminal` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 34 | `is_terminal` |
 | `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#type` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 24 | `type_` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 212 | `stream_encode` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 217 | `stream_decode` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#ServerboundSelectKnownPacks` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 192 | `new` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#handle` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 207 | `handle` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#knownPacks` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 197 | `known_packs` |
+| `net.minecraft.network.protocol.configuration.ServerboundSelectKnownPacks#type` | `crates/mc-protocol/src/ported/serverbound_select_known_packs.rs` | 202 | `type_` |
 | `net.minecraft.network.protocol.cookie.ClientCookiePacketListener#handleRequestCookie` | `crates/mc-protocol/src/ported/client_cookie_packet_listener.rs` | 12 | `handle_request_cookie` |
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#CLIENTBOUND_COOKIE_REQUEST` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 107 | `clientbound_cookie_request` |
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#SERVERBOUND_COOKIE_RESPONSE` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 112 | `serverbound_cookie_response` |
