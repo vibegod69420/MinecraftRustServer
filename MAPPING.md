@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **192** across **53** classes.
+Total mapped Java symbols: **193** across **54** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -42,6 +42,9 @@ Total mapped Java symbols: **192** across **53** classes.
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
+| `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 13 | `encode` |
+| `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 21 | `encode` |
+| `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 39 | `encode` |
 | `net.minecraft.network.protocol.PacketType` | `crates/mc-data/build.rs` | 98 | `packet_id` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
