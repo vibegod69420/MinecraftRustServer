@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2299** across **592** classes.
+Total mapped Java symbols: **2335** across **596** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -684,6 +684,20 @@ Total mapped Java symbols: **2299** across **592** classes.
 | `net.minecraft.nbt.CompoundTag#merge` | `crates/mc-worldgen/src/ported/append_static.rs` | 28 | `merge` |
 | `net.minecraft.nbt.CompoundTag#putLong` | `crates/mc-worldgen/src/ported/append_loot.rs` | 28 | `put_long` |
 | `net.minecraft.nbt.DoubleTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 99 | `double_value_of` |
+| `net.minecraft.nbt.EndTag#accept` | `crates/mc-nbt/src/ported/end_tag.rs` | 103 | `accept` |
+| `net.minecraft.nbt.EndTag#accept` | `crates/mc-nbt/src/ported/end_tag.rs` | 108 | `accept_stream` |
+| `net.minecraft.nbt.EndTag#copy` | `crates/mc-nbt/src/ported/end_tag.rs` | 98 | `copy` |
+| `net.minecraft.nbt.EndTag#getId` | `crates/mc-nbt/src/ported/end_tag.rs` | 88 | `get_id` |
+| `net.minecraft.nbt.EndTag#getType` | `crates/mc-nbt/src/ported/end_tag.rs` | 93 | `get_type` |
+| `net.minecraft.nbt.EndTag#sizeInBytes` | `crates/mc-nbt/src/ported/end_tag.rs` | 83 | `size_in_bytes` |
+| `net.minecraft.nbt.EndTag#toString` | `crates/mc-nbt/src/ported/end_tag.rs` | 113 | `to_string_value` |
+| `net.minecraft.nbt.EndTag#write` | `crates/mc-nbt/src/ported/end_tag.rs` | 78 | `write` |
+| `net.minecraft.nbt.EndTag$TYPE#getName` | `crates/mc-nbt/src/ported/end_tag.rs` | 162 | `get_name` |
+| `net.minecraft.nbt.EndTag$TYPE#getPrettyName` | `crates/mc-nbt/src/ported/end_tag.rs` | 167 | `get_pretty_name` |
+| `net.minecraft.nbt.EndTag$TYPE#load` | `crates/mc-nbt/src/ported/end_tag.rs` | 130 | `load` |
+| `net.minecraft.nbt.EndTag$TYPE#parse` | `crates/mc-nbt/src/ported/end_tag.rs` | 136 | `parse` |
+| `net.minecraft.nbt.EndTag$TYPE#skip` | `crates/mc-nbt/src/ported/end_tag.rs` | 147 | `skip_with_count` |
+| `net.minecraft.nbt.EndTag$TYPE#skip` | `crates/mc-nbt/src/ported/end_tag.rs` | 157 | `skip` |
 | `net.minecraft.nbt.FloatTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 94 | `float_value_of` |
 | `net.minecraft.nbt.IntArrayTag#<init>` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 191 | `new` |
 | `net.minecraft.nbt.IntArrayTag#accept` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 241 | `accept_tag_visitor` |
@@ -792,6 +806,8 @@ Total mapped Java symbols: **2299** across **592** classes.
 | `net.minecraft.nbt.LongTag#valueOf` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 60 | `value_of` |
 | `net.minecraft.nbt.NbtAccounter#<init>` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 37 | `new` |
 | `net.minecraft.nbt.NbtAccounter#accountBytes` | `crates/mc-nbt/src/ported/byte_tag.rs` | 13 | `account_bytes` |
+| `net.minecraft.nbt.NbtAccounter#accountBytes` | `crates/mc-nbt/src/ported/end_tag.rs` | 57 | `account_bytes` |
+| `net.minecraft.nbt.NbtAccounter#accountBytes` | `crates/mc-nbt/src/ported/short_tag.rs` | 59 | `account_bytes` |
 | `net.minecraft.nbt.NbtAccounter#accountBytes(long)` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 72 | `account_bytes` |
 | `net.minecraft.nbt.NbtAccounter#accountBytes(long,long)` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 67 | `account_bytes_mul` |
 | `net.minecraft.nbt.NbtAccounter#create` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 47 | `create` |
@@ -879,6 +895,29 @@ Total mapped Java symbols: **2299** across **592** classes.
 | `net.minecraft.nbt.ReportedNbtException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 68 | `as_reported_exception` |
 | `net.minecraft.nbt.ReportedNbtException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 56 | `new` |
 | `net.minecraft.nbt.ReportedNbtException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 63 | `report` |
+| `net.minecraft.nbt.ShortTag#<init>` | `crates/mc-nbt/src/ported/short_tag.rs` | 84 | `new` |
+| `net.minecraft.nbt.ShortTag#accept` | `crates/mc-nbt/src/ported/short_tag.rs` | 123 | `accept` |
+| `net.minecraft.nbt.ShortTag#accept` | `crates/mc-nbt/src/ported/short_tag.rs` | 163 | `accept_stream` |
+| `net.minecraft.nbt.ShortTag#box` | `crates/mc-nbt/src/ported/short_tag.rs` | 158 | `box_value` |
+| `net.minecraft.nbt.ShortTag#byteValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 143 | `byte_value` |
+| `net.minecraft.nbt.ShortTag#copy` | `crates/mc-nbt/src/ported/short_tag.rs` | 118 | `copy` |
+| `net.minecraft.nbt.ShortTag#doubleValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 148 | `double_value` |
+| `net.minecraft.nbt.ShortTag#floatValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 153 | `float_value` |
+| `net.minecraft.nbt.ShortTag#getId` | `crates/mc-nbt/src/ported/short_tag.rs` | 108 | `get_id` |
+| `net.minecraft.nbt.ShortTag#getType` | `crates/mc-nbt/src/ported/short_tag.rs` | 113 | `get_type` |
+| `net.minecraft.nbt.ShortTag#intValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 133 | `int_value` |
+| `net.minecraft.nbt.ShortTag#longValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 128 | `long_value` |
+| `net.minecraft.nbt.ShortTag#shortValue` | `crates/mc-nbt/src/ported/short_tag.rs` | 138 | `short_value` |
+| `net.minecraft.nbt.ShortTag#sizeInBytes` | `crates/mc-nbt/src/ported/short_tag.rs` | 103 | `size_in_bytes` |
+| `net.minecraft.nbt.ShortTag#toString` | `crates/mc-nbt/src/ported/short_tag.rs` | 168 | `to_string_value` |
+| `net.minecraft.nbt.ShortTag#valueOf` | `crates/mc-nbt/src/ported/short_tag.rs` | 89 | `value_of` |
+| `net.minecraft.nbt.ShortTag#write` | `crates/mc-nbt/src/ported/short_tag.rs` | 98 | `write` |
+| `net.minecraft.nbt.ShortTag$TYPE#getName` | `crates/mc-nbt/src/ported/short_tag.rs` | 217 | `get_name` |
+| `net.minecraft.nbt.ShortTag$TYPE#getPrettyName` | `crates/mc-nbt/src/ported/short_tag.rs` | 222 | `get_pretty_name` |
+| `net.minecraft.nbt.ShortTag$TYPE#load` | `crates/mc-nbt/src/ported/short_tag.rs` | 189 | `load` |
+| `net.minecraft.nbt.ShortTag$TYPE#parse` | `crates/mc-nbt/src/ported/short_tag.rs` | 194 | `parse` |
+| `net.minecraft.nbt.ShortTag$TYPE#readAccounted` | `crates/mc-nbt/src/ported/short_tag.rs` | 204 | `read_accounted` |
+| `net.minecraft.nbt.ShortTag$TYPE#size` | `crates/mc-nbt/src/ported/short_tag.rs` | 212 | `size` |
 | `net.minecraft.nbt.SnbtGrammar#escapeControlCharacters` | `crates/mc-nbt/src/ported/string_tag.rs` | 283 | `snbt_grammar_escape_control_characters` |
 | `net.minecraft.nbt.SnbtOperations#convert` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 80 | `bool_convert` |
 | `net.minecraft.nbt.SnbtOperations#possibleValues` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 195 | `builtin_ids_possible_values` |
@@ -963,14 +1002,18 @@ Total mapped Java symbols: **2299** across **592** classes.
 | `net.minecraft.nbt.StringTagVisitor#visitByteArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 62 | `visit_byte_array` |
 | `net.minecraft.nbt.StringTagVisitor#visitCompound` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 112 | `visit_compound` |
 | `net.minecraft.nbt.StringTagVisitor#visitDouble` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 56 | `visit_double` |
+| `net.minecraft.nbt.StringTagVisitor#visitEnd` | `crates/mc-nbt/src/ported/end_tag.rs` | 34 | `visit_end` |
 | `net.minecraft.nbt.StringTagVisitor#visitEnd` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 141 | `visit_end` |
+| `net.minecraft.nbt.StringTagVisitor#visitEnd (stream)` | `crates/mc-nbt/src/ported/end_tag.rs` | 41 | `visit_end` |
 | `net.minecraft.nbt.StringTagVisitor#visitFloat` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 50 | `visit_float` |
 | `net.minecraft.nbt.StringTagVisitor#visitInt` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 39 | `visit_int` |
 | `net.minecraft.nbt.StringTagVisitor#visitIntArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 75 | `visit_int_array` |
 | `net.minecraft.nbt.StringTagVisitor#visitList` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 100 | `visit_list` |
 | `net.minecraft.nbt.StringTagVisitor#visitLong` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 44 | `visit_long` |
 | `net.minecraft.nbt.StringTagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 87 | `visit_long_array` |
+| `net.minecraft.nbt.StringTagVisitor#visitShort` | `crates/mc-nbt/src/ported/short_tag.rs` | 34 | `visit_short` |
 | `net.minecraft.nbt.StringTagVisitor#visitShort` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 33 | `visit_short` |
+| `net.minecraft.nbt.StringTagVisitor#visitShort (stream)` | `crates/mc-nbt/src/ported/short_tag.rs` | 42 | `visit_short` |
 | `net.minecraft.nbt.StringTagVisitor#visitString` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 21 | `visit_string` |
 | `net.minecraft.nbt.StringTagVisitor#visitTag` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 146 | `visit_tag` |
 | `net.minecraft.nbt.Tag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 2 | `copy_tag` |

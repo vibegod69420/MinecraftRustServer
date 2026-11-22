@@ -63,3 +63,5 @@ pub mod loot_item_random_chance_condition;
 pub mod enchantment_active_check;
 pub mod match_tool;
 pub mod list_tag;
+pub mod end_tag;
+pub mod short_tag;
