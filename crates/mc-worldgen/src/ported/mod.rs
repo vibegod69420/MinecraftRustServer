@@ -96,3 +96,7 @@ pub mod dimension_padding;
 pub mod matching_block_tag_predicate;
 pub mod unobstructed_predicate;
 pub mod inside_world_bounds_predicate;
+pub mod disk_configuration;
+pub mod replace_sphere_configuration;
+pub mod huge_mushroom_feature_configuration;
+pub mod underwater_magma_configuration;

@@ -48,3 +48,4 @@ pub mod loot_score_provider_type;
 pub mod scoreboard_name_provider;
 pub mod fixed_scoreboard_name_provider;
 pub mod loot_number_provider_type;
+pub mod any_of_condition;
