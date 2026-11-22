@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **149** across **33** classes.
+Total mapped Java symbols: **150** across **34** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -100,6 +100,10 @@ Total mapped Java symbols: **149** across **33** classes.
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 45 | `finish` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
+| `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 32 | `profiled_metrics` |
+| `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 45 | `profiled_metrics` |
+| `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 65 | `profiled_metrics` |
+| `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 81 | `profiled_metrics` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |

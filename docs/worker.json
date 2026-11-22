@@ -1,1 +1,1 @@
-{"state": "generating", "class_name": "net.minecraft.util.profiling.metrics.ProfilerMeasured", "crate": "mc-math", "attempt": 1, "verified_count": 6, "ts": "2026-11-22T20:59:57Z"}
+{"state": "generating", "class_name": "net.minecraft.util.valueproviders.SampledFloat", "crate": "mc-math", "attempt": 1, "verified_count": 7, "ts": "2026-11-22T21:01:47Z"}
