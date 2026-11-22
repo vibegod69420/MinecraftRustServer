@@ -5,3 +5,4 @@ pub mod tps_debug_dimensions;
 pub mod profiled_duration;
 pub mod crypt_exception;
 pub mod profiler_measured;
+pub mod formatted_char_sink;
