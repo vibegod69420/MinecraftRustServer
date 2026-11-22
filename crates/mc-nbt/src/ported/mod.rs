@@ -21,3 +21,4 @@ pub mod int_array_tag;
 pub mod string_tag;
 pub mod collect_to_tag;
 pub mod snbt_operations;
+pub mod long_array_tag;

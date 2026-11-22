@@ -80,3 +80,6 @@ pub mod simple_random_feature_configuration;
 pub mod random_patch_configuration;
 pub mod nether_forest_vegetation_config;
 pub mod replace_block_configuration;
+pub mod feature_size_type;
+pub mod feature_size;
+pub mod two_layers_feature_size;

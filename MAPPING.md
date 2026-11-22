@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1270** across **381** classes.
+Total mapped Java symbols: **1305** across **386** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -335,6 +335,32 @@ Total mapped Java symbols: **1270** across **381** classes.
 | `net.minecraft.nbt.IntArrayTag#toString` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 302 | `fmt` |
 | `net.minecraft.nbt.IntArrayTag#write` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 196 | `write` |
 | `net.minecraft.nbt.IntTag#valueOf` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 65 | `value_of` |
+| `net.minecraft.nbt.LongArrayTag#<init>` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 202 | `new` |
+| `net.minecraft.nbt.LongArrayTag#accept` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 261 | `accept` |
+| `net.minecraft.nbt.LongArrayTag#accept` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 318 | `accept_stream` |
+| `net.minecraft.nbt.LongArrayTag#addTag` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 291 | `add_tag` |
+| `net.minecraft.nbt.LongArrayTag#asLongArray` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 313 | `as_long_array` |
+| `net.minecraft.nbt.LongArrayTag#clear` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 308 | `clear` |
+| `net.minecraft.nbt.LongArrayTag#copy` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 238 | `copy` |
+| `net.minecraft.nbt.LongArrayTag#equals` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 245 | `java_equals` |
+| `net.minecraft.nbt.LongArrayTag#get` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 276 | `get` |
+| `net.minecraft.nbt.LongArrayTag#getAsLongArray` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 266 | `get_as_long_array` |
+| `net.minecraft.nbt.LongArrayTag#getId` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 221 | `get_id` |
+| `net.minecraft.nbt.LongArrayTag#getName` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 183 | `get_name` |
+| `net.minecraft.nbt.LongArrayTag#getPrettyName` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 188 | `get_pretty_name` |
+| `net.minecraft.nbt.LongArrayTag#getType` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 226 | `get_type` |
+| `net.minecraft.nbt.LongArrayTag#hashCode` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 250 | `hash_code` |
+| `net.minecraft.nbt.LongArrayTag#load` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 130 | `load` |
+| `net.minecraft.nbt.LongArrayTag#parse` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 139 | `parse` |
+| `net.minecraft.nbt.LongArrayTag#readAccounted` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 150 | `read_accounted` |
+| `net.minecraft.nbt.LongArrayTag#remove` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 301 | `remove` |
+| `net.minecraft.nbt.LongArrayTag#setTag` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 281 | `set_tag` |
+| `net.minecraft.nbt.LongArrayTag#size` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 271 | `size` |
+| `net.minecraft.nbt.LongArrayTag#sizeInBytes` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 216 | `size_in_bytes` |
+| `net.minecraft.nbt.LongArrayTag#skip` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 169 | `skip` |
+| `net.minecraft.nbt.LongArrayTag#toString` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 231 | `to_string_value` |
+| `net.minecraft.nbt.LongArrayTag#write` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 207 | `write` |
+| `net.minecraft.nbt.LongTag#valueOf` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 60 | `value_of` |
 | `net.minecraft.nbt.NbtAccounter#<init>` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 37 | `new` |
 | `net.minecraft.nbt.NbtAccounter#accountBytes` | `crates/mc-nbt/src/ported/byte_tag.rs` | 13 | `account_bytes` |
 | `net.minecraft.nbt.NbtAccounter#accountBytes(long)` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 72 | `account_bytes` |
@@ -1311,6 +1337,19 @@ Total mapped Java symbols: **1270** across **381** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#maxHeight` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 36 | `max_height` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#spreadHeight` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 31 | `spread_height` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#spreadWidth` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 26 | `spread_width` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#<init>` | `crates/mc-worldgen/src/ported/feature_size.rs` | 37 | `new` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 27 | `new` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#getSizeAtHeight` | `crates/mc-worldgen/src/ported/feature_size.rs` | 32 | `get_size_at_height` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#minClippedHeight` | `crates/mc-worldgen/src/ported/feature_size.rs` | 42 | `min_clipped_height` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#minClippedHeight` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 32 | `min_clipped_height` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#type` | `crates/mc-worldgen/src/ported/feature_size.rs` | 29 | `get_type` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSizeType#<init>` | `crates/mc-worldgen/src/ported/feature_size_type.rs` | 19 | `new` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSizeType#codec` | `crates/mc-worldgen/src/ported/feature_size_type.rs` | 24 | `codec` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSizeType#register` | `crates/mc-worldgen/src/ported/feature_size_type.rs` | 12 | `register` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 47 | `new` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 52 | `new_with_min_clipped_height` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#getSizeAtHeight` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 72 | `get_size_at_height` |
+| `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#type` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 67 | `get_type` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#<init>` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 16 | `new` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootPlacementChance` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 29 | `above_root_placement_chance` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootProvider` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 24 | `above_root_provider` |
