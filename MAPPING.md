@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **449** across **151** classes.
+Total mapped Java symbols: **467** across **159** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -457,6 +457,10 @@ Total mapped Java symbols: **449** across **151** classes.
 | `net.minecraft.world.level.levelgen.Density#surface` | `crates/mc-worldgen/src/ported/density.rs` | 4 | `surface` |
 | `net.minecraft.world.level.levelgen.Density#unrecoverablyDense` | `crates/mc-worldgen/src/ported/density.rs` | 9 | `unrecoverably_dense` |
 | `net.minecraft.world.level.levelgen.Density#unrecoverablyThin` | `crates/mc-worldgen/src/ported/density.rs` | 14 | `unrecoverably_thin` |
+| `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 37 | `get_name` |
+| `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getSerializedName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 54 | `get_serialized_name_value` |
+| `net.minecraft.world.level.levelgen.GeodeCrackSettings#<init>` | `crates/mc-worldgen/src/ported/geode_crack_settings.rs` | 13 | `new` |
+| `net.minecraft.world.level.levelgen.GeodeLayerSettings#<init>` | `crates/mc-worldgen/src/ported/geode_layer_settings.rs` | 17 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>` | `crates/mc-math/src/random.rs` | 240 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#fork` | `crates/mc-math/src/random.rs` | 362 | `fork` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#forkPositional` | `crates/mc-math/src/random.rs` | 367 | `fork_positional` |
@@ -468,6 +472,12 @@ Total mapped Java symbols: **449** across **151** classes.
 | `net.minecraft.world.level.levelgen.LegacyRandomSource$LegacyPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 392 | `from_seed` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#nextGaussian` | `crates/mc-math/src/random.rs` | 207 | `next_gaussian` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#reset` | `crates/mc-math/src/random.rs` | 202 | `reset` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 52 | `at_block_pos` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 68 | `at` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 57 | `from_hash_of_identifier` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 62 | `from_hash_of` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromSeed` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 65 | `from_seed` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#parityConfigString` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 71 | `parity_config_string` |
 | `net.minecraft.world.level.levelgen.RandomSupport#mixStafford13` | `crates/mc-math/src/random.rs` | 47 | `mix_stafford13` |
 | `net.minecraft.world.level.levelgen.RandomSupport#seedFromHashOf` | `crates/mc-math/src/random.rs` | 143 | `seed_from_hash_of` |
 | `net.minecraft.world.level.levelgen.RandomSupport#upgradeSeedTo128bit` | `crates/mc-math/src/random.rs` | 66 | `upgrade_seed_to_128bit` |
@@ -475,6 +485,14 @@ Total mapped Java symbols: **449** across **151** classes.
 | `net.minecraft.world.level.levelgen.RandomSupport$Seed128bit#mixed` | `crates/mc-math/src/random.rs` | 37 | `mixed` |
 | `net.minecraft.world.level.levelgen.RandomSupport$Seed128bit#xor` | `crates/mc-math/src/random.rs` | 22 | `xor_parts` |
 | `net.minecraft.world.level.levelgen.RandomSupport$Seed128bit#xor` | `crates/mc-math/src/random.rs` | 31 | `xor` |
+| `net.minecraft.world.level.levelgen.WorldGenSettings#<init>` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 60 | `new` |
+| `net.minecraft.world.level.levelgen.WorldGenSettings#dimensions` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 70 | `dimensions` |
+| `net.minecraft.world.level.levelgen.WorldGenSettings#encode` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 75 | `encode` |
+| `net.minecraft.world.level.levelgen.WorldGenSettings#encode` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 85 | `encode_with_registry_access` |
+| `net.minecraft.world.level.levelgen.WorldGenSettings#options` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 65 | `options` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#<init>` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 18 | `new` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#getGenDepth` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 30 | `get_gen_depth` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#getMinGenY` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 25 | `get_min_gen_y` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#seedSlimeChunk` | `crates/mc-math/src/random.rs` | 651 | `seed_slime_chunk` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(RandomSupport$Seed128bit)` | `crates/mc-math/src/random.rs` | 414 | `from_seed128` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(long,long)` | `crates/mc-math/src/random.rs` | 405 | `new` |
@@ -596,9 +614,13 @@ Total mapped Java symbols: **449** across **151** classes.
 | `net.minecraft.world.level.levelgen.synth.PerlinNoise#getValue(double,double,double)` | `crates/mc-math/src/noise.rs` | 427 | `get_value` |
 | `net.minecraft.world.level.levelgen.synth.PerlinNoise#getValue(double,double,double,double,double,boolean)` | `crates/mc-math/src/noise.rs` | 432 | `get_value_full` |
 | `net.minecraft.world.level.levelgen.synth.PerlinNoise#wrap` | `crates/mc-math/src/noise.rs` | 421 | `wrap` |
+| `net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise#<init>` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 19 | `new` |
+| `net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise#<init>` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 25 | `new_from_set` |
+| `net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise#getValue` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 91 | `get_value` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#<init>` | `crates/mc-math/src/noise.rs` | 39 | `new` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getCornerNoise3D` | `crates/mc-math/src/noise.rs` | 60 | `get_corner_noise_3d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double)` | `crates/mc-math/src/noise.rs` | 71 | `get_value_2d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double,double)` | `crates/mc-math/src/noise.rs` | 101 | `get_value_3d` |
+| `new WorldgenRandom(new LegacyRandomSource(seed)) seeds from nextLong()` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 66 | `<item>` |
 | `return new Weighted<>($$0.apply(this.value()), this.weight)` | `crates/mc-math/src/ported/weighted.rs` | 111 | `<item>` |
 | `throw Util.pauseInIde(new IllegalArgumentException(` | `crates/mc-math/src/ported/weighted.rs` | 56 | `<item>` |

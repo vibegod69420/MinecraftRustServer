@@ -28,3 +28,4 @@ pub mod weighted_list;
 pub mod weighted_list_int;
 pub mod uniform_int;
 pub mod biased_to_bottom_int;
+pub mod perlin_simplex_noise;
