@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1201** across **356** classes.
+Total mapped Java symbols: **1224** across **366** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -364,6 +364,11 @@ Total mapped Java symbols: **1201** across **356** classes.
 | `net.minecraft.nbt.ReportedNbtException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 56 | `new` |
 | `net.minecraft.nbt.ReportedNbtException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 63 | `report` |
 | `net.minecraft.nbt.SnbtGrammar#escapeControlCharacters` | `crates/mc-nbt/src/ported/string_tag.rs` | 283 | `snbt_grammar_escape_control_characters` |
+| `net.minecraft.nbt.SnbtOperations#convert` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 80 | `bool_convert` |
+| `net.minecraft.nbt.SnbtOperations#possibleValues` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 195 | `builtin_ids_possible_values` |
+| `net.minecraft.nbt.SnbtOperations#run` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 91 | `bool_run` |
+| `net.minecraft.nbt.SnbtOperations#run` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 134 | `uuid_run` |
+| `net.minecraft.nbt.SnbtOperations#toString` | `crates/mc-nbt/src/ported/snbt_operations.rs` | 68 | `fmt` |
 | `net.minecraft.nbt.StreamTagVisitor#visit` | `crates/mc-nbt/src/ported/byte_tag.rs` | 35 | `visit` |
 | `net.minecraft.nbt.StreamTagVisitor#visit(String)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 6 | `visit_string` |
 | `net.minecraft.nbt.StreamTagVisitor#visit(byte)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 9 | `visit_byte` |
@@ -547,10 +552,29 @@ Total mapped Java symbols: **1201** across **356** classes.
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 21 | `decorate` |
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 30 | `decorate` |
 | `net.minecraft.network.chat.Component#translatable` | `crates/mc-nbt/src/ported/tag_parser.rs` | 13 | `translatable` |
+| `net.minecraft.network.chat.ComponentContents#codec` | `crates/mc-protocol/src/ported/component_contents.rs` | 73 | `codec` |
+| `net.minecraft.network.chat.ComponentContents#resolve` | `crates/mc-protocol/src/ported/component_contents.rs` | 63 | `resolve` |
+| `net.minecraft.network.chat.ComponentContents#visit` | `crates/mc-protocol/src/ported/component_contents.rs` | 49 | `visit_styled` |
+| `net.minecraft.network.chat.ComponentContents#visit` | `crates/mc-protocol/src/ported/component_contents.rs` | 58 | `visit_content` |
+| `net.minecraft.network.chat.FontDescription#CODEC` | `crates/mc-protocol/src/ported/font_description.rs` | 91 | `codec_decode` |
+| `net.minecraft.network.chat.FontDescription#CODEC` | `crates/mc-protocol/src/ported/font_description.rs` | 96 | `codec_encode` |
+| `net.minecraft.network.chat.FontDescription#DEFAULT` | `crates/mc-protocol/src/ported/font_description.rs` | 69 | `default_font_description` |
+| `net.minecraft.network.chat.FontDescription$Resource#<init>` | `crates/mc-protocol/src/ported/font_description.rs` | 64 | `new` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_tracked_entry.rs` | 15 | `acknowledge` |
 | `net.minecraft.network.chat.LocalChatSession#asRemote` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 139 | `as_remote` |
 | `net.minecraft.network.chat.LocalChatSession#create` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 123 | `create` |
 | `net.minecraft.network.chat.LocalChatSession#createMessageEncoder` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 131 | `create_message_encoder` |
+| `net.minecraft.network.chat.MutableComponent#create` | `crates/mc-protocol/src/ported/component_contents.rs` | 42 | `create` |
+| `net.minecraft.network.chat.OutgoingChatMessage#content` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 110 | `content` |
+| `net.minecraft.network.chat.OutgoingChatMessage#create` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 126 | `create` |
+| `net.minecraft.network.chat.OutgoingChatMessage#sendToPlayer` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 118 | `send_to_player` |
+| `net.minecraft.network.chat.OutgoingChatMessage$Disguised#sendToPlayer` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 73 | `send_to_player` |
+| `net.minecraft.network.chat.OutgoingChatMessage$Player#content` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 87 | `content` |
+| `net.minecraft.network.chat.OutgoingChatMessage$Player#sendToPlayer` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 92 | `send_to_player` |
+| `net.minecraft.network.chat.PlayerChatMessage#decoratedContent` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 24 | `decorated_content` |
+| `net.minecraft.network.chat.PlayerChatMessage#filter` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 29 | `filter` |
+| `net.minecraft.network.chat.PlayerChatMessage#isFullyFiltered` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 38 | `is_fully_filtered` |
+| `net.minecraft.network.chat.PlayerChatMessage#isSystem` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 19 | `is_system` |
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 28 | `new` |
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 36 | `with_cause` |
 | `net.minecraft.network.chat.ThrowingComponent#getComponent` | `crates/mc-protocol/src/ported/throwing_component.rs` | 47 | `get_component` |
@@ -752,6 +776,7 @@ Total mapped Java symbols: **1201** across **356** classes.
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 20 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/font_description.rs` | 10 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.ResourceKey` | `crates/mc-math/src/ported/cloner.rs` | 15 | `new` |
@@ -762,6 +787,8 @@ Total mapped Java symbols: **1201** across **356** classes.
 | `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
 | `net.minecraft.server.MinecraftServer#registryAccess` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 26 | `registry_access` |
 | `net.minecraft.server.network.Filterable#raw` | `crates/mc-math/src/ported/writable_book_predicate.rs` | 13 | `raw` |
+| `net.minecraft.server.network.ServerGamePacketListenerImpl#sendDisguisedChatMessage` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 51 | `send_disguised_chat_message` |
+| `net.minecraft.server.network.ServerGamePacketListenerImpl#sendPlayerChatMessage` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 56 | `send_player_chat_message` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |

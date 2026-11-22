@@ -80,3 +80,6 @@ pub mod brand_payload;
 pub mod discarded_payload;
 pub mod serverbound_client_tick_end_packet;
 pub mod clientbound_chunk_batch_start_packet;
+pub mod component_contents;
+pub mod font_description;
+pub mod outgoing_chat_message;

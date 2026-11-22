@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:30:27 UTC",
-  "updated_epoch": 1795386627,
+  "updated_at": "2026-11-22 22:31:48 UTC",
+  "updated_epoch": 1795386708,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 356,
-    "mapped_methods": 1201,
-    "class_coverage_pct": 4.97,
-    "method_coverage_pct": 1.8012,
-    "harness_verified_classes": 221,
+    "mapped_classes": 366,
+    "mapped_methods": 1224,
+    "class_coverage_pct": 5.1096,
+    "method_coverage_pct": 1.8357,
+    "harness_verified_classes": 226,
     "harness_failed_attempts": 24
   },
   "crates": [
@@ -35,11 +35,11 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 299
+      "mapped_methods": 304
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 251
+      "mapped_methods": 273
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 210,
-    "prompt_tokens": 366579,
-    "completion_tokens": 1991772,
-    "reasoning_tokens": 1437064,
-    "avg_latency_s": 139.3
+    "calls_total": 213,
+    "prompt_tokens": 378160,
+    "completion_tokens": 2050165,
+    "reasoning_tokens": 1487073,
+    "avg_latency_s": 140.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:31:48Z",
+      "class_name": "net.minecraft.network.chat.OutgoingChatMessage",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:31:48Z",
+      "class_name": "net.minecraft.network.chat.FontDescription",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:31:48Z",
+      "class_name": "net.minecraft.network.chat.ComponentContents",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:31:25Z",
+      "class_name": "net.minecraft.nbt.SnbtOperations",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 376.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:30:27Z",
+      "class_name": "net.minecraft.nbt.visitors.CollectToTag",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 257.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:30:25Z",
       "class_name": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset",
@@ -333,49 +373,14 @@
       "verified": true,
       "seconds": 154.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:25:12Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 154.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:25:12Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTestType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 154.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:25:09Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundBundlePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 368.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:25:09Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundBundleDelimiterPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 368.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:25:09Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundPlayerLoadedPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 368.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "65feb99",
+      "ts": "2026-11-22T22:30:27+00:00",
+      "message": "Port 11 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "bc30d06",
       "ts": "2026-11-22T22:30:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "bc61a28",
       "ts": "2026-11-22T19:18:15-03:00",
       "message": "Use medium->high->max effort, 4-class batches, comment-safe unsafe check, shared repo flock"
-    },
-    {
-      "sha": "3e7095f",
-      "ts": "2026-11-22T22:18:01+00:00",
-      "message": "Worker sync: 688 mapped Java methods"
     }
   ]
 }
