@@ -89,3 +89,7 @@ pub mod height_provider;
 pub mod weighted_list_height;
 pub mod height_provider_type;
 pub mod constant_height;
+pub mod block_predicate_filter;
+pub mod heightmap_placement;
+pub mod structure_pool_element_type;
+pub mod dimension_padding;
