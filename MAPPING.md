@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **155** across **36** classes.
+Total mapped Java symbols: **158** across **37** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -86,6 +86,9 @@ Total mapped Java symbols: **155** across **36** classes.
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 20 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
+| `net.minecraft.util.debugchart.SampleLogger#logFullSample` | `crates/mc-math/src/ported/sample_logger.rs` | 10 | `log_full_sample` |
+| `net.minecraft.util.debugchart.SampleLogger#logPartialSample` | `crates/mc-math/src/ported/sample_logger.rs` | 16 | `log_partial_sample` |
+| `net.minecraft.util.debugchart.SampleLogger#logSample` | `crates/mc-math/src/ported/sample_logger.rs` | 13 | `log_sample` |
 | `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 11 | `capacity` |
 | `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 69 | `capacity` |
 | `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 334 | `capacity` |

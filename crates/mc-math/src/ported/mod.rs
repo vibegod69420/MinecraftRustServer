@@ -7,3 +7,4 @@ pub mod crypt_exception;
 pub mod profiler_measured;
 pub mod formatted_char_sink;
 pub mod sample_storage;
+pub mod sample_logger;
