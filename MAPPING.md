@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **159** across **38** classes.
+Total mapped Java symbols: **163** across **39** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -115,6 +115,14 @@ Total mapped Java symbols: **159** across **38** classes.
 | `net.minecraft.util.parsing.packrat.ErrorEntry#reason` | `crates/mc-math/src/ported/error_entry.rs` | 106 | `reason` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#suggestions` | `crates/mc-math/src/ported/error_entry.rs` | 101 | `suggestions` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#toString` | `crates/mc-math/src/ported/error_entry.rs` | 153 | `fmt` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 18 | `get_count` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 82 | `get_count` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getCounters` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 21 | `get_counters` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getCounters` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 87 | `get_counters` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 12 | `get_duration` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 72 | `get_duration` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getMaxDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 15 | `get_max_duration` |
+| `net.minecraft.util.profiling.ProfilerPathEntry#getMaxDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 77 | `get_max_duration` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 11 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
