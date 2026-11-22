@@ -1,1 +1,1 @@
-{"state": "testing", "class_name": "net.minecraft.util.CryptException", "crate": "mc-math", "attempt": 1, "verified_count": 5, "ts": "2026-11-22T20:59:56Z"}
+{"state": "generating", "class_name": "net.minecraft.util.profiling.metrics.ProfilerMeasured", "crate": "mc-math", "attempt": 1, "verified_count": 6, "ts": "2026-11-22T20:59:57Z"}
