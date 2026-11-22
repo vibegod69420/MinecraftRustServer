@@ -52,5 +52,5 @@ Log of all non-trivial engineering decisions, alternatives considered, and empir
 
 ## D007: Zero-Redeploy Live Progress Dashboard
 - **Date**: 2026-11-22
-- **Decision**: Serve `docs/index.html` once via GitHub Pages (workflow triggers only on `paths: ['docs/index.html', '.github/workflows/deploy-pages.yml']`) and fetch `docs/progress.json` + `docs/worker.json` client-side from `raw.githubusercontent.com/blubbersy-hub/MinecraftRustServer/main/docs/` every 15 seconds.
+- **Decision**: Serve `docs/index.html` once via GitHub Pages (workflow triggers only on `paths: ['docs/index.html', '.github/workflows/deploy-pages.yml']`) and fetch `docs/progress.json` + `docs/worker.json` client-side from `raw.githubusercontent.com/vibegod69420/MinecraftRustServer/main/docs/` every 15 seconds.
 - **Rationale**: Progress updates on `main` immediately go live without wasting GitHub Actions Pages build minutes or queuing redeploys.
