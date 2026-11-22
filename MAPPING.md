@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1575** across **462** classes.
+Total mapped Java symbols: **1587** across **464** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -279,11 +279,24 @@ Total mapped Java symbols: **1575** across **462** classes.
 | `net.minecraft.core.particles.SimpleParticleType#codec` | `crates/mc-math/src/ported/simple_particle_type.rs` | 60 | `codec` |
 | `net.minecraft.core.particles.SimpleParticleType#getType` | `crates/mc-math/src/ported/simple_particle_type.rs` | 55 | `get_type` |
 | `net.minecraft.core.particles.SimpleParticleType#streamCodec` | `crates/mc-math/src/ported/simple_particle_type.rs` | 65 | `stream_codec` |
+| `net.minecraft.core.particles.SpellParticleOption#<init>` | `crates/mc-math/src/ported/spell_particle_option.rs` | 50 | `new` |
+| `net.minecraft.core.particles.SpellParticleOption#create` | `crates/mc-math/src/ported/spell_particle_option.rs` | 84 | `create` |
+| `net.minecraft.core.particles.SpellParticleOption#create` | `crates/mc-math/src/ported/spell_particle_option.rs` | 89 | `create_from_floats` |
+| `net.minecraft.core.particles.SpellParticleOption#getBlue` | `crates/mc-math/src/ported/spell_particle_option.rs` | 74 | `get_blue` |
+| `net.minecraft.core.particles.SpellParticleOption#getGreen` | `crates/mc-math/src/ported/spell_particle_option.rs` | 69 | `get_green` |
+| `net.minecraft.core.particles.SpellParticleOption#getPower` | `crates/mc-math/src/ported/spell_particle_option.rs` | 79 | `get_power` |
+| `net.minecraft.core.particles.SpellParticleOption#getRed` | `crates/mc-math/src/ported/spell_particle_option.rs` | 64 | `get_red` |
+| `net.minecraft.core.particles.SpellParticleOption#getType` | `crates/mc-math/src/ported/spell_particle_option.rs` | 59 | `get_type` |
 | `net.minecraft.core.particles.TrailParticleOption#<init>` | `crates/mc-math/src/ported/trail_particle_option.rs` | 29 | `new` |
 | `net.minecraft.core.particles.TrailParticleOption#color` | `crates/mc-math/src/ported/trail_particle_option.rs` | 43 | `color` |
 | `net.minecraft.core.particles.TrailParticleOption#duration` | `crates/mc-math/src/ported/trail_particle_option.rs` | 48 | `duration` |
 | `net.minecraft.core.particles.TrailParticleOption#getType` | `crates/mc-math/src/ported/trail_particle_option.rs` | 53 | `get_type` |
 | `net.minecraft.core.particles.TrailParticleOption#target` | `crates/mc-math/src/ported/trail_particle_option.rs` | 38 | `target` |
+| `net.minecraft.core.particles.VibrationParticleOption#<init>` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 37 | `new` |
+| `net.minecraft.core.particles.VibrationParticleOption#SAFE_POSITION_SOURCE_CODEC` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 25 | `is_valid_position_source` |
+| `net.minecraft.core.particles.VibrationParticleOption#getArrivalInTicks` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 50 | `get_arrival_in_ticks` |
+| `net.minecraft.core.particles.VibrationParticleOption#getDestination` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 45 | `get_destination` |
+| `net.minecraft.core.particles.VibrationParticleOption#getType` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 57 | `get_type` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
 | `net.minecraft.nbt.ByteArrayTag#<init>` | `crates/mc-nbt/src/ported/byte_array_tag.rs` | 202 | `new` |
 | `net.minecraft.nbt.ByteArrayTag#accept` | `crates/mc-nbt/src/ported/byte_array_tag.rs` | 254 | `accept_tag_visitor` |
