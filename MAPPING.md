@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **253** across **86** classes.
+Total mapped Java symbols: **319** across **99** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -17,6 +17,12 @@ Total mapped Java symbols: **253** across **86** classes.
 | `START_PRESENT` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 38 | `<item>` |
 | `Util.pauseInIde(...) is an IDE debug hook` | `crates/mc-math/src/ported/weighted_random.rs` | 42 | `<item>` |
 | `if (weight` | `crates/mc-math/src/ported/weighted.rs` | 61 | `<item>` |
+| `net.minecraft.CrashReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 4 | `<item>` |
+| `net.minecraft.CrashReport#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 11 | `new` |
+| `net.minecraft.CrashReport#getTitle` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 16 | `message` |
+| `net.minecraft.ReportedException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 23 | `<item>` |
+| `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
+| `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
@@ -35,14 +41,60 @@ Total mapped Java symbols: **253** across **86** classes.
 | `net.minecraft.core.SectionPos#y(long)` | `crates/mc-math/src/packing.rs` | 123 | `get_y` |
 | `net.minecraft.core.SectionPos#z(long)` | `crates/mc-math/src/packing.rs` | 129 | `get_z` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
+| `net.minecraft.nbt.CollectionTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 5 | `clear` |
+| `net.minecraft.nbt.CollectionTag#addTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 13 | `add_tag` |
+| `net.minecraft.nbt.CollectionTag#clear` | `crates/mc-nbt/src/ported/collection_tag.rs` | 7 | `clear` |
+| `net.minecraft.nbt.CollectionTag#get` | `crates/mc-nbt/src/ported/collection_tag.rs` | 19 | `get` |
+| `net.minecraft.nbt.CollectionTag#isEmpty` | `crates/mc-nbt/src/ported/collection_tag.rs` | 25 | `is_empty` |
+| `net.minecraft.nbt.CollectionTag#iterator` | `crates/mc-nbt/src/ported/collection_tag.rs` | 30 | `iter` |
+| `net.minecraft.nbt.CollectionTag#iterator` | `crates/mc-nbt/src/ported/collection_tag.rs` | 42 | `<item>` |
+| `net.minecraft.nbt.CollectionTag#iterator` | `crates/mc-nbt/src/ported/collection_tag.rs` | 51 | `next` |
+| `net.minecraft.nbt.CollectionTag#remove` | `crates/mc-nbt/src/ported/collection_tag.rs` | 16 | `remove` |
+| `net.minecraft.nbt.CollectionTag#setTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 10 | `set_tag` |
+| `net.minecraft.nbt.CollectionTag#size` | `crates/mc-nbt/src/ported/collection_tag.rs` | 22 | `size` |
+| `net.minecraft.nbt.CollectionTag#stream` | `crates/mc-nbt/src/ported/collection_tag.rs` | 63 | `stream` |
 | `net.minecraft.nbt.DoubleTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 99 | `double_value_of` |
 | `net.minecraft.nbt.FloatTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 94 | `float_value_of` |
+| `net.minecraft.nbt.NbtAccounterException` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 30 | `<item>` |
+| `net.minecraft.nbt.NbtAccounterException` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 49 | `as_nbt_exception` |
+| `net.minecraft.nbt.NbtAccounterException#<init>` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 37 | `new` |
+| `net.minecraft.nbt.NbtAccounterException#getMessage` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 44 | `message` |
+| `net.minecraft.nbt.NbtException` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 4 | `<item>` |
+| `net.minecraft.nbt.NbtException#<init>` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 11 | `new` |
 | `net.minecraft.nbt.NbtException#<init>` | `crates/mc-nbt/src/ported/nbt_exception.rs` | 16 | `new` |
+| `net.minecraft.nbt.NbtException#getMessage` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 16 | `message` |
 | `net.minecraft.nbt.NbtFormatException#<init>` | `crates/mc-nbt/src/ported/nbt_format_exception.rs` | 51 | `new` |
 | `net.minecraft.nbt.NbtIo#read(DataInput)` | `crates/mc-nbt/src/lib.rs` | 282 | `read_nbt` |
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
+| `net.minecraft.nbt.PrimitiveTag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 16 | `copy` |
+| `net.minecraft.nbt.PrimitiveTag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 18 | `copy` |
+| `net.minecraft.nbt.ReportedNbtException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 49 | `<item>` |
+| `net.minecraft.nbt.ReportedNbtException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 68 | `as_reported_exception` |
+| `net.minecraft.nbt.ReportedNbtException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 56 | `new` |
+| `net.minecraft.nbt.ReportedNbtException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 63 | `report` |
+| `net.minecraft.nbt.Tag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 2 | `copy_tag` |
+| `net.minecraft.nbt.Tag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 4 | `copy_tag` |
+| `net.minecraft.nbt.TagType` | `crates/mc-nbt/src/ported/tag_types.rs` | 2 | `<item>` |
+| `net.minecraft.nbt.TagType#createInvalid` | `crates/mc-nbt/src/ported/tag_types.rs` | 11 | `create_invalid` |
+| `net.minecraft.nbt.TagTypes#TYPES` | `crates/mc-nbt/src/ported/tag_types.rs` | 21 | `<item>` |
+| `net.minecraft.nbt.TagTypes#getType` | `crates/mc-nbt/src/ported/tag_types.rs` | 90 | `get_type` |
+| `net.minecraft.nbt.TagVisitor` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 6 | `visit_string` |
+| `net.minecraft.nbt.TagVisitor` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 48 | `accept_tag` |
+| `net.minecraft.nbt.TagVisitor#visitByte` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 11 | `visit_byte` |
+| `net.minecraft.nbt.TagVisitor#visitByteArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 29 | `visit_byte_array` |
+| `net.minecraft.nbt.TagVisitor#visitCompound` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 41 | `visit_compound` |
+| `net.minecraft.nbt.TagVisitor#visitDouble` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 26 | `visit_double` |
+| `net.minecraft.nbt.TagVisitor#visitEnd` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 44 | `visit_end` |
+| `net.minecraft.nbt.TagVisitor#visitFloat` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 23 | `visit_float` |
+| `net.minecraft.nbt.TagVisitor#visitInt` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 17 | `visit_int` |
+| `net.minecraft.nbt.TagVisitor#visitIntArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 32 | `visit_int_array` |
+| `net.minecraft.nbt.TagVisitor#visitList` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 38 | `visit_list` |
+| `net.minecraft.nbt.TagVisitor#visitLong` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 20 | `visit_long` |
+| `net.minecraft.nbt.TagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 35 | `visit_long_array` |
+| `net.minecraft.nbt.TagVisitor#visitShort` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 14 | `visit_short` |
+| `net.minecraft.nbt.TagVisitor#visitString` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 8 | `visit_string` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 7 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 15 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 87 | `decode` |
@@ -224,12 +276,37 @@ Total mapped Java symbols: **253** across **86** classes.
 | `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 67 | `get_random_item` |
 | `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_random.rs` | 22 | `get_total_weight` |
 | `net.minecraft.util.random.WeightedRandom#getWeightedItem` | `crates/mc-math/src/ported/weighted_random.rs` | 52 | `get_weighted_item` |
+| `net.minecraft.util.valueproviders.ConstantFloat` | `crates/mc-math/src/ported/constant_float.rs` | 3 | `<item>` |
+| `net.minecraft.util.valueproviders.ConstantFloat#ZERO` | `crates/mc-math/src/ported/constant_float.rs` | 10 | `of` |
+| `net.minecraft.util.valueproviders.ConstantFloat#getMaxValue` | `crates/mc-math/src/ported/constant_float.rs` | 37 | `get_max_value` |
+| `net.minecraft.util.valueproviders.ConstantFloat#getMinValue` | `crates/mc-math/src/ported/constant_float.rs` | 32 | `get_min_value` |
+| `net.minecraft.util.valueproviders.ConstantFloat#getValue` | `crates/mc-math/src/ported/constant_float.rs` | 22 | `get_value` |
+| `net.minecraft.util.valueproviders.ConstantFloat#of` | `crates/mc-math/src/ported/constant_float.rs` | 13 | `of` |
+| `net.minecraft.util.valueproviders.ConstantFloat#sample` | `crates/mc-math/src/ported/constant_float.rs` | 27 | `sample` |
+| `net.minecraft.util.valueproviders.ConstantFloat#toString` | `crates/mc-math/src/ported/constant_float.rs` | 44 | `fmt` |
+| `net.minecraft.util.valueproviders.ConstantInt` | `crates/mc-math/src/ported/constant_int.rs` | 3 | `<item>` |
+| `net.minecraft.util.valueproviders.ConstantInt#ZERO` | `crates/mc-math/src/ported/constant_int.rs` | 10 | `of` |
+| `net.minecraft.util.valueproviders.ConstantInt#getMaxValue` | `crates/mc-math/src/ported/constant_int.rs` | 37 | `get_max_value` |
+| `net.minecraft.util.valueproviders.ConstantInt#getMinValue` | `crates/mc-math/src/ported/constant_int.rs` | 32 | `get_min_value` |
+| `net.minecraft.util.valueproviders.ConstantInt#getValue` | `crates/mc-math/src/ported/constant_int.rs` | 22 | `get_value` |
 | `net.minecraft.util.valueproviders.ConstantInt#getValue` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 13 | `get_value` |
+| `net.minecraft.util.valueproviders.ConstantInt#of` | `crates/mc-math/src/ported/constant_int.rs` | 13 | `of` |
 | `net.minecraft.util.valueproviders.ConstantInt#of` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 8 | `of` |
+| `net.minecraft.util.valueproviders.ConstantInt#sample` | `crates/mc-math/src/ported/constant_int.rs` | 27 | `sample` |
+| `net.minecraft.util.valueproviders.ConstantInt#toString` | `crates/mc-math/src/ported/constant_int.rs` | 44 | `fmt` |
 | `net.minecraft.util.valueproviders.FloatProviderType#codec` | `crates/mc-math/src/ported/float_provider_type.rs` | 18 | `codec_name` |
 | `net.minecraft.util.valueproviders.FloatProviderType#register` | `crates/mc-math/src/ported/float_provider_type.rs` | 23 | `register` |
 | `net.minecraft.util.valueproviders.IntProviderType#codec` | `crates/mc-math/src/ported/int_provider_type.rs` | 20 | `codec_name` |
 | `net.minecraft.util.valueproviders.IntProviderType#register` | `crates/mc-math/src/ported/int_provider_type.rs` | 25 | `register` |
+| `net.minecraft.util.valueproviders.MultipliedFloats` | `crates/mc-math/src/ported/multiplied_floats.rs` | 11 | `<item>` |
+| `net.minecraft.util.valueproviders.MultipliedFloats#<init>` | `crates/mc-math/src/ported/multiplied_floats.rs` | 18 | `new` |
+| `net.minecraft.util.valueproviders.MultipliedFloats#sample` | `crates/mc-math/src/ported/multiplied_floats.rs` | 23 | `sample` |
+| `net.minecraft.util.valueproviders.MultipliedFloats#sample` | `crates/mc-math/src/ported/multiplied_floats.rs` | 34 | `sample` |
+| `net.minecraft.util.valueproviders.MultipliedFloats#toString` | `crates/mc-math/src/ported/multiplied_floats.rs` | 41 | `fmt` |
+| `net.minecraft.util.valueproviders.SampledFloat` | `crates/mc-math/src/ported/multiplied_floats.rs` | 5 | `sample` |
+| `net.minecraft.util.valueproviders.SampledFloat` | `crates/mc-math/src/ported/sampled_float.rs` | 3 | `sample` |
+| `net.minecraft.util.valueproviders.SampledFloat#sample` | `crates/mc-math/src/ported/multiplied_floats.rs` | 7 | `sample` |
+| `net.minecraft.util.valueproviders.SampledFloat#sample` | `crates/mc-math/src/ported/sampled_float.rs` | 5 | `sample` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |

@@ -20,3 +20,7 @@ pub mod weighted;
 pub mod weighted_random;
 pub mod float_provider_type;
 pub mod int_provider_type;
+pub mod sampled_float;
+pub mod multiplied_floats;
+pub mod constant_int;
+pub mod constant_float;

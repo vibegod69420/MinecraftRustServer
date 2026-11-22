@@ -1,2 +1,8 @@
 pub mod nbt_exception;
 pub mod nbt_format_exception;
+pub mod nbt_accounter_exception;
+pub mod primitive_tag;
+pub mod reported_nbt_exception;
+pub mod tag_types;
+pub mod tag_visitor;
+pub mod collection_tag;
