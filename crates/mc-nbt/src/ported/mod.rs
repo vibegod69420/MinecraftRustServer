@@ -86,3 +86,5 @@ pub mod value_input;
 pub mod level_version;
 pub mod storage_value;
 pub mod number_providers;
+pub mod uniform_generator;
+pub mod binomial_distribution_generator;

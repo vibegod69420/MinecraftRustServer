@@ -139,3 +139,7 @@ pub mod clientbound_resource_pack_pop_packet;
 pub mod player_sprite;
 pub mod atlas_sprite;
 pub mod clientbound_debug_chunk_value_packet;
+pub mod clientbound_place_ghost_recipe_packet;
+pub mod serverbound_chat_session_update_packet;
+pub mod clientbound_reset_score_packet;
+pub mod serverbound_set_carried_item_packet;

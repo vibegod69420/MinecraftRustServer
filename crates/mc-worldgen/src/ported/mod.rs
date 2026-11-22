@@ -144,3 +144,4 @@ pub mod bush_foliage_placer;
 pub mod trunk_vine_decorator;
 pub mod attached_to_logs_decorator;
 pub mod cocoa_decorator;
+pub mod tree_decorator_type;
