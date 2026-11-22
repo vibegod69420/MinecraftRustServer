@@ -6,3 +6,7 @@ pub mod reported_nbt_exception;
 pub mod tag_types;
 pub mod tag_visitor;
 pub mod collection_tag;
+pub mod field_selector;
+pub mod field_tree;
+pub mod skip_fields;
+pub mod skip_all;

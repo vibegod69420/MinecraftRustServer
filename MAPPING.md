@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **542** across **182** classes.
+Total mapped Java symbols: **620** across **203** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -110,6 +110,42 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.nbt.TagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 35 | `visit_long_array` |
 | `net.minecraft.nbt.TagVisitor#visitShort` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 14 | `visit_short` |
 | `net.minecraft.nbt.TagVisitor#visitString` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 8 | `visit_string` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(String,String,TagType,String)` | `crates/mc-nbt/src/ported/field_selector.rs` | 32 | `with_path2` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(String,TagType,String)` | `crates/mc-nbt/src/ported/field_selector.rs` | 23 | `with_path1` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(String,TagType,String)` | `crates/mc-nbt/src/ported/field_tree.rs` | 25 | `with_path1` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(String,TagType,String)` | `crates/mc-nbt/src/ported/skip_fields.rs` | 35 | `with_path1` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(TagType,String)` | `crates/mc-nbt/src/ported/field_selector.rs` | 14 | `new` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(TagType,String)` | `crates/mc-nbt/src/ported/field_tree.rs` | 16 | `new` |
+| `net.minecraft.nbt.visitors.FieldSelector#<init>(TagType,String)` | `crates/mc-nbt/src/ported/skip_fields.rs` | 30 | `new` |
+| `net.minecraft.nbt.visitors.FieldSelector#name` | `crates/mc-nbt/src/ported/field_selector.rs` | 56 | `name` |
+| `net.minecraft.nbt.visitors.FieldSelector#path` | `crates/mc-nbt/src/ported/field_selector.rs` | 46 | `path` |
+| `net.minecraft.nbt.visitors.FieldSelector#type` | `crates/mc-nbt/src/ported/field_selector.rs` | 51 | `tag_type` |
+| `net.minecraft.nbt.visitors.FieldTree#addEntry` | `crates/mc-nbt/src/ported/field_tree.rs` | 57 | `add_entry` |
+| `net.minecraft.nbt.visitors.FieldTree#addEntry` | `crates/mc-nbt/src/ported/skip_fields.rs` | 54 | `add_entry` |
+| `net.minecraft.nbt.visitors.FieldTree#createRoot` | `crates/mc-nbt/src/ported/field_tree.rs` | 52 | `create_root` |
+| `net.minecraft.nbt.visitors.FieldTree#createRoot` | `crates/mc-nbt/src/ported/skip_fields.rs` | 49 | `create_root` |
+| `net.minecraft.nbt.visitors.FieldTree#isSelected` | `crates/mc-nbt/src/ported/field_tree.rs` | 73 | `is_selected` |
+| `net.minecraft.nbt.visitors.FieldTree#isSelected` | `crates/mc-nbt/src/ported/skip_fields.rs` | 74 | `is_selected` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(String)` | `crates/mc-nbt/src/ported/skip_all.rs` | 29 | `visit_string` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(byte)` | `crates/mc-nbt/src/ported/skip_all.rs` | 34 | `visit_byte` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(byte[])` | `crates/mc-nbt/src/ported/skip_all.rs` | 64 | `visit_byte_array` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(double)` | `crates/mc-nbt/src/ported/skip_all.rs` | 59 | `visit_double` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(float)` | `crates/mc-nbt/src/ported/skip_all.rs` | 54 | `visit_float` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(int)` | `crates/mc-nbt/src/ported/skip_all.rs` | 44 | `visit_int` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(int[])` | `crates/mc-nbt/src/ported/skip_all.rs` | 69 | `visit_int_array` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(long)` | `crates/mc-nbt/src/ported/skip_all.rs` | 49 | `visit_long` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(long[])` | `crates/mc-nbt/src/ported/skip_all.rs` | 74 | `visit_long_array` |
+| `net.minecraft.nbt.visitors.SkipAll#visit(short)` | `crates/mc-nbt/src/ported/skip_all.rs` | 39 | `visit_short` |
+| `net.minecraft.nbt.visitors.SkipAll#visitContainerEnd` | `crates/mc-nbt/src/ported/skip_all.rs` | 99 | `visit_container_end` |
+| `net.minecraft.nbt.visitors.SkipAll#visitElement` | `crates/mc-nbt/src/ported/skip_all.rs` | 84 | `visit_element` |
+| `net.minecraft.nbt.visitors.SkipAll#visitEnd` | `crates/mc-nbt/src/ported/skip_all.rs` | 24 | `visit_end` |
+| `net.minecraft.nbt.visitors.SkipAll#visitEntry(TagType)` | `crates/mc-nbt/src/ported/skip_all.rs` | 89 | `visit_entry` |
+| `net.minecraft.nbt.visitors.SkipAll#visitEntry(TagType,String)` | `crates/mc-nbt/src/ported/skip_all.rs` | 94 | `visit_entry_named` |
+| `net.minecraft.nbt.visitors.SkipAll#visitList` | `crates/mc-nbt/src/ported/skip_all.rs` | 79 | `visit_list` |
+| `net.minecraft.nbt.visitors.SkipAll#visitRootEntry` | `crates/mc-nbt/src/ported/skip_all.rs` | 104 | `visit_root_entry` |
+| `net.minecraft.nbt.visitors.SkipFields#<init>` | `crates/mc-nbt/src/ported/skip_fields.rs` | 118 | `new` |
+| `net.minecraft.nbt.visitors.SkipFields#visitContainerEnd` | `crates/mc-nbt/src/ported/skip_fields.rs` | 158 | `visit_container_end` |
+| `net.minecraft.nbt.visitors.SkipFields#visitEntry` | `crates/mc-nbt/src/ported/skip_fields.rs` | 137 | `visit_entry` |
 | `net.minecraft.network.BandwidthDebugMonitor#<init>` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 14 | `new` |
 | `net.minecraft.network.BandwidthDebugMonitor#onReceive` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 22 | `on_receive` |
 | `net.minecraft.network.BandwidthDebugMonitor#tick` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 27 | `tick` |
@@ -193,6 +229,10 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#createClientbound` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 87 | `create_clientbound` |
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#createServerbound` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 97 | `create_serverbound` |
 | `net.minecraft.network.protocol.cookie.ServerCookiePacketListener#handleCookieResponse` | `crates/mc-protocol/src/ported/server_cookie_packet_listener.rs` | 12 | `handle_cookie_response` |
+| `net.minecraft.network.protocol.handshake.ClientIntent#byId` | `crates/mc-protocol/src/ported/client_intent.rs` | 15 | `by_id` |
+| `net.minecraft.network.protocol.handshake.ClientIntent#id` | `crates/mc-protocol/src/ported/client_intent.rs` | 25 | `id` |
+| `net.minecraft.network.protocol.handshake.ServerHandshakePacketListener#handleIntention` | `crates/mc-protocol/src/ported/server_handshake_packet_listener.rs` | 21 | `handle_intention` |
+| `net.minecraft.network.protocol.handshake.ServerHandshakePacketListener#protocol` | `crates/mc-protocol/src/ported/server_handshake_packet_listener.rs` | 16 | `protocol` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 60 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 74 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 146 | `write` |
@@ -223,6 +263,10 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.network.protocol.status.ServerStatusPacketListener#protocol` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 17 | `protocol` |
 | `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket#handle` | `crates/mc-protocol/src/ported/serverbound_status_request_packet.rs` | 82 | `handle` |
 | `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket#type` | `crates/mc-protocol/src/ported/serverbound_status_request_packet.rs` | 74 | `packet_type` |
+| `net.minecraft.network.protocol.status.StatusPacketTypes#CLIENTBOUND_STATUS_RESPONSE` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 67 | `<item>` |
+| `net.minecraft.network.protocol.status.StatusPacketTypes#SERVERBOUND_STATUS_REQUEST` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 71 | `create_clientbound` |
+| `net.minecraft.network.protocol.status.StatusPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 75 | `create_clientbound` |
+| `net.minecraft.network.protocol.status.StatusPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 83 | `create_serverbound` |
 | `net.minecraft.network.syncher.EntityDataAccessor#equals` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 35 | `eq` |
 | `net.minecraft.network.syncher.EntityDataAccessor#hashCode` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 44 | `hash` |
 | `net.minecraft.network.syncher.EntityDataAccessor#toString` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 51 | `fmt` |
@@ -523,6 +567,14 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.util.valueproviders.WeightedListInt#getMinValue` | `crates/mc-math/src/ported/weighted_list_int.rs` | 127 | `get_min_value` |
 | `net.minecraft.util.valueproviders.WeightedListInt#getType` | `crates/mc-math/src/ported/weighted_list_int.rs` | 137 | `get_type` |
 | `net.minecraft.util.valueproviders.WeightedListInt#sample` | `crates/mc-math/src/ported/weighted_list_int.rs` | 122 | `sample` |
+| `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 54 | `get_block_x` |
+| `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 54 | `get_block_x` |
+| `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 59 | `get_block_z` |
+| `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 59 | `get_block_z` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 44 | `get_min_block_x` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 44 | `get_min_block_x` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 49 | `get_min_block_z` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 49 | `get_min_block_z` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.block.state.BlockState#isAir` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 17 | `is_air` |
@@ -570,6 +622,9 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.world.level.levelgen.WorldGenSettings#encode` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 75 | `encode` |
 | `net.minecraft.world.level.levelgen.WorldGenSettings#encode` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 85 | `encode_with_registry_access` |
 | `net.minecraft.world.level.levelgen.WorldGenSettings#options` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 65 | `options` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#<init>` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 33 | `new` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#getGenDepth` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 45 | `get_gen_depth` |
+| `net.minecraft.world.level.levelgen.WorldGenerationContext#getMinGenY` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 40 | `get_min_gen_y` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#seedSlimeChunk` | `crates/mc-math/src/random.rs` | 651 | `seed_slime_chunk` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(RandomSupport$Seed128bit)` | `crates/mc-math/src/random.rs` | 414 | `from_seed128` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(long,long)` | `crates/mc-math/src/random.rs` | 405 | `new` |
@@ -593,6 +648,18 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#<init>` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 46 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#codec` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 51 | `codec` |
+| `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#<init>` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 86 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#CODEC` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 118 | `<item>` |
+| `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#test` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 97 | `test_state` |
+| `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#type` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 102 | `predicate_type` |
+| `net.minecraft.world.level.levelgen.blockpredicates.StateTestingPredicate#test` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 91 | `test` |
+| `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate#<init>` | `crates/mc-worldgen/src/ported/true_block_predicate.rs` | 45 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate#CODEC` | `crates/mc-worldgen/src/ported/true_block_predicate.rs` | 74 | `<item>` |
+| `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate#INSTANCE` | `crates/mc-worldgen/src/ported/true_block_predicate.rs` | 71 | `<item>` |
+| `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate#test` | `crates/mc-worldgen/src/ported/true_block_predicate.rs` | 50 | `test` |
+| `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate#type` | `crates/mc-worldgen/src/ported/true_block_predicate.rs` | 55 | `predicate_type` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 76 | `config` |
@@ -657,6 +724,14 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
+| `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 129 | `on_top_of_chunk_center` |
+| `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 119 | `on_top_of_chunk_center` |
+| `net.minecraft.world.level.levelgen.structure.Structure#simpleCodec` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 17 | `simple_codec` |
+| `net.minecraft.world.level.levelgen.structure.Structure#simpleCodec` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 17 | `simple_codec` |
+| `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 102 | `chunk_pos` |
+| `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 92 | `chunk_pos` |
+| `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#random` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 97 | `random` |
+| `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#random` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 87 | `random` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
@@ -666,12 +741,31 @@ Total mapped Java symbols: **542** across **182** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#spawns` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 33 | `spawns` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride$BoundingBoxType#getSerializedName` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 47 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces.BuriedTreasurePiece#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 82 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 159 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#CODEC` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 187 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 164 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#generatePieces` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 171 | `generate_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#type` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 181 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#<init>` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 149 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#CODEC` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 176 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 154 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#generatePieces` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 161 | `generate_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#type` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 170 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 67 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#<init>` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 52 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#getType` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 68 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#test` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 63 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LiquidSettings#getSerializedName` | `crates/mc-worldgen/src/ported/liquid_settings.rs` | 21 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.NopProcessor#<init>` | `crates/mc-worldgen/src/ported/nop_processor.rs` | 35 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.NopProcessor#getType` | `crates/mc-worldgen/src/ported/nop_processor.rs` | 40 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.PosAlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/pos_always_true_test.rs` | 65 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.PosAlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/pos_always_true_test.rs` | 87 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.PosAlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/pos_always_true_test.rs` | 76 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest#getType` | `crates/mc-worldgen/src/ported/pos_rule_test.rs` | 59 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest#test` | `crates/mc-worldgen/src/ported/pos_rule_test.rs` | 50 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#getType` | `crates/mc-worldgen/src/ported/rule_test.rs` | 53 | `get_type` |
