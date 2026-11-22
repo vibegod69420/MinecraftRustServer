@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **620** across **203** classes.
+Total mapped Java symbols: **622** across **204** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -182,6 +182,8 @@ Total mapped Java symbols: **620** across **203** classes.
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 11 | `new_parse_error` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 19 | `new_invalid_index` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 27 | `new_with_cause` |
+| `net.minecraft.network.chat.contents.data.DataSource#codec` | `crates/mc-protocol/src/ported/data_source.rs` | 47 | `codec` |
+| `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/data_source.rs` | 41 | `get_data` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#codec` | `crates/mc-protocol/src/ported/object_info.rs` | 41 | `codec` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#description` | `crates/mc-protocol/src/ported/object_info.rs` | 38 | `description` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#fontDescription` | `crates/mc-protocol/src/ported/object_info.rs` | 35 | `font_description` |
