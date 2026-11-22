@@ -145,3 +145,7 @@ pub mod trunk_vine_decorator;
 pub mod attached_to_logs_decorator;
 pub mod cocoa_decorator;
 pub mod tree_decorator_type;
+pub mod random_pool_alias;
+pub mod straight_trunk_placer;
+pub mod trunk_placer_type;
+pub mod mega_jungle_trunk_placer;
