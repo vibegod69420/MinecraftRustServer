@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 21:04:01 UTC",
-  "updated_epoch": 1795381441,
+  "updated_at": "2026-11-22 21:04:04 UTC",
+  "updated_epoch": 1795381444,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 0.4747,
     "method_coverage_pct": 0.225,
     "harness_verified_classes": 7,
-    "harness_failed_attempts": 1
+    "harness_failed_attempts": 2
   },
   "crates": [
     {
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 12,
-    "prompt_tokens": 13438,
-    "completion_tokens": 128583,
-    "reasoning_tokens": 95978,
-    "avg_latency_s": 130.9
+    "calls_total": 13,
+    "prompt_tokens": 15140,
+    "completion_tokens": 130226,
+    "reasoning_tokens": 96013,
+    "avg_latency_s": 122.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T21:04:04Z",
+      "class_name": "net.minecraft.util.valueproviders.SampledFloat",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 137.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T21:01:47Z",
       "class_name": "net.minecraft.util.profiling.metrics.ProfilerMeasured",
@@ -112,6 +120,11 @@
     }
   ],
   "recent_commits": [
+    {
+      "sha": "30ee2b6",
+      "ts": "2026-11-22T21:04:01+00:00",
+      "message": "Worker sync: 150 mapped Java methods"
+    },
     {
       "sha": "367732d",
       "ts": "2026-11-22T21:02:01+00:00",
@@ -180,11 +193,6 @@
     {
       "sha": "7381093",
       "ts": "2026-11-22T20:44:02+00:00",
-      "message": "Worker sync: 134 mapped Java methods"
-    },
-    {
-      "sha": "b4b91d1",
-      "ts": "2026-11-22T20:42:01+00:00",
       "message": "Worker sync: 134 mapped Java methods"
     }
   ]

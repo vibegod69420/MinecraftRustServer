@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 21:04:01 UTC
+- **Updated**: 2026-11-22 21:04:04 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 150 / 66676 (0.225%)
 - **Mapped Java Classes**: 34 / 7163 (0.475%)
@@ -12,6 +12,7 @@
 - `mc-nbt`: 6 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.valueproviders.SampledFloat` -> `mc-math` (137.4s)
 - [PASS] `net.minecraft.util.profiling.metrics.ProfilerMeasured` -> `mc-math` (110.0s)
 - [PASS] `net.minecraft.util.CryptException` -> `mc-math` (119.5s)
 - [PASS] `net.minecraft.util.profiling.jfr.callback.ProfiledDuration` -> `mc-math` (119.7s)
