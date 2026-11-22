@@ -87,3 +87,7 @@ pub mod serverbound_player_input_packet;
 pub mod clientbound_player_combat_enter_packet;
 pub mod serverbound_change_difficulty_packet;
 pub mod clientbound_set_cursor_item_packet;
+pub mod handler_names;
+pub mod protocol_info;
+pub mod rate_kicking_connection;
+pub mod packet_send_listener;
