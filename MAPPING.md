@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2001** across **553** classes.
+Total mapped Java symbols: **2031** across **558** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -251,6 +251,22 @@ Total mapped Java symbols: **2001** across **553** classes.
 | `net.minecraft.core.WritableRegistry#createRegistrationLookup` | `crates/mc-math/src/ported/writable_registry.rs` | 95 | `create_registration_lookup` |
 | `net.minecraft.core.WritableRegistry#isEmpty` | `crates/mc-math/src/ported/writable_registry.rs` | 92 | `is_empty` |
 | `net.minecraft.core.WritableRegistry#register` | `crates/mc-math/src/ported/writable_registry.rs` | 81 | `register` |
+| `net.minecraft.core.component.DataComponentExactPredicate#<init>` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 185 | `new` |
+| `net.minecraft.core.component.DataComponentExactPredicate#allOf` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 202 | `all_of` |
+| `net.minecraft.core.component.DataComponentExactPredicate#alwaysMatches` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 245 | `always_matches` |
+| `net.minecraft.core.component.DataComponentExactPredicate#asPatch` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 250 | `as_patch` |
+| `net.minecraft.core.component.DataComponentExactPredicate#builder` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 192 | `builder` |
+| `net.minecraft.core.component.DataComponentExactPredicate#equals` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 281 | `eq` |
+| `net.minecraft.core.component.DataComponentExactPredicate#expect` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 197 | `expect` |
+| `net.minecraft.core.component.DataComponentExactPredicate#hashCode` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 223 | `hash_code` |
+| `net.minecraft.core.component.DataComponentExactPredicate#isEmpty` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 218 | `is_empty` |
+| `net.minecraft.core.component.DataComponentExactPredicate#someOf` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 207 | `some_of` |
+| `net.minecraft.core.component.DataComponentExactPredicate#test` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 234 | `test` |
+| `net.minecraft.core.component.DataComponentExactPredicate#toString` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 290 | `fmt` |
+| `net.minecraft.core.component.DataComponentExactPredicate$Builder#<init>` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 309 | `new` |
+| `net.minecraft.core.component.DataComponentExactPredicate$Builder#build` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 342 | `build` |
+| `net.minecraft.core.component.DataComponentExactPredicate$Builder#expect` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 316 | `expect_typed` |
+| `net.minecraft.core.component.DataComponentExactPredicate$Builder#expect` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 323 | `expect` |
 | `net.minecraft.core.component.DataComponentHolder#get` | `crates/mc-math/src/ported/data_component_holder.rs` | 35 | `get` |
 | `net.minecraft.core.component.DataComponentHolder#getAllOfType` | `crates/mc-math/src/ported/data_component_holder.rs` | 42 | `get_all_of_type` |
 | `net.minecraft.core.component.DataComponentHolder#getComponents` | `crates/mc-math/src/ported/data_component_holder.rs` | 32 | `components` |
@@ -259,6 +275,20 @@ Total mapped Java symbols: **2001** across **553** classes.
 | `net.minecraft.core.component.DataComponentPatch#builder` | `crates/mc-nbt/src/ported/set_components_function.rs` | 19 | `builder` |
 | `net.minecraft.core.component.DataComponentPatch$Builder#build` | `crates/mc-nbt/src/ported/set_components_function.rs` | 36 | `build` |
 | `net.minecraft.core.component.DataComponentPatch$Builder#set` | `crates/mc-nbt/src/ported/set_components_function.rs` | 30 | `set` |
+| `net.minecraft.core.component.DataComponentType#builder` | `crates/mc-math/src/ported/data_component_type.rs` | 133 | `builder` |
+| `net.minecraft.core.component.DataComponentType#codec` | `crates/mc-math/src/ported/data_component_type.rs` | 110 | `codec` |
+| `net.minecraft.core.component.DataComponentType#codec` | `crates/mc-math/src/ported/data_component_type.rs` | 252 | `codec` |
+| `net.minecraft.core.component.DataComponentType#codecOrThrow` | `crates/mc-math/src/ported/data_component_type.rs` | 113 | `codec_or_throw` |
+| `net.minecraft.core.component.DataComponentType#ignoreSwapAnimation` | `crates/mc-math/src/ported/data_component_type.rs` | 126 | `ignore_swap_animation` |
+| `net.minecraft.core.component.DataComponentType#ignoreSwapAnimation` | `crates/mc-math/src/ported/data_component_type.rs` | 247 | `ignore_swap_animation` |
+| `net.minecraft.core.component.DataComponentType#isTransient` | `crates/mc-math/src/ported/data_component_type.rs` | 121 | `is_transient` |
+| `net.minecraft.core.component.DataComponentType#streamCodec` | `crates/mc-math/src/ported/data_component_type.rs` | 129 | `stream_codec` |
+| `net.minecraft.core.component.DataComponentType#streamCodec` | `crates/mc-math/src/ported/data_component_type.rs` | 257 | `stream_codec` |
+| `net.minecraft.core.component.DataComponentType$Builder#build` | `crates/mc-math/src/ported/data_component_type.rs` | 180 | `build` |
+| `net.minecraft.core.component.DataComponentType$Builder#cacheEncoding` | `crates/mc-math/src/ported/data_component_type.rs` | 168 | `cache_encoding` |
+| `net.minecraft.core.component.DataComponentType$Builder#ignoreSwapAnimation` | `crates/mc-math/src/ported/data_component_type.rs` | 174 | `ignore_swap_animation` |
+| `net.minecraft.core.component.DataComponentType$Builder#networkSynchronized` | `crates/mc-math/src/ported/data_component_type.rs` | 159 | `network_synchronized` |
+| `net.minecraft.core.component.DataComponentType$Builder#persistent` | `crates/mc-math/src/ported/data_component_type.rs` | 153 | `persistent` |
 | `net.minecraft.core.component.predicates.AnyValue#matches` | `crates/mc-math/src/ported/any_value.rs` | 31 | `matches` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#componentType` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 166 | `component_type` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#matches` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 171 | `matches` |
@@ -1223,6 +1253,10 @@ Total mapped Java symbols: **2001** across **553** classes.
 | `net.minecraft.network.protocol.login.ServerLoginPacketListener#handleKey` | `crates/mc-protocol/src/ported/server_login_packet_listener.rs` | 29 | `handle_key` |
 | `net.minecraft.network.protocol.login.ServerLoginPacketListener#handleLoginAcknowledgement` | `crates/mc-protocol/src/ported/server_login_packet_listener.rs` | 35 | `handle_login_acknowledgement` |
 | `net.minecraft.network.protocol.login.ServerLoginPacketListener#protocol` | `crates/mc-protocol/src/ported/server_login_packet_listener.rs` | 21 | `protocol` |
+| `net.minecraft.network.protocol.login.ServerboundHelloPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_hello_packet.rs` | 220 | `read` |
+| `net.minecraft.network.protocol.login.ServerboundHelloPacket#handle` | `crates/mc-protocol/src/ported/serverbound_hello_packet.rs` | 238 | `handle` |
+| `net.minecraft.network.protocol.login.ServerboundHelloPacket#type` | `crates/mc-protocol/src/ported/serverbound_hello_packet.rs` | 233 | `get_type` |
+| `net.minecraft.network.protocol.login.ServerboundHelloPacket#write` | `crates/mc-protocol/src/ported/serverbound_hello_packet.rs` | 227 | `write` |
 | `net.minecraft.network.protocol.login.ServerboundLoginAcknowledgedPacket#handle` | `crates/mc-protocol/src/ported/serverbound_login_acknowledged_packet.rs` | 29 | `handle` |
 | `net.minecraft.network.protocol.login.ServerboundLoginAcknowledgedPacket#isTerminal` | `crates/mc-protocol/src/ported/serverbound_login_acknowledged_packet.rs` | 34 | `is_terminal` |
 | `net.minecraft.network.protocol.login.ServerboundLoginAcknowledgedPacket#type` | `crates/mc-protocol/src/ported/serverbound_login_acknowledged_packet.rs` | 24 | `get_type` |

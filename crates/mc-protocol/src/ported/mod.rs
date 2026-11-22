@@ -115,3 +115,4 @@ pub mod serverbound_configuration_acknowledged_packet;
 pub mod clientbound_recipe_book_remove_packet;
 pub mod clientbound_set_time_packet;
 pub mod clientbound_cooldown_packet;
+pub mod serverbound_hello_packet;
