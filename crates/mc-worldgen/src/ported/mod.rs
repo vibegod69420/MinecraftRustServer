@@ -65,3 +65,7 @@ pub mod twisting_vines_config;
 pub mod simple_block_configuration;
 pub mod layer_configuration;
 pub mod column_feature_configuration;
+pub mod pos_rule_test_type;
+pub mod rule_test_type;
+pub mod random_block_state_match_test;
+pub mod random_block_match_test;

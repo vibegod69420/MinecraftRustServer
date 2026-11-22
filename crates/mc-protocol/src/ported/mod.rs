@@ -68,3 +68,5 @@ pub mod clientbound_clear_dialog_packet;
 pub mod clientbound_disconnect_packet;
 pub mod clientbound_server_links_packet;
 pub mod data_sources;
+pub mod clientbound_bundle_delimiter_packet;
+pub mod clientbound_bundle_packet;
