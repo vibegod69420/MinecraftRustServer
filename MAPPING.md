@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2203** across **583** classes.
+Total mapped Java symbols: **2215** across **586** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -58,6 +58,7 @@ Total mapped Java symbols: **2203** across **583** classes.
 | `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
 | `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
 | `net.minecraft.advancements.criterion.EnchantmentPredicate#containedIn` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 61 | `contained_in` |
+| `net.minecraft.advancements.criterion.ItemPredicate#test` | `crates/mc-nbt/src/ported/match_tool.rs` | 56 | `test` |
 | `net.minecraft.advancements.criterion.MinMaxBounds$Ints#matches(int)` | `crates/mc-math/src/ported/damage_predicate.rs` | 42 | `matches` |
 | `net.minecraft.advancements.criterion.MinMaxBounds.Ints#matches` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 41 | `matches` |
 | `net.minecraft.core.AxisCycle#between(Direction$Axis,Direction$Axis)` | `crates/mc-math/src/ported/axis_cycle.rs` | 91 | `between` |
@@ -2563,6 +2564,12 @@ Total mapped Java symbols: **2203** across **583** classes.
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 28 | `unwrap_builder` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 11 | `when_condition` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 14 | `when_mapped` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#active` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 64 | `active` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#enchantmentActiveCheck` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 69 | `enchantment_active_check` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#enchantmentInactiveCheck` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 74 | `enchantment_inactive_check` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#getReferencedContextParams` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 86 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#getType` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 81 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck#test` | `crates/mc-nbt/src/ported/enchantment_active_check.rs` | 93 | `test` |
 | `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#<init>` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 33 | `new` |
 | `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#getReferencedContextParams` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 43 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#getType` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 38 | `get_type` |
@@ -2592,6 +2599,11 @@ Total mapped Java symbols: **2203** across **583** classes.
 | `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#randomChance` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 74 | `random_chance` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#randomChance` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 79 | `random_chance_provider` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#test` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 68 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.MatchTool#getReferencedContextParams` | `crates/mc-nbt/src/ported/match_tool.rs` | 136 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.predicates.MatchTool#getType` | `crates/mc-nbt/src/ported/match_tool.rs` | 131 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.MatchTool#predicate` | `crates/mc-nbt/src/ported/match_tool.rs` | 118 | `predicate` |
+| `net.minecraft.world.level.storage.loot.predicates.MatchTool#test` | `crates/mc-nbt/src/ported/match_tool.rs` | 143 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.MatchTool#toolMatches` | `crates/mc-nbt/src/ported/match_tool.rs` | 123 | `tool_matches` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/loot_nbt_provider_type.rs` | 33 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/nbt_provider.rs` | 27 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/nbt_providers.rs` | 33 | `new` |

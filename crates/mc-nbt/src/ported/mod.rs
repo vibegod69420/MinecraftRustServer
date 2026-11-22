@@ -60,3 +60,5 @@ pub mod file_name_date_formatter;
 pub mod explosion_condition;
 pub mod inverted_loot_item_condition;
 pub mod loot_item_random_chance_condition;
+pub mod enchantment_active_check;
+pub mod match_tool;
