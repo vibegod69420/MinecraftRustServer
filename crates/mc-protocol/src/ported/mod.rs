@@ -138,3 +138,4 @@ pub mod serverbound_client_information_packet;
 pub mod clientbound_resource_pack_pop_packet;
 pub mod player_sprite;
 pub mod atlas_sprite;
+pub mod clientbound_debug_chunk_value_packet;
