@@ -129,3 +129,6 @@ pub mod serverbound_container_button_click_packet;
 pub mod clientbound_forget_level_chunk_packet;
 pub mod protocol_codec_builder;
 pub mod serverbound_ping_request_packet;
+pub mod clientbound_set_simulation_distance_packet;
+pub mod clientbound_delete_chat_packet;
+pub mod clientbound_set_player_inventory_packet;

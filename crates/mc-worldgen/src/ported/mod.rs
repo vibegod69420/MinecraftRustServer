@@ -129,3 +129,5 @@ pub mod pointed_dripstone_configuration;
 pub mod delta_feature_configuration;
 pub mod spring_configuration;
 pub mod spike_configuration;
+pub mod noise_threshold_count_placement;
+pub mod height_range_placement;
