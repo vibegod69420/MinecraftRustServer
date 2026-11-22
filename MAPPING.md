@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1673** across **486** classes.
+Total mapped Java symbols: **1698** across **492** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -865,14 +865,36 @@ Total mapped Java symbols: **1673** across **486** classes.
 | `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener#handleResetChat` | `crates/mc-protocol/src/ported/client_configuration_packet_listener.rs` | 62 | `handle_reset_chat` |
 | `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener#handleSelectKnownPacks` | `crates/mc-protocol/src/ported/client_configuration_packet_listener.rs` | 59 | `handle_select_known_packs` |
 | `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener#protocol` | `crates/mc-protocol/src/ported/client_configuration_packet_listener.rs` | 42 | `protocol` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 27 | `new` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 47 | `encode` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 52 | `decode` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#codeOfConduct` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 32 | `code_of_conduct` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#handle` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 42 | `handle` |
+| `net.minecraft.network.protocol.configuration.ClientboundCodeOfConductPacket#type` | `crates/mc-protocol/src/ported/clientbound_code_of_conduct_packet.rs` | 37 | `type_` |
+| `net.minecraft.network.protocol.configuration.ClientboundFinishConfigurationPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_finish_configuration_packet.rs` | 39 | `encode` |
+| `net.minecraft.network.protocol.configuration.ClientboundFinishConfigurationPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_finish_configuration_packet.rs` | 42 | `decode` |
+| `net.minecraft.network.protocol.configuration.ClientboundFinishConfigurationPacket#handle` | `crates/mc-protocol/src/ported/clientbound_finish_configuration_packet.rs` | 29 | `handle` |
+| `net.minecraft.network.protocol.configuration.ClientboundFinishConfigurationPacket#isTerminal` | `crates/mc-protocol/src/ported/clientbound_finish_configuration_packet.rs` | 34 | `is_terminal` |
+| `net.minecraft.network.protocol.configuration.ClientboundFinishConfigurationPacket#type` | `crates/mc-protocol/src/ported/clientbound_finish_configuration_packet.rs` | 24 | `type_` |
 | `net.minecraft.network.protocol.configuration.ClientboundResetChatPacket#handle` | `crates/mc-protocol/src/ported/clientbound_reset_chat_packet.rs` | 68 | `handle` |
 | `net.minecraft.network.protocol.configuration.ClientboundResetChatPacket#type` | `crates/mc-protocol/src/ported/clientbound_reset_chat_packet.rs` | 63 | `get_type` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#<init>` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 79 | `new` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 99 | `encode` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 107 | `decode` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#handle` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 94 | `handle` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#knownPacks` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 84 | `known_packs` |
+| `net.minecraft.network.protocol.configuration.ClientboundSelectKnownPacks#type` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 89 | `type_` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleAcceptCodeOfConduct` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 38 | `handle_accept_code_of_conduct` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleConfigurationFinished` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 32 | `handle_configuration_finished` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleSelectKnownPacks` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 35 | `handle_select_known_packs` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#protocol` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 27 | `protocol` |
 | `net.minecraft.network.protocol.configuration.ServerboundAcceptCodeOfConductPacket#handle` | `crates/mc-protocol/src/ported/serverbound_accept_code_of_conduct_packet.rs` | 69 | `handle` |
 | `net.minecraft.network.protocol.configuration.ServerboundAcceptCodeOfConductPacket#type` | `crates/mc-protocol/src/ported/serverbound_accept_code_of_conduct_packet.rs` | 64 | `get_type` |
+| `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 39 | `encode` |
+| `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 42 | `decode` |
+| `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#handle` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 29 | `handle` |
+| `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#isTerminal` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 34 | `is_terminal` |
+| `net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket#type` | `crates/mc-protocol/src/ported/serverbound_finish_configuration_packet.rs` | 24 | `type_` |
 | `net.minecraft.network.protocol.cookie.ClientCookiePacketListener#handleRequestCookie` | `crates/mc-protocol/src/ported/client_cookie_packet_listener.rs` | 12 | `handle_request_cookie` |
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#CLIENTBOUND_COOKIE_REQUEST` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 107 | `clientbound_cookie_request` |
 | `net.minecraft.network.protocol.cookie.CookiePacketTypes#SERVERBOUND_COOKIE_RESPONSE` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 112 | `serverbound_cookie_response` |
@@ -1008,6 +1030,12 @@ Total mapped Java symbols: **1673** across **486** classes.
 | `net.minecraft.server.network.Filterable#raw` | `crates/mc-math/src/ported/writable_book_predicate.rs` | 13 | `raw` |
 | `net.minecraft.server.network.ServerGamePacketListenerImpl#sendDisguisedChatMessage` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 51 | `send_disguised_chat_message` |
 | `net.minecraft.server.network.ServerGamePacketListenerImpl#sendPlayerChatMessage` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 56 | `send_player_chat_message` |
+| `net.minecraft.server.packs.repository.KnownPack#<init>` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 25 | `new` |
+| `net.minecraft.server.packs.repository.KnownPack#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 49 | `encode` |
+| `net.minecraft.server.packs.repository.KnownPack#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 56 | `decode` |
+| `net.minecraft.server.packs.repository.KnownPack#id` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 39 | `id` |
+| `net.minecraft.server.packs.repository.KnownPack#namespace` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 34 | `namespace` |
+| `net.minecraft.server.packs.repository.KnownPack#version` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 44 | `version` |
 | `net.minecraft.tags.TagKey#create(...)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 44 | `new` |
 | `net.minecraft.util.ARGB#alpha` | `crates/mc-math/src/ported/color_particle_option.rs` | 8 | `argb_alpha` |
 | `net.minecraft.util.ARGB#as8BitChannel` | `crates/mc-math/src/ported/color_particle_option.rs` | 33 | `as8bit_channel` |
@@ -1936,6 +1964,8 @@ Total mapped Java symbols: **1673** across **486** classes.
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 28 | `unwrap_builder` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 11 | `when_condition` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 14 | `when_mapped` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemConditionType#<init>` | `crates/mc-nbt/src/ported/loot_item_condition_type.rs` | 58 | `new` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemConditionType#codec` | `crates/mc-nbt/src/ported/loot_item_condition_type.rs` | 63 | `codec` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 75 | `<item>` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition#<init>` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 88 | `new` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition#CODEC` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 83 | `codec` |

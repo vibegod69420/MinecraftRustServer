@@ -91,3 +91,7 @@ pub mod handler_names;
 pub mod protocol_info;
 pub mod rate_kicking_connection;
 pub mod packet_send_listener;
+pub mod clientbound_code_of_conduct_packet;
+pub mod clientbound_finish_configuration_packet;
+pub mod serverbound_finish_configuration_packet;
+pub mod clientbound_select_known_packs;
