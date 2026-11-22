@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **430** across **142** classes.
+Total mapped Java symbols: **434** across **144** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -549,6 +549,10 @@ Total mapped Java symbols: **430** across **142** classes.
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 115 | `find_collision_piece` |
+| `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#<init>` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 20 | `new` |
+| `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#boundingBox` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 28 | `bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#spawns` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 33 | `spawns` |
+| `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride$BoundingBoxType#getSerializedName` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 47 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |

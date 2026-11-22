@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:08:01 UTC",
-  "updated_epoch": 1795385281,
+  "updated_at": "2026-11-22 22:09:41 UTC",
+  "updated_epoch": 1795385381,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 142,
-    "mapped_methods": 430,
-    "class_coverage_pct": 1.9824,
-    "method_coverage_pct": 0.6449,
-    "harness_verified_classes": 90,
-    "harness_failed_attempts": 11
+    "mapped_classes": 144,
+    "mapped_methods": 434,
+    "class_coverage_pct": 2.0103,
+    "method_coverage_pct": 0.6509,
+    "harness_verified_classes": 91,
+    "harness_failed_attempts": 12
   },
   "crates": [
     {
@@ -43,17 +43,33 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 99
+      "mapped_methods": 103
     }
   ],
   "usage": {
-    "calls_total": 99,
-    "prompt_tokens": 125520,
-    "completion_tokens": 865607,
-    "reasoning_tokens": 613621,
-    "avg_latency_s": 127.5
+    "calls_total": 100,
+    "prompt_tokens": 126682,
+    "completion_tokens": 872558,
+    "reasoning_tokens": 619317,
+    "avg_latency_s": 127.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:09:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 106.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:09:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureSpawnOverride",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 106.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:07:39Z",
       "class_name": "net.minecraft.network.protocol.BundlePacket",
@@ -357,25 +373,14 @@
       "verified": true,
       "seconds": 103.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:04:51Z",
-      "class_name": "net.minecraft.util.valueproviders.ConstantFloat",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 297.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:04:51Z",
-      "class_name": "net.minecraft.util.valueproviders.ConstantInt",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 297.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b6d5417",
+      "ts": "2026-11-22T22:08:01+00:00",
+      "message": "Worker sync: 430 mapped Java methods"
+    },
     {
       "sha": "8614ca7",
       "ts": "2026-11-22T22:07:53+00:00",
@@ -445,11 +450,6 @@
       "sha": "20cb2c8",
       "ts": "2026-11-22T21:57:27+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "3136d1f",
-      "ts": "2026-11-22T21:56:01+00:00",
-      "message": "Worker sync: 194 mapped Java methods"
     }
   ]
 }
