@@ -1,1 +1,1 @@
-{"state": "generating", "class_name": "net.minecraft.util.parsing.packrat.SuggestionSupplier", "crate": "mc-math", "attempt": 3, "verified_count": 14, "ts": "2026-11-22T21:31:01Z"}
+{"state": "testing", "class_name": "net.minecraft.util.parsing.packrat.SuggestionSupplier", "crate": "mc-math", "attempt": 3, "verified_count": 14, "ts": "2026-11-22T21:34:51Z"}

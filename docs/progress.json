@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 21:34:01 UTC",
-  "updated_epoch": 1795383241,
+  "updated_at": "2026-11-22 21:34:53 UTC",
+  "updated_epoch": 1795383293,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 41,
-    "mapped_methods": 168,
-    "class_coverage_pct": 0.5724,
-    "method_coverage_pct": 0.252,
-    "harness_verified_classes": 14,
+    "mapped_classes": 42,
+    "mapped_methods": 170,
+    "class_coverage_pct": 0.5863,
+    "method_coverage_pct": 0.255,
+    "harness_verified_classes": 15,
     "harness_failed_attempts": 2
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 188
+      "mapped_methods": 196
     },
     {
       "name": "mc-nbt",
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 24,
-    "prompt_tokens": 26942,
-    "completion_tokens": 242804,
-    "reasoning_tokens": 184510,
-    "avg_latency_s": 133.1
+    "calls_total": 25,
+    "prompt_tokens": 28603,
+    "completion_tokens": 258197,
+    "reasoning_tokens": 196232,
+    "avg_latency_s": 137.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T21:34:53Z",
+      "class_name": "net.minecraft.util.parsing.packrat.SuggestionSupplier",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 593.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T21:24:59Z",
       "class_name": "net.minecraft.util.KeyDispatchDataCodec",
@@ -177,6 +185,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "647ef99",
+      "ts": "2026-11-22T21:34:01+00:00",
+      "message": "Worker sync: 168 mapped Java methods"
+    },
+    {
       "sha": "246ff6f",
       "ts": "2026-11-22T21:32:02+00:00",
       "message": "Worker sync: 168 mapped Java methods"
@@ -245,11 +258,6 @@
       "sha": "1e95af0",
       "ts": "2026-11-22T21:13:38+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "501af81",
-      "ts": "2026-11-22T21:12:01+00:00",
-      "message": "Worker sync: 158 mapped Java methods"
     }
   ]
 }

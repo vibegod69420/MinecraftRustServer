@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **168** across **41** classes.
+Total mapped Java symbols: **170** across **42** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -120,6 +120,14 @@ Total mapped Java symbols: **168** across **41** classes.
 | `net.minecraft.util.parsing.packrat.ErrorEntry#reason` | `crates/mc-math/src/ported/error_entry.rs` | 106 | `reason` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#suggestions` | `crates/mc-math/src/ported/error_entry.rs` | 101 | `suggestions` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#toString` | `crates/mc-math/src/ported/error_entry.rs` | 153 | `fmt` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#empty` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 98 | `empty` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 54 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 104 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 286 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 308 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 350 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 395 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 429 | `possible_values` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 18 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 82 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCounters` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 21 | `get_counters` |
