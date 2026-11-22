@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **166** across **40** classes.
+Total mapped Java symbols: **168** across **41** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -37,6 +37,8 @@ Total mapped Java symbols: **166** across **40** classes.
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |
+| `net.minecraft.util.KeyDispatchDataCodec#codec` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 81 | `codec` |
+| `net.minecraft.util.KeyDispatchDataCodec#of` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 86 | `of` |
 | `net.minecraft.util.Mth#atan2` | `crates/mc-math/src/mth.rs` | 364 | `atan2` |
 | `net.minecraft.util.Mth#ceil(double)` | `crates/mc-math/src/mth.rs` | 160 | `ceil_f64` |
 | `net.minecraft.util.Mth#ceil(float)` | `crates/mc-math/src/mth.rs` | 149 | `ceil_f32` |

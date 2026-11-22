@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 21:24:01 UTC",
-  "updated_epoch": 1795382641,
+  "updated_at": "2026-11-22 21:24:59 UTC",
+  "updated_epoch": 1795382699,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 40,
-    "mapped_methods": 166,
-    "class_coverage_pct": 0.5584,
-    "method_coverage_pct": 0.249,
-    "harness_verified_classes": 13,
+    "mapped_classes": 41,
+    "mapped_methods": 168,
+    "class_coverage_pct": 0.5724,
+    "method_coverage_pct": 0.252,
+    "harness_verified_classes": 14,
     "harness_failed_attempts": 2
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 186
+      "mapped_methods": 188
     },
     {
       "name": "mc-nbt",
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 21,
-    "prompt_tokens": 23298,
-    "completion_tokens": 203328,
-    "reasoning_tokens": 151096,
-    "avg_latency_s": 126.9
+    "calls_total": 22,
+    "prompt_tokens": 24274,
+    "completion_tokens": 214446,
+    "reasoning_tokens": 160019,
+    "avg_latency_s": 128.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T21:24:59Z",
+      "class_name": "net.minecraft.util.KeyDispatchDataCodec",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 209.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T21:21:30Z",
       "class_name": "net.minecraft.util.parsing.packrat.Atom",
@@ -169,6 +177,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "b15ab3c",
+      "ts": "2026-11-22T21:24:01+00:00",
+      "message": "Worker sync: 166 mapped Java methods"
+    },
+    {
       "sha": "20f5a9e",
       "ts": "2026-11-22T21:22:01+00:00",
       "message": "Worker sync: 166 mapped Java methods"
@@ -237,11 +250,6 @@
       "sha": "0f15515",
       "ts": "2026-11-22T21:06:01+00:00",
       "message": "Worker sync: 150 mapped Java methods"
-    },
-    {
-      "sha": "6c81326",
-      "ts": "2026-11-22T21:04:04+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
