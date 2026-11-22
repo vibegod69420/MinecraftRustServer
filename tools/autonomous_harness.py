@@ -418,6 +418,59 @@ def build_work_units(
     return units
 
 
+def _extract_crate_api_summary(crate: str, limit: int = 3000, per_file_limit: int = 650) -> str:
+    """Return a compact public struct/enum/trait/impl signature summary from top-level crate sources."""
+    src_dir = CRATES_DIR / crate / "src"
+    if not src_dir.exists():
+        return ""
+    lines_out: list[str] = []
+    total_chars = 0
+    for rs in sorted(src_dir.glob("*.rs")):
+        if rs.name == "lib.rs":
+            continue
+        file_sigs: list[str] = []
+        in_pub_trait = False
+        for raw in rs.read_text(encoding="utf-8", errors="ignore").splitlines():
+            stripped = raw.strip()
+            if not stripped or stripped.startswith("//"):
+                continue
+            indent = len(raw) - len(raw.lstrip(" "))
+            if indent == 0:
+                if stripped == "}":
+                    in_pub_trait = False
+                    continue
+                if stripped.startswith("pub trait "):
+                    in_pub_trait = True
+                elif stripped.startswith(("impl ", "pub struct ", "pub enum ")):
+                    in_pub_trait = False
+                is_sig = stripped.startswith(("pub struct ", "pub enum ", "pub trait ", "pub fn ", "pub type ", "impl "))
+            elif indent <= 4:
+                is_sig = stripped.startswith("pub fn ") or (in_pub_trait and stripped.startswith("fn "))
+            else:
+                is_sig = False
+            if not is_sig:
+                continue
+            sig = stripped.split("{", 1)[0].strip()
+            if indent > 0:
+                sig = "    " + sig
+            if len(sig) > 120:
+                sig = sig[:117] + "..."
+            file_sigs.append(sig)
+        if not file_sigs:
+            continue
+        block = f"// crate::{rs.stem}\n" + "\n".join(file_sigs)
+        if len(block) > per_file_limit:
+            block = block[:per_file_limit].rsplit("\n", 1)[0] + "\n// ..."
+        if total_chars + len(block) > limit:
+            remaining = limit - total_chars
+            if remaining > 120:
+                lines_out.append(block[:remaining].rsplit("\n", 1)[0] + "\n// ...")
+            break
+        lines_out.append(block)
+        total_chars += len(block) + 2
+    return "\n\n".join(lines_out)
+
+
 def read_crate_context(crate: str) -> str:
     lib_rs = CRATES_DIR / crate / "src" / "lib.rs"
     cargo_toml = CRATES_DIR / crate / "Cargo.toml"
@@ -426,6 +479,9 @@ def read_crate_context(crate: str) -> str:
         parts.append(f"### {crate}/Cargo.toml\n```toml\n{cargo_toml.read_text(encoding='utf-8')}\n```")
     if lib_rs.exists():
         parts.append(f"### {crate}/src/lib.rs\n```rust\n{lib_rs.read_text(encoding='utf-8')[:4000]}\n```")
+    api_summary = _extract_crate_api_summary(crate)
+    if api_summary:
+        parts.append(f"### {crate} public API signatures\n```rust\n{api_summary}\n```")
     return "\n\n".join(parts)
 
 
@@ -565,8 +621,8 @@ def port_batch(batch: list[dict]) -> tuple[list[dict], list[dict]]:
                 efforts = ["medium", "high", "max"]
                 budgets = [24576, 49152, 65536]
             else:
-                efforts = ["low", "medium", "high"]
-                budgets = [12288, 24576, 49152]
+                efforts = ["off", "medium", "high"]
+                budgets = [16384, 32768, 49152]
 
             lead = remaining[0]
             set_worker_activity(lead["fqcn"], crate, attempt, "generating")
@@ -647,6 +703,7 @@ def port_batch(batch: list[dict]) -> tuple[list[dict], list[dict]]:
                 if clean_code is not None:
                     valid_items.append((c, clean_code))
                 else:
+                    log(f"  [{c['fqcn']} attempt {attempt}] validation failed: {invalid_reason}")
                     next_feedback[c["mod"]] = (
                         f"Previous attempt for `{c['mod']}.rs` failed validation ({invalid_reason}). "
                         f"Output a valid safe ```rust block preceded by `// === FILE: {c['mod']}.rs ===` with `#[cfg(test)]` unit tests.\n"
@@ -767,7 +824,7 @@ def run_forever() -> None:
                 info = deepai_backend.preflight()
                 log(
                     f"DeepAI ready: {info['model']} | keys={info['key_count']} | "
-                    f"context={info['context_window']} | adaptive effort (low->high / med->max)"
+                    f"context={info['context_window']} | adaptive effort (off->med->high / med->high->max)"
                 )
             except Exception as exc:
                 log(f"DeepAI preflight failed ({exc}); retrying in 120s")
