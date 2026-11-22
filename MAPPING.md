@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2410** across **613** classes.
+Total mapped Java symbols: **2427** across **618** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1668,6 +1668,12 @@ Total mapped Java symbols: **2410** across **613** classes.
 | `net.minecraft.network.protocol.ping.PingPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 43 | `create_clientbound` |
 | `net.minecraft.network.protocol.ping.PingPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 51 | `create_serverbound` |
 | `net.minecraft.network.protocol.ping.ServerPingPacketListener#handlePingRequest` | `crates/mc-protocol/src/ported/server_ping_packet_listener.rs` | 18 | `handle_ping_request` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#<init>(ByteBuf)` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 35 | `read` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#<init>(long)` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 30 | `new` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#getTime` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 57 | `get_time` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#handle` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 52 | `handle` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#type` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 47 | `packet_type` |
+| `net.minecraft.network.protocol.ping.ServerboundPingRequestPacket#write` | `crates/mc-protocol/src/ported/serverbound_ping_request_packet.rs` | 42 | `write` |
 | `net.minecraft.network.protocol.status.ClientStatusPacketListener#handleStatusResponse` | `crates/mc-protocol/src/ported/client_status_packet_listener.rs` | 24 | `handle_status_response` |
 | `net.minecraft.network.protocol.status.ClientStatusPacketListener#protocol` | `crates/mc-protocol/src/ported/client_status_packet_listener.rs` | 19 | `protocol` |
 | `net.minecraft.network.protocol.status.ServerStatusPacketListener#handleStatusRequest` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 22 | `handle_status_request` |
@@ -2296,6 +2302,11 @@ Total mapped Java symbols: **2410** across **613** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#<init>` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 47 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#<init>` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 54 | `with_provider` |
 | `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#count` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 59 | `count` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/delta_feature_configuration.rs` | 14 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration#contents` | `crates/mc-worldgen/src/ported/delta_feature_configuration.rs` | 24 | `contents` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration#rim` | `crates/mc-worldgen/src/ported/delta_feature_configuration.rs` | 29 | `rim` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration#rimSize` | `crates/mc-worldgen/src/ported/delta_feature_configuration.rs` | 39 | `rim_size` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration#size` | `crates/mc-worldgen/src/ported/delta_feature_configuration.rs` | 34 | `size` |
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#<init>` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 37 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#halfHeight` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 67 | `half_height` |
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#radius` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 62 | `radius` |
@@ -2333,6 +2344,7 @@ Total mapped Java symbols: **2410** across **613** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 30 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration#target` | `crates/mc-worldgen/src/ported/replace_block_configuration.rs` | 50 | `target` |
+| `net.minecraft.world.level.levelgen.feature.configurations.PointedDripstoneConfiguration#<init>` | `crates/mc-worldgen/src/ported/pointed_dripstone_configuration.rs` | 14 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 13 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 23 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.RandomBooleanFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/random_boolean_feature_configuration.rs` | 51 | `new` |
@@ -2363,6 +2375,12 @@ Total mapped Java symbols: **2410** across **613** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration#toPlace` | `crates/mc-worldgen/src/ported/simple_block_configuration.rs` | 36 | `to_place` |
 | `net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 76 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 83 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#<init>` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 26 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#<init>` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 35 | `from_optional` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#getCrystalBeamTarget` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 58 | `get_crystal_beam_target` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#getSpikes` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 53 | `get_spikes` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#isCrystalInvulnerable` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 48 | `is_crystal_invulnerable` |
+| `net.minecraft.world.level.levelgen.feature.configurations.SpringConfiguration#<init>` | `crates/mc-worldgen/src/ported/spring_configuration.rs` | 15 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#TwistingVinesConfig` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 17 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#maxHeight` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 36 | `max_height` |

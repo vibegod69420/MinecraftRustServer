@@ -128,3 +128,4 @@ pub mod serverbound_chunk_batch_received_packet;
 pub mod serverbound_container_button_click_packet;
 pub mod clientbound_forget_level_chunk_packet;
 pub mod protocol_codec_builder;
+pub mod serverbound_ping_request_packet;

@@ -125,3 +125,7 @@ pub mod random_group_pool_alias;
 pub mod structure_placement_type;
 pub mod surface_water_depth_filter;
 pub mod placement_context;
+pub mod pointed_dripstone_configuration;
+pub mod delta_feature_configuration;
+pub mod spring_configuration;
+pub mod spike_configuration;
