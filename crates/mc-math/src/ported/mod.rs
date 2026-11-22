@@ -61,3 +61,7 @@ pub mod custom_data_predicate;
 pub mod fireworks_predicate;
 pub mod trim_predicate;
 pub mod writable_book_predicate;
+pub mod optional_dispense_item_behavior;
+pub mod block_source;
+pub mod shulker_box_dispense_behavior;
+pub mod equipment_dispense_item_behavior;
