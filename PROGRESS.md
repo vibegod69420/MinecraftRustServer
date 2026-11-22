@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:18:58 UTC
+- **Updated**: 2026-11-22 22:20:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 712 / 66676 (1.068%)
 - **Mapped Java Classes**: 239 / 7163 (3.337%)
@@ -14,6 +14,12 @@
 - `mc-worldgen`: 223 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate` -> `mc-worldgen` (478.3s)
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate` -> `mc-worldgen` (478.3s)
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.AnyOfPredicate` -> `mc-worldgen` (478.3s)
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate` -> `mc-worldgen` (478.3s)
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate` -> `mc-worldgen` (478.3s)
+- [PASS] `net.minecraft.world.level.levelgen.blockpredicates.TrueBlockPredicate` -> `mc-worldgen` (478.3s)
 - [FAIL] `net.minecraft.nbt.TagParser` -> `mc-nbt` (281.5s)
 - [FAIL] `net.minecraft.nbt.ByteTag` -> `mc-nbt` (281.5s)
 - [FAIL] `net.minecraft.nbt.LongTag` -> `mc-nbt` (281.5s)
@@ -23,9 +29,3 @@
 - [PASS] `net.minecraft.core.DefaultedRegistry` -> `mc-math` (327.7s)
 - [PASS] `net.minecraft.core.WritableRegistry` -> `mc-math` (327.7s)
 - [PASS] `net.minecraft.core.RegistrationInfo` -> `mc-math` (327.7s)
-- [PASS] `net.minecraft.core.particles.ShriekParticleOption` -> `mc-math` (198.9s)
-- [PASS] `net.minecraft.core.particles.SculkChargeParticleOptions` -> `mc-math` (198.9s)
-- [PASS] `net.minecraft.core.particles.SimpleParticleType` -> `mc-math` (198.9s)
-- [PASS] `net.minecraft.core.particles.ScalableParticleOptionsBase` -> `mc-math` (198.9s)
-- [PASS] `net.minecraft.core.particles.ParticleType` -> `mc-math` (198.9s)
-- [PASS] `net.minecraft.core.particles.ParticleLimit` -> `mc-math` (198.9s)
