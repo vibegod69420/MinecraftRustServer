@@ -110,3 +110,4 @@ pub mod matching_blocks_predicate;
 pub mod matching_fluids_predicate;
 pub mod would_survive_predicate;
 pub mod has_sturdy_face_predicate;
+pub mod vines_feature;

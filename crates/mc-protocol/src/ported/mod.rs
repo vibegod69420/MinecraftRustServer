@@ -103,3 +103,7 @@ pub mod clientbound_debug_event_packet;
 pub mod serverbound_chat_ack_packet;
 pub mod clientbound_recipe_book_settings_packet;
 pub mod clientbound_start_configuration_packet;
+pub mod clientbound_set_title_text_packet;
+pub mod serverbound_chat_command_packet;
+pub mod serverbound_recipe_book_seen_recipe_packet;
+pub mod clientbound_set_default_spawn_position_packet;
