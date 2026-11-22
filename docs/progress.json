@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:18:01 UTC",
-  "updated_epoch": 1795385881,
+  "updated_at": "2026-11-22 22:18:58 UTC",
+  "updated_epoch": 1795385938,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 226,
-    "mapped_methods": 688,
-    "class_coverage_pct": 3.1551,
-    "method_coverage_pct": 1.0319,
-    "harness_verified_classes": 135,
-    "harness_failed_attempts": 13
+    "mapped_classes": 239,
+    "mapped_methods": 712,
+    "class_coverage_pct": 3.3366,
+    "method_coverage_pct": 1.0679,
+    "harness_verified_classes": 141,
+    "harness_failed_attempts": 16
   },
   "crates": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 419
+      "mapped_methods": 435
     },
     {
       "name": "mc-nbt",
@@ -43,17 +43,89 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 214
+      "mapped_methods": 223
     }
   ],
   "usage": {
-    "calls_total": 142,
-    "prompt_tokens": 221527,
-    "completion_tokens": 1298908,
-    "reasoning_tokens": 929445,
-    "avg_latency_s": 132.0
+    "calls_total": 148,
+    "prompt_tokens": 240082,
+    "completion_tokens": 1365389,
+    "reasoning_tokens": 979856,
+    "avg_latency_s": 133.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:18:57Z",
+      "class_name": "net.minecraft.nbt.TagParser",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 281.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:57Z",
+      "class_name": "net.minecraft.nbt.ByteTag",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 281.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:57Z",
+      "class_name": "net.minecraft.nbt.LongTag",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 281.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.HolderOwner",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.RegistryCodecs",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.QuartPos",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.DefaultedRegistry",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.WritableRegistry",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:18:29Z",
+      "class_name": "net.minecraft.core.RegistrationInfo",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 327.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:17:34Z",
       "class_name": "net.minecraft.core.particles.ShriekParticleOption",
@@ -301,81 +373,14 @@
       "verified": true,
       "seconds": 210.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendStatic",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifierType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.Passthrough",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.Clear",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:15Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.RuleBlockEntityModifier",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 196.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:12Z",
-      "class_name": "net.minecraft.util.valueproviders.TrapezoidFloat",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 192.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:12Z",
-      "class_name": "net.minecraft.util.valueproviders.ClampedNormalFloat",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 192.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:14:12Z",
-      "class_name": "net.minecraft.util.valueproviders.UniformFloat",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 192.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3e7095f",
+      "ts": "2026-11-22T22:18:01+00:00",
+      "message": "Worker sync: 688 mapped Java methods"
+    },
     {
       "sha": "98547ab",
       "ts": "2026-11-22T22:17:42+00:00",
@@ -445,11 +450,6 @@
       "sha": "3be127b",
       "ts": "2026-11-22T22:07:53+00:00",
       "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "88cbf7b",
-      "ts": "2026-11-22T19:07:13-03:00",
-      "message": "Switch small/batch first-attempt effort to off, add crate API summary, log validation failures"
     }
   ]
 }

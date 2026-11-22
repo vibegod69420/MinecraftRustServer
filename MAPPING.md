@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **688** across **226** classes.
+Total mapped Java symbols: **712** across **239** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -23,6 +23,7 @@ Total mapped Java symbols: **688** across **226** classes.
 | `net.minecraft.ReportedException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 23 | `<item>` |
 | `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
 | `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
+| `net.minecraft.advancements.criterion.MinMaxBounds$Ints#matches(int)` | `crates/mc-math/src/ported/damage_predicate.rs` | 42 | `matches` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
@@ -42,6 +43,8 @@ Total mapped Java symbols: **688** across **226** classes.
 | `net.minecraft.core.DefaultedRegistry#getDefaultKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 33 | `get_default_key` |
 | `net.minecraft.core.DefaultedRegistry#getKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 24 | `get_key` |
 | `net.minecraft.core.DefaultedRegistry#getValue` | `crates/mc-math/src/ported/defaulted_registry.rs` | 27 | `get_value` |
+| `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 10 | `can_serialize_in` |
+| `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 40 | `can_serialize_in` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-data/build.rs` | 132 | `by_id` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-data/build.rs` | 128 | `get_id` |
 | `net.minecraft.core.QuartPos#fromBlock` | `crates/mc-math/src/ported/quart_pos.rs` | 8 | `from_block` |
@@ -68,6 +71,16 @@ Total mapped Java symbols: **688** across **226** classes.
 | `net.minecraft.core.WritableRegistry#createRegistrationLookup` | `crates/mc-math/src/ported/writable_registry.rs` | 95 | `create_registration_lookup` |
 | `net.minecraft.core.WritableRegistry#isEmpty` | `crates/mc-math/src/ported/writable_registry.rs` | 92 | `is_empty` |
 | `net.minecraft.core.WritableRegistry#register` | `crates/mc-math/src/ported/writable_registry.rs` | 81 | `register` |
+| `net.minecraft.core.component.predicates.AnyValue#matches` | `crates/mc-math/src/ported/any_value.rs` | 31 | `matches` |
+| `net.minecraft.core.component.predicates.BundlePredicate#componentType` | `crates/mc-math/src/ported/bundle_predicate.rs` | 52 | `component_type` |
+| `net.minecraft.core.component.predicates.BundlePredicate#matches` | `crates/mc-math/src/ported/bundle_predicate.rs` | 59 | `matches` |
+| `net.minecraft.core.component.predicates.ContainerPredicate#componentType` | `crates/mc-math/src/ported/container_predicate.rs` | 61 | `component_type` |
+| `net.minecraft.core.component.predicates.ContainerPredicate#matches` | `crates/mc-math/src/ported/container_predicate.rs` | 68 | `matches` |
+| `net.minecraft.core.component.predicates.DamagePredicate#durability` | `crates/mc-math/src/ported/damage_predicate.rs` | 82 | `durability` |
+| `net.minecraft.core.component.predicates.DamagePredicate#matches` | `crates/mc-math/src/ported/damage_predicate.rs` | 92 | `matches` |
+| `net.minecraft.core.component.predicates.PotionsPredicate#componentType` | `crates/mc-math/src/ported/potions_predicate.rs` | 63 | `component_type` |
+| `net.minecraft.core.component.predicates.PotionsPredicate#matches` | `crates/mc-math/src/ported/potions_predicate.rs` | 68 | `matches` |
+| `net.minecraft.core.component.predicates.PotionsPredicate#potions` | `crates/mc-math/src/ported/potions_predicate.rs` | 76 | `potions` |
 | `net.minecraft.core.particles.ParticleLimit#<init>` | `crates/mc-math/src/ported/particle_limit.rs` | 9 | `new` |
 | `net.minecraft.core.particles.ParticleLimit#limit` | `crates/mc-math/src/ported/particle_limit.rs` | 14 | `limit` |
 | `net.minecraft.core.particles.ParticleType#<init>` | `crates/mc-math/src/ported/particle_type.rs` | 59 | `new` |
@@ -632,6 +645,9 @@ Total mapped Java symbols: **688** across **226** classes.
 | `net.minecraft.util.valueproviders.WeightedListInt#getMinValue` | `crates/mc-math/src/ported/weighted_list_int.rs` | 127 | `get_min_value` |
 | `net.minecraft.util.valueproviders.WeightedListInt#getType` | `crates/mc-math/src/ported/weighted_list_int.rs` | 137 | `get_type` |
 | `net.minecraft.util.valueproviders.WeightedListInt#sample` | `crates/mc-math/src/ported/weighted_list_int.rs` | 122 | `sample` |
+| `net.minecraft.world.item.alchemy.PotionContents#potion` | `crates/mc-math/src/ported/potions_predicate.rs` | 36 | `potion` |
+| `net.minecraft.world.item.component.BundleContents#items` | `crates/mc-math/src/ported/bundle_predicate.rs` | 25 | `items` |
+| `net.minecraft.world.item.component.ItemContainerContents#nonEmptyItems` | `crates/mc-math/src/ported/container_predicate.rs` | 30 | `non_empty_items` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 54 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 54 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 59 | `get_block_z` |
@@ -713,8 +729,17 @@ Total mapped Java symbols: **688** across **226** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#<init>` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 36 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#test` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 41 | `test` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#type` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 51 | `predicate_type` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AnyOfPredicate#<init>` | `crates/mc-worldgen/src/ported/any_of_predicate.rs` | 36 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AnyOfPredicate#test` | `crates/mc-worldgen/src/ported/any_of_predicate.rs` | 41 | `test` |
+| `net.minecraft.world.level.levelgen.blockpredicates.AnyOfPredicate#type` | `crates/mc-worldgen/src/ported/any_of_predicate.rs` | 51 | `predicate_type` |
 | `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#<init>` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 46 | `new` |
 | `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#codec` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 51 | `codec` |
+| `net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate#<init>` | `crates/mc-worldgen/src/ported/replaceable_predicate.rs` | 74 | `new` |
+| `net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate#test` | `crates/mc-worldgen/src/ported/replaceable_predicate.rs` | 81 | `test_state` |
+| `net.minecraft.world.level.levelgen.blockpredicates.ReplaceablePredicate#type` | `crates/mc-worldgen/src/ported/replaceable_predicate.rs` | 86 | `predicate_type` |
 | `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#<init>` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 86 | `new` |
 | `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#CODEC` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 118 | `<item>` |
 | `net.minecraft.world.level.levelgen.blockpredicates.SolidPredicate#test` | `crates/mc-worldgen/src/ported/solid_predicate.rs` | 97 | `test_state` |

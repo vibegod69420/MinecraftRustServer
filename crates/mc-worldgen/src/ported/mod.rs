@@ -49,3 +49,6 @@ pub mod world_generation_context;
 pub mod block_match_test;
 pub mod tag_match_test;
 pub mod structure_processor;
+pub mod any_of_predicate;
+pub mod all_of_predicate;
+pub mod replaceable_predicate;
