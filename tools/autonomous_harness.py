@@ -43,30 +43,48 @@ LOG_PATH = Path(os.environ.get("MC_RUST_LOG_PATH", "/var/log/mc-rust/harness.log
 
 LAST_ACTIVITY = time.time()
 WRITE_LOCK = threading.Lock()
+_STATUS_LOCK = threading.RLock()
+_ACTIVE_CLASSES: dict[str, dict] = {}
 _STATUS: dict = {
     "state": "starting",
     "class_name": None,
     "crate": None,
     "attempt": 0,
     "verified_count": 0,
+    "workers": 0,
+    "active_classes": [],
 }
+
+LOW_PRIORITY_PREFIXES = (
+    "net/minecraft/util/profiling/",
+    "net/minecraft/util/debugchart/",
+    "net/minecraft/util/parsing/",
+    "net/minecraft/util/datafix/",
+    "net/minecraft/util/eventlog/",
+    "net/minecraft/util/monitoring/",
+    "net/minecraft/gametest/",
+)
 
 # Dependency-ordered package tiers matching PLAN.md
 PACKAGE_PRIORITY = [
-    ("net/minecraft/util/", "mc-math"),
     ("net/minecraft/nbt/", "mc-nbt"),
+    ("net/minecraft/util/random/", "mc-math"),
+    ("net/minecraft/util/valueproviders/", "mc-math"),
+    ("net/minecraft/world/level/levelgen/synth/", "mc-math"),
     ("net/minecraft/core/", "mc-math"),
     ("net/minecraft/network/", "mc-protocol"),
-    ("net/minecraft/world/level/levelgen/synth/", "mc-math"),
     ("net/minecraft/world/level/levelgen/", "mc-worldgen"),
     ("net/minecraft/world/level/chunk/", "mc-worldgen"),
     ("net/minecraft/world/level/storage/", "mc-nbt"),
+    ("net/minecraft/util/", "mc-math"),
     ("net/minecraft/world/level/block/", "mc-worldgen"),
     ("net/minecraft/world/level/material/", "mc-worldgen"),
     ("net/minecraft/world/level/", "mc-worldgen"),
     ("net/minecraft/world/entity/", "mc-worldgen"),
     ("net/minecraft/server/", "mc-protocol"),
 ]
+
+LOW_PRIORITY_TIER = len(PACKAGE_PRIORITY) + 10
 
 
 def log(msg: str) -> None:
@@ -77,15 +95,38 @@ def log(msg: str) -> None:
 
 
 def publish_status(**fields) -> None:
-    _STATUS.update(fields)
-    _STATUS["ts"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    try:
-        WORKER_STATUS.parent.mkdir(parents=True, exist_ok=True)
-        tmp = WORKER_STATUS.with_suffix(".tmp")
-        tmp.write_text(json.dumps(_STATUS), encoding="utf-8")
-        tmp.replace(WORKER_STATUS)
-    except OSError:
-        pass
+    with _STATUS_LOCK:
+        _STATUS.update(fields)
+        _STATUS["active_classes"] = list(_ACTIVE_CLASSES.values())
+        _STATUS["ts"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        try:
+            WORKER_STATUS.parent.mkdir(parents=True, exist_ok=True)
+            tmp = WORKER_STATUS.with_suffix(".tmp")
+            tmp.write_text(json.dumps(_STATUS), encoding="utf-8")
+            tmp.replace(WORKER_STATUS)
+        except OSError:
+            pass
+
+
+def set_worker_activity(fqcn: str, crate: str, attempt: int, state: str) -> None:
+    with _STATUS_LOCK:
+        _ACTIVE_CLASSES[fqcn] = {
+            "class_name": fqcn,
+            "crate": crate,
+            "attempt": attempt,
+            "state": state,
+        }
+        publish_status(state=state, class_name=fqcn, crate=crate, attempt=attempt)
+
+
+def clear_worker_activity(fqcn: str) -> None:
+    with _STATUS_LOCK:
+        _ACTIVE_CLASSES.pop(fqcn, None)
+        if _ACTIVE_CLASSES:
+            latest = next(reversed(_ACTIVE_CLASSES.values()))
+            publish_status(**latest)
+        else:
+            publish_status(state="idle", class_name=None, crate=None, attempt=0)
 
 
 def rotate_log_if_needed(max_bytes: int = 64 * 1024 * 1024, keep: int = 8 * 1024 * 1024) -> None:
@@ -163,10 +204,31 @@ def route_java_file(rel_posix: str) -> tuple[int, str, str]:
     fqcn = rel_posix[:-5].replace("/", ".")
     short = fqcn.rsplit(".", 1)[-1]
     mod = snake_case(short)
+    matched_tier = len(PACKAGE_PRIORITY)
+    matched_crate = "mc-worldgen"
     for tier, (prefix, crate) in enumerate(PACKAGE_PRIORITY):
         if rel_posix.startswith(prefix):
-            return (tier, crate, mod)
-    return (len(PACKAGE_PRIORITY), "mc-worldgen", mod)
+            matched_tier = tier
+            matched_crate = crate
+            break
+    if rel_posix.startswith(LOW_PRIORITY_PREFIXES):
+        return (LOW_PRIORITY_TIER, matched_crate, mod)
+    return (matched_tier, matched_crate, mod)
+
+
+def _interleave_by_crate(items: list[dict]) -> list[dict]:
+    crate_order = ["mc-nbt", "mc-math", "mc-protocol", "mc-worldgen"]
+    buckets: dict[str, deque[dict]] = {}
+    for item in items:
+        buckets.setdefault(item["crate"], deque()).append(item)
+    ordered_keys = [c for c in crate_order if c in buckets] + [c for c in buckets if c not in crate_order]
+    out: list[dict] = []
+    while any(buckets.values()):
+        for crate in ordered_keys:
+            q = buckets.get(crate)
+            if q:
+                out.append(q.popleft())
+    return out
 
 
 def list_candidate_classes() -> list[dict]:
@@ -205,9 +267,12 @@ def list_candidate_classes() -> list[dict]:
             "mod": mod,
         })
 
-    # Prefer dependency tier, then smaller self-contained classes first
+    # Prefer dependency tier, then smaller self-contained classes first,
+    # keeping low-priority utilities after core classes and interleaving round-robin by crate.
     candidates.sort(key=lambda c: (c["tier"], c["size"], c["fqcn"]))
-    return candidates
+    core_candidates = [c for c in candidates if c["tier"] < LOW_PRIORITY_TIER]
+    low_candidates = [c for c in candidates if c["tier"] >= LOW_PRIORITY_TIER]
+    return _interleave_by_crate(core_candidates) + _interleave_by_crate(low_candidates)
 
 
 def extract_rust_block(text: str) -> str:
@@ -292,7 +357,21 @@ def run_cargo_test(crate: str) -> tuple[bool, str]:
     return proc.returncode == 0, out.strip()
 
 
-def port_class(candidate: dict, verified_total: int) -> bool:
+def summarize_cargo_error(output: str) -> str:
+    """Return the primary compiler or test failure line from Cargo output."""
+    lines = [line.strip() for line in (output or "").splitlines() if line.strip()]
+    if not lines:
+        return "unknown"
+    for line in lines:
+        if re.match(r"^error(?:\[E\d+\])?:", line) or re.match(r"^test\s+.+\s+FAILED$", line):
+            return line
+    for line in lines:
+        if "error[E" in line or "error:" in line or "FAILED" in line:
+            return line
+    return lines[-1]
+
+
+def port_class(candidate: dict) -> bool:
     fqcn = candidate["fqcn"]
     crate = candidate["crate"]
     mod_name = candidate["mod"]
@@ -317,83 +396,74 @@ def port_class(candidate: dict, verified_total: int) -> bool:
     budgets = [16384, 32768, 65536]
     efforts = ["high", "max", "max"]
 
-    for attempt in range(1, 4):
-        publish_status(
-            state="generating",
-            class_name=fqcn,
-            crate=crate,
-            attempt=attempt,
-            verified_count=verified_total,
-        )
-        prompt = (
-            f"Port `{fqcn}` to a clean, self-contained Rust module `{crate}/src/ported/{mod_name}.rs`.\n\n"
-            f"{crate_ctx}\n\n"
-            f"### Decompiled Java 1.21.11 Source (`{candidate['rel']}`):\n```java\n{java_src}\n```\n\n"
-            f"{feedback}"
-        )
-        try:
-            reply = deepai_backend.ask(
-                system_prompt,
-                prompt,
-                max_tokens=min(MAX_OUTPUT_TOKENS, budgets[attempt - 1]),
-                effort=efforts[attempt - 1],
-            )
-        except deepai_backend.QuotaExhausted:
-            raise
-        except Exception as exc:
-            log(f"  [{fqcn} attempt {attempt}] LLM error: {exc}")
-            continue
-
-        code = extract_rust_block(reply)
-        if not code or "unsafe" in re.findall(r"\bunsafe\b", code):
-            feedback = "Previous reply was empty or contained `unsafe`; output a single valid safe ```rust block.\n"
-            continue
-        if f"// JAVA:" not in code:
-            code = f"// JAVA: {fqcn}#class\n" + code
-        if "#[cfg(test)]" not in code:
-            feedback = "Previous reply lacked `#[cfg(test)]` tests; include unit tests.\n"
-            continue
-
-        with WRITE_LOCK:
-            publish_status(
-                state="testing",
-                class_name=fqcn,
-                crate=crate,
-                attempt=attempt,
-                verified_count=verified_total,
+    try:
+        for attempt in range(1, 4):
+            set_worker_activity(fqcn, crate, attempt, "generating")
+            prompt = (
+                f"Port `{fqcn}` to a clean, self-contained Rust module `{crate}/src/ported/{mod_name}.rs`.\n\n"
+                f"{crate_ctx}\n\n"
+                f"### Decompiled Java 1.21.11 Source (`{candidate['rel']}`):\n```java\n{java_src}\n```\n\n"
+                f"{feedback}"
             )
             try:
-                backups = wire_ported_module(crate, mod_name, code)
-            except FileExistsError:
-                log(f"  [{fqcn}] target module {crate}/src/ported/{mod_name}.rs already exists; skipping")
-                return False
-            try:
-                ok, test_out = run_cargo_test(crate)
+                reply = deepai_backend.ask(
+                    system_prompt,
+                    prompt,
+                    max_tokens=min(MAX_OUTPUT_TOKENS, budgets[attempt - 1]),
+                    effort=efforts[attempt - 1],
+                )
+            except deepai_backend.QuotaExhausted:
+                raise
             except Exception as exc:
-                ok, test_out = False, str(exc)
+                log(f"  [{fqcn} attempt {attempt}] LLM error: {exc}")
+                continue
 
-            if ok:
-                log(f"  [PASS] {fqcn} -> {crate}/src/ported/{mod_name}.rs (attempt {attempt}/3)")
-                return True
+            code = extract_rust_block(reply)
+            if not code or "unsafe" in re.findall(r"\bunsafe\b", code):
+                feedback = "Previous reply was empty or contained `unsafe`; output a single valid safe ```rust block.\n"
+                continue
+            if "// JAVA:" not in code:
+                code = f"// JAVA: {fqcn}#class\n" + code
+            if "#[cfg(test)]" not in code:
+                feedback = "Previous reply lacked `#[cfg(test)]` tests; include unit tests.\n"
+                continue
 
-            rollback(backups)
-            err_tail = test_out[-3000:]
-            log(f"  [{fqcn} attempt {attempt}] cargo test failed: {err_tail.splitlines()[-1] if err_tail else 'unknown'}")
-            feedback = (
-                f"### Attempt {attempt} `cargo test -p {crate}` failure:\n"
-                f"```text\n{err_tail}\n```\n"
-                f"Fix every compiler error and failing test while preserving 1:1 Java semantics.\n"
-            )
+            with WRITE_LOCK:
+                set_worker_activity(fqcn, crate, attempt, "testing")
+                try:
+                    backups = wire_ported_module(crate, mod_name, code)
+                except FileExistsError:
+                    log(f"  [{fqcn}] target module {crate}/src/ported/{mod_name}.rs already exists; skipping")
+                    return False
+                try:
+                    ok, test_out = run_cargo_test(crate)
+                except Exception as exc:
+                    ok, test_out = False, str(exc)
 
-    return False
+                if ok:
+                    log(f"  [PASS] {fqcn} -> {crate}/src/ported/{mod_name}.rs (attempt {attempt}/3)")
+                    return True
+
+                rollback(backups)
+                err_tail = test_out[-3000:]
+                log(f"  [{fqcn} attempt {attempt}] cargo test failed: {summarize_cargo_error(test_out)}")
+                feedback = (
+                    f"### Attempt {attempt} `cargo test -p {crate}` failure:\n"
+                    f"```text\n{err_tail}\n```\n"
+                    f"Fix every compiler error and failing test while preserving 1:1 Java semantics.\n"
+                )
+
+        return False
+    finally:
+        clear_worker_activity(fqcn)
 
 
 def desired_workers() -> int:
     try:
         v = int(WORKERS_FILE.read_text(encoding="utf-8").strip())
-        return max(1, min(8, v))
+        return max(1, min(9, v))
     except (OSError, ValueError):
-        return max(1, int(os.environ.get("MC_RUST_WORKERS", "2")))
+        return max(1, min(9, int(os.environ.get("MC_RUST_WORKERS", "6"))))
 
 
 def run_forever() -> None:
@@ -431,25 +501,28 @@ def run_forever() -> None:
             workers = desired_workers()
             queue = deque(candidates[:200])
             inflight: dict = {}
-            busy_crates: set[str] = set()
+            inflight_mods: set[tuple[str, str]] = set()
             last_publish = 0.0
             verified_in_wave = 0
             total_verified = sum(1 for r in update_progress.read_jsonl(LEDGER_PATH) if r.get("verified"))
+            publish_status(workers=workers, verified_count=total_verified)
+            log(f"Dispatching wave of {len(queue)} candidates with {workers} parallel workers")
 
             with ThreadPoolExecutor(max_workers=workers) as pool:
                 while queue or inflight:
                     rotations = 0
                     while queue and len(inflight) < workers:
                         cand = queue.popleft()
-                        # Keep one module-write at a time per crate to avoid mod.rs/Cargo conflicts
-                        if cand["crate"] in busy_crates:
+                        mod_key = (cand["crate"], cand["mod"])
+                        # Keep one module-write at a time per target module filename
+                        if mod_key in inflight_mods:
                             queue.append(cand)
                             rotations += 1
                             if rotations >= len(queue):
                                 break
                             continue
-                        busy_crates.add(cand["crate"])
-                        fut = pool.submit(port_class, cand, total_verified)
+                        inflight_mods.add(mod_key)
+                        fut = pool.submit(port_class, cand)
                         inflight[fut] = (cand, time.time())
 
                     if not inflight:
@@ -457,7 +530,7 @@ def run_forever() -> None:
                     done_futs, _ = wait(inflight, return_when=FIRST_COMPLETED)
                     for fut in done_futs:
                         cand, started = inflight.pop(fut)
-                        busy_crates.discard(cand["crate"])
+                        inflight_mods.discard((cand["crate"], cand["mod"]))
                         fqcn = cand["fqcn"]
                         try:
                             ok = fut.result()
@@ -472,6 +545,7 @@ def run_forever() -> None:
                             skips.pop(fqcn, None)
                             verified_in_wave += 1
                             total_verified += 1
+                            publish_status(verified_count=total_verified, workers=workers)
                         else:
                             fails = (skips.get(fqcn) or [0, 0])[0] + 1
                             skips[fqcn] = [fails, time.time()]

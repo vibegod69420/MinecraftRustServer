@@ -41,8 +41,8 @@ if git diff --cached --quiet; then
         exit 0
     fi
 else
-    changed_files="$(git diff --cached --name-only)"
-    if [ "$changed_files" = "docs/worker.json" ] || [ "$changed_files" = $'docs/progress.json\ndocs/worker.json' ]; then
+    non_heartbeat="$(git diff --cached --name-only | grep -vE '^(docs/progress\.json|docs/worker\.json|PROGRESS\.md)$' || true)"
+    if [ -z "$non_heartbeat" ]; then
         now="$(date +%s)"
         last="$(cat "$HEARTBEAT_STAMP" 2>/dev/null || echo 0)"
         if [ $((now - last)) -lt 300 ]; then

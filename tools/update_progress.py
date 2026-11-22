@@ -260,7 +260,11 @@ def update_all(commit_msg: str | None = None) -> dict:
     else:
         prog_md.append("- Baseline Milestone 1 (Step 0 oracle, `mc-math`, `mc-nbt`, `mc-data` golden vectors)")
     prog_md.append("")
-    (ROOT / "PROGRESS.md").write_text("\n".join(prog_md), encoding="utf-8")
+    new_prog_md = "\n".join(prog_md)
+    prog_path = ROOT / "PROGRESS.md"
+    strip_ts = lambda text: [ln for ln in text.splitlines() if not ln.startswith("- **Updated**: ")]
+    if not prog_path.exists() or strip_ts(prog_path.read_text(encoding="utf-8", errors="ignore")) != strip_ts(new_prog_md):
+        prog_path.write_text(new_prog_md, encoding="utf-8")
 
     # Update COVERAGE.md summary
     cov_md = [
