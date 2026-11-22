@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **679** across **223** classes.
+Total mapped Java symbols: **688** across **226** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -822,6 +822,9 @@ Total mapped Java symbols: **679** across **223** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 67 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#<init>` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 51 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#getType` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 61 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#test` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 56 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#<init>` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 52 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#getType` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 68 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#test` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 63 | `test` |
@@ -835,9 +838,15 @@ Total mapped Java symbols: **679** across **223** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest#test` | `crates/mc-worldgen/src/ported/pos_rule_test.rs` | 50 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#getType` | `crates/mc-worldgen/src/ported/rule_test.rs` | 53 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#test` | `crates/mc-worldgen/src/ported/rule_test.rs` | 50 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#finalizeProcessing` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 49 | `finalize_processing` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#getType` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 46 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#processBlock` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 33 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#<init>` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 12 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#list` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 17 | `list` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#toString` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 24 | `fmt` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#<init>` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 75 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#getType` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 85 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#test` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 80 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 86 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot#apply` | `crates/mc-worldgen/src/ported/append_loot.rs` | 93 | `apply` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.rule.blockentity.AppendLoot#getType` | `crates/mc-worldgen/src/ported/append_loot.rs` | 104 | `get_type` |

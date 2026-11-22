@@ -46,3 +46,6 @@ pub mod combining_predicate;
 pub mod pos_always_true_test;
 pub mod block_state_match_test;
 pub mod world_generation_context;
+pub mod block_match_test;
+pub mod tag_match_test;
+pub mod structure_processor;
