@@ -72,3 +72,4 @@ pub mod random_block_match_test;
 pub mod piece_generator;
 pub mod not_predicate;
 pub mod flat_layer_info;
+pub mod flat_level_generator_preset;

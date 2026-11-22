@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1166** across **350** classes.
+Total mapped Java symbols: **1201** across **356** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -441,6 +441,38 @@ Total mapped Java symbols: **1166** across **350** classes.
 | `net.minecraft.nbt.visitors.CollectFields#visitEntry` | `crates/mc-nbt/src/ported/collect_fields.rs` | 223 | `visit_entry` |
 | `net.minecraft.nbt.visitors.CollectFields#visitEntry` | `crates/mc-nbt/src/ported/collect_fields.rs` | 243 | `visit_entry_named` |
 | `net.minecraft.nbt.visitors.CollectFields#visitRootEntry` | `crates/mc-nbt/src/ported/collect_fields.rs` | 215 | `visit_root_entry` |
+| `net.minecraft.nbt.visitors.CollectToTag#<init>` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 172 | `new` |
+| `net.minecraft.nbt.visitors.CollectToTag#appendEntry` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 189 | `append_entry` |
+| `net.minecraft.nbt.visitors.CollectToTag#depth` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 184 | `depth` |
+| `net.minecraft.nbt.visitors.CollectToTag#enterContainerIfNeeded` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 289 | `enter_container_if_needed` |
+| `net.minecraft.nbt.visitors.CollectToTag#getResult` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 179 | `get_result` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(String)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 202 | `visit_string` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(byte)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 208 | `visit_byte` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(byte[])` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 246 | `visit_byte_array` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(double)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 239 | `visit_double` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(float)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 232 | `visit_float` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(int)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 220 | `visit_int` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(int[])` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 252 | `visit_int_array` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(long)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 226 | `visit_long` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(long[])` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 258 | `visit_long_array` |
+| `net.minecraft.nbt.visitors.CollectToTag#visit(short)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 214 | `visit_short` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitContainerEnd` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 303 | `visit_container_end` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitElement` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 269 | `visit_element` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitEnd` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 196 | `visit_end` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitEntry(TagType)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 275 | `visit_entry` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitEntry(TagType,String)` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 280 | `visit_entry_named` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitList` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 264 | `visit_list` |
+| `net.minecraft.nbt.visitors.CollectToTag#visitRootEntry` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 315 | `visit_root_entry` |
+| `net.minecraft.nbt.visitors.CollectToTag$CompoundBuilder#acceptKey` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 113 | `accept_key` |
+| `net.minecraft.nbt.visitors.CollectToTag$CompoundBuilder#acceptValue` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 118 | `accept_value` |
+| `net.minecraft.nbt.visitors.CollectToTag$CompoundBuilder#build` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 128 | `build` |
+| `net.minecraft.nbt.visitors.CollectToTag$ContainerBuilder#acceptKey` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 141 | `accept_key` |
+| `net.minecraft.nbt.visitors.CollectToTag$ContainerBuilder#acceptValue` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 148 | `accept_value` |
+| `net.minecraft.nbt.visitors.CollectToTag$ContainerBuilder#build` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 157 | `build` |
+| `net.minecraft.nbt.visitors.CollectToTag$ListBuilder#acceptValue` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 94 | `accept_value` |
+| `net.minecraft.nbt.visitors.CollectToTag$ListBuilder#build` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 99 | `build` |
+| `net.minecraft.nbt.visitors.CollectToTag$RootBuilder#acceptValue` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 78 | `accept_value` |
+| `net.minecraft.nbt.visitors.CollectToTag$RootBuilder#build` | `crates/mc-nbt/src/ported/collect_to_tag.rs` | 83 | `build` |
 | `net.minecraft.nbt.visitors.FieldSelector#<init>(String,String,TagType,String)` | `crates/mc-nbt/src/ported/field_selector.rs` | 32 | `with_path2` |
 | `net.minecraft.nbt.visitors.FieldSelector#<init>(String,TagType,String)` | `crates/mc-nbt/src/ported/field_selector.rs` | 23 | `with_path1` |
 | `net.minecraft.nbt.visitors.FieldSelector#<init>(String,TagType,String)` | `crates/mc-nbt/src/ported/field_tree.rs` | 25 | `with_path1` |
@@ -1263,6 +1295,9 @@ Total mapped Java symbols: **1166** across **350** classes.
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#getHeight` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 70 | `get_height` |
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#heightLimited` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 80 | `height_limited` |
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#toString` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 91 | `fmt` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#FlatLevelGeneratorPreset` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 65 | `new` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#displayItem` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 73 | `display_item` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#settings` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 78 | `settings` |
 | `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
 | `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
 | `net.minecraft.world.level.levelgen.placement.CaveSurface#CODEC` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 30 | `get_direction` |
