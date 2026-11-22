@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 20:56:01 UTC",
-  "updated_epoch": 1795380961,
+  "updated_at": "2026-11-22 20:58:02 UTC",
+  "updated_epoch": 1795381082,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 31,
-    "mapped_methods": 147,
-    "class_coverage_pct": 0.4328,
-    "method_coverage_pct": 0.2205,
-    "harness_verified_classes": 4,
+    "mapped_classes": 32,
+    "mapped_methods": 148,
+    "class_coverage_pct": 0.4467,
+    "method_coverage_pct": 0.222,
+    "harness_verified_classes": 5,
     "harness_failed_attempts": 1
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 145
+      "mapped_methods": 149
     },
     {
       "name": "mc-nbt",
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 7,
-    "prompt_tokens": 8081,
-    "completion_tokens": 85930,
-    "reasoning_tokens": 64931,
-    "avg_latency_s": 158.9
+    "calls_total": 8,
+    "prompt_tokens": 9017,
+    "completion_tokens": 94051,
+    "reasoning_tokens": 70512,
+    "avg_latency_s": 153.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T20:57:57Z",
+      "class_name": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 119.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T20:55:57Z",
       "class_name": "net.minecraft.util.debugchart.TpsDebugDimensions",
@@ -88,6 +96,11 @@
     }
   ],
   "recent_commits": [
+    {
+      "sha": "194df55",
+      "ts": "2026-11-22T20:56:01+00:00",
+      "message": "Worker sync: 147 mapped Java methods"
+    },
     {
       "sha": "bd5a4a0",
       "ts": "2026-11-22T20:55:57+00:00",
@@ -157,11 +170,6 @@
       "sha": "4a72eca",
       "ts": "2026-11-22T17:38:36-03:00",
       "message": "Use fetch + rebase --autostash in publish.sh to avoid dirty-tree conflict"
-    },
-    {
-      "sha": "560a081",
-      "ts": "2026-11-22T20:38:26+00:00",
-      "message": "Worker sync: 133 mapped Java methods"
     }
   ]
 }

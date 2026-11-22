@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **147** across **31** classes.
+Total mapped Java symbols: **148** across **32** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -94,6 +94,10 @@ Total mapped Java symbols: **147** across **31** classes.
 | `net.minecraft.util.parsing.packrat.ErrorEntry#reason` | `crates/mc-math/src/ported/error_entry.rs` | 106 | `reason` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#suggestions` | `crates/mc-math/src/ported/error_entry.rs` | 101 | `suggestions` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#toString` | `crates/mc-math/src/ported/error_entry.rs` | 153 | `fmt` |
+| `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 11 | `finish` |
+| `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
+| `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
+| `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 45 | `finish` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
