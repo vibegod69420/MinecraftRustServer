@@ -121,3 +121,6 @@ pub mod clientbound_game_test_highlight_pos_packet;
 pub mod clientbound_chunk_batch_finished_packet;
 pub mod serverbound_pick_item_from_block_packet;
 pub mod clientbound_change_difficulty_packet;
+pub mod packet;
+pub mod clientbound_cookie_request_packet;
+pub mod serverbound_cookie_response_packet;

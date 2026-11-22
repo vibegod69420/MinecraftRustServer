@@ -103,3 +103,4 @@ pub mod holder;
 pub mod holder_lookup;
 pub mod vec3i;
 pub mod uuid_util;
+pub mod cursor3_d;
