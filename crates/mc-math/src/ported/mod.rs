@@ -25,3 +25,6 @@ pub mod multiplied_floats;
 pub mod constant_int;
 pub mod constant_float;
 pub mod weighted_list;
+pub mod weighted_list_int;
+pub mod uniform_int;
+pub mod biased_to_bottom_int;
