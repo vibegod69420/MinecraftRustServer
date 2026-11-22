@@ -285,6 +285,139 @@ def extract_rust_block(text: str) -> str:
     return ""
 
 
+def parse_batch_rust_blocks(text: str, expected_mods: list[str]) -> dict[str, str]:
+    """Extract per-module Rust code blocks from a batched LLM response."""
+    expected_set = set(expected_mods)
+    if not expected_mods:
+        return {}
+    if len(expected_mods) == 1:
+        single = extract_rust_block(text)
+        return {expected_mods[0]: single} if single else {}
+
+    file_marker_re = re.compile(
+        r"(?mi)^(?://\s*|#+\s*)?(?:===+\s*)?(?:FILE:\s*|[^\s]*?/ported/)([A-Za-z0-9_]+?)(?:\.rs)?(?:\s*===+)?\s*$"
+    )
+    inline_split_re = re.compile(
+        r"(?mi)^(?://\s*)?===+\s*FILE:\s*([A-Za-z0-9_]+?)(?:\.rs)?\s*===+\s*$"
+    )
+    fence_re = re.compile(r"```(?:rust|rs)?\s*\n(.*?)```", flags=re.DOTALL | re.IGNORECASE)
+
+    out: dict[str, str] = {}
+    matches = list(fence_re.finditer(text))
+    if not matches:
+        return out
+
+    # Handle case where LLM put all files inside a single big fenced block with inline FILE markers
+    if len(matches) == 1:
+        body = matches[0].group(1)
+        inline_hits = [m for m in inline_split_re.finditer(body) if m.group(1) in expected_set]
+        if len(inline_hits) >= 2:
+            for idx, hit in enumerate(inline_hits):
+                mod_name = hit.group(1)
+                c_start = hit.end()
+                c_end = inline_hits[idx + 1].start() if idx + 1 < len(inline_hits) else len(body)
+                chunk = body[c_start:c_end].strip()
+                if chunk and mod_name not in out:
+                    out[mod_name] = chunk
+            return out
+
+    prev_end = 0
+    for m in matches:
+        pre_window = text[max(prev_end, m.start() - 600) : m.start()]
+        body = m.group(1).strip()
+        prev_end = m.end()
+        if not body:
+            continue
+
+        body_lines = body.splitlines()
+        head = "\n".join(body_lines[:3])
+
+        matched_mod = None
+        for region in (head, pre_window):
+            # Prefer explicit FILE: / ported/ markers first, scan lines bottom-up in pre_window
+            lines = region.splitlines()
+            if region is pre_window:
+                lines = list(reversed(lines))
+            for ln in lines:
+                s = ln.strip()
+                if not s:
+                    continue
+                hm = file_marker_re.match(s)
+                if hm and hm.group(1) in expected_set:
+                    matched_mod = hm.group(1)
+                    break
+                for mod_name in expected_mods:
+                    if re.search(rf"(?<![A-Za-z0-9_]){re.escape(mod_name)}\.rs(?![A-Za-z0-9_])", s):
+                        matched_mod = mod_name
+                        break
+                if matched_mod:
+                    break
+            if matched_mod:
+                break
+
+        if matched_mod and matched_mod not in out:
+            if body_lines and re.match(r"^\s*//\s*===+\s*FILE:", body_lines[0], flags=re.IGNORECASE):
+                body = "\n".join(body_lines[1:]).strip()
+            if body:
+                out[matched_mod] = body
+
+    return out
+
+
+def build_work_units(
+    candidates: list[dict],
+    max_batch_size: int = 6,
+    max_batch_bytes: int = 12000,
+    small_threshold: int = 3500,
+) -> list[list[dict]]:
+    """
+    Group small candidates sharing `(crate, java_package)` with distinct module names
+    into batches of up to `max_batch_size` / `max_batch_bytes`, preserving priority & round-robin order.
+    """
+    by_pkg: dict[tuple[str, str], deque[int]] = {}
+    for idx, c in enumerate(candidates):
+        if c["size"] <= small_threshold:
+            pkg = c["fqcn"].rsplit(".", 1)[0]
+            by_pkg.setdefault((c["crate"], pkg), deque()).append(idx)
+
+    consumed: set[int] = set()
+    units: list[list[dict]] = []
+
+    for idx, c in enumerate(candidates):
+        if idx in consumed:
+            continue
+        consumed.add(idx)
+        if c["size"] > small_threshold:
+            units.append([c])
+            continue
+
+        batch = [c]
+        total_bytes = c["size"]
+        seen_mods = {c["mod"]}
+        pkg = c["fqcn"].rsplit(".", 1)[0]
+        pkg_q = by_pkg.get((c["crate"], pkg))
+        if pkg_q:
+            deferred: list[int] = []
+            while pkg_q and len(batch) < max_batch_size:
+                nxt_idx = pkg_q.popleft()
+                if nxt_idx in consumed:
+                    continue
+                nxt = candidates[nxt_idx]
+                if nxt["mod"] in seen_mods or total_bytes + nxt["size"] > max_batch_bytes:
+                    deferred.append(nxt_idx)
+                    continue
+                consumed.add(nxt_idx)
+                batch.append(nxt)
+                seen_mods.add(nxt["mod"])
+                total_bytes += nxt["size"]
+            for d in reversed(deferred):
+                pkg_q.appendleft(d)
+
+        units.append(batch)
+
+    return units
+
+
 def read_crate_context(crate: str) -> str:
     lib_rs = CRATES_DIR / crate / "src" / "lib.rs"
     cargo_toml = CRATES_DIR / crate / "Cargo.toml"
@@ -296,17 +429,16 @@ def read_crate_context(crate: str) -> str:
     return "\n\n".join(parts)
 
 
-def wire_ported_module(crate: str, mod_name: str, code: str) -> list[tuple[Path, str | None]]:
+def wire_ported_modules(crate: str, modules: list[tuple[str, str]]) -> list[tuple[Path, str | None]]:
     """
-    Write `crates/<crate>/src/ported/<mod_name>.rs`, ensuring `ported/mod.rs` and `lib.rs` wire it.
-    Returns list of (path, previous_content_or_None) for clean atomic rollback on failure.
+    Write one or more `crates/<crate>/src/ported/<mod_name>.rs` files atomically,
+    updating `ported/mod.rs` and `lib.rs` once. Returns backups for clean rollback.
     """
     src_dir = CRATES_DIR / crate / "src"
     ported_dir = src_dir / "ported"
     ported_dir.mkdir(parents=True, exist_ok=True)
     mod_rs = ported_dir / "mod.rs"
     lib_rs = src_dir / "lib.rs"
-    target_rs = ported_dir / f"{mod_name}.rs"
 
     backups: list[tuple[Path, str | None]] = []
 
@@ -315,16 +447,22 @@ def wire_ported_module(crate: str, mod_name: str, code: str) -> list[tuple[Path,
         backups.append((p, prev))
         p.write_text(content, encoding="utf-8")
 
-    # Disambiguate if module file already exists
-    if target_rs.exists():
-        raise FileExistsError(f"{target_rs.relative_to(ROOT)} already exists")
+    for mod_name, _ in modules:
+        target_rs = ported_dir / f"{mod_name}.rs"
+        if target_rs.exists():
+            raise FileExistsError(f"{target_rs.relative_to(ROOT)} already exists")
 
-    save_and_write(target_rs, code + "\n")
+    for mod_name, code in modules:
+        save_and_write(ported_dir / f"{mod_name}.rs", code + "\n")
 
     mod_prev = mod_rs.read_text(encoding="utf-8") if mod_rs.exists() else ""
-    decl_line = f"pub mod {mod_name};"
-    if decl_line not in mod_prev:
-        new_mod = (mod_prev.rstrip() + "\n" + decl_line + "\n").lstrip("\n")
+    mod_lines_to_add = [
+        f"pub mod {mod_name};"
+        for mod_name, _ in modules
+        if f"pub mod {mod_name};" not in mod_prev
+    ]
+    if mod_lines_to_add:
+        new_mod = (mod_prev.rstrip() + "\n" + "\n".join(mod_lines_to_add) + "\n").lstrip("\n")
         save_and_write(mod_rs, new_mod)
 
     lib_prev = lib_rs.read_text(encoding="utf-8")
@@ -332,6 +470,10 @@ def wire_ported_module(crate: str, mod_name: str, code: str) -> list[tuple[Path,
         save_and_write(lib_rs, lib_prev.rstrip() + "\n\npub mod ported;\n")
 
     return backups
+
+
+def wire_ported_module(crate: str, mod_name: str, code: str) -> list[tuple[Path, str | None]]:
+    return wire_ported_modules(crate, [(mod_name, code)])
 
 
 def rollback(backups: list[tuple[Path, str | None]]) -> None:
@@ -342,16 +484,36 @@ def rollback(backups: list[tuple[Path, str | None]]) -> None:
             p.write_text(prev, encoding="utf-8")
 
 
-def run_cargo_test(crate: str) -> tuple[bool, str]:
+def run_cargo_test(crate: str, mod_names: list[str] | None = None) -> tuple[bool, str]:
     env = os.environ.copy()
     env.setdefault("CARGO_BUILD_JOBS", "2")
+    cmd = ["cargo", "test", "-p", crate]
+    if mod_names:
+        cmd.extend(["--lib", "--quiet", "--", *[f"ported::{m}" for m in mod_names]])
+    else:
+        cmd.append("--quiet")
     proc = subprocess.run(
-        ["cargo", "test", "-p", crate, "--quiet"],
+        cmd,
         cwd=ROOT,
         env=env,
         capture_output=True,
         text=True,
         timeout=300,
+    )
+    out = (proc.stdout or "") + "\n" + (proc.stderr or "")
+    return proc.returncode == 0, out.strip()
+
+
+def run_workspace_test() -> tuple[bool, str]:
+    env = os.environ.copy()
+    env.setdefault("CARGO_BUILD_JOBS", "2")
+    proc = subprocess.run(
+        ["cargo", "test", "--workspace", "--quiet"],
+        cwd=ROOT,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=600,
     )
     out = (proc.stdout or "") + "\n" + (proc.stderr or "")
     return proc.returncode == 0, out.strip()
@@ -371,40 +533,97 @@ def summarize_cargo_error(output: str) -> str:
     return lines[-1]
 
 
-def port_class(candidate: dict) -> bool:
-    fqcn = candidate["fqcn"]
-    crate = candidate["crate"]
-    mod_name = candidate["mod"]
-    java_src = candidate["path"].read_text(encoding="utf-8", errors="ignore")
+def _validate_module_code(cand: dict, code: str) -> tuple[str | None, str | None]:
+    if not code or "unsafe" in re.findall(r"\bunsafe\b", code):
+        return None, "empty output or contained `unsafe`"
+    if "// JAVA:" not in code:
+        code = f"// JAVA: {cand['fqcn']}#class\n" + code
+    if "#[cfg(test)]" not in code:
+        return None, "missing `#[cfg(test)]` unit tests"
+    return code, None
+
+
+def port_batch(batch: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Port a 1-to-N same-crate package batch of Java classes.
+    Returns `(passed_candidates, failed_candidates)`.
+    """
+    crate = batch[0]["crate"]
     crate_ctx = read_crate_context(crate)
-
-    system_prompt = (
-        "You are an expert Rust systems engineer porting Minecraft Java Edition 1.21.11 "
-        "to Rust (Phase A: 1:1 faithful behavioral port).\n"
-        "STRICT RULES:\n"
-        "1. Zero `unsafe` code (`crates` use `#![forbid(unsafe_code)]`; do NOT put `#![...]` crate attributes in a submodule).\n"
-        "2. Match Java integer semantics explicitly: `wrapping_add`, `wrapping_sub`, `wrapping_mul`, masked shifts (`& 31`, `& 63`).\n"
-        "3. Match Java `f32`/`f64` operation order identically.\n"
-        "4. Annotate every ported function/method with `// JAVA: " + fqcn + "#<methodName>` directly above `pub fn` / `fn`.\n"
-        "5. Only use `std` and dependencies already declared in `" + crate + "/Cargo.toml` (plus sibling items from `crate::`).\n"
-        "6. Make the module self-contained so it compiles cleanly on its own without requiring unported external Minecraft classes (define clean local traits/types or minimal interfaces if needed).\n"
-        "7. Include thorough `#[cfg(test)] mod tests` testing edge cases, overflow, negative inputs, and float bits.\n"
-        "8. Output ONLY a single ```rust code block.\n"
-    )
-
-    feedback = ""
-    budgets = [16384, 32768, 65536]
-    efforts = ["high", "max", "max"]
+    remaining = list(batch)
+    passed_all: list[dict] = []
+    skipped_existing: list[dict] = []
+    mod_feedback: dict[str, str] = {}
 
     try:
         for attempt in range(1, 4):
-            set_worker_activity(fqcn, crate, attempt, "generating")
-            prompt = (
-                f"Port `{fqcn}` to a clean, self-contained Rust module `{crate}/src/ported/{mod_name}.rs`.\n\n"
-                f"{crate_ctx}\n\n"
-                f"### Decompiled Java 1.21.11 Source (`{candidate['rel']}`):\n```java\n{java_src}\n```\n\n"
-                f"{feedback}"
-            )
+            if not remaining:
+                break
+
+            max_sz = max(c["size"] for c in remaining)
+            if len(remaining) == 1 and max_sz >= 4000:
+                efforts = ["medium", "high", "max"]
+                budgets = [24576, 49152, 65536]
+            else:
+                efforts = ["low", "medium", "high"]
+                budgets = [12288, 24576, 49152]
+
+            lead = remaining[0]
+            set_worker_activity(lead["fqcn"], crate, attempt, "generating")
+
+            if len(remaining) == 1:
+                cand = remaining[0]
+                fqcn = cand["fqcn"]
+                mod_name = cand["mod"]
+                java_src = cand["path"].read_text(encoding="utf-8", errors="ignore")
+                system_prompt = (
+                    "You are an expert Rust systems engineer porting Minecraft Java Edition 1.21.11 "
+                    "to Rust (Phase A: 1:1 faithful behavioral port).\n"
+                    "STRICT RULES:\n"
+                    "1. Zero `unsafe` code (`crates` use `#![forbid(unsafe_code)]`; do NOT put `#![...]` crate attributes in a submodule).\n"
+                    "2. Match Java integer semantics explicitly: `wrapping_add`, `wrapping_sub`, `wrapping_mul`, masked shifts (`& 31`, `& 63`).\n"
+                    "3. Match Java `f32`/`f64` operation order identically.\n"
+                    f"4. Annotate every ported function/method with `// JAVA: {fqcn}#<methodName>` directly above `pub fn` / `fn`.\n"
+                    f"5. Only use `std` and dependencies already declared in `{crate}/Cargo.toml` (plus sibling items from `crate::`).\n"
+                    "6. Make the module self-contained without requiring unported external Minecraft classes (define minimal local traits/types if needed).\n"
+                    "7. Keep implementations and tests clean and concise: 1:1 faithful without bloated boilerplate; include 3-6 focused `#[cfg(test)] mod tests` covering edge cases, overflow, negative inputs, and float bits.\n"
+                    "8. Output ONLY a single ```rust code block.\n"
+                )
+                fb = mod_feedback.get(mod_name, "")
+                prompt = (
+                    f"Port `{fqcn}` to a clean, self-contained Rust module `{crate}/src/ported/{mod_name}.rs`.\n\n"
+                    f"{crate_ctx}\n\n"
+                    f"### Decompiled Java 1.21.11 Source (`{cand['rel']}`):\n```java\n{java_src}\n```\n\n"
+                    f"{fb}"
+                )
+            else:
+                system_prompt = (
+                    "You are an expert Rust systems engineer porting Minecraft Java Edition 1.21.11 "
+                    "to Rust (Phase A: 1:1 faithful behavioral port).\n"
+                    "STRICT RULES:\n"
+                    "1. Zero `unsafe` code (`crates` use `#![forbid(unsafe_code)]`; do NOT put `#![...]` crate attributes in a submodule).\n"
+                    "2. Match Java integer semantics explicitly: `wrapping_add`, `wrapping_sub`, `wrapping_mul`, masked shifts (`& 31`, `& 63`).\n"
+                    "3. Match Java `f32`/`f64` operation order identically.\n"
+                    "4. Annotate every ported function/method with `// JAVA: <fqcn>#<methodName>` directly above `pub fn` / `fn`.\n"
+                    f"5. Only use `std` and dependencies already declared in `{crate}/Cargo.toml` (plus sibling items from `crate::`).\n"
+                    "6. Keep EACH module self-contained so it compiles on its own without unported external Minecraft classes (do NOT use `super::other_batch_mod` unless already in `lib.rs`).\n"
+                    "7. Keep implementations and tests clean and concise: 1:1 faithful without bloated boilerplate; include 3-6 focused `#[cfg(test)] mod tests` per module covering edge cases, overflow, negative inputs, and float bits.\n"
+                    "8. Output ONE ```rust code block per class, each immediately preceded by a line formatted EXACTLY as `// === FILE: <mod_name>.rs ===`.\n"
+                )
+                sections = []
+                for c in remaining:
+                    java_src = c["path"].read_text(encoding="utf-8", errors="ignore")
+                    fb = mod_feedback.get(c["mod"], "")
+                    fb_block = f"\nPrevious error for `{c['mod']}.rs`:\n{fb}\n" if fb else ""
+                    sections.append(
+                        f"#### Class `{c['fqcn']}` -> marker `// === FILE: {c['mod']}.rs ===` (`{crate}/src/ported/{c['mod']}.rs`)\n"
+                        f"```java\n{java_src}\n```{fb_block}"
+                    )
+                prompt = (
+                    f"Port these {len(remaining)} Java classes to separate self-contained Rust modules in `{crate}`:\n\n"
+                    f"{crate_ctx}\n\n" + "\n\n".join(sections)
+                )
+
             try:
                 reply = deepai_backend.ask(
                     system_prompt,
@@ -415,55 +634,123 @@ def port_class(candidate: dict) -> bool:
             except deepai_backend.QuotaExhausted:
                 raise
             except Exception as exc:
-                log(f"  [{fqcn} attempt {attempt}] LLM error: {exc}")
+                log(f"  [{lead['fqcn']} attempt {attempt}] LLM error: {exc}")
                 continue
 
-            code = extract_rust_block(reply)
-            if not code or "unsafe" in re.findall(r"\bunsafe\b", code):
-                feedback = "Previous reply was empty or contained `unsafe`; output a single valid safe ```rust block.\n"
-                continue
-            if "// JAVA:" not in code:
-                code = f"// JAVA: {fqcn}#class\n" + code
-            if "#[cfg(test)]" not in code:
-                feedback = "Previous reply lacked `#[cfg(test)]` tests; include unit tests.\n"
+            parsed = parse_batch_rust_blocks(reply, [c["mod"] for c in remaining])
+            valid_items: list[tuple[dict, str]] = []
+            next_feedback: dict[str, str] = {}
+
+            for c in remaining:
+                raw_code = parsed.get(c["mod"], "")
+                clean_code, invalid_reason = _validate_module_code(c, raw_code)
+                if clean_code is not None:
+                    valid_items.append((c, clean_code))
+                else:
+                    next_feedback[c["mod"]] = (
+                        f"Previous attempt for `{c['mod']}.rs` failed validation ({invalid_reason}). "
+                        f"Output a valid safe ```rust block preceded by `// === FILE: {c['mod']}.rs ===` with `#[cfg(test)]` unit tests.\n"
+                    )
+
+            if not valid_items:
+                mod_feedback = next_feedback
                 continue
 
             with WRITE_LOCK:
-                set_worker_activity(fqcn, crate, attempt, "testing")
-                try:
-                    backups = wire_ported_module(crate, mod_name, code)
-                except FileExistsError:
-                    log(f"  [{fqcn}] target module {crate}/src/ported/{mod_name}.rs already exists; skipping")
-                    return False
-                try:
-                    ok, test_out = run_cargo_test(crate)
-                except Exception as exc:
-                    ok, test_out = False, str(exc)
+                set_worker_activity(lead["fqcn"], crate, attempt, "testing")
+                ported_dir = CRATES_DIR / crate / "src" / "ported"
+                testable: list[tuple[dict, str]] = []
+                for c, code in valid_items:
+                    if (ported_dir / f"{c['mod']}.rs").exists():
+                        log(f"  [{c['fqcn']}] target module {crate}/src/ported/{c['mod']}.rs already exists; skipping")
+                        skipped_existing.append(c)
+                        continue
+                    testable.append((c, code))
 
-                if ok:
-                    log(f"  [PASS] {fqcn} -> {crate}/src/ported/{mod_name}.rs (attempt {attempt}/3)")
-                    return True
+                remaining_after: list[dict] = [
+                    c for c in remaining
+                    if c["mod"] in next_feedback
+                ]
 
-                rollback(backups)
-                err_tail = test_out[-3000:]
-                log(f"  [{fqcn} attempt {attempt}] cargo test failed: {summarize_cargo_error(test_out)}")
-                feedback = (
-                    f"### Attempt {attempt} `cargo test -p {crate}` failure:\n"
-                    f"```text\n{err_tail}\n```\n"
-                    f"Fix every compiler error and failing test while preserving 1:1 Java semantics.\n"
-                )
+                if len(testable) == 1:
+                    c, code = testable[0]
+                    backups = wire_ported_modules(crate, [(c["mod"], code)])
+                    try:
+                        ok, test_out = run_cargo_test(crate, [c["mod"]])
+                    except Exception as exc:
+                        ok, test_out = False, str(exc)
 
-        return False
+                    if ok:
+                        log(f"  [PASS] {c['fqcn']} -> {crate}/src/ported/{c['mod']}.rs (attempt {attempt}/3)")
+                        passed_all.append(c)
+                    else:
+                        rollback(backups)
+                        err_tail = test_out[-3000:]
+                        log(f"  [{c['fqcn']} attempt {attempt}] cargo test failed: {summarize_cargo_error(test_out)}")
+                        next_feedback[c["mod"]] = (
+                            f"### Attempt {attempt} `cargo test -p {crate}` failure:\n"
+                            f"```text\n{err_tail}\n```\n"
+                            f"Fix every compiler error and failing test while preserving 1:1 Java semantics.\n"
+                        )
+                        remaining_after.append(c)
+
+                elif len(testable) > 1:
+                    batch_mods = [(c["mod"], code) for c, code in testable]
+                    batch_backups = wire_ported_modules(crate, batch_mods)
+                    try:
+                        ok, test_out = run_cargo_test(crate, [m for m, _ in batch_mods])
+                    except Exception as exc:
+                        ok, test_out = False, str(exc)
+
+                    if ok:
+                        names = ", ".join(c["mod"] for c, _ in testable)
+                        log(f"  [PASS BATCH x{len(testable)}] {crate}: [{names}] (attempt {attempt}/3)")
+                        passed_all.extend(c for c, _ in testable)
+                    else:
+                        rollback(batch_backups)
+                        log(
+                            f"  [BATCH SPLIT x{len(testable)}] {crate} combined check failed "
+                            f"({summarize_cargo_error(test_out)}); verifying individually"
+                        )
+                        for c, code in testable:
+                            ind_backups = wire_ported_modules(crate, [(c["mod"], code)])
+                            try:
+                                ind_ok, ind_out = run_cargo_test(crate, [c["mod"]])
+                            except Exception as exc:
+                                ind_ok, ind_out = False, str(exc)
+
+                            if ind_ok:
+                                log(f"  [PASS] {c['fqcn']} -> {crate}/src/ported/{c['mod']}.rs (batch fallback, attempt {attempt}/3)")
+                                passed_all.append(c)
+                            else:
+                                rollback(ind_backups)
+                                err_tail = ind_out[-2500:]
+                                log(f"  [{c['fqcn']} attempt {attempt}] cargo test failed: {summarize_cargo_error(ind_out)}")
+                                next_feedback[c["mod"]] = (
+                                    f"### Attempt {attempt} `cargo test -p {crate}` failure:\n"
+                                    f"```text\n{err_tail}\n```\n"
+                                    f"Fix every compiler error and failing test while preserving 1:1 Java semantics.\n"
+                                )
+                                remaining_after.append(c)
+
+                remaining = remaining_after
+                mod_feedback = next_feedback
+
+            if not remaining:
+                break
+
+        return passed_all, remaining + skipped_existing
     finally:
-        clear_worker_activity(fqcn)
+        for c in batch:
+            clear_worker_activity(c["fqcn"])
 
 
 def desired_workers() -> int:
     try:
         v = int(WORKERS_FILE.read_text(encoding="utf-8").strip())
-        return max(1, min(9, v))
+        return max(1, min(24, v))
     except (OSError, ValueError):
-        return max(1, min(9, int(os.environ.get("MC_RUST_WORKERS", "6"))))
+        return max(1, min(24, int(os.environ.get("MC_RUST_WORKERS", "12"))))
 
 
 def run_forever() -> None:
@@ -480,7 +767,7 @@ def run_forever() -> None:
                 info = deepai_backend.preflight()
                 log(
                     f"DeepAI ready: {info['model']} | keys={info['key_count']} | "
-                    f"context={info['context_window']} | effort={info['reasoning_effort']}"
+                    f"context={info['context_window']} | adaptive effort (low->high / med->max)"
                 )
             except Exception as exc:
                 log(f"DeepAI preflight failed ({exc}); retrying in 120s")
@@ -499,64 +786,92 @@ def run_forever() -> None:
                 continue
 
             workers = desired_workers()
-            queue = deque(candidates[:200])
+            work_units = build_work_units(candidates[:400])
+            queue = deque(work_units[:100])
             inflight: dict = {}
             inflight_mods: set[tuple[str, str]] = set()
             last_publish = 0.0
             verified_in_wave = 0
+            verified_since_ws = 0
             total_verified = sum(1 for r in update_progress.read_jsonl(LEDGER_PATH) if r.get("verified"))
             publish_status(workers=workers, verified_count=total_verified)
-            log(f"Dispatching wave of {len(queue)} candidates with {workers} parallel workers")
+            total_batch_classes = sum(len(u) for u in queue)
+            log(f"Dispatching wave of {len(queue)} work units ({total_batch_classes} classes) with {workers} parallel workers")
 
             with ThreadPoolExecutor(max_workers=workers) as pool:
                 while queue or inflight:
                     rotations = 0
                     while queue and len(inflight) < workers:
-                        cand = queue.popleft()
-                        mod_key = (cand["crate"], cand["mod"])
+                        batch = queue.popleft()
+                        mod_keys = {(c["crate"], c["mod"]) for c in batch}
                         # Keep one module-write at a time per target module filename
-                        if mod_key in inflight_mods:
-                            queue.append(cand)
+                        if mod_keys & inflight_mods:
+                            queue.append(batch)
                             rotations += 1
                             if rotations >= len(queue):
                                 break
                             continue
-                        inflight_mods.add(mod_key)
-                        fut = pool.submit(port_class, cand)
-                        inflight[fut] = (cand, time.time())
+                        inflight_mods.update(mod_keys)
+                        fut = pool.submit(port_batch, batch)
+                        inflight[fut] = (batch, time.time())
 
                     if not inflight:
                         break
                     done_futs, _ = wait(inflight, return_when=FIRST_COMPLETED)
                     for fut in done_futs:
-                        cand, started = inflight.pop(fut)
-                        inflight_mods.discard((cand["crate"], cand["mod"]))
-                        fqcn = cand["fqcn"]
+                        batch, started = inflight.pop(fut)
+                        for c in batch:
+                            inflight_mods.discard((c["crate"], c["mod"]))
+                        elapsed = time.time() - started
                         try:
-                            ok = fut.result()
+                            passed_cands, failed_cands = fut.result()
                         except deepai_backend.QuotaExhausted:
                             raise
                         except Exception as exc:
-                            log(f"  [{fqcn}] worker error: {exc}")
-                            ok = False
+                            log(f"  [{batch[0]['fqcn']}] worker error: {exc}")
+                            passed_cands, failed_cands = [], list(batch)
 
-                        record_work(fqcn, cand["crate"], ok, time.time() - started)
-                        if ok:
+                        for c in passed_cands:
+                            fqcn = c["fqcn"]
+                            record_work(fqcn, c["crate"], True, elapsed)
                             skips.pop(fqcn, None)
                             verified_in_wave += 1
+                            verified_since_ws += 1
                             total_verified += 1
-                            publish_status(verified_count=total_verified, workers=workers)
-                        else:
+
+                        for c in failed_cands:
+                            fqcn = c["fqcn"]
+                            record_work(fqcn, c["crate"], False, elapsed)
                             fails = (skips.get(fqcn) or [0, 0])[0] + 1
                             skips[fqcn] = [fails, time.time()]
+
+                        if passed_cands:
+                            publish_status(verified_count=total_verified, workers=workers)
                         save_skips(skips)
 
-                    if verified_in_wave > 0 and time.time() - last_publish >= 120:
+                    if verified_since_ws >= 40:
+                        with WRITE_LOCK:
+                            ok_ws, ws_out = run_workspace_test()
+                        if ok_ws:
+                            log(f"Workspace regression test PASS ({total_verified} total verified)")
+                        else:
+                            log(f"WARN: workspace test failed: {summarize_cargo_error(ws_out)}")
+                        verified_since_ws = 0
+
+                    if verified_in_wave >= 10 or (verified_in_wave > 0 and time.time() - last_publish >= 60):
                         msg = f"Port {verified_in_wave} Java class(es) via DeepSeek V4.1 Flash [Phase A]"
                         with WRITE_LOCK:
                             update_progress.update_all(commit_msg=msg)
                         last_publish = time.time()
                         verified_in_wave = 0
+
+            if verified_since_ws > 0:
+                with WRITE_LOCK:
+                    ok_ws, ws_out = run_workspace_test()
+                if ok_ws:
+                    log(f"Wave end workspace regression test PASS ({total_verified} total verified)")
+                else:
+                    log(f"WARN: wave end workspace test failed: {summarize_cargo_error(ws_out)}")
 
             if verified_in_wave > 0:
                 msg = f"Port {verified_in_wave} Java class(es) via DeepSeek V4.1 Flash [Phase A]"
