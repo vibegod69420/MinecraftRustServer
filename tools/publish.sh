@@ -57,7 +57,10 @@ else
         commit -q -m "Worker sync: ${mapped} mapped Java methods"
 fi
 
-git pull --rebase -q origin main || true
+git fetch -q origin main || true
+if [ "$(git rev-list --count HEAD..origin/main 2>/dev/null || echo 0)" -gt 0 ]; then
+    git pull --rebase --autostash -q origin main || true
+fi
 if git push -q origin main; then
     echo "pushed to origin/main"
 else
