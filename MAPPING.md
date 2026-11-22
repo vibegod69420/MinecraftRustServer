@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **186** across **50** classes.
+Total mapped Java symbols: **191** across **52** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -36,6 +36,7 @@ Total mapped Java symbols: **186** across **50** classes.
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
 | `net.minecraft.nbt.DoubleTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 99 | `double_value_of` |
 | `net.minecraft.nbt.FloatTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 94 | `float_value_of` |
+| `net.minecraft.nbt.NbtException#<init>` | `crates/mc-nbt/src/ported/nbt_exception.rs` | 16 | `new` |
 | `net.minecraft.nbt.NbtIo#read(DataInput)` | `crates/mc-nbt/src/lib.rs` | 282 | `read_nbt` |
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
@@ -190,6 +191,10 @@ Total mapped Java symbols: **186** across **50** classes.
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextInt()` | `crates/mc-math/src/random.rs` | 312 | `next_int` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextInt(int)` | `crates/mc-math/src/random.rs` | 317 | `next_int_bound` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextLong` | `crates/mc-math/src/random.rs` | 332 | `next_long` |
+| `net.minecraft.world.level.levelgen.Density` | `crates/mc-worldgen/src/ported/density.rs` | 1 | `surface` |
+| `net.minecraft.world.level.levelgen.Density#surface` | `crates/mc-worldgen/src/ported/density.rs` | 4 | `surface` |
+| `net.minecraft.world.level.levelgen.Density#unrecoverablyDense` | `crates/mc-worldgen/src/ported/density.rs` | 9 | `unrecoverably_dense` |
+| `net.minecraft.world.level.levelgen.Density#unrecoverablyThin` | `crates/mc-worldgen/src/ported/density.rs` | 14 | `unrecoverably_thin` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>` | `crates/mc-math/src/random.rs` | 240 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#fork` | `crates/mc-math/src/random.rs` | 362 | `fork` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#forkPositional` | `crates/mc-math/src/random.rs` | 367 | `fork_positional` |
