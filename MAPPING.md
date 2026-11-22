@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **151** across **35** classes.
+Total mapped Java symbols: **155** across **36** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -86,6 +86,21 @@ Total mapped Java symbols: **151** across **35** classes.
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 20 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
+| `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 11 | `capacity` |
+| `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 69 | `capacity` |
+| `net.minecraft.util.debugchart.SampleStorage#capacity` | `crates/mc-math/src/ported/sample_storage.rs` | 334 | `capacity` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 17 | `get` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 20 | `get_with_offset` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 79 | `get` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 91 | `get_with_offset` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 344 | `get` |
+| `net.minecraft.util.debugchart.SampleStorage#get` | `crates/mc-math/src/ported/sample_storage.rs` | 349 | `get_with_offset` |
+| `net.minecraft.util.debugchart.SampleStorage#reset` | `crates/mc-math/src/ported/sample_storage.rs` | 23 | `reset` |
+| `net.minecraft.util.debugchart.SampleStorage#reset` | `crates/mc-math/src/ported/sample_storage.rs` | 97 | `reset` |
+| `net.minecraft.util.debugchart.SampleStorage#reset` | `crates/mc-math/src/ported/sample_storage.rs` | 354 | `reset` |
+| `net.minecraft.util.debugchart.SampleStorage#size` | `crates/mc-math/src/ported/sample_storage.rs` | 14 | `size` |
+| `net.minecraft.util.debugchart.SampleStorage#size` | `crates/mc-math/src/ported/sample_storage.rs` | 74 | `size` |
+| `net.minecraft.util.debugchart.SampleStorage#size` | `crates/mc-math/src/ported/sample_storage.rs` | 339 | `size` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#name` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 44 | `name` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#ordinal` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 38 | `ordinal` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#valueOf` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 59 | `value_of` |

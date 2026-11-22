@@ -1,17 +1,18 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 21:10:01 UTC
+- **Updated**: 2026-11-22 21:10:07 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 151 / 66676 (0.227%)
-- **Mapped Java Classes**: 35 / 7163 (0.489%)
+- **Mapped Java Methods**: 155 / 66676 (0.233%)
+- **Mapped Java Classes**: 36 / 7163 (0.503%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 156 mapped methods
+- `mc-math`: 171 mapped methods
 - `mc-nbt`: 6 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.debugchart.SampleStorage` -> `mc-math` (158.3s)
 - [PASS] `net.minecraft.util.FormattedCharSink` -> `mc-math` (204.5s)
 - [FAIL] `net.minecraft.util.valueproviders.SampledFloat` -> `mc-math` (137.4s)
 - [PASS] `net.minecraft.util.profiling.metrics.ProfilerMeasured` -> `mc-math` (110.0s)

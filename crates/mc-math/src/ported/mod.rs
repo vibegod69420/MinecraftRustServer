@@ -6,3 +6,4 @@ pub mod profiled_duration;
 pub mod crypt_exception;
 pub mod profiler_measured;
 pub mod formatted_char_sink;
+pub mod sample_storage;
