@@ -1,1 +1,1 @@
-{"state": "testing", "class_name": "net.minecraft.util.RegistryContextSwapper", "crate": "mc-math", "attempt": 1, "verified_count": 16, "ts": "2026-11-22T21:40:56Z"}
+{"state": "generating", "class_name": "net.minecraft.util.profiling.metrics.profiling.MetricsRecorder", "crate": "mc-math", "attempt": 1, "verified_count": 17, "ts": "2026-11-22T21:40:58Z"}
