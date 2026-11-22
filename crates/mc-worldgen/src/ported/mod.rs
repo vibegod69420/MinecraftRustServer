@@ -111,3 +111,7 @@ pub mod matching_fluids_predicate;
 pub mod would_survive_predicate;
 pub mod has_sturdy_face_predicate;
 pub mod vines_feature;
+pub mod end_gateway_configuration;
+pub mod random_boolean_feature_configuration;
+pub mod random_feature_configuration;
+pub mod sculk_patch_configuration;

@@ -107,3 +107,7 @@ pub mod clientbound_set_title_text_packet;
 pub mod serverbound_chat_command_packet;
 pub mod serverbound_recipe_book_seen_recipe_packet;
 pub mod clientbound_set_default_spawn_position_packet;
+pub mod clientbound_transfer_packet;
+pub mod clientbound_ping_packet;
+pub mod serverbound_pong_packet;
+pub mod client_common_packet_listener;

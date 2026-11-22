@@ -93,3 +93,4 @@ pub mod boat_dispense_item_behavior;
 pub mod default_dispense_item_behavior;
 pub mod attribute_modifiers_predicate;
 pub mod data_component_predicates;
+pub mod registry_access;
