@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2219** across **587** classes.
+Total mapped Java symbols: **2272** across **588** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -705,6 +705,59 @@ Total mapped Java symbols: **2219** across **587** classes.
 | `net.minecraft.nbt.IntArrayTag#toString` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 302 | `fmt` |
 | `net.minecraft.nbt.IntArrayTag#write` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 196 | `write` |
 | `net.minecraft.nbt.IntTag#valueOf` | `crates/mc-nbt/src/ported/int_array_tag.rs` | 65 | `value_of` |
+| `net.minecraft.nbt.ListTag#<init>()` | `crates/mc-nbt/src/ported/list_tag.rs` | 573 | `new` |
+| `net.minecraft.nbt.ListTag#<init>(List)` | `crates/mc-nbt/src/ported/list_tag.rs` | 578 | `from_vec` |
+| `net.minecraft.nbt.ListTag#accept(StreamTagVisitor)` | `crates/mc-nbt/src/ported/list_tag.rs` | 1019 | `accept_stream_visitor` |
+| `net.minecraft.nbt.ListTag#accept(TagVisitor)` | `crates/mc-nbt/src/ported/list_tag.rs` | 1009 | `accept_tag_visitor` |
+| `net.minecraft.nbt.ListTag#add` | `crates/mc-nbt/src/ported/list_tag.rs` | 949 | `add` |
+| `net.minecraft.nbt.ListTag#addAndUnwrap` | `crates/mc-nbt/src/ported/list_tag.rs` | 730 | `add_and_unwrap` |
+| `net.minecraft.nbt.ListTag#addTag` | `crates/mc-nbt/src/ported/list_tag.rs` | 960 | `add_tag` |
+| `net.minecraft.nbt.ListTag#asList` | `crates/mc-nbt/src/ported/list_tag.rs` | 975 | `as_list` |
+| `net.minecraft.nbt.ListTag#clear` | `crates/mc-nbt/src/ported/list_tag.rs` | 1014 | `clear` |
+| `net.minecraft.nbt.ListTag#compoundStream` | `crates/mc-nbt/src/ported/list_tag.rs` | 1001 | `compound_stream` |
+| `net.minecraft.nbt.ListTag#copy` | `crates/mc-nbt/src/ported/list_tag.rs` | 966 | `copy` |
+| `net.minecraft.nbt.ListTag#equals` | `crates/mc-nbt/src/ported/list_tag.rs` | 980 | `equals` |
+| `net.minecraft.nbt.ListTag#get` | `crates/mc-nbt/src/ported/list_tag.rs` | 939 | `get` |
+| `net.minecraft.nbt.ListTag#getCompound` | `crates/mc-nbt/src/ported/list_tag.rs` | 778 | `get_compound` |
+| `net.minecraft.nbt.ListTag#getCompoundOrEmpty` | `crates/mc-nbt/src/ported/list_tag.rs` | 786 | `get_compound_or_empty` |
+| `net.minecraft.nbt.ListTag#getDouble` | `crates/mc-nbt/src/ported/list_tag.rs` | 862 | `get_double` |
+| `net.minecraft.nbt.ListTag#getDoubleOr` | `crates/mc-nbt/src/ported/list_tag.rs` | 875 | `get_double_or` |
+| `net.minecraft.nbt.ListTag#getFloat` | `crates/mc-nbt/src/ported/list_tag.rs` | 883 | `get_float` |
+| `net.minecraft.nbt.ListTag#getFloatOr` | `crates/mc-nbt/src/ported/list_tag.rs` | 896 | `get_float_or` |
+| `net.minecraft.nbt.ListTag#getId` | `crates/mc-nbt/src/ported/list_tag.rs` | 749 | `get_id` |
+| `net.minecraft.nbt.ListTag#getInt` | `crates/mc-nbt/src/ported/list_tag.rs` | 825 | `get_int` |
+| `net.minecraft.nbt.ListTag#getIntArray` | `crates/mc-nbt/src/ported/list_tag.rs` | 846 | `get_int_array` |
+| `net.minecraft.nbt.ListTag#getIntOr` | `crates/mc-nbt/src/ported/list_tag.rs` | 838 | `get_int_or` |
+| `net.minecraft.nbt.ListTag#getList` | `crates/mc-nbt/src/ported/list_tag.rs` | 791 | `get_list` |
+| `net.minecraft.nbt.ListTag#getListOrEmpty` | `crates/mc-nbt/src/ported/list_tag.rs` | 799 | `get_list_or_empty` |
+| `net.minecraft.nbt.ListTag#getLongArray` | `crates/mc-nbt/src/ported/list_tag.rs` | 854 | `get_long_array` |
+| `net.minecraft.nbt.ListTag#getNullable` | `crates/mc-nbt/src/ported/list_tag.rs` | 920 | `get_nullable` |
+| `net.minecraft.nbt.ListTag#getOptional` | `crates/mc-nbt/src/ported/list_tag.rs` | 929 | `get_optional` |
+| `net.minecraft.nbt.ListTag#getShort` | `crates/mc-nbt/src/ported/list_tag.rs` | 804 | `get_short` |
+| `net.minecraft.nbt.ListTag#getShortOr` | `crates/mc-nbt/src/ported/list_tag.rs` | 817 | `get_short_or` |
+| `net.minecraft.nbt.ListTag#getString` | `crates/mc-nbt/src/ported/list_tag.rs` | 904 | `get_string` |
+| `net.minecraft.nbt.ListTag#getStringOr` | `crates/mc-nbt/src/ported/list_tag.rs` | 912 | `get_string_or` |
+| `net.minecraft.nbt.ListTag#hashCode` | `crates/mc-nbt/src/ported/list_tag.rs` | 985 | `hash_code` |
+| `net.minecraft.nbt.ListTag#identifyRawElementType` | `crates/mc-nbt/src/ported/list_tag.rs` | 716 | `identify_raw_element_type` |
+| `net.minecraft.nbt.ListTag#isEmpty` | `crates/mc-nbt/src/ported/list_tag.rs` | 773 | `is_empty` |
+| `net.minecraft.nbt.ListTag#isWrapper` | `crates/mc-nbt/src/ported/list_tag.rs` | 485 | `is_wrapper` |
+| `net.minecraft.nbt.ListTag#load (TYPE)` | `crates/mc-nbt/src/ported/list_tag.rs` | 611 | `load` |
+| `net.minecraft.nbt.ListTag#loadList` | `crates/mc-nbt/src/ported/list_tag.rs` | 583 | `load_list` |
+| `net.minecraft.nbt.ListTag#parse (TYPE)` | `crates/mc-nbt/src/ported/list_tag.rs` | 676 | `parse` |
+| `net.minecraft.nbt.ListTag#parseList (TYPE)` | `crates/mc-nbt/src/ported/list_tag.rs` | 619 | `parse_list` |
+| `net.minecraft.nbt.ListTag#readListCount` | `crates/mc-nbt/src/ported/list_tag.rs` | 602 | `read_list_count` |
+| `net.minecraft.nbt.ListTag#remove` | `crates/mc-nbt/src/ported/list_tag.rs` | 768 | `remove` |
+| `net.minecraft.nbt.ListTag#set` | `crates/mc-nbt/src/ported/list_tag.rs` | 944 | `set` |
+| `net.minecraft.nbt.ListTag#setTag` | `crates/mc-nbt/src/ported/list_tag.rs` | 954 | `set_tag` |
+| `net.minecraft.nbt.ListTag#size` | `crates/mc-nbt/src/ported/list_tag.rs` | 934 | `size` |
+| `net.minecraft.nbt.ListTag#sizeInBytes` | `crates/mc-nbt/src/ported/list_tag.rs` | 739 | `size_in_bytes` |
+| `net.minecraft.nbt.ListTag#skip (TYPE)` | `crates/mc-nbt/src/ported/list_tag.rs` | 688 | `skip` |
+| `net.minecraft.nbt.ListTag#stream` | `crates/mc-nbt/src/ported/list_tag.rs` | 996 | `stream` |
+| `net.minecraft.nbt.ListTag#toString` | `crates/mc-nbt/src/ported/list_tag.rs` | 754 | `to_string_tag` |
+| `net.minecraft.nbt.ListTag#tryUnwrap` | `crates/mc-nbt/src/ported/list_tag.rs` | 473 | `try_unwrap` |
+| `net.minecraft.nbt.ListTag#wrapElement` | `crates/mc-nbt/src/ported/list_tag.rs` | 490 | `wrap_element` |
+| `net.minecraft.nbt.ListTag#wrapIfNeeded` | `crates/mc-nbt/src/ported/list_tag.rs` | 495 | `wrap_if_needed` |
+| `net.minecraft.nbt.ListTag#write` | `crates/mc-nbt/src/ported/list_tag.rs` | 704 | `write` |
 | `net.minecraft.nbt.LongArrayTag#<init>` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 202 | `new` |
 | `net.minecraft.nbt.LongArrayTag#accept` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 261 | `accept` |
 | `net.minecraft.nbt.LongArrayTag#accept` | `crates/mc-nbt/src/ported/long_array_tag.rs` | 318 | `accept_stream` |
