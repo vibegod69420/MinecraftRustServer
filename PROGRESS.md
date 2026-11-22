@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:07:39 UTC
+- **Updated**: 2026-11-22 22:08:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 419 / 66676 (0.628%)
-- **Mapped Java Classes**: 138 / 7163 (1.927%)
+- **Mapped Java Methods**: 430 / 66676 (0.645%)
+- **Mapped Java Classes**: 142 / 7163 (1.982%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,7 +11,7 @@
 - `mc-math`: 330 mapped methods
 - `mc-nbt`: 60 mapped methods
 - `mc-protocol`: 82 mapped methods
-- `mc-worldgen`: 81 mapped methods
+- `mc-worldgen`: 99 mapped methods
 
 ## Recent Verified Work
 - [PASS] `net.minecraft.network.protocol.BundlePacket` -> `mc-protocol` (465.2s)

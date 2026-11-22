@@ -24,3 +24,5 @@ pub mod placement_modifier;
 pub mod cave_surface;
 pub mod rarity_filter;
 pub mod in_square_placement;
+pub mod fill_layer_feature;
+pub mod replace_block_feature;

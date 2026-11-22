@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **419** across **138** classes.
+Total mapped Java symbols: **430** across **142** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -28,9 +28,15 @@ Total mapped Java symbols: **419** across **138** classes.
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-math/src/packing.rs` | 33 | `containing` |
 | `net.minecraft.core.BlockPos#getX` | `crates/mc-math/src/packing.rs` | 54 | `get_x` |
+| `net.minecraft.core.BlockPos#getX` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 37 | `get_x` |
 | `net.minecraft.core.BlockPos#getY` | `crates/mc-math/src/packing.rs` | 62 | `get_y` |
 | `net.minecraft.core.BlockPos#getZ` | `crates/mc-math/src/packing.rs` | 69 | `get_z` |
+| `net.minecraft.core.BlockPos#getZ` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 42 | `get_z` |
+| `net.minecraft.core.BlockPos#new(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 32 | `new` |
+| `net.minecraft.core.BlockPos#new(int,int,int)` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 25 | `new` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-math/src/packing.rs` | 77 | `of` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-data/build.rs` | 132 | `by_id` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-data/build.rs` | 128 | `get_id` |
 | `net.minecraft.core.SectionPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 108 | `as_long_coords` |
@@ -422,6 +428,7 @@ Total mapped Java symbols: **419** across **138** classes.
 | `net.minecraft.util.valueproviders.WeightedListInt#sample` | `crates/mc-math/src/ported/weighted_list_int.rs` | 122 | `sample` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
+| `net.minecraft.world.level.block.state.BlockState#isAir` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 17 | `is_air` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextDouble` | `crates/mc-math/src/random.rs` | 286 | `bit_next_double` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextDouble` | `crates/mc-math/src/random.rs` | 349 | `next_double` |
@@ -474,9 +481,20 @@ Total mapped Java symbols: **419** across **138** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 76 | `config` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 120 | `level` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 66 | `level` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 110 | `origin` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 71 | `origin` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#random` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 81 | `random` |
+| `net.minecraft.world.level.levelgen.feature.FillLayerFeature#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 137 | `new` |
+| `net.minecraft.world.level.levelgen.feature.FillLayerFeature#place` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 149 | `place` |
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#<init>` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 31 | `new` |
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#place` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 38 | `place` |
+| `net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature#<init>` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 98 | `new` |
+| `net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature#place` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 112 | `place` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 29 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 19 | `<item>` |
