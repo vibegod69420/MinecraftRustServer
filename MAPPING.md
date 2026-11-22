@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1980** across **549** classes.
+Total mapped Java symbols: **2001** across **553** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -333,6 +333,10 @@ Total mapped Java symbols: **1980** across **549** classes.
 | `net.minecraft.core.dispenser.DefaultDispenseItemBehavior#spawnItem` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 144 | `spawn_item` |
 | `net.minecraft.core.dispenser.EquipmentDispenseItemBehavior#dispenseEquipment` | `crates/mc-math/src/ported/equipment_dispense_item_behavior.rs` | 157 | `dispense_equipment` |
 | `net.minecraft.core.dispenser.EquipmentDispenseItemBehavior#execute` | `crates/mc-math/src/ported/equipment_dispense_item_behavior.rs` | 147 | `execute` |
+| `net.minecraft.core.dispenser.MinecartDispenseItemBehavior#<init>` | `crates/mc-math/src/ported/minecart_dispense_item_behavior.rs` | 154 | `new` |
+| `net.minecraft.core.dispenser.MinecartDispenseItemBehavior#execute` | `crates/mc-math/src/ported/minecart_dispense_item_behavior.rs` | 162 | `execute` |
+| `net.minecraft.core.dispenser.MinecartDispenseItemBehavior#getRailShape` | `crates/mc-math/src/ported/minecart_dispense_item_behavior.rs` | 231 | `get_rail_shape` |
+| `net.minecraft.core.dispenser.MinecartDispenseItemBehavior#playSound` | `crates/mc-math/src/ported/minecart_dispense_item_behavior.rs` | 221 | `play_sound` |
 | `net.minecraft.core.dispenser.OptionalDispenseItemBehavior#isSuccess` | `crates/mc-math/src/ported/optional_dispense_item_behavior.rs` | 49 | `is_success` |
 | `net.minecraft.core.dispenser.OptionalDispenseItemBehavior#isSuccess` | `crates/mc-math/src/ported/shulker_box_dispense_behavior.rs` | 132 | `is_success` |
 | `net.minecraft.core.dispenser.OptionalDispenseItemBehavior#playSound` | `crates/mc-math/src/ported/optional_dispense_item_behavior.rs` | 59 | `play_sound` |
@@ -2296,6 +2300,18 @@ Total mapped Java symbols: **1980** across **549** classes.
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 28 | `unwrap_builder` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 11 | `when_condition` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 14 | `when_mapped` |
+| `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#<init>` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 33 | `new` |
+| `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#getReferencedContextParams` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 43 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#getType` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 38 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#survivesExplosion` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 62 | `survives_explosion` |
+| `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition#test` | `crates/mc-nbt/src/ported/explosion_condition.rs` | 50 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#<init>` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 32 | `new` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#getReferencedContextParams` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 52 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#getType` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 42 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#invert` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 63 | `invert` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#term` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 37 | `term` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#test` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 47 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#validate` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 57 | `validate` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemConditionType#<init>` | `crates/mc-nbt/src/ported/loot_item_condition_type.rs` | 58 | `new` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemConditionType#codec` | `crates/mc-nbt/src/ported/loot_item_condition_type.rs` | 63 | `codec` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 75 | `<item>` |
@@ -2307,6 +2323,12 @@ Total mapped Java symbols: **1980** across **549** classes.
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition#killedByPlayer` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 93 | `killed_by_player` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition#killedByPlayer` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 123 | `build` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition#test` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 112 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#<init>` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 53 | `new` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#chance` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 58 | `chance` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#getType` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 63 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#randomChance` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 74 | `random_chance` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#randomChance` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 79 | `random_chance_provider` |
+| `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition#test` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 68 | `test` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/loot_nbt_provider_type.rs` | 33 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/nbt_provider.rs` | 27 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType#<init>` | `crates/mc-nbt/src/ported/nbt_providers.rs` | 33 | `new` |
@@ -2331,7 +2353,9 @@ Total mapped Java symbols: **1980** across **549** classes.
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#<init>` | `crates/mc-nbt/src/ported/constant_value.rs` | 111 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#equals` | `crates/mc-nbt/src/ported/constant_value.rs` | 159 | `eq` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#exactly` | `crates/mc-nbt/src/ported/constant_value.rs` | 131 | `exactly` |
+| `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#exactly` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 24 | `exactly` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#getFloat` | `crates/mc-nbt/src/ported/constant_value.rs` | 126 | `get_float` |
+| `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#getFloat` | `crates/mc-nbt/src/ported/loot_item_random_chance_condition.rs` | 29 | `get_float` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#getType` | `crates/mc-nbt/src/ported/constant_value.rs` | 121 | `get_type` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#hashCode` | `crates/mc-nbt/src/ported/constant_value.rs` | 136 | `hash_code` |
 | `net.minecraft.world.level.storage.loot.providers.number.ConstantValue#value` | `crates/mc-nbt/src/ported/constant_value.rs` | 116 | `value` |

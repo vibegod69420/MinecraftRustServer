@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:54:02 UTC",
-  "updated_epoch": 1795388042,
+  "updated_at": "2026-11-22 22:55:08 UTC",
+  "updated_epoch": 1795388108,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 549,
-    "mapped_methods": 1980,
-    "class_coverage_pct": 7.6644,
-    "method_coverage_pct": 2.9696,
-    "harness_verified_classes": 357,
+    "mapped_classes": 553,
+    "mapped_methods": 2001,
+    "class_coverage_pct": 7.7202,
+    "method_coverage_pct": 3.0011,
+    "harness_verified_classes": 359,
     "harness_failed_attempts": 39
   },
   "crates": [
@@ -31,11 +31,11 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 744
+      "mapped_methods": 748
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 594
+      "mapped_methods": 614
     },
     {
       "name": "mc-protocol",
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 302,
-    "prompt_tokens": 644941,
-    "completion_tokens": 3485324,
-    "reasoning_tokens": 2564754,
-    "avg_latency_s": 171.3
+    "calls_total": 304,
+    "prompt_tokens": 651641,
+    "completion_tokens": 3529306,
+    "reasoning_tokens": 2597104,
+    "avg_latency_s": 172.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:54:50Z",
+      "class_name": "net.minecraft.core.dispenser.MinecartDispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 565.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:54:50Z",
+      "class_name": "net.minecraft.core.dispenser.DefaultDispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 565.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:54:00Z",
       "class_name": "net.minecraft.nbt.TextComponentTagVisitor",
@@ -357,25 +373,14 @@
       "verified": true,
       "seconds": 218.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:48:53Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetActionBarTextPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 218.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:48:53Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetSubtitleTextPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 218.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3668b30",
+      "ts": "2026-11-22T22:54:02+00:00",
+      "message": "Worker sync: 1980 mapped Java methods"
+    },
     {
       "sha": "395b5a8",
       "ts": "2026-11-22T22:53:28+00:00",
@@ -445,11 +450,6 @@
       "sha": "20cf082",
       "ts": "2026-11-22T22:42:04+00:00",
       "message": "Port 11 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "86183b4",
-      "ts": "2026-11-22T22:42:03+00:00",
-      "message": "Worker sync: 1536 mapped Java methods"
     }
   ]
 }

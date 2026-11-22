@@ -1,19 +1,21 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:54:02 UTC
+- **Updated**: 2026-11-22 22:55:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 1980 / 66676 (2.970%)
-- **Mapped Java Classes**: 549 / 7163 (7.664%)
+- **Mapped Java Methods**: 2001 / 66676 (3.001%)
+- **Mapped Java Classes**: 553 / 7163 (7.720%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 744 mapped methods
-- `mc-nbt`: 594 mapped methods
+- `mc-math`: 748 mapped methods
+- `mc-nbt`: 614 mapped methods
 - `mc-protocol`: 480 mapped methods
 - `mc-worldgen`: 540 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.core.dispenser.MinecartDispenseItemBehavior` -> `mc-math` (565.0s)
+- [PASS] `net.minecraft.core.dispenser.DefaultDispenseItemBehavior` -> `mc-math` (565.0s)
 - [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (1549.4s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundCooldownPacket` -> `mc-protocol` (238.4s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetTimePacket` -> `mc-protocol` (238.4s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.nbt.NbtOps` -> `mc-nbt` (1426.3s)
 - [PASS] `net.minecraft.network.protocol.common.ClientCommonPacketListener` -> `mc-protocol` (197.7s)
 - [PASS] `net.minecraft.network.protocol.common.ServerboundPongPacket` -> `mc-protocol` (197.7s)
-- [PASS] `net.minecraft.network.protocol.common.ClientboundPingPacket` -> `mc-protocol` (197.7s)
-- [PASS] `net.minecraft.network.protocol.common.ClientboundTransferPacket` -> `mc-protocol` (197.7s)
