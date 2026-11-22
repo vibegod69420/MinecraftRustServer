@@ -149,3 +149,4 @@ pub mod random_pool_alias;
 pub mod straight_trunk_placer;
 pub mod trunk_placer_type;
 pub mod mega_jungle_trunk_placer;
+pub mod mega_jungle_foliage_placer;

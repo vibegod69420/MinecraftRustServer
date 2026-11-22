@@ -89,3 +89,6 @@ pub mod number_providers;
 pub mod uniform_generator;
 pub mod binomial_distribution_generator;
 pub mod loot_context_params;
+pub mod weather_check;
+pub mod time_check;
+pub mod loot_item_entity_property_condition;
