@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2149** across **578** classes.
+Total mapped Java symbols: **2165** across **582** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -218,6 +218,33 @@ Total mapped Java symbols: **2149** across **578** classes.
 | `net.minecraft.core.Holder$Reference#unwrap` | `crates/mc-math/src/ported/holder.rs` | 413 | `unwrap` |
 | `net.minecraft.core.Holder$Reference#unwrapKey` | `crates/mc-math/src/ported/holder.rs` | 418 | `unwrap_key` |
 | `net.minecraft.core.Holder$Reference#value` | `crates/mc-math/src/ported/holder.rs` | 366 | `value` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 238 | `get` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 241 | `get_tag` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 355 | `get` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 365 | `get_tag` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 429 | `get` |
+| `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 434 | `get_tag` |
+| `net.minecraft.core.HolderLookup#listElementIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 251 | `list_element_ids` |
+| `net.minecraft.core.HolderLookup#listElementIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 385 | `list_element_ids` |
+| `net.minecraft.core.HolderLookup#listElements` | `crates/mc-math/src/ported/holder_lookup.rs` | 248 | `list_elements` |
+| `net.minecraft.core.HolderLookup#listElements` | `crates/mc-math/src/ported/holder_lookup.rs` | 373 | `list_elements` |
+| `net.minecraft.core.HolderLookup#listElements` | `crates/mc-math/src/ported/holder_lookup.rs` | 441 | `list_elements` |
+| `net.minecraft.core.HolderLookup#listTagIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 262 | `list_tag_ids` |
+| `net.minecraft.core.HolderLookup#listTagIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 401 | `list_tag_ids` |
+| `net.minecraft.core.HolderLookup#listTags` | `crates/mc-math/src/ported/holder_lookup.rs` | 259 | `list_tags` |
+| `net.minecraft.core.HolderLookup#listTags` | `crates/mc-math/src/ported/holder_lookup.rs` | 393 | `list_tags` |
+| `net.minecraft.core.HolderLookup#listTags` | `crates/mc-math/src/ported/holder_lookup.rs` | 446 | `list_tags` |
+| `net.minecraft.core.HolderLookup$Provider#allRegistriesLifecycle` | `crates/mc-math/src/ported/holder_lookup.rs` | 542 | `all_registries_lifecycle` |
+| `net.minecraft.core.HolderLookup$Provider#create` | `crates/mc-math/src/ported/holder_lookup.rs` | 487 | `create` |
+| `net.minecraft.core.HolderLookup$Provider#createSerializationContext` | `crates/mc-math/src/ported/holder_lookup.rs` | 537 | `create_serialization_context` |
+| `net.minecraft.core.HolderLookup$Provider#listRegistries` | `crates/mc-math/src/ported/holder_lookup.rs` | 504 | `list_registries` |
+| `net.minecraft.core.HolderLookup$Provider#listRegistryKeys` | `crates/mc-math/src/ported/holder_lookup.rs` | 496 | `list_registry_keys` |
+| `net.minecraft.core.HolderLookup$Provider#lookup` | `crates/mc-math/src/ported/holder_lookup.rs` | 517 | `lookup` |
+| `net.minecraft.core.HolderLookup$Provider#lookupOrThrow` | `crates/mc-math/src/ported/holder_lookup.rs` | 528 | `lookup_or_throw` |
+| `net.minecraft.core.HolderLookup$RegistryLookup#filterElements` | `crates/mc-math/src/ported/holder_lookup.rs` | 406 | `filter_elements` |
+| `net.minecraft.core.HolderLookup$RegistryLookup#filterFeatures` | `crates/mc-math/src/ported/holder_lookup.rs` | 416 | `filter_features` |
+| `net.minecraft.core.HolderLookup$RegistryLookup#key` | `crates/mc-math/src/ported/holder_lookup.rs` | 339 | `key` |
+| `net.minecraft.core.HolderLookup$RegistryLookup#registryLifecycle` | `crates/mc-math/src/ported/holder_lookup.rs` | 347 | `registry_lifecycle` |
 | `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 10 | `can_serialize_in` |
 | `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 40 | `can_serialize_in` |
 | `net.minecraft.core.HolderSet#stream` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 43 | `stream` |
