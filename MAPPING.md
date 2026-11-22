@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **163** across **39** classes.
+Total mapped Java symbols: **166** across **40** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -108,6 +108,9 @@ Total mapped Java symbols: **163** across **39** classes.
 | `net.minecraft.util.debugchart.TpsDebugDimensions#ordinal` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 38 | `ordinal` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#valueOf` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 59 | `value_of` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#values` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 26 | `values` |
+| `net.minecraft.util.parsing.packrat.Atom#name` | `crates/mc-math/src/ported/atom.rs` | 29 | `name` |
+| `net.minecraft.util.parsing.packrat.Atom#of` | `crates/mc-math/src/ported/atom.rs` | 21 | `of` |
+| `net.minecraft.util.parsing.packrat.Atom#toString` | `crates/mc-math/src/ported/atom.rs` | 36 | `fmt` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#<init>` | `crates/mc-math/src/ported/error_entry.rs` | 87 | `new` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#cursor` | `crates/mc-math/src/ported/error_entry.rs` | 96 | `cursor` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#equals` | `crates/mc-math/src/ported/error_entry.rs` | 133 | `eq` |

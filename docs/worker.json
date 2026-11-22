@@ -1,1 +1,1 @@
-{"state": "generating", "class_name": "net.minecraft.util.parsing.packrat.Atom", "crate": "mc-math", "attempt": 1, "verified_count": 12, "ts": "2026-11-22T21:19:06Z"}
+{"state": "testing", "class_name": "net.minecraft.util.parsing.packrat.Atom", "crate": "mc-math", "attempt": 1, "verified_count": 12, "ts": "2026-11-22T21:21:28Z"}

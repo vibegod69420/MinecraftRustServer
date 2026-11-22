@@ -10,3 +10,4 @@ pub mod sample_storage;
 pub mod sample_logger;
 pub mod fps_stat;
 pub mod profiler_path_entry;
+pub mod atom;
