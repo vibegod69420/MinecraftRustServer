@@ -652,7 +652,7 @@ impl PositionalRandomFactory for XoroshiroPositionalRandomFactory {
 pub fn seed_slime_chunk(cx: i32, cz: i32, world_seed: i64, salt: i64) -> LegacyRandomSource {
     let x1 = cx.wrapping_mul(cx).wrapping_mul(4987142) as i64;
     let x2 = cx.wrapping_mul(5947611) as i64;
-    let z1 = (cz as i64).wrapping_mul(cz as i64).wrapping_mul(4392871_i64);
+    let z1 = (cz.wrapping_mul(cz) as i64).wrapping_mul(4392871_i64);
     let z2 = cz.wrapping_mul(389711) as i64;
     let s = world_seed
         .wrapping_add(x1)

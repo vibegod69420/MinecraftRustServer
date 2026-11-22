@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 20:24:24 UTC",
-  "updated_epoch": 1795379064,
+  "updated_at": "2026-11-22 20:36:09 UTC",
+  "updated_epoch": 1795379769,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -46,5 +46,16 @@
     "avg_latency_s": 0.0
   },
   "recent_work": [],
-  "recent_commits": []
+  "recent_commits": [
+    {
+      "sha": "125f627",
+      "ts": "2026-11-22T17:26:30-03:00",
+      "message": "Fix GitHub raw URL owner to vibegod69420"
+    },
+    {
+      "sha": "9eb173e",
+      "ts": "2026-11-22T17:25:36-03:00",
+      "message": "Milestone 1: deterministic oracle (Step 0), mc-math/mc-nbt/mc-data, 24/7 DeepSeek harness, zero-redeploy dashboard"
+    }
+  ]
 }
