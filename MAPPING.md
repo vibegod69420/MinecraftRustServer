@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1403** across **406** classes.
+Total mapped Java symbols: **1406** across **408** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -156,6 +156,9 @@ Total mapped Java symbols: **1403** across **406** classes.
 | `net.minecraft.core.component.predicates.CustomDataPredicate#value` | `crates/mc-math/src/ported/custom_data_predicate.rs` | 27 | `value` |
 | `net.minecraft.core.component.predicates.DamagePredicate#durability` | `crates/mc-math/src/ported/damage_predicate.rs` | 82 | `durability` |
 | `net.minecraft.core.component.predicates.DamagePredicate#matches` | `crates/mc-math/src/ported/damage_predicate.rs` | 92 | `matches` |
+| `net.minecraft.core.component.predicates.FireworkExplosionPredicate#componentType` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 106 | `component_type` |
+| `net.minecraft.core.component.predicates.FireworkExplosionPredicate#matches` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 111 | `matches` |
+| `net.minecraft.core.component.predicates.FireworkExplosionPredicate$FireworkPredicate#test` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 84 | `test` |
 | `net.minecraft.core.component.predicates.FireworksPredicate#componentType` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 89 | `component_type` |
 | `net.minecraft.core.component.predicates.FireworksPredicate#explosions` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 79 | `explosions` |
 | `net.minecraft.core.component.predicates.FireworksPredicate#flightDuration` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 84 | `flight_duration` |
