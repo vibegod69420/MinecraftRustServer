@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **172** across **44** classes.
+Total mapped Java symbols: **178** across **45** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -148,6 +148,12 @@ Total mapped Java symbols: **172** across **44** classes.
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 45 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 65 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 81 | `profiled_metrics` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#cancel` | `crates/mc-math/src/ported/metrics_recorder.rs` | 18 | `cancel` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#end` | `crates/mc-math/src/ported/metrics_recorder.rs` | 15 | `end` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#endTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 30 | `end_tick` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#getProfiler` | `crates/mc-math/src/ported/metrics_recorder.rs` | 27 | `get_profiler` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#isRecording` | `crates/mc-math/src/ported/metrics_recorder.rs` | 24 | `is_recording` |
+| `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#startTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 21 | `start_tick` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |

@@ -15,3 +15,4 @@ pub mod key_dispatch_data_codec;
 pub mod suggestion_supplier;
 pub mod metrics_sampler_provider;
 pub mod registry_context_swapper;
+pub mod metrics_recorder;
