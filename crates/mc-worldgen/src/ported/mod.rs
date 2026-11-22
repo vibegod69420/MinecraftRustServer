@@ -140,3 +140,7 @@ pub mod builtin_structure_sets;
 pub mod structure_feature_index_saved_data;
 pub mod structure_set;
 pub mod end_platform_feature;
+pub mod bush_foliage_placer;
+pub mod trunk_vine_decorator;
+pub mod attached_to_logs_decorator;
+pub mod cocoa_decorator;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2693** across **688** classes.
+Total mapped Java symbols: **2717** across **694** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -121,6 +121,7 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-math/src/ported/block_box.rs` | 90 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 13 | `relative` |
+| `net.minecraft.core.BlockPos#relative(net.minecraft.core.Direction)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 17 | `relative` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 26 | `set_with_offset` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
@@ -712,7 +713,13 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.core.particles.VibrationParticleOption#getDestination` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 45 | `get_destination` |
 | `net.minecraft.core.particles.VibrationParticleOption#getType` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 57 | `get_type` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
+| `net.minecraft.core.registries.Registries#ROOT_REGISTRY_NAME` | `crates/mc-math/src/ported/registries.rs` | 71 | `create_registry_key` |
 | `net.minecraft.core.registries.Registries#STRUCTURE_SET` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 43 | `register` |
+| `net.minecraft.core.registries.Registries#createRegistryKey` | `crates/mc-math/src/ported/registries.rs` | 75 | `create_registry_key` |
+| `net.minecraft.core.registries.Registries#elementsDirPath` | `crates/mc-math/src/ported/registries.rs` | 241 | `elements_dir_path` |
+| `net.minecraft.core.registries.Registries#levelStemToLevel` | `crates/mc-math/src/ported/registries.rs` | 231 | `level_stem_to_level` |
+| `net.minecraft.core.registries.Registries#levelToLevelStem` | `crates/mc-math/src/ported/registries.rs` | 236 | `level_to_level_stem` |
+| `net.minecraft.core.registries.Registries#tagsDirPath` | `crates/mc-math/src/ported/registries.rs` | 246 | `tags_dir_path` |
 | `net.minecraft.nbt.ByteArrayTag#<init>` | `crates/mc-nbt/src/ported/byte_array_tag.rs` | 202 | `new` |
 | `net.minecraft.nbt.ByteArrayTag#accept` | `crates/mc-nbt/src/ported/byte_array_tag.rs` | 254 | `accept_tag_visitor` |
 | `net.minecraft.nbt.ByteArrayTag#accept` | `crates/mc-nbt/src/ported/byte_array_tag.rs` | 310 | `accept_stream_tag_visitor` |
@@ -1830,6 +1837,7 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.network.syncher.EntityDataSerializer$ForValueType#copy` | `crates/mc-protocol/src/ported/entity_data_serializer.rs` | 125 | `copy_value_type` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
+| `net.minecraft.resources.Identifier (minimal support for Registries)` | `crates/mc-math/src/ported/registries.rs` | 4 | `<item>` |
 | `net.minecraft.resources.Identifier#parse` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 104 | `parse` |
 | `net.minecraft.resources.Identifier#parse` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 106 | `parse` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/dynamic_loot.rs` | 10 | `with_default_namespace` |
@@ -1842,6 +1850,7 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.ResourceKey` | `crates/mc-math/src/ported/cloner.rs` | 15 | `new` |
+| `net.minecraft.resources.ResourceKey (minimal support for Registries)` | `crates/mc-math/src/ported/registries.rs` | 38 | `<item>` |
 | `net.minecraft.resources.ResourceKey#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 71 | `new` |
 | `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 27 | `create` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-math/src/ported/cloner.rs` | 22 | `identifier` |
@@ -1943,6 +1952,9 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
 | `net.minecraft.util.Util#anyOf` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 51 | `util_any_of` |
+| `net.minecraft.util.Util#getRandom(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 144 | `get_random` |
+| `net.minecraft.util.Util#shuffle(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 127 | `shuffle` |
+| `net.minecraft.util.Util#shuffledCopy(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 137 | `shuffled_copy` |
 | `net.minecraft.util.context.ContextKey` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 45 | `<item>` |
 | `net.minecraft.util.debugchart.SampleLogger#logFullSample` | `crates/mc-math/src/ported/sample_logger.rs` | 10 | `log_full_sample` |
 | `net.minecraft.util.debugchart.SampleLogger#logPartialSample` | `crates/mc-math/src/ported/sample_logger.rs` | 16 | `log_partial_sample` |
@@ -2570,6 +2582,10 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 52 | `new_with_min_clipped_height` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#getSizeAtHeight` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 72 | `get_size_at_height` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#type` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 67 | `get_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 102 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 135 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 169 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#type` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 111 | `foliage_placer_type` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#<init>` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 16 | `new` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootPlacementChance` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 29 | `above_root_placement_chance` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootProvider` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 24 | `above_root_provider` |
@@ -2618,6 +2634,14 @@ Total mapped Java symbols: **2693** across **688** classes.
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#create` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 129 | `create` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#getState` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 155 | `get_state` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#type` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 150 | `provider_type` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#<init>` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 159 | `new` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#place` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 173 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#type` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 168 | `decorator_type` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator#<init>` | `crates/mc-worldgen/src/ported/cocoa_decorator.rs` | 172 | `new` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator#place` | `crates/mc-worldgen/src/ported/cocoa_decorator.rs` | 182 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator#type` | `crates/mc-worldgen/src/ported/cocoa_decorator.rs` | 177 | `decorator_type` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator#place` | `crates/mc-worldgen/src/ported/trunk_vine_decorator.rs` | 136 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator#type` | `crates/mc-worldgen/src/ported/trunk_vine_decorator.rs` | 131 | `decorator_type` |
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#FlatLayerInfo` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 65 | `new` |
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#getBlockState` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 75 | `get_block_state` |
 | `net.minecraft.world.level.levelgen.flat.FlatLayerInfo#getHeight` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 70 | `get_height` |
