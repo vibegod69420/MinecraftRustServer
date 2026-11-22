@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **649** across **211** classes.
+Total mapped Java symbols: **679** across **223** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -68,6 +68,25 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.core.WritableRegistry#createRegistrationLookup` | `crates/mc-math/src/ported/writable_registry.rs` | 95 | `create_registration_lookup` |
 | `net.minecraft.core.WritableRegistry#isEmpty` | `crates/mc-math/src/ported/writable_registry.rs` | 92 | `is_empty` |
 | `net.minecraft.core.WritableRegistry#register` | `crates/mc-math/src/ported/writable_registry.rs` | 81 | `register` |
+| `net.minecraft.core.particles.ParticleLimit#<init>` | `crates/mc-math/src/ported/particle_limit.rs` | 9 | `new` |
+| `net.minecraft.core.particles.ParticleLimit#limit` | `crates/mc-math/src/ported/particle_limit.rs` | 14 | `limit` |
+| `net.minecraft.core.particles.ParticleType#<init>` | `crates/mc-math/src/ported/particle_type.rs` | 59 | `new` |
+| `net.minecraft.core.particles.ParticleType#codec` | `crates/mc-math/src/ported/particle_type.rs` | 75 | `codec` |
+| `net.minecraft.core.particles.ParticleType#getOverrideLimiter` | `crates/mc-math/src/ported/particle_type.rs` | 67 | `get_override_limiter` |
+| `net.minecraft.core.particles.ParticleType#getOverrideLimiter` | `crates/mc-math/src/ported/simple_particle_type.rs` | 70 | `get_override_limiter` |
+| `net.minecraft.core.particles.ParticleType#streamCodec` | `crates/mc-math/src/ported/particle_type.rs` | 78 | `stream_codec` |
+| `net.minecraft.core.particles.ScalableParticleOptionsBase#<init>` | `crates/mc-math/src/ported/scalable_particle_options_base.rs` | 25 | `new` |
+| `net.minecraft.core.particles.ScalableParticleOptionsBase#getScale` | `crates/mc-math/src/ported/scalable_particle_options_base.rs` | 32 | `get_scale` |
+| `net.minecraft.core.particles.SculkChargeParticleOptions#<init>` | `crates/mc-math/src/ported/sculk_charge_particle_options.rs` | 58 | `new` |
+| `net.minecraft.core.particles.SculkChargeParticleOptions#getType` | `crates/mc-math/src/ported/sculk_charge_particle_options.rs` | 68 | `get_type` |
+| `net.minecraft.core.particles.SculkChargeParticleOptions#roll` | `crates/mc-math/src/ported/sculk_charge_particle_options.rs` | 63 | `roll` |
+| `net.minecraft.core.particles.ShriekParticleOption#<init>` | `crates/mc-math/src/ported/shriek_particle_option.rs` | 58 | `new` |
+| `net.minecraft.core.particles.ShriekParticleOption#getDelay` | `crates/mc-math/src/ported/shriek_particle_option.rs` | 70 | `get_delay` |
+| `net.minecraft.core.particles.ShriekParticleOption#getType` | `crates/mc-math/src/ported/shriek_particle_option.rs` | 63 | `get_type` |
+| `net.minecraft.core.particles.SimpleParticleType#<init>` | `crates/mc-math/src/ported/simple_particle_type.rs` | 46 | `new` |
+| `net.minecraft.core.particles.SimpleParticleType#codec` | `crates/mc-math/src/ported/simple_particle_type.rs` | 60 | `codec` |
+| `net.minecraft.core.particles.SimpleParticleType#getType` | `crates/mc-math/src/ported/simple_particle_type.rs` | 55 | `get_type` |
+| `net.minecraft.core.particles.SimpleParticleType#streamCodec` | `crates/mc-math/src/ported/simple_particle_type.rs` | 65 | `stream_codec` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
 | `net.minecraft.nbt.CollectionTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 5 | `clear` |
 | `net.minecraft.nbt.CollectionTag#addTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 13 | `add_tag` |
@@ -179,6 +198,7 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.network.ConnectionProtocol#id` | `crates/mc-protocol/src/ported/connection_protocol.rs` | 14 | `id` |
 | `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 30 | `new` |
 | `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 39 | `from_reason` |
+| `net.minecraft.network.FriendlyByteBuf#<init>()` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 35 | `new` |
 | `net.minecraft.network.HiddenByteBuf#pack` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 5 | `pack` |
 | `net.minecraft.network.HiddenByteBuf#unpack` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 5 | `unpack` |
 | `net.minecraft.network.LocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 21 | `channel_read` |
@@ -226,6 +246,7 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 87 | `map_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 70 | `stream_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 92 | `stream_codec` |
+| `net.minecraft.network.codec.StreamCodec#<init>` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 74 | `new` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 7 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 15 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 87 | `decode` |
@@ -247,10 +268,15 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.network.protocol.PacketFlow#getOpposite` | `crates/mc-protocol/src/ported/packet_flow.rs` | 10 | `get_opposite` |
 | `net.minecraft.network.protocol.PacketFlow#id` | `crates/mc-protocol/src/ported/packet_flow.rs` | 18 | `id` |
 | `net.minecraft.network.protocol.PacketType` | `crates/mc-data/build.rs` | 98 | `packet_id` |
+| `net.minecraft.network.protocol.PacketType#<init>(PacketFlow, Identifier)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 38 | `new` |
+| `net.minecraft.network.protocol.PacketType#<init>(PacketFlow, Identifier)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 53 | `new` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket(PacketType, StreamCodec)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 118 | `add_packet` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol(ConnectionProtocol, Consumer)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 162 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 27 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 29 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 56 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 95 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind(Function)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 139 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 27 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 29 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 54 | `bind` |
@@ -262,6 +288,12 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.network.protocol.cookie.ServerCookiePacketListener#handleCookieResponse` | `crates/mc-protocol/src/ported/server_cookie_packet_listener.rs` | 12 | `handle_cookie_response` |
 | `net.minecraft.network.protocol.handshake.ClientIntent#byId` | `crates/mc-protocol/src/ported/client_intent.rs` | 15 | `by_id` |
 | `net.minecraft.network.protocol.handshake.ClientIntent#id` | `crates/mc-protocol/src/ported/client_intent.rs` | 25 | `id` |
+| `net.minecraft.network.protocol.handshake.ClientIntentionPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 89 | `stream_codec` |
+| `net.minecraft.network.protocol.handshake.HandshakePacketTypes#CLIENT_INTENTION` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 64 | `client_intention` |
+| `net.minecraft.network.protocol.handshake.HandshakePacketTypes#CLIENT_INTENTION` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 98 | `client_intention` |
+| `net.minecraft.network.protocol.handshake.HandshakePacketTypes#createServerbound(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 56 | `create_serverbound` |
+| `net.minecraft.network.protocol.handshake.HandshakeProtocols#SERVERBOUND` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 197 | `serverbound` |
+| `net.minecraft.network.protocol.handshake.HandshakeProtocols#SERVERBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 186 | `serverbound_template` |
 | `net.minecraft.network.protocol.handshake.ServerHandshakePacketListener#handleIntention` | `crates/mc-protocol/src/ported/server_handshake_packet_listener.rs` | 21 | `handle_intention` |
 | `net.minecraft.network.protocol.handshake.ServerHandshakePacketListener#protocol` | `crates/mc-protocol/src/ported/server_handshake_packet_listener.rs` | 16 | `protocol` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 60 | `write` |
@@ -309,6 +341,8 @@ Total mapped Java symbols: **649** across **211** classes.
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 20 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.ResourceKey#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 71 | `new` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |

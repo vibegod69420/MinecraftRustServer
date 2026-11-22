@@ -1,31 +1,31 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:17:06 UTC
+- **Updated**: 2026-11-22 22:17:42 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 649 / 66676 (0.973%)
-- **Mapped Java Classes**: 211 / 7163 (2.946%)
+- **Mapped Java Methods**: 679 / 66676 (1.018%)
+- **Mapped Java Classes**: 223 / 7163 (3.113%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 400 mapped methods
+- `mc-math`: 419 mapped methods
 - `mc-nbt`: 96 mapped methods
-- `mc-protocol`: 140 mapped methods
+- `mc-protocol`: 155 mapped methods
 - `mc-worldgen`: 205 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.core.particles.ShriekParticleOption` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.core.particles.SculkChargeParticleOptions` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.core.particles.SimpleParticleType` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.core.particles.ScalableParticleOptionsBase` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.core.particles.ParticleType` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.core.particles.ParticleLimit` -> `mc-math` (198.9s)
+- [PASS] `net.minecraft.network.protocol.handshake.HandshakePacketTypes` -> `mc-protocol` (386.3s)
+- [PASS] `net.minecraft.network.protocol.handshake.HandshakeProtocols` -> `mc-protocol` (386.3s)
+- [PASS] `net.minecraft.network.protocol.handshake.ClientIntent` -> `mc-protocol` (386.3s)
+- [PASS] `net.minecraft.network.protocol.handshake.ServerHandshakePacketListener` -> `mc-protocol` (386.3s)
 - [PASS] `net.minecraft.world.level.levelgen.synth.NoiseUtils` -> `mc-math` (366.2s)
 - [PASS] `net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise` -> `mc-math` (366.2s)
 - [PASS] `net.minecraft.network.protocol.status.StatusPacketTypes` -> `mc-protocol` (286.4s)
 - [PASS] `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket` -> `mc-protocol` (286.4s)
 - [PASS] `net.minecraft.network.protocol.status.ServerStatusPacketListener` -> `mc-protocol` (286.4s)
-- [PASS] `net.minecraft.network.protocol.status.ClientStatusPacketListener` -> `mc-protocol` (286.4s)
-- [FAIL] `net.minecraft.world.level.levelgen.synth.BlendedNoise` -> `mc-math` (254.7s)
-- [PASS] `net.minecraft.world.level.levelgen.WorldGenerationContext` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.world.level.levelgen.GeodeLayerSettings` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.world.level.levelgen.GeodeCrackSettings` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.world.level.levelgen.WorldGenSettings` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.world.level.levelgen.PositionalRandomFactory` -> `mc-worldgen` (245.3s)
-- [PASS] `net.minecraft.network.RegistryFriendlyByteBuf` -> `mc-protocol` (213.3s)
-- [PASS] `net.minecraft.network.BandwidthDebugMonitor` -> `mc-protocol` (213.3s)
