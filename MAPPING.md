@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2196** across **582** classes.
+Total mapped Java symbols: **2203** across **583** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -327,6 +327,13 @@ Total mapped Java symbols: **2196** across **582** classes.
 | `net.minecraft.core.SectionPos#x(long)` | `crates/mc-math/src/packing.rs` | 117 | `get_x` |
 | `net.minecraft.core.SectionPos#y(long)` | `crates/mc-math/src/packing.rs` | 123 | `get_y` |
 | `net.minecraft.core.SectionPos#z(long)` | `crates/mc-math/src/packing.rs` | 129 | `get_z` |
+| `net.minecraft.core.UUIDUtil#createOfflinePlayerUUID` | `crates/mc-math/src/ported/uuid_util.rs` | 103 | `create_offline_player_uuid` |
+| `net.minecraft.core.UUIDUtil#createOfflineProfile` | `crates/mc-math/src/ported/uuid_util.rs` | 112 | `create_offline_profile` |
+| `net.minecraft.core.UUIDUtil#leastMostToIntArray` | `crates/mc-math/src/ported/uuid_util.rs` | 74 | `least_most_to_int_array` |
+| `net.minecraft.core.UUIDUtil#readUUID` | `crates/mc-math/src/ported/uuid_util.rs` | 92 | `read_uuid` |
+| `net.minecraft.core.UUIDUtil#uuidFromIntArray` | `crates/mc-math/src/ported/uuid_util.rs` | 60 | `uuid_from_int_array` |
+| `net.minecraft.core.UUIDUtil#uuidToByteArray` | `crates/mc-math/src/ported/uuid_util.rs` | 84 | `uuid_to_byte_array` |
+| `net.minecraft.core.UUIDUtil#uuidToIntArray` | `crates/mc-math/src/ported/uuid_util.rs` | 67 | `uuid_to_int_array` |
 | `net.minecraft.core.Vec3i#<init>` | `crates/mc-math/src/ported/vec3i.rs` | 84 | `new` |
 | `net.minecraft.core.Vec3i#above` | `crates/mc-math/src/ported/vec3i.rs` | 194 | `above` |
 | `net.minecraft.core.Vec3i#above` | `crates/mc-math/src/ported/vec3i.rs` | 199 | `above_n` |
