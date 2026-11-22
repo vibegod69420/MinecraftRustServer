@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **520** across **171** classes.
+Total mapped Java symbols: **542** across **182** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -110,6 +110,13 @@ Total mapped Java symbols: **520** across **171** classes.
 | `net.minecraft.nbt.TagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 35 | `visit_long_array` |
 | `net.minecraft.nbt.TagVisitor#visitShort` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 14 | `visit_short` |
 | `net.minecraft.nbt.TagVisitor#visitString` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 8 | `visit_string` |
+| `net.minecraft.network.BandwidthDebugMonitor#<init>` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 14 | `new` |
+| `net.minecraft.network.BandwidthDebugMonitor#onReceive` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 22 | `on_receive` |
+| `net.minecraft.network.BandwidthDebugMonitor#tick` | `crates/mc-protocol/src/ported/bandwidth_debug_monitor.rs` | 27 | `tick` |
+| `net.minecraft.network.CipherDecoder#<init>` | `crates/mc-protocol/src/ported/cipher_decoder.rs` | 59 | `new` |
+| `net.minecraft.network.CipherDecoder#decode` | `crates/mc-protocol/src/ported/cipher_decoder.rs` | 66 | `decode` |
+| `net.minecraft.network.CipherEncoder#<init>` | `crates/mc-protocol/src/ported/cipher_encoder.rs` | 56 | `new` |
+| `net.minecraft.network.CipherEncoder#encode` | `crates/mc-protocol/src/ported/cipher_encoder.rs` | 63 | `encode` |
 | `net.minecraft.network.ClientboundPacketListener#flow` | `crates/mc-protocol/src/ported/clientbound_packet_listener.rs` | 17 | `flow` |
 | `net.minecraft.network.ConnectionProtocol#id` | `crates/mc-protocol/src/ported/connection_protocol.rs` | 14 | `id` |
 | `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 30 | `new` |
@@ -118,7 +125,14 @@ Total mapped Java symbols: **520** across **171** classes.
 | `net.minecraft.network.HiddenByteBuf#unpack` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 5 | `unpack` |
 | `net.minecraft.network.LocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 21 | `channel_read` |
 | `net.minecraft.network.LocalFrameEncoder#write` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 21 | `write` |
+| `net.minecraft.network.RegistryFriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/registry_friendly_byte_buf.rs` | 34 | `new` |
+| `net.minecraft.network.RegistryFriendlyByteBuf#decorator` | `crates/mc-protocol/src/ported/registry_friendly_byte_buf.rs` | 47 | `decorator` |
+| `net.minecraft.network.RegistryFriendlyByteBuf#registryAccess` | `crates/mc-protocol/src/ported/registry_friendly_byte_buf.rs` | 42 | `registry_access` |
 | `net.minecraft.network.ServerboundPacketListener#flow` | `crates/mc-protocol/src/ported/serverbound_packet_listener.rs` | 17 | `flow` |
+| `net.minecraft.network.SkipPacketDecoderException#<init>(String)` | `crates/mc-protocol/src/ported/skip_packet_decoder_exception.rs` | 20 | `new` |
+| `net.minecraft.network.SkipPacketDecoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_decoder_exception.rs` | 28 | `with_cause` |
+| `net.minecraft.network.SkipPacketEncoderException#<init>(String)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 20 | `new` |
+| `net.minecraft.network.SkipPacketEncoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 28 | `with_cause` |
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 21 | `decorate` |
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 30 | `decorate` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_tracked_entry.rs` | 15 | `acknowledge` |
@@ -128,6 +142,10 @@ Total mapped Java symbols: **520** across **171** classes.
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 28 | `new` |
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 36 | `with_cause` |
 | `net.minecraft.network.chat.ThrowingComponent#getComponent` | `crates/mc-protocol/src/ported/throwing_component.rs` | 47 | `get_component` |
+| `net.minecraft.network.chat.contents.KeybindResolver#setKeyResolver` | `crates/mc-protocol/src/ported/keybind_resolver.rs` | 33 | `set_key_resolver` |
+| `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 11 | `new_parse_error` |
+| `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 19 | `new_invalid_index` |
+| `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 27 | `new_with_cause` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#codec` | `crates/mc-protocol/src/ported/object_info.rs` | 41 | `codec` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#description` | `crates/mc-protocol/src/ported/object_info.rs` | 38 | `description` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#fontDescription` | `crates/mc-protocol/src/ported/object_info.rs` | 35 | `font_description` |
@@ -199,6 +217,12 @@ Total mapped Java symbols: **520** across **171** classes.
 | `net.minecraft.network.protocol.ping.PingPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 43 | `create_clientbound` |
 | `net.minecraft.network.protocol.ping.PingPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 51 | `create_serverbound` |
 | `net.minecraft.network.protocol.ping.ServerPingPacketListener#handlePingRequest` | `crates/mc-protocol/src/ported/server_ping_packet_listener.rs` | 18 | `handle_ping_request` |
+| `net.minecraft.network.protocol.status.ClientStatusPacketListener#handleStatusResponse` | `crates/mc-protocol/src/ported/client_status_packet_listener.rs` | 24 | `handle_status_response` |
+| `net.minecraft.network.protocol.status.ClientStatusPacketListener#protocol` | `crates/mc-protocol/src/ported/client_status_packet_listener.rs` | 19 | `protocol` |
+| `net.minecraft.network.protocol.status.ServerStatusPacketListener#handleStatusRequest` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 22 | `handle_status_request` |
+| `net.minecraft.network.protocol.status.ServerStatusPacketListener#protocol` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 17 | `protocol` |
+| `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket#handle` | `crates/mc-protocol/src/ported/serverbound_status_request_packet.rs` | 82 | `handle` |
+| `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket#type` | `crates/mc-protocol/src/ported/serverbound_status_request_packet.rs` | 74 | `packet_type` |
 | `net.minecraft.network.syncher.EntityDataAccessor#equals` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 35 | `eq` |
 | `net.minecraft.network.syncher.EntityDataAccessor#hashCode` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 44 | `hash` |
 | `net.minecraft.network.syncher.EntityDataAccessor#toString` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 51 | `fmt` |
