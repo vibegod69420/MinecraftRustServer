@@ -120,3 +120,5 @@ pub mod end_island_feature;
 pub mod weighted_placed_feature;
 pub mod pool_alias_bindings;
 pub mod direct_pool_alias;
+pub mod pool_alias_lookup;
+pub mod random_group_pool_alias;

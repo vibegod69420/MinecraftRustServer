@@ -117,3 +117,7 @@ pub mod clientbound_set_time_packet;
 pub mod clientbound_cooldown_packet;
 pub mod serverbound_hello_packet;
 pub mod serverbound_select_known_packs;
+pub mod clientbound_game_test_highlight_pos_packet;
+pub mod clientbound_chunk_batch_finished_packet;
+pub mod serverbound_pick_item_from_block_packet;
+pub mod clientbound_change_difficulty_packet;
