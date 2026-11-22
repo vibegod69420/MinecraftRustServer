@@ -1,19 +1,21 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:16:02 UTC
+- **Updated**: 2026-11-22 22:17:06 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 622 / 66676 (0.933%)
-- **Mapped Java Classes**: 204 / 7163 (2.848%)
+- **Mapped Java Methods**: 649 / 66676 (0.973%)
+- **Mapped Java Classes**: 211 / 7163 (2.946%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 375 mapped methods
+- `mc-math`: 400 mapped methods
 - `mc-nbt`: 96 mapped methods
-- `mc-protocol`: 133 mapped methods
+- `mc-protocol`: 140 mapped methods
 - `mc-worldgen`: 205 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.synth.NoiseUtils` -> `mc-math` (366.2s)
+- [PASS] `net.minecraft.world.level.levelgen.synth.PerlinSimplexNoise` -> `mc-math` (366.2s)
 - [PASS] `net.minecraft.network.protocol.status.StatusPacketTypes` -> `mc-protocol` (286.4s)
 - [PASS] `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket` -> `mc-protocol` (286.4s)
 - [PASS] `net.minecraft.network.protocol.status.ServerStatusPacketListener` -> `mc-protocol` (286.4s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.PositionalRandomFactory` -> `mc-worldgen` (245.3s)
 - [PASS] `net.minecraft.network.RegistryFriendlyByteBuf` -> `mc-protocol` (213.3s)
 - [PASS] `net.minecraft.network.BandwidthDebugMonitor` -> `mc-protocol` (213.3s)
-- [PASS] `net.minecraft.network.CipherDecoder` -> `mc-protocol` (213.3s)
-- [PASS] `net.minecraft.network.CipherEncoder` -> `mc-protocol` (213.3s)

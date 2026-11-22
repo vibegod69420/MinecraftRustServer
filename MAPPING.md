@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **622** across **204** classes.
+Total mapped Java symbols: **649** across **211** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -37,8 +37,25 @@ Total mapped Java symbols: **622** across **204** classes.
 | `net.minecraft.core.BlockPos#of` | `crates/mc-math/src/packing.rs` | 77 | `of` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
+| `net.minecraft.core.DefaultedRegistry` | `crates/mc-math/src/ported/defaulted_registry.rs` | 22 | `get_key` |
+| `net.minecraft.core.DefaultedRegistry#byId` | `crates/mc-math/src/ported/defaulted_registry.rs` | 30 | `by_id` |
+| `net.minecraft.core.DefaultedRegistry#getDefaultKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 33 | `get_default_key` |
+| `net.minecraft.core.DefaultedRegistry#getKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 24 | `get_key` |
+| `net.minecraft.core.DefaultedRegistry#getValue` | `crates/mc-math/src/ported/defaulted_registry.rs` | 27 | `get_value` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-data/build.rs` | 132 | `by_id` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-data/build.rs` | 128 | `get_id` |
+| `net.minecraft.core.QuartPos#fromBlock` | `crates/mc-math/src/ported/quart_pos.rs` | 8 | `from_block` |
+| `net.minecraft.core.QuartPos#fromSection` | `crates/mc-math/src/ported/quart_pos.rs` | 23 | `from_section` |
+| `net.minecraft.core.QuartPos#quartLocal` | `crates/mc-math/src/ported/quart_pos.rs` | 13 | `quart_local` |
+| `net.minecraft.core.QuartPos#toBlock` | `crates/mc-math/src/ported/quart_pos.rs` | 18 | `to_block` |
+| `net.minecraft.core.QuartPos#toSection` | `crates/mc-math/src/ported/quart_pos.rs` | 28 | `to_section` |
+| `net.minecraft.core.RegistrationInfo` | `crates/mc-math/src/ported/registration_info.rs` | 20 | `<item>` |
+| `net.minecraft.core.RegistrationInfo#<init>` | `crates/mc-math/src/ported/registration_info.rs` | 28 | `new` |
+| `net.minecraft.core.RegistrationInfo#BUILT_IN` | `crates/mc-math/src/ported/registration_info.rs` | 36 | `built_in` |
+| `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 95 | `homogeneous_list` |
+| `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 103 | `homogeneous_list_with_inline` |
+| `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 112 | `homogeneous_list_direct` |
+| `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 117 | `homogeneous_list_direct_with_inline` |
 | `net.minecraft.core.SectionPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 108 | `as_long_coords` |
 | `net.minecraft.core.SectionPos#blockToSectionCoord(int)` | `crates/mc-math/src/packing.rs` | 102 | `block_to_section_coord` |
 | `net.minecraft.core.SectionPos#of(int,int,int)` | `crates/mc-math/src/packing.rs` | 96 | `new` |
@@ -46,6 +63,11 @@ Total mapped Java symbols: **622** across **204** classes.
 | `net.minecraft.core.SectionPos#x(long)` | `crates/mc-math/src/packing.rs` | 117 | `get_x` |
 | `net.minecraft.core.SectionPos#y(long)` | `crates/mc-math/src/packing.rs` | 123 | `get_y` |
 | `net.minecraft.core.SectionPos#z(long)` | `crates/mc-math/src/packing.rs` | 129 | `get_z` |
+| `net.minecraft.core.WritableRegistry` | `crates/mc-math/src/ported/writable_registry.rs` | 79 | `register` |
+| `net.minecraft.core.WritableRegistry#bindTag` | `crates/mc-math/src/ported/writable_registry.rs` | 89 | `bind_tag` |
+| `net.minecraft.core.WritableRegistry#createRegistrationLookup` | `crates/mc-math/src/ported/writable_registry.rs` | 95 | `create_registration_lookup` |
+| `net.minecraft.core.WritableRegistry#isEmpty` | `crates/mc-math/src/ported/writable_registry.rs` | 92 | `is_empty` |
+| `net.minecraft.core.WritableRegistry#register` | `crates/mc-math/src/ported/writable_registry.rs` | 81 | `register` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
 | `net.minecraft.nbt.CollectionTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 5 | `clear` |
 | `net.minecraft.nbt.CollectionTag#addTag` | `crates/mc-nbt/src/ported/collection_tag.rs` | 13 | `add_tag` |
@@ -183,7 +205,14 @@ Total mapped Java symbols: **622** across **204** classes.
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 19 | `new_invalid_index` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 27 | `new_with_cause` |
 | `net.minecraft.network.chat.contents.data.DataSource#codec` | `crates/mc-protocol/src/ported/data_source.rs` | 47 | `codec` |
+| `net.minecraft.network.chat.contents.data.DataSource#codec` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 75 | `codec` |
 | `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/data_source.rs` | 41 | `get_data` |
+| `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 69 | `get_data` |
+| `net.minecraft.network.chat.contents.data.StorageDataSource#<init>` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 88 | `new` |
+| `net.minecraft.network.chat.contents.data.StorageDataSource#codec` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 109 | `codec` |
+| `net.minecraft.network.chat.contents.data.StorageDataSource#getData` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 100 | `get_data` |
+| `net.minecraft.network.chat.contents.data.StorageDataSource#id` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 93 | `id` |
+| `net.minecraft.network.chat.contents.data.StorageDataSource#toString` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 116 | `fmt` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#codec` | `crates/mc-protocol/src/ported/object_info.rs` | 41 | `codec` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#description` | `crates/mc-protocol/src/ported/object_info.rs` | 38 | `description` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfo#fontDescription` | `crates/mc-protocol/src/ported/object_info.rs` | 35 | `font_description` |
@@ -801,6 +830,9 @@ Total mapped Java symbols: **622** across **204** classes.
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double)` | `crates/mc-math/src/noise.rs` | 193 | `noise` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double,double,double)` | `crates/mc-math/src/noise.rs` | 198 | `noise_with_y_scale` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noiseWithDerivative` | `crates/mc-math/src/noise.rs` | 218 | `noise_with_derivative` |
+| `net.minecraft.world.level.levelgen.synth.NoiseUtils#biasTowardsExtreme(double,double)` | `crates/mc-math/src/ported/noise_utils.rs` | 4 | `bias_towards_extreme` |
+| `net.minecraft.world.level.levelgen.synth.NoiseUtils#parityNoiseOctaveConfigString(StringBuilder,double,double,double,byte[])` | `crates/mc-math/src/ported/noise_utils.rs` | 9 | `parity_noise_octave_config_string_bytes` |
+| `net.minecraft.world.level.levelgen.synth.NoiseUtils#parityNoiseOctaveConfigString(StringBuilder,double,double,double,int[])` | `crates/mc-math/src/ported/noise_utils.rs` | 30 | `parity_noise_octave_config_string_ints` |
 | `net.minecraft.world.level.levelgen.synth.NormalNoise#create(RandomSource,int,double...)` | `crates/mc-math/src/noise.rs` | 474 | `create` |
 | `net.minecraft.world.level.levelgen.synth.NormalNoise#getValue` | `crates/mc-math/src/noise.rs` | 497 | `get_value` |
 | `net.minecraft.world.level.levelgen.synth.PerlinNoise#<init>` | `crates/mc-math/src/noise.rs` | 358 | `new_internal` |
