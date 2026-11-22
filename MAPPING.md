@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1827** across **522** classes.
+Total mapped Java symbols: **1857** across **530** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -163,6 +163,8 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.core.GlobalPos#of` | `crates/mc-math/src/ported/global_pos.rs` | 66 | `of` |
 | `net.minecraft.core.GlobalPos#pos` | `crates/mc-math/src/ported/global_pos.rs` | 76 | `pos` |
 | `net.minecraft.core.GlobalPos#toString` | `crates/mc-math/src/ported/global_pos.rs` | 88 | `fmt` |
+| `net.minecraft.core.Holder#value` | `crates/mc-nbt/src/ported/set_item_function.rs` | 22 | `value` |
+| `net.minecraft.core.Holder#value` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 8 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-worldgen/src/ported/random_patch_configuration.rs` | 24 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 26 | `value` |
 | `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 10 | `can_serialize_in` |
@@ -234,6 +236,9 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.core.component.DataComponentHolder#getComponents` | `crates/mc-math/src/ported/data_component_holder.rs` | 32 | `components` |
 | `net.minecraft.core.component.DataComponentHolder#getOrDefault` | `crates/mc-math/src/ported/data_component_holder.rs` | 50 | `get_or_default` |
 | `net.minecraft.core.component.DataComponentHolder#has` | `crates/mc-math/src/ported/data_component_holder.rs` | 62 | `has` |
+| `net.minecraft.core.component.DataComponentPatch#builder` | `crates/mc-nbt/src/ported/set_components_function.rs` | 19 | `builder` |
+| `net.minecraft.core.component.DataComponentPatch$Builder#build` | `crates/mc-nbt/src/ported/set_components_function.rs` | 36 | `build` |
+| `net.minecraft.core.component.DataComponentPatch$Builder#set` | `crates/mc-nbt/src/ported/set_components_function.rs` | 30 | `set` |
 | `net.minecraft.core.component.predicates.AnyValue#matches` | `crates/mc-math/src/ported/any_value.rs` | 31 | `matches` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#componentType` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 166 | `component_type` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#matches` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 171 | `matches` |
@@ -247,6 +252,8 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.core.component.predicates.CustomDataPredicate#value` | `crates/mc-math/src/ported/custom_data_predicate.rs` | 27 | `value` |
 | `net.minecraft.core.component.predicates.DamagePredicate#durability` | `crates/mc-math/src/ported/damage_predicate.rs` | 82 | `durability` |
 | `net.minecraft.core.component.predicates.DamagePredicate#matches` | `crates/mc-math/src/ported/damage_predicate.rs` | 92 | `matches` |
+| `net.minecraft.core.component.predicates.DataComponentPredicates#bootstrap` | `crates/mc-math/src/ported/data_component_predicates.rs` | 198 | `bootstrap` |
+| `net.minecraft.core.component.predicates.DataComponentPredicates#register` | `crates/mc-math/src/ported/data_component_predicates.rs` | 190 | `register` |
 | `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 122 | `enchantments` |
 | `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 152 | `enchantments` |
 | `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 168 | `enchantments` |
@@ -1482,14 +1489,21 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.world.item.ItemStack#EMPTY` | `crates/mc-protocol/src/ported/clientbound_set_cursor_item_packet.rs` | 24 | `empty` |
 | `net.minecraft.world.item.ItemStack#OPTIONAL_STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_set_cursor_item_packet.rs` | 37 | `encode_optional` |
 | `net.minecraft.world.item.ItemStack#OPTIONAL_STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_set_cursor_item_packet.rs` | 47 | `decode_optional` |
+| `net.minecraft.world.item.ItemStack#applyComponentsAndValidate` | `crates/mc-nbt/src/ported/set_components_function.rs` | 63 | `apply_components_and_validate` |
+| `net.minecraft.world.item.ItemStack#getCount` | `crates/mc-nbt/src/ported/limit_count.rs` | 61 | `get_count` |
 | `net.minecraft.world.item.ItemStack#isEmpty` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 116 | `is_empty` |
 | `net.minecraft.world.item.ItemStack#isEmpty` | `crates/mc-protocol/src/ported/clientbound_set_cursor_item_packet.rs` | 32 | `is_empty` |
+| `net.minecraft.world.item.ItemStack#setCount` | `crates/mc-nbt/src/ported/limit_count.rs` | 66 | `set_count` |
 | `net.minecraft.world.item.ItemStack#shrink` | `crates/mc-math/src/ported/boat_dispense_item_behavior.rs` | 85 | `shrink` |
 | `net.minecraft.world.item.ItemStack#shrink` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 114 | `shrink` |
 | `net.minecraft.world.item.ItemStack#shrink` | `crates/mc-math/src/ported/projectile_dispense_behavior.rs` | 57 | `shrink` |
 | `net.minecraft.world.item.ItemStack#split` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 112 | `split` |
 | `net.minecraft.world.item.ItemStack#split` | `crates/mc-math/src/ported/equipment_dispense_item_behavior.rs` | 95 | `split` |
+| `net.minecraft.world.item.ItemStack#transmuteCopy` | `crates/mc-nbt/src/ported/set_item_function.rs` | 54 | `transmute_copy` |
+| `net.minecraft.world.item.ItemStack#update` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 73 | `update` |
+| `net.minecraft.world.item.alchemy.PotionContents#empty` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 44 | `empty` |
 | `net.minecraft.world.item.alchemy.PotionContents#potion` | `crates/mc-math/src/ported/potions_predicate.rs` | 36 | `potion` |
+| `net.minecraft.world.item.alchemy.PotionContents#withPotion` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 49 | `with_potion` |
 | `net.minecraft.world.item.component.BundleContents#items` | `crates/mc-math/src/ported/bundle_predicate.rs` | 25 | `items` |
 | `net.minecraft.world.item.component.Fireworks#explosions` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 17 | `explosions` |
 | `net.minecraft.world.item.component.Fireworks#flightDuration` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 22 | `flight_duration` |
@@ -2068,6 +2082,8 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.world.level.storage.LevelStorageException#getMessageComponent` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 39 | `get_message_component` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 10 | `set_spawn` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 27 | `set_spawn` |
+| `net.minecraft.world.level.storage.loot.IntRange#clamp` | `crates/mc-nbt/src/ported/limit_count.rs` | 29 | `clamp` |
+| `net.minecraft.world.level.storage.loot.IntRange#getReferencedContextParams` | `crates/mc-nbt/src/ported/limit_count.rs` | 45 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.LootContext#hasParameter` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 36 | `has_parameter` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_FALSE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 45 | `always_false` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 50 | `always_true` |
@@ -2092,6 +2108,11 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 22 | `apply_iterable` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 35 | `apply_array` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 47 | `unwrap` |
+| `net.minecraft.world.level.storage.loot.functions.LimitCount#<init>` | `crates/mc-nbt/src/ported/limit_count.rs` | 79 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.LimitCount#getReferencedContextParams` | `crates/mc-nbt/src/ported/limit_count.rs` | 89 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.LimitCount#getType` | `crates/mc-nbt/src/ported/limit_count.rs` | 84 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.LimitCount#limitCount` | `crates/mc-nbt/src/ported/limit_count.rs` | 101 | `limit_count` |
+| `net.minecraft.world.level.storage.loot.functions.LimitCount#run` | `crates/mc-nbt/src/ported/limit_count.rs` | 94 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#simpleBuilder` | `crates/mc-nbt/src/ported/discard_item.rs` | 87 | `simple_builder` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder#build` | `crates/mc-nbt/src/ported/discard_item.rs` | 76 | `build` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunction` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 32 | `get_type` |
@@ -2104,6 +2125,17 @@ Total mapped Java symbols: **1827** across **522** classes.
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctionType#<init>` | `crates/mc-nbt/src/ported/loot_item_function_type.rs` | 48 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctionType#codec` | `crates/mc-nbt/src/ported/loot_item_function_type.rs` | 53 | `codec` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctions#DISCARD` | `crates/mc-nbt/src/ported/discard_item.rs` | 99 | `discard` |
+| `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#<init>` | `crates/mc-nbt/src/ported/set_components_function.rs` | 78 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#getType` | `crates/mc-nbt/src/ported/set_components_function.rs` | 83 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#run` | `crates/mc-nbt/src/ported/set_components_function.rs` | 88 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#setComponent` | `crates/mc-nbt/src/ported/set_components_function.rs` | 94 | `set_component` |
+| `net.minecraft.world.level.storage.loot.functions.SetItemFunction#<init>` | `crates/mc-nbt/src/ported/set_item_function.rs` | 70 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetItemFunction#getType` | `crates/mc-nbt/src/ported/set_item_function.rs` | 75 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetItemFunction#run` | `crates/mc-nbt/src/ported/set_item_function.rs` | 80 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#<init>` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 94 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#getType` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 99 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#run` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 104 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#setPotion` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 115 | `set_potion` |
 | `net.minecraft.world.level.storage.loot.predicates.AnyOfCondition` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 92 | `fmt` |
 | `net.minecraft.world.level.storage.loot.predicates.AnyOfCondition#<init>` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 112 | `new` |
 | `net.minecraft.world.level.storage.loot.predicates.AnyOfCondition#CODEC` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 106 | `codec` |

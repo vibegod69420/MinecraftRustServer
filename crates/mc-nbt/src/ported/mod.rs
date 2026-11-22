@@ -51,3 +51,7 @@ pub mod loot_number_provider_type;
 pub mod any_of_condition;
 pub mod loot_item_condition_type;
 pub mod snbt_printer_tag_visitor;
+pub mod set_item_function;
+pub mod limit_count;
+pub mod set_components_function;
+pub mod set_potion_function;
