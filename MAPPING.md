@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2657** across **676** classes.
+Total mapped Java symbols: **2693** across **688** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -237,6 +237,9 @@ Total mapped Java symbols: **2657** across **676** classes.
 | `net.minecraft.core.Holder$Reference#unwrap` | `crates/mc-math/src/ported/holder.rs` | 413 | `unwrap` |
 | `net.minecraft.core.Holder$Reference#unwrapKey` | `crates/mc-math/src/ported/holder.rs` | 418 | `unwrap_key` |
 | `net.minecraft.core.Holder$Reference#value` | `crates/mc-math/src/ported/holder.rs` | 366 | `value` |
+| `net.minecraft.core.Holder.Reference#bindValue` | `crates/mc-math/src/ported/registry_set_builder.rs` | 136 | `bind_value` |
+| `net.minecraft.core.Holder.Reference#createStandAlone` | `crates/mc-math/src/ported/registry_set_builder.rs` | 119 | `create_stand_alone` |
+| `net.minecraft.core.Holder.Reference#value` | `crates/mc-math/src/ported/registry_set_builder.rs` | 144 | `value` |
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 238 | `get` |
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 241 | `get_tag` |
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 355 | `get` |
@@ -331,6 +334,45 @@ Total mapped Java symbols: **2657** across **676** classes.
 | `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 103 | `homogeneous_list_with_inline` |
 | `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 112 | `homogeneous_list_direct` |
 | `net.minecraft.core.RegistryCodecs#homogeneousList` | `crates/mc-math/src/ported/registry_codecs.rs` | 117 | `homogeneous_list_direct_with_inline` |
+| `net.minecraft.core.RegistrySetBuilder#<init>` | `crates/mc-math/src/ported/registry_set_builder.rs` | 339 | `new` |
+| `net.minecraft.core.RegistrySetBuilder#add` | `crates/mc-math/src/ported/registry_set_builder.rs` | 369 | `add` |
+| `net.minecraft.core.RegistrySetBuilder#add` | `crates/mc-math/src/ported/registry_set_builder.rs` | 384 | `add_stable` |
+| `net.minecraft.core.RegistrySetBuilder#build` | `crates/mc-math/src/ported/registry_set_builder.rs` | 434 | `build` |
+| `net.minecraft.core.RegistrySetBuilder#buildPatch` | `crates/mc-math/src/ported/registry_set_builder.rs` | 541 | `build_patch` |
+| `net.minecraft.core.RegistrySetBuilder#buildProviderWithContext` | `crates/mc-math/src/ported/registry_set_builder.rs` | 399 | `build_provider_with_context` |
+| `net.minecraft.core.RegistrySetBuilder#createLazyFullPatchedRegistries` | `crates/mc-math/src/ported/registry_set_builder.rs` | 450 | `create_lazy_full_patched_registries` |
+| `net.minecraft.core.RegistrySetBuilder#createLazyFullPatchedRegistries` | `crates/mc-math/src/ported/registry_set_builder.rs` | 482 | `create_lazy_full_patched_registry` |
+| `net.minecraft.core.RegistrySetBuilder#createState` | `crates/mc-math/src/ported/registry_set_builder.rs` | 389 | `create_state` |
+| `net.minecraft.core.RegistrySetBuilder#lookupFromMap` | `crates/mc-math/src/ported/registry_set_builder.rs` | 354 | `lookup_from_map` |
+| `net.minecraft.core.RegistrySetBuilder#wrapContextLookup` | `crates/mc-math/src/ported/registry_set_builder.rs` | 346 | `wrap_context_lookup` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState#bootstrapContext` | `crates/mc-math/src/ported/registry_set_builder.rs` | 682 | `bootstrap_context` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState#create` | `crates/mc-math/src/ported/registry_set_builder.rs` | 651 | `create` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState#reportNotCollectedHolders` | `crates/mc-math/src/ported/registry_set_builder.rs` | 697 | `report_not_collected_holders` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState#reportUnclaimedRegisteredValues` | `crates/mc-math/src/ported/registry_set_builder.rs` | 687 | `report_unclaimed_registered_values` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState#throwOnError` | `crates/mc-math/src/ported/registry_set_builder.rs` | 706 | `throw_on_error` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState$1#lookup` | `crates/mc-math/src/ported/registry_set_builder.rs` | 748 | `lookup_getter` |
+| `net.minecraft.core.RegistrySetBuilder$BuildState$1#register` | `crates/mc-math/src/ported/registry_set_builder.rs` | 725 | `register` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookup#get` | `crates/mc-math/src/ported/registry_set_builder.rs` | 814 | `get` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookup#get` | `crates/mc-math/src/ported/registry_set_builder.rs` | 819 | `get_tag` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookup#get` | `crates/mc-math/src/ported/registry_set_builder.rs` | 858 | `get` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookup#get` | `crates/mc-math/src/ported/registry_set_builder.rs` | 863 | `get_tag` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookupWrapper#get (delegated via HolderGetter)` | `crates/mc-math/src/ported/registry_set_builder.rs` | 826 | `get` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookupWrapper#get (tag, via EmptyTagLookup behavior)` | `crates/mc-math/src/ported/registry_set_builder.rs` | 831 | `get_tag` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagLookupWrapper#parent` | `crates/mc-math/src/ported/registry_set_builder.rs` | 838 | `registry_key` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagRegistryLookup#listTags` | `crates/mc-math/src/ported/registry_set_builder.rs` | 852 | `<item>` |
+| `net.minecraft.core.RegistrySetBuilder$EmptyTagRegistryLookup#listTags` | `crates/mc-math/src/ported/registry_set_builder.rs` | 882 | `list_tags` |
+| `net.minecraft.core.RegistrySetBuilder$LazyHolder#<init>` | `crates/mc-math/src/ported/registry_set_builder.rs` | 131 | `create_lazy` |
+| `net.minecraft.core.RegistrySetBuilder$LazyHolder#bindValue` | `crates/mc-math/src/ported/registry_set_builder.rs` | 137 | `bind_value` |
+| `net.minecraft.core.RegistrySetBuilder$LazyHolder#supplier (field assignment helper)` | `crates/mc-math/src/ported/registry_set_builder.rs` | 162 | `set_supplier` |
+| `net.minecraft.core.RegistrySetBuilder$LazyHolder#value` | `crates/mc-math/src/ported/registry_set_builder.rs` | 145 | `value` |
+| `net.minecraft.core.RegistrySetBuilder$RegistryContents#buildAsLookup` | `crates/mc-math/src/ported/registry_set_builder.rs` | 793 | `build_as_lookup` |
+| `net.minecraft.core.RegistrySetBuilder$RegistryStub#apply` | `crates/mc-math/src/ported/registry_set_builder.rs` | 759 | `apply` |
+| `net.minecraft.core.RegistrySetBuilder$RegistryStub#collectRegisteredValues` | `crates/mc-math/src/ported/registry_set_builder.rs` | 765 | `collect_registered_values` |
+| `net.minecraft.core.RegistrySetBuilder$UniversalLookup#<init>` | `crates/mc-math/src/ported/registry_set_builder.rs` | 617 | `new` |
+| `net.minecraft.core.RegistrySetBuilder$UniversalLookup#get` | `crates/mc-math/src/ported/registry_set_builder.rs` | 640 | `get` |
+| `net.minecraft.core.RegistrySetBuilder$UniversalLookup#getOrCreate` | `crates/mc-math/src/ported/registry_set_builder.rs` | 625 | `get_or_create` |
+| `net.minecraft.core.RegistrySetBuilder$UniversalOwner#<init>` | `crates/mc-math/src/ported/registry_set_builder.rs` | 597 | `new` |
+| `net.minecraft.core.RegistrySetBuilder$UniversalOwner#cast` | `crates/mc-math/src/ported/registry_set_builder.rs` | 604 | `cast_token` |
 | `net.minecraft.core.Rotations#<init>` | `crates/mc-math/src/ported/rotations.rs` | 12 | `new` |
 | `net.minecraft.core.Rotations#x` | `crates/mc-math/src/ported/rotations.rs` | 21 | `x` |
 | `net.minecraft.core.Rotations#y` | `crates/mc-math/src/ported/rotations.rs` | 26 | `y` |

@@ -108,3 +108,4 @@ pub mod data_component_getter;
 pub mod particle_types;
 pub mod cauldron_interaction;
 pub mod data_component_predicate;
+pub mod registry_set_builder;
