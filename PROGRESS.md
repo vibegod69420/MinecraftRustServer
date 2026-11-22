@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:02:01 UTC
+- **Updated**: 2026-11-22 23:02:36 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 2149 / 66676 (3.223%)
 - **Mapped Java Classes**: 578 / 7163 (8.069%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 565 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.core.component.predicates.DataComponentPredicate` -> `mc-math` (547.7s)
 - [PASS] `net.minecraft.core.Holder` -> `mc-math` (342.6s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.pools.alias.RandomGroupPoolAlias` -> `mc-worldgen` (394.9s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.pools.alias.PoolAliasLookup` -> `mc-worldgen` (394.9s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.core.dispenser.ShearsDispenseItemBehavior` -> `mc-math` (1392.7s)
 - [PASS] `net.minecraft.core.dispenser.BoatDispenseItemBehavior` -> `mc-math` (1392.7s)
 - [PASS] `net.minecraft.core.dispenser.ProjectileDispenseBehavior` -> `mc-math` (1392.7s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature` -> `mc-worldgen` (686.2s)
