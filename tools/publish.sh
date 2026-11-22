@@ -17,6 +17,8 @@ export GIT_SSH_COMMAND="ssh -i $KEY -o IdentitiesOnly=yes -o BatchMode=yes -o St
 
 exec 9>/tmp/mc-rust-publish.lock
 flock -n 9 || exit 0
+exec 8>/tmp/mc-rust-repo.lock
+flock -w 30 8 || { echo "repo busy; skipped"; exit 0; }
 
 mkdir -p "$(dirname "$LOG")"
 if [ -f "$LOG" ] && [ "$(stat -c %s "$LOG")" -gt 2000000 ]; then

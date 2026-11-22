@@ -10,6 +10,7 @@ atomic `docs/worker.json` + `docs/progress.json` updates to GitHub.
 
 from __future__ import annotations
 
+import contextlib
 import json
 import os
 import re
@@ -20,6 +21,11 @@ import time
 from collections import deque
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from pathlib import Path
+
+try:
+    import fcntl
+except ImportError:  # Windows
+    fcntl = None  # type: ignore[assignment]
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
@@ -43,7 +49,23 @@ LOG_PATH = Path(os.environ.get("MC_RUST_LOG_PATH", "/var/log/mc-rust/harness.log
 
 LAST_ACTIVITY = time.time()
 WRITE_LOCK = threading.Lock()
+REPO_LOCK_PATH = Path("/tmp/mc-rust-repo.lock")
 _STATUS_LOCK = threading.RLock()
+
+
+@contextlib.contextmanager
+def repo_write_lock():
+    """Serialize module writes, cargo tests, rollbacks, and git commits across threads and publish.sh."""
+    with WRITE_LOCK:
+        if fcntl is None:
+            yield
+            return
+        with open(REPO_LOCK_PATH, "w", encoding="utf-8") as lock_fh:
+            fcntl.flock(lock_fh.fileno(), fcntl.LOCK_EX)
+            try:
+                yield
+            finally:
+                fcntl.flock(lock_fh.fileno(), fcntl.LOCK_UN)
 _ACTIVE_CLASSES: dict[str, dict] = {}
 _STATUS: dict = {
     "state": "starting",
@@ -366,8 +388,8 @@ def parse_batch_rust_blocks(text: str, expected_mods: list[str]) -> dict[str, st
 
 def build_work_units(
     candidates: list[dict],
-    max_batch_size: int = 6,
-    max_batch_bytes: int = 12000,
+    max_batch_size: int = 4,
+    max_batch_bytes: int = 9000,
     small_threshold: int = 3500,
 ) -> list[list[dict]]:
     """
@@ -590,8 +612,11 @@ def summarize_cargo_error(output: str) -> str:
 
 
 def _validate_module_code(cand: dict, code: str) -> tuple[str | None, str | None]:
-    if not code or "unsafe" in re.findall(r"\bunsafe\b", code):
-        return None, "empty output or contained `unsafe`"
+    if not code or not code.strip():
+        return None, "empty/unparsed module"
+    no_comments = re.sub(r"//.*", "", re.sub(r"/\*.*?\*/", "", code, flags=re.DOTALL))
+    if re.search(r"\bunsafe\s*(?:\{|fn\b|impl\b|trait\b|extern\b)", no_comments):
+        return None, "contained unsafe syntax"
     if "// JAVA:" not in code:
         code = f"// JAVA: {cand['fqcn']}#class\n" + code
     if "#[cfg(test)]" not in code:
@@ -616,13 +641,8 @@ def port_batch(batch: list[dict]) -> tuple[list[dict], list[dict]]:
             if not remaining:
                 break
 
-            max_sz = max(c["size"] for c in remaining)
-            if len(remaining) == 1 and max_sz >= 4000:
-                efforts = ["medium", "high", "max"]
-                budgets = [24576, 49152, 65536]
-            else:
-                efforts = ["off", "medium", "high"]
-                budgets = [16384, 32768, 49152]
+            efforts = ["medium", "high", "max"]
+            budgets = [20480, 36864, 65536]
 
             lead = remaining[0]
             set_worker_activity(lead["fqcn"], crate, attempt, "generating")
@@ -713,7 +733,7 @@ def port_batch(batch: list[dict]) -> tuple[list[dict], list[dict]]:
                 mod_feedback = next_feedback
                 continue
 
-            with WRITE_LOCK:
+            with repo_write_lock():
                 set_worker_activity(lead["fqcn"], crate, attempt, "testing")
                 ported_dir = CRATES_DIR / crate / "src" / "ported"
                 testable: list[tuple[dict, str]] = []
@@ -824,7 +844,7 @@ def run_forever() -> None:
                 info = deepai_backend.preflight()
                 log(
                     f"DeepAI ready: {info['model']} | keys={info['key_count']} | "
-                    f"context={info['context_window']} | adaptive effort (off->med->high / med->high->max)"
+                    f"context={info['context_window']} | adaptive effort (med->high->max)"
                 )
             except Exception as exc:
                 log(f"DeepAI preflight failed ({exc}); retrying in 120s")
@@ -907,7 +927,7 @@ def run_forever() -> None:
                         save_skips(skips)
 
                     if verified_since_ws >= 40:
-                        with WRITE_LOCK:
+                        with repo_write_lock():
                             ok_ws, ws_out = run_workspace_test()
                         if ok_ws:
                             log(f"Workspace regression test PASS ({total_verified} total verified)")
@@ -917,13 +937,13 @@ def run_forever() -> None:
 
                     if verified_in_wave >= 10 or (verified_in_wave > 0 and time.time() - last_publish >= 60):
                         msg = f"Port {verified_in_wave} Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-                        with WRITE_LOCK:
+                        with repo_write_lock():
                             update_progress.update_all(commit_msg=msg)
                         last_publish = time.time()
                         verified_in_wave = 0
 
             if verified_since_ws > 0:
-                with WRITE_LOCK:
+                with repo_write_lock():
                     ok_ws, ws_out = run_workspace_test()
                 if ok_ws:
                     log(f"Wave end workspace regression test PASS ({total_verified} total verified)")
@@ -932,7 +952,7 @@ def run_forever() -> None:
 
             if verified_in_wave > 0:
                 msg = f"Port {verified_in_wave} Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-                with WRITE_LOCK:
+                with repo_write_lock():
                     update_progress.update_all(commit_msg=msg)
 
             time.sleep(2)
