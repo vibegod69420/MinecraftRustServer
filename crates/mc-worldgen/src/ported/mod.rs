@@ -123,3 +123,5 @@ pub mod direct_pool_alias;
 pub mod pool_alias_lookup;
 pub mod random_group_pool_alias;
 pub mod structure_placement_type;
+pub mod surface_water_depth_filter;
+pub mod placement_context;

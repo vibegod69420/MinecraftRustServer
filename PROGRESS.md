@@ -1,19 +1,23 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:32:12 UTC
+- **Updated**: 2026-11-22 23:34:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 2335 / 66676 (3.502%)
-- **Mapped Java Classes**: 596 / 7163 (8.320%)
+- **Mapped Java Methods**: 2407 / 66676 (3.610%)
+- **Mapped Java Classes**: 612 / 7163 (8.544%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 944 mapped methods
-- `mc-nbt`: 722 mapped methods
-- `mc-protocol`: 559 mapped methods
-- `mc-worldgen`: 569 mapped methods
+- `mc-nbt`: 739 mapped methods
+- `mc-protocol`: 606 mapped methods
+- `mc-worldgen`: 582 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.protocol.ProtocolCodecBuilder` -> `mc-protocol` (337.0s)
+- [PASS] `net.minecraft.network.protocol.Packet` -> `mc-protocol` (337.0s)
+- [PASS] `net.minecraft.nbt.ShortTag` -> `mc-nbt` (279.5s)
+- [PASS] `net.minecraft.nbt.EndTag` -> `mc-nbt` (279.5s)
 - [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (277.4s)
 - [PASS] `net.minecraft.network.protocol.cookie.ServerboundCookieResponsePacket` -> `mc-protocol` (239.7s)
 - [PASS] `net.minecraft.network.protocol.cookie.ClientboundCookieRequestPacket` -> `mc-protocol` (239.7s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.ValueCheckCondition` -> `mc-nbt` (601.5s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.LootItemCondition` -> `mc-nbt` (601.5s)
 - [PASS] `net.minecraft.world.level.storage.loot.predicates.MatchTool` -> `mc-nbt` (601.5s)
-- [PASS] `net.minecraft.world.level.storage.loot.predicates.EnchantmentActiveCheck` -> `mc-nbt` (601.5s)
-- [PASS] `net.minecraft.core.UUIDUtil` -> `mc-math` (1133.3s)
-- [FAIL] `net.minecraft.nbt.NbtUtils` -> `mc-nbt` (2073.3s)
-- [FAIL] `net.minecraft.world.level.storage.loot.predicates.AllOfCondition` -> `mc-nbt` (805.3s)

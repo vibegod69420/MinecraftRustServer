@@ -65,3 +65,5 @@ pub mod match_tool;
 pub mod list_tag;
 pub mod end_tag;
 pub mod short_tag;
+pub mod loot_context_user;
+pub mod loot_params;
