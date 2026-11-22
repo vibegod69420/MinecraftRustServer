@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 23:42:00 UTC",
-  "updated_epoch": 1795390920,
+  "updated_at": "2026-11-22 23:43:10 UTC",
+  "updated_epoch": 1795390990,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 2693,
     "class_coverage_pct": 9.6049,
     "method_coverage_pct": 4.0389,
-    "harness_verified_classes": 429,
-    "harness_failed_attempts": 53
+    "harness_verified_classes": 434,
+    "harness_failed_attempts": 56
   },
   "crates": [
     {
@@ -47,13 +47,77 @@
     }
   ],
   "usage": {
-    "calls_total": 400,
-    "prompt_tokens": 946616,
-    "completion_tokens": 5131397,
-    "reasoning_tokens": 3701968,
+    "calls_total": 402,
+    "prompt_tokens": 951277,
+    "completion_tokens": 5157135,
+    "reasoning_tokens": 3722826,
     "avg_latency_s": 188.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T23:43:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundDebugBlockValuePacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 697.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:43:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundSetPlayerInventoryPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 697.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:43:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundDeleteChatPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 697.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:43:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundSetSimulationDistancePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 697.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:42:06Z",
+      "class_name": "net.minecraft.world.level.storage.loot.LootDataType",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 873.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:42:06Z",
+      "class_name": "net.minecraft.world.level.storage.loot.ContainerComponentManipulator",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 873.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:42:06Z",
+      "class_name": "net.minecraft.world.level.storage.loot.LootParams",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 873.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T23:42:06Z",
+      "class_name": "net.minecraft.world.level.storage.loot.LootContextUser",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 873.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T23:41:59Z",
       "class_name": "net.minecraft.core.RegistrySetBuilder",
@@ -309,73 +373,14 @@
       "verified": true,
       "seconds": 178.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:35:11Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.SpringConfiguration",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 178.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:35:11Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.DeltaFeatureConfiguration",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 178.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:35:11Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.PointedDripstoneConfiguration",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 178.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:34:42Z",
-      "class_name": "net.minecraft.core.component.DataComponentGetter",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 429.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:33:10Z",
-      "class_name": "net.minecraft.network.protocol.ProtocolCodecBuilder",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 337.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:33:10Z",
-      "class_name": "net.minecraft.network.protocol.Packet",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 337.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:32:12Z",
-      "class_name": "net.minecraft.nbt.ShortTag",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 279.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:32:12Z",
-      "class_name": "net.minecraft.nbt.EndTag",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 279.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e2eec56",
+      "ts": "2026-11-22T23:42:00+00:00",
+      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "7bdd38e",
       "ts": "2026-11-22T23:40:27+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "dced986",
       "ts": "2026-11-22T23:26:01+00:00",
-      "message": "Worker sync: 2215 mapped Java methods"
-    },
-    {
-      "sha": "6329508",
-      "ts": "2026-11-22T23:20:02+00:00",
       "message": "Worker sync: 2215 mapped Java methods"
     }
   ]

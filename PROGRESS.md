@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:42:00 UTC
+- **Updated**: 2026-11-22 23:43:10 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 2693 / 66676 (4.039%)
 - **Mapped Java Classes**: 688 / 7163 (9.605%)
@@ -14,6 +14,14 @@
 - `mc-worldgen`: 685 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.network.protocol.game.ClientboundDebugBlockValuePacket` -> `mc-protocol` (697.4s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundSetPlayerInventoryPacket` -> `mc-protocol` (697.4s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundDeleteChatPacket` -> `mc-protocol` (697.4s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundSetSimulationDistancePacket` -> `mc-protocol` (697.4s)
+- [FAIL] `net.minecraft.world.level.storage.loot.LootDataType` -> `mc-nbt` (873.0s)
+- [FAIL] `net.minecraft.world.level.storage.loot.ContainerComponentManipulator` -> `mc-nbt` (873.0s)
+- [PASS] `net.minecraft.world.level.storage.loot.LootParams` -> `mc-nbt` (873.0s)
+- [PASS] `net.minecraft.world.level.storage.loot.LootContextUser` -> `mc-nbt` (873.0s)
 - [PASS] `net.minecraft.core.RegistrySetBuilder` -> `mc-math` (218.1s)
 - [PASS] `net.minecraft.world.level.storage.loot.entries.SlotLoot` -> `mc-nbt` (252.4s)
 - [PASS] `net.minecraft.world.level.storage.loot.entries.LootPoolEntries` -> `mc-nbt` (252.4s)
@@ -21,11 +29,3 @@
 - [PASS] `net.minecraft.world.level.storage.loot.entries.DynamicLoot` -> `mc-nbt` (252.4s)
 - [PASS] `net.minecraft.core.component.predicates.DataComponentPredicate` -> `mc-math` (660.2s)
 - [PASS] `net.minecraft.nbt.NbtUtils` -> `mc-nbt` (759.7s)
-- [PASS] `net.minecraft.core.cauldron.CauldronInteraction` -> `mc-math` (215.3s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.StructureSet` -> `mc-worldgen` (257.3s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData` -> `mc-worldgen` (257.3s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets` -> `mc-worldgen` (257.3s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.SinglePieceStructure` -> `mc-worldgen` (257.3s)
-- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (688.9s)
-- [PASS] `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider` -> `mc-nbt` (395.8s)
-- [PASS] `net.minecraft.world.level.storage.loot.providers.score.ScoreboardNameProviders` -> `mc-nbt` (395.8s)
