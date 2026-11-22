@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **198** across **58** classes.
+Total mapped Java symbols: **202** across **60** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -15,6 +15,7 @@ Total mapped Java symbols: **198** across **58** classes.
 | `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 17 | `<item>` |
 | `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 19 | `<item>` |
 | `START_PRESENT` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 38 | `<item>` |
+| `Util.pauseInIde(...) is an IDE debug hook` | `crates/mc-math/src/ported/weighted_random.rs` | 42 | `<item>` |
 | `if (weight` | `crates/mc-math/src/ported/weighted.rs` | 61 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
@@ -196,6 +197,10 @@ Total mapped Java symbols: **198** across **58** classes.
 | `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 221 | `<item>` |
 | `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 99 | `weight` |
 | `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 229 | `map_preserves_weight_and_transforms_value` |
+| `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 34 | `get_random_item_with_total` |
+| `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 67 | `get_random_item` |
+| `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_random.rs` | 22 | `get_total_weight` |
+| `net.minecraft.util.random.WeightedRandom#getWeightedItem` | `crates/mc-math/src/ported/weighted_random.rs` | 52 | `get_weighted_item` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |
