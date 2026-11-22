@@ -115,3 +115,8 @@ pub mod end_gateway_configuration;
 pub mod random_boolean_feature_configuration;
 pub mod random_feature_configuration;
 pub mod sculk_patch_configuration;
+pub mod random_patch_feature;
+pub mod end_island_feature;
+pub mod weighted_placed_feature;
+pub mod pool_alias_bindings;
+pub mod direct_pool_alias;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2036** across **559** classes.
+Total mapped Java symbols: **2050** across **565** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -102,11 +102,13 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.core.BlockPos#new(int,int,int)` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 25 | `new` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-math/src/packing.rs` | 77 | `of` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-math/src/ported/block_box.rs` | 100 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 13 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-math/src/ported/block_box.rs` | 90 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 13 | `relative` |
+| `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 26 | `set_with_offset` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
 | `net.minecraft.core.ClientAsset#id` | `crates/mc-math/src/ported/client_asset.rs` | 19 | `id` |
@@ -1352,6 +1354,7 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.util.MarsagliaPolarGaussian#reset` | `crates/mc-worldgen/src/ported/single_threaded_random_source.rs` | 39 | `reset` |
 | `net.minecraft.util.MarsagliaPolarGaussian#reset` | `crates/mc-worldgen/src/ported/thread_safe_legacy_random_source.rs` | 25 | `reset` |
 | `net.minecraft.util.Mth#atan2` | `crates/mc-math/src/mth.rs` | 364 | `atan2` |
+| `net.minecraft.util.Mth#ceil` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 46 | `mth_ceil` |
 | `net.minecraft.util.Mth#ceil(double)` | `crates/mc-math/src/mth.rs` | 160 | `ceil_f64` |
 | `net.minecraft.util.Mth#ceil(float)` | `crates/mc-math/src/mth.rs` | 149 | `ceil_f32` |
 | `net.minecraft.util.Mth#ceilLong` | `crates/mc-math/src/mth.rs` | 171 | `ceil_long` |
@@ -1364,6 +1367,7 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.util.Mth#clampedLerp(float,float,float)` | `crates/mc-math/src/mth.rs` | 230 | `clamped_lerp_f32` |
 | `net.minecraft.util.Mth#cos` | `crates/mc-math/src/mth.rs` | 103 | `cos` |
 | `net.minecraft.util.Mth#fastInvSqrt` | `crates/mc-math/src/mth.rs` | 354 | `fast_inv_sqrt` |
+| `net.minecraft.util.Mth#floor` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 36 | `mth_floor` |
 | `net.minecraft.util.Mth#floor(double)` | `crates/mc-math/src/mth.rs` | 127 | `floor_f64` |
 | `net.minecraft.util.Mth#floor(float)` | `crates/mc-math/src/mth.rs` | 116 | `floor_f32` |
 | `net.minecraft.util.Mth#floorDiv` | `crates/mc-math/src/mth.rs` | 417 | `floor_div` |
@@ -1865,6 +1869,9 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.world.level.levelgen.blockpredicates.WouldSurvivePredicate#type()` | `crates/mc-worldgen/src/ported/would_survive_predicate.rs` | 108 | `predicate_type` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#<init>` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 106 | `new` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#place` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 111 | `place` |
+| `net.minecraft.world.level.levelgen.feature.EndIslandFeature#<init>` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 65 | `new` |
+| `net.minecraft.world.level.levelgen.feature.EndIslandFeature#place` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 80 | `place` |
+| `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 70 | `set_block` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 76 | `config` |
@@ -1879,6 +1886,8 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#place` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 38 | `place` |
 | `net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature#<init>` | `crates/mc-worldgen/src/ported/random_boolean_selector_feature.rs` | 82 | `new` |
 | `net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature#place` | `crates/mc-worldgen/src/ported/random_boolean_selector_feature.rs` | 87 | `place` |
+| `net.minecraft.world.level.levelgen.feature.RandomPatchFeature#<init>` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 106 | `new` |
+| `net.minecraft.world.level.levelgen.feature.RandomPatchFeature#place` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 111 | `place` |
 | `net.minecraft.world.level.levelgen.feature.RandomSelectorFeature#<init>` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 102 | `new` |
 | `net.minecraft.world.level.levelgen.feature.RandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 107 | `place` |
 | `net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature#<init>` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 98 | `new` |
@@ -1887,7 +1896,9 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 86 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#place` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 134 | `place` |
+| `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#<init>` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 32 | `new` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 50 | `place` |
+| `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 37 | `place` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 29 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_config.rs` | 26 | `new` |
@@ -2137,6 +2148,13 @@ Total mapped Java symbols: **2036** across **559** classes.
 | `net.minecraft.world.level.levelgen.structure.pools.DimensionPadding#hasEqualTopAndBottom` | `crates/mc-worldgen/src/ported/dimension_padding.rs` | 41 | `has_equal_top_and_bottom` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#codec` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 55 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#register` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 60 | `register` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 116 | `all_targets` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 140 | `all_targets` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#codec` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 121 | `codec` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#forEachResolved` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 104 | `for_each_resolved` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#forEachResolved` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 128 | `for_each_resolved` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.PoolAliasBindings#bootstrap` | `crates/mc-worldgen/src/ported/pool_alias_bindings.rs` | 136 | `bootstrap` |
+| `net.minecraft.world.level.levelgen.structure.pools.alias.PoolAliasBindings#registerTargetsAsPools` | `crates/mc-worldgen/src/ported/pool_alias_bindings.rs` | 143 | `register_targets_as_pools` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces.BuriedTreasurePiece#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 82 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 159 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#CODEC` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 187 | `<item>` |
