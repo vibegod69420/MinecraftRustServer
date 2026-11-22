@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **133** across **26** classes.
+Total mapped Java symbols: **134** across **27** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -74,6 +74,10 @@ Total mapped Java symbols: **133** across **26** classes.
 | `net.minecraft.util.SimpleBitStorage#getRaw` | `crates/mc-math/src/packing.rs` | 280 | `raw` |
 | `net.minecraft.util.SimpleBitStorage#set` | `crates/mc-math/src/packing.rs` | 258 | `set` |
 | `net.minecraft.util.SimpleBitStorage#unpack` | `crates/mc-math/src/packing.rs` | 286 | `unpack` |
+| `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 12 | `apply_as_float` |
+| `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 20 | `apply_as_float` |
+| `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
+| `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |
