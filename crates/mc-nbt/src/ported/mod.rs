@@ -50,3 +50,4 @@ pub mod fixed_scoreboard_name_provider;
 pub mod loot_number_provider_type;
 pub mod any_of_condition;
 pub mod loot_item_condition_type;
+pub mod snbt_printer_tag_visitor;
