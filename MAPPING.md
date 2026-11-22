@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **178** across **45** classes.
+Total mapped Java symbols: **185** across **49** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -9,6 +9,9 @@ Total mapped Java symbols: **178** across **45** classes.
 | `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 13 | `<item>` |
 | `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 15 | `<item>` |
 | `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 17 | `<item>` |
+| `` | `crates/mc-math/src/ported/weighted.rs` | 17 | `fmt` |
+| `` | `crates/mc-math/src/ported/weighted.rs` | 35 | `<item>` |
+| `if (weight` | `crates/mc-math/src/ported/weighted.rs` | 61 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
@@ -154,6 +157,26 @@ Total mapped Java symbols: **178** across **45** classes.
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#getProfiler` | `crates/mc-math/src/ported/metrics_recorder.rs` | 27 | `get_profiler` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#isRecording` | `crates/mc-math/src/ported/metrics_recorder.rs` | 24 | `is_recording` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#startTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 21 | `start_tick` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 53 | `new` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 164 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 172 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 181 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 189 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 199 | `new_accepts_i32_max_weight` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 206 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 321 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 330 | `<item>` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 106 | `map` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 236 | `<item>` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 245 | `<item>` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 254 | `<item>` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 339 | `<item>` |
+| `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 83 | `value` |
+| `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 92 | `into_value` |
+| `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 214 | `into_value_consumes` |
+| `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 221 | `<item>` |
+| `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 99 | `weight` |
+| `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 229 | `map_preserves_weight_and_transforms_value` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |
@@ -220,3 +243,5 @@ Total mapped Java symbols: **178** across **45** classes.
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getCornerNoise3D` | `crates/mc-math/src/noise.rs` | 60 | `get_corner_noise_3d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double)` | `crates/mc-math/src/noise.rs` | 71 | `get_value_2d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double,double)` | `crates/mc-math/src/noise.rs` | 101 | `get_value_3d` |
+| `return new Weighted<>($$0.apply(this.value()), this.weight)` | `crates/mc-math/src/ported/weighted.rs` | 111 | `<item>` |
+| `throw Util.pauseInIde(new IllegalArgumentException(` | `crates/mc-math/src/ported/weighted.rs` | 56 | `<item>` |
