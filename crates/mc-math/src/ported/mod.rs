@@ -24,3 +24,4 @@ pub mod sampled_float;
 pub mod multiplied_floats;
 pub mod constant_int;
 pub mod constant_float;
+pub mod weighted_list;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **319** across **99** classes.
+Total mapped Java symbols: **355** across **116** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -95,6 +95,20 @@ Total mapped Java symbols: **319** across **99** classes.
 | `net.minecraft.nbt.TagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 35 | `visit_long_array` |
 | `net.minecraft.nbt.TagVisitor#visitShort` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 14 | `visit_short` |
 | `net.minecraft.nbt.TagVisitor#visitString` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 8 | `visit_string` |
+| `net.minecraft.network.ClientboundPacketListener#flow` | `crates/mc-protocol/src/ported/clientbound_packet_listener.rs` | 17 | `flow` |
+| `net.minecraft.network.ConnectionProtocol#id` | `crates/mc-protocol/src/ported/connection_protocol.rs` | 14 | `id` |
+| `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 30 | `new` |
+| `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 39 | `from_reason` |
+| `net.minecraft.network.HiddenByteBuf#pack` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 5 | `pack` |
+| `net.minecraft.network.HiddenByteBuf#unpack` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 5 | `unpack` |
+| `net.minecraft.network.LocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 21 | `channel_read` |
+| `net.minecraft.network.LocalFrameEncoder#write` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 21 | `write` |
+| `net.minecraft.network.ServerboundPacketListener#flow` | `crates/mc-protocol/src/ported/serverbound_packet_listener.rs` | 17 | `flow` |
+| `net.minecraft.network.chat.numbers.NumberFormatType` | `crates/mc-protocol/src/ported/number_format_type.rs` | 65 | `map_codec` |
+| `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 67 | `map_codec` |
+| `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 87 | `map_codec` |
+| `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 70 | `stream_codec` |
+| `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 92 | `stream_codec` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 7 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 15 | `decode` |
 | `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 87 | `decode` |
@@ -124,6 +138,15 @@ Total mapped Java symbols: **319** across **99** classes.
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 182 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 253 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 314 | `write` |
+| `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/discarded_query_answer_payload.rs` | 14 | `write` |
+| `net.minecraft.network.protocol.login.custom.CustomQueryPayload#id` | `crates/mc-protocol/src/ported/custom_query_payload.rs` | 30 | `id` |
+| `net.minecraft.network.protocol.login.custom.CustomQueryPayload#id` | `crates/mc-protocol/src/ported/discarded_query_payload.rs` | 30 | `id` |
+| `net.minecraft.network.protocol.login.custom.CustomQueryPayload#write` | `crates/mc-protocol/src/ported/custom_query_payload.rs` | 33 | `write` |
+| `net.minecraft.network.protocol.login.custom.CustomQueryPayload#write` | `crates/mc-protocol/src/ported/discarded_query_payload.rs` | 33 | `write` |
+| `net.minecraft.network.protocol.login.custom.DiscardedQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/discarded_query_answer_payload.rs` | 26 | `write` |
+| `net.minecraft.network.protocol.login.custom.DiscardedQueryPayload#id` | `crates/mc-protocol/src/ported/discarded_query_payload.rs` | 47 | `id` |
+| `net.minecraft.network.protocol.login.custom.DiscardedQueryPayload#id` | `crates/mc-protocol/src/ported/discarded_query_payload.rs` | 54 | `id` |
+| `net.minecraft.network.protocol.login.custom.DiscardedQueryPayload#write` | `crates/mc-protocol/src/ported/discarded_query_payload.rs` | 59 | `write` |
 | `net.minecraft.network.protocol.ping.ClientPongPacketListener#handlePongResponse` | `crates/mc-protocol/src/ported/client_pong_packet_listener.rs` | 18 | `handle_pong_response` |
 | `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 100 | `from_buf` |
 | `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#handle` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 117 | `handle` |
@@ -261,19 +284,44 @@ Total mapped Java symbols: **319** across **99** classes.
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 206 | `<item>` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 321 | `<item>` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 330 | `<item>` |
+| `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted_list.rs` | 12 | `new` |
 | `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 106 | `map` |
 | `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 236 | `<item>` |
 | `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 245 | `<item>` |
 | `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 254 | `<item>` |
 | `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted.rs` | 339 | `<item>` |
+| `net.minecraft.util.random.Weighted#map` | `crates/mc-math/src/ported/weighted_list.rs` | 27 | `map` |
 | `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 83 | `value` |
 | `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 92 | `into_value` |
 | `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 214 | `into_value_consumes` |
 | `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted.rs` | 221 | `<item>` |
+| `net.minecraft.util.random.Weighted#value` | `crates/mc-math/src/ported/weighted_list.rs` | 17 | `value` |
 | `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 99 | `weight` |
 | `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted.rs` | 229 | `map_preserves_weight_and_transforms_value` |
+| `net.minecraft.util.random.Weighted#weight` | `crates/mc-math/src/ported/weighted_list.rs` | 22 | `weight` |
+| `net.minecraft.util.random.WeightedList#<init>` | `crates/mc-math/src/ported/weighted_list.rs` | 62 | `new` |
+| `net.minecraft.util.random.WeightedList#builder` | `crates/mc-math/src/ported/weighted_list.rs` | 94 | `builder` |
+| `net.minecraft.util.random.WeightedList#contains` | `crates/mc-math/src/ported/weighted_list.rs` | 140 | `contains` |
+| `net.minecraft.util.random.WeightedList#equals` | `crates/mc-math/src/ported/weighted_list.rs` | 154 | `eq` |
+| `net.minecraft.util.random.WeightedList#getRandom` | `crates/mc-math/src/ported/weighted_list.rs` | 113 | `get_random` |
+| `net.minecraft.util.random.WeightedList#getRandomOrThrow` | `crates/mc-math/src/ported/weighted_list.rs` | 123 | `get_random_or_throw` |
+| `net.minecraft.util.random.WeightedList#hashCode` | `crates/mc-math/src/ported/weighted_list.rs` | 163 | `hash` |
+| `net.minecraft.util.random.WeightedList#isEmpty` | `crates/mc-math/src/ported/weighted_list.rs` | 99 | `is_empty` |
+| `net.minecraft.util.random.WeightedList#map` | `crates/mc-math/src/ported/weighted_list.rs` | 104 | `map` |
+| `net.minecraft.util.random.WeightedList#of` | `crates/mc-math/src/ported/weighted_list.rs` | 79 | `empty` |
+| `net.minecraft.util.random.WeightedList#of` | `crates/mc-math/src/ported/weighted_list.rs` | 84 | `of_value` |
+| `net.minecraft.util.random.WeightedList#of` | `crates/mc-math/src/ported/weighted_list.rs` | 89 | `of_list` |
+| `net.minecraft.util.random.WeightedList#unwrap` | `crates/mc-math/src/ported/weighted_list.rs` | 135 | `unwrap_items` |
+| `net.minecraft.util.random.WeightedList$Builder#<init>` | `crates/mc-math/src/ported/weighted_list.rs` | 215 | `new` |
+| `net.minecraft.util.random.WeightedList$Builder#add` | `crates/mc-math/src/ported/weighted_list.rs` | 220 | `add` |
+| `net.minecraft.util.random.WeightedList$Builder#add` | `crates/mc-math/src/ported/weighted_list.rs` | 226 | `add_weighted` |
+| `net.minecraft.util.random.WeightedList$Builder#build` | `crates/mc-math/src/ported/weighted_list.rs` | 232 | `build` |
+| `net.minecraft.util.random.WeightedList$Compact#get` | `crates/mc-math/src/ported/weighted_list.rs` | 199 | `compact_get` |
+| `net.minecraft.util.random.WeightedList$Flat#<init>` | `crates/mc-math/src/ported/weighted_list.rs` | 177 | `build_flat` |
+| `net.minecraft.util.random.WeightedList$Flat#get` | `crates/mc-math/src/ported/weighted_list.rs` | 193 | `flat_get` |
 | `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 34 | `get_random_item_with_total` |
 | `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 67 | `get_random_item` |
+| `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_list.rs` | 39 | `get_total_weight` |
 | `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_random.rs` | 22 | `get_total_weight` |
 | `net.minecraft.util.random.WeightedRandom#getWeightedItem` | `crates/mc-math/src/ported/weighted_random.rs` | 52 | `get_weighted_item` |
 | `net.minecraft.util.valueproviders.ConstantFloat` | `crates/mc-math/src/ported/constant_float.rs` | 3 | `<item>` |
@@ -361,6 +409,9 @@ Total mapped Java symbols: **319** across **99** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
+| `net.minecraft.world.level.levelgen.feature.NoOpFeature#<init>` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 31 | `new` |
+| `net.minecraft.world.level.levelgen.feature.NoOpFeature#place` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 38 | `place` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 29 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 19 | `<item>` |
