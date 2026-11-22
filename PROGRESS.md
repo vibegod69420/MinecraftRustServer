@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:45:58 UTC
+- **Updated**: 2026-11-22 23:46:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 2857 / 66676 (4.285%)
 - **Mapped Java Classes**: 720 / 7163 (10.052%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 701 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.Unit` -> `mc-math` (134.1s)
+- [PASS] `net.minecraft.util.TimeSource` -> `mc-math` (134.1s)
+- [PASS] `net.minecraft.util.Tuple` -> `mc-math` (134.1s)
+- [PASS] `net.minecraft.util.ColorRGBA` -> `mc-math` (134.1s)
 - [PASS] `net.minecraft.core.component.DataComponents` -> `mc-math` (290.7s)
 - [PASS] `net.minecraft.network.chat.contents.objects.AtlasSprite` -> `mc-protocol` (111.3s)
 - [PASS] `net.minecraft.network.chat.contents.objects.PlayerSprite` -> `mc-protocol` (111.3s)
@@ -25,7 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.common.ServerboundClientInformationPacket` -> `mc-protocol` (320.7s)
 - [PASS] `net.minecraft.network.protocol.common.ServerboundKeepAlivePacket` -> `mc-protocol` (320.7s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundKeepAlivePacket` -> `mc-protocol` (320.7s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.CopyNameFunction` -> `mc-nbt` (241.6s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.ToggleTooltips` -> `mc-nbt` (241.6s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay` -> `mc-nbt` (241.6s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetCustomDataFunction` -> `mc-nbt` (241.6s)
