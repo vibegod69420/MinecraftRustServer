@@ -72,3 +72,8 @@ pub mod value_check_condition;
 pub mod scoreboard_name_providers;
 pub mod context_scoreboard_name_provider;
 pub mod damage_source_condition;
+pub mod nbt_utils;
+pub mod dynamic_loot;
+pub mod loot_item;
+pub mod loot_pool_entries;
+pub mod slot_loot;
