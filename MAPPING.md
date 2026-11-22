@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **355** across **116** classes.
+Total mapped Java symbols: **356** across **117** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -439,6 +439,8 @@ Total mapped Java symbols: **355** across **116** classes.
 | `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
 | `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
+| `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
+| `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |

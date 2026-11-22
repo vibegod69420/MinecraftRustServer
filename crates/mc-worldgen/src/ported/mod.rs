@@ -17,3 +17,4 @@ pub mod liquid_settings;
 pub mod pos_rule_test;
 pub mod always_true_test;
 pub mod no_op_feature;
+pub mod post_placement_processor;
