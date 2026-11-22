@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2215** across **586** classes.
+Total mapped Java symbols: **2219** across **587** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2344,6 +2344,10 @@ Total mapped Java symbols: **2215** across **586** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType#evaluate` | `crates/mc-worldgen/src/ported/random_spread_type.rs` | 23 | `evaluate` |
 | `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType#getSerializedName` | `crates/mc-worldgen/src/ported/random_spread_type.rs` | 15 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType#CONCENTRIC_RINGS` | `crates/mc-worldgen/src/ported/structure_placement_type.rs` | 73 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType#RANDOM_SPREAD` | `crates/mc-worldgen/src/ported/structure_placement_type.rs` | 69 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType#codec` | `crates/mc-worldgen/src/ported/structure_placement_type.rs` | 53 | `codec` |
+| `net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType#register` | `crates/mc-worldgen/src/ported/structure_placement_type.rs` | 58 | `register` |
 | `net.minecraft.world.level.levelgen.structure.pools.DimensionPadding#<init>` | `crates/mc-worldgen/src/ported/dimension_padding.rs` | 33 | `new` |
 | `net.minecraft.world.level.levelgen.structure.pools.DimensionPadding#hasEqualTopAndBottom` | `crates/mc-worldgen/src/ported/dimension_padding.rs` | 41 | `has_equal_top_and_bottom` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#codec` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 55 | `codec` |

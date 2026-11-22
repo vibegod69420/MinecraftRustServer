@@ -122,3 +122,4 @@ pub mod pool_alias_bindings;
 pub mod direct_pool_alias;
 pub mod pool_alias_lookup;
 pub mod random_group_pool_alias;
+pub mod structure_placement_type;
