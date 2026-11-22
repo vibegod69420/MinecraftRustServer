@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 20:36:09 UTC",
-  "updated_epoch": 1795379769,
+  "updated_at": "2026-11-22 20:37:52 UTC",
+  "updated_epoch": 1795379872,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -47,6 +47,11 @@
   },
   "recent_work": [],
   "recent_commits": [
+    {
+      "sha": "02fbb88",
+      "ts": "2026-11-22T17:36:23-03:00",
+      "message": "Fix 32-bit int wraparound in WorldgenRandom::seed_slime_chunk"
+    },
     {
       "sha": "125f627",
       "ts": "2026-11-22T17:26:30-03:00",

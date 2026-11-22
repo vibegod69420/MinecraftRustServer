@@ -1,1 +1,1 @@
-{"state": "initialized", "class_name": null, "crate": null, "attempt": 0, "verified_count": 0, "ts": "2026-11-22T20:22:00Z"}
+{"state": "generating", "class_name": "net.minecraft.util.ToFloatFunction", "crate": "mc-math", "attempt": 1, "verified_count": 0, "ts": "2026-11-22T20:37:10Z"}
