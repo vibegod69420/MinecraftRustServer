@@ -40,3 +40,6 @@ pub mod function_user_builder;
 pub mod discard_item;
 pub mod condition_user_builder;
 pub mod loot_item_killed_by_player_condition;
+pub mod number_provider;
+pub mod enchantment_level_provider;
+pub mod constant_value;

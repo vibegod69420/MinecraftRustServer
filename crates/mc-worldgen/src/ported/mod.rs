@@ -93,3 +93,6 @@ pub mod block_predicate_filter;
 pub mod heightmap_placement;
 pub mod structure_pool_element_type;
 pub mod dimension_padding;
+pub mod matching_block_tag_predicate;
+pub mod unobstructed_predicate;
+pub mod inside_world_bounds_predicate;
