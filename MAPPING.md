@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **233** across **77** classes.
+Total mapped Java symbols: **253** across **86** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -52,7 +52,19 @@ Total mapped Java symbols: **233** across **77** classes.
 | `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 13 | `encode` |
 | `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 21 | `encode` |
 | `net.minecraft.network.codec.StreamMemberEncoder#encode` | `crates/mc-protocol/src/ported/stream_member_encoder.rs` | 39 | `encode` |
+| `net.minecraft.network.protocol.BundleDelimiterPacket` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 22 | `delimiter_type` |
+| `net.minecraft.network.protocol.BundleDelimiterPacket#handle` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 29 | `handle` |
+| `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 24 | `delimiter_type` |
+| `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 34 | `packet_type` |
+| `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 52 | `delimiter_type` |
 | `net.minecraft.network.protocol.PacketType` | `crates/mc-data/build.rs` | 98 | `packet_id` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 27 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 29 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 56 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 95 | `bind` |
+| `net.minecraft.network.protocol.UnboundProtocol` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 27 | `bind` |
+| `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 29 | `bind` |
+| `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 54 | `bind` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 60 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 74 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 146 | `write` |
@@ -304,6 +316,19 @@ Total mapped Java symbols: **233** across **77** classes.
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 115 | `find_collision_piece` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 67 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.LiquidSettings#getSerializedName` | `crates/mc-worldgen/src/ported/liquid_settings.rs` | 21 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.NopProcessor#<init>` | `crates/mc-worldgen/src/ported/nop_processor.rs` | 35 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.NopProcessor#getType` | `crates/mc-worldgen/src/ported/nop_processor.rs` | 40 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest#getType` | `crates/mc-worldgen/src/ported/pos_rule_test.rs` | 59 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest#test` | `crates/mc-worldgen/src/ported/pos_rule_test.rs` | 50 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#getType` | `crates/mc-worldgen/src/ported/rule_test.rs` | 53 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#test` | `crates/mc-worldgen/src/ported/rule_test.rs` | 50 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#<init>` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 12 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#list` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 17 | `list` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#toString` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 24 | `fmt` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#<init>` | `crates/mc-math/src/noise.rs` | 167 | `new` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double)` | `crates/mc-math/src/noise.rs` | 193 | `noise` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double,double,double)` | `crates/mc-math/src/noise.rs` | 198 | `noise_with_y_scale` |

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:04:01 UTC",
-  "updated_epoch": 1795385041,
+  "updated_at": "2026-11-22 22:04:27 UTC",
+  "updated_epoch": 1795385067,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 77,
-    "mapped_methods": 233,
-    "class_coverage_pct": 1.075,
-    "method_coverage_pct": 0.3495,
-    "harness_verified_classes": 41,
+    "mapped_classes": 86,
+    "mapped_methods": 253,
+    "class_coverage_pct": 1.2006,
+    "method_coverage_pct": 0.3794,
+    "harness_verified_classes": 47,
     "harness_failed_attempts": 4
   },
   "crates": [
@@ -39,21 +39,69 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 24
+      "mapped_methods": 36
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 42
+      "mapped_methods": 55
     }
   ],
   "usage": {
-    "calls_total": 76,
-    "prompt_tokens": 74141,
-    "completion_tokens": 615801,
-    "reasoning_tokens": 464062,
-    "avg_latency_s": 120.1
+    "calls_total": 79,
+    "prompt_tokens": 82756,
+    "completion_tokens": 665168,
+    "reasoning_tokens": 495241,
+    "avg_latency_s": 124.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.PosRuleTest",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.LiquidSettings",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.NopProcessor",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:04:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 273.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:03:23Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration",
@@ -325,57 +373,14 @@
       "verified": true,
       "seconds": 82.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T21:10:07Z",
-      "class_name": "net.minecraft.util.debugchart.SampleStorage",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 158.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T21:07:29Z",
-      "class_name": "net.minecraft.util.FormattedCharSink",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 204.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T21:04:04Z",
-      "class_name": "net.minecraft.util.valueproviders.SampledFloat",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 137.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T21:01:47Z",
-      "class_name": "net.minecraft.util.profiling.metrics.ProfilerMeasured",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 110.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:59:57Z",
-      "class_name": "net.minecraft.util.CryptException",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 119.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:57:57Z",
-      "class_name": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 119.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ffb46a1",
+      "ts": "2026-11-22T22:04:01+00:00",
+      "message": "Worker sync: 233 mapped Java methods"
+    },
     {
       "sha": "04f51b9",
       "ts": "2026-11-22T22:03:21+00:00",
@@ -445,11 +450,6 @@
       "sha": "4b8241b",
       "ts": "2026-11-22T21:46:02+00:00",
       "message": "Worker sync: 178 mapped Java methods"
-    },
-    {
-      "sha": "3d9fcf6",
-      "ts": "2026-11-22T18:44:52-03:00",
-      "message": "Scale autonomous harness to 6 parallel workers, prioritize core subsystems, fix commit spam"
     }
   ]
 }
