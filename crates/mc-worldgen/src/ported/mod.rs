@@ -106,3 +106,7 @@ pub mod random_selector_feature;
 pub mod simple_random_selector_feature;
 pub mod single_threaded_random_source;
 pub mod thread_safe_legacy_random_source;
+pub mod matching_blocks_predicate;
+pub mod matching_fluids_predicate;
+pub mod would_survive_predicate;
+pub mod has_sturdy_face_predicate;

@@ -86,3 +86,5 @@ pub mod spell_particle_option;
 pub mod block_math;
 pub mod block_box;
 pub mod layered_registry_access;
+pub mod axis_cycle;
+pub mod written_book_predicate;
