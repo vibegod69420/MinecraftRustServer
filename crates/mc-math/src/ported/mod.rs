@@ -65,3 +65,5 @@ pub mod optional_dispense_item_behavior;
 pub mod block_source;
 pub mod shulker_box_dispense_behavior;
 pub mod equipment_dispense_item_behavior;
+pub mod data_component_holder;
+pub mod blended_noise;

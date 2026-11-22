@@ -67,3 +67,4 @@ pub mod server_common_packet_listener;
 pub mod clientbound_clear_dialog_packet;
 pub mod clientbound_disconnect_packet;
 pub mod clientbound_server_links_packet;
+pub mod data_sources;

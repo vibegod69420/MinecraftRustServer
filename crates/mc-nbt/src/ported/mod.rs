@@ -13,3 +13,4 @@ pub mod skip_all;
 pub mod numeric_tag;
 pub mod stream_tag_visitor;
 pub mod nbt_accounter;
+pub mod collect_fields;
