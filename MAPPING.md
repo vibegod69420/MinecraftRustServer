@@ -1,9 +1,14 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **142** across **29** classes.
+Total mapped Java symbols: **147** across **31** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
+| `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 7 | `<item>` |
+| `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 11 | `<item>` |
+| `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 13 | `<item>` |
+| `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 15 | `<item>` |
+| `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 17 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
@@ -78,6 +83,10 @@ Total mapped Java symbols: **142** across **29** classes.
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 20 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
+| `net.minecraft.util.debugchart.TpsDebugDimensions#name` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 44 | `name` |
+| `net.minecraft.util.debugchart.TpsDebugDimensions#ordinal` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 38 | `ordinal` |
+| `net.minecraft.util.debugchart.TpsDebugDimensions#valueOf` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 59 | `value_of` |
+| `net.minecraft.util.debugchart.TpsDebugDimensions#values` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 26 | `values` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#<init>` | `crates/mc-math/src/ported/error_entry.rs` | 87 | `new` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#cursor` | `crates/mc-math/src/ported/error_entry.rs` | 96 | `cursor` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#equals` | `crates/mc-math/src/ported/error_entry.rs` | 133 | `eq` |
