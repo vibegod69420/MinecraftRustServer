@@ -1,1 +1,1 @@
-{"state": "generating", "class_name": "net.minecraft.util.profiling.jfr.stats.FpsStat", "crate": "mc-math", "attempt": 1, "verified_count": 10, "ts": "2026-11-22T21:11:30Z"}
+{"state": "testing", "class_name": "net.minecraft.util.profiling.jfr.stats.FpsStat", "crate": "mc-math", "attempt": 1, "verified_count": 10, "ts": "2026-11-22T21:13:36Z"}
