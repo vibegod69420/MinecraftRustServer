@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2717** across **694** classes.
+Total mapped Java symbols: **2733** across **698** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3046,6 +3046,15 @@ Total mapped Java symbols: **2717** across **694** classes.
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#createItemStack` | `crates/mc-nbt/src/ported/slot_loot.rs` | 174 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#getType` | `crates/mc-nbt/src/ported/slot_loot.rs` | 169 | `get_type` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#validate` | `crates/mc-nbt/src/ported/slot_loot.rs` | 183 | `validate` |
+| `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#<init>` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 31 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#explosionDecay` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 59 | `explosion_decay` |
+| `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#getType` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 36 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#run` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 41 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.CopyNameFunction#<init>` | `crates/mc-nbt/src/ported/copy_name_function.rs` | 58 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.CopyNameFunction#copyName` | `crates/mc-nbt/src/ported/copy_name_function.rs` | 83 | `copy_name` |
+| `net.minecraft.world.level.storage.loot.functions.CopyNameFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/copy_name_function.rs` | 68 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.CopyNameFunction#getType` | `crates/mc-nbt/src/ported/copy_name_function.rs` | 63 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.CopyNameFunction#run` | `crates/mc-nbt/src/ported/copy_name_function.rs` | 75 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#<init>` | `crates/mc-nbt/src/ported/discard_item.rs` | 117 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#CODEC` | `crates/mc-nbt/src/ported/discard_item.rs` | 113 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#discardItem` | `crates/mc-nbt/src/ported/discard_item.rs` | 132 | `discard_item` |
@@ -3076,6 +3085,10 @@ Total mapped Java symbols: **2717** across **694** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#getType` | `crates/mc-nbt/src/ported/set_components_function.rs` | 83 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#run` | `crates/mc-nbt/src/ported/set_components_function.rs` | 88 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#setComponent` | `crates/mc-nbt/src/ported/set_components_function.rs` | 94 | `set_component` |
+| `net.minecraft.world.level.storage.loot.functions.SetCustomDataFunction#<init>` | `crates/mc-nbt/src/ported/set_custom_data_function.rs` | 32 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetCustomDataFunction#getType` | `crates/mc-nbt/src/ported/set_custom_data_function.rs` | 37 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetCustomDataFunction#run` | `crates/mc-nbt/src/ported/set_custom_data_function.rs` | 42 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetCustomDataFunction#setCustomData` | `crates/mc-nbt/src/ported/set_custom_data_function.rs` | 50 | `set_custom_data` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#<init>` | `crates/mc-nbt/src/ported/set_item_function.rs` | 70 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#getType` | `crates/mc-nbt/src/ported/set_item_function.rs` | 75 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#run` | `crates/mc-nbt/src/ported/set_item_function.rs` | 80 | `run` |
@@ -3083,6 +3096,9 @@ Total mapped Java symbols: **2717** across **694** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#getType` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 99 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#run` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 104 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#setPotion` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 115 | `set_potion` |
+| `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#<init>` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 56 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#getType` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 73 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#run` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 61 | `run` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 50 | `<item>` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams#DAMAGE_SOURCE` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 56 | `<item>` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams#ORIGIN` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 54 | `<item>` |

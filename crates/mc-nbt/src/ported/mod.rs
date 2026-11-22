@@ -77,3 +77,7 @@ pub mod dynamic_loot;
 pub mod loot_item;
 pub mod loot_pool_entries;
 pub mod slot_loot;
+pub mod set_custom_data_function;
+pub mod apply_explosion_decay;
+pub mod toggle_tooltips;
+pub mod copy_name_function;
