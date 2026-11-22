@@ -76,3 +76,7 @@ pub mod protocol_swap_handler;
 pub mod varint21_length_field_prepender;
 pub mod clientbound_set_held_slot_packet;
 pub mod serverbound_change_game_mode_packet;
+pub mod brand_payload;
+pub mod discarded_payload;
+pub mod serverbound_client_tick_end_packet;
+pub mod clientbound_chunk_batch_start_packet;
