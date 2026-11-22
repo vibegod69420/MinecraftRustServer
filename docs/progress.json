@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 20:52:01 UTC",
-  "updated_epoch": 1795380721,
+  "updated_at": "2026-11-22 20:53:44 UTC",
+  "updated_epoch": 1795380824,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 28,
-    "mapped_methods": 135,
-    "class_coverage_pct": 0.3909,
-    "method_coverage_pct": 0.2025,
-    "harness_verified_classes": 2,
+    "mapped_classes": 29,
+    "mapped_methods": 142,
+    "class_coverage_pct": 0.4049,
+    "method_coverage_pct": 0.213,
+    "harness_verified_classes": 3,
     "harness_failed_attempts": 1
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 129
+      "mapped_methods": 136
     },
     {
       "name": "mc-nbt",
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5,
-    "prompt_tokens": 6219,
-    "completion_tokens": 64399,
-    "reasoning_tokens": 49543,
-    "avg_latency_s": 156.5
+    "calls_total": 6,
+    "prompt_tokens": 7146,
+    "completion_tokens": 76953,
+    "reasoning_tokens": 58792,
+    "avg_latency_s": 163.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T20:53:44Z",
+      "class_name": "net.minecraft.util.parsing.packrat.ErrorEntry",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 199.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T20:50:24Z",
       "class_name": "net.minecraft.util.profiling.jfr.stats.TimedStat",
@@ -72,6 +80,11 @@
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3570efb",
+      "ts": "2026-11-22T20:52:01+00:00",
+      "message": "Worker sync: 135 mapped Java methods"
+    },
     {
       "sha": "795a89e",
       "ts": "2026-11-22T20:50:24+00:00",
@@ -141,11 +154,6 @@
       "sha": "02fbb88",
       "ts": "2026-11-22T17:36:23-03:00",
       "message": "Fix 32-bit int wraparound in WorldgenRandom::seed_slime_chunk"
-    },
-    {
-      "sha": "125f627",
-      "ts": "2026-11-22T17:26:30-03:00",
-      "message": "Fix GitHub raw URL owner to vibegod69420"
     }
   ]
 }

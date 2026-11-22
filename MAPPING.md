@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **135** across **28** classes.
+Total mapped Java symbols: **142** across **29** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -78,6 +78,13 @@ Total mapped Java symbols: **135** across **28** classes.
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 20 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 34 | `apply_as_float` |
 | `net.minecraft.util.ToFloatFunction#applyAsFloat` | `crates/mc-math/src/ported/to_float_function.rs` | 44 | `apply_as_float` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#<init>` | `crates/mc-math/src/ported/error_entry.rs` | 87 | `new` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#cursor` | `crates/mc-math/src/ported/error_entry.rs` | 96 | `cursor` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#equals` | `crates/mc-math/src/ported/error_entry.rs` | 133 | `eq` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#hashCode` | `crates/mc-math/src/ported/error_entry.rs` | 144 | `hash` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#reason` | `crates/mc-math/src/ported/error_entry.rs` | 106 | `reason` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#suggestions` | `crates/mc-math/src/ported/error_entry.rs` | 101 | `suggestions` |
+| `net.minecraft.util.parsing.packrat.ErrorEntry#toString` | `crates/mc-math/src/ported/error_entry.rs` | 153 | `fmt` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
