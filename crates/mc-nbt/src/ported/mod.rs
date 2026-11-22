@@ -22,3 +22,7 @@ pub mod string_tag;
 pub mod collect_to_tag;
 pub mod snbt_operations;
 pub mod long_array_tag;
+pub mod writable_level_data;
+pub mod level_data_and_dimensions;
+pub mod level_storage_exception;
+pub mod data_version;

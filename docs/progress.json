@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:34:02 UTC",
-  "updated_epoch": 1795386842,
+  "updated_at": "2026-11-22 22:34:18 UTC",
+  "updated_epoch": 1795386858,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 386,
-    "mapped_methods": 1305,
-    "class_coverage_pct": 5.3888,
-    "method_coverage_pct": 1.9572,
-    "harness_verified_classes": 237,
+    "mapped_classes": 390,
+    "mapped_methods": 1315,
+    "class_coverage_pct": 5.4446,
+    "method_coverage_pct": 1.9722,
+    "harness_verified_classes": 241,
     "harness_failed_attempts": 24
   },
   "crates": [
@@ -35,7 +35,7 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 330
+      "mapped_methods": 341
     },
     {
       "name": "mc-protocol",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 221,
-    "prompt_tokens": 402170,
-    "completion_tokens": 2211211,
-    "reasoning_tokens": 1611245,
+    "calls_total": 222,
+    "prompt_tokens": 404442,
+    "completion_tokens": 2221372,
+    "reasoning_tokens": 1618773,
     "avg_latency_s": 145.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:34:17Z",
+      "class_name": "net.minecraft.world.level.storage.DataVersion",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 149.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:34:17Z",
+      "class_name": "net.minecraft.world.level.storage.LevelStorageException",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 149.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:34:17Z",
+      "class_name": "net.minecraft.world.level.storage.LevelDataAndDimensions",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 149.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:34:17Z",
+      "class_name": "net.minecraft.world.level.storage.WritableLevelData",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 149.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:33:40Z",
       "class_name": "net.minecraft.nbt.LongArrayTag",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 211.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:27:40Z",
-      "class_name": "net.minecraft.core.particles.PowerParticleOption",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 211.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:26:51Z",
-      "class_name": "net.minecraft.nbt.ByteArrayTag",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 240.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:26:12Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 431.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:26:12Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 431.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "fc8fd66",
+      "ts": "2026-11-22T22:34:02+00:00",
+      "message": "Worker sync: 1305 mapped Java methods"
+    },
     {
       "sha": "0e60ca0",
       "ts": "2026-11-22T22:32:56+00:00",
@@ -445,11 +450,6 @@
       "sha": "5d46213",
       "ts": "2026-11-22T22:22:37+00:00",
       "message": "Port 9 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "c536ab8",
-      "ts": "2026-11-22T22:21:30+00:00",
-      "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

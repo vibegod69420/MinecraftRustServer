@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1305** across **386** classes.
+Total mapped Java symbols: **1315** across **390** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1578,6 +1578,17 @@ Total mapped Java symbols: **1305** across **386** classes.
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getCornerNoise3D` | `crates/mc-math/src/noise.rs` | 60 | `get_corner_noise_3d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double)` | `crates/mc-math/src/noise.rs` | 71 | `get_value_2d` |
 | `net.minecraft.world.level.levelgen.synth.SimplexNoise#getValue(double,double,double)` | `crates/mc-math/src/noise.rs` | 101 | `get_value_3d` |
+| `net.minecraft.world.level.storage.DataVersion#<init>` | `crates/mc-nbt/src/ported/data_version.rs` | 16 | `new` |
+| `net.minecraft.world.level.storage.DataVersion#isCompatible` | `crates/mc-nbt/src/ported/data_version.rs` | 36 | `is_compatible` |
+| `net.minecraft.world.level.storage.DataVersion#isSideSeries` | `crates/mc-nbt/src/ported/data_version.rs` | 31 | `is_side_series` |
+| `net.minecraft.world.level.storage.DataVersion#series` | `crates/mc-nbt/src/ported/data_version.rs` | 26 | `series` |
+| `net.minecraft.world.level.storage.DataVersion#version` | `crates/mc-nbt/src/ported/data_version.rs` | 21 | `version` |
+| `net.minecraft.world.level.storage.LevelDataAndDimensions#dimensions` | `crates/mc-nbt/src/ported/level_data_and_dimensions.rs` | 22 | `dimensions` |
+| `net.minecraft.world.level.storage.LevelDataAndDimensions#worldData` | `crates/mc-nbt/src/ported/level_data_and_dimensions.rs` | 17 | `world_data` |
+| `net.minecraft.world.level.storage.LevelStorageException#<init>` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 30 | `new` |
+| `net.minecraft.world.level.storage.LevelStorageException#getMessageComponent` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 39 | `get_message_component` |
+| `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 10 | `set_spawn` |
+| `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 27 | `set_spawn` |
 | `new WorldgenRandom(new LegacyRandomSource(seed)) seeds from nextLong()` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 66 | `<item>` |
 | `return new Weighted<>($$0.apply(this.value()), this.weight)` | `crates/mc-math/src/ported/weighted.rs` | 111 | `<item>` |
 | `throw Util.pauseInIde(new IllegalArgumentException(` | `crates/mc-math/src/ported/weighted.rs` | 56 | `<item>` |
