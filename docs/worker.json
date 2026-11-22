@@ -1,1 +1,1 @@
-{"state": "testing", "class_name": "net.minecraft.util.debugchart.TpsDebugDimensions", "crate": "mc-math", "attempt": 1, "verified_count": 3, "ts": "2026-11-22T20:55:56Z"}
+{"state": "generating", "class_name": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration", "crate": "mc-math", "attempt": 1, "verified_count": 4, "ts": "2026-11-22T20:55:57Z"}
