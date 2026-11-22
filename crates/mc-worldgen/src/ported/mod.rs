@@ -85,3 +85,7 @@ pub mod feature_size;
 pub mod two_layers_feature_size;
 pub mod count_placement;
 pub mod biome_filter;
+pub mod height_provider;
+pub mod weighted_list_height;
+pub mod height_provider_type;
+pub mod constant_height;
