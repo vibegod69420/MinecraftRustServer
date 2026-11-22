@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **447** across **150** classes.
+Total mapped Java symbols: **449** across **151** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -125,6 +125,8 @@ Total mapped Java symbols: **447** across **150** classes.
 | `net.minecraft.network.chat.contents.objects.ObjectInfos#<clinit>` | `crates/mc-protocol/src/ported/object_infos.rs` | 75 | `init_id_mapper` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfos#CODEC` | `crates/mc-protocol/src/ported/object_infos.rs` | 90 | `codec` |
 | `net.minecraft.network.chat.contents.objects.ObjectInfos#ID_MAPPER` | `crates/mc-protocol/src/ported/object_infos.rs` | 85 | `id_mapper` |
+| `net.minecraft.network.chat.numbers.NumberFormat#format` | `crates/mc-protocol/src/ported/number_format.rs` | 23 | `format` |
+| `net.minecraft.network.chat.numbers.NumberFormat#type` | `crates/mc-protocol/src/ported/number_format.rs` | 26 | `r` |
 | `net.minecraft.network.chat.numbers.NumberFormatType` | `crates/mc-protocol/src/ported/number_format_type.rs` | 65 | `map_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 67 | `map_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 87 | `map_codec` |

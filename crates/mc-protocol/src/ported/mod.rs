@@ -34,3 +34,4 @@ pub mod last_seen_tracked_entry;
 pub mod chat_decorator;
 pub mod throwing_component;
 pub mod local_chat_session;
+pub mod number_format;

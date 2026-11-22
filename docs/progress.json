@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:12:01 UTC",
-  "updated_epoch": 1795385521,
+  "updated_at": "2026-11-22 22:13:02 UTC",
+  "updated_epoch": 1795385582,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 150,
-    "mapped_methods": 447,
-    "class_coverage_pct": 2.0941,
-    "method_coverage_pct": 0.6704,
-    "harness_verified_classes": 93,
+    "mapped_classes": 151,
+    "mapped_methods": 449,
+    "class_coverage_pct": 2.1081,
+    "method_coverage_pct": 0.6734,
+    "harness_verified_classes": 94,
     "harness_failed_attempts": 12
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 97
+      "mapped_methods": 99
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 107,
-    "prompt_tokens": 138323,
-    "completion_tokens": 922971,
-    "reasoning_tokens": 653764,
-    "avg_latency_s": 126.9
+    "calls_total": 110,
+    "prompt_tokens": 141053,
+    "completion_tokens": 932667,
+    "reasoning_tokens": 661635,
+    "avg_latency_s": 125.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:13:02Z",
+      "class_name": "net.minecraft.network.chat.numbers.NumberFormat",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 122.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:10:18Z",
       "class_name": "net.minecraft.network.chat.contents.objects.ObjectInfos",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 103.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:05:05Z",
-      "class_name": "net.minecraft.network.ConnectionProtocol",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 103.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a573700",
+      "ts": "2026-11-22T22:12:01+00:00",
+      "message": "Worker sync: 447 mapped Java methods"
+    },
     {
       "sha": "167e4a8",
       "ts": "2026-11-22T22:10:01+00:00",
@@ -445,11 +450,6 @@
       "sha": "91a8f2f",
       "ts": "2026-11-22T22:00:02+00:00",
       "message": "Worker sync: 202 mapped Java methods"
-    },
-    {
-      "sha": "e4beabc",
-      "ts": "2026-11-22T18:59:12-03:00",
-      "message": "Add package batching, adaptive reasoning effort, targeted cargo test, and higher concurrency"
     }
   ]
 }
