@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:03:21 UTC",
-  "updated_epoch": 1795385001,
+  "updated_at": "2026-11-22 22:04:01 UTC",
+  "updated_epoch": 1795385041,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 69,
-    "mapped_methods": 217,
-    "class_coverage_pct": 0.9633,
-    "method_coverage_pct": 0.3255,
-    "harness_verified_classes": 35,
+    "mapped_classes": 77,
+    "mapped_methods": 233,
+    "class_coverage_pct": 1.075,
+    "method_coverage_pct": 0.3495,
+    "harness_verified_classes": 41,
     "harness_failed_attempts": 4
   },
   "crates": [
@@ -43,17 +43,65 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 15
+      "mapped_methods": 42
     }
   ],
   "usage": {
-    "calls_total": 74,
-    "prompt_tokens": 70687,
-    "completion_tokens": 591906,
-    "reasoning_tokens": 447093,
-    "avg_latency_s": 119.0
+    "calls_total": 76,
+    "prompt_tokens": 74141,
+    "completion_tokens": 615801,
+    "reasoning_tokens": 464062,
+    "avg_latency_s": 120.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:03:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 209.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:03:21Z",
       "class_name": "net.minecraft.network.protocol.ping.ClientboundPongResponsePacket",
@@ -325,49 +373,14 @@
       "verified": true,
       "seconds": 119.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:55:57Z",
-      "class_name": "net.minecraft.util.debugchart.TpsDebugDimensions",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 133.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:53:44Z",
-      "class_name": "net.minecraft.util.parsing.packrat.ErrorEntry",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 199.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:50:24Z",
-      "class_name": "net.minecraft.util.profiling.jfr.stats.TimedStat",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 131.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:48:13Z",
-      "class_name": "net.minecraft.util.parsing.packrat.NamedRule",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 543.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T20:39:10Z",
-      "class_name": "net.minecraft.util.ToFloatFunction",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 119.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "04f51b9",
+      "ts": "2026-11-22T22:03:21+00:00",
+      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "8691daa",
       "ts": "2026-11-22T22:01:55+00:00",
@@ -437,11 +450,6 @@
       "sha": "3d9fcf6",
       "ts": "2026-11-22T18:44:52-03:00",
       "message": "Scale autonomous harness to 6 parallel workers, prioritize core subsystems, fix commit spam"
-    },
-    {
-      "sha": "d4ba8a6",
-      "ts": "2026-11-22T21:44:01+00:00",
-      "message": "Worker sync: 178 mapped Java methods"
     }
   ]
 }

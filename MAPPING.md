@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **217** across **69** classes.
+Total mapped Java symbols: **233** across **77** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -212,6 +212,8 @@ Total mapped Java symbols: **217** across **69** classes.
 | `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 67 | `get_random_item` |
 | `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_random.rs` | 22 | `get_total_weight` |
 | `net.minecraft.util.random.WeightedRandom#getWeightedItem` | `crates/mc-math/src/ported/weighted_random.rs` | 52 | `get_weighted_item` |
+| `net.minecraft.util.valueproviders.ConstantInt#getValue` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 13 | `get_value` |
+| `net.minecraft.util.valueproviders.ConstantInt#of` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 8 | `of` |
 | `net.minecraft.util.valueproviders.FloatProviderType#codec` | `crates/mc-math/src/ported/float_provider_type.rs` | 18 | `codec_name` |
 | `net.minecraft.util.valueproviders.FloatProviderType#register` | `crates/mc-math/src/ported/float_provider_type.rs` | 23 | `register` |
 | `net.minecraft.util.valueproviders.IntProviderType#codec` | `crates/mc-math/src/ported/int_provider_type.rs` | 20 | `codec_name` |
@@ -270,6 +272,30 @@ Total mapped Java symbols: **217** across **69** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 19 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 29 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 19 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 29 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 37 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#<init>` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 47 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#<init>` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 54 | `with_provider` |
+| `net.minecraft.world.level.levelgen.feature.configurations.CountConfiguration#count` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 59 | `count` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 11 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 11 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 29 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/feature_configuration.rs` | 8 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 11 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 5 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 13 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 13 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 31 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/feature_configuration.rs` | 14 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 13 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 7 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 19 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 30 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 13 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 23 | `new` |
 | `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
 | `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
@@ -277,6 +303,7 @@ Total mapped Java symbols: **217** across **69** classes.
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 115 | `find_collision_piece` |
+| `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#<init>` | `crates/mc-math/src/noise.rs` | 167 | `new` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double)` | `crates/mc-math/src/noise.rs` | 193 | `noise` |
 | `net.minecraft.world.level.levelgen.synth.ImprovedNoise#noise(double,double,double,double,double)` | `crates/mc-math/src/noise.rs` | 198 | `noise_with_y_scale` |
