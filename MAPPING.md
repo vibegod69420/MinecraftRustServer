@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1500** across **441** classes.
+Total mapped Java symbols: **1536** across **451** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -47,6 +47,7 @@ Total mapped Java symbols: **1500** across **441** classes.
 | `net.minecraft.ReportedException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 23 | `<item>` |
 | `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
 | `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
+| `net.minecraft.advancements.criterion.EnchantmentPredicate#containedIn` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 61 | `contained_in` |
 | `net.minecraft.advancements.criterion.MinMaxBounds$Ints#matches(int)` | `crates/mc-math/src/ported/damage_predicate.rs` | 42 | `matches` |
 | `net.minecraft.advancements.criterion.MinMaxBounds.Ints#matches` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 41 | `matches` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
@@ -165,6 +166,16 @@ Total mapped Java symbols: **1500** across **441** classes.
 | `net.minecraft.core.component.predicates.CustomDataPredicate#value` | `crates/mc-math/src/ported/custom_data_predicate.rs` | 27 | `value` |
 | `net.minecraft.core.component.predicates.DamagePredicate#durability` | `crates/mc-math/src/ported/damage_predicate.rs` | 82 | `durability` |
 | `net.minecraft.core.component.predicates.DamagePredicate#matches` | `crates/mc-math/src/ported/damage_predicate.rs` | 92 | `matches` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 122 | `enchantments` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 152 | `enchantments` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#enchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 168 | `enchantments` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#matches` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 127 | `matches` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#matches` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 157 | `matches` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate#storedEnchantments` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 173 | `stored_enchantments` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate$Enchantments#<init>` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 115 | `new` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate$Enchantments#componentType` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 132 | `component_type` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate$StoredEnchantments#<init>` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 145 | `new` |
+| `net.minecraft.core.component.predicates.EnchantmentsPredicate$StoredEnchantments#componentType` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 162 | `component_type` |
 | `net.minecraft.core.component.predicates.FireworkExplosionPredicate#componentType` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 106 | `component_type` |
 | `net.minecraft.core.component.predicates.FireworkExplosionPredicate#matches` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 111 | `matches` |
 | `net.minecraft.core.component.predicates.FireworkExplosionPredicate$FireworkPredicate#test` | `crates/mc-math/src/ported/firework_explosion_predicate.rs` | 84 | `test` |
@@ -172,6 +183,10 @@ Total mapped Java symbols: **1500** across **441** classes.
 | `net.minecraft.core.component.predicates.FireworksPredicate#explosions` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 79 | `explosions` |
 | `net.minecraft.core.component.predicates.FireworksPredicate#flightDuration` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 84 | `flight_duration` |
 | `net.minecraft.core.component.predicates.FireworksPredicate#matches` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 96 | `matches` |
+| `net.minecraft.core.component.predicates.JukeboxPlayablePredicate#any` | `crates/mc-math/src/ported/jukebox_playable_predicate.rs` | 133 | `any` |
+| `net.minecraft.core.component.predicates.JukeboxPlayablePredicate#componentType` | `crates/mc-math/src/ported/jukebox_playable_predicate.rs` | 111 | `component_type` |
+| `net.minecraft.core.component.predicates.JukeboxPlayablePredicate#matches` | `crates/mc-math/src/ported/jukebox_playable_predicate.rs` | 116 | `matches` |
+| `net.minecraft.core.component.predicates.JukeboxPlayablePredicate#song` | `crates/mc-math/src/ported/jukebox_playable_predicate.rs` | 106 | `song` |
 | `net.minecraft.core.component.predicates.PotionsPredicate#componentType` | `crates/mc-math/src/ported/potions_predicate.rs` | 63 | `component_type` |
 | `net.minecraft.core.component.predicates.PotionsPredicate#matches` | `crates/mc-math/src/ported/potions_predicate.rs` | 68 | `matches` |
 | `net.minecraft.core.component.predicates.PotionsPredicate#potions` | `crates/mc-math/src/ported/potions_predicate.rs` | 76 | `potions` |
@@ -1753,7 +1768,13 @@ Total mapped Java symbols: **1500** across **441** classes.
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 47 | `unwrap` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#simpleBuilder` | `crates/mc-nbt/src/ported/discard_item.rs` | 87 | `simple_builder` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder#build` | `crates/mc-nbt/src/ported/discard_item.rs` | 76 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 32 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction#apply` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 37 | `apply` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction#decorate` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 41 | `decorate` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction#getType` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 34 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction$Builder` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 57 | `build` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunction$Builder#build` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 11 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemFunction$Builder#build` | `crates/mc-nbt/src/ported/loot_item_function.rs` | 61 | `build` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctionType#<init>` | `crates/mc-nbt/src/ported/loot_item_function_type.rs` | 48 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctionType#codec` | `crates/mc-nbt/src/ported/loot_item_function_type.rs` | 53 | `codec` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemFunctions#DISCARD` | `crates/mc-nbt/src/ported/discard_item.rs` | 99 | `discard` |
@@ -1803,9 +1824,28 @@ Total mapped Java symbols: **1500** across **441** classes.
 | `net.minecraft.world.level.storage.loot.providers.number.EnchantmentLevelProvider#forEnchantmentLevel` | `crates/mc-nbt/src/ported/enchantment_level_provider.rs` | 136 | `for_enchantment_level` |
 | `net.minecraft.world.level.storage.loot.providers.number.EnchantmentLevelProvider#getFloat` | `crates/mc-nbt/src/ported/enchantment_level_provider.rs` | 125 | `get_float` |
 | `net.minecraft.world.level.storage.loot.providers.number.EnchantmentLevelProvider#getType` | `crates/mc-nbt/src/ported/enchantment_level_provider.rs` | 131 | `get_type` |
+| `net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType#<init>` | `crates/mc-nbt/src/ported/loot_number_provider_type.rs` | 58 | `new` |
+| `net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType#codec` | `crates/mc-nbt/src/ported/loot_number_provider_type.rs` | 63 | `codec` |
+| `net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType#equals` | `crates/mc-nbt/src/ported/loot_number_provider_type.rs` | 87 | `eq` |
+| `net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType#hashCode` | `crates/mc-nbt/src/ported/loot_number_provider_type.rs` | 96 | `hash` |
+| `net.minecraft.world.level.storage.loot.providers.number.LootNumberProviderType#toString` | `crates/mc-nbt/src/ported/loot_number_provider_type.rs` | 70 | `fmt` |
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProvider#getFloat` | `crates/mc-nbt/src/ported/number_provider.rs` | 38 | `get_float` |
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProvider#getInt` | `crates/mc-nbt/src/ported/number_provider.rs` | 41 | `get_int` |
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProvider#getType` | `crates/mc-nbt/src/ported/number_provider.rs` | 46 | `get_type` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 55 | `<item>` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#<init>` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 67 | `new` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#forName` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 77 | `for_name` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#getReferencedContextParams` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 95 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#getScoreHolder` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 84 | `get_score_holder` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#getType` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 89 | `get_type` |
+| `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider#name` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 72 | `name` |
+| `net.minecraft.world.level.storage.loot.providers.score.LootScoreProviderType` | `crates/mc-nbt/src/ported/loot_score_provider_type.rs` | 28 | `<item>` |
+| `net.minecraft.world.level.storage.loot.providers.score.LootScoreProviderType#<init>` | `crates/mc-nbt/src/ported/loot_score_provider_type.rs` | 35 | `new` |
+| `net.minecraft.world.level.storage.loot.providers.score.LootScoreProviderType#codec` | `crates/mc-nbt/src/ported/loot_score_provider_type.rs` | 40 | `codec` |
+| `net.minecraft.world.level.storage.loot.providers.score.ScoreboardNameProvider` | `crates/mc-nbt/src/ported/scoreboard_name_provider.rs` | 36 | `get_score_holder` |
+| `net.minecraft.world.level.storage.loot.providers.score.ScoreboardNameProvider#getReferencedContextParams` | `crates/mc-nbt/src/ported/scoreboard_name_provider.rs` | 44 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.providers.score.ScoreboardNameProvider#getScoreHolder` | `crates/mc-nbt/src/ported/scoreboard_name_provider.rs` | 38 | `get_score_holder` |
+| `net.minecraft.world.level.storage.loot.providers.score.ScoreboardNameProvider#getType` | `crates/mc-nbt/src/ported/scoreboard_name_provider.rs` | 41 | `get_type` |
 | `net.minecraft.world.phys.shapes.Shapes#block()` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 41 | `block` |
 | `net.minecraft.world.phys.shapes.VoxelShape#move(double, double, double)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 46 | `move_shape` |
 | `new WorldgenRandom(new LegacyRandomSource(seed)) seeds from nextLong()` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 66 | `<item>` |

@@ -43,3 +43,8 @@ pub mod loot_item_killed_by_player_condition;
 pub mod number_provider;
 pub mod enchantment_level_provider;
 pub mod constant_value;
+pub mod loot_item_function;
+pub mod loot_score_provider_type;
+pub mod scoreboard_name_provider;
+pub mod fixed_scoreboard_name_provider;
+pub mod loot_number_provider_type;

@@ -77,3 +77,5 @@ pub mod dust_particle_options;
 pub mod block_particle_option;
 pub mod color_particle_option;
 pub mod firework_explosion_predicate;
+pub mod jukebox_playable_predicate;
+pub mod enchantments_predicate;
