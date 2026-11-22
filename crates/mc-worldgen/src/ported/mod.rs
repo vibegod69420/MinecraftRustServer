@@ -69,3 +69,5 @@ pub mod pos_rule_test_type;
 pub mod rule_test_type;
 pub mod random_block_state_match_test;
 pub mod random_block_match_test;
+pub mod piece_generator;
+pub mod not_predicate;

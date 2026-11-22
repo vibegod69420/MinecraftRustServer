@@ -67,3 +67,7 @@ pub mod shulker_box_dispense_behavior;
 pub mod equipment_dispense_item_behavior;
 pub mod data_component_holder;
 pub mod blended_noise;
+pub mod power_particle_option;
+pub mod trail_particle_option;
+pub mod item_particle_option;
+pub mod explosion_particle_info;
