@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **202** across **60** classes.
+Total mapped Java symbols: **207** across **63** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -43,6 +43,9 @@ Total mapped Java symbols: **202** across **60** classes.
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
+| `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 7 | `decode` |
+| `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 15 | `decode` |
+| `net.minecraft.network.codec.StreamDecoder#decode` | `crates/mc-protocol/src/ported/stream_decoder.rs` | 87 | `decode` |
 | `net.minecraft.network.codec.StreamEncoder#encode` | `crates/mc-protocol/src/ported/stream_encoder.rs` | 40 | `encode` |
 | `net.minecraft.network.codec.StreamEncoder#encode` | `crates/mc-protocol/src/ported/stream_encoder.rs` | 48 | `encode` |
 | `net.minecraft.network.codec.StreamEncoder#encode` | `crates/mc-protocol/src/ported/stream_encoder.rs` | 478 | `encode` |
@@ -201,6 +204,10 @@ Total mapped Java symbols: **202** across **60** classes.
 | `net.minecraft.util.random.WeightedRandom#getRandomItem` | `crates/mc-math/src/ported/weighted_random.rs` | 67 | `get_random_item` |
 | `net.minecraft.util.random.WeightedRandom#getTotalWeight` | `crates/mc-math/src/ported/weighted_random.rs` | 22 | `get_total_weight` |
 | `net.minecraft.util.random.WeightedRandom#getWeightedItem` | `crates/mc-math/src/ported/weighted_random.rs` | 52 | `get_weighted_item` |
+| `net.minecraft.util.valueproviders.FloatProviderType#codec` | `crates/mc-math/src/ported/float_provider_type.rs` | 18 | `codec_name` |
+| `net.minecraft.util.valueproviders.FloatProviderType#register` | `crates/mc-math/src/ported/float_provider_type.rs` | 23 | `register` |
+| `net.minecraft.util.valueproviders.IntProviderType#codec` | `crates/mc-math/src/ported/int_provider_type.rs` | 20 | `codec_name` |
+| `net.minecraft.util.valueproviders.IntProviderType#register` | `crates/mc-math/src/ported/int_provider_type.rs` | 25 | `register` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |

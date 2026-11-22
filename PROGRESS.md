@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:00:02 UTC
+- **Updated**: 2026-11-22 22:01:55 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 202 / 66676 (0.303%)
-- **Mapped Java Classes**: 60 / 7163 (0.838%)
+- **Mapped Java Methods**: 207 / 66676 (0.310%)
+- **Mapped Java Classes**: 63 / 7163 (0.879%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 234 mapped methods
+- `mc-math`: 238 mapped methods
 - `mc-nbt`: 8 mapped methods
-- `mc-protocol`: 13 mapped methods
+- `mc-protocol`: 16 mapped methods
 - `mc-worldgen`: 13 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.codec.StreamDecoder` -> `mc-protocol` (121.3s)
 - [PASS] `net.minecraft.util.random.WeightedRandom` -> `mc-math` (737.8s)
 - [PASS] `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload` -> `mc-protocol` (157.3s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor` -> `mc-worldgen` (189.0s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.random.Weighted` -> `mc-math` (43.4s)
 - [PASS] `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder` -> `mc-math` (124.0s)
 - [PASS] `net.minecraft.util.RegistryContextSwapper` -> `mc-math` (162.7s)
-- [PASS] `net.minecraft.util.profiling.metrics.MetricsSamplerProvider` -> `mc-math` (201.9s)

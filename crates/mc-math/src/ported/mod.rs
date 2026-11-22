@@ -18,3 +18,5 @@ pub mod registry_context_swapper;
 pub mod metrics_recorder;
 pub mod weighted;
 pub mod weighted_random;
+pub mod float_provider_type;
+pub mod int_provider_type;

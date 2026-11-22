@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:00:02 UTC",
-  "updated_epoch": 1795384802,
+  "updated_at": "2026-11-22 22:01:55 UTC",
+  "updated_epoch": 1795384915,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 60,
-    "mapped_methods": 202,
-    "class_coverage_pct": 0.8376,
-    "method_coverage_pct": 0.303,
-    "harness_verified_classes": 28,
+    "mapped_classes": 63,
+    "mapped_methods": 207,
+    "class_coverage_pct": 0.8795,
+    "method_coverage_pct": 0.3105,
+    "harness_verified_classes": 29,
     "harness_failed_attempts": 4
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 234
+      "mapped_methods": 238
     },
     {
       "name": "mc-nbt",
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 13
+      "mapped_methods": 16
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 57,
-    "prompt_tokens": 57296,
-    "completion_tokens": 531075,
-    "reasoning_tokens": 405871,
-    "avg_latency_s": 133.1
+    "calls_total": 69,
+    "prompt_tokens": 61543,
+    "completion_tokens": 554976,
+    "reasoning_tokens": 423742,
+    "avg_latency_s": 119.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:01:55Z",
+      "class_name": "net.minecraft.network.codec.StreamDecoder",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 121.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T21:58:26Z",
       "class_name": "net.minecraft.util.random.WeightedRandom",
@@ -313,6 +321,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "91a8f2f",
+      "ts": "2026-11-22T22:00:02+00:00",
+      "message": "Worker sync: 202 mapped Java methods"
+    },
+    {
       "sha": "e4beabc",
       "ts": "2026-11-22T18:59:12-03:00",
       "message": "Add package batching, adaptive reasoning effort, targeted cargo test, and higher concurrency"
@@ -381,11 +394,6 @@
       "sha": "2606c20",
       "ts": "2026-11-22T21:43:02+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "45000df",
-      "ts": "2026-11-22T21:42:01+00:00",
-      "message": "Worker sync: 172 mapped Java methods"
     }
   ]
 }
