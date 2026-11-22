@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:10:01 UTC",
-  "updated_epoch": 1795385401,
+  "updated_at": "2026-11-22 22:12:01 UTC",
+  "updated_epoch": 1795385521,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 144,
-    "mapped_methods": 434,
-    "class_coverage_pct": 2.0103,
-    "method_coverage_pct": 0.6509,
-    "harness_verified_classes": 91,
+    "mapped_classes": 150,
+    "mapped_methods": 447,
+    "class_coverage_pct": 2.0941,
+    "method_coverage_pct": 0.6704,
+    "harness_verified_classes": 93,
     "harness_failed_attempts": 12
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 82
+      "mapped_methods": 97
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 101,
-    "prompt_tokens": 127484,
-    "completion_tokens": 875337,
-    "reasoning_tokens": 621370,
-    "avg_latency_s": 127.1
+    "calls_total": 107,
+    "prompt_tokens": 138323,
+    "completion_tokens": 922971,
+    "reasoning_tokens": 653764,
+    "avg_latency_s": 126.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:10:18Z",
+      "class_name": "net.minecraft.network.chat.contents.objects.ObjectInfos",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 143.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:10:18Z",
+      "class_name": "net.minecraft.network.chat.contents.objects.ObjectInfo",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 143.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:09:41Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
@@ -357,25 +373,14 @@
       "verified": true,
       "seconds": 103.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:05:05Z",
-      "class_name": "net.minecraft.network.ServerboundPacketListener",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 103.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:05:05Z",
-      "class_name": "net.minecraft.network.ClientboundPacketListener",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 103.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "167e4a8",
+      "ts": "2026-11-22T22:10:01+00:00",
+      "message": "Worker sync: 434 mapped Java methods"
+    },
     {
       "sha": "ce04ca6",
       "ts": "2026-11-22T22:09:41+00:00",
@@ -445,11 +450,6 @@
       "sha": "e4beabc",
       "ts": "2026-11-22T18:59:12-03:00",
       "message": "Add package batching, adaptive reasoning effort, targeted cargo test, and higher concurrency"
-    },
-    {
-      "sha": "a16a038",
-      "ts": "2026-11-22T21:58:01+00:00",
-      "message": "Worker sync: 198 mapped Java methods"
     }
   ]
 }

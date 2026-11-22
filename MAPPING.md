@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **434** across **144** classes.
+Total mapped Java symbols: **447** across **150** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -110,6 +110,21 @@ Total mapped Java symbols: **434** across **144** classes.
 | `net.minecraft.network.LocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 21 | `channel_read` |
 | `net.minecraft.network.LocalFrameEncoder#write` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 21 | `write` |
 | `net.minecraft.network.ServerboundPacketListener#flow` | `crates/mc-protocol/src/ported/serverbound_packet_listener.rs` | 17 | `flow` |
+| `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 21 | `decorate` |
+| `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 30 | `decorate` |
+| `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_tracked_entry.rs` | 15 | `acknowledge` |
+| `net.minecraft.network.chat.LocalChatSession#asRemote` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 139 | `as_remote` |
+| `net.minecraft.network.chat.LocalChatSession#create` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 123 | `create` |
+| `net.minecraft.network.chat.LocalChatSession#createMessageEncoder` | `crates/mc-protocol/src/ported/local_chat_session.rs` | 131 | `create_message_encoder` |
+| `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 28 | `new` |
+| `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 36 | `with_cause` |
+| `net.minecraft.network.chat.ThrowingComponent#getComponent` | `crates/mc-protocol/src/ported/throwing_component.rs` | 47 | `get_component` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfo#codec` | `crates/mc-protocol/src/ported/object_info.rs` | 41 | `codec` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfo#description` | `crates/mc-protocol/src/ported/object_info.rs` | 38 | `description` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfo#fontDescription` | `crates/mc-protocol/src/ported/object_info.rs` | 35 | `font_description` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfos#<clinit>` | `crates/mc-protocol/src/ported/object_infos.rs` | 75 | `init_id_mapper` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfos#CODEC` | `crates/mc-protocol/src/ported/object_infos.rs` | 90 | `codec` |
+| `net.minecraft.network.chat.contents.objects.ObjectInfos#ID_MAPPER` | `crates/mc-protocol/src/ported/object_infos.rs` | 85 | `id_mapper` |
 | `net.minecraft.network.chat.numbers.NumberFormatType` | `crates/mc-protocol/src/ported/number_format_type.rs` | 65 | `map_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 67 | `map_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#mapCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 87 | `map_codec` |
