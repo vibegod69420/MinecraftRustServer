@@ -1,0 +1,46 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# Reference Mojang / Paper artifacts (MUST remain private)
+/reference/
+*.jar
+*.class
+/oracle/build/
+/oracle/run/
+/oracle/work/
+/harness/work/
+
+# AWS & Secrets
+/.aws-state/
+*.pem
+*.key
+.env
+
+# Logs & temporary captures
+/logs/
+*.log
+*.profraw
+*.profdata
+perf.data*
+heaptrack.*
+mutants.out/
+fuzz/artifacts/
+fuzz/corpus/
+/data/skipped.json
+/data/llm_usage.jsonl
+/data/work_ledger.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated code (when built outside OUT_DIR)
+/crates/mc-data/src/generated/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

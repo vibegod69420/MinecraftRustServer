@@ -1,0 +1,12 @@
+[package]
+name = "mc-protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+bytes.workspace = true
+flate2.workspace = true
+thiserror.workspace = true
+mc-data = { path = "../mc-data" }
+mc-nbt = { path = "../mc-nbt" }

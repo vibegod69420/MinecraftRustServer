@@ -1,0 +1,10 @@
+[package]
+name = "mc-worldgen"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+mc-math = { path = "../mc-math" }
+mc-nbt = { path = "../mc-nbt" }
+mc-data = { path = "../mc-data" }

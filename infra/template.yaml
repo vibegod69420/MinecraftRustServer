@@ -1,0 +1,140 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Minecraft 1.21.11 Rust Server dev, oracle, and benchmark environment (arm64 Graviton2)
+
+Parameters:
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+    Default: vpc-0ab53fc97a8b5dcfe
+  SubnetId:
+    Type: AWS::EC2::Subnet::Id
+    Default: subnet-09039b1102fb25f32
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Default: mc-t4g-key
+  AllowedCidr:
+    Type: String
+    Default: 190.221.78.169/32
+  InstanceType:
+    Type: String
+    Default: t4g.small
+  ImageId:
+    Type: String
+    Default: ami-04512f58a86d569d1
+  VolumeSizeGiB:
+    Type: Number
+    Default: 40
+
+Resources:
+  McRustSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: mc-rust-dev-sg
+      GroupDescription: SSH and Minecraft test access for mc-rust-dev
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref AllowedCidr
+          Description: SSH from operator IP
+        - IpProtocol: tcp
+          FromPort: 25565
+          ToPort: 25565
+          CidrIp: !Ref AllowedCidr
+          Description: Minecraft test server from operator IP
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Project
+          Value: mc-rust-1.21.11
+
+  McRustInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: !Ref ImageId
+      KeyName: !Ref KeyName
+      SubnetId: !Ref SubnetId
+      SecurityGroupIds:
+        - !Ref McRustSecurityGroup
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: !Ref VolumeSizeGiB
+            VolumeType: gp3
+            DeleteOnTermination: true
+      Tags:
+        - Key: Name
+          Value: mc-rust-dev
+        - Key: Project
+          Value: mc-rust-1.21.11
+        - Key: Role
+          Value: oracle-and-rust-dev
+      UserData:
+        Fn::Base64: !Sub |
+          #!/usr/bin/env bash
+          set -euo pipefail
+          exec > >(tee -a /var/log/mc-rust-bootstrap.log) 2>&1
+          echo "=== CloudFormation UserData bootstrap start $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
+          if [ ! -f /swapfile ]; then
+            fallocate -l 4G /swapfile
+            chmod 600 /swapfile
+            mkswap /swapfile
+            swapon /swapfile
+            grep -q '/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+          fi
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get update -y
+          apt-get install -y --no-install-recommends \
+            build-essential pkg-config libssl-dev \
+            openjdk-21-jdk \
+            tmux jq python3 python3-pip python3-venv \
+            git rsync unzip curl ca-certificates \
+            heaptrack linux-tools-common linux-tools-generic linux-tools-aws || true
+          apt-get install -y "linux-tools-$(uname -r)" || true
+
+          GRADLE_VER="8.14.8"
+          mkdir -p /opt/gradle
+          curl -fsSL "https://services.gradle.org/distributions/gradle-${!GRADLE_VER}-bin.zip" -o /tmp/gradle.zip
+          unzip -q -o /tmp/gradle.zip -d /opt/gradle
+          rm -f /tmp/gradle.zip
+          ln -sfn "/opt/gradle/gradle-${!GRADLE_VER}/bin/gradle" /usr/local/bin/gradle
+
+          VF_VER="1.12.0"
+          mkdir -p /opt/tools
+          curl -fsSL "https://github.com/Vineflower/vineflower/releases/download/${!VF_VER}/vineflower-${!VF_VER}.jar" \
+            -o /opt/tools/vineflower.jar
+          printf '#!/usr/bin/env bash\nexec java -jar /opt/tools/vineflower.jar "$@"\n' > /usr/local/bin/vineflower
+          chmod +x /usr/local/bin/vineflower
+
+          mkdir -p /opt/mc-rust
+          chown -R ubuntu:ubuntu /opt/mc-rust /opt/tools
+
+          sudo -u ubuntu -H bash -lc '
+          set -euo pipefail
+          curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+          export PATH="$HOME/.cargo/bin:$PATH"
+          export CARGO_BUILD_JOBS=2
+          rustup toolchain install nightly
+          rustup default stable
+          cargo install --locked cargo-mutants || cargo install cargo-mutants
+          cargo install --locked cargo-fuzz || cargo install cargo-fuzz
+          cargo install --locked flamegraph || cargo install flamegraph
+          '
+
+          printf 'export PATH="/home/ubuntu/.cargo/bin:/opt/gradle/gradle-8.14.8/bin:$PATH"\nexport JAVA_HOME="/usr/lib/jvm/java-21-openjdk-arm64"\n' > /etc/profile.d/mc-rust.sh
+          chmod +x /etc/profile.d/mc-rust.sh
+          touch /var/log/mc-rust-bootstrap.done
+          echo "=== CloudFormation UserData bootstrap done $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
+
+Outputs:
+  InstanceId:
+    Value: !Ref McRustInstance
+    Description: EC2 Instance ID
+  PublicIp:
+    Value: !GetAtt McRustInstance.PublicIp
+    Description: Public IPv4 Address
+  SecurityGroupId:
+    Value: !Ref McRustSecurityGroup
+    Description: Security Group ID

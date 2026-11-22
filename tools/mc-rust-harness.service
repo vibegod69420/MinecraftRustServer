@@ -1,0 +1,31 @@
+[Unit]
+Description=Minecraft 1.21.11 Rust Autonomous Porting Harness (DeepSeek V4.1 Flash)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/mc-rust/MinecraftRustServer
+EnvironmentFile=-/etc/mc-rust/deepai.env
+Environment=DEEPAI_MODEL=deepseek-v4.1-flash
+Environment=DEEPAI_REASONING_EFFORT=max
+Environment=DEEPAI_ENV_FILE=/etc/mc-rust/deepai.env
+Environment=DEEPAI_KEYS_FILE=/opt/mc-rust/deepai_keys.txt
+Environment=MC_RUST_MAX_TOKENS=65536
+Environment=MC_RUST_WORKERS=2
+Environment=CARGO_BUILD_JOBS=2
+Environment=MC_RUST_LOG_PATH=/var/log/mc-rust/harness.log
+Environment=PYTHONUNBUFFERED=1
+Environment=HOME=/home/ubuntu
+Environment=PATH=/home/ubuntu/.cargo/bin:/opt/gradle/gradle-8.14.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStartPre=/bin/mkdir -p /var/log/mc-rust
+ExecStart=/usr/bin/python3 /opt/mc-rust/MinecraftRustServer/tools/autonomous_harness.py
+Restart=always
+RestartSec=15
+StandardOutput=append:/var/log/mc-rust/harness.log
+StandardError=append:/var/log/mc-rust/harness.log
+
+[Install]
+WantedBy=multi-user.target

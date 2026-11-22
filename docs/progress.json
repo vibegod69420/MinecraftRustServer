@@ -1,0 +1,50 @@
+{
+  "updated_at": "2026-11-22 20:24:24 UTC",
+  "updated_epoch": 1795379064,
+  "target": "Minecraft Java Edition 1.21.11 Server",
+  "phase": "Phase A (Faithful 1:1 Port)",
+  "model": {
+    "name": "deepseek-v4.1-flash",
+    "reasoning_effort": "max",
+    "context_window": 320000,
+    "backend": "api.deepai.org/deepai_code"
+  },
+  "oracle": {
+    "step0_deterministic": true,
+    "hashcode_flag": "-XX:+UnlockExperimentalVMOptions -XX:hashCode=2",
+    "pinned_arch": "aarch64 (Ubuntu 24.04 OpenJDK 21.0.13)"
+  },
+  "totals": {
+    "server_classes": 7163,
+    "server_methods": 66676,
+    "mapped_classes": 26,
+    "mapped_methods": 133,
+    "class_coverage_pct": 0.363,
+    "method_coverage_pct": 0.1995,
+    "harness_verified_classes": 0,
+    "harness_failed_attempts": 0
+  },
+  "crates": [
+    {
+      "name": "mc-data",
+      "mapped_methods": 6
+    },
+    {
+      "name": "mc-math",
+      "mapped_methods": 124
+    },
+    {
+      "name": "mc-nbt",
+      "mapped_methods": 6
+    }
+  ],
+  "usage": {
+    "calls_total": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "reasoning_tokens": 0,
+    "avg_latency_s": 0.0
+  },
+  "recent_work": [],
+  "recent_commits": []
+}
