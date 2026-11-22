@@ -31,3 +31,6 @@ pub mod nbt_provider;
 pub mod storage_nbt_provider;
 pub mod nbt_providers;
 pub mod string_tag_visitor;
+pub mod loot_pool_entry_type;
+pub mod composable_entry_container;
+pub mod empty_loot_item;

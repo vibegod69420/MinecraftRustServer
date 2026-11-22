@@ -83,3 +83,7 @@ pub mod clientbound_chunk_batch_start_packet;
 pub mod component_contents;
 pub mod font_description;
 pub mod outgoing_chat_message;
+pub mod serverbound_player_input_packet;
+pub mod clientbound_player_combat_enter_packet;
+pub mod serverbound_change_difficulty_packet;
+pub mod clientbound_set_cursor_item_packet;
