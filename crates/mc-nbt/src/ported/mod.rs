@@ -88,3 +88,4 @@ pub mod storage_value;
 pub mod number_providers;
 pub mod uniform_generator;
 pub mod binomial_distribution_generator;
+pub mod loot_context_params;

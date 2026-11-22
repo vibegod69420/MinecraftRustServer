@@ -143,3 +143,6 @@ pub mod clientbound_place_ghost_recipe_packet;
 pub mod serverbound_chat_session_update_packet;
 pub mod clientbound_reset_score_packet;
 pub mod serverbound_set_carried_item_packet;
+pub mod clientbound_debug_entity_value_packet;
+pub mod serverbound_rename_item_packet;
+pub mod serverbound_select_trade_packet;
