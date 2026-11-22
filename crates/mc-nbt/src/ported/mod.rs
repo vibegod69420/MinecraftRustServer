@@ -17,3 +17,4 @@ pub mod collect_fields;
 pub mod byte_tag;
 pub mod tag_parser;
 pub mod byte_array_tag;
+pub mod int_array_tag;

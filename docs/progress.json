@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:27:40 UTC",
-  "updated_epoch": 1795386460,
+  "updated_at": "2026-11-22 22:28:50 UTC",
+  "updated_epoch": 1795386530,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 336,
-    "mapped_methods": 1086,
-    "class_coverage_pct": 4.6908,
-    "method_coverage_pct": 1.6288,
-    "harness_verified_classes": 208,
-    "harness_failed_attempts": 20
+    "mapped_classes": 342,
+    "mapped_methods": 1134,
+    "class_coverage_pct": 4.7745,
+    "method_coverage_pct": 1.7008,
+    "harness_verified_classes": 210,
+    "harness_failed_attempts": 22
   },
   "crates": [
     {
@@ -31,11 +31,11 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 548
+      "mapped_methods": 565
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 218
+      "mapped_methods": 244
     },
     {
       "name": "mc-protocol",
@@ -43,17 +43,49 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 324
+      "mapped_methods": 331
     }
   ],
   "usage": {
-    "calls_total": 197,
-    "prompt_tokens": 339206,
-    "completion_tokens": 1848403,
-    "reasoning_tokens": 1327877,
-    "avg_latency_s": 137.4
+    "calls_total": 202,
+    "prompt_tokens": 353476,
+    "completion_tokens": 1900053,
+    "reasoning_tokens": 1361269,
+    "avg_latency_s": 137.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:28:50Z",
+      "class_name": "net.minecraft.nbt.IntArrayTag",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 247.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:28:11Z",
+      "class_name": "net.minecraft.core.component.TypedDataComponent",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 549.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:28:11Z",
+      "class_name": "net.minecraft.core.component.DataComponentGetter",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 549.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:28:11Z",
+      "class_name": "net.minecraft.core.component.DataComponentHolder",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 549.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:27:40Z",
       "class_name": "net.minecraft.core.particles.ExplosionParticleInfo",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 307.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:24:08Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 307.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:22:51Z",
-      "class_name": "net.minecraft.network.protocol.common.ClientboundServerLinksPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 230.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:22:51Z",
-      "class_name": "net.minecraft.network.protocol.common.ClientboundDisconnectPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 230.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:22:51Z",
-      "class_name": "net.minecraft.network.protocol.common.ClientboundClearDialogPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 230.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6f70c1f",
+      "ts": "2026-11-22T22:27:40+00:00",
+      "message": "Port 11 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "5c4bc6d",
       "ts": "2026-11-22T22:26:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "6847743",
       "ts": "2026-11-22T22:17:06+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "a9ead69",
-      "ts": "2026-11-22T22:16:02+00:00",
-      "message": "Worker sync: 622 mapped Java methods"
     }
   ]
 }

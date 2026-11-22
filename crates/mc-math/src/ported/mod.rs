@@ -71,3 +71,5 @@ pub mod power_particle_option;
 pub mod trail_particle_option;
 pub mod item_particle_option;
 pub mod explosion_particle_info;
+pub mod cloner;
+pub mod id_mapper;
