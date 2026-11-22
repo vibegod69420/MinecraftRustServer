@@ -3,3 +3,4 @@ pub mod timed_stat;
 pub mod error_entry;
 pub mod tps_debug_dimensions;
 pub mod profiled_duration;
+pub mod crypt_exception;

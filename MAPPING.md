@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **148** across **32** classes.
+Total mapped Java symbols: **149** across **33** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -34,6 +34,7 @@ Total mapped Java symbols: **148** across **32** classes.
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
 | `net.minecraft.network.protocol.PacketType` | `crates/mc-data/build.rs` | 98 | `packet_id` |
+| `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.Mth#atan2` | `crates/mc-math/src/mth.rs` | 364 | `atan2` |
 | `net.minecraft.util.Mth#ceil(double)` | `crates/mc-math/src/mth.rs` | 160 | `ceil_f64` |
 | `net.minecraft.util.Mth#ceil(float)` | `crates/mc-math/src/mth.rs` | 149 | `ceil_f32` |

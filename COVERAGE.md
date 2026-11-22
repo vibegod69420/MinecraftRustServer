@@ -1,14 +1,14 @@
 # Reference Coverage Matrix (`COVERAGE.md`)
 
 - **Target**: Minecraft Java Edition `1.21.11`
-- **Mapped Classes**: 32 / 7163 (0.447%)
-- **Mapped Methods**: 148 / 66676 (0.222%)
+- **Mapped Classes**: 33 / 7163 (0.461%)
+- **Mapped Methods**: 149 / 66676 (0.224%)
 
 ## Crate Breakdown
 | Crate | Mapped Methods | Status |
 |---|---:|---|
 | `mc-data` | 6 | Verified / Active |
-| `mc-math` | 149 | Verified / Active |
+| `mc-math` | 150 | Verified / Active |
 | `mc-nbt` | 6 | Verified / Active |
 
 ## Explicit Exclusions

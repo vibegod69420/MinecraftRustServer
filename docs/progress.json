@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 20:58:02 UTC",
-  "updated_epoch": 1795381082,
+  "updated_at": "2026-11-22 20:59:57 UTC",
+  "updated_epoch": 1795381197,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 32,
-    "mapped_methods": 148,
-    "class_coverage_pct": 0.4467,
-    "method_coverage_pct": 0.222,
-    "harness_verified_classes": 5,
+    "mapped_classes": 33,
+    "mapped_methods": 149,
+    "class_coverage_pct": 0.4607,
+    "method_coverage_pct": 0.2235,
+    "harness_verified_classes": 6,
     "harness_failed_attempts": 1
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 149
+      "mapped_methods": 150
     },
     {
       "name": "mc-nbt",
@@ -39,13 +39,21 @@
     }
   ],
   "usage": {
-    "calls_total": 8,
-    "prompt_tokens": 9017,
-    "completion_tokens": 94051,
-    "reasoning_tokens": 70512,
-    "avg_latency_s": 153.9
+    "calls_total": 9,
+    "prompt_tokens": 9933,
+    "completion_tokens": 101970,
+    "reasoning_tokens": 76610,
+    "avg_latency_s": 150.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T20:59:57Z",
+      "class_name": "net.minecraft.util.CryptException",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 119.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T20:57:57Z",
       "class_name": "net.minecraft.util.profiling.jfr.callback.ProfiledDuration",
@@ -96,6 +104,11 @@
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0cf7502",
+      "ts": "2026-11-22T20:58:02+00:00",
+      "message": "Worker sync: 148 mapped Java methods"
+    },
     {
       "sha": "194df55",
       "ts": "2026-11-22T20:56:01+00:00",
@@ -165,11 +178,6 @@
       "sha": "b84e666",
       "ts": "2026-11-22T20:38:57+00:00",
       "message": "Worker sync: 133 mapped Java methods"
-    },
-    {
-      "sha": "4a72eca",
-      "ts": "2026-11-22T17:38:36-03:00",
-      "message": "Use fetch + rebase --autostash in publish.sh to avoid dirty-tree conflict"
     }
   ]
 }
