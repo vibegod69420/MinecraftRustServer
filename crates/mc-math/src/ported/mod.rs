@@ -110,3 +110,8 @@ pub mod cauldron_interaction;
 pub mod data_component_predicate;
 pub mod registry_set_builder;
 pub mod registries;
+pub mod data_components;
+pub mod color_rgba;
+pub mod tuple;
+pub mod time_source;
+pub mod unit;

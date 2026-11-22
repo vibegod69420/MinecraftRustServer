@@ -81,3 +81,8 @@ pub mod set_custom_data_function;
 pub mod apply_explosion_decay;
 pub mod toggle_tooltips;
 pub mod copy_name_function;
+pub mod level_resource;
+pub mod value_input;
+pub mod level_version;
+pub mod storage_value;
+pub mod number_providers;
