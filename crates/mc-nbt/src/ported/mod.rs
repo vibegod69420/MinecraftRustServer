@@ -26,3 +26,7 @@ pub mod writable_level_data;
 pub mod level_data_and_dimensions;
 pub mod level_storage_exception;
 pub mod data_version;
+pub mod loot_nbt_provider_type;
+pub mod nbt_provider;
+pub mod storage_nbt_provider;
+pub mod nbt_providers;

@@ -83,3 +83,5 @@ pub mod replace_block_configuration;
 pub mod feature_size_type;
 pub mod feature_size;
 pub mod two_layers_feature_size;
+pub mod count_placement;
+pub mod biome_filter;

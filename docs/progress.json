@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 22:34:18 UTC",
-  "updated_epoch": 1795386858,
+  "updated_at": "2026-11-22 22:35:37 UTC",
+  "updated_epoch": 1795386937,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 390,
-    "mapped_methods": 1315,
-    "class_coverage_pct": 5.4446,
-    "method_coverage_pct": 1.9722,
-    "harness_verified_classes": 241,
-    "harness_failed_attempts": 24
+    "mapped_classes": 396,
+    "mapped_methods": 1336,
+    "class_coverage_pct": 5.5284,
+    "method_coverage_pct": 2.0037,
+    "harness_verified_classes": 245,
+    "harness_failed_attempts": 26
   },
   "crates": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 341
+      "mapped_methods": 364
     },
     {
       "name": "mc-protocol",
@@ -43,17 +43,65 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 380
+      "mapped_methods": 391
     }
   ],
   "usage": {
-    "calls_total": 222,
-    "prompt_tokens": 404442,
-    "completion_tokens": 2221372,
-    "reasoning_tokens": 1618773,
-    "avg_latency_s": 145.5
+    "calls_total": 225,
+    "prompt_tokens": 411488,
+    "completion_tokens": 2280661,
+    "reasoning_tokens": 1668447,
+    "avg_latency_s": 145.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-22T22:35:37Z",
+      "class_name": "net.minecraft.world.level.storage.loot.providers.nbt.NbtProviders",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 160.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:35:37Z",
+      "class_name": "net.minecraft.world.level.storage.loot.providers.nbt.StorageNbtProvider",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 160.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:35:37Z",
+      "class_name": "net.minecraft.world.level.storage.loot.providers.nbt.NbtProvider",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 160.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:35:37Z",
+      "class_name": "net.minecraft.world.level.storage.loot.providers.nbt.LootNbtProviderType",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 160.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:34:20Z",
+      "class_name": "net.minecraft.network.protocol.ProtocolCodecBuilder",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 702.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-22T22:34:20Z",
+      "class_name": "net.minecraft.network.protocol.Packet",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 702.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-22T22:34:17Z",
       "class_name": "net.minecraft.world.level.storage.DataVersion",
@@ -325,57 +373,14 @@
       "verified": true,
       "seconds": 247.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:28:11Z",
-      "class_name": "net.minecraft.core.component.TypedDataComponent",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 549.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:28:11Z",
-      "class_name": "net.minecraft.core.component.DataComponentGetter",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 549.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:28:11Z",
-      "class_name": "net.minecraft.core.component.DataComponentHolder",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 549.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:27:40Z",
-      "class_name": "net.minecraft.core.particles.ExplosionParticleInfo",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 211.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:27:40Z",
-      "class_name": "net.minecraft.core.particles.ItemParticleOption",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 211.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T22:27:40Z",
-      "class_name": "net.minecraft.core.particles.TrailParticleOption",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 211.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8bd7cfe",
+      "ts": "2026-11-22T22:34:18+00:00",
+      "message": "Port 8 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "fc8fd66",
       "ts": "2026-11-22T22:34:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "883ad96",
       "ts": "2026-11-22T22:22:51+00:00",
       "message": "Port 12 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "5d46213",
-      "ts": "2026-11-22T22:22:37+00:00",
-      "message": "Port 9 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
