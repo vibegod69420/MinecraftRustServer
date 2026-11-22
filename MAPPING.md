@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **207** across **63** classes.
+Total mapped Java symbols: **217** across **69** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -60,6 +60,14 @@ Total mapped Java symbols: **207** across **63** classes.
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 182 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 253 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 314 | `write` |
+| `net.minecraft.network.protocol.ping.ClientPongPacketListener#handlePongResponse` | `crates/mc-protocol/src/ported/client_pong_packet_listener.rs` | 18 | `handle_pong_response` |
+| `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 100 | `from_buf` |
+| `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#handle` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 117 | `handle` |
+| `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#type` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 112 | `packet_type` |
+| `net.minecraft.network.protocol.ping.ClientboundPongResponsePacket#write` | `crates/mc-protocol/src/ported/clientbound_pong_response_packet.rs` | 107 | `write` |
+| `net.minecraft.network.protocol.ping.PingPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 43 | `create_clientbound` |
+| `net.minecraft.network.protocol.ping.PingPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/ping_packet_types.rs` | 51 | `create_serverbound` |
+| `net.minecraft.network.protocol.ping.ServerPingPacketListener#handlePingRequest` | `crates/mc-protocol/src/ported/server_ping_packet_listener.rs` | 18 | `handle_ping_request` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |
@@ -262,6 +270,8 @@ Total mapped Java symbols: **207** across **63** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
+| `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
