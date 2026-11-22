@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22 21:44:01 UTC",
-  "updated_epoch": 1795383841,
+  "updated_at": "2026-11-22 21:46:02 UTC",
+  "updated_epoch": 1795383962,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -39,11 +39,11 @@
     }
   ],
   "usage": {
-    "calls_total": 28,
-    "prompt_tokens": 31494,
-    "completion_tokens": 292643,
-    "reasoning_tokens": 222386,
-    "avg_latency_s": 139.6
+    "calls_total": 29,
+    "prompt_tokens": 32451,
+    "completion_tokens": 300060,
+    "reasoning_tokens": 228299,
+    "avg_latency_s": 138.7
   },
   "recent_work": [
     {
@@ -209,6 +209,16 @@
   ],
   "recent_commits": [
     {
+      "sha": "3d9fcf6",
+      "ts": "2026-11-22T18:44:52-03:00",
+      "message": "Scale autonomous harness to 6 parallel workers, prioritize core subsystems, fix commit spam"
+    },
+    {
+      "sha": "d4ba8a6",
+      "ts": "2026-11-22T21:44:01+00:00",
+      "message": "Worker sync: 178 mapped Java methods"
+    },
+    {
       "sha": "2606c20",
       "ts": "2026-11-22T21:43:02+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
@@ -272,16 +282,6 @@
       "sha": "55fa2c1",
       "ts": "2026-11-22T21:26:01+00:00",
       "message": "Worker sync: 168 mapped Java methods"
-    },
-    {
-      "sha": "062ba07",
-      "ts": "2026-11-22T21:24:59+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "b15ab3c",
-      "ts": "2026-11-22T21:24:01+00:00",
-      "message": "Worker sync: 166 mapped Java methods"
     }
   ]
 }
