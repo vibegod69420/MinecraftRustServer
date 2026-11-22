@@ -29,3 +29,8 @@ pub mod weighted_list_int;
 pub mod uniform_int;
 pub mod biased_to_bottom_int;
 pub mod perlin_simplex_noise;
+pub mod float_provider;
+pub mod clamped_int;
+pub mod uniform_float;
+pub mod clamped_normal_float;
+pub mod trapezoid_float;
