@@ -1,17 +1,18 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 21:40:01 UTC
+- **Updated**: 2026-11-22 21:40:58 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 171 / 66676 (0.257%)
-- **Mapped Java Classes**: 43 / 7163 (0.600%)
+- **Mapped Java Methods**: 172 / 66676 (0.258%)
+- **Mapped Java Classes**: 44 / 7163 (0.614%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 197 mapped methods
+- `mc-math`: 198 mapped methods
 - `mc-nbt`: 6 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.RegistryContextSwapper` -> `mc-math` (162.7s)
 - [PASS] `net.minecraft.util.profiling.metrics.MetricsSamplerProvider` -> `mc-math` (201.9s)
 - [PASS] `net.minecraft.util.parsing.packrat.SuggestionSupplier` -> `mc-math` (593.6s)
 - [PASS] `net.minecraft.util.KeyDispatchDataCodec` -> `mc-math` (209.2s)
@@ -26,4 +27,3 @@
 - [PASS] `net.minecraft.util.CryptException` -> `mc-math` (119.5s)
 - [PASS] `net.minecraft.util.profiling.jfr.callback.ProfiledDuration` -> `mc-math` (119.7s)
 - [PASS] `net.minecraft.util.debugchart.TpsDebugDimensions` -> `mc-math` (133.4s)
-- [PASS] `net.minecraft.util.parsing.packrat.ErrorEntry` -> `mc-math` (199.4s)

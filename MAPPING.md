@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **171** across **43** classes.
+Total mapped Java symbols: **172** across **44** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -76,6 +76,7 @@ Total mapped Java symbols: **171** across **43** classes.
 | `net.minecraft.util.RandomSource#nextIntBetweenInclusive` | `crates/mc-math/src/random.rs` | 166 | `next_int_between_inclusive` |
 | `net.minecraft.util.RandomSource#triangle(double,double)` | `crates/mc-math/src/random.rs` | 178 | `triangle_f64` |
 | `net.minecraft.util.RandomSource#triangle(float,float)` | `crates/mc-math/src/random.rs` | 183 | `triangle_f32` |
+| `net.minecraft.util.RegistryContextSwapper#swapTo` | `crates/mc-math/src/ported/registry_context_swapper.rs` | 48 | `swap_to` |
 | `net.minecraft.util.SimpleBitStorage#<init>(int,int,int[])` | `crates/mc-math/src/packing.rs` | 212 | `from_ints` |
 | `net.minecraft.util.SimpleBitStorage#<init>(int,int,long[])` | `crates/mc-math/src/packing.rs` | 179 | `new` |
 | `net.minecraft.util.SimpleBitStorage#cellIndex` | `crates/mc-math/src/packing.rs` | 239 | `cell_index` |
