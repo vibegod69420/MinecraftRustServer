@@ -1,19 +1,24 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:03:37 UTC
+- **Updated**: 2026-11-22 23:04:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 2165 / 66676 (3.247%)
+- **Mapped Java Methods**: 2196 / 66676 (3.293%)
 - **Mapped Java Classes**: 582 / 7163 (8.125%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 886 mapped methods
+- `mc-math`: 931 mapped methods
 - `mc-nbt`: 614 mapped methods
 - `mc-protocol`: 528 mapped methods
 - `mc-worldgen`: 565 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.predicates.AllOfCondition` -> `mc-nbt` (805.3s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition` -> `mc-nbt` (805.3s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition` -> `mc-nbt` (805.3s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.ExplosionCondition` -> `mc-nbt` (805.3s)
+- [PASS] `net.minecraft.core.Vec3i` -> `mc-math` (485.1s)
 - [PASS] `net.minecraft.core.HolderLookup` -> `mc-math` (711.3s)
 - [FAIL] `net.minecraft.core.component.predicates.DataComponentPredicate` -> `mc-math` (547.7s)
 - [PASS] `net.minecraft.core.Holder` -> `mc-math` (342.6s)
@@ -24,8 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundChangeDifficultyPacket` -> `mc-protocol` (271.3s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundPickItemFromBlockPacket` -> `mc-protocol` (271.3s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundChunkBatchFinishedPacket` -> `mc-protocol` (271.3s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundGameTestHighlightPosPacket` -> `mc-protocol` (271.3s)
-- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (651.8s)
-- [PASS] `net.minecraft.core.component.DataComponentMap` -> `mc-math` (299.3s)
-- [PASS] `net.minecraft.core.dispenser.ShearsDispenseItemBehavior` -> `mc-math` (1392.7s)
-- [PASS] `net.minecraft.core.dispenser.BoatDispenseItemBehavior` -> `mc-math` (1392.7s)

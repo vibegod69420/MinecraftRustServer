@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2165** across **582** classes.
+Total mapped Java symbols: **2196** across **582** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -145,12 +145,16 @@ Total mapped Java symbols: **2165** across **582** classes.
 | `net.minecraft.core.Direction#getAxisDirection` | `crates/mc-math/src/ported/block_box.rs` | 33 | `get_axis_direction` |
 | `net.minecraft.core.Direction#getStepX` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 30 | `get_step_x` |
 | `net.minecraft.core.Direction#getStepX` | `crates/mc-math/src/ported/direction8.rs` | 13 | `get_step_x` |
+| `net.minecraft.core.Direction#getStepX` | `crates/mc-math/src/ported/vec3i.rs` | 46 | `step_x` |
 | `net.minecraft.core.Direction#getStepY` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 39 | `get_step_y` |
 | `net.minecraft.core.Direction#getStepY` | `crates/mc-math/src/ported/direction8.rs` | 22 | `get_step_y` |
+| `net.minecraft.core.Direction#getStepY` | `crates/mc-math/src/ported/vec3i.rs` | 55 | `step_y` |
 | `net.minecraft.core.Direction#getStepZ` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 48 | `get_step_z` |
 | `net.minecraft.core.Direction#getStepZ` | `crates/mc-math/src/ported/direction8.rs` | 31 | `get_step_z` |
+| `net.minecraft.core.Direction#getStepZ` | `crates/mc-math/src/ported/vec3i.rs` | 64 | `step_z` |
 | `net.minecraft.core.Direction#ordinal` | `crates/mc-math/src/ported/front_and_top.rs` | 22 | `ordinal` |
 | `net.minecraft.core.Direction#values` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 35 | `values` |
+| `net.minecraft.core.Direction$Axis#choose` | `crates/mc-math/src/ported/vec3i.rs` | 23 | `choose` |
 | `net.minecraft.core.Direction$Axis#choose(double,double,double)` | `crates/mc-math/src/ported/axis_cycle.rs` | 21 | `choose_f64` |
 | `net.minecraft.core.Direction$Axis#choose(int,int,int)` | `crates/mc-math/src/ported/axis_cycle.rs` | 12 | `choose_i32` |
 | `net.minecraft.core.Direction.Axis#getRandom` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 47 | `get_random` |
@@ -323,7 +327,48 @@ Total mapped Java symbols: **2165** across **582** classes.
 | `net.minecraft.core.SectionPos#x(long)` | `crates/mc-math/src/packing.rs` | 117 | `get_x` |
 | `net.minecraft.core.SectionPos#y(long)` | `crates/mc-math/src/packing.rs` | 123 | `get_y` |
 | `net.minecraft.core.SectionPos#z(long)` | `crates/mc-math/src/packing.rs` | 129 | `get_z` |
+| `net.minecraft.core.Vec3i#<init>` | `crates/mc-math/src/ported/vec3i.rs` | 84 | `new` |
+| `net.minecraft.core.Vec3i#above` | `crates/mc-math/src/ported/vec3i.rs` | 194 | `above` |
+| `net.minecraft.core.Vec3i#above` | `crates/mc-math/src/ported/vec3i.rs` | 199 | `above_n` |
+| `net.minecraft.core.Vec3i#below` | `crates/mc-math/src/ported/vec3i.rs` | 204 | `below` |
+| `net.minecraft.core.Vec3i#below` | `crates/mc-math/src/ported/vec3i.rs` | 209 | `below_n` |
+| `net.minecraft.core.Vec3i#closerThan` | `crates/mc-math/src/ported/vec3i.rs` | 301 | `closer_than` |
+| `net.minecraft.core.Vec3i#closerToCenterThan` | `crates/mc-math/src/ported/vec3i.rs` | 306 | `closer_to_center_than` |
+| `net.minecraft.core.Vec3i#compareTo` | `crates/mc-math/src/ported/vec3i.rs` | 130 | `compare_to` |
+| `net.minecraft.core.Vec3i#cross` | `crates/mc-math/src/ported/vec3i.rs` | 286 | `cross` |
 | `net.minecraft.core.Vec3i#distChessboard` | `crates/mc-math/src/ported/global_pos.rs` | 36 | `dist_chessboard` |
+| `net.minecraft.core.Vec3i#distChessboard` | `crates/mc-math/src/ported/vec3i.rs` | 349 | `dist_chessboard` |
+| `net.minecraft.core.Vec3i#distManhattan` | `crates/mc-math/src/ported/vec3i.rs` | 341 | `dist_manhattan` |
+| `net.minecraft.core.Vec3i#distSqr` | `crates/mc-math/src/ported/vec3i.rs` | 311 | `dist_sqr` |
+| `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 320 | `dist_to_center_sqr_pos` |
+| `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 325 | `dist_to_center_sqr` |
+| `net.minecraft.core.Vec3i#distToLowCornerSqr` | `crates/mc-math/src/ported/vec3i.rs` | 333 | `dist_to_low_corner_sqr` |
+| `net.minecraft.core.Vec3i#east` | `crates/mc-math/src/ported/vec3i.rs` | 244 | `east` |
+| `net.minecraft.core.Vec3i#east` | `crates/mc-math/src/ported/vec3i.rs` | 249 | `east_n` |
+| `net.minecraft.core.Vec3i#equals` | `crates/mc-math/src/ported/vec3i.rs` | 369 | `eq` |
+| `net.minecraft.core.Vec3i#get` | `crates/mc-math/src/ported/vec3i.rs` | 357 | `get` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-math/src/ported/vec3i.rs` | 89 | `get_x` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-math/src/ported/vec3i.rs` | 94 | `get_y` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-math/src/ported/vec3i.rs` | 99 | `get_z` |
+| `net.minecraft.core.Vec3i#hashCode` | `crates/mc-math/src/ported/vec3i.rs` | 122 | `hash_code` |
+| `net.minecraft.core.Vec3i#multiply` | `crates/mc-math/src/ported/vec3i.rs` | 170 | `multiply_scalar` |
+| `net.minecraft.core.Vec3i#multiply` | `crates/mc-math/src/ported/vec3i.rs` | 185 | `multiply` |
+| `net.minecraft.core.Vec3i#north` | `crates/mc-math/src/ported/vec3i.rs` | 214 | `north` |
+| `net.minecraft.core.Vec3i#north` | `crates/mc-math/src/ported/vec3i.rs` | 219 | `north_n` |
+| `net.minecraft.core.Vec3i#offset` | `crates/mc-math/src/ported/vec3i.rs` | 143 | `offset` |
+| `net.minecraft.core.Vec3i#offset` | `crates/mc-math/src/ported/vec3i.rs` | 156 | `offset_vec` |
+| `net.minecraft.core.Vec3i#relative` | `crates/mc-math/src/ported/vec3i.rs` | 254 | `relative` |
+| `net.minecraft.core.Vec3i#relative` | `crates/mc-math/src/ported/vec3i.rs` | 270 | `relative_axis` |
+| `net.minecraft.core.Vec3i#setX` | `crates/mc-math/src/ported/vec3i.rs` | 104 | `set_x` |
+| `net.minecraft.core.Vec3i#setY` | `crates/mc-math/src/ported/vec3i.rs` | 110 | `set_y` |
+| `net.minecraft.core.Vec3i#setZ` | `crates/mc-math/src/ported/vec3i.rs` | 116 | `set_z` |
+| `net.minecraft.core.Vec3i#south` | `crates/mc-math/src/ported/vec3i.rs` | 224 | `south` |
+| `net.minecraft.core.Vec3i#south` | `crates/mc-math/src/ported/vec3i.rs` | 229 | `south_n` |
+| `net.minecraft.core.Vec3i#subtract` | `crates/mc-math/src/ported/vec3i.rs` | 161 | `subtract` |
+| `net.minecraft.core.Vec3i#toShortString` | `crates/mc-math/src/ported/vec3i.rs` | 362 | `to_short_string` |
+| `net.minecraft.core.Vec3i#toString` | `crates/mc-math/src/ported/vec3i.rs` | 398 | `fmt` |
+| `net.minecraft.core.Vec3i#west` | `crates/mc-math/src/ported/vec3i.rs` | 234 | `west` |
+| `net.minecraft.core.Vec3i#west` | `crates/mc-math/src/ported/vec3i.rs` | 239 | `west_n` |
 | `net.minecraft.core.WritableRegistry` | `crates/mc-math/src/ported/writable_registry.rs` | 79 | `register` |
 | `net.minecraft.core.WritableRegistry#bindTag` | `crates/mc-math/src/ported/writable_registry.rs` | 89 | `bind_tag` |
 | `net.minecraft.core.WritableRegistry#createRegistrationLookup` | `crates/mc-math/src/ported/writable_registry.rs` | 95 | `create_registration_lookup` |

@@ -101,3 +101,4 @@ pub mod shears_dispense_item_behavior;
 pub mod data_component_map;
 pub mod holder;
 pub mod holder_lookup;
+pub mod vec3i;
