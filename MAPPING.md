@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2407** across **612** classes.
+Total mapped Java symbols: **2410** across **613** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -405,6 +405,9 @@ Total mapped Java symbols: **2407** across **612** classes.
 | `net.minecraft.core.component.DataComponentExactPredicate$Builder#build` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 342 | `build` |
 | `net.minecraft.core.component.DataComponentExactPredicate$Builder#expect` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 316 | `expect_typed` |
 | `net.minecraft.core.component.DataComponentExactPredicate$Builder#expect` | `crates/mc-math/src/ported/data_component_exact_predicate.rs` | 323 | `expect` |
+| `net.minecraft.core.component.DataComponentGetter#get` | `crates/mc-math/src/ported/data_component_getter.rs` | 66 | `get` |
+| `net.minecraft.core.component.DataComponentGetter#getOrDefault` | `crates/mc-math/src/ported/data_component_getter.rs` | 69 | `get_or_default` |
+| `net.minecraft.core.component.DataComponentGetter#getTyped` | `crates/mc-math/src/ported/data_component_getter.rs` | 81 | `get_typed` |
 | `net.minecraft.core.component.DataComponentHolder#get` | `crates/mc-math/src/ported/data_component_holder.rs` | 35 | `get` |
 | `net.minecraft.core.component.DataComponentHolder#getAllOfType` | `crates/mc-math/src/ported/data_component_holder.rs` | 42 | `get_all_of_type` |
 | `net.minecraft.core.component.DataComponentHolder#getComponents` | `crates/mc-math/src/ported/data_component_holder.rs` | 32 | `components` |

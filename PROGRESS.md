@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 23:34:01 UTC
+- **Updated**: 2026-11-22 23:34:43 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 2407 / 66676 (3.610%)
-- **Mapped Java Classes**: 612 / 7163 (8.544%)
+- **Mapped Java Methods**: 2410 / 66676 (3.615%)
+- **Mapped Java Classes**: 613 / 7163 (8.558%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 944 mapped methods
+- `mc-math`: 947 mapped methods
 - `mc-nbt`: 739 mapped methods
 - `mc-protocol`: 606 mapped methods
 - `mc-worldgen`: 582 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.core.component.DataComponentGetter` -> `mc-math` (429.5s)
 - [PASS] `net.minecraft.network.protocol.ProtocolCodecBuilder` -> `mc-protocol` (337.0s)
 - [PASS] `net.minecraft.network.protocol.Packet` -> `mc-protocol` (337.0s)
 - [PASS] `net.minecraft.nbt.ShortTag` -> `mc-nbt` (279.5s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.core.HolderSet` -> `mc-math` (1186.2s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.ValueCheckCondition` -> `mc-nbt` (601.5s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.LootItemCondition` -> `mc-nbt` (601.5s)
-- [PASS] `net.minecraft.world.level.storage.loot.predicates.MatchTool` -> `mc-nbt` (601.5s)
