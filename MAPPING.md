@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **191** across **52** classes.
+Total mapped Java symbols: **192** across **53** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -37,6 +37,7 @@ Total mapped Java symbols: **191** across **52** classes.
 | `net.minecraft.nbt.DoubleTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 99 | `double_value_of` |
 | `net.minecraft.nbt.FloatTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 94 | `float_value_of` |
 | `net.minecraft.nbt.NbtException#<init>` | `crates/mc-nbt/src/ported/nbt_exception.rs` | 16 | `new` |
+| `net.minecraft.nbt.NbtFormatException#<init>` | `crates/mc-nbt/src/ported/nbt_format_exception.rs` | 51 | `new` |
 | `net.minecraft.nbt.NbtIo#read(DataInput)` | `crates/mc-nbt/src/lib.rs` | 282 | `read_nbt` |
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
