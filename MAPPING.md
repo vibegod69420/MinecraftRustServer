@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **388** across **127** classes.
+Total mapped Java symbols: **419** across **138** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -123,6 +123,12 @@ Total mapped Java symbols: **388** across **127** classes.
 | `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 24 | `delimiter_type` |
 | `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 34 | `packet_type` |
 | `net.minecraft.network.protocol.BundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/bundle_delimiter_packet.rs` | 52 | `delimiter_type` |
+| `net.minecraft.network.protocol.BundlePacket#<init>` | `crates/mc-protocol/src/ported/bundle_packet.rs` | 30 | `new` |
+| `net.minecraft.network.protocol.BundlePacket#subPackets` | `crates/mc-protocol/src/ported/bundle_packet.rs` | 40 | `sub_packets` |
+| `net.minecraft.network.protocol.BundlePacket#type` | `crates/mc-protocol/src/ported/bundle_packet.rs` | 19 | `bundle_type` |
+| `net.minecraft.network.protocol.CodecModifier#apply` | `crates/mc-protocol/src/ported/codec_modifier.rs` | 8 | `apply` |
+| `net.minecraft.network.protocol.PacketFlow#getOpposite` | `crates/mc-protocol/src/ported/packet_flow.rs` | 10 | `get_opposite` |
+| `net.minecraft.network.protocol.PacketFlow#id` | `crates/mc-protocol/src/ported/packet_flow.rs` | 18 | `id` |
 | `net.minecraft.network.protocol.PacketType` | `crates/mc-data/build.rs` | 98 | `packet_id` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 27 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 29 | `bind` |
@@ -132,6 +138,10 @@ Total mapped Java symbols: **388** across **127** classes.
 | `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 29 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 54 | `bind` |
 | `net.minecraft.network.protocol.cookie.ClientCookiePacketListener#handleRequestCookie` | `crates/mc-protocol/src/ported/client_cookie_packet_listener.rs` | 12 | `handle_request_cookie` |
+| `net.minecraft.network.protocol.cookie.CookiePacketTypes#CLIENTBOUND_COOKIE_REQUEST` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 107 | `clientbound_cookie_request` |
+| `net.minecraft.network.protocol.cookie.CookiePacketTypes#SERVERBOUND_COOKIE_RESPONSE` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 112 | `serverbound_cookie_response` |
+| `net.minecraft.network.protocol.cookie.CookiePacketTypes#createClientbound` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 87 | `create_clientbound` |
+| `net.minecraft.network.protocol.cookie.CookiePacketTypes#createServerbound` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 97 | `create_serverbound` |
 | `net.minecraft.network.protocol.cookie.ServerCookiePacketListener#handleCookieResponse` | `crates/mc-protocol/src/ported/server_cookie_packet_listener.rs` | 12 | `handle_cookie_response` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 60 | `write` |
 | `net.minecraft.network.protocol.login.custom.CustomQueryAnswerPayload#write` | `crates/mc-protocol/src/ported/custom_query_answer_payload.rs` | 74 | `write` |
@@ -167,6 +177,7 @@ Total mapped Java symbols: **388** across **127** classes.
 | `net.minecraft.network.syncher.EntityDataSerializer$ForValueType#copy` | `crates/mc-protocol/src/ported/entity_data_serializer.rs` | 125 | `copy_value_type` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |
@@ -492,6 +503,27 @@ Total mapped Java symbols: **388** across **127** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 23 | `new` |
 | `net.minecraft.world.level.levelgen.material.MaterialRuleList#calculate` | `crates/mc-worldgen/src/ported/material_rule_list.rs` | 23 | `calculate` |
 | `net.minecraft.world.level.levelgen.material.WorldGenMaterialRule#apply` | `crates/mc-worldgen/src/ported/world_gen_material_rule.rs` | 11 | `apply` |
+| `net.minecraft.world.level.levelgen.placement.CaveSurface#CODEC` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 30 | `get_direction` |
+| `net.minecraft.world.level.levelgen.placement.CaveSurface#getDirection` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 34 | `get_direction` |
+| `net.minecraft.world.level.levelgen.placement.CaveSurface#getSerializedName` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 50 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.placement.CaveSurface#getY` | `crates/mc-worldgen/src/ported/cave_surface.rs` | 42 | `get_y` |
+| `net.minecraft.world.level.levelgen.placement.InSquarePlacement#CODEC` | `crates/mc-worldgen/src/ported/in_square_placement.rs` | 47 | `spread` |
+| `net.minecraft.world.level.levelgen.placement.InSquarePlacement#getPositions` | `crates/mc-worldgen/src/ported/in_square_placement.rs` | 56 | `get_positions` |
+| `net.minecraft.world.level.levelgen.placement.InSquarePlacement#spread` | `crates/mc-worldgen/src/ported/in_square_placement.rs` | 51 | `spread` |
+| `net.minecraft.world.level.levelgen.placement.InSquarePlacement#type` | `crates/mc-worldgen/src/ported/in_square_placement.rs` | 68 | `modifier_type` |
+| `net.minecraft.world.level.levelgen.placement.PlacementFilter#getPositions` | `crates/mc-worldgen/src/ported/placement_filter.rs` | 26 | `get_positions` |
+| `net.minecraft.world.level.levelgen.placement.PlacementFilter#getPositions` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 71 | `get_positions` |
+| `net.minecraft.world.level.levelgen.placement.PlacementFilter#shouldPlace` | `crates/mc-worldgen/src/ported/placement_filter.rs` | 23 | `should_place` |
+| `net.minecraft.world.level.levelgen.placement.PlacementModifier#CODEC` | `crates/mc-worldgen/src/ported/placement_modifier.rs` | 53 | `<item>` |
+| `net.minecraft.world.level.levelgen.placement.PlacementModifier#getPositions` | `crates/mc-worldgen/src/ported/placement_modifier.rs` | 40 | `get_positions` |
+| `net.minecraft.world.level.levelgen.placement.PlacementModifier#type` | `crates/mc-worldgen/src/ported/placement_modifier.rs` | 48 | `modifier_type` |
+| `net.minecraft.world.level.levelgen.placement.RarityFilter#<init>` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 51 | `new` |
+| `net.minecraft.world.level.levelgen.placement.RarityFilter#CODEC` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 47 | `new` |
+| `net.minecraft.world.level.levelgen.placement.RarityFilter#onAverageOnceEvery` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 56 | `on_average_once_every` |
+| `net.minecraft.world.level.levelgen.placement.RarityFilter#shouldPlace` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 61 | `should_place` |
+| `net.minecraft.world.level.levelgen.placement.RarityFilter#type` | `crates/mc-worldgen/src/ported/rarity_filter.rs` | 66 | `modifier_type` |
+| `net.minecraft.world.level.levelgen.placement.RepeatingPlacement#count` | `crates/mc-worldgen/src/ported/repeating_placement.rs` | 25 | `count` |
+| `net.minecraft.world.level.levelgen.placement.RepeatingPlacement#getPositions` | `crates/mc-worldgen/src/ported/repeating_placement.rs` | 28 | `get_positions` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
