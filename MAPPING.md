@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **856** across **285** classes.
+Total mapped Java symbols: **901** across **289** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -187,6 +187,17 @@ Total mapped Java symbols: **856** across **285** classes.
 | `net.minecraft.nbt.CompoundTag#putLong` | `crates/mc-worldgen/src/ported/append_loot.rs` | 28 | `put_long` |
 | `net.minecraft.nbt.DoubleTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 99 | `double_value_of` |
 | `net.minecraft.nbt.FloatTag#valueOf` | `crates/mc-nbt/src/lib.rs` | 94 | `float_value_of` |
+| `net.minecraft.nbt.NbtAccounter#<init>` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 37 | `new` |
+| `net.minecraft.nbt.NbtAccounter#accountBytes(long)` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 72 | `account_bytes` |
+| `net.minecraft.nbt.NbtAccounter#accountBytes(long,long)` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 67 | `account_bytes_mul` |
+| `net.minecraft.nbt.NbtAccounter#create` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 47 | `create` |
+| `net.minecraft.nbt.NbtAccounter#defaultQuota` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 52 | `default_quota` |
+| `net.minecraft.nbt.NbtAccounter#getDepth` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 119 | `get_depth` |
+| `net.minecraft.nbt.NbtAccounter#getUsage` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 114 | `get_usage` |
+| `net.minecraft.nbt.NbtAccounter#popDepth` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 103 | `pop_depth` |
+| `net.minecraft.nbt.NbtAccounter#pushDepth` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 91 | `push_depth` |
+| `net.minecraft.nbt.NbtAccounter#uncompressedQuota` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 57 | `uncompressed_quota` |
+| `net.minecraft.nbt.NbtAccounter#unlimitedHeap` | `crates/mc-nbt/src/ported/nbt_accounter.rs` | 62 | `unlimited_heap` |
 | `net.minecraft.nbt.NbtAccounterException` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 30 | `<item>` |
 | `net.minecraft.nbt.NbtAccounterException` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 49 | `as_nbt_exception` |
 | `net.minecraft.nbt.NbtAccounterException#<init>` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 37 | `new` |
@@ -200,12 +211,44 @@ Total mapped Java symbols: **856** across **285** classes.
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
+| `net.minecraft.nbt.NumericTag#asBoolean` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 50 | `as_boolean` |
+| `net.minecraft.nbt.NumericTag#asByte` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 20 | `as_byte` |
+| `net.minecraft.nbt.NumericTag#asDouble` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 45 | `as_double` |
+| `net.minecraft.nbt.NumericTag#asFloat` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 40 | `as_float` |
+| `net.minecraft.nbt.NumericTag#asInt` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 30 | `as_int` |
+| `net.minecraft.nbt.NumericTag#asLong` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 35 | `as_long` |
+| `net.minecraft.nbt.NumericTag#asNumber` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 15 | `as_number` |
+| `net.minecraft.nbt.NumericTag#asShort` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 25 | `as_short` |
+| `net.minecraft.nbt.NumericTag#box` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 145 | `box_number` |
+| `net.minecraft.nbt.NumericTag#byteValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 67 | `byte_value` |
+| `net.minecraft.nbt.NumericTag#doubleValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 132 | `double_value` |
+| `net.minecraft.nbt.NumericTag#floatValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 119 | `float_value` |
+| `net.minecraft.nbt.NumericTag#intValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 93 | `int_value` |
+| `net.minecraft.nbt.NumericTag#longValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 106 | `long_value` |
+| `net.minecraft.nbt.NumericTag#shortValue` | `crates/mc-nbt/src/ported/numeric_tag.rs` | 80 | `short_value` |
 | `net.minecraft.nbt.PrimitiveTag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 16 | `copy` |
 | `net.minecraft.nbt.PrimitiveTag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 18 | `copy` |
 | `net.minecraft.nbt.ReportedNbtException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 49 | `<item>` |
 | `net.minecraft.nbt.ReportedNbtException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 68 | `as_reported_exception` |
 | `net.minecraft.nbt.ReportedNbtException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 56 | `new` |
 | `net.minecraft.nbt.ReportedNbtException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 63 | `report` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(String)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 6 | `visit_string` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(byte)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 9 | `visit_byte` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(byte[])` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 27 | `visit_byte_array` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(double)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 24 | `visit_double` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(float)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 21 | `visit_float` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(int)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 15 | `visit_int` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(int[])` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 30 | `visit_int_array` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(long)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 18 | `visit_long` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(long[])` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 33 | `visit_long_array` |
+| `net.minecraft.nbt.StreamTagVisitor#visit(short)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 12 | `visit_short` |
+| `net.minecraft.nbt.StreamTagVisitor#visitContainerEnd` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 48 | `visit_container_end` |
+| `net.minecraft.nbt.StreamTagVisitor#visitElement` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 45 | `visit_element` |
+| `net.minecraft.nbt.StreamTagVisitor#visitEnd` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 3 | `visit_end` |
+| `net.minecraft.nbt.StreamTagVisitor#visitEntry(TagType)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 39 | `visit_entry` |
+| `net.minecraft.nbt.StreamTagVisitor#visitEntry(TagType,String)` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 42 | `visit_entry_named` |
+| `net.minecraft.nbt.StreamTagVisitor#visitList` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 36 | `visit_list` |
+| `net.minecraft.nbt.StreamTagVisitor#visitRootEntry` | `crates/mc-nbt/src/ported/stream_tag_visitor.rs` | 51 | `visit_root_entry` |
 | `net.minecraft.nbt.Tag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 2 | `copy_tag` |
 | `net.minecraft.nbt.Tag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 4 | `copy_tag` |
 | `net.minecraft.nbt.TagType` | `crates/mc-nbt/src/ported/tag_types.rs` | 2 | `<item>` |
@@ -985,6 +1028,8 @@ Total mapped Java symbols: **856** across **285** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext#fromLevel` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 47 | `from_level` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType#evaluate` | `crates/mc-worldgen/src/ported/random_spread_type.rs` | 23 | `evaluate` |
+| `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType#getSerializedName` | `crates/mc-worldgen/src/ported/random_spread_type.rs` | 15 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces.BuriedTreasurePiece#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 82 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 159 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#CODEC` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 187 | `<item>` |

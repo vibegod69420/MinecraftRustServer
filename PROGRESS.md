@@ -1,19 +1,23 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:22:51 UTC
+- **Updated**: 2026-11-22 22:24:05 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 856 / 66676 (1.284%)
-- **Mapped Java Classes**: 285 / 7163 (3.979%)
+- **Mapped Java Methods**: 901 / 66676 (1.351%)
+- **Mapped Java Classes**: 289 / 7163 (4.035%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 513 mapped methods
-- `mc-nbt`: 96 mapped methods
+- `mc-nbt`: 139 mapped methods
 - `mc-protocol`: 207 mapped methods
-- `mc-worldgen`: 245 mapped methods
+- `mc-worldgen`: 247 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.protocol.common.ClientboundServerLinksPacket` -> `mc-protocol` (230.8s)
+- [PASS] `net.minecraft.network.protocol.common.ClientboundDisconnectPacket` -> `mc-protocol` (230.8s)
+- [PASS] `net.minecraft.network.protocol.common.ClientboundClearDialogPacket` -> `mc-protocol` (230.8s)
+- [PASS] `net.minecraft.network.protocol.common.ServerCommonPacketListener` -> `mc-protocol` (230.8s)
 - [PASS] `net.minecraft.core.dispenser.EquipmentDispenseItemBehavior` -> `mc-math` (227.5s)
 - [PASS] `net.minecraft.core.dispenser.ShulkerBoxDispenseBehavior` -> `mc-math` (227.5s)
 - [PASS] `net.minecraft.core.dispenser.BlockSource` -> `mc-math` (227.5s)
@@ -25,7 +29,3 @@
 - [PASS] `net.minecraft.core.component.predicates.WritableBookPredicate` -> `mc-math` (216.6s)
 - [PASS] `net.minecraft.core.component.predicates.TrimPredicate` -> `mc-math` (216.6s)
 - [PASS] `net.minecraft.core.component.predicates.FireworksPredicate` -> `mc-math` (216.6s)
-- [PASS] `net.minecraft.core.component.predicates.CustomDataPredicate` -> `mc-math` (216.6s)
-- [PASS] `net.minecraft.util.valueproviders.ClampedNormalInt` -> `mc-math` (212.5s)
-- [PASS] `net.minecraft.core.GlobalPos` -> `mc-math` (205.3s)
-- [PASS] `net.minecraft.core.ClientAsset` -> `mc-math` (205.3s)

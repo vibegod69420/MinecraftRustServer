@@ -10,3 +10,6 @@ pub mod field_selector;
 pub mod field_tree;
 pub mod skip_fields;
 pub mod skip_all;
+pub mod numeric_tag;
+pub mod stream_tag_visitor;
+pub mod nbt_accounter;

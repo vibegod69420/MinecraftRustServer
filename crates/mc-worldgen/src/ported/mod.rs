@@ -56,3 +56,4 @@ pub mod structure_piece_serialization_context;
 pub mod above_root_placement;
 pub mod root_placer_type;
 pub mod mangrove_root_placement;
+pub mod random_spread_type;
