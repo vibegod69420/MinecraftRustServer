@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **2050** across **565** classes.
+Total mapped Java symbols: **2077** across **570** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -274,6 +274,38 @@ Total mapped Java symbols: **2050** across **565** classes.
 | `net.minecraft.core.component.DataComponentHolder#getComponents` | `crates/mc-math/src/ported/data_component_holder.rs` | 32 | `components` |
 | `net.minecraft.core.component.DataComponentHolder#getOrDefault` | `crates/mc-math/src/ported/data_component_holder.rs` | 50 | `get_or_default` |
 | `net.minecraft.core.component.DataComponentHolder#has` | `crates/mc-math/src/ported/data_component_holder.rs` | 62 | `has` |
+| `net.minecraft.core.component.DataComponentMap#EMPTY` | `crates/mc-math/src/ported/data_component_map.rs` | 132 | `empty` |
+| `net.minecraft.core.component.DataComponentMap#builder` | `crates/mc-math/src/ported/data_component_map.rs` | 345 | `builder` |
+| `net.minecraft.core.component.DataComponentMap#composite` | `crates/mc-math/src/ported/data_component_map.rs` | 208 | `get_arc` |
+| `net.minecraft.core.component.DataComponentMap#composite` | `crates/mc-math/src/ported/data_component_map.rs` | 216 | `key_set_ids` |
+| `net.minecraft.core.component.DataComponentMap#composite` | `crates/mc-math/src/ported/data_component_map.rs` | 335 | `composite` |
+| `net.minecraft.core.component.DataComponentMap#filter` | `crates/mc-math/src/ported/data_component_map.rs` | 245 | `get_arc` |
+| `net.minecraft.core.component.DataComponentMap#filter` | `crates/mc-math/src/ported/data_component_map.rs` | 254 | `key_set_ids` |
+| `net.minecraft.core.component.DataComponentMap#filter` | `crates/mc-math/src/ported/data_component_map.rs` | 320 | `filter` |
+| `net.minecraft.core.component.DataComponentMap#get` | `crates/mc-math/src/ported/data_component_map.rs` | 112 | `get_arc` |
+| `net.minecraft.core.component.DataComponentMap#get` | `crates/mc-math/src/ported/data_component_map.rs` | 280 | `get` |
+| `net.minecraft.core.component.DataComponentMap#has` | `crates/mc-math/src/ported/data_component_map.rs` | 295 | `has` |
+| `net.minecraft.core.component.DataComponentMap#isEmpty` | `crates/mc-math/src/ported/data_component_map.rs` | 315 | `is_empty` |
+| `net.minecraft.core.component.DataComponentMap#iterator` | `crates/mc-math/src/ported/data_component_map.rs` | 122 | `iter_typed` |
+| `net.minecraft.core.component.DataComponentMap#iterator` | `crates/mc-math/src/ported/data_component_map.rs` | 223 | `iter_typed` |
+| `net.minecraft.core.component.DataComponentMap#iterator` | `crates/mc-math/src/ported/data_component_map.rs` | 263 | `iter_typed` |
+| `net.minecraft.core.component.DataComponentMap#iterator` | `crates/mc-math/src/ported/data_component_map.rs` | 300 | `iter` |
+| `net.minecraft.core.component.DataComponentMap#keySet` | `crates/mc-math/src/ported/data_component_map.rs` | 117 | `key_set_ids` |
+| `net.minecraft.core.component.DataComponentMap#keySet` | `crates/mc-math/src/ported/data_component_map.rs` | 290 | `key_set` |
+| `net.minecraft.core.component.DataComponentMap#size` | `crates/mc-math/src/ported/data_component_map.rs` | 310 | `size` |
+| `net.minecraft.core.component.DataComponentMap#stream` | `crates/mc-math/src/ported/data_component_map.rs` | 305 | `stream` |
+| `net.minecraft.core.component.DataComponentMap.Builder#Builder` | `crates/mc-math/src/ported/data_component_map.rs` | 362 | `new` |
+| `net.minecraft.core.component.DataComponentMap.Builder#addAll` | `crates/mc-math/src/ported/data_component_map.rs` | 403 | `add_all` |
+| `net.minecraft.core.component.DataComponentMap.Builder#build` | `crates/mc-math/src/ported/data_component_map.rs` | 419 | `build` |
+| `net.minecraft.core.component.DataComponentMap.Builder#buildFromMapTrusted` | `crates/mc-math/src/ported/data_component_map.rs` | 425 | `build_from_map_trusted` |
+| `net.minecraft.core.component.DataComponentMap.Builder#set` | `crates/mc-math/src/ported/data_component_map.rs` | 370 | `set` |
+| `net.minecraft.core.component.DataComponentMap.Builder#setUnchecked` | `crates/mc-math/src/ported/data_component_map.rs` | 383 | `set_unchecked` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#get` | `crates/mc-math/src/ported/data_component_map.rs` | 156 | `get_arc` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#has` | `crates/mc-math/src/ported/data_component_map.rs` | 161 | `has_id` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#iterator` | `crates/mc-math/src/ported/data_component_map.rs` | 171 | `iter_typed` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#keySet` | `crates/mc-math/src/ported/data_component_map.rs` | 166 | `key_set_ids` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#size` | `crates/mc-math/src/ported/data_component_map.rs` | 180 | `size_count` |
+| `net.minecraft.core.component.DataComponentMap.Builder.SimpleMap#toString` | `crates/mc-math/src/ported/data_component_map.rs` | 187 | `fmt` |
 | `net.minecraft.core.component.DataComponentPatch#builder` | `crates/mc-nbt/src/ported/set_components_function.rs` | 19 | `builder` |
 | `net.minecraft.core.component.DataComponentPatch$Builder#build` | `crates/mc-nbt/src/ported/set_components_function.rs` | 36 | `build` |
 | `net.minecraft.core.component.DataComponentPatch$Builder#set` | `crates/mc-nbt/src/ported/set_components_function.rs` | 30 | `set` |
@@ -291,6 +323,7 @@ Total mapped Java symbols: **2050** across **565** classes.
 | `net.minecraft.core.component.DataComponentType$Builder#ignoreSwapAnimation` | `crates/mc-math/src/ported/data_component_type.rs` | 174 | `ignore_swap_animation` |
 | `net.minecraft.core.component.DataComponentType$Builder#networkSynchronized` | `crates/mc-math/src/ported/data_component_type.rs` | 159 | `network_synchronized` |
 | `net.minecraft.core.component.DataComponentType$Builder#persistent` | `crates/mc-math/src/ported/data_component_type.rs` | 153 | `persistent` |
+| `net.minecraft.core.component.TypedDataComponent#fromEntryUnchecked` | `crates/mc-math/src/ported/data_component_map.rs` | 58 | `from_entry_unchecked` |
 | `net.minecraft.core.component.predicates.AnyValue#matches` | `crates/mc-math/src/ported/any_value.rs` | 31 | `matches` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#componentType` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 166 | `component_type` |
 | `net.minecraft.core.component.predicates.AttributeModifiersPredicate#matches` | `crates/mc-math/src/ported/attribute_modifiers_predicate.rs` | 171 | `matches` |
@@ -377,6 +410,9 @@ Total mapped Java symbols: **2050** across **565** classes.
 | `net.minecraft.core.dispenser.ProjectileDispenseBehavior#<init>` | `crates/mc-math/src/ported/projectile_dispense_behavior.rs` | 113 | `new` |
 | `net.minecraft.core.dispenser.ProjectileDispenseBehavior#execute` | `crates/mc-math/src/ported/projectile_dispense_behavior.rs` | 122 | `execute` |
 | `net.minecraft.core.dispenser.ProjectileDispenseBehavior#playSound` | `crates/mc-math/src/ported/projectile_dispense_behavior.rs` | 147 | `play_sound` |
+| `net.minecraft.core.dispenser.ShearsDispenseItemBehavior#execute` | `crates/mc-math/src/ported/shears_dispense_item_behavior.rs` | 139 | `execute` |
+| `net.minecraft.core.dispenser.ShearsDispenseItemBehavior#tryShearBeehive` | `crates/mc-math/src/ported/shears_dispense_item_behavior.rs` | 159 | `try_shear_beehive` |
+| `net.minecraft.core.dispenser.ShearsDispenseItemBehavior#tryShearEntity` | `crates/mc-math/src/ported/shears_dispense_item_behavior.rs` | 182 | `try_shear_entity` |
 | `net.minecraft.core.dispenser.ShulkerBoxDispenseBehavior#execute` | `crates/mc-math/src/ported/shulker_box_dispense_behavior.rs` | 142 | `execute` |
 | `net.minecraft.core.particles.BlockParticleOption#<init>` | `crates/mc-math/src/ported/block_particle_option.rs` | 18 | `new` |
 | `net.minecraft.core.particles.BlockParticleOption#getState` | `crates/mc-math/src/ported/block_particle_option.rs` | 28 | `get_state` |

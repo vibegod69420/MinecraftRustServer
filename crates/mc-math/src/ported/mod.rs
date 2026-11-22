@@ -97,3 +97,5 @@ pub mod registry_access;
 pub mod minecart_dispense_item_behavior;
 pub mod data_component_exact_predicate;
 pub mod data_component_type;
+pub mod shears_dispense_item_behavior;
+pub mod data_component_map;
