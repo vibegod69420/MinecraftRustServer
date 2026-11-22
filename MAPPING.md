@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **185** across **49** classes.
+Total mapped Java symbols: **186** across **50** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11,6 +11,10 @@ Total mapped Java symbols: **185** across **49** classes.
 | `` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 17 | `<item>` |
 | `` | `crates/mc-math/src/ported/weighted.rs` | 17 | `fmt` |
 | `` | `crates/mc-math/src/ported/weighted.rs` | 35 | `<item>` |
+| `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 15 | `<item>` |
+| `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 17 | `<item>` |
+| `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 19 | `<item>` |
+| `START_PRESENT` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 38 | `<item>` |
 | `if (weight` | `crates/mc-math/src/ported/weighted.rs` | 61 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
