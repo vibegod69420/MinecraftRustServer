@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-22 22:24:05 UTC
+- **Updated**: 2026-11-22 22:24:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 901 / 66676 (1.351%)
 - **Mapped Java Classes**: 289 / 7163 (4.035%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 247 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.placement.StructurePlacementType` -> `mc-worldgen` (307.5s)
+- [PASS] `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType` -> `mc-worldgen` (307.5s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundServerLinksPacket` -> `mc-protocol` (230.8s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundDisconnectPacket` -> `mc-protocol` (230.8s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundClearDialogPacket` -> `mc-protocol` (230.8s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener` -> `mc-protocol` (223.1s)
 - [PASS] `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener` -> `mc-protocol` (223.1s)
 - [PASS] `net.minecraft.core.component.predicates.WritableBookPredicate` -> `mc-math` (216.6s)
-- [PASS] `net.minecraft.core.component.predicates.TrimPredicate` -> `mc-math` (216.6s)
-- [PASS] `net.minecraft.core.component.predicates.FireworksPredicate` -> `mc-math` (216.6s)
