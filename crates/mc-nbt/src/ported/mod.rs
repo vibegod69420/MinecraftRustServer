@@ -71,3 +71,4 @@ pub mod all_of_condition;
 pub mod value_check_condition;
 pub mod scoreboard_name_providers;
 pub mod context_scoreboard_name_provider;
+pub mod damage_source_condition;

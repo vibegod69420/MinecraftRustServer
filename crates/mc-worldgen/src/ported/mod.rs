@@ -135,3 +135,8 @@ pub mod protected_block_processor;
 pub mod rule_processor;
 pub mod linear_pos_test;
 pub mod lava_submerged_block_processor;
+pub mod single_piece_structure;
+pub mod builtin_structure_sets;
+pub mod structure_feature_index_saved_data;
+pub mod structure_set;
+pub mod end_platform_feature;

@@ -106,3 +106,4 @@ pub mod uuid_util;
 pub mod cursor3_d;
 pub mod data_component_getter;
 pub mod particle_types;
+pub mod cauldron_interaction;
