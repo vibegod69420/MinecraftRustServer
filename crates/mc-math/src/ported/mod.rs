@@ -88,3 +88,7 @@ pub mod block_box;
 pub mod layered_registry_access;
 pub mod axis_cycle;
 pub mod written_book_predicate;
+pub mod projectile_dispense_behavior;
+pub mod boat_dispense_item_behavior;
+pub mod default_dispense_item_behavior;
+pub mod attribute_modifiers_predicate;
