@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **1336** across **396** classes.
+Total mapped Java symbols: **1362** across **397** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -453,6 +453,32 @@ Total mapped Java symbols: **1336** across **396** classes.
 | `net.minecraft.nbt.StringTag#toString` | `crates/mc-nbt/src/ported/string_tag.rs` | 138 | `fmt` |
 | `net.minecraft.nbt.StringTag#valueOf` | `crates/mc-nbt/src/ported/string_tag.rs` | 79 | `value_of` |
 | `net.minecraft.nbt.StringTag#write` | `crates/mc-nbt/src/ported/string_tag.rs` | 95 | `write` |
+| `net.minecraft.nbt.StringTagVisitor#<init>` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 9 | `new` |
+| `net.minecraft.nbt.StringTagVisitor#UNQUOTED_KEY_MATCH` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 165 | `is_unquoted_key_match` |
+| `net.minecraft.nbt.StringTagVisitor#build` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 16 | `build` |
+| `net.minecraft.nbt.StringTagVisitor#decimalToJavaScientific` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 302 | `decimal_to_java_scientific` |
+| `net.minecraft.nbt.StringTagVisitor#ensureDecimalPoint` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 276 | `ensure_decimal_point` |
+| `net.minecraft.nbt.StringTagVisitor#handleKeyEscape` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 129 | `handle_key_escape` |
+| `net.minecraft.nbt.StringTagVisitor#javaF32ToString` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 210 | `java_f32_to_string` |
+| `net.minecraft.nbt.StringTagVisitor#javaF64ToString` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 243 | `java_f64_to_string` |
+| `net.minecraft.nbt.StringTagVisitor#normalizeScientificJava` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 285 | `normalize_scientific_java` |
+| `net.minecraft.nbt.StringTagVisitor#quoteAndEscape` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 177 | `quote_and_escape` |
+| `net.minecraft.nbt.StringTagVisitor#quoteAndEscapeTo` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 184 | `quote_and_escape_to` |
+| `net.minecraft.nbt.StringTagVisitor#scientificToDecimalJava` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 335 | `scientific_to_decimal_java` |
+| `net.minecraft.nbt.StringTagVisitor#visitByte` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 27 | `visit_byte` |
+| `net.minecraft.nbt.StringTagVisitor#visitByteArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 62 | `visit_byte_array` |
+| `net.minecraft.nbt.StringTagVisitor#visitCompound` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 112 | `visit_compound` |
+| `net.minecraft.nbt.StringTagVisitor#visitDouble` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 56 | `visit_double` |
+| `net.minecraft.nbt.StringTagVisitor#visitEnd` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 141 | `visit_end` |
+| `net.minecraft.nbt.StringTagVisitor#visitFloat` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 50 | `visit_float` |
+| `net.minecraft.nbt.StringTagVisitor#visitInt` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 39 | `visit_int` |
+| `net.minecraft.nbt.StringTagVisitor#visitIntArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 75 | `visit_int_array` |
+| `net.minecraft.nbt.StringTagVisitor#visitList` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 100 | `visit_list` |
+| `net.minecraft.nbt.StringTagVisitor#visitLong` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 44 | `visit_long` |
+| `net.minecraft.nbt.StringTagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 87 | `visit_long_array` |
+| `net.minecraft.nbt.StringTagVisitor#visitShort` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 33 | `visit_short` |
+| `net.minecraft.nbt.StringTagVisitor#visitString` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 21 | `visit_string` |
+| `net.minecraft.nbt.StringTagVisitor#visitTag` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 146 | `visit_tag` |
 | `net.minecraft.nbt.Tag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 2 | `copy_tag` |
 | `net.minecraft.nbt.Tag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 4 | `copy_tag` |
 | `net.minecraft.nbt.TagParser#ERROR_EXPECTED_COMPOUND` | `crates/mc-nbt/src/ported/tag_parser.rs` | 131 | `make_error_expected_compound` |

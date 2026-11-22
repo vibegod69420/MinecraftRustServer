@@ -30,3 +30,4 @@ pub mod loot_nbt_provider_type;
 pub mod nbt_provider;
 pub mod storage_nbt_provider;
 pub mod nbt_providers;
+pub mod string_tag_visitor;
