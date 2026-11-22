@@ -131,3 +131,7 @@ pub mod spring_configuration;
 pub mod spike_configuration;
 pub mod noise_threshold_count_placement;
 pub mod height_range_placement;
+pub mod protected_block_processor;
+pub mod rule_processor;
+pub mod linear_pos_test;
+pub mod lava_submerged_block_processor;

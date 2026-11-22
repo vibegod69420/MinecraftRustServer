@@ -67,3 +67,7 @@ pub mod end_tag;
 pub mod short_tag;
 pub mod loot_context_user;
 pub mod loot_params;
+pub mod all_of_condition;
+pub mod value_check_condition;
+pub mod scoreboard_name_providers;
+pub mod context_scoreboard_name_provider;
