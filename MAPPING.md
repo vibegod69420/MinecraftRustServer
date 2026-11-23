@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7457** across **1585** classes.
+Total mapped Java symbols: **7470** across **1586** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6577,6 +6577,22 @@ Total mapped Java symbols: **7457** across **1585** classes.
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 62 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromSeed` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 65 | `from_seed` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#parityConfigString` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 71 | `parity_config_string` |
+| `net.minecraft.world.level.levelgen.RandomState#<init>` | `crates/mc-worldgen/src/ported/random_state.rs` | 405 | `new` |
+| `net.minecraft.world.level.levelgen.RandomState#apply` | `crates/mc-worldgen/src/ported/random_state.rs` | 615 | `apply` |
+| `net.minecraft.world.level.levelgen.RandomState#apply` | `crates/mc-worldgen/src/ported/random_state.rs` | 642 | `apply` |
+| `net.minecraft.world.level.levelgen.RandomState#aquiferRandom` | `crates/mc-worldgen/src/ported/random_state.rs` | 516 | `aquifer_random` |
+| `net.minecraft.world.level.levelgen.RandomState#create` | `crates/mc-worldgen/src/ported/random_state.rs` | 389 | `create` |
+| `net.minecraft.world.level.levelgen.RandomState#create` | `crates/mc-worldgen/src/ported/random_state.rs` | 396 | `create_from_settings` |
+| `net.minecraft.world.level.levelgen.RandomState#getOrCreateNoise` | `crates/mc-worldgen/src/ported/random_state.rs` | 470 | `get_or_create_noise` |
+| `net.minecraft.world.level.levelgen.RandomState#getOrCreateRandomFactory` | `crates/mc-worldgen/src/ported/random_state.rs` | 484 | `get_or_create_random_factory` |
+| `net.minecraft.world.level.levelgen.RandomState#newLegacyInstance` | `crates/mc-worldgen/src/ported/random_state.rs` | 537 | `new_legacy_instance` |
+| `net.minecraft.world.level.levelgen.RandomState#oreRandom` | `crates/mc-worldgen/src/ported/random_state.rs` | 521 | `ore_random` |
+| `net.minecraft.world.level.levelgen.RandomState#router` | `crates/mc-worldgen/src/ported/random_state.rs` | 501 | `router` |
+| `net.minecraft.world.level.levelgen.RandomState#sampler` | `crates/mc-worldgen/src/ported/random_state.rs` | 506 | `sampler` |
+| `net.minecraft.world.level.levelgen.RandomState#surfaceSystem` | `crates/mc-worldgen/src/ported/random_state.rs` | 511 | `surface_system` |
+| `net.minecraft.world.level.levelgen.RandomState#visitNoise` | `crates/mc-worldgen/src/ported/random_state.rs` | 576 | `visit_noise` |
+| `net.minecraft.world.level.levelgen.RandomState#wrapNew` | `crates/mc-worldgen/src/ported/random_state.rs` | 555 | `wrap_new` |
+| `net.minecraft.world.level.levelgen.RandomState#wrapNew` | `crates/mc-worldgen/src/ported/random_state.rs` | 631 | `wrap_new` |
 | `net.minecraft.world.level.levelgen.RandomSupport#mixStafford13` | `crates/mc-math/src/random.rs` | 47 | `mix_stafford13` |
 | `net.minecraft.world.level.levelgen.RandomSupport#seedFromHashOf` | `crates/mc-math/src/random.rs` | 143 | `seed_from_hash_of` |
 | `net.minecraft.world.level.levelgen.RandomSupport#upgradeSeedTo128bit` | `crates/mc-math/src/random.rs` | 66 | `upgrade_seed_to_128bit` |
