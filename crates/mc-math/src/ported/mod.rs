@@ -340,3 +340,7 @@ pub mod v1451_2;
 pub mod v1909;
 pub mod v3818_4;
 pub mod v3818_5;
+pub mod simple_entity_rename_fix;
+pub mod weapon_smith_chest_loot_table_fix;
+pub mod attribute_id_prefix_fix;
+pub mod options_music_toast_fix;
