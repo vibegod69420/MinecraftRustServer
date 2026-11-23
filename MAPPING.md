@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5733** across **1304** classes.
+Total mapped Java symbols: **5742** across **1305** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -120,6 +120,9 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
 | `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
 | `net.minecraft.Util#allOf` | `crates/mc-nbt/src/ported/all_of_condition.rs` | 23 | `util_all_of` |
+| `net.minecraft.Util#getRandom` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 147 | `get_random` |
+| `net.minecraft.Util#shuffle` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 130 | `shuffle` |
+| `net.minecraft.Util#shuffledCopy` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 140 | `shuffled_copy` |
 | `net.minecraft.Util#toShuffledList(java.util.stream.IntStream, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 129 | `to_shuffled_list` |
 | `net.minecraft.advancements.criterion.DamageSourcePredicate` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 94 | `<item>` |
 | `net.minecraft.advancements.criterion.DamageSourcePredicate#matches` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 102 | `matches` |
@@ -226,6 +229,7 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 45 | `between_closed` |
+| `net.minecraft.core.BlockPos#betweenClosed(BlockPos, BlockPos)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 49 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(net.minecraft.core.BlockPos,net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 59 | `between_closed` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-math/src/packing.rs` | 33 | `containing` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-nbt/src/ported/exploration_map_function.rs` | 129 | `containing` |
@@ -259,6 +263,7 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.core.BlockPos#getZ(long)` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 47 | `get_z` |
 | `net.minecraft.core.BlockPos#getZ(long)` | `crates/mc-protocol/src/ported/serverbound_jigsaw_generate_packet.rs` | 47 | `get_z` |
 | `net.minecraft.core.BlockPos#immutable` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 28 | `immutable` |
+| `net.minecraft.core.BlockPos#immutable` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 43 | `immutable` |
 | `net.minecraft.core.BlockPos#immutable()` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 24 | `immutable` |
 | `net.minecraft.core.BlockPos#max` | `crates/mc-math/src/ported/block_box.rs` | 85 | `max_pos` |
 | `net.minecraft.core.BlockPos#min` | `crates/mc-math/src/ported/block_box.rs` | 80 | `min_pos` |
@@ -294,6 +299,7 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 29 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 25 | `offset` |
+| `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 34 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 24 | `offset` |
@@ -305,7 +311,9 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-math/src/ported/block_box.rs` | 90 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/blue_ice_feature.rs` | 89 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 13 | `relative` |
+| `net.minecraft.core.BlockPos#relative(Direction)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 17 | `relative` |
 | `net.minecraft.core.BlockPos#relative(Direction)` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 16 | `relative` |
+| `net.minecraft.core.BlockPos#relative(Direction, int)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 22 | `relative_dist` |
 | `net.minecraft.core.BlockPos#relative(net.minecraft.core.Direction)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 17 | `relative` |
 | `net.minecraft.core.BlockPos#relative(net.minecraft.core.Direction)` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 16 | `relative` |
 | `net.minecraft.core.BlockPos#relative(net.minecraft.core.Direction)` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 29 | `relative` |
@@ -5691,6 +5699,10 @@ Total mapped Java symbols: **5733** across **1304** classes.
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#create` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 129 | `create` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#getState` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 155 | `get_state` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider#type` | `crates/mc-worldgen/src/ported/weighted_state_provider.rs` | 150 | `provider_type` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator#<init>` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 191 | `new` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator#hasRequiredEmptyBlocks` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 261 | `has_required_empty_blocks` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator#place` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 211 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator#type` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 278 | `decorator_type` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#<init>` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 159 | `new` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#place` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 173 | `place` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLogsDecorator#type` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 168 | `decorator_type` |

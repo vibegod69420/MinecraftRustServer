@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:26:34 UTC
+- **Updated**: 2026-11-23 02:28:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 5733 / 66676 (8.598%)
-- **Mapped Java Classes**: 1304 / 7163 (18.205%)
+- **Mapped Java Methods**: 5742 / 66676 (8.612%)
+- **Mapped Java Classes**: 1305 / 7163 (18.219%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,10 @@
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1541 mapped methods
 - `mc-protocol`: 2220 mapped methods
-- `mc-worldgen`: 1392 mapped methods
+- `mc-worldgen`: 1404 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator` -> `mc-worldgen` (276.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.EndPodiumFeature` -> `mc-worldgen` (609.1s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature` -> `mc-worldgen` (609.1s)
 - [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1915.2s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.login.ClientboundCustomQueryPacket` -> `mc-protocol` (484.8s)
 - [PASS] `net.minecraft.network.protocol.login.LoginPacketTypes` -> `mc-protocol` (484.8s)
 - [PASS] `net.minecraft.network.protocol.common.CommonPacketTypes` -> `mc-protocol` (224.0s)
-- [PASS] `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket` -> `mc-protocol` (224.0s)
