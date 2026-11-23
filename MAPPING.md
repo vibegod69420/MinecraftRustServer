@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7327** across **1562** classes.
+Total mapped Java symbols: **7354** across **1566** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6843,6 +6843,20 @@ Total mapped Java symbols: **7327** across **1562** classes.
 | `net.minecraft.world.level.levelgen.feature.SeagrassFeature#place` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 85 | `place` |
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#<init>` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 81 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 86 | `place` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature#<init>` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 432 | `new` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature#getSpikesForLevel` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 437 | `get_spikes_for_level` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature#place` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 444 | `place` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature#placeSpike` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 473 | `place_spike` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature#setBlock` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 463 | `set_block` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#<init>` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 284 | `new` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#getCenterX` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 310 | `get_center_x` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#getCenterZ` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 315 | `get_center_z` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#getHeight` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 325 | `get_height` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#getRadius` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 320 | `get_radius` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#getTopBoundingBox` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 335 | `get_top_bounding_box` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#isCenterWithinChunk` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 304 | `is_center_within_chunk` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$EndSpike#isGuarded` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 330 | `is_guarded` |
+| `net.minecraft.world.level.levelgen.feature.SpikeFeature$SpikeCacheLoader#load` | `crates/mc-worldgen/src/ported/spike_feature.rs` | 389 | `spike_cache_load` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#<init>` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#place` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 112 | `place` |
 | `net.minecraft.world.level.levelgen.feature.TreeFeature#getLowestTrunkOrRootOfTree` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 202 | `get_lowest_trunk_or_root_of_tree` |
@@ -7764,6 +7778,19 @@ Total mapped Java symbols: **7327** across **1562** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 164 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#generatePieces` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 171 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#type` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 181 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#DesertPyramidPiece(CompoundTag)` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 326 | `from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#DesertPyramidPiece(RandomSource,int,int)` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 301 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 336 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#addCellar` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 550 | `add_cellar` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#addCellarRoom` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 590 | `add_cellar_room` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#addCellarStairs` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 557 | `add_cellar_stairs` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#getPotentialSuspiciousSandWorldPositions` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 736 | `get_potential_suspicious_sand_world_positions` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#getRandomCollapsedRoofPos` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 741 | `get_random_collapsed_roof_pos` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeCollapsedRoof` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 705 | `place_collapsed_roof` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeCollapsedRoofPiece` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 688 | `place_collapsed_roof_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeSand` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 665 | `place_sand` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeSandBox` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 671 | `place_sand_box` |
+| `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#postProcess` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 426 | `post_process` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#<init>` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 242 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 277 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#generatePieces` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 294 | `generate_pieces` |

@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:05:24 UTC
+- **Updated**: 2026-11-23 05:08:23 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7327 / 66676 (10.989%)
-- **Mapped Java Classes**: 1562 / 7163 (21.806%)
+- **Mapped Java Methods**: 7354 / 66676 (11.030%)
+- **Mapped Java Classes**: 1566 / 7163 (21.862%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,10 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 1990 mapped methods
+- `mc-worldgen`: 2017 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece` -> `mc-worldgen` (335.2s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler` -> `mc-worldgen` (1491.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (974.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1001.0s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.storage.LevelStorageSource` -> `mc-nbt` (1838.4s)
 - [FAIL] `net.minecraft.network.syncher.SynchedEntityData` -> `mc-protocol` (2650.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.presets.WorldPresets` -> `mc-worldgen` (864.9s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType` -> `mc-worldgen` (621.9s)
