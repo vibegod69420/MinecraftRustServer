@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 07:20:17 UTC
+- **Updated**: 2026-11-23 07:22:06 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7919 / 66676 (11.877%)
 - **Mapped Java Classes**: 1666 / 7163 (23.258%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2601 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.PalettedContainer` -> `mc-worldgen` (1823.6s)
+- [FAIL] `net.minecraft.world.level.chunk.storage.SerializableChunkData` -> `mc-worldgen` (633.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (2024.3s)
 - [PASS] `net.minecraft.util.profiling.EmptyProfileResults` -> `mc-math` (178.5s)
 - [PASS] `net.minecraft.util.profiling.ResultField` -> `mc-math` (178.5s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (1820.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (1781.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseRouterData` -> `mc-worldgen` (1720.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.SurfaceRules` -> `mc-worldgen` (1578.8s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (1004.0s)
