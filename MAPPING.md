@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7096** across **1528** classes.
+Total mapped Java symbols: **7103** across **1530** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4042,6 +4042,13 @@ Total mapped Java symbols: **7096** across **1528** classes.
 | `net.minecraft.network.protocol.game.GamePacketTypes#CLIENTBOUND_PLAYER_POSITION` | `crates/mc-protocol/src/ported/clientbound_player_position_packet.rs` | 7 | `<item>` |
 | `net.minecraft.network.protocol.game.GamePacketTypes#CLIENTBOUND_REMOVE_ENTITIES` | `crates/mc-protocol/src/ported/clientbound_remove_entities_packet.rs` | 6 | `<item>` |
 | `net.minecraft.network.protocol.game.GamePacketTypes#SERVERBOUND_ENTITY_TAG_QUERY` | `crates/mc-protocol/src/ported/serverbound_entity_tag_query_packet.rs` | 6 | `<item>` |
+| `net.minecraft.network.protocol.game.GameProtocols#CLIENTBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/game_protocols.rs` | 212 | `clientbound_template` |
+| `net.minecraft.network.protocol.game.GameProtocols#HAS_INFINITE_MATERIALS` | `crates/mc-protocol/src/ported/game_protocols.rs` | 40 | `has_infinite_materials_codec` |
+| `net.minecraft.network.protocol.game.GameProtocols#SERVERBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/game_protocols.rs` | 137 | `serverbound_template` |
+| `net.minecraft.network.protocol.game.GameProtocols#decode` | `crates/mc-protocol/src/ported/game_protocols.rs` | 59 | `decode` |
+| `net.minecraft.network.protocol.game.GameProtocols#encode` | `crates/mc-protocol/src/ported/game_protocols.rs` | 69 | `encode` |
+| `net.minecraft.network.protocol.game.GameProtocols$Context` | `crates/mc-protocol/src/ported/game_protocols.rs` | 27 | `has_infinite_materials` |
+| `net.minecraft.network.protocol.game.GameProtocols$Context#hasInfiniteMaterials` | `crates/mc-protocol/src/ported/game_protocols.rs` | 29 | `has_infinite_materials` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleChatSessionUpdate` | `crates/mc-protocol/src/ported/serverbound_chat_session_update_packet.rs` | 99 | `handle_chat_session_update` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleClientTickEnd` | `crates/mc-protocol/src/ported/serverbound_client_tick_end_packet.rs` | 31 | `handle_client_tick_end` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleEntityTagQuery` | `crates/mc-protocol/src/ported/serverbound_entity_tag_query_packet.rs` | 89 | `handle_entity_tag_query` |
