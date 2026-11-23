@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7802** across **1634** classes.
+Total mapped Java symbols: **7814** across **1635** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6750,6 +6750,22 @@ Total mapped Java symbols: **7802** across **1634** classes.
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#free` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 182 | `free` |
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#getUsed` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 202 | `get_used` |
 | `net.minecraft.world.level.chunk.storage.RegionStorageInfo#withTypeSuffix` | `crates/mc-worldgen/src/ported/region_storage_info.rs` | 40 | `with_type_suffix` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#<init>` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 241 | `new` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#<init>` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 255 | `new_with_legacy_fixer` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#chunkScanner` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 386 | `chunk_scanner` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#close` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 381 | `close` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#injectDatafixingContext` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 359 | `inject_datafixing_context` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#isOldChunkAround` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 270 | `is_old_chunk_around` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#markChunkDone` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 371 | `mark_chunk_done` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#read` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 275 | `read` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#removeDatafixingContext` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 366 | `remove_datafixing_context` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#storageInfo` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 392 | `storage_info` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#synchronize` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 376 | `synchronize` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#upgradeChunkTag` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 295 | `upgrade_chunk_tag` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#upgradeChunkTag` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 330 | `upgrade_chunk_tag_with_fallback` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#upgradeChunkTag` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 339 | `upgrade_chunk_tag_dynamic` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#write` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 280 | `write` |
+| `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#write` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 285 | `write_with_supplier` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.levelgen.Aquifer#computeSubstance` | `crates/mc-worldgen/src/ported/aquifer.rs` | 265 | `compute_substance` |
 | `net.minecraft.world.level.levelgen.Aquifer#computeSubstance` | `crates/mc-worldgen/src/ported/aquifer.rs` | 303 | `compute_substance` |
