@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:42:15 UTC
+- **Updated**: 2026-11-23 02:43:44 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 5942 / 66676 (8.912%)
-- **Mapped Java Classes**: 1337 / 7163 (18.665%)
+- **Mapped Java Methods**: 5955 / 66676 (8.931%)
+- **Mapped Java Classes**: 1340 / 7163 (18.707%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,21 +11,21 @@
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1604 mapped methods
 - `mc-protocol`: 2322 mapped methods
-- `mc-worldgen`: 1520 mapped methods
+- `mc-worldgen`: 1539 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.BlackstoneReplaceProcessor` -> `mc-worldgen` (250.5s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer` -> `mc-worldgen` (571.4s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature` -> `mc-worldgen` (746.8s)
+- [FAIL] `net.minecraft.network.protocol.game.DebugEntityNameGenerator` -> `mc-protocol` (975.7s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundMapItemDataPacket` -> `mc-protocol` (975.7s)
+- [PASS] `net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket` -> `mc-protocol` (975.7s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundRecipeBookAddPacket` -> `mc-protocol` (975.7s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer` -> `mc-worldgen` (441.0s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator` -> `mc-worldgen` (569.1s)
+- [PASS] `net.minecraft.world.level.storage.PrimaryLevelData` -> `mc-nbt` (1479.5s)
+- [FAIL] `net.minecraft.network.chat.contents.data.BlockDataSource` -> `mc-protocol` (486.8s)
+- [PASS] `net.minecraft.network.chat.contents.data.EntityDataSource` -> `mc-protocol` (486.8s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature` -> `mc-worldgen` (357.5s)
 - [PASS] `net.minecraft.network.protocol.BundlerInfo` -> `mc-protocol` (900.5s)
 - [PASS] `net.minecraft.network.protocol.PacketUtils` -> `mc-protocol` (900.5s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.configurations.RootSystemConfiguration` -> `mc-worldgen` (196.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration` -> `mc-worldgen` (354.0s)
-- [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (1308.1s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration` -> `mc-worldgen` (129.3s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement` -> `mc-worldgen` (148.4s)
-- [FAIL] `net.minecraft.world.level.storage.LevelStorageSource` -> `mc-nbt` (969.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.BambooFeature` -> `mc-worldgen` (860.4s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature` -> `mc-worldgen` (860.4s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.IceSpikeFeature` -> `mc-worldgen` (249.1s)
-- [PASS] `net.minecraft.world.level.levelgen.PhantomSpawner` -> `mc-worldgen` (356.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.FeatureCountTracker` -> `mc-worldgen` (546.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.FossilFeature` -> `mc-worldgen` (546.8s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces` -> `mc-worldgen` (332.6s)
