@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:20:03 UTC
+- **Updated**: 2026-11-23 04:21:07 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7096 / 66676 (10.643%)
 - **Mapped Java Classes**: 1528 / 7163 (21.332%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1892 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (876.7s)
 - [PASS] `net.minecraft.network.chat.SignedMessageChain` -> `mc-protocol` (812.2s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket` -> `mc-protocol` (753.6s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.FallenTreeFeature` -> `mc-worldgen` (704.4s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundMoveEntityPacket` -> `mc-protocol` (373.1s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket` -> `mc-protocol` (277.3s)
 - [PASS] `net.minecraft.network.chat.ClickEvent` -> `mc-protocol` (172.3s)
-- [PASS] `net.minecraft.network.protocol.configuration.ConfigurationProtocols` -> `mc-protocol` (147.1s)
