@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:28:20 UTC",
-  "updated_epoch": 1795400900,
+  "updated_at": "2026-11-23 02:30:08 UTC",
+  "updated_epoch": 1795401008,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1305,
-    "mapped_methods": 5742,
-    "class_coverage_pct": 18.2186,
-    "method_coverage_pct": 8.6118,
-    "harness_verified_classes": 843,
-    "harness_failed_attempts": 180
+    "mapped_classes": 1307,
+    "mapped_methods": 5753,
+    "class_coverage_pct": 18.2465,
+    "method_coverage_pct": 8.6283,
+    "harness_verified_classes": 845,
+    "harness_failed_attempts": 182
   },
   "crates": [
     {
@@ -43,17 +43,49 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 1404
+      "mapped_methods": 1452
     }
   ],
   "usage": {
-    "calls_total": 871,
-    "prompt_tokens": 2413065,
-    "completion_tokens": 12945053,
-    "reasoning_tokens": 9309306,
-    "avg_latency_s": 234.2
+    "calls_total": 879,
+    "prompt_tokens": 2441989,
+    "completion_tokens": 13119548,
+    "reasoning_tokens": 9436497,
+    "avg_latency_s": 236.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T02:30:08Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 626.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:28:47Z",
+      "class_name": "net.minecraft.world.level.storage.ValueInputContextHelper",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 742.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:28:38Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1092.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:28:38Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1092.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T02:28:19Z",
       "class_name": "net.minecraft.world.level.storage.loot.functions.SetContainerContents",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 483.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:16:24Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 359.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:13:59Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.CopyBlockState",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 133.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:13:46Z",
-      "class_name": "net.minecraft.util.PlaceholderLookupProvider",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1371.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:12:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 1304.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f033777",
+      "ts": "2026-11-23T02:28:20+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "d43445f",
       "ts": "2026-11-23T02:28:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "ab7877e",
       "ts": "2026-11-23T02:14:16+00:00",
       "message": "Worker sync: 5493 mapped Java methods"
-    },
-    {
-      "sha": "55f5139",
-      "ts": "2026-11-23T02:13:47+00:00",
-      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
