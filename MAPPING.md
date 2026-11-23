@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5310** across **1243** classes.
+Total mapped Java symbols: **5362** across **1254** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1998,6 +1998,7 @@ Total mapped Java symbols: **5310** across **1243** classes.
 | `net.minecraft.network.chat.FontDescription#CODEC` | `crates/mc-protocol/src/ported/font_description.rs` | 96 | `codec_encode` |
 | `net.minecraft.network.chat.FontDescription#DEFAULT` | `crates/mc-protocol/src/ported/font_description.rs` | 69 | `default_font_description` |
 | `net.minecraft.network.chat.FontDescription$Resource#<init>` | `crates/mc-protocol/src/ported/font_description.rs` | 64 | `new` |
+| `net.minecraft.network.chat.LastSeenMessages#entries` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 15 | `entries` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 271 | `read` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_chat_packet.rs` | 73 | `read` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#write` | `crates/mc-protocol/src/ported/serverbound_chat_packet.rs` | 81 | `write` |
@@ -2014,6 +2015,13 @@ Total mapped Java symbols: **5310** across **1243** classes.
 | `net.minecraft.network.chat.MessageSignature#write(FriendlyByteBuf, MessageSignature)` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 203 | `write` |
 | `net.minecraft.network.chat.MessageSignature$Packed#read` | `crates/mc-protocol/src/ported/clientbound_delete_chat_packet.rs` | 119 | `read` |
 | `net.minecraft.network.chat.MessageSignature$Packed#write` | `crates/mc-protocol/src/ported/clientbound_delete_chat_packet.rs` | 130 | `write` |
+| `net.minecraft.network.chat.MessageSignatureCache#<init>` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 38 | `new` |
+| `net.minecraft.network.chat.MessageSignatureCache#createDefault` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 45 | `create_default` |
+| `net.minecraft.network.chat.MessageSignatureCache#pack` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 50 | `pack` |
+| `net.minecraft.network.chat.MessageSignatureCache#push` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 67 | `push` |
+| `net.minecraft.network.chat.MessageSignatureCache#push` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 80 | `push_list` |
+| `net.minecraft.network.chat.MessageSignatureCache#push` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 85 | `push_deque` |
+| `net.minecraft.network.chat.MessageSignatureCache#unpack` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 62 | `unpack` |
 | `net.minecraft.network.chat.MutableComponent#create` | `crates/mc-protocol/src/ported/component_contents.rs` | 42 | `create` |
 | `net.minecraft.network.chat.OutgoingChatMessage#content` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 110 | `content` |
 | `net.minecraft.network.chat.OutgoingChatMessage#create` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 126 | `create` |
@@ -2025,8 +2033,21 @@ Total mapped Java symbols: **5310** across **1243** classes.
 | `net.minecraft.network.chat.PlayerChatMessage#filter` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 29 | `filter` |
 | `net.minecraft.network.chat.PlayerChatMessage#isFullyFiltered` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 38 | `is_fully_filtered` |
 | `net.minecraft.network.chat.PlayerChatMessage#isSystem` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 19 | `is_system` |
+| `net.minecraft.network.chat.RemoteChatSession#asData` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 138 | `as_data` |
+| `net.minecraft.network.chat.RemoteChatSession#createMessageDecoder` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 130 | `create_message_decoder` |
+| `net.minecraft.network.chat.RemoteChatSession#createMessageValidator` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 117 | `create_message_validator` |
+| `net.minecraft.network.chat.RemoteChatSession#hasExpired` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 146 | `has_expired` |
+| `net.minecraft.network.chat.RemoteChatSession$Data#read` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 159 | `read` |
 | `net.minecraft.network.chat.RemoteChatSession$Data#read` | `crates/mc-protocol/src/ported/serverbound_chat_session_update_packet.rs` | 80 | `read` |
+| `net.minecraft.network.chat.RemoteChatSession$Data#validate` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 175 | `validate` |
+| `net.minecraft.network.chat.RemoteChatSession$Data#write` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 169 | `write` |
 | `net.minecraft.network.chat.RemoteChatSession$Data#write` | `crates/mc-protocol/src/ported/serverbound_chat_session_update_packet.rs` | 86 | `write` |
+| `net.minecraft.network.chat.SignedMessageBody#lastSeen` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 27 | `last_seen` |
+| `net.minecraft.network.chat.SignedMessageLink#advance` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 76 | `advance` |
+| `net.minecraft.network.chat.SignedMessageLink#isDescendantOf` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 69 | `is_descendant_of` |
+| `net.minecraft.network.chat.SignedMessageLink#root` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 49 | `root` |
+| `net.minecraft.network.chat.SignedMessageLink#unsigned` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 44 | `unsigned` |
+| `net.minecraft.network.chat.SignedMessageLink#updateSignature` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 58 | `update_signature` |
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 28 | `new` |
 | `net.minecraft.network.chat.ThrowingComponent#<init>` | `crates/mc-protocol/src/ported/throwing_component.rs` | 36 | `with_cause` |
 | `net.minecraft.network.chat.ThrowingComponent#getComponent` | `crates/mc-protocol/src/ported/throwing_component.rs` | 47 | `get_component` |
@@ -4447,6 +4468,34 @@ Total mapped Java symbols: **5310** across **1243** classes.
 | `net.minecraft.util.valueproviders.WeightedListInt#getMinValue` | `crates/mc-math/src/ported/weighted_list_int.rs` | 127 | `get_min_value` |
 | `net.minecraft.util.valueproviders.WeightedListInt#getType` | `crates/mc-math/src/ported/weighted_list_int.rs` | 137 | `get_type` |
 | `net.minecraft.util.valueproviders.WeightedListInt#sample` | `crates/mc-math/src/ported/weighted_list_int.rs` | 122 | `sample` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#<init>` | `crates/mc-math/src/ported/world_upgrader.rs` | 267 | `new` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#cancel` | `crates/mc-math/src/ported/world_upgrader.rs` | 310 | `cancel` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#close` | `crates/mc-math/src/ported/world_upgrader.rs` | 364 | `close` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#dimensionProgress` | `crates/mc-math/src/ported/world_upgrader.rs` | 328 | `dimension_progress` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#getConverted` | `crates/mc-math/src/ported/world_upgrader.rs` | 349 | `get_converted` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#getProgress` | `crates/mc-math/src/ported/world_upgrader.rs` | 339 | `get_progress` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#getSkipped` | `crates/mc-math/src/ported/world_upgrader.rs` | 354 | `get_skipped` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#getStatus` | `crates/mc-math/src/ported/world_upgrader.rs` | 359 | `get_status` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#getTotalChunks` | `crates/mc-math/src/ported/world_upgrader.rs` | 344 | `get_total_chunks` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#isFinished` | `crates/mc-math/src/ported/world_upgrader.rs` | 318 | `is_finished` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#levels` | `crates/mc-math/src/ported/world_upgrader.rs` | 323 | `levels` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#resolveRecreateDirectory` | `crates/mc-math/src/ported/world_upgrader.rs` | 412 | `resolve_recreate_directory` |
+| `net.minecraft.util.worldupdate.WorldUpgrader#work` | `crates/mc-math/src/ported/world_upgrader.rs` | 379 | `work` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#createStorage` | `crates/mc-math/src/ported/world_upgrader.rs` | 521 | `create_storage` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#getAllChunkPositions` | `crates/mc-math/src/ported/world_upgrader.rs` | 435 | `get_all_chunk_positions` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#getDimensionsToUpgrade` | `crates/mc-math/src/ported/world_upgrader.rs` | 542 | `get_dimensions_to_upgrade` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#getFilesToProcess` | `crates/mc-math/src/ported/world_upgrader.rs` | 568 | `get_files_to_process` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#onFileFinished` | `crates/mc-math/src/ported/world_upgrader.rs` | 620 | `on_file_finished` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#processOnePosition` | `crates/mc-math/src/ported/world_upgrader.rs` | 591 | `process_one_position` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#tryProcessOnePosition` | `crates/mc-math/src/ported/world_upgrader.rs` | 532 | `try_process_one_position` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$AbstractUpgrader#upgrade` | `crates/mc-math/src/ported/world_upgrader.rs` | 642 | `upgrade` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$ChunkUpgrader` | `crates/mc-math/src/ported/world_upgrader.rs` | 814 | `new` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$ChunkUpgrader#createStorage` | `crates/mc-math/src/ported/world_upgrader.rs` | 847 | `create_storage` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$ChunkUpgrader#tryProcessOnePosition` | `crates/mc-math/src/ported/world_upgrader.rs` | 858 | `try_process_one_position` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$SimpleRegionStorageUpgrader` | `crates/mc-math/src/ported/world_upgrader.rs` | 720 | `<item>` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$SimpleRegionStorageUpgrader#createStorage` | `crates/mc-math/src/ported/world_upgrader.rs` | 777 | `create_storage` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$SimpleRegionStorageUpgrader#tryProcessOnePosition` | `crates/mc-math/src/ported/world_upgrader.rs` | 788 | `try_process_one_position` |
+| `net.minecraft.util.worldupdate.WorldUpgrader$SimpleRegionStorageUpgrader#upgradeTag` | `crates/mc-math/src/ported/world_upgrader.rs` | 751 | `upgrade_tag` |
 | `net.minecraft.world.Difficulty#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_change_difficulty_packet.rs` | 37 | `encode` |
 | `net.minecraft.world.Difficulty#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_change_difficulty_packet.rs` | 42 | `decode` |
 | `net.minecraft.world.Difficulty#byId` | `crates/mc-protocol/src/ported/clientbound_change_difficulty_packet.rs` | 81 | `by_id` |
@@ -4475,6 +4524,13 @@ Total mapped Java symbols: **5310** across **1243** classes.
 | `net.minecraft.world.entity.player.Input#<init>` | `crates/mc-protocol/src/ported/serverbound_player_input_packet.rs` | 24 | `new` |
 | `net.minecraft.world.entity.player.Input#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_player_input_packet.rs` | 45 | `encode` |
 | `net.minecraft.world.entity.player.Input#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_player_input_packet.rs` | 72 | `decode` |
+| `net.minecraft.world.entity.player.ProfilePublicKey#createSignatureValidator` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 78 | `create_signature_validator` |
+| `net.minecraft.world.entity.player.ProfilePublicKey#createValidated` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 83 | `create_validated` |
+| `net.minecraft.world.entity.player.ProfilePublicKey#data` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 73 | `data` |
+| `net.minecraft.world.entity.player.ProfilePublicKey$Data#hasExpired()` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 39 | `has_expired` |
+| `net.minecraft.world.entity.player.ProfilePublicKey$Data#hasExpired(Duration)` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 44 | `has_expired_with_duration` |
+| `net.minecraft.world.entity.player.ProfilePublicKey$Data#read` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 49 | `read` |
+| `net.minecraft.world.entity.player.ProfilePublicKey$Data#write` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 58 | `write` |
 | `net.minecraft.world.entity.vehicle.minecart.NewMinecartBehavior$MinecartStep#<init>` | `crates/mc-protocol/src/ported/clientbound_move_minecart_packet.rs` | 43 | `new` |
 | `net.minecraft.world.entity.vehicle.minecart.NewMinecartBehavior$MinecartStep#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_move_minecart_packet.rs` | 54 | `read` |
 | `net.minecraft.world.entity.vehicle.minecart.NewMinecartBehavior$MinecartStep#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_move_minecart_packet.rs` | 70 | `write` |

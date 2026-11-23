@@ -204,3 +204,4 @@ pub mod encoder_cache;
 pub mod directory_lock;
 pub mod file_util;
 pub mod by_id_map;
+pub mod world_upgrader;

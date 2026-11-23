@@ -259,3 +259,6 @@ pub mod clientbound_set_passengers_packet;
 pub mod packet_encoder;
 pub mod clientbound_open_screen_packet;
 pub mod serverbound_use_item_packet;
+pub mod signed_message_link;
+pub mod message_signature_cache;
+pub mod remote_chat_session;
