@@ -567,3 +567,6 @@ pub mod level_flat_generator_info_fix;
 pub mod legacy_hover_event_fix;
 pub mod furnace_recipe_fix;
 pub mod references;
+pub mod biome_fix;
+pub mod block_pos_format_and_renames_fix;
+pub mod missing_dimension_fix;

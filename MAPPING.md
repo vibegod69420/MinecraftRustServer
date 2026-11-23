@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9093** across **2079** classes.
+Total mapped Java symbols: **9099** across **2084** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -23,6 +23,7 @@ Total mapped Java symbols: **9093** across **2079** classes.
 | `(int)Math.ceil(getEffectiveDifficulty())` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 517 | `<item>` |
 | `)` | `crates/mc-math/src/ported/block_state_structure_template_fix.rs` | 117 | `<item>` |
 | `AutoCloseable#close` | `crates/mc-math/src/ported/future_chain.rs` | 240 | `<item>` |
+| `ExtraDataFixUtils#fixBlockPos (used by this fix)` | `crates/mc-math/src/ported/block_pos_format_and_renames_fix.rs` | 84 | `fix_block_pos` |
 | `Files.createDirectories(Files.exists($$0)` | `crates/mc-math/src/ported/file_util.rs` | 519 | `<item>` |
 | `Files.deleteIfExists($$9)` | `crates/mc-math/src/ported/file_util.rs` | 183 | `<item>` |
 | `LOGGER.error(` | `crates/mc-math/src/ported/future_chain.rs` | 164 | `<item>` |
@@ -6174,6 +6175,9 @@ Total mapped Java symbols: **9093** across **2079** classes.
 | `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix#fixBee` | `crates/mc-math/src/ported/beehive_field_rename_fix.rs` | 75 | `fix_bee` |
 | `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix#fixBeehive` | `crates/mc-math/src/ported/beehive_field_rename_fix.rs` | 70 | `fix_beehive` |
 | `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix#makeRule (behavioral equivalent)` | `crates/mc-math/src/ported/beehive_field_rename_fix.rs` | 84 | `apply_to_block_entity` |
+| `net.minecraft.util.datafix.fixes.BiomeFix#BIOMES` | `crates/mc-math/src/ported/biome_fix.rs` | 4 | `<item>` |
+| `net.minecraft.util.datafix.fixes.BiomeFix#BIOMES` | `crates/mc-math/src/ported/biome_fix.rs` | 63 | `biomes` |
+| `net.minecraft.util.datafix.fixes.BiomeFix#BIOMES` | `crates/mc-math/src/ported/biome_fix.rs` | 68 | `lookup` |
 | `net.minecraft.util.datafix.fixes.BlendingDataFix#<init>` | `crates/mc-math/src/ported/blending_data_fix.rs` | 10 | `new` |
 | `net.minecraft.util.datafix.fixes.BlendingDataFix#blockToSectionCoord` | `crates/mc-math/src/ported/blending_data_fix.rs` | 15 | `block_to_section_coord` |
 | `net.minecraft.util.datafix.fixes.BlendingDataFix#updateBlendingData` | `crates/mc-math/src/ported/blending_data_fix.rs` | 21 | `update_blending_data` |
@@ -6218,6 +6222,7 @@ Total mapped Java symbols: **9093** across **2079** classes.
 | `net.minecraft.util.datafix.fixes.BlockEntityUUIDFix#updateSkull` | `crates/mc-math/src/ported/block_entity_uuid_fix.rs` | 3 | `replace_uuid_string` |
 | `net.minecraft.util.datafix.fixes.BlockNameFlatteningFix#BlockNameFlatteningFix` | `crates/mc-math/src/ported/block_name_flattening_fix.rs` | 47 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockNameFlatteningFix#makeRule` | `crates/mc-math/src/ported/block_name_flattening_fix.rs` | 52 | `apply` |
+| `net.minecraft.util.datafix.fixes.BlockPosFormatAndRenamesFix` | `crates/mc-math/src/ported/block_pos_format_and_renames_fix.rs` | 1 | `<item>` |
 | `net.minecraft.util.datafix.fixes.BlockRenameFix#<init>` | `crates/mc-math/src/ported/block_rename_fix.rs` | 29 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockRenameFix#create` | `crates/mc-math/src/ported/block_rename_fix.rs` | 92 | `create` |
 | `net.minecraft.util.datafix.fixes.BlockRenameFix#fixBlockState` | `crates/mc-math/src/ported/block_rename_fix.rs` | 39 | `fix_block_state` |
@@ -6566,6 +6571,8 @@ Total mapped Java symbols: **9093** across **2079** classes.
 | `net.minecraft.util.datafix.fixes.LodestoneCompassComponentFix#fixComponent` | `crates/mc-math/src/ported/lodestone_compass_component_fix.rs` | 95 | `fix_component` |
 | `net.minecraft.util.datafix.fixes.MapIdFix#MapIdFix` | `crates/mc-math/src/ported/map_id_fix.rs` | 118 | `new` |
 | `net.minecraft.util.datafix.fixes.MapIdFix#makeRule` | `crates/mc-math/src/ported/map_id_fix.rs` | 126 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.MissingDimensionFix#recreateSettings` | `crates/mc-math/src/ported/missing_dimension_fix.rs` | 37 | `recreate_settings` |
+| `net.minecraft.util.datafix.fixes.MissingDimensionFix#recreateSettings` | `crates/mc-math/src/ported/missing_dimension_fix.rs` | 43 | `recreate_settings` |
 | `net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix#<init>` | `crates/mc-math/src/ported/mob_spawner_entity_identifiers_fix.rs` | 197 | `new` |
 | `net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix#fix` | `crates/mc-math/src/ported/mob_spawner_entity_identifiers_fix.rs` | 219 | `fix` |
 | `net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix#makeRule` | `crates/mc-math/src/ported/mob_spawner_entity_identifiers_fix.rs` | 257 | `make_rule` |
@@ -6749,6 +6756,8 @@ Total mapped Java symbols: **9093** across **2079** classes.
 | `net.minecraft.util.datafix.fixes.WeaponSmithChestLootTableFix#fix` | `crates/mc-math/src/ported/weapon_smith_chest_loot_table_fix.rs` | 106 | `fix` |
 | `net.minecraft.util.datafix.fixes.WorldBorderWarningTimeFix#<init>` | `crates/mc-math/src/ported/world_border_warning_time_fix.rs` | 86 | `new` |
 | `net.minecraft.util.datafix.fixes.WorldBorderWarningTimeFix#makeRule` | `crates/mc-math/src/ported/world_border_warning_time_fix.rs` | 94 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.WorldGenSettingsFix#defaultOverworld` | `crates/mc-math/src/ported/missing_dimension_fix.rs` | 55 | `default_overworld` |
+| `net.minecraft.util.datafix.fixes.WorldGenSettingsFix#vanillaLevels` | `crates/mc-math/src/ported/missing_dimension_fix.rs` | 59 | `vanilla_levels` |
 | `net.minecraft.util.datafix.fixes.WorldSpawnDataFix#<init>` | `crates/mc-math/src/ported/world_spawn_data_fix.rs` | 80 | `new` |
 | `net.minecraft.util.datafix.fixes.WorldSpawnDataFix#makeRule` | `crates/mc-math/src/ported/world_spawn_data_fix.rs` | 85 | `apply` |
 | `net.minecraft.util.datafix.fixes.WriteAndReadFix#<init>` | `crates/mc-math/src/ported/write_and_read_fix.rs` | 32 | `new` |
