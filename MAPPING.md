@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5487** across **1276** classes.
+Total mapped Java symbols: **5493** across **1278** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6321,6 +6321,12 @@ Total mapped Java symbols: **5487** across **1276** classes.
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#explosionDecay` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 59 | `explosion_decay` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#getType` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 36 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#run` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 41 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState#apply` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 161 | `apply` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState#copyState` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 187 | `copy_state` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState#run` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 170 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState.Builder#build` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 222 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState.Builder#copy` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 205 | `copy` |
+| `net.minecraft.world.level.storage.loot.functions.CopyBlockState.Builder#getThis` | `crates/mc-nbt/src/ported/copy_block_state.rs` | 217 | `get_this` |
 | `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#<init>` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 161 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#copyComponentsFromBlockEntity` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 241 | `copy_components_from_block_entity` |
 | `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#copyComponentsFromEntity` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 236 | `copy_components_from_entity` |
