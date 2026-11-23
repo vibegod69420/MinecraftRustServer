@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4865** across **1147** classes.
+Total mapped Java symbols: **4874** across **1150** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3318,6 +3318,15 @@ Total mapped Java symbols: **4865** across **1147** classes.
 | `net.minecraft.util.Mth#smoothstepDerivative` | `crates/mc-math/src/mth.rs` | 277 | `smoothstep_derivative` |
 | `net.minecraft.util.Mth#sqrt` | `crates/mc-math/src/mth.rs` | 110 | `sqrt_f32` |
 | `net.minecraft.util.Mth#square(double)` | `crates/mc-math/src/mth.rs` | 283 | `square_f64` |
+| `net.minecraft.util.NativeModuleLister#addCrashSection` | `crates/mc-math/src/ported/native_module_lister.rs` | 87 | `add_crash_section` |
+| `net.minecraft.util.NativeModuleLister#findLangAndCodepage` | `crates/mc-math/src/ported/native_module_lister.rs` | 71 | `find_lang_and_codepage` |
+| `net.minecraft.util.NativeModuleLister#langTableKey` | `crates/mc-math/src/ported/native_module_lister.rs` | 66 | `lang_table_key` |
+| `net.minecraft.util.NativeModuleLister#listModules` | `crates/mc-math/src/ported/native_module_lister.rs` | 50 | `list_modules` |
+| `net.minecraft.util.NativeModuleLister#tryGetVersion` | `crates/mc-math/src/ported/native_module_lister.rs` | 58 | `try_get_version` |
+| `net.minecraft.util.NativeModuleLister$NativeModuleInfo#<init>` | `crates/mc-math/src/ported/native_module_lister.rs` | 112 | `new` |
+| `net.minecraft.util.NativeModuleLister$NativeModuleInfo#toString` | `crates/mc-math/src/ported/native_module_lister.rs` | 119 | `fmt` |
+| `net.minecraft.util.NativeModuleLister$NativeModuleVersion#<init>` | `crates/mc-math/src/ported/native_module_lister.rs` | 136 | `new` |
+| `net.minecraft.util.NativeModuleLister$NativeModuleVersion#toString` | `crates/mc-math/src/ported/native_module_lister.rs` | 147 | `fmt` |
 | `net.minecraft.util.NullOps#convertTo` | `crates/mc-math/src/ported/null_ops.rs` | 101 | `convert_to` |
 | `net.minecraft.util.NullOps#createBoolean` | `crates/mc-math/src/ported/null_ops.rs` | 156 | `create_boolean` |
 | `net.minecraft.util.NullOps#createByte` | `crates/mc-math/src/ported/null_ops.rs` | 126 | `create_byte` |
