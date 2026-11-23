@@ -1,31 +1,31 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 09:57:57 UTC
+- **Updated**: 2026-11-23 10:10:25 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 8757 / 66676 (13.134%)
-- **Mapped Java Classes**: 1985 / 7163 (27.712%)
+- **Mapped Java Methods**: 8794 / 66676 (13.189%)
+- **Mapped Java Classes**: 1996 / 7163 (27.865%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 3346 mapped methods
+- `mc-math`: 3386 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
-- [PASS] `net.minecraft.util.eventlog.JsonEventLog` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.eventlog.JsonEventLogReader` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.ItemCustomNameToComponentFix` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.OptionsGraphicsModeSplitFix` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.AddNewChoices` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.BlockEntityJukeboxFix` -> `mc-math` (1622.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix` -> `mc-math` (1622.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.WorldSpawnDataFix` -> `mc-math` (1622.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.ItemRenameFix` -> `mc-math` (1622.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.OptionsKeyTranslationFix` -> `mc-math` (1622.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (1622.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix` -> `mc-math` (1622.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix` -> `mc-math` (1622.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHorseSplitFix` -> `mc-math` (1622.8s)
-- [PASS] `net.minecraft.util.datafix.schemas.V4292` -> `mc-math` (689.6s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlockNameFlatteningFix` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.HorseBodyArmorItemFix` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.DataComponentRemainderFix` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.VillagerTradeFix` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1125` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V4290` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1022` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1466` -> `mc-math` (2189.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1929` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.schemas.V2100` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1451_1` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1906` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlockEntityBlockStateFix` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.ItemLoreFix` -> `mc-math` (2796.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.LevelLegacyWorldGenSettingsFix` -> `mc-math` (2796.8s)

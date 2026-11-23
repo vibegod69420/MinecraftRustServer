@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8757** across **1985** classes.
+Total mapped Java symbols: **8794** across **1996** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6161,6 +6161,9 @@ Total mapped Java symbols: **8757** across **1985** classes.
 | `net.minecraft.util.datafix.fixes.DecoratedPotFieldRenameFix#<init>` | `crates/mc-math/src/ported/decorated_pot_field_rename_fix.rs` | 40 | `new` |
 | `net.minecraft.util.datafix.fixes.DecoratedPotFieldRenameFix#makeRule` | `crates/mc-math/src/ported/decorated_pot_field_rename_fix.rs` | 48 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.DyeItemRenameFix#RENAMED_IDS` | `crates/mc-math/src/ported/dye_item_rename_fix.rs` | 6 | `<item>` |
+| `net.minecraft.util.datafix.fixes.EmptyItemInHotbarFix#makeRule` | `crates/mc-math/src/ported/empty_item_in_hotbar_fix.rs` | 2 | `<item>` |
+| `net.minecraft.util.datafix.fixes.EmptyItemInHotbarFix#makeRule (condition check)` | `crates/mc-math/src/ported/empty_item_in_hotbar_fix.rs` | 15 | `should_clear_item` |
+| `net.minecraft.util.datafix.fixes.EmptyItemInHotbarFix#makeRule (transformation)` | `crates/mc-math/src/ported/empty_item_in_hotbar_fix.rs` | 25 | `apply_fix` |
 | `net.minecraft.util.datafix.fixes.EmptyItemInVillagerTradeFix#<init>` | `crates/mc-math/src/ported/empty_item_in_villager_trade_fix.rs` | 91 | `new` |
 | `net.minecraft.util.datafix.fixes.EmptyItemInVillagerTradeFix#makeRule` | `crates/mc-math/src/ported/empty_item_in_villager_trade_fix.rs` | 96 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.EntityArmorStandSilentFix#<init>` | `crates/mc-math/src/ported/entity_armor_stand_silent_fix.rs` | 68 | `new` |
@@ -7161,22 +7164,59 @@ Total mapped Java symbols: **8757** across **1985** classes.
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 45 | `finish` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent#<init>(ChunkPos, ResourceKey<Level>, String)` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 1 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent#<init>(ChunkPos, ResourceKey<Level>, String)` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 13 | `new` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#CHUNK_POS_X` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 29 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#CHUNK_POS_Z` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 31 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#LEVEL` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 35 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#STATUS` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 33 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#WORLD_POS_X` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 25 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.ChunkGenerationEvent.Fields#WORLD_POS_Z` | `crates/mc-math/src/ported/chunk_generation_event.rs` | 27 | `<item>` |
 | `net.minecraft.util.profiling.jfr.event.ChunkRegionIoEvent#<init>` | `crates/mc-math/src/ported/chunk_region_write_event.rs` | 26 | `new` |
 | `net.minecraft.util.profiling.jfr.event.ChunkRegionReadEvent#<init>` | `crates/mc-math/src/ported/chunk_region_read_event.rs` | 46 | `new` |
 | `net.minecraft.util.profiling.jfr.event.ChunkRegionWriteEvent#<init>` | `crates/mc-math/src/ported/chunk_region_write_event.rs` | 50 | `new` |
 | `net.minecraft.util.profiling.jfr.event.ClientFpsEvent#<init>` | `crates/mc-math/src/ported/client_fps_event.rs` | 9 | `new` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent#<init>(String)` | `crates/mc-math/src/ported/network_summary_event.rs` | 3 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent#<init>(String)` | `crates/mc-math/src/ported/network_summary_event.rs` | 14 | `new` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.Fields#RECEIVED_BYTES` | `crates/mc-math/src/ported/network_summary_event.rs` | 31 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.Fields#RECEIVED_PACKETS` | `crates/mc-math/src/ported/network_summary_event.rs` | 33 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.Fields#REMOTE_ADDRESS` | `crates/mc-math/src/ported/network_summary_event.rs` | 25 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.Fields#SENT_BYTES` | `crates/mc-math/src/ported/network_summary_event.rs` | 27 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.Fields#SENT_PACKETS` | `crates/mc-math/src/ported/network_summary_event.rs` | 29 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.SumAggregation#<init>(String)` | `crates/mc-math/src/ported/network_summary_event.rs` | 37 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.SumAggregation#<init>(String)` | `crates/mc-math/src/ported/network_summary_event.rs` | 47 | `new` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.SumAggregation#commitEvent()` | `crates/mc-math/src/ported/network_summary_event.rs` | 71 | `commit_event` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.SumAggregation#trackReceivedPacket(int)` | `crates/mc-math/src/ported/network_summary_event.rs` | 65 | `track_received_packet` |
+| `net.minecraft.util.profiling.jfr.event.NetworkSummaryEvent.SumAggregation#trackSentPacket(int)` | `crates/mc-math/src/ported/network_summary_event.rs` | 59 | `track_sent_packet` |
 | `net.minecraft.util.profiling.jfr.event.PacketEvent#<init>` | `crates/mc-math/src/ported/packet_event.rs` | 11 | `new` |
 | `net.minecraft.util.profiling.jfr.event.PacketReceivedEvent#<init>` | `crates/mc-math/src/ported/packet_received_event.rs` | 24 | `new` |
 | `net.minecraft.util.profiling.jfr.event.PacketSentEvent#<init>` | `crates/mc-math/src/ported/packet_sent_event.rs` | 24 | `new` |
 | `net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent#<init>` | `crates/mc-math/src/ported/server_tick_time_event.rs` | 9 | `new` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent#<init>` | `crates/mc-math/src/ported/structure_generation_event.rs` | 1 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent#<init>(ChunkPos, Holder<Structure>, ResourceKey<Level>)` | `crates/mc-math/src/ported/structure_generation_event.rs` | 12 | `new` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#CHUNK_POS_X` | `crates/mc-math/src/ported/structure_generation_event.rs` | 23 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#CHUNK_POS_Z` | `crates/mc-math/src/ported/structure_generation_event.rs` | 25 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#LEVEL` | `crates/mc-math/src/ported/structure_generation_event.rs` | 29 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#STRUCTURE` | `crates/mc-math/src/ported/structure_generation_event.rs` | 27 | `<item>` |
+| `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#SUCCESS` | `crates/mc-math/src/ported/structure_generation_event.rs` | 31 | `<item>` |
 | `net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent#<init>` | `crates/mc-math/src/ported/world_load_finished_event.rs` | 19 | `new` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#from` | `crates/mc-math/src/ported/chunk_gen_stat.rs` | 68 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkIdentification#from` | `crates/mc-math/src/ported/chunk_identification.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.CpuLoadStat#from` | `crates/mc-math/src/ported/cpu_load_stat.rs` | 14 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.FileIOStat#summary` | `crates/mc-math/src/ported/file_io_stat.rs` | 25 | `summary` |
 | `net.minecraft.util.profiling.jfr.stats.FpsStat#from` | `crates/mc-math/src/ported/fps_stat.rs` | 27 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#<init>` | `crates/mc-math/src/ported/io_summary.rs` | 32 | `new` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#getCountsPerSecond` | `crates/mc-math/src/ported/io_summary.rs` | 56 | `get_counts_per_second` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#getSizePerSecond` | `crates/mc-math/src/ported/io_summary.rs` | 61 | `get_size_per_second` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#getTotalCount` | `crates/mc-math/src/ported/io_summary.rs` | 66 | `get_total_count` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#getTotalSize` | `crates/mc-math/src/ported/io_summary.rs` | 71 | `get_total_size` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary#largestSizeContributors` | `crates/mc-math/src/ported/io_summary.rs` | 76 | `largest_size_contributors` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary$CountAndSize#add` | `crates/mc-math/src/ported/io_summary.rs` | 10 | `add` |
+| `net.minecraft.util.profiling.jfr.stats.IoSummary$CountAndSize#averageSize` | `crates/mc-math/src/ported/io_summary.rs` | 18 | `average_size` |
 | `net.minecraft.util.profiling.jfr.stats.PacketIdentification#from` | `crates/mc-math/src/ported/packet_identification.rs` | 14 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.StructureGenStat#from` | `crates/mc-math/src/ported/structure_gen_stat.rs` | 43 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.ThreadAllocationStat#from` | `crates/mc-math/src/ported/thread_allocation_stat.rs` | 31 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.ThreadAllocationStat#summary` | `crates/mc-math/src/ported/thread_allocation_stat.rs` | 47 | `summary` |
 | `net.minecraft.util.profiling.jfr.stats.TickTimeStat#from` | `crates/mc-math/src/ported/tick_time_stat.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#summary` | `crates/mc-math/src/ported/timed_stat_summary.rs` | 34 | `summary` |
