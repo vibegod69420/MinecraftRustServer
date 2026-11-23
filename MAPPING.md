@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7518** across **1594** classes.
+Total mapped Java symbols: **7557** across **1603** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -105,6 +105,12 @@ Total mapped Java symbols: **7518** across **1594** classes.
 | `java.time.Instant#ofEpochMilli(long)` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 16 | `of_epoch_milli` |
 | `java.time.Instant#toEpochMilli` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 32 | `to_epoch_milli` |
 | `java.time.Instant#toEpochMilli()` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 21 | `to_epoch_milli` |
+| `java.util.BitSet#<init>` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 43 | `new` |
+| `java.util.BitSet#get` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 68 | `get` |
+| `java.util.BitSet#set` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 58 | `set` |
+| `java.util.BitSet#stream` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 78 | `stream_set_bits` |
+| `java.util.BitSet#toLongArray` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 95 | `to_long_array` |
+| `java.util.BitSet#valueOf` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 51 | `value_of` |
 | `java.util.Random#next(int)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 48 | `next_bits` |
 | `java.util.Random#nextInt(int)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 58 | `next_int_bound` |
 | `java.util.UUID#<init>` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 4 | `<item>` |
@@ -612,7 +618,10 @@ Total mapped Java symbols: **7518** across **1594** classes.
 | `net.minecraft.core.HolderOwner#canSerializeIn` | `crates/mc-math/src/ported/holder_owner.rs` | 40 | `can_serialize_in` |
 | `net.minecraft.core.HolderSet#stream` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 43 | `stream` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-data/build.rs` | 132 | `by_id` |
+| `net.minecraft.core.IdMap#byId` | `crates/mc-worldgen/src/ported/global_palette.rs` | 7 | `by_id` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-data/build.rs` | 128 | `get_id` |
+| `net.minecraft.core.IdMap#getId` | `crates/mc-worldgen/src/ported/global_palette.rs` | 5 | `get_id` |
+| `net.minecraft.core.IdMap#size` | `crates/mc-worldgen/src/ported/global_palette.rs` | 9 | `size` |
 | `net.minecraft.core.IdMapper#<init>()` | `crates/mc-math/src/ported/id_mapper.rs` | 30 | `new` |
 | `net.minecraft.core.IdMapper#<init>(int)` | `crates/mc-math/src/ported/id_mapper.rs` | 35 | `with_expected_size` |
 | `net.minecraft.core.IdMapper#add` | `crates/mc-math/src/ported/id_mapper.rs` | 66 | `add` |
@@ -6298,6 +6307,7 @@ Total mapped Java symbols: **7518** across **1594** classes.
 | `net.minecraft.world.level.ChunkPos#<init>(net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 70 | `from_block_pos` |
 | `net.minecraft.world.level.ChunkPos#<init>(net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 97 | `from_block_pos` |
 | `net.minecraft.world.level.ChunkPos#asLong` | `crates/mc-protocol/src/ported/clientbound_forget_level_chunk_packet.rs` | 25 | `as_long` |
+| `net.minecraft.world.level.ChunkPos#getBlockAt` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 15 | `get_block_at` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 54 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 44 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 26 | `get_block_x` |
@@ -6419,27 +6429,74 @@ Total mapped Java symbols: **7518** across **1594** classes.
 | `net.minecraft.world.level.border.WorldBorder#getWarningTime` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 84 | `get_warning_time` |
 | `net.minecraft.world.level.chunk.BlockColumn#getBlock` | `crates/mc-worldgen/src/ported/block_column.rs` | 7 | `get_block` |
 | `net.minecraft.world.level.chunk.BlockColumn#setBlock` | `crates/mc-worldgen/src/ported/block_column.rs` | 10 | `set_block` |
+| `net.minecraft.world.level.chunk.CarvingMask#<init>` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 121 | `new` |
+| `net.minecraft.world.level.chunk.CarvingMask#<init>` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 132 | `from_long_array` |
+| `net.minecraft.world.level.chunk.CarvingMask#get` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 159 | `get` |
+| `net.minecraft.world.level.chunk.CarvingMask#getIndex` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 146 | `get_index` |
+| `net.minecraft.world.level.chunk.CarvingMask#set` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 151 | `set` |
+| `net.minecraft.world.level.chunk.CarvingMask#setAdditionalMask` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 141 | `set_additional_mask` |
+| `net.minecraft.world.level.chunk.CarvingMask#stream` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 168 | `stream` |
+| `net.minecraft.world.level.chunk.CarvingMask#toArray` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 182 | `to_array` |
+| `net.minecraft.world.level.chunk.CarvingMask$Mask#test` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 26 | `test` |
+| `net.minecraft.world.level.chunk.CarvingMask$Mask#test` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 31 | `test` |
+| `net.minecraft.world.level.chunk.CarvingMask$Mask#test` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 108 | `test` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
 | `net.minecraft.world.level.chunk.ChunkGenerators#bootstrap` | `crates/mc-worldgen/src/ported/chunk_generators.rs` | 68 | `bootstrap` |
+| `net.minecraft.world.level.chunk.GlobalPalette#<init>` | `crates/mc-worldgen/src/ported/global_palette.rs` | 65 | `new` |
+| `net.minecraft.world.level.chunk.GlobalPalette#copy` | `crates/mc-worldgen/src/ported/global_palette.rs` | 120 | `copy_palette` |
+| `net.minecraft.world.level.chunk.GlobalPalette#getSerializedSize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 110 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.GlobalPalette#getSize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 115 | `get_size` |
+| `net.minecraft.world.level.chunk.GlobalPalette#idFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 73 | `id_for_value` |
+| `net.minecraft.world.level.chunk.GlobalPalette#idFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 89 | `id_for` |
+| `net.minecraft.world.level.chunk.GlobalPalette#maybeHas` | `crates/mc-worldgen/src/ported/global_palette.rs` | 94 | `maybe_has` |
+| `net.minecraft.world.level.chunk.GlobalPalette#read` | `crates/mc-worldgen/src/ported/global_palette.rs` | 104 | `read` |
+| `net.minecraft.world.level.chunk.GlobalPalette#valueFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 79 | `value_for_id` |
+| `net.minecraft.world.level.chunk.GlobalPalette#valueFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 99 | `value_for` |
+| `net.minecraft.world.level.chunk.GlobalPalette#write` | `crates/mc-worldgen/src/ported/global_palette.rs` | 107 | `write` |
 | `net.minecraft.world.level.chunk.LightChunk#findBlockLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 28 | `find_block_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunk#getSkyLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 31 | `get_sky_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#getChunkForLighting` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 32 | `get_chunk_for_lighting` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#getLevel` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 38 | `get_level` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#onLightUpdate` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 35 | `on_light_update` |
+| `net.minecraft.world.level.chunk.MissingPaletteEntryException#<init>` | `crates/mc-worldgen/src/ported/global_palette.rs` | 24 | `new` |
 | `net.minecraft.world.level.chunk.MissingPaletteEntryException#<init>` | `crates/mc-worldgen/src/ported/missing_palette_entry_exception.rs` | 11 | `new` |
+| `net.minecraft.world.level.chunk.Palette#copy` | `crates/mc-worldgen/src/ported/global_palette.rs` | 55 | `copy_palette` |
 | `net.minecraft.world.level.chunk.Palette#copy` | `crates/mc-worldgen/src/ported/palette.rs` | 42 | `copy_palette` |
+| `net.minecraft.world.level.chunk.Palette#getSerializedSize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 51 | `get_serialized_size` |
 | `net.minecraft.world.level.chunk.Palette#getSerializedSize` | `crates/mc-worldgen/src/ported/palette.rs` | 36 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.Palette#getSize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 53 | `get_size` |
 | `net.minecraft.world.level.chunk.Palette#getSize` | `crates/mc-worldgen/src/ported/palette.rs` | 39 | `get_size` |
+| `net.minecraft.world.level.chunk.Palette#idFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 41 | `id_for` |
 | `net.minecraft.world.level.chunk.Palette#idFor` | `crates/mc-worldgen/src/ported/palette.rs` | 21 | `id_for` |
+| `net.minecraft.world.level.chunk.Palette#maybeHas` | `crates/mc-worldgen/src/ported/global_palette.rs` | 43 | `maybe_has` |
 | `net.minecraft.world.level.chunk.Palette#maybeHas` | `crates/mc-worldgen/src/ported/palette.rs` | 24 | `maybe_has` |
+| `net.minecraft.world.level.chunk.Palette#read` | `crates/mc-worldgen/src/ported/global_palette.rs` | 47 | `read` |
 | `net.minecraft.world.level.chunk.Palette#read` | `crates/mc-worldgen/src/ported/palette.rs` | 30 | `read` |
+| `net.minecraft.world.level.chunk.Palette#valueFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 45 | `value_for` |
 | `net.minecraft.world.level.chunk.Palette#valueFor` | `crates/mc-worldgen/src/ported/palette.rs` | 27 | `value_for` |
+| `net.minecraft.world.level.chunk.Palette#write` | `crates/mc-worldgen/src/ported/global_palette.rs` | 49 | `write` |
 | `net.minecraft.world.level.chunk.Palette#write` | `crates/mc-worldgen/src/ported/palette.rs` | 33 | `write` |
 | `net.minecraft.world.level.chunk.Palette$Factory#create` | `crates/mc-worldgen/src/ported/palette.rs` | 48 | `create` |
 | `net.minecraft.world.level.chunk.PaletteResize#noResizeExpected` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 38 | `no_resize_expected` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 14 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette.rs` | 15 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 5 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 29 | `on_resize` |
+| `net.minecraft.world.level.chunk.PalettedContainer$CountConsumer#accept` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 13 | `accept` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#bitsPerEntry` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 64 | `bits_per_entry` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#copy` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 73 | `copy_container` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#count` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 70 | `count` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#get` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 52 | `get` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#getAll` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 55 | `get_all` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#getSerializedSize` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 61 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#maybeHas` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 67 | `maybe_has` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#pack` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 79 | `pack` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#recreate` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 76 | `recreate` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO#write` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 58 | `write` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 27 | `new` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 36 | `with_bits` |
+| `net.minecraft.world.level.chunk.PalettedContainerRO$Unpacker#read` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 47 | `read` |
+| `net.minecraft.world.level.chunk.Strategy#<placeholder>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 6 | `strategy_id` |
 | `net.minecraft.world.level.chunk.StructureAccess#addReferenceForStructure` | `crates/mc-worldgen/src/ported/structure_access.rs` | 29 | `add_reference_for_structure` |
 | `net.minecraft.world.level.chunk.StructureAccess#getAllReferences` | `crates/mc-worldgen/src/ported/structure_access.rs` | 32 | `get_all_references` |
 | `net.minecraft.world.level.chunk.StructureAccess#getReferencesForStructure` | `crates/mc-worldgen/src/ported/structure_access.rs` | 26 | `get_references_for_structure` |

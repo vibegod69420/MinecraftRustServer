@@ -321,3 +321,6 @@ pub mod light_chunk;
 pub mod palette;
 pub mod chunk_generators;
 pub mod structure_access;
+pub mod global_palette;
+pub mod paletted_container_ro;
+pub mod carving_mask;
