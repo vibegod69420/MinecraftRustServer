@@ -295,3 +295,5 @@ pub mod clientbound_sound_entity_packet;
 pub mod lp_vec3;
 pub mod sub_string_source;
 pub mod signed_message_body;
+pub mod clientbound_merchant_offers_packet;
+pub mod serverbound_test_instance_block_action_packet;

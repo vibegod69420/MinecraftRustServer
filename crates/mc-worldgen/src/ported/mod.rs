@@ -266,3 +266,5 @@ pub mod pale_moss_decorator;
 pub mod patrol_spawner;
 pub mod mineshaft_structure;
 pub mod root_system_feature;
+pub mod debug_level_source;
+pub mod feature_pool_element;
