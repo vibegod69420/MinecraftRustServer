@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 07:55:08 UTC
+- **Updated**: 2026-11-23 07:56:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 8106 / 66676 (12.157%)
 - **Mapped Java Classes**: 1741 / 7163 (24.305%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2636 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (1000.7s)
 - [PASS] `net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter` -> `mc-math` (172.5s)
 - [PASS] `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder` -> `mc-math` (172.5s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkAccess` -> `mc-worldgen` (1331.3s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.datafix.schemas.V2509` -> `mc-math` (151.7s)
 - [PASS] `net.minecraft.util.datafix.fixes.RenamedCoralFansFix` -> `mc-math` (181.1s)
 - [PASS] `net.minecraft.util.datafix.fixes.RecipesRenameningFix` -> `mc-math` (181.1s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntityElderGuardianSplitFix` -> `mc-math` (181.1s)
