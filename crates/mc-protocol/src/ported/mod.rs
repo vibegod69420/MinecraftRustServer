@@ -181,3 +181,7 @@ pub mod serverbound_custom_click_action_packet;
 pub mod clientbound_store_cookie_packet;
 pub mod clientbound_login_compression_packet;
 pub mod clientbound_login_disconnect_packet;
+pub mod serverbound_select_bundle_item_packet;
+pub mod clientbound_move_vehicle_packet;
+pub mod clientbound_set_camera_packet;
+pub mod serverbound_paddle_boat_packet;

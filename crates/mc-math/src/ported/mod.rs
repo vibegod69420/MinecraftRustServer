@@ -156,3 +156,7 @@ pub mod debug_hive_info;
 pub mod brightness;
 pub mod list_and_deque;
 pub mod tri_state;
+pub mod strict_json_parser;
+pub mod zero_bit_storage;
+pub mod future_chain;
+pub mod class_tree_id_registry;
