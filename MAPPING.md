@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4178** across **1020** classes.
+Total mapped Java symbols: **4188** across **1022** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2842,6 +2842,11 @@ Total mapped Java symbols: **4178** across **1020** classes.
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
 | `net.minecraft.util.FileSystemUtil#safeGetPath` | `crates/mc-math/src/ported/file_system_util.rs` | 87 | `safe_get_path` |
+| `net.minecraft.util.FileZipper#<init>` | `crates/mc-math/src/ported/file_zipper.rs` | 18 | `new` |
+| `net.minecraft.util.FileZipper#add(Path)` | `crates/mc-math/src/ported/file_zipper.rs` | 51 | `add_path` |
+| `net.minecraft.util.FileZipper#add(Path,File)` | `crates/mc-math/src/ported/file_zipper.rs` | 41 | `add_file` |
+| `net.minecraft.util.FileZipper#add(Path,String)` | `crates/mc-math/src/ported/file_zipper.rs` | 33 | `add_content` |
+| `net.minecraft.util.FileZipper#close` | `crates/mc-math/src/ported/file_zipper.rs` | 76 | `close` |
 | `net.minecraft.util.FormattedCharSequence#EMPTY` | `crates/mc-math/src/ported/formatted_char_sequence.rs` | 75 | `empty` |
 | `net.minecraft.util.FormattedCharSequence#accept` | `crates/mc-math/src/ported/formatted_char_sequence.rs` | 70 | `accept` |
 | `net.minecraft.util.FormattedCharSequence#backward` | `crates/mc-math/src/ported/formatted_char_sequence.rs` | 110 | `backward` |
@@ -4292,6 +4297,11 @@ Total mapped Java symbols: **4178** across **1020** classes.
 | `net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter#forMaxDepth` | `crates/mc-worldgen/src/ported/surface_water_depth_filter.rs` | 45 | `for_max_depth` |
 | `net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter#shouldPlace` | `crates/mc-worldgen/src/ported/surface_water_depth_filter.rs` | 50 | `should_place` |
 | `net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter#type` | `crates/mc-worldgen/src/ported/surface_water_depth_filter.rs` | 62 | `get_type` |
+| `net.minecraft.world.level.levelgen.presets.WorldPreset#<init>` | `crates/mc-worldgen/src/ported/world_preset.rs` | 83 | `new` |
+| `net.minecraft.world.level.levelgen.presets.WorldPreset#createWorldDimensions` | `crates/mc-worldgen/src/ported/world_preset.rs` | 99 | `create_world_dimensions` |
+| `net.minecraft.world.level.levelgen.presets.WorldPreset#dimensionsInOrder` | `crates/mc-worldgen/src/ported/world_preset.rs` | 88 | `dimensions_in_order` |
+| `net.minecraft.world.level.levelgen.presets.WorldPreset#overworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 104 | `overworld` |
+| `net.minecraft.world.level.levelgen.presets.WorldPreset#requireOverworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 109 | `require_overworld` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#ANCIENT_CITIES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 84 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#BURIED_TREASURES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 68 | `<item>` |

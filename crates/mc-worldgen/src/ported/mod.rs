@@ -202,3 +202,4 @@ pub mod disk_feature;
 pub mod block_pile_feature;
 pub mod replace_blobs_feature;
 pub mod spring_feature;
+pub mod world_preset;

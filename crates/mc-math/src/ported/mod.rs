@@ -177,3 +177,4 @@ pub mod patched_data_component_map;
 pub mod inclusive_range;
 pub mod formatted_char_sequence;
 pub mod dependency_sorter;
+pub mod file_zipper;
