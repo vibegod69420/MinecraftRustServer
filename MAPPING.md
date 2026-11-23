@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4387** across **1072** classes.
+Total mapped Java symbols: **4398** across **1076** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2973,6 +2973,7 @@ Total mapped Java symbols: **4387** across **1072** classes.
 | `net.minecraft.util.DependencySorter$Entry#visitOptionalDependencies` | `crates/mc-math/src/ported/dependency_sorter.rs` | 8 | `visit_optional_dependencies` |
 | `net.minecraft.util.DependencySorter$Entry#visitRequiredDependencies` | `crates/mc-math/src/ported/dependency_sorter.rs` | 6 | `visit_required_dependencies` |
 | `net.minecraft.util.EasingType#apply` | `crates/mc-math/src/ported/binary_animator.rs` | 7 | `apply` |
+| `net.minecraft.util.EasingType#apply` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 8 | `apply` |
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
 | `net.minecraft.util.FileSystemUtil#safeGetPath` | `crates/mc-math/src/ported/file_system_util.rs` | 87 | `safe_get_path` |
@@ -3018,8 +3019,21 @@ Total mapped Java symbols: **4387** across **1072** classes.
 | `net.minecraft.util.KeyDispatchDataCodec#codec` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 81 | `codec` |
 | `net.minecraft.util.KeyDispatchDataCodec#of` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 86 | `of` |
 | `net.minecraft.util.Keyframe#<init>` | `crates/mc-math/src/ported/keyframe.rs` | 14 | `new` |
+| `net.minecraft.util.Keyframe#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 39 | `new` |
 | `net.minecraft.util.Keyframe#ticks` | `crates/mc-math/src/ported/keyframe.rs` | 19 | `ticks` |
+| `net.minecraft.util.Keyframe#ticks` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 44 | `ticks` |
 | `net.minecraft.util.Keyframe#value` | `crates/mc-math/src/ported/keyframe.rs` | 24 | `value` |
+| `net.minecraft.util.Keyframe#value` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 49 | `value` |
+| `net.minecraft.util.KeyframeTrack#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 62 | `new` |
+| `net.minecraft.util.KeyframeTrack#easingType` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 70 | `easing_type` |
+| `net.minecraft.util.KeyframeTrack#keyframes` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 75 | `keyframes` |
+| `net.minecraft.util.KeyframeTrackSampler#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 116 | `new` |
+| `net.minecraft.util.KeyframeTrackSampler#addSegmentsFromKeyframes` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 169 | `add_segments_from_keyframes` |
+| `net.minecraft.util.KeyframeTrackSampler#bakeSegments` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 126 | `bake_segments` |
+| `net.minecraft.util.KeyframeTrackSampler#getSegmentAt` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 210 | `get_segment_at` |
+| `net.minecraft.util.KeyframeTrackSampler#loopTicks` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 222 | `loop_ticks` |
+| `net.minecraft.util.KeyframeTrackSampler#sample` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 190 | `sample` |
+| `net.minecraft.util.KeyframeTrackSampler$Segment#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 91 | `from_keyframes` |
 | `net.minecraft.util.LenientJsonParser#parse` | `crates/mc-math/src/ported/lenient_json_parser.rs` | 321 | `parse_reader` |
 | `net.minecraft.util.LenientJsonParser#parse` | `crates/mc-math/src/ported/lenient_json_parser.rs` | 330 | `parse` |
 | `net.minecraft.util.LinearCongruentialGenerator#next` | `crates/mc-math/src/ported/linear_congruential_generator.rs` | 4 | `next` |
@@ -3653,6 +3667,8 @@ Total mapped Java symbols: **4387** across **1072** classes.
 | `net.minecraft.world.Difficulty#byId` | `crates/mc-protocol/src/ported/serverbound_change_difficulty_packet.rs` | 22 | `by_id` |
 | `net.minecraft.world.Difficulty#getId` | `crates/mc-protocol/src/ported/clientbound_change_difficulty_packet.rs` | 71 | `id` |
 | `net.minecraft.world.Difficulty#getId` | `crates/mc-protocol/src/ported/serverbound_change_difficulty_packet.rs` | 32 | `id` |
+| `net.minecraft.world.attribute.LerpFunction#apply` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 18 | `apply` |
+| `net.minecraft.world.attribute.LerpFunction#apply` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 26 | `apply` |
 | `net.minecraft.world.entity.PositionMoveRotation#<init>` | `crates/mc-protocol/src/ported/clientbound_player_position_packet.rs` | 212 | `new` |
 | `net.minecraft.world.entity.PositionMoveRotation.STREAM_CODEC (decode)` | `crates/mc-protocol/src/ported/clientbound_player_position_packet.rs` | 222 | `read` |
 | `net.minecraft.world.entity.PositionMoveRotation.STREAM_CODEC (encode)` | `crates/mc-protocol/src/ported/clientbound_player_position_packet.rs` | 236 | `write` |
