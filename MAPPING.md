@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6344** across **1397** classes.
+Total mapped Java symbols: **6364** across **1400** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -454,6 +454,7 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.core.Direction$Axis#choose(int,int,int)` | `crates/mc-math/src/ported/axis_cycle.rs` | 12 | `choose_i32` |
 | `net.minecraft.core.Direction$Plane#HORIZONTAL` | `crates/mc-worldgen/src/ported/pointed_dripstone_feature.rs` | 87 | `horizontal` |
 | `net.minecraft.core.Direction$Plane#HORIZONTAL (iterator order)` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 57 | `horizontal` |
+| `net.minecraft.core.Direction$Plane#HORIZONTAL#getRandomDirection` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 191 | `horizontal_get_random_direction` |
 | `net.minecraft.core.Direction$Plane#getRandomDirection` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 137 | `get_random_horizontal` |
 | `net.minecraft.core.Direction$Plane#getRandomDirection` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 132 | `get_random_horizontal` |
 | `net.minecraft.core.Direction.Axis#getRandom` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 47 | `get_random` |
@@ -4731,6 +4732,7 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.util.ProgressListener#stop` | `crates/mc-math/src/ported/progress_listener.rs` | 26 | `stop` |
 | `net.minecraft.util.RandomSource#consumeCount` | `crates/mc-math/src/random.rs` | 171 | `consume_count` |
 | `net.minecraft.util.RandomSource#create (behavioral stub for deterministic seeding)` | `crates/mc-worldgen/src/ported/pool_alias_lookup.rs` | 115 | `create` |
+| `net.minecraft.util.RandomSource#create(long)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 106 | `create` |
 | `net.minecraft.util.RandomSource#create(long)` | `crates/mc-worldgen/src/ported/rule_processor.rs` | 45 | `create` |
 | `net.minecraft.util.RandomSource#nextBoolean` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 68 | `next_boolean` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 9 | `next_float` |
@@ -4743,6 +4745,8 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 113 | `next_int` |
+| `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 122 | `next_int` |
+| `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 185 | `next_int` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 66 | `next_int` |
 | `net.minecraft.util.RandomSource#nextIntBetweenInclusive` | `crates/mc-math/src/random.rs` | 166 | `next_int_between_inclusive` |
 | `net.minecraft.util.RandomSource#nextLong` | `crates/mc-worldgen/src/ported/append_loot.rs` | 42 | `next_long` |
@@ -4753,6 +4757,7 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.util.RandomSource#triangle` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 99 | `triangle` |
 | `net.minecraft.util.RandomSource#triangle(double,double)` | `crates/mc-math/src/random.rs` | 178 | `triangle_f64` |
 | `net.minecraft.util.RandomSource#triangle(float,float)` | `crates/mc-math/src/random.rs` | 183 | `triangle_f32` |
+| `net.minecraft.util.RandomSupport#generateUniqueSeed` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 147 | `generate_unique_seed` |
 | `net.minecraft.util.RegistryContextSwapper#swapTo` | `crates/mc-math/src/ported/registry_context_swapper.rs` | 48 | `swap_to` |
 | `net.minecraft.util.SegmentedAnglePrecision#<init>` | `crates/mc-math/src/ported/segmented_angle_precision.rs` | 15 | `new` |
 | `net.minecraft.util.SegmentedAnglePrecision#fromDegrees` | `crates/mc-math/src/ported/segmented_angle_precision.rs` | 58 | `from_degrees` |
@@ -5529,16 +5534,19 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 44 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 26 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockX` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 54 | `get_block_x` |
+| `net.minecraft.world.level.ChunkPos#getBlockX(int)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 67 | `get_block_x` |
 | `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 59 | `get_block_z` |
 | `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 49 | `get_block_z` |
 | `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 31 | `get_block_z` |
 | `net.minecraft.world.level.ChunkPos#getBlockZ` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 59 | `get_block_z` |
+| `net.minecraft.world.level.ChunkPos#getBlockZ(int)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 72 | `get_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMaxBlockX` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 115 | `get_max_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMaxBlockX()` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 83 | `get_max_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMaxBlockZ` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 120 | `get_max_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMaxBlockZ()` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 93 | `get_max_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 44 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 34 | `get_min_block_x` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 77 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 29 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 10 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockX` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 36 | `get_min_block_x` |
@@ -5547,6 +5555,7 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.ChunkPos#getMinBlockX()` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 78 | `get_min_block_x` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 49 | `get_min_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 39 | `get_min_block_z` |
+| `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 82 | `get_min_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 34 | `get_min_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 15 | `get_min_block_z` |
 | `net.minecraft.world.level.ChunkPos#getMinBlockZ` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 41 | `get_min_block_z` |
@@ -5666,6 +5675,7 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.GeodeCrackSettings#<init>` | `crates/mc-worldgen/src/ported/geode_crack_settings.rs` | 13 | `new` |
 | `net.minecraft.world.level.levelgen.GeodeLayerSettings#<init>` | `crates/mc-worldgen/src/ported/geode_layer_settings.rs` | 17 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>` | `crates/mc-math/src/random.rs` | 240 | `new` |
+| `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 140 | `legacy_random_source` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>(long)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 36 | `create` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#LegacyRandomSource` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 51 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#fork` | `crates/mc-math/src/random.rs` | 362 | `fork` |
@@ -5745,8 +5755,10 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.WorldOptions#withBonusChest` | `crates/mc-worldgen/src/ported/world_options.rs` | 76 | `with_bonus_chest` |
 | `net.minecraft.world.level.levelgen.WorldOptions#withSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 96 | `with_seed` |
 | `net.minecraft.world.level.levelgen.WorldOptions#withStructures` | `crates/mc-worldgen/src/ported/world_options.rs` | 86 | `with_structures` |
+| `net.minecraft.world.level.levelgen.WorldgenRandom#<init>(net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 168 | `new` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#WorldgenRandom` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 104 | `new` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#seedSlimeChunk` | `crates/mc-math/src/random.rs` | 651 | `seed_slime_chunk` |
+| `net.minecraft.world.level.levelgen.WorldgenRandom#setLargeFeatureSeed` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 173 | `set_large_feature_seed` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#setLargeFeatureWithSalt` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 114 | `set_large_feature_with_salt` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#setSeed` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 109 | `set_seed` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(RandomSupport$Seed128bit)` | `crates/mc-math/src/random.rs` | 414 | `from_seed128` |
@@ -6558,6 +6570,8 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.presets.WorldPreset#overworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 104 | `overworld` |
 | `net.minecraft.world.level.levelgen.presets.WorldPreset#requireOverworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 109 | `require_overworld` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
+| `net.minecraft.world.level.levelgen.structure.BoundingBox#minX` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 45 | `min_x` |
+| `net.minecraft.world.level.levelgen.structure.BoundingBox#minZ` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 50 | `min_z` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#ANCIENT_CITIES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 84 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#BURIED_TREASURES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 68 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#DESERT_PYRAMIDS` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 54 | `<item>` |
@@ -6602,8 +6616,11 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 119 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.Structure#simpleCodec` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 17 | `simple_codec` |
 | `net.minecraft.world.level.levelgen.structure.Structure#simpleCodec` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 17 | `simple_codec` |
+| `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#chunkGenerator` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 311 | `chunk_generator_sea_level` |
 | `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#chunkGenerator` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 83 | `chunk_generator` |
+| `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 301 | `chunk_pos` |
 | `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 78 | `chunk_pos` |
+| `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#random` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 306 | `random` |
 | `net.minecraft.world.level.levelgen.structure.Structure$GenerationContext#random` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 88 | `random` |
 | `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 102 | `chunk_pos` |
 | `net.minecraft.world.level.levelgen.structure.Structure.GenerationContext#chunkPos` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 92 | `chunk_pos` |
@@ -6619,6 +6636,8 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#type` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 34 | `type_` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 177 | `new` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 187 | `from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getBoundingBox` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 228 | `get_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getOrientation` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 236 | `get_orientation` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#makeBoundingBox` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 130 | `make_bounding_box` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#setOrientation` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 197 | `set_orientation` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
@@ -6647,15 +6666,19 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 222 | `fmt` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#<init>` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 236 | `new` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#calculateBoundingBox` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 298 | `calculate_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#isEmpty` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 251 | `is_empty` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#isEmpty` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 245 | `is_empty` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#isInsidePiece` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 250 | `is_inside_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#load` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 269 | `load` |
+| `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#pieces` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 256 | `pieces` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#save` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 260 | `save` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 1 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext#fromLevel` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 47 | `from_level` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 272 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 42 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#build` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 277 | `build` |
 | `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#<init>` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 101 | `new` |
 | `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#<init>` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 126 | `new_simple` |
 | `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#count` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 151 | `count` |
@@ -6792,6 +6815,14 @@ Total mapped Java symbols: **6344** across **1397** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#<init>` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 141 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 146 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#type` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 180 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentPieces$MonumentBuilding#<init>` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 208 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#<init>` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 328 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#createTopPiece` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 368 | `create_top_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 348 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#generatePieces` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 376 | `generate_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#onTopOfChunkCenter (stubbed helper)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 333 | `on_top_of_chunk_center` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#regeneratePiecesAfterLoad` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 383 | `regenerate_pieces_after_load` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#type` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 362 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#<init>` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 156 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 171 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#generatePieces` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 181 | `generate_pieces` |
