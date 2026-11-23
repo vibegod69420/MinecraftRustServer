@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 06:20:09 UTC
+- **Updated**: 2026-11-23 06:20:31 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7670 / 66676 (11.503%)
-- **Mapped Java Classes**: 1616 / 7163 (22.560%)
+- **Mapped Java Methods**: 7674 / 66676 (11.509%)
+- **Mapped Java Classes**: 1617 / 7163 (22.574%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,7 +11,7 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
-- `mc-worldgen`: 2377 mapped methods
+- `mc-worldgen`: 2381 mapped methods
 
 ## Recent Verified Work
 - [PASS] `net.minecraft.world.level.chunk.status.ChunkPyramid` -> `mc-worldgen` (250.7s)

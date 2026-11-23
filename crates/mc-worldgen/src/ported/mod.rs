@@ -335,3 +335,4 @@ pub mod empty_level_chunk;
 pub mod bulk_section_access;
 pub mod chunk_pyramid;
 pub mod strategy;
+pub mod configuration;

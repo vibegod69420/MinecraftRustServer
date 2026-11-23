@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7670** across **1616** classes.
+Total mapped Java symbols: **7674** across **1617** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6478,6 +6478,10 @@ Total mapped Java symbols: **7670** across **1616** classes.
 | `net.minecraft.world.level.chunk.CarvingMask$Mask#test` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 108 | `test` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
 | `net.minecraft.world.level.chunk.ChunkGenerators#bootstrap` | `crates/mc-worldgen/src/ported/chunk_generators.rs` | 68 | `bootstrap` |
+| `net.minecraft.world.level.chunk.Configuration#alwaysRepack` | `crates/mc-worldgen/src/ported/configuration.rs` | 31 | `always_repack` |
+| `net.minecraft.world.level.chunk.Configuration#bitsInMemory` | `crates/mc-worldgen/src/ported/configuration.rs` | 39 | `bits_in_memory` |
+| `net.minecraft.world.level.chunk.Configuration#bitsInStorage` | `crates/mc-worldgen/src/ported/configuration.rs` | 47 | `bits_in_storage` |
+| `net.minecraft.world.level.chunk.Configuration#createPalette` | `crates/mc-worldgen/src/ported/configuration.rs` | 55 | `create_palette` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#<init>(Level, ChunkPos, Holder)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 77 | `new` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#addAndRegisterBlockEntity(BlockEntity)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 119 | `add_and_register_block_entity` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#getBlockEntity(BlockPos, LevelChunk.EntityCreationType)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 110 | `get_block_entity` |
