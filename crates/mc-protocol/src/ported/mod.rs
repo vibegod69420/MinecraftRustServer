@@ -344,3 +344,5 @@ pub mod entity_data_serializers;
 pub mod serverbound_move_player_packet;
 pub mod signed_message_chain;
 pub mod game_protocols;
+pub mod clientbound_set_player_team_packet;
+pub mod tick_task;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7103** across **1530** classes.
+Total mapped Java symbols: **7129** across **1533** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3851,6 +3851,31 @@ Total mapped Java symbols: **7103** across **1530** classes.
 | `net.minecraft.network.protocol.game.ClientboundSetPlayerInventoryPacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_player_inventory_packet.rs` | 170 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundSetPlayerInventoryPacket#type` | `crates/mc-protocol/src/ported/clientbound_set_player_inventory_packet.rs` | 165 | `get_type` |
 | `net.minecraft.network.protocol.game.ClientboundSetPlayerInventoryPacket#write (codec` | `crates/mc-protocol/src/ported/clientbound_set_player_inventory_packet.rs` | 159 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 478 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 526 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#createAddOrModifyPacket` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 493 | `create_add_or_modify_packet` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#createPlayerPacket` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 512 | `create_player_packet` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#createRemovePacket` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 507 | `create_remove_packet` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#getName` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 605 | `get_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#getParameters` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 615 | `get_parameters` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#getPlayerAction` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 577 | `get_player_action` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#getPlayers` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 610 | `get_players` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#getTeamAction` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 586 | `get_team_action` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 600 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#shouldHaveParameters` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 572 | `should_have_parameters` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#shouldHavePlayerList` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 567 | `should_have_player_list` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#type` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 595 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket#write` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 548 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#<init>` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 388 | `from_team` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#<init>` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 401 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getCollisionRule` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 441 | `get_collision_rule` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getColor` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 431 | `get_color` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getDisplayName` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 421 | `get_display_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getNametagVisibility` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 436 | `get_nametag_visibility` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getOptions` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 426 | `get_options` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getPlayerPrefix` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 446 | `get_player_prefix` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#getPlayerSuffix` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 451 | `get_player_suffix` |
+| `net.minecraft.network.protocol.game.ClientboundSetPlayerTeamPacket$Parameters#write` | `crates/mc-protocol/src/ported/clientbound_set_player_team_packet.rs` | 456 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundSetScorePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_score_packet.rs` | 97 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundSetScorePacket#display` | `crates/mc-protocol/src/ported/clientbound_set_score_packet.rs` | 162 | `display` |
 | `net.minecraft.network.protocol.game.ClientboundSetScorePacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_score_packet.rs` | 142 | `handle` |
@@ -4692,6 +4717,9 @@ Total mapped Java symbols: **7103** across **1530** classes.
 | `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
 | `net.minecraft.server.MinecraftServer#registryAccess` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 26 | `registry_access` |
+| `net.minecraft.server.TickTask#<init>` | `crates/mc-protocol/src/ported/tick_task.rs` | 12 | `new` |
+| `net.minecraft.server.TickTask#getTick` | `crates/mc-protocol/src/ported/tick_task.rs` | 23 | `get_tick` |
+| `net.minecraft.server.TickTask#run` | `crates/mc-protocol/src/ported/tick_task.rs` | 28 | `run` |
 | `net.minecraft.server.level.ClientInformation#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_client_information_packet.rs` | 75 | `read` |
 | `net.minecraft.server.level.ClientInformation#write(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_client_information_packet.rs` | 90 | `write` |
 | `net.minecraft.server.network.Filterable#raw` | `crates/mc-math/src/ported/writable_book_predicate.rs` | 13 | `raw` |
