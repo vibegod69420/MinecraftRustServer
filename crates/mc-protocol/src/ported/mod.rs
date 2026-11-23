@@ -339,3 +339,5 @@ pub mod score_contents;
 pub mod chat_type;
 pub mod clientbound_chunks_biomes_packet;
 pub mod hover_event;
+pub mod nbt_contents;
+pub mod entity_data_serializers;

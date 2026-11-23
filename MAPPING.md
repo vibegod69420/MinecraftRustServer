@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7015** across **1513** classes.
+Total mapped Java symbols: **7036** across **1516** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2667,6 +2667,20 @@ Total mapped Java symbols: **7015** across **1513** classes.
 | `net.minecraft.network.chat.contents.KeybindContents#visit(FormattedText$StyledContentConsumer, Style)` | `crates/mc-protocol/src/ported/keybind_contents.rs` | 156 | `visit_styled` |
 | `net.minecraft.network.chat.contents.KeybindContents#visit(FormattedText$StyledContentConsumer, Style)` | `crates/mc-protocol/src/ported/keybind_contents.rs` | 187 | `visit_styled` |
 | `net.minecraft.network.chat.contents.KeybindResolver#setKeyResolver` | `crates/mc-protocol/src/ported/keybind_resolver.rs` | 33 | `set_key_resolver` |
+| `net.minecraft.network.chat.contents.NbtContents#<init>` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 241 | `new` |
+| `net.minecraft.network.chat.contents.NbtContents#<init>` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 258 | `new_with_compiled` |
+| `net.minecraft.network.chat.contents.NbtContents#MAP_CODEC` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 402 | `map_codec` |
+| `net.minecraft.network.chat.contents.NbtContents#asString` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 414 | `as_string` |
+| `net.minecraft.network.chat.contents.NbtContents#codec` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 396 | `codec` |
+| `net.minecraft.network.chat.contents.NbtContents#compileNbtPath` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 409 | `compile_nbt_path` |
+| `net.minecraft.network.chat.contents.NbtContents#equals` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 295 | `java_equals` |
+| `net.minecraft.network.chat.contents.NbtContents#getDataSource` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 290 | `get_data_source` |
+| `net.minecraft.network.chat.contents.NbtContents#getNbtPath` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 275 | `get_nbt_path` |
+| `net.minecraft.network.chat.contents.NbtContents#getSeparator` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 285 | `get_separator` |
+| `net.minecraft.network.chat.contents.NbtContents#hashCode` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 303 | `java_hash_code` |
+| `net.minecraft.network.chat.contents.NbtContents#isInterpreting` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 280 | `is_interpreting` |
+| `net.minecraft.network.chat.contents.NbtContents#resolve` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 326 | `resolve` |
+| `net.minecraft.network.chat.contents.NbtContents#toString` | `crates/mc-protocol/src/ported/nbt_contents.rs` | 316 | `java_to_string` |
 | `net.minecraft.network.chat.contents.ObjectContents#PLACEHOLDER` | `crates/mc-protocol/src/ported/object_contents.rs` | 4 | `<item>` |
 | `net.minecraft.network.chat.contents.ObjectContents#codec` | `crates/mc-protocol/src/ported/object_contents.rs` | 66 | `codec` |
 | `net.minecraft.network.chat.contents.ObjectContents#visit` | `crates/mc-protocol/src/ported/object_contents.rs` | 71 | `visit` |
@@ -4550,6 +4564,13 @@ Total mapped Java symbols: **7015** across **1513** classes.
 | `net.minecraft.network.syncher.EntityDataSerializer#createAccessor` | `crates/mc-protocol/src/ported/entity_data_serializer.rs` | 115 | `create_accessor` |
 | `net.minecraft.network.syncher.EntityDataSerializer#forValueType` | `crates/mc-protocol/src/ported/entity_data_serializer.rs` | 154 | `for_value_type` |
 | `net.minecraft.network.syncher.EntityDataSerializer$ForValueType#copy` | `crates/mc-protocol/src/ported/entity_data_serializer.rs` | 125 | `copy_value_type` |
+| `net.minecraft.network.syncher.EntityDataSerializers#OPTIONAL_BLOCK_STATE_CODEC.decode` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 155 | `optional_block_state_decode` |
+| `net.minecraft.network.syncher.EntityDataSerializers#OPTIONAL_BLOCK_STATE_CODEC.encode` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 167 | `optional_block_state_encode` |
+| `net.minecraft.network.syncher.EntityDataSerializers#OPTIONAL_UNSIGNED_INT_CODEC.decode` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 178 | `optional_unsigned_int_decode` |
+| `net.minecraft.network.syncher.EntityDataSerializers#OPTIONAL_UNSIGNED_INT_CODEC.encode` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 189 | `optional_unsigned_int_encode` |
+| `net.minecraft.network.syncher.EntityDataSerializers#getSerializedId` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 141 | `get_serialized_id` |
+| `net.minecraft.network.syncher.EntityDataSerializers#getSerializer` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 129 | `get_serializer` |
+| `net.minecraft.network.syncher.EntityDataSerializers#registerSerializer` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 121 | `register_serializer` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
 | `net.minecraft.network.syncher.SynchedEntityData.DataValue#read` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 117 | `read` |
@@ -8823,4 +8844,5 @@ Total mapped Java symbols: **7015** across **1513** classes.
 | `return new Weighted<>($$0.apply(this.value()), this.weight)` | `crates/mc-math/src/ported/weighted.rs` | 111 | `<item>` |
 | `sanitizeName replaces ILLEGAL_FILE_CHARACTERS with` | `crates/mc-math/src/ported/file_util.rs` | 547 | `<item>` |
 | `should return a relative name that was available` | `crates/mc-math/src/ported/file_util.rs` | 616 | `<item>` |
+| `static initializer registration order` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 24 | `<item>` |
 | `throw Util.pauseInIde(new IllegalArgumentException(` | `crates/mc-math/src/ported/weighted.rs` | 56 | `<item>` |
