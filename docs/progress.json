@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:36:02 UTC",
-  "updated_epoch": 1795394162,
+  "updated_at": "2026-11-23 00:37:02 UTC",
+  "updated_epoch": 1795394222,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 13.3184,
     "method_coverage_pct": 5.7472,
     "harness_verified_classes": 629,
-    "harness_failed_attempts": 112
+    "harness_failed_attempts": 116
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 571,
-    "prompt_tokens": 1467340,
-    "completion_tokens": 7538875,
-    "reasoning_tokens": 5414682,
-    "avg_latency_s": 201.8
+    "calls_total": 574,
+    "prompt_tokens": 1483498,
+    "completion_tokens": 7583356,
+    "reasoning_tokens": 5446601,
+    "avg_latency_s": 201.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:37:02Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 411.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:36:24Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.CompositeEntryBase",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 373.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:36:24Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.EntryGroup",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 373.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:36:24Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 373.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:35:50Z",
       "class_name": "net.minecraft.network.protocol.game.ClientboundHurtAnimationPacket",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 582.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:26:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 582.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:26:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.heightproviders.UniformHeight",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 582.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:24:53Z",
-      "class_name": "net.minecraft.util.BoundedFloatFunction",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 529.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:24:53Z",
-      "class_name": "net.minecraft.util.FutureChain",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 529.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "18b9ead",
+      "ts": "2026-11-23T00:36:02+00:00",
+      "message": "Worker sync: 3832 mapped Java methods"
+    },
     {
       "sha": "26e5875",
       "ts": "2026-11-23T00:35:50+00:00",
@@ -445,11 +450,6 @@
       "sha": "998f311",
       "ts": "2026-11-23T00:20:15+00:00",
       "message": "Worker sync: 3592 mapped Java methods"
-    },
-    {
-      "sha": "322da77",
-      "ts": "2026-11-23T00:18:26+00:00",
-      "message": "Port 10 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
