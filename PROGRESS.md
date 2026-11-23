@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 20:52:23 UTC
+- **Updated**: 2026-11-23 20:54:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9407 / 66676 (14.108%)
 - **Mapped Java Classes**: 2141 / 7163 (29.890%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (62.1s)
 - [PASS] `net.minecraft.world.level.storage.ValueInputContextHelper` -> `mc-nbt` (2759.8s)
 - [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (11233.4s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (2531.4s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (9533.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (9533.7s)
 - [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (9546.7s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature` -> `mc-worldgen` (9448.5s)
