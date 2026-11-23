@@ -116,3 +116,4 @@ pub mod nested_loot_table;
 pub mod set_enchantments_function;
 pub mod loot_context_arg;
 pub mod derived_level_data;
+pub mod set_stew_effect_function;
