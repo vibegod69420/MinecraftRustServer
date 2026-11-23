@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8838** across **2009** classes.
+Total mapped Java symbols: **8852** across **2012** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6085,6 +6085,8 @@ Total mapped Java symbols: **8838** across **2009** classes.
 | `net.minecraft.util.datafix.ExtraDataFixUtils#cast` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 48 | `cast` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#fixBlockPos` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 115 | `fix_block_pos` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#fixInlineBlockPos` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 52 | `<item>` |
+| `net.minecraft.util.datafix.ExtraDataFixUtils#fixStringField` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 79 | `fix_string_field` |
+| `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createPlainTextComponent` | `crates/mc-math/src/ported/block_entity_custom_name_to_component_fix.rs` | 52 | `create_plain_text_component` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_custom_name_to_component_fix.rs` | 55 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_lore_fix.rs` | 45 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 11 | `create_text_component_json` |
@@ -6118,6 +6120,12 @@ Total mapped Java symbols: **8838** across **2009** classes.
 | `net.minecraft.util.datafix.fixes.AreaEffectCloudPotionFix#fix` | `crates/mc-math/src/ported/area_effect_cloud_potion_fix.rs` | 129 | `fix_dynamic` |
 | `net.minecraft.util.datafix.fixes.AttributeIdPrefixFix#AttributeIdPrefixFix` | `crates/mc-math/src/ported/attribute_id_prefix_fix.rs` | 25 | `new` |
 | `net.minecraft.util.datafix.fixes.AttributeIdPrefixFix#replaceId` | `crates/mc-math/src/ported/attribute_id_prefix_fix.rs` | 33 | `replace_id` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#<init>` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 93 | `new` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#fixDataComponents` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 108 | `fix_data_components` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#fixEntity` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 127 | `fix_entity` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#fixIdField` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 144 | `fix_id_field` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#fixTypeField` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 149 | `fix_type_field` |
+| `net.minecraft.util.datafix.fixes.AttributesRenameFix#makeRule` | `crates/mc-math/src/ported/attributes_rename_fix.rs` | 101 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.BedItemColorFix#<init>` | `crates/mc-math/src/ported/bed_item_color_fix.rs` | 53 | `new` |
 | `net.minecraft.util.datafix.fixes.BedItemColorFix#makeRule` | `crates/mc-math/src/ported/bed_item_color_fix.rs` | 58 | `apply` |
 | `net.minecraft.util.datafix.fixes.BlendingDataRemoveFromNetherEndFix#apply` | `crates/mc-math/src/ported/blending_data_remove_from_nether_end_fix.rs` | 17 | `apply` |
@@ -6129,6 +6137,9 @@ Total mapped Java symbols: **8838** across **2009** classes.
 | `net.minecraft.util.datafix.fixes.BlockEntityBlockStateFix#<init>` | `crates/mc-math/src/ported/block_entity_block_state_fix.rs` | 150 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityBlockStateFix#fix` | `crates/mc-math/src/ported/block_entity_block_state_fix.rs` | 155 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityBlockStateFix#fix` | `crates/mc-math/src/ported/block_entity_block_state_fix.rs` | 163 | `fix_with` |
+| `net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix#<init>` | `crates/mc-math/src/ported/block_entity_custom_name_to_component_fix.rs` | 75 | `new` |
+| `net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix#fixTagCustomName` | `crates/mc-math/src/ported/block_entity_custom_name_to_component_fix.rs` | 96 | `fix_tag_custom_name` |
+| `net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix#makeRule` | `crates/mc-math/src/ported/block_entity_custom_name_to_component_fix.rs` | 84 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#<init>` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 54 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fix` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 70 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fixBurnTime` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 61 | `fix_burn_time` |
@@ -6466,6 +6477,9 @@ Total mapped Java symbols: **8838** across **2009** classes.
 | `net.minecraft.util.datafix.fixes.UnflattenTextComponentFix#unflattenJson` | `crates/mc-math/src/ported/unflatten_text_component_fix.rs` | 3 | `unflatten_json` |
 | `net.minecraft.util.datafix.fixes.VariantRenameFix#<init>` | `crates/mc-math/src/ported/variant_rename_fix.rs` | 19 | `new` |
 | `net.minecraft.util.datafix.fixes.VariantRenameFix#fix` | `crates/mc-math/src/ported/variant_rename_fix.rs` | 24 | `fix` |
+| `net.minecraft.util.datafix.fixes.VillagerDataFix#<init>` | `crates/mc-math/src/ported/villager_data_fix.rs` | 101 | `new` |
+| `net.minecraft.util.datafix.fixes.VillagerDataFix#fix` | `crates/mc-math/src/ported/villager_data_fix.rs` | 106 | `fix` |
+| `net.minecraft.util.datafix.fixes.VillagerDataFix#upgradeData` | `crates/mc-math/src/ported/villager_data_fix.rs` | 137 | `upgrade_data` |
 | `net.minecraft.util.datafix.fixes.VillagerFollowRangeFix#apply` | `crates/mc-math/src/ported/villager_follow_range_fix.rs` | 18 | `apply` |
 | `net.minecraft.util.datafix.fixes.VillagerFollowRangeFix#fix` | `crates/mc-math/src/ported/villager_follow_range_fix.rs` | 13 | `<item>` |
 | `net.minecraft.util.datafix.fixes.VillagerFollowRangeFix#fixValue` | `crates/mc-math/src/ported/villager_follow_range_fix.rs` | 3 | `fix_villager_follow_range` |

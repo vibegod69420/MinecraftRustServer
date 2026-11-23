@@ -511,3 +511,6 @@ pub mod unflatten_text_component_fix;
 pub mod feature_flag_remove_fix;
 pub mod block_entity_id_fix;
 pub mod scoreboard_display_slot_fix;
+pub mod attributes_rename_fix;
+pub mod block_entity_custom_name_to_component_fix;
+pub mod villager_data_fix;
