@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:10:27 UTC
+- **Updated**: 2026-11-23 01:11:58 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 4591 / 66676 (6.886%)
-- **Mapped Java Classes**: 1109 / 7163 (15.482%)
+- **Mapped Java Methods**: 4683 / 66676 (7.024%)
+- **Mapped Java Classes**: 1119 / 7163 (15.622%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 1597 mapped methods
-- `mc-nbt`: 1347 mapped methods
+- `mc-math`: 1651 mapped methods
+- `mc-nbt`: 1390 mapped methods
 - `mc-protocol`: 1518 mapped methods
-- `mc-worldgen`: 1253 mapped methods
+- `mc-worldgen`: 1260 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction` -> `mc-nbt` (303.1s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.SetCustomModelDataFunction` -> `mc-nbt` (466.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure` -> `mc-worldgen` (454.5s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure` -> `mc-worldgen` (454.5s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap` -> `mc-math` (230.0s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundEntityEventPacket` -> `mc-protocol` (299.8s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetBorderCenterPacket` -> `mc-protocol` (299.8s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket` -> `mc-protocol` (299.8s)

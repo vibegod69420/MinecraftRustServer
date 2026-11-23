@@ -222,3 +222,4 @@ pub mod structure_processor_type;
 pub mod capped_processor;
 pub mod noise_threshold_provider;
 pub mod dual_noise_provider;
+pub mod trapezoid_height;
