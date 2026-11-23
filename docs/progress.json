@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:12:02 UTC",
-  "updated_epoch": 1795399922,
+  "updated_at": "2026-11-23 02:13:47 UTC",
+  "updated_epoch": 1795400027,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1270,
-    "mapped_methods": 5458,
-    "class_coverage_pct": 17.73,
-    "method_coverage_pct": 8.1859,
-    "harness_verified_classes": 812,
-    "harness_failed_attempts": 168
+    "mapped_classes": 1276,
+    "mapped_methods": 5487,
+    "class_coverage_pct": 17.8138,
+    "method_coverage_pct": 8.2293,
+    "harness_verified_classes": 816,
+    "harness_failed_attempts": 169
   },
   "crates": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 1924
+      "mapped_methods": 1939
     },
     {
       "name": "mc-nbt",
@@ -43,17 +43,57 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 1338
+      "mapped_methods": 1355
     }
   ],
   "usage": {
-    "calls_total": 819,
-    "prompt_tokens": 2272470,
-    "completion_tokens": 12006572,
-    "reasoning_tokens": 8594104,
-    "avg_latency_s": 230.9
+    "calls_total": 823,
+    "prompt_tokens": 2286229,
+    "completion_tokens": 12138063,
+    "reasoning_tokens": 8706588,
+    "avg_latency_s": 232.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T02:13:46Z",
+      "class_name": "net.minecraft.util.PlaceholderLookupProvider",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1371.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:12:39Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1304.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:12:39Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1304.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:12:39Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1304.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:12:12Z",
+      "class_name": "net.minecraft.util.HashOps",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 837.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T02:11:45Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
@@ -333,49 +373,14 @@
       "verified": true,
       "seconds": 388.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:57:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundJigsawGeneratePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:57:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:57:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundBlockDestructionPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:56:20Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetExperiencePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 325.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:56:20Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundUseItemOnPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 325.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b60902b",
+      "ts": "2026-11-23T02:12:02+00:00",
+      "message": "Worker sync: 5458 mapped Java methods"
+    },
     {
       "sha": "8454ae9",
       "ts": "2026-11-23T02:11:46+00:00",
@@ -445,11 +450,6 @@
       "sha": "04f63fe",
       "ts": "2026-11-23T01:58:04+00:00",
       "message": "Worker sync: 5271 mapped Java methods"
-    },
-    {
-      "sha": "4a356e1",
-      "ts": "2026-11-23T01:56:20+00:00",
-      "message": "Port 5 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

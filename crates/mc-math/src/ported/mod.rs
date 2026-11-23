@@ -206,3 +206,4 @@ pub mod file_util;
 pub mod by_id_map;
 pub mod world_upgrader;
 pub mod extra_codecs;
+pub mod placeholder_lookup_provider;

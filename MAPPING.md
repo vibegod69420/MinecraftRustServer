@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5458** across **1270** classes.
+Total mapped Java symbols: **5487** across **1276** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3903,6 +3903,21 @@ Total mapped Java symbols: **5458** across **1270** classes.
 | `net.minecraft.util.ParticleUtils#spawnParticlesOnBlockFace` | `crates/mc-math/src/ported/particle_utils.rs` | 237 | `spawn_particles_on_block_face` |
 | `net.minecraft.util.ParticleUtils#spawnParticlesOnBlockFaces` | `crates/mc-math/src/ported/particle_utils.rs` | 217 | `spawn_particles_on_block_faces` |
 | `net.minecraft.util.ParticleUtils#spawnSmashAttackParticles` | `crates/mc-math/src/ported/particle_utils.rs` | 397 | `spawn_smash_attack_particles` |
+| `net.minecraft.util.PlaceholderLookupProvider#<init>` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 502 | `new` |
+| `net.minecraft.util.PlaceholderLookupProvider#createSerializationContext` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 530 | `create_serialization_context` |
+| `net.minecraft.util.PlaceholderLookupProvider#createSerializationContext$RegistryInfoLookup#lookup` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 450 | `lookup_erased` |
+| `net.minecraft.util.PlaceholderLookupProvider#createSwapper` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 544 | `create_swapper` |
+| `net.minecraft.util.PlaceholderLookupProvider#createSwapper$RegistryContextSwapper#swapTo` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 470 | `swap_to` |
+| `net.minecraft.util.PlaceholderLookupProvider#hasRegisteredPlaceholders` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 518 | `has_registered_placeholders` |
+| `net.minecraft.util.PlaceholderLookupProvider#lookup` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 513 | `lookup` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#castAsLookup` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 289 | `cast_as_lookup` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#castAsOwner` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 294 | `cast_as_owner` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#get(ResourceKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 243 | `get_resource` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#get(TagKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 266 | `get_tag` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#getOrCreate(ResourceKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 253 | `get_or_create_resource` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#getOrCreate(TagKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 276 | `get_or_create_tag` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#getOrThrow(ResourceKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 248 | `get_or_throw_resource` |
+| `net.minecraft.util.PlaceholderLookupProvider.UniversalLookup#getOrThrow(TagKey)` | `crates/mc-math/src/ported/placeholder_lookup_provider.rs` | 271 | `get_or_throw_tag` |
 | `net.minecraft.util.PngInfo#fromBytes` | `crates/mc-math/src/ported/png_info.rs` | 45 | `from_bytes` |
 | `net.minecraft.util.PngInfo#fromStream` | `crates/mc-math/src/ported/png_info.rs` | 14 | `from_stream` |
 | `net.minecraft.util.PngInfo#validateHeader` | `crates/mc-math/src/ported/png_info.rs` | 51 | `validate_header` |
@@ -4771,7 +4786,9 @@ Total mapped Java symbols: **5458** across **1270** classes.
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 115 | `state_by_id` |
 | `net.minecraft.world.level.block.Blocks#VINE (defaultBlockState)` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 106 | `vine_default_state` |
 | `net.minecraft.world.level.block.ChorusFlowerBlock#generatePlant` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 92 | `generate_plant` |
+| `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 55 | `get_random` |
 | `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 53 | `get_random` |
+| `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 117 | `get_random` |
 | `net.minecraft.world.level.block.VineBlock#getPropertyForFace` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 68 | `get_property_for_face` |
 | `net.minecraft.world.level.block.entity.BannerPatternLayers$Builder#<init>` | `crates/mc-nbt/src/ported/set_banner_pattern_function.rs` | 67 | `new` |
 | `net.minecraft.world.level.block.entity.BannerPatternLayers$Builder#add` | `crates/mc-nbt/src/ported/set_banner_pattern_function.rs` | 72 | `add` |
@@ -5635,6 +5652,7 @@ Total mapped Java symbols: **5458** across **1270** classes.
 | `net.minecraft.world.level.levelgen.structure.Structure#getMeanFirstOccupiedHeight` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 236 | `get_mean_first_occupied_height` |
 | `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 129 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/igloo_structure.rs` | 226 | `on_top_of_chunk_center` |
+| `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 133 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 105 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.Structure#onTopOfChunkCenter` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 119 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.Structure#simpleCodec` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 17 | `simple_codec` |
@@ -5761,6 +5779,15 @@ Total mapped Java symbols: **5458** across **1270** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 262 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#generatePieces` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 275 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#type` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 301 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#<init>` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 141 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 146 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure#type` | `crates/mc-worldgen/src/ported/nether_fossil_structure.rs` | 180 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#<init>` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 156 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 171 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#generatePieces` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 181 | `generate_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#type` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 198 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 90 | `get_name` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getSerializedName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 98 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#<init>` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 285 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 293 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#generatePieces` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 307 | `generate_pieces` |
@@ -5774,6 +5801,11 @@ Total mapped Java symbols: **5458** across **1270** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 154 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#generatePieces` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 161 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.structures.SwampHutStructure#type` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 170 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure#<init>` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 205 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure#afterPlace` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 232 | `after_place` |
+| `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 210 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure#generatePieces` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 225 | `generate_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionStructure#type` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 277 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 67 | `test` |

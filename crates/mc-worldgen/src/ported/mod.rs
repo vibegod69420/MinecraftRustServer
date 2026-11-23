@@ -237,3 +237,6 @@ pub mod bonus_chest_feature;
 pub mod pointed_dripstone_feature;
 pub mod coral_feature;
 pub mod waterlogged_vegetation_patch_feature;
+pub mod nether_fossil_structure;
+pub mod ocean_ruin_structure;
+pub mod woodland_mansion_structure;
