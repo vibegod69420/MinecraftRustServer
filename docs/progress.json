@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 05:54:10 UTC",
-  "updated_epoch": 1795413250,
+  "updated_at": "2026-11-23 05:58:01 UTC",
+  "updated_epoch": 1795413481,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 22.1555,
     "method_coverage_pct": 11.2244,
     "harness_verified_classes": 984,
-    "harness_failed_attempts": 273
+    "harness_failed_attempts": 275
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 1345,
-    "prompt_tokens": 3845792,
-    "completion_tokens": 21866934,
-    "reasoning_tokens": 15810174,
-    "avg_latency_s": 263.9
+    "calls_total": 1353,
+    "prompt_tokens": 3870839,
+    "completion_tokens": 21998291,
+    "reasoning_tokens": 15906169,
+    "avg_latency_s": 264.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T05:56:37Z",
+      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 609.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T05:55:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1129.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T05:54:08Z",
       "class_name": "net.minecraft.server.ServerTickRateManager",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 2650.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T04:50:40Z",
-      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 864.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T04:50:40Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 621.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "98b2815",
+      "ts": "2026-11-23T05:54:10+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "0f388a4",
       "ts": "2026-11-23T05:54:09+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "3ac4057",
       "ts": "2026-11-23T05:11:15+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "3c083f1",
-      "ts": "2026-11-23T05:08:41+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]

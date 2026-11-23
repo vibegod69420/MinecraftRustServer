@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:54:08 UTC
+- **Updated**: 2026-11-23 05:58:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7484 / 66676 (11.224%)
 - **Mapped Java Classes**: 1587 / 7163 (22.155%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2136 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.presets.WorldPresets` -> `mc-worldgen` (609.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (1129.3s)
 - [PASS] `net.minecraft.server.ServerTickRateManager` -> `mc-protocol` (1071.7s)
 - [FAIL] `net.minecraft.network.Connection` -> `mc-protocol` (1046.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (331.3s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.MonsterRoomFeature` -> `mc-worldgen` (280.2s)
 - [PASS] `net.minecraft.world.level.chunk.storage.RegionBitmap` -> `mc-worldgen` (259.4s)
 - [PASS] `net.minecraft.world.level.chunk.storage.LegacyTagFixer` -> `mc-worldgen` (259.4s)
-- [PASS] `net.minecraft.world.level.chunk.storage.RegionStorageInfo` -> `mc-worldgen` (259.4s)
-- [PASS] `net.minecraft.world.level.chunk.storage.ChunkScanAccess` -> `mc-worldgen` (259.4s)
