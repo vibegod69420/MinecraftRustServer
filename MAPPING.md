@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3696** across **927** classes.
+Total mapped Java symbols: **3725** across **934** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -42,6 +42,16 @@ Total mapped Java symbols: **3696** across **927** classes.
 | `com.mojang.math.Transformation#identity` | `crates/mc-math/src/ported/block_math.rs` | 243 | `identity` |
 | `com.mojang.math.Transformation#inverse` | `crates/mc-math/src/ported/block_math.rs` | 271 | `inverse` |
 | `com.mojang.serialization.Codec#fieldOf` | `crates/mc-protocol/src/ported/fixed_format.rs` | 51 | `field_of` |
+| `com.mojang.serialization.DataResult` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 26 | `<item>` |
+| `com.mojang.serialization.DataResult#apply2stable` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 98 | `apply2stable` |
+| `com.mojang.serialization.DataResult#error` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 54 | `error` |
+| `com.mojang.serialization.DataResult#flatMap` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 79 | `flat_map` |
+| `com.mojang.serialization.DataResult#map` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 63 | `map` |
+| `com.mojang.serialization.DataResult#mapError` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 117 | `map_error` |
+| `com.mojang.serialization.DataResult#success` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 45 | `success` |
+| `com.mojang.serialization.DynamicOps` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 154 | `empty` |
+| `com.mojang.serialization.Lifecycle` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 3 | `<item>` |
+| `com.mojang.serialization.ListBuilder` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 159 | `ops` |
 | `com.mojang.serialization.MapCodec#codec` | `crates/mc-protocol/src/ported/number_format_types.rs` | 20 | `codec` |
 | `com.mojang.serialization.MapCodec#unit` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 55 | `unit` |
 | `com.mojang.serialization.MapCodec#unit` | `crates/mc-protocol/src/ported/blank_format.rs` | 38 | `unit` |
@@ -59,6 +69,7 @@ Total mapped Java symbols: **3696** across **927** classes.
 | `java.lang.Math#round` | `crates/mc-nbt/src/ported/constant_value.rs` | 41 | `java_math_round_f32` |
 | `java.lang.Math#round` | `crates/mc-nbt/src/ported/enchantment_level_provider.rs` | 75 | `java_math_round_f32` |
 | `java.lang.Math#round` | `crates/mc-nbt/src/ported/number_provider.rs` | 12 | `java_math_round_f32` |
+| `java.lang.Math#round(float)` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 114 | `java_math_round_f32` |
 | `java.util.concurrent.CompletableFuture` | `crates/mc-math/src/ported/task_scheduler.rs` | 5 | `clone` |
 | `java.util.concurrent.CompletableFuture#complete` | `crates/mc-math/src/ported/task_scheduler.rs` | 32 | `complete` |
 | `java.util.concurrent.CompletableFuture#completedFuture` | `crates/mc-math/src/ported/future_chain.rs` | 50 | `completed_future` |
@@ -2387,6 +2398,17 @@ Total mapped Java symbols: **3696** across **927** classes.
 | `net.minecraft.util.AbortableIterationConsumer#accept` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 23 | `accept` |
 | `net.minecraft.util.AbortableIterationConsumer#forConsumer` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 29 | `for_consumer` |
 | `net.minecraft.util.AbortableIterationConsumer.Continuation#shouldAbort` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 8 | `should_abort` |
+| `net.minecraft.util.AbstractListBuilder` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 169 | `<item>` |
+| `net.minecraft.util.AbstractListBuilder#<init>` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 179 | `new` |
+| `net.minecraft.util.AbstractListBuilder#add(DataResult)` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 223 | `add_result` |
+| `net.minecraft.util.AbstractListBuilder#add(T)` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 216 | `add` |
+| `net.minecraft.util.AbstractListBuilder#append` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 206 | `append` |
+| `net.minecraft.util.AbstractListBuilder#build(B,T)` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 211 | `build_value` |
+| `net.minecraft.util.AbstractListBuilder#build(T)` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 244 | `build` |
+| `net.minecraft.util.AbstractListBuilder#initBuilder` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 201 | `init_builder` |
+| `net.minecraft.util.AbstractListBuilder#mapError` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 237 | `map_error` |
+| `net.minecraft.util.AbstractListBuilder#ops` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 196 | `ops` |
+| `net.minecraft.util.AbstractListBuilder#withErrorsFrom` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 230 | `with_errors_from` |
 | `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 24 | `with_easing` |
 | `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 34 | `new` |
 | `net.minecraft.util.BinaryAnimator#getFactor` | `crates/mc-math/src/ported/binary_animator.rs` | 51 | `get_factor` |
@@ -3307,6 +3329,9 @@ Total mapped Java symbols: **3696** across **927** classes.
 | `net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature#place(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext)` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 67 | `place` |
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#<init>` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 31 | `new` |
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#place` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 38 | `place` |
+| `net.minecraft.world.level.levelgen.feature.OreFeature#canPlaceOre` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 165 | `can_place_ore` |
+| `net.minecraft.world.level.levelgen.feature.OreFeature#isAdjacentToAir` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 142 | `is_adjacent_to_air` |
+| `net.minecraft.world.level.levelgen.feature.OreFeature#shouldSkipAirCheck` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 131 | `should_skip_air_check` |
 | `net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature#<init>` | `crates/mc-worldgen/src/ported/random_boolean_selector_feature.rs` | 82 | `new` |
 | `net.minecraft.world.level.levelgen.feature.RandomBooleanSelectorFeature#place` | `crates/mc-worldgen/src/ported/random_boolean_selector_feature.rs` | 87 | `place` |
 | `net.minecraft.world.level.levelgen.feature.RandomPatchFeature#<init>` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 106 | `new` |
@@ -3315,6 +3340,10 @@ Total mapped Java symbols: **3696** across **927** classes.
 | `net.minecraft.world.level.levelgen.feature.RandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 107 | `place` |
 | `net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature#<init>` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 98 | `new` |
 | `net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature#place` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 112 | `place` |
+| `net.minecraft.world.level.levelgen.feature.ScatteredOreFeature#ScatteredOreFeature` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 189 | `new` |
+| `net.minecraft.world.level.levelgen.feature.ScatteredOreFeature#getRandomPlacementInOneAxisRelativeToOrigin` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 249 | `get_random_placement_in_one_axis_relative_to_origin` |
+| `net.minecraft.world.level.levelgen.feature.ScatteredOreFeature#offsetTargetPos` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 235 | `offset_target_pos` |
+| `net.minecraft.world.level.levelgen.feature.ScatteredOreFeature#place` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 194 | `place` |
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#<init>` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 81 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 86 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
