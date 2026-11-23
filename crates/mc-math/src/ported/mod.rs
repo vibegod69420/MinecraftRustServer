@@ -149,3 +149,7 @@ pub mod task_chainer;
 pub mod file_system_util;
 pub mod debug_game_event_info;
 pub mod debug_goal_info;
+pub mod debug_bee_info;
+pub mod debug_poi_info;
+pub mod debug_structure_info;
+pub mod debug_hive_info;

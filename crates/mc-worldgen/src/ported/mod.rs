@@ -169,3 +169,5 @@ pub mod gravity_processor;
 pub mod axis_aligned_linear_pos_test;
 pub mod block_ignore_processor;
 pub mod block_rot_processor;
+pub mod coral_mushroom_feature;
+pub mod configured_feature;

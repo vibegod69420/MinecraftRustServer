@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3412** across **853** classes.
+Total mapped Java symbols: **3425** across **861** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2418,6 +2418,8 @@ Total mapped Java symbols: **3412** across **853** classes.
 | `net.minecraft.util.context.ContextMap$Builder#getParameter` | `crates/mc-math/src/ported/context_map.rs` | 328 | `get_parameter` |
 | `net.minecraft.util.context.ContextMap$Builder#withOptionalParameter` | `crates/mc-math/src/ported/context_map.rs` | 310 | `with_optional_parameter` |
 | `net.minecraft.util.context.ContextMap$Builder#withParameter` | `crates/mc-math/src/ported/context_map.rs` | 304 | `with_parameter` |
+| `net.minecraft.util.debug.DebugBeeInfo#<init>` | `crates/mc-math/src/ported/debug_bee_info.rs` | 14 | `new` |
+| `net.minecraft.util.debug.DebugBeeInfo#hasHive` | `crates/mc-math/src/ported/debug_bee_info.rs` | 29 | `has_hive` |
 | `net.minecraft.util.debug.DebugBreezeInfo#<init>` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 10 | `new` |
 | `net.minecraft.util.debug.DebugBreezeInfo#attackTarget` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 18 | `attack_target` |
 | `net.minecraft.util.debug.DebugBreezeInfo#jumpTarget` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 23 | `jump_target` |
@@ -2435,9 +2437,15 @@ Total mapped Java symbols: **3412** across **853** classes.
 | `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#isRunning` | `crates/mc-math/src/ported/debug_goal_info.rs` | 34 | `is_running` |
 | `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#name` | `crates/mc-math/src/ported/debug_goal_info.rs` | 39 | `name` |
 | `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#priority` | `crates/mc-math/src/ported/debug_goal_info.rs` | 29 | `priority` |
+| `net.minecraft.util.debug.DebugHiveInfo#<init>` | `crates/mc-math/src/ported/debug_hive_info.rs` | 65 | `new` |
+| `net.minecraft.util.debug.DebugHiveInfo#pack` | `crates/mc-math/src/ported/debug_hive_info.rs` | 75 | `pack` |
 | `net.minecraft.util.debug.DebugPathInfo#<init>` | `crates/mc-math/src/ported/debug_path_info.rs` | 12 | `new` |
 | `net.minecraft.util.debug.DebugPathInfo#maxNodeDistance` | `crates/mc-math/src/ported/debug_path_info.rs` | 25 | `max_node_distance` |
 | `net.minecraft.util.debug.DebugPathInfo#path` | `crates/mc-math/src/ported/debug_path_info.rs` | 20 | `path` |
+| `net.minecraft.util.debug.DebugPoiInfo#<init>` | `crates/mc-math/src/ported/debug_poi_info.rs` | 61 | `new` |
+| `net.minecraft.util.debug.DebugPoiInfo#<init>` | `crates/mc-math/src/ported/debug_poi_info.rs` | 70 | `from_poi_record` |
+| `net.minecraft.util.debug.DebugStructureInfo#<init>` | `crates/mc-math/src/ported/debug_structure_info.rs` | 52 | `new` |
+| `net.minecraft.util.debug.DebugStructureInfo$Piece#<init>` | `crates/mc-math/src/ported/debug_structure_info.rs` | 34 | `new` |
 | `net.minecraft.util.debug.DebugSubscription$Update#<init>` | `crates/mc-protocol/src/ported/clientbound_debug_chunk_value_packet.rs` | 38 | `new` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachBlock` | `crates/mc-math/src/ported/debug_value_access.rs` | 68 | `for_each_block` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachChunk` | `crates/mc-math/src/ported/debug_value_access.rs` | 54 | `for_each_chunk` |
@@ -2800,6 +2808,7 @@ Total mapped Java symbols: **3412** across **853** classes.
 | `net.minecraft.world.level.block.Blocks#VINE (defaultBlockState)` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 106 | `vine_default_state` |
 | `net.minecraft.world.level.block.ChorusFlowerBlock#generatePlant` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 92 | `generate_plant` |
 | `net.minecraft.world.level.block.VineBlock#getPropertyForFace` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 68 | `get_property_for_face` |
+| `net.minecraft.world.level.block.entity.BeehiveBlockEntity#getHoneyLevel` | `crates/mc-math/src/ported/debug_hive_info.rs` | 48 | `get_honey_level` |
 | `net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase#getBlock` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 16 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getBlock` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 48 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getShape` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 34 | `get_shape` |
@@ -2988,6 +2997,11 @@ Total mapped Java symbols: **3412** across **853** classes.
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getYScale` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 163 | `get_y_scale` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#<init>` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 106 | `new` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#place` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 111 | `place` |
+| `net.minecraft.world.level.levelgen.feature.ConfiguredFeature#getFeatures` | `crates/mc-worldgen/src/ported/configured_feature.rs` | 68 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.ConfiguredFeature#place` | `crates/mc-worldgen/src/ported/configured_feature.rs` | 50 | `place` |
+| `net.minecraft.world.level.levelgen.feature.ConfiguredFeature#toString` | `crates/mc-worldgen/src/ported/configured_feature.rs` | 92 | `fmt` |
+| `net.minecraft.world.level.levelgen.feature.CoralMushroomFeature#<init>` | `crates/mc-worldgen/src/ported/coral_mushroom_feature.rs` | 118 | `new` |
+| `net.minecraft.world.level.levelgen.feature.CoralMushroomFeature#placeFeature` | `crates/mc-worldgen/src/ported/coral_mushroom_feature.rs` | 123 | `place_feature` |
 | `net.minecraft.world.level.levelgen.feature.EndIslandFeature#<init>` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 65 | `new` |
 | `net.minecraft.world.level.levelgen.feature.EndIslandFeature#place` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 80 | `place` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 108 | `new` |
