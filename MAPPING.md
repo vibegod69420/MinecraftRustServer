@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9123** across **2092** classes.
+Total mapped Java symbols: **9132** across **2093** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6499,6 +6499,15 @@ Total mapped Java symbols: **9123** across **2092** classes.
 | `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#isIglooPiece` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 125 | `is_igloo_piece` |
 | `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#makeRule` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 90 | `apply` |
 | `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#removeIglooPieces` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 111 | `remove_igloo_pieces` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#<init>` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 222 | `new` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#entityFinder` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 242 | `entity_finder` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixBlockAttached` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 322 | `fix_block_attached` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixLivingEntity` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 285 | `fix_living_entity` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixPhantom` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 301 | `fix_phantom` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixPlayer` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 247 | `fix_player` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixTurtle` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 312 | `fix_turtle` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#fixVex` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 290 | `fix_vex` |
+| `net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix#makeRule` | `crates/mc-math/src/ported/inline_block_pos_format_fix.rs` | 227 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.InvalidBlockEntityLockFix#<init>` | `crates/mc-math/src/ported/invalid_block_entity_lock_fix.rs` | 60 | `new` |
 | `net.minecraft.util.datafix.fixes.InvalidBlockEntityLockFix#makeRule` | `crates/mc-math/src/ported/invalid_block_entity_lock_fix.rs` | 65 | `fix_dynamic` |
 | `net.minecraft.util.datafix.fixes.InvalidLockComponentFix#<init>` | `crates/mc-math/src/ported/invalid_lock_component_fix.rs` | 32 | `new` |

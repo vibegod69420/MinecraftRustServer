@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 13:16:34 UTC",
-  "updated_epoch": 1795439794,
+  "updated_at": "2026-11-23 13:20:27 UTC",
+  "updated_epoch": 1795440027,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 2092,
-    "mapped_methods": 9123,
-    "class_coverage_pct": 29.2056,
-    "method_coverage_pct": 13.6826,
-    "harness_verified_classes": 1330,
+    "mapped_classes": 2093,
+    "mapped_methods": 9132,
+    "class_coverage_pct": 29.2196,
+    "method_coverage_pct": 13.6961,
+    "harness_verified_classes": 1332,
     "harness_failed_attempts": 374
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 3846
+      "mapped_methods": 3855
     },
     {
       "name": "mc-nbt",
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 1893,
-    "prompt_tokens": 6103868,
-    "completion_tokens": 30949485,
-    "reasoning_tokens": 22090684,
-    "avg_latency_s": 232.6
+    "calls_total": 1906,
+    "prompt_tokens": 6150285,
+    "completion_tokens": 31022739,
+    "reasoning_tokens": 22137344,
+    "avg_latency_s": 227.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T13:20:25Z",
+      "class_name": "net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 764.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T13:16:34Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 2396.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T13:07:41Z",
       "class_name": "net.minecraft.util.datafix.fixes.LegacyHoverEventFix",
@@ -357,25 +373,14 @@
       "verified": true,
       "seconds": 5678.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T11:54:22Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityCustomNameToComponentFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 5678.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T11:54:22Z",
-      "class_name": "net.minecraft.util.datafix.fixes.OverreachingTickFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 5678.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "eda6446",
+      "ts": "2026-11-23T13:16:34+00:00",
+      "message": "Port 10 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "67b0fed",
       "ts": "2026-11-23T13:16:07+00:00",
@@ -445,11 +450,6 @@
       "sha": "9fbd219",
       "ts": "2026-11-23T11:48:18+00:00",
       "message": "Worker sync: 8968 mapped Java methods"
-    },
-    {
-      "sha": "90c96df",
-      "ts": "2026-11-23T11:34:04+00:00",
-      "message": "Worker sync: 8958 mapped Java methods"
     }
   ]
 }
