@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4383** across **1071** classes.
+Total mapped Java symbols: **4387** across **1072** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3334,6 +3334,10 @@ Total mapped Java symbols: **4383** across **1071** classes.
 | `net.minecraft.util.debug.DebugSubscription$Update#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 169 | `write` |
 | `net.minecraft.util.debug.DebugSubscription$Update#subscription` | `crates/mc-math/src/ported/debug_subscription.rs` | 150 | `subscription` |
 | `net.minecraft.util.debug.DebugSubscription$Update#value` | `crates/mc-math/src/ported/debug_subscription.rs` | 155 | `value` |
+| `net.minecraft.util.debug.DebugSubscriptions#bootstrap` | `crates/mc-math/src/ported/debug_subscriptions.rs` | 183 | `bootstrap` |
+| `net.minecraft.util.debug.DebugSubscriptions#registerSimple` | `crates/mc-math/src/ported/debug_subscriptions.rs` | 188 | `register_simple` |
+| `net.minecraft.util.debug.DebugSubscriptions#registerTemporaryValue` | `crates/mc-math/src/ported/debug_subscriptions.rs` | 207 | `register_temporary_value` |
+| `net.minecraft.util.debug.DebugSubscriptions#registerWithValue` | `crates/mc-math/src/ported/debug_subscriptions.rs` | 196 | `register_with_value` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachBlock` | `crates/mc-math/src/ported/debug_value_access.rs` | 68 | `for_each_block` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachChunk` | `crates/mc-math/src/ported/debug_value_access.rs` | 54 | `for_each_chunk` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachEntity` | `crates/mc-math/src/ported/debug_value_access.rs` | 82 | `for_each_entity` |
