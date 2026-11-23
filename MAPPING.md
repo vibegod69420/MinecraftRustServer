@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6605** across **1439** classes.
+Total mapped Java symbols: **6636** across **1443** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2347,6 +2347,17 @@ Total mapped Java symbols: **6605** across **1439** classes.
 | `net.minecraft.network.chat.ChatType$Bound#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_disguised_chat_packet.rs` | 120 | `read` |
 | `net.minecraft.network.chat.ChatType$Bound#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_disguised_chat_packet.rs` | 137 | `write` |
 | `net.minecraft.network.chat.ChatType.Bound` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 284 | `<item>` |
+| `net.minecraft.network.chat.CommonComponents#days` | `crates/mc-protocol/src/ported/common_components.rs` | 139 | `days` |
+| `net.minecraft.network.chat.CommonComponents#disconnectButtonLabel` | `crates/mc-protocol/src/ported/common_components.rs` | 163 | `disconnect_button_label` |
+| `net.minecraft.network.chat.CommonComponents#hours` | `crates/mc-protocol/src/ported/common_components.rs` | 144 | `hours` |
+| `net.minecraft.network.chat.CommonComponents#joinForNarration` | `crates/mc-protocol/src/ported/common_components.rs` | 192 | `join_for_narration` |
+| `net.minecraft.network.chat.CommonComponents#joinLines` | `crates/mc-protocol/src/ported/common_components.rs` | 204 | `join_lines` |
+| `net.minecraft.network.chat.CommonComponents#joinLines` | `crates/mc-protocol/src/ported/common_components.rs` | 209 | `join_lines_from_collection` |
+| `net.minecraft.network.chat.CommonComponents#minutes` | `crates/mc-protocol/src/ported/common_components.rs` | 149 | `minutes` |
+| `net.minecraft.network.chat.CommonComponents#optionNameValue` | `crates/mc-protocol/src/ported/common_components.rs` | 184 | `option_name_value` |
+| `net.minecraft.network.chat.CommonComponents#optionStatus` | `crates/mc-protocol/src/ported/common_components.rs` | 154 | `option_status` |
+| `net.minecraft.network.chat.CommonComponents#optionStatus` | `crates/mc-protocol/src/ported/common_components.rs` | 172 | `option_status_composed` |
+| `net.minecraft.network.chat.CommonComponents#space` | `crates/mc-protocol/src/ported/common_components.rs` | 134 | `space` |
 | `net.minecraft.network.chat.Component` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 238 | `<item>` |
 | `net.minecraft.network.chat.Component#copy` | `crates/mc-protocol/src/ported/fixed_format.rs` | 31 | `copy` |
 | `net.minecraft.network.chat.Component#empty` | `crates/mc-protocol/src/ported/blank_format.rs` | 24 | `empty` |
@@ -3171,6 +3182,14 @@ Total mapped Java symbols: **6605** across **1439** classes.
 | `net.minecraft.network.protocol.game.ClientboundForgetLevelChunkPacket#handle` | `crates/mc-protocol/src/ported/clientbound_forget_level_chunk_packet.rs` | 81 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundForgetLevelChunkPacket#type` | `crates/mc-protocol/src/ported/clientbound_forget_level_chunk_packet.rs` | 76 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundForgetLevelChunkPacket#write` | `crates/mc-protocol/src/ported/clientbound_forget_level_chunk_packet.rs` | 71 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 144 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 149 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#getEvent` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 178 | `get_event` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#getParam` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 183 | `get_param` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#handle` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 173 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#type` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 168 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket#write` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 162 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundGameEventPacket$Type#<init>` | `crates/mc-protocol/src/ported/clientbound_game_event_packet.rs` | 90 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundGameTestHighlightPosPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_game_test_highlight_pos_packet.rs` | 77 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundGameTestHighlightPosPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_game_test_highlight_pos_packet.rs` | 85 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundGameTestHighlightPosPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_game_test_highlight_pos_packet.rs` | 92 | `write` |
@@ -3222,6 +3241,22 @@ Total mapped Java symbols: **6605** across **1439** classes.
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#isGlobalEvent` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 186 | `is_global_event` |
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#type` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 176 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#write` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 168 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 158 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 188 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#alwaysShow` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 246 | `always_show` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getCount` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 286 | `get_count` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getMaxSpeed` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 281 | `get_max_speed` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getParticle` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 291 | `get_particle` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getX` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 251 | `get_x` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getXDist` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 266 | `get_x_dist` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getY` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 256 | `get_y` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getYDist` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 271 | `get_y_dist` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getZ` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 261 | `get_z` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#getZDist` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 276 | `get_z_dist` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#handle` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 236 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#isOverrideLimiter` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 241 | `is_override_limiter` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#type` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 231 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket#write` | `crates/mc-protocol/src/ported/clientbound_level_particles_packet.rs` | 216 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 216 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 234 | `from_buf` |
 | `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#getLightData` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 269 | `get_light_data` |

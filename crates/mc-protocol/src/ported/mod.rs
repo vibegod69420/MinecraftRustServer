@@ -323,3 +323,6 @@ pub mod serverbound_set_jigsaw_block_packet;
 pub mod clientbound_update_advancements_packet;
 pub mod server_status;
 pub mod clientbound_update_attributes_packet;
+pub mod clientbound_level_particles_packet;
+pub mod common_components;
+pub mod clientbound_game_event_packet;
