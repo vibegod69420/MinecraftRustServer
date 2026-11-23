@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7738** across **1631** classes.
+Total mapped Java symbols: **7755** across **1633** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -295,6 +295,7 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 45 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 79 | `between_closed` |
+| `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 215 | `block_pos_between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(BlockPos, BlockPos)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 49 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(net.minecraft.core.BlockPos,net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 59 | `between_closed` |
 | `net.minecraft.core.BlockPos#closerThan` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 74 | `closer_than` |
@@ -5373,6 +5374,7 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 234 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#nextFloat(net.minecraft.util.RandomSource,float,float)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 41 | `next_float` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 102 | `mth_next_int` |
+| `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 154 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 188 | `next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 233 | `mth_next_int` |
@@ -5711,6 +5713,7 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.util.Unit#valueOf` | `crates/mc-math/src/ported/unit.rs` | 7 | `instance` |
 | `net.minecraft.util.Util#anyOf` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 51 | `util_any_of` |
 | `net.minecraft.util.Util#getRandom` | `crates/mc-nbt/src/ported/set_attributes_function.rs` | 178 | `get_random` |
+| `net.minecraft.util.Util#getRandom` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 163 | `util_get_random_str` |
 | `net.minecraft.util.Util#getRandom(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 144 | `get_random` |
 | `net.minecraft.util.Util#getRandomSafe` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 113 | `get_random_safe` |
 | `net.minecraft.util.Util#shuffle(List, RandomSource)` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 118 | `util_shuffle` |
@@ -6424,6 +6427,7 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.world.level.block.Rotation#<streamDecode>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 249 | `decode` |
 | `net.minecraft.world.level.block.Rotation#<streamEncode>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 254 | `encode` |
 | `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/nether_fossil_pieces.rs` | 114 | `get_random` |
+| `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 79 | `get_random` |
 | `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 55 | `get_random` |
 | `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 53 | `get_random` |
 | `net.minecraft.world.level.block.Rotation#getRandom` | `crates/mc-worldgen/src/ported/woodland_mansion_structure.rs` | 117 | `get_random` |
@@ -8317,6 +8321,23 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#onTopOfChunkCenter (stubbed helper)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 333 | `on_top_of_chunk_center` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#regeneratePiecesAfterLoad` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 383 | `regenerate_pieces_after_load` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure#type` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 362 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#COLD_SUSPICIOUS_BLOCK_PROCESSOR` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 603 | `cold_suspicious_block_processor` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#WARM_SUSPICIOUS_BLOCK_PROCESSOR` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 594 | `warm_suspicious_block_processor` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#addClusterRuins` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 908 | `add_cluster_ruins` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#addPiece` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 1003 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#addPieces` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 875 | `add_pieces` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#allPositions` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 957 | `all_positions` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#archyRuleProcessor` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 580 | `archy_rule_processor` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#getBigWarmRuin` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 617 | `get_big_warm_ruin` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces#getSmallWarmRuin` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 612 | `get_small_warm_ruin` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#<init>` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 644 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#<init>` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 667 | `from_tag` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 746 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#create` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 721 | `create` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#getHeight` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 834 | `get_height_pos` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#handleDataMarker` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 759 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#makeSettings` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 699 | `make_settings` |
+| `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces.OceanRuinPiece#postProcess` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 795 | `post_process` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#<init>` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 156 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 171 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#generatePieces` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 181 | `generate_pieces` |
@@ -8470,6 +8491,7 @@ Total mapped Java symbols: **7738** across **1631** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate#getSize` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 242 | `get_size` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate#getZeroPositionWithTransform` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 244 | `get_zero_position_with_transform` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate#placeInWorld` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 253 | `place_in_world` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate#transform` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 169 | `structure_template_transform` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 43 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 58 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#nbt` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 73 | `nbt` |
