@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7200** across **1546** classes.
+Total mapped Java symbols: **7209** across **1548** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7766,6 +7766,16 @@ Total mapped Java symbols: **7200** across **1546** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#type` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 198 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 90 | `get_name` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getSerializedName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 98 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces#addRandomPiece` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 290 | `add_random_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#<init>` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 325 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#<init>` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 344 | `from_tag` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 365 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#adjustPositionHeight` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 493 | `adjust_position_height` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#calculateBeachedPosition` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 487 | `calculate_beached_position` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#handleDataMarker` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 389 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#isTooBigToFitInWorldGenRegion` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 481 | `is_too_big_to_fit_in_world_gen_region` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#makeSettings` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 375 | `make_settings` |
+| `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#postProcess` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 403 | `post_process` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#<init>` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 285 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 293 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure#generatePieces` | `crates/mc-worldgen/src/ported/shipwreck_structure.rs` | 307 | `generate_pieces` |
