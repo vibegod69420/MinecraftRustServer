@@ -553,3 +553,7 @@ pub mod entity_the_renamening_fix;
 pub mod remove_block_entity_tag_fix;
 pub mod item_stack_custom_name_to_override_component_fix;
 pub mod fix_projectile_stored_item;
+pub mod item_banner_color_fix;
+pub mod entity_projectile_owner_fix;
+pub mod saddle_equipment_slot_fix;
+pub mod new_village_fix;
