@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 07:28:11 UTC
+- **Updated**: 2026-11-23 07:44:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 8023 / 66676 (12.033%)
 - **Mapped Java Classes**: 1714 / 7163 (23.928%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2601 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (779.0s)
+- [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (477.9s)
+- [FAIL] `net.minecraft.world.level.chunk.PalettedContainer` -> `mc-worldgen` (472.5s)
 - [PASS] `net.minecraft.util.profiling.jfr.event.ChunkRegionReadEvent` -> `mc-math` (184.7s)
 - [PASS] `net.minecraft.util.profiling.jfr.event.PacketReceivedEvent` -> `mc-math` (184.7s)
 - [PASS] `net.minecraft.util.profiling.jfr.event.PacketSentEvent` -> `mc-math` (184.7s)
@@ -26,6 +29,3 @@
 - [PASS] `net.minecraft.util.datafix.schemas.V4421` -> `mc-math` (151.7s)
 - [PASS] `net.minecraft.util.datafix.schemas.V3328` -> `mc-math` (151.7s)
 - [PASS] `net.minecraft.util.datafix.schemas.V4543` -> `mc-math` (151.7s)
-- [PASS] `net.minecraft.util.datafix.schemas.V3799` -> `mc-math` (151.7s)
-- [PASS] `net.minecraft.util.datafix.schemas.V700` -> `mc-math` (408.2s)
-- [PASS] `net.minecraft.util.datafix.schemas.V501` -> `mc-math` (408.2s)
