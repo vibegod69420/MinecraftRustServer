@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6592** across **1438** classes.
+Total mapped Java symbols: **6605** across **1439** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6970,6 +6970,19 @@ Total mapped Java symbols: **6592** across **1438** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#boundingBox` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 28 | `bounding_box` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#spawns` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 33 | `spawns` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride$BoundingBoxType#getSerializedName` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 47 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#<init>` | `crates/mc-worldgen/src/ported/structure_start.rs` | 260 | `new` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#addReference` | `crates/mc-worldgen/src/ported/structure_start.rs` | 415 | `add_reference` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#canBeReferenced` | `crates/mc-worldgen/src/ported/structure_start.rs` | 410 | `can_be_referenced` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#createTag` | `crates/mc-worldgen/src/ported/structure_start.rs` | 377 | `create_tag` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getBoundingBox` | `crates/mc-worldgen/src/ported/structure_start.rs` | 317 | `get_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getChunkPos` | `crates/mc-worldgen/src/ported/structure_start.rs` | 405 | `get_chunk_pos` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getMaxReferences` | `crates/mc-worldgen/src/ported/structure_start.rs` | 425 | `get_max_references` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getPieces` | `crates/mc-worldgen/src/ported/structure_start.rs` | 435 | `get_pieces` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getReferences` | `crates/mc-worldgen/src/ported/structure_start.rs` | 420 | `get_references` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#getStructure` | `crates/mc-worldgen/src/ported/structure_start.rs` | 430 | `get_structure` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#isValid` | `crates/mc-worldgen/src/ported/structure_start.rs` | 400 | `is_valid` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#loadStaticStart` | `crates/mc-worldgen/src/ported/structure_start.rs` | 276 | `load_static_start` |
+| `net.minecraft.world.level.levelgen.structure.StructureStart#placeInChunk` | `crates/mc-worldgen/src/ported/structure_start.rs` | 327 | `place_in_chunk` |
 | `net.minecraft.world.level.levelgen.structure.StructureType#codec` | `crates/mc-worldgen/src/ported/structure_type.rs` | 45 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.StructureType#register` | `crates/mc-worldgen/src/ported/structure_type.rs` | 59 | `register` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
