@@ -191,3 +191,5 @@ pub mod spruce_foliage_placer;
 pub mod block_column_configuration;
 pub mod large_dripstone_configuration;
 pub mod fallen_tree_configuration;
+pub mod seagrass_feature;
+pub mod leave_vine_decorator;
