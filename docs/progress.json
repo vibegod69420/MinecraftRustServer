@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 03:42:22 UTC",
-  "updated_epoch": 1795405342,
+  "updated_at": "2026-11-23 03:43:26 UTC",
+  "updated_epoch": 1795405406,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1417,
-    "mapped_methods": 6461,
-    "class_coverage_pct": 19.7822,
-    "method_coverage_pct": 9.6901,
-    "harness_verified_classes": 913,
-    "harness_failed_attempts": 230
+    "mapped_classes": 1425,
+    "mapped_methods": 6508,
+    "class_coverage_pct": 19.8939,
+    "method_coverage_pct": 9.7606,
+    "harness_verified_classes": 916,
+    "harness_failed_attempts": 231
   },
   "crates": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2824
+      "mapped_methods": 2902
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 1058,
-    "prompt_tokens": 2902389,
-    "completion_tokens": 16260469,
-    "reasoning_tokens": 11716145,
-    "avg_latency_s": 245.8
+    "calls_total": 1060,
+    "prompt_tokens": 2910356,
+    "completion_tokens": 16298098,
+    "reasoning_tokens": 11743969,
+    "avg_latency_s": 245.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T03:43:25Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundSetObjectivePacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 595.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:43:25Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 595.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:42:43Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 776.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:42:43Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundSetJigsawBlockPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 776.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T03:42:21Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.BambooFeature",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 421.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:29:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerChatPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:29:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundLevelChunkWithLightPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:29:23Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetEquipmentPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 388.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:21:56Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.VegetationPatchFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2129.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "980c9a9",
+      "ts": "2026-11-23T03:42:22+00:00",
+      "message": "Worker sync: 6461 mapped Java methods"
+    },
     {
       "sha": "f6f25c2",
       "ts": "2026-11-23T03:42:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "20324f6",
       "ts": "2026-11-23T03:26:01+00:00",
-      "message": "Worker sync: 6168 mapped Java methods"
-    },
-    {
-      "sha": "9a07be7",
-      "ts": "2026-11-23T03:20:02+00:00",
       "message": "Worker sync: 6168 mapped Java methods"
     }
   ]
