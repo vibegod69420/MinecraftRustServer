@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5858** across **1330** classes.
+Total mapped Java symbols: **5942** across **1337** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2330,6 +2330,14 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.network.protocol.BundlePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_bundle_packet.rs` | 67 | `new` |
 | `net.minecraft.network.protocol.BundlePacket#subPackets` | `crates/mc-protocol/src/ported/bundle_packet.rs` | 40 | `sub_packets` |
 | `net.minecraft.network.protocol.BundlePacket#type` | `crates/mc-protocol/src/ported/bundle_packet.rs` | 19 | `bundle_type` |
+| `net.minecraft.network.protocol.BundlerInfo#BUNDLE_SIZE_LIMIT` | `crates/mc-protocol/src/ported/bundler_info.rs` | 10 | `unbundle_packet` |
+| `net.minecraft.network.protocol.BundlerInfo#createForPacket` | `crates/mc-protocol/src/ported/bundler_info.rs` | 26 | `create_for_packet` |
+| `net.minecraft.network.protocol.BundlerInfo#startPacketBundling` | `crates/mc-protocol/src/ported/bundler_info.rs` | 17 | `start_packet_bundling` |
+| `net.minecraft.network.protocol.BundlerInfo#startPacketBundling` | `crates/mc-protocol/src/ported/bundler_info.rs` | 67 | `start_packet_bundling` |
+| `net.minecraft.network.protocol.BundlerInfo#unbundlePacket` | `crates/mc-protocol/src/ported/bundler_info.rs` | 14 | `unbundle_packet` |
+| `net.minecraft.network.protocol.BundlerInfo#unbundlePacket` | `crates/mc-protocol/src/ported/bundler_info.rs` | 54 | `unbundle_packet` |
+| `net.minecraft.network.protocol.BundlerInfo$Bundler#addPacket` | `crates/mc-protocol/src/ported/bundler_info.rs` | 22 | `add_packet` |
+| `net.minecraft.network.protocol.BundlerInfo$Bundler#addPacket` | `crates/mc-protocol/src/ported/bundler_info.rs` | 91 | `add_packet` |
 | `net.minecraft.network.protocol.CodecModifier#apply` | `crates/mc-protocol/src/ported/codec_modifier.rs` | 8 | `apply` |
 | `net.minecraft.network.protocol.Packet` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 73 | `packet_type` |
 | `net.minecraft.network.protocol.Packet#codec` | `crates/mc-protocol/src/ported/packet.rs` | 108 | `codec` |
@@ -4182,6 +4190,7 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 102 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 188 | `next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
+| `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 233 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
 | `net.minecraft.util.Mth#positiveModulo(int,int)` | `crates/mc-math/src/mth.rs` | 411 | `positive_modulo_i32` |
 | `net.minecraft.util.Mth#randomBetweenInclusive` | `crates/mc-worldgen/src/ported/trapezoid_height.rs` | 22 | `mth_random_between_inclusive` |
@@ -5515,6 +5524,7 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 86 | `place` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#<init>` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#place` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 112 | `place` |
+| `net.minecraft.world.level.levelgen.feature.TreeFeature#getLowestTrunkOrRootOfTree` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 202 | `get_lowest_trunk_or_root_of_tree` |
 | `net.minecraft.world.level.levelgen.feature.TreeFeature#validTreePos` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 194 | `valid_tree_pos` |
 | `net.minecraft.world.level.levelgen.feature.TreeFeature#validTreePos` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 184 | `valid_tree_pos` |
 | `net.minecraft.world.level.levelgen.feature.TreeFeature#validTreePos (abstracted)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 81 | `is_valid_tree_pos` |
@@ -5539,6 +5549,11 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.world.level.levelgen.feature.WaterloggedVegetationPatchFeature#isExposedDirection(WorldGenLevel,BlockPos,BlockPos.MutableBlockPos,Direction)` | `crates/mc-worldgen/src/ported/waterlogged_vegetation_patch_feature.rs` | 208 | `is_exposed_direction` |
 | `net.minecraft.world.level.levelgen.feature.WaterloggedVegetationPatchFeature#placeGroundPatch(WorldGenLevel,VegetationPatchConfiguration,RandomSource,BlockPos,Predicate,int,int)` | `crates/mc-worldgen/src/ported/waterlogged_vegetation_patch_feature.rs` | 149 | `place_ground_patch` |
 | `net.minecraft.world.level.levelgen.feature.WaterloggedVegetationPatchFeature#placeVegetation(WorldGenLevel,VegetationPatchConfiguration,ChunkGenerator,RandomSource,BlockPos)` | `crates/mc-worldgen/src/ported/waterlogged_vegetation_patch_feature.rs` | 225 | `place_vegetation` |
+| `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature#<init>` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 251 | `new` |
+| `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature#place` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 256 | `place` |
+| `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature#placeRoofNetherWart` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 279 | `place_roof_nether_wart` |
+| `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature#placeRoofWeepingVines` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 325 | `place_roof_weeping_vines` |
+| `net.minecraft.world.level.levelgen.feature.WeepingVinesFeature#placeWeepingVinesColumn` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 363 | `place_weeping_vines_column` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#<init>` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 32 | `new` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 50 | `place` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 37 | `place` |
@@ -5783,6 +5798,13 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#muddyRootsIn` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 71 | `muddy_roots_in` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#muddyRootsProvider` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 76 | `muddy_roots_provider` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacement#randomSkewChance` | `crates/mc-worldgen/src/ported/mangrove_root_placement.rs` | 91 | `random_skew_chance` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#<init>` | `crates/mc-worldgen/src/ported/root_placer.rs` | 144 | `new` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#canPlaceRoot` | `crates/mc-worldgen/src/ported/root_placer.rs` | 177 | `can_place_root` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#getPotentiallyWaterloggedState` | `crates/mc-worldgen/src/ported/root_placer.rs` | 210 | `get_potentially_waterlogged_state` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#getTrunkOrigin` | `crates/mc-worldgen/src/ported/root_placer.rs` | 225 | `get_trunk_origin` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#placeRoot` | `crates/mc-worldgen/src/ported/root_placer.rs` | 182 | `place_root` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#placeRoots` | `crates/mc-worldgen/src/ported/root_placer.rs` | 162 | `place_roots` |
+| `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer#type` | `crates/mc-worldgen/src/ported/root_placer.rs` | 159 | `placer_type` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#<init>` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 65 | `new` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#MANGROVE_ROOT_PLACER` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 76 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacerType#codec` | `crates/mc-worldgen/src/ported/root_placer_type.rs` | 70 | `codec` |
@@ -5872,6 +5894,10 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator#addHangingVine` | `crates/mc-worldgen/src/ported/leave_vine_decorator.rs` | 139 | `add_hanging_vine` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator#place` | `crates/mc-worldgen/src/ported/leave_vine_decorator.rs` | 105 | `place` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator#type` | `crates/mc-worldgen/src/ported/leave_vine_decorator.rs` | 100 | `type_` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#<init>` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 226 | `new` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#attemptToPlaceBlockAbove` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 283 | `attempt_to_place_block_above` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#place` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 241 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#type` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 236 | `type_` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#<init>` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#codec` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 112 | `codec` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#register` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 118 | `register` |
@@ -6552,6 +6578,69 @@ Total mapped Java symbols: **5858** across **1330** classes.
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 52 | `parse` |
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 57 | `parse_with_defaults` |
 | `net.minecraft.world.level.storage.LevelVersion#snapshot` | `crates/mc-nbt/src/ported/level_version.rs` | 105 | `snapshot` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#<init>` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 461 | `new_full` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#<init>` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 521 | `new` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#createTag` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 611 | `create_tag` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#endDragonFightData` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 897 | `end_dragon_fight_data` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#fillCrashReportCategory` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 867 | `fill_crash_report_category` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getClearWeatherTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 747 | `get_clear_weather_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getCustomBossEvents` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 917 | `get_custom_boss_events` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getDataConfiguration` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 907 | `get_data_configuration` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getDayTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 712 | `get_day_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getDifficulty` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 842 | `get_difficulty` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getGameRules` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 827 | `get_game_rules` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getGameTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 707 | `get_game_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getGameType` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 797 | `get_game_type` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getKnownServerBrands` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 970 | `get_known_server_brands` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getLegacyWorldBorderSettings` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 832 | `get_legacy_world_border_settings` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getLevelName` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 737 | `get_level_name` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getLevelSettings` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 985 | `get_level_settings` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getLoadedPlayerTag` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 717 | `get_loaded_player_tag` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getRainTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 787 | `get_rain_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getRemovedFeatureFlags` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 975 | `get_removed_feature_flags` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getRespawnData` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 702 | `get_respawn_data` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getScheduledEvents` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 862 | `get_scheduled_events` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getThunderTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 767 | `get_thunder_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getVersion` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 742 | `get_version` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getWanderingTraderId` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 947 | `get_wandering_trader_id` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 937 | `get_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#getWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 927 | `get_wandering_trader_spawn_delay` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isAllowCommands` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 812 | `is_allow_commands` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isDebugWorld` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 887 | `is_debug_world` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isDifficultyLocked` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 852 | `is_difficulty_locked` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isFlatWorld` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 882 | `is_flat_world` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isHardcore` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 807 | `is_hardcore` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isInitialized` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 817 | `is_initialized` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isRaining` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 777 | `is_raining` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#isThundering` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 757 | `is_thundering` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#overworldData` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 980 | `overworld_data` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#parse` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 558 | `parse` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setClearWeatherTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 752 | `set_clear_weather_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setCustomBossEvents` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 922 | `set_custom_boss_events` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setDataConfiguration` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 912 | `set_data_configuration` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setDayTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 727 | `set_day_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setDifficulty` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 847 | `set_difficulty` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setDifficultyLocked` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 857 | `set_difficulty_locked` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setEndDragonFightData` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 902 | `set_end_dragon_fight_data` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setGameTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 722 | `set_game_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setGameType` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 802 | `set_game_type` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setInitialized` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 822 | `set_initialized` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setLegacyWorldBorderSettings` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 837 | `set_legacy_world_border_settings` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setModdedInfo` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 957 | `set_modded_info` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setRainTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 792 | `set_rain_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setRaining` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 782 | `set_raining` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setSpawn` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 732 | `set_spawn` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setTagData` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 623 | `set_tag_data` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setThunderTime` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 772 | `set_thunder_time` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setThundering` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 762 | `set_thundering` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setWanderingTraderId` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 952 | `set_wandering_trader_id` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 942 | `set_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#setWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 932 | `set_wandering_trader_spawn_delay` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#stringCollectionToTag` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 693 | `string_collection_to_tag` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#wasModded` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 965 | `was_modded` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#worldGenOptions` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 877 | `world_gen_options` |
+| `net.minecraft.world.level.storage.PrimaryLevelData#worldGenSettingsLifecycle` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 892 | `world_gen_settings_lifecycle` |
+| `net.minecraft.world.level.storage.PrimaryLevelData$SpecialWorldProperty` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 205 | `<item>` |
 | `net.minecraft.world.level.storage.TagValueOutput#<init>` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 484 | `new` |
 | `net.minecraft.world.level.storage.TagValueOutput#buildResult` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 674 | `build_result` |
 | `net.minecraft.world.level.storage.TagValueOutput#child` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 616 | `child` |

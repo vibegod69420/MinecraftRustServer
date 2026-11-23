@@ -257,3 +257,6 @@ pub mod ice_spike_feature;
 pub mod concentric_rings_structure_placement;
 pub mod geode_configuration;
 pub mod root_system_configuration;
+pub mod root_placer;
+pub mod place_on_ground_decorator;
+pub mod weeping_vines_feature;

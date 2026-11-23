@@ -288,3 +288,4 @@ pub mod packet_utils;
 pub mod entity_data_source;
 pub mod clientbound_stop_sound_packet;
 pub mod serverbound_container_click_packet;
+pub mod bundler_info;
