@@ -233,3 +233,7 @@ pub mod clientbound_set_titles_animation_packet;
 pub mod serverbound_chat_command_signed_packet;
 pub mod clientbound_set_health_packet;
 pub mod clientbound_tag_query_packet;
+pub mod clientbound_rotate_head_packet;
+pub mod clientbound_take_item_entity_packet;
+pub mod clientbound_set_score_packet;
+pub mod clientbound_container_set_data_packet;
