@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:26:04 UTC
+- **Updated**: 2026-11-23 00:26:40 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 3687 / 66676 (5.530%)
-- **Mapped Java Classes**: 925 / 7163 (12.914%)
+- **Mapped Java Methods**: 3696 / 66676 (5.543%)
+- **Mapped Java Classes**: 927 / 7163 (12.941%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,7 +11,7 @@
 - `mc-math`: 1299 mapped methods
 - `mc-nbt`: 1157 mapped methods
 - `mc-protocol`: 1102 mapped methods
-- `mc-worldgen`: 933 mapped methods
+- `mc-worldgen`: 953 mapped methods
 
 ## Recent Verified Work
 - [PASS] `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight` -> `mc-worldgen` (582.6s)
