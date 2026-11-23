@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5036** across **1176** classes.
+Total mapped Java symbols: **5047** across **1180** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -63,6 +63,7 @@ Total mapped Java symbols: **5036** across **1176** classes.
 | `io.netty.buffer.ByteBuf#readerIndex` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 51 | `reader_index` |
 | `io.netty.buffer.ByteBuf#writeByte` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 69 | `write_byte` |
 | `io.netty.buffer.ByteBuf#writeBytes` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 81 | `write_bytes` |
+| `io.netty.buffer.ByteBufUtil#utf8MaxBytes` | `crates/mc-protocol/src/ported/utf8_string.rs` | 30 | `utf8_max_bytes` |
 | `java.io.DataOutput#write(byte[])` | `crates/mc-math/src/ported/delegate_data_output.rs` | 7 | `write_bytes` |
 | `java.io.DataOutput#write(byte[],int,int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 9 | `write_bytes_offset` |
 | `java.io.DataOutput#write(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 5 | `write` |
@@ -1826,6 +1827,9 @@ Total mapped Java symbols: **5036** across **1176** classes.
 | `net.minecraft.network.LocalFrameEncoder#write` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 21 | `write` |
 | `net.minecraft.network.MonitoredLocalFrameDecoder#<init>` | `crates/mc-protocol/src/ported/monitored_local_frame_decoder.rs` | 35 | `new` |
 | `net.minecraft.network.MonitoredLocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/monitored_local_frame_decoder.rs` | 40 | `channel_read` |
+| `net.minecraft.network.PacketBundlePacker#<init>` | `crates/mc-protocol/src/ported/packet_bundle_packer.rs` | 39 | `new` |
+| `net.minecraft.network.PacketBundlePacker#decode` | `crates/mc-protocol/src/ported/packet_bundle_packer.rs` | 47 | `decode` |
+| `net.minecraft.network.PacketBundlePacker#verifyNonTerminalPacket` | `crates/mc-protocol/src/ported/packet_bundle_packer.rs` | 73 | `verify_non_terminal_packet` |
 | `net.minecraft.network.PacketBundleUnpacker#<init>` | `crates/mc-protocol/src/ported/packet_bundle_unpacker.rs` | 24 | `new` |
 | `net.minecraft.network.PacketBundleUnpacker#encode` | `crates/mc-protocol/src/ported/packet_bundle_unpacker.rs` | 29 | `encode` |
 | `net.minecraft.network.PacketListener` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 28 | `<item>` |
@@ -1867,16 +1871,27 @@ Total mapped Java symbols: **5036** across **1176** classes.
 | `net.minecraft.network.SkipPacketDecoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_decoder_exception.rs` | 28 | `with_cause` |
 | `net.minecraft.network.SkipPacketEncoderException#<init>(String)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 20 | `new` |
 | `net.minecraft.network.SkipPacketEncoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 28 | `with_cause` |
+| `net.minecraft.network.Utf8String#read` | `crates/mc-protocol/src/ported/utf8_string.rs` | 71 | `read` |
+| `net.minecraft.network.Utf8String#write` | `crates/mc-protocol/src/ported/utf8_string.rs` | 116 | `write` |
+| `net.minecraft.network.VarInt#getByteSize` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 50 | `varint_get_byte_size` |
 | `net.minecraft.network.VarInt#getByteSize` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 113 | `get_byte_size` |
+| `net.minecraft.network.VarInt#hasContinuationBit` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 28 | `varint_has_continuation_bit` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 17 | `read_varint` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 22 | `read_varint` |
+| `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/utf8_string.rs` | 35 | `varint_read` |
+| `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 33 | `varint_read` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 33 | `write_varint` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 38 | `write_varint` |
+| `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/utf8_string.rs` | 59 | `varint_write` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 125 | `write` |
 | `net.minecraft.network.VarLong#getByteSize` | `crates/mc-protocol/src/ported/var_long.rs` | 6 | `get_byte_size` |
 | `net.minecraft.network.VarLong#hasContinuationBit` | `crates/mc-protocol/src/ported/var_long.rs` | 18 | `has_continuation_bit` |
 | `net.minecraft.network.VarLong#read` | `crates/mc-protocol/src/ported/var_long.rs` | 23 | `read` |
 | `net.minecraft.network.VarLong#write` | `crates/mc-protocol/src/ported/var_long.rs` | 42 | `write` |
+| `net.minecraft.network.Varint21FrameDecoder#<init>` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 64 | `new` |
+| `net.minecraft.network.Varint21FrameDecoder#copyVarint` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 78 | `copy_varint` |
+| `net.minecraft.network.Varint21FrameDecoder#decode` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 100 | `decode` |
+| `net.minecraft.network.Varint21FrameDecoder#handlerRemoved0` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 72 | `handler_removed0` |
 | `net.minecraft.network.Varint21LengthFieldPrepender#encode` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 141 | `encode` |
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 21 | `decorate` |
 | `net.minecraft.network.chat.ChatDecorator#decorate` | `crates/mc-protocol/src/ported/chat_decorator.rs` | 30 | `decorate` |

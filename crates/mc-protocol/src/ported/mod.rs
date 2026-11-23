@@ -237,3 +237,6 @@ pub mod clientbound_rotate_head_packet;
 pub mod clientbound_take_item_entity_packet;
 pub mod clientbound_set_score_packet;
 pub mod clientbound_container_set_data_packet;
+pub mod packet_bundle_packer;
+pub mod varint21_frame_decoder;
+pub mod utf8_string;
