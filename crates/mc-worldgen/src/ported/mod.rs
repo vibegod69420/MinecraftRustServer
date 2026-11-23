@@ -301,3 +301,4 @@ pub mod flat_level_generator_settings;
 pub mod legacy_structure_data_handler;
 pub mod desert_pyramid_piece;
 pub mod spike_feature;
+pub mod blending_data;

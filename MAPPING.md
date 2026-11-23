@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7354** across **1566** classes.
+Total mapped Java symbols: **7384** across **1568** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6594,6 +6594,37 @@ Total mapped Java symbols: **7354** across **1566** classes.
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#at` | `crates/mc-math/src/random.rs` | 625 | `at` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromHashOf` | `crates/mc-math/src/random.rs` | 634 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.XoroshiroRandomSource$XoroshiroPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 642 | `from_seed` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#<init>` | `crates/mc-worldgen/src/ported/blending_data.rs` | 272 | `new` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#addValuesForColumn` | `crates/mc-worldgen/src/ported/blending_data.rs` | 441 | `add_values_for_column` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#calculateData` | `crates/mc-worldgen/src/ported/blending_data.rs` | 347 | `calculate_data` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#cellCountPerColumn` | `crates/mc-worldgen/src/ported/blending_data.rs` | 649 | `cell_count_per_column` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getAreaWithOldGeneration` | `crates/mc-worldgen/src/ported/blending_data.rs` | 678 | `get_area_with_old_generation` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getBiomeColumn` | `crates/mc-worldgen/src/ported/blending_data.rs` | 518 | `get_biome_column` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getCellYIndex` | `crates/mc-worldgen/src/ported/blending_data.rs` | 673 | `get_cell_y_index` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getColumnMinY` | `crates/mc-worldgen/src/ported/blending_data.rs` | 661 | `get_column_min_y` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getDensity` | `crates/mc-worldgen/src/ported/blending_data.rs` | 550 | `get_density_at` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getDensity` | `crates/mc-worldgen/src/ported/blending_data.rs` | 563 | `get_density` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getDensityColumn` | `crates/mc-worldgen/src/ported/blending_data.rs` | 483 | `get_density_column` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getHeight` | `crates/mc-worldgen/src/ported/blending_data.rs` | 539 | `get_height` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getHeightAtXZ` | `crates/mc-worldgen/src/ported/blending_data.rs` | 458 | `get_height_at_xz` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getInsideIndex` | `crates/mc-worldgen/src/ported/blending_data.rs` | 741 | `get_inside_index` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getMinY` | `crates/mc-worldgen/src/ported/blending_data.rs` | 666 | `get_min_y` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getOrUpdateBlendingData` | `crates/mc-worldgen/src/ported/blending_data.rs` | 326 | `get_or_update_blending_data` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getOutsideIndex` | `crates/mc-worldgen/src/ported/blending_data.rs` | 748 | `get_outside_index` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getX` | `crates/mc-worldgen/src/ported/blending_data.rs` | 756 | `get_x` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#getZ` | `crates/mc-worldgen/src/ported/blending_data.rs` | 768 | `get_z` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#isGround` | `crates/mc-worldgen/src/ported/blending_data.rs` | 723 | `is_ground` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#iterateBiomes` | `crates/mc-worldgen/src/ported/blending_data.rs` | 583 | `iterate_biomes` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#iterateDensities` | `crates/mc-worldgen/src/ported/blending_data.rs` | 622 | `iterate_densities` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#iterateHeights` | `crates/mc-worldgen/src/ported/blending_data.rs` | 606 | `iterate_heights` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#pack` | `crates/mc-worldgen/src/ported/blending_data.rs` | 303 | `pack` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#quartCountPerColumn` | `crates/mc-worldgen/src/ported/blending_data.rs` | 656 | `quart_count_per_column` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#read1` | `crates/mc-worldgen/src/ported/blending_data.rs` | 702 | `read1` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#read7` | `crates/mc-worldgen/src/ported/blending_data.rs` | 712 | `read7` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#sideByGenerationAge` | `crates/mc-worldgen/src/ported/blending_data.rs` | 684 | `side_by_generation_age` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#unpack` | `crates/mc-worldgen/src/ported/blending_data.rs` | 298 | `unpack` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData#zeroIfNegative` | `crates/mc-worldgen/src/ported/blending_data.rs` | 780 | `zero_if_negative` |
+| `net.minecraft.world.level.levelgen.blending.BlendingData$Packed#validateArraySize` | `crates/mc-worldgen/src/ported/blending_data.rs` | 239 | `validate_array_size` |
 | `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#<init>` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 36 | `new` |
 | `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#test` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 41 | `test` |
 | `net.minecraft.world.level.levelgen.blockpredicates.AllOfPredicate#type` | `crates/mc-worldgen/src/ported/all_of_predicate.rs` | 51 | `predicate_type` |
