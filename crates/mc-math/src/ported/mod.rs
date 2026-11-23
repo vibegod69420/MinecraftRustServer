@@ -500,3 +500,7 @@ pub mod network_summary_event;
 pub mod reorganize_poi;
 pub mod entity_zombie_split_fix;
 pub mod abstract_arrow_pickup_fix;
+pub mod fix_wolf_health;
+pub mod chunk_status_fix2;
+pub mod raid_renames_data_fix;
+pub mod legacy_dimension_id_fix;

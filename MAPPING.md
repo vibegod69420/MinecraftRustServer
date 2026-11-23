@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8806** across **1999** classes.
+Total mapped Java symbols: **8815** across **2003** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6084,6 +6084,7 @@ Total mapped Java symbols: **8806** across **1999** classes.
 | `net.minecraft.util.context.ContextMap$Builder#withParameter` | `crates/mc-math/src/ported/context_map.rs` | 304 | `with_parameter` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#cast` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 48 | `cast` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#fixBlockPos` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 115 | `fix_block_pos` |
+| `net.minecraft.util.datafix.ExtraDataFixUtils#fixInlineBlockPos` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 52 | `<item>` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_custom_name_to_component_fix.rs` | 55 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_lore_fix.rs` | 45 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 11 | `create_text_component_json` |
@@ -6161,6 +6162,7 @@ Total mapped Java symbols: **8806** across **1999** classes.
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#<init>` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 166 | `new` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 173 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 179 | `apply_to_chunk` |
+| `net.minecraft.util.datafix.fixes.ChunkStatusFix2#makeRule` | `crates/mc-math/src/ported/chunk_status_fix2.rs` | 38 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#<init>` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 117 | `new` |
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#fix` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 127 | `fix` |
 | `net.minecraft.util.datafix.fixes.ContainerBlockEntityLockPredicateFix#<init>` | `crates/mc-math/src/ported/container_block_entity_lock_predicate_fix.rs` | 125 | `new` |
@@ -6254,6 +6256,7 @@ Total mapped Java symbols: **8806** across **1999** classes.
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#<init>` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#fixComponent` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 69 | `fix_component` |
+| `net.minecraft.util.datafix.fixes.FixWolfHealth#fix` | `crates/mc-math/src/ported/fix_wolf_health.rs` | 66 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ForcePoiRebuild#<init>` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 138 | `new` |
 | `net.minecraft.util.datafix.fixes.ForcePoiRebuild#cap` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 157 | `cap` |
 | `net.minecraft.util.datafix.fixes.ForcePoiRebuild#makeRule` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 146 | `make_rule` |
@@ -6310,6 +6313,9 @@ Total mapped Java symbols: **8806** across **1999** classes.
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#<init>` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#fix` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 65 | `fix` |
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#fixTag` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 38 | `fix_tag` |
+| `net.minecraft.util.datafix.fixes.LegacyDimensionIdFix#fixDimensionId` | `crates/mc-math/src/ported/legacy_dimension_id_fix.rs` | 47 | `<item>` |
+| `net.minecraft.util.datafix.fixes.LegacyDimensionIdFix#fixMap` | `crates/mc-math/src/ported/legacy_dimension_id_fix.rs` | 63 | `legacy_dimension_id_fix` |
+| `net.minecraft.util.datafix.fixes.LegacyDimensionIdFix#fixPlayer` | `crates/mc-math/src/ported/legacy_dimension_id_fix.rs` | 57 | `fix_map` |
 | `net.minecraft.util.datafix.fixes.LegacyDragonFightFix#<init>` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 133 | `new` |
 | `net.minecraft.util.datafix.fixes.LegacyDragonFightFix#fixDragonFight` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 149 | `fix_dragon_fight` |
 | `net.minecraft.util.datafix.fixes.LegacyDragonFightFix#makeRule` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 140 | `make_rule` |
@@ -6391,6 +6397,9 @@ Total mapped Java symbols: **8806** across **1999** classes.
 | `net.minecraft.util.datafix.fixes.ProjectileStoredWeaponFix#fixChoice` | `crates/mc-math/src/ported/projectile_stored_weapon_fix.rs` | 32 | `fix_choice` |
 | `net.minecraft.util.datafix.fixes.ProjectileStoredWeaponFix#fixChoiceCap` | `crates/mc-math/src/ported/projectile_stored_weapon_fix.rs` | 37 | `fix_choice_cap` |
 | `net.minecraft.util.datafix.fixes.ProjectileStoredWeaponFix#makeRule` | `crates/mc-math/src/ported/projectile_stored_weapon_fix.rs` | 26 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.RaidRenamesDataFix#fix` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 95 | `<item>` |
+| `net.minecraft.util.datafix.fixes.RaidRenamesDataFix#fixRaid` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 73 | `<item>` |
+| `net.minecraft.util.datafix.fixes.RaidRenamesDataFix#makeRule` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 113 | `<item>` |
 | `net.minecraft.util.datafix.fixes.RandomSequenceSettingsFix#<init>` | `crates/mc-math/src/ported/random_sequence_settings_fix.rs` | 68 | `new` |
 | `net.minecraft.util.datafix.fixes.RandomSequenceSettingsFix#makeRule` | `crates/mc-math/src/ported/random_sequence_settings_fix.rs` | 76 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.RecipesRenameningFix#RECIPES` | `crates/mc-math/src/ported/recipes_renamening_fix.rs` | 7 | `recipes` |
