@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6431** across **1412** classes.
+Total mapped Java symbols: **6452** across **1415** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -174,6 +174,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.core.BlockMath#getFaceTransformation` | `crates/mc-math/src/ported/block_math.rs` | 338 | `get_face_transformation` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/clientbound_block_event_packet.rs` | 16 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 298 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 161 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 149 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 11 | `new` |
@@ -388,6 +389,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 53 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#immutable (conceptual)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 66 | `immutable` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#set` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 303 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 58 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 99 | `set_with_offset` |
@@ -570,6 +572,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.core.IdMapper#add` | `crates/mc-math/src/ported/id_mapper.rs` | 66 | `add` |
 | `net.minecraft.core.IdMapper#addMapping` | `crates/mc-math/src/ported/id_mapper.rs` | 48 | `add_mapping` |
 | `net.minecraft.core.IdMapper#byId` | `crates/mc-math/src/ported/id_mapper.rs` | 77 | `by_id` |
+| `net.minecraft.core.IdMapper#byId` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 327 | `by_id` |
 | `net.minecraft.core.IdMapper#contains` | `crates/mc-math/src/ported/id_mapper.rs` | 89 | `contains` |
 | `net.minecraft.core.IdMapper#getId` | `crates/mc-math/src/ported/id_mapper.rs` | 72 | `get_id` |
 | `net.minecraft.core.IdMapper#iterator` | `crates/mc-math/src/ported/id_mapper.rs` | 99 | `iter` |
@@ -674,14 +677,31 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.core.Rotations#x` | `crates/mc-math/src/ported/rotations.rs` | 21 | `x` |
 | `net.minecraft.core.Rotations#y` | `crates/mc-math/src/ported/rotations.rs` | 26 | `y` |
 | `net.minecraft.core.Rotations#z` | `crates/mc-math/src/ported/rotations.rs` | 31 | `z` |
+| `net.minecraft.core.SectionPos#asLong` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 263 | `as_long` |
 | `net.minecraft.core.SectionPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 108 | `as_long_coords` |
 | `net.minecraft.core.SectionPos#blockToSectionCoord(int)` | `crates/mc-math/src/packing.rs` | 102 | `block_to_section_coord` |
+| `net.minecraft.core.SectionPos#minBlockX` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 215 | `min_block_x` |
+| `net.minecraft.core.SectionPos#minBlockY` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 220 | `min_block_y` |
+| `net.minecraft.core.SectionPos#minBlockZ` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 225 | `min_block_z` |
 | `net.minecraft.core.SectionPos#of(int,int,int)` | `crates/mc-math/src/packing.rs` | 96 | `new` |
+| `net.minecraft.core.SectionPos#of(int,int,int)` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 195 | `new` |
 | `net.minecraft.core.SectionPos#of(long)` | `crates/mc-math/src/packing.rs` | 135 | `of` |
+| `net.minecraft.core.SectionPos#of(long)` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 270 | `from_long` |
+| `net.minecraft.core.SectionPos#relativeToBlockX` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 245 | `relative_to_block_x` |
+| `net.minecraft.core.SectionPos#relativeToBlockY` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 251 | `relative_to_block_y` |
+| `net.minecraft.core.SectionPos#relativeToBlockZ` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 257 | `relative_to_block_z` |
+| `net.minecraft.core.SectionPos#sectionRelativeX` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 230 | `section_relative_x` |
+| `net.minecraft.core.SectionPos#sectionRelativeY` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 235 | `section_relative_y` |
+| `net.minecraft.core.SectionPos#sectionRelativeZ` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 240 | `section_relative_z` |
 | `net.minecraft.core.SectionPos#sectionToBlockCoord` | `crates/mc-worldgen/src/ported/debug_level_source.rs` | 111 | `section_to_block_coord` |
+| `net.minecraft.core.SectionPos#x` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 200 | `x` |
 | `net.minecraft.core.SectionPos#x(long)` | `crates/mc-math/src/packing.rs` | 117 | `get_x` |
+| `net.minecraft.core.SectionPos#y` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 205 | `y` |
 | `net.minecraft.core.SectionPos#y(long)` | `crates/mc-math/src/packing.rs` | 123 | `get_y` |
+| `net.minecraft.core.SectionPos#z` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 210 | `z` |
 | `net.minecraft.core.SectionPos#z(long)` | `crates/mc-math/src/packing.rs` | 129 | `get_z` |
+| `net.minecraft.core.SectionPos$STREAM_CODEC decode` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 278 | `stream_decode` |
+| `net.minecraft.core.SectionPos$STREAM_CODEC encode` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 283 | `stream_encode` |
 | `net.minecraft.core.UUIDUtil#createOfflinePlayerUUID` | `crates/mc-math/src/ported/uuid_util.rs` | 103 | `create_offline_player_uuid` |
 | `net.minecraft.core.UUIDUtil#createOfflineProfile` | `crates/mc-math/src/ported/uuid_util.rs` | 112 | `create_offline_profile` |
 | `net.minecraft.core.UUIDUtil#leastMostToIntArray` | `crates/mc-math/src/ported/uuid_util.rs` | 74 | `least_most_to_int_array` |
@@ -1635,6 +1655,8 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_remove_entities_packet.rs` | 17 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 9 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 16 | `from_bytes` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 20 | `new` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 28 | `from_bytes` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_set_entity_motion_packet.rs` | 45 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_set_entity_motion_packet.rs` | 53 | `from_vec` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/clientbound_set_player_inventory_packet.rs` | 12 | `new` |
@@ -1843,6 +1865,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_remove_entities_packet.rs` | 50 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 41 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 3 | `read_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 66 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_select_advancements_tab_packet.rs` | 45 | `read_varint` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 42 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/clientbound_set_camera_packet.rs` | 16 | `read_var_int` |
@@ -1898,6 +1921,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.FriendlyByteBuf#readVarInt()` | `crates/mc-protocol/src/ported/serverbound_place_recipe_packet.rs` | 66 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarIntArray` | `crates/mc-protocol/src/ported/clientbound_set_passengers_packet.rs` | 27 | `read_var_int_array` |
 | `net.minecraft.network.FriendlyByteBuf#readVarLong` | `crates/mc-protocol/src/ported/clientbound_initialize_border_packet.rs` | 67 | `read_var_long` |
+| `net.minecraft.network.FriendlyByteBuf#readVarLong` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 119 | `read_var_long` |
 | `net.minecraft.network.FriendlyByteBuf#readVarLong` | `crates/mc-protocol/src/ported/clientbound_set_border_lerp_size_packet.rs` | 11 | `read_var_long` |
 | `net.minecraft.network.FriendlyByteBuf#readVec3` | `crates/mc-protocol/src/ported/clientbound_teleport_entity_packet.rs` | 282 | `read_vec3` |
 | `net.minecraft.network.FriendlyByteBuf#readableBytes` | `crates/mc-protocol/src/ported/clientbound_animate_packet.rs` | 42 | `readable_bytes` |
@@ -2087,6 +2111,8 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_remove_entities_packet.rs` | 38 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 28 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 21 | `write_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 82 | `write_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 179 | `write_var_int_faithful` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_select_advancements_tab_packet.rs` | 63 | `write_varint` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 60 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/clientbound_set_camera_packet.rs` | 42 | `write_var_int` |
@@ -2142,6 +2168,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt(int)` | `crates/mc-protocol/src/ported/serverbound_place_recipe_packet.rs` | 87 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarIntArray` | `crates/mc-protocol/src/ported/clientbound_set_passengers_packet.rs` | 51 | `write_var_int_array` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarLong` | `crates/mc-protocol/src/ported/clientbound_initialize_border_packet.rs` | 116 | `write_var_long` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarLong` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 135 | `write_var_long` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarLong` | `crates/mc-protocol/src/ported/clientbound_set_border_lerp_size_packet.rs` | 32 | `write_var_long` |
 | `net.minecraft.network.FriendlyByteBuf#writeVec3` | `crates/mc-protocol/src/ported/clientbound_teleport_entity_packet.rs` | 290 | `write_vec3` |
 | `net.minecraft.network.FriendlyByteBuf#writerIndex` | `crates/mc-protocol/src/ported/clientbound_animate_packet.rs` | 47 | `into_vec` |
@@ -3329,6 +3356,11 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.network.protocol.game.ClientboundRotateHeadPacket#handle` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 83 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundRotateHeadPacket#type` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 78 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundRotateHeadPacket#write` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 72 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundSectionBlocksUpdatePacket#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 362 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundSectionBlocksUpdatePacket#<init>(SectionPos,ShortSet,LevelChunkSection)` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 344 | `new_from_entries` |
+| `net.minecraft.network.protocol.game.ClientboundSectionBlocksUpdatePacket#runUpdates` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 402 | `run_updates` |
+| `net.minecraft.network.protocol.game.ClientboundSectionBlocksUpdatePacket#type` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 397 | `packet_type_id` |
+| `net.minecraft.network.protocol.game.ClientboundSectionBlocksUpdatePacket#write` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 384 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundSelectAdvancementsTabPacket#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_select_advancements_tab_packet.rs` | 28 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundSelectAdvancementsTabPacket#<init>(Identifier)` | `crates/mc-protocol/src/ported/clientbound_select_advancements_tab_packet.rs` | 23 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundSelectAdvancementsTabPacket#getTab` | `crates/mc-protocol/src/ported/clientbound_select_advancements_tab_packet.rs` | 39 | `get_tab` |
@@ -5653,6 +5685,7 @@ Total mapped Java symbols: **6431** across **1412** classes.
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 17 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 110 | `get_id` |
+| `net.minecraft.world.level.block.Block#getId` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 322 | `get_id` |
 | `net.minecraft.world.level.block.Block#isShapeFullBlock` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 53 | `is_shape_full_block` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 115 | `state_by_id` |
