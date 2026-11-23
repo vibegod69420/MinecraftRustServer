@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:38:06 UTC
+- **Updated**: 2026-11-23 02:39:14 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 5837 / 66676 (8.754%)
-- **Mapped Java Classes**: 1324 / 7163 (18.484%)
+- **Mapped Java Methods**: 5858 / 66676 (8.786%)
+- **Mapped Java Classes**: 1330 / 7163 (18.568%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1541 mapped methods
-- `mc-protocol`: 2281 mapped methods
-- `mc-worldgen`: 1501 mapped methods
+- `mc-protocol`: 2314 mapped methods
+- `mc-worldgen`: 1502 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (1308.1s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration` -> `mc-worldgen` (129.3s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement` -> `mc-worldgen` (148.4s)
 - [FAIL] `net.minecraft.world.level.storage.LevelStorageSource` -> `mc-nbt` (969.9s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.structure.StructureType` -> `mc-worldgen` (298.4s)
 - [FAIL] `net.minecraft.world.level.storage.loot.BuiltInLootTables` -> `mc-nbt` (1011.3s)
 - [FAIL] `net.minecraft.util.thread.ParallelMapTransform` -> `mc-math` (2545.8s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement` -> `mc-worldgen` (263.3s)
