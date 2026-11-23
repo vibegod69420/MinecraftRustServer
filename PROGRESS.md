@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 22:51:28 UTC
+- **Updated**: 2026-11-23 22:52:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9509 / 66676 (14.261%)
 - **Mapped Java Classes**: 2160 / 7163 (30.155%)
@@ -14,6 +14,14 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (562.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (562.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (562.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (562.8s)
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (1158.0s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (2769.2s)
+- [PASS] `net.minecraft.util.profiling.jfr.stats.GcHeapStat` -> `mc-math` (836.1s)
+- [FAIL] `net.minecraft.world.level.chunk.ChunkAccess` -> `mc-worldgen` (1390.5s)
 - [PASS] `net.minecraft.util.datafix.fixes.MapBannerBlockPosFormatFix` -> `mc-math` (785.5s)
 - [PASS] `net.minecraft.util.datafix.fixes.EntityAttributeBaseValueFix` -> `mc-math` (785.5s)
 - [PASS] `net.minecraft.util.datafix.fixes.WorldGenSettingsDisallowOldCustomWorldsFix` -> `mc-math` (785.5s)
@@ -21,11 +29,3 @@
 - [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (1122.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (2528.0s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SerializableChunkData` -> `mc-worldgen` (396.2s)
-- [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (505.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature` -> `mc-worldgen` (1544.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (997.4s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.RegionFileStorage` -> `mc-worldgen` (477.7s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.RecreatingSimpleRegionStorage` -> `mc-worldgen` (477.7s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter` -> `mc-worldgen` (477.7s)
-- [FAIL] `net.minecraft.world.level.levelgen.WorldDimensions` -> `mc-worldgen` (1175.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (467.1s)
