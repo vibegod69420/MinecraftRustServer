@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 15:56:41 UTC",
-  "updated_epoch": 1795449401,
+  "updated_at": "2026-11-23 16:09:27 UTC",
+  "updated_epoch": 1795450167,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 29.5128,
     "method_coverage_pct": 13.8296,
     "harness_verified_classes": 1348,
-    "harness_failed_attempts": 394
+    "harness_failed_attempts": 403
   },
   "crates": [
     {
@@ -47,13 +47,85 @@
     }
   ],
   "usage": {
-    "calls_total": 1964,
-    "prompt_tokens": 6363842,
-    "completion_tokens": 32078038,
-    "reasoning_tokens": 22967767,
-    "avg_latency_s": 227.3
+    "calls_total": 1996,
+    "prompt_tokens": 6449288,
+    "completion_tokens": 32505782,
+    "reasoning_tokens": 23307512,
+    "avg_latency_s": 222.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T16:06:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 604.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:06:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 604.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:06:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 604.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:06:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 604.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:03:29Z",
+      "class_name": "net.minecraft.world.level.storage.WorldData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 429.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:03:29Z",
+      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 429.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:03:29Z",
+      "class_name": "net.minecraft.world.level.storage.ValueOutput",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 429.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T15:57:52Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 97.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T15:57:35Z",
+      "class_name": "net.minecraft.world.level.levelgen.GenerationStep",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 75.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T15:44:45Z",
       "class_name": "net.minecraft.util.datafix.fixes.AttributeModifierIdFix",
@@ -301,81 +373,14 @@
       "verified": false,
       "seconds": 4007.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackSpawnEggFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1610.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackEnchantmentNamesFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 4329.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BannerPatternFormatFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 4329.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.DataFixTypes",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4329.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.RecipesFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 4007.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:20:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.InlineBlockPosFormatFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 764.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:16:34Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2396.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:07:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LegacyHoverEventFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2186.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:07:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelFlatGeneratorInfoFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2186.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "007af98",
+      "ts": "2026-11-23T15:56:43+00:00",
+      "message": "Worker sync: 9221 mapped Java methods"
+    },
     {
       "sha": "e1e62e5",
       "ts": "2026-11-23T15:39:40+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "0470c25",
       "ts": "2026-11-23T13:24:17+00:00",
-      "message": "Worker sync: 9132 mapped Java methods"
-    },
-    {
-      "sha": "0f6809d",
-      "ts": "2026-11-23T13:20:27+00:00",
       "message": "Worker sync: 9132 mapped Java methods"
     }
   ]
