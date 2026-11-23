@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:11:58 UTC
+- **Updated**: 2026-11-23 01:12:06 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 4683 / 66676 (7.024%)
 - **Mapped Java Classes**: 1119 / 7163 (15.622%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 1260 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.storage.loot.functions.SetAttributesFunction` -> `mc-nbt` (271.6s)
+- [PASS] `net.minecraft.util.Ease` -> `mc-math` (278.7s)
+- [PASS] `net.minecraft.util.thread.BlockableEventLoop` -> `mc-math` (391.9s)
+- [PASS] `net.minecraft.world.level.levelgen.heightproviders.TrapezoidHeight` -> `mc-worldgen` (304.5s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.ExplorationMapFunction` -> `mc-nbt` (303.1s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.SetCustomModelDataFunction` -> `mc-nbt` (466.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure` -> `mc-worldgen` (454.5s)
@@ -25,7 +29,3 @@
 - [PASS] `net.minecraft.world.level.storage.loot.functions.SetNameFunction` -> `mc-nbt` (181.1s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.CappedProcessor` -> `mc-worldgen` (641.0s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType` -> `mc-worldgen` (641.0s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor` -> `mc-worldgen` (641.0s)
-- [PASS] `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap` -> `mc-math` (230.0s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundEntityEventPacket` -> `mc-protocol` (299.8s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundSetBorderCenterPacket` -> `mc-protocol` (299.8s)
