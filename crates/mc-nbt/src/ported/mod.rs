@@ -114,3 +114,4 @@ pub mod enchant_with_levels_function;
 pub mod command_storage;
 pub mod nested_loot_table;
 pub mod set_enchantments_function;
+pub mod loot_context_arg;

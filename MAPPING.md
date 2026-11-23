@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4407** across **1078** classes.
+Total mapped Java symbols: **4426** across **1083** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3025,8 +3025,18 @@ Total mapped Java symbols: **4407** across **1078** classes.
 | `net.minecraft.util.Keyframe#value` | `crates/mc-math/src/ported/keyframe.rs` | 24 | `value` |
 | `net.minecraft.util.Keyframe#value` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 49 | `value` |
 | `net.minecraft.util.KeyframeTrack#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 62 | `new` |
+| `net.minecraft.util.KeyframeTrack#bakeSampler` | `crates/mc-math/src/ported/keyframe_track.rs` | 166 | `bake_sampler` |
+| `net.minecraft.util.KeyframeTrack#easingType` | `crates/mc-math/src/ported/keyframe_track.rs` | 113 | `easing_type` |
 | `net.minecraft.util.KeyframeTrack#easingType` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 70 | `easing_type` |
+| `net.minecraft.util.KeyframeTrack#keyframes` | `crates/mc-math/src/ported/keyframe_track.rs` | 108 | `keyframes` |
 | `net.minecraft.util.KeyframeTrack#keyframes` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 75 | `keyframes` |
+| `net.minecraft.util.KeyframeTrack#new` | `crates/mc-math/src/ported/keyframe_track.rs` | 97 | `new` |
+| `net.minecraft.util.KeyframeTrack#validateKeyframes` | `crates/mc-math/src/ported/keyframe_track.rs` | 118 | `validate_keyframes` |
+| `net.minecraft.util.KeyframeTrack#validatePeriod` | `crates/mc-math/src/ported/keyframe_track.rs` | 152 | `validate_period` |
+| `net.minecraft.util.KeyframeTrack$Builder#addKeyframe` | `crates/mc-math/src/ported/keyframe_track.rs` | 235 | `add_keyframe` |
+| `net.minecraft.util.KeyframeTrack$Builder#build` | `crates/mc-math/src/ported/keyframe_track.rs` | 247 | `build` |
+| `net.minecraft.util.KeyframeTrack$Builder#new` | `crates/mc-math/src/ported/keyframe_track.rs` | 227 | `new` |
+| `net.minecraft.util.KeyframeTrack$Builder#setEasing` | `crates/mc-math/src/ported/keyframe_track.rs` | 241 | `set_easing` |
 | `net.minecraft.util.KeyframeTrackSampler#<init>` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 116 | `new` |
 | `net.minecraft.util.KeyframeTrackSampler#addSegmentsFromKeyframes` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 169 | `add_segments_from_keyframes` |
 | `net.minecraft.util.KeyframeTrackSampler#bakeSegments` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 126 | `bake_segments` |
@@ -4990,6 +5000,22 @@ Total mapped Java symbols: **4407** across **1078** classes.
 | `net.minecraft.world.level.storage.loot.LootContext$EntityTarget` | `crates/mc-nbt/src/ported/loot_item_entity_property_condition.rs` | 34 | `<item>` |
 | `net.minecraft.world.level.storage.loot.LootContext$EntityTarget#contextParam` | `crates/mc-nbt/src/ported/loot_item_entity_property_condition.rs` | 44 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContext.EntityTarget#contextParam` | `crates/mc-nbt/src/ported/entity_has_score_condition.rs` | 17 | `context_param` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#cast` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 66 | `cast` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#contextParam` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 42 | `context_param` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#contextParam` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 60 | `context_param` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#createArgCodec` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 199 | `create_arg_codec` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 39 | `get` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 55 | `get` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyBlockEntity` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 167 | `any_block_entity` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyEntity` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 158 | `any_entity` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyItemStack` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 176 | `any_item_stack` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyOf` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 115 | `any_of` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyOf` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 127 | `any_of_representable` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyOf` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 143 | `any_of_self` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#build` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 185 | `build` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$Getter#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 211 | `get_from` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$Getter#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 215 | `getter_get_from_context` |
+| `net.minecraft.world.level.storage.loot.LootContextArg$SimpleGetter#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 228 | `simple_getter_get_from_context` |
 | `net.minecraft.world.level.storage.loot.LootContextUser` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 82 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.LootContextUser#getReferencedContextParams` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 84 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.LootContextUser#getReferencedContextParams` | `crates/mc-nbt/src/ported/loot_context_user.rs` | 33 | `get_referenced_context_params` |
