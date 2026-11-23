@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5511** across **1281** classes.
+Total mapped Java symbols: **5524** across **1282** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4905,6 +4905,20 @@ Total mapped Java symbols: **5511** across **1281** classes.
 | `net.minecraft.world.level.levelgen.WorldGenerationContext#<init>` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 33 | `new` |
 | `net.minecraft.world.level.levelgen.WorldGenerationContext#getGenDepth` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 45 | `get_gen_depth` |
 | `net.minecraft.world.level.levelgen.WorldGenerationContext#getMinGenY` | `crates/mc-worldgen/src/ported/world_generation_context.rs` | 40 | `get_min_gen_y` |
+| `net.minecraft.world.level.levelgen.WorldOptions#<init>` | `crates/mc-worldgen/src/ported/world_options.rs` | 26 | `new` |
+| `net.minecraft.world.level.levelgen.WorldOptions#<init>` | `crates/mc-worldgen/src/ported/world_options.rs` | 31 | `new_full` |
+| `net.minecraft.world.level.levelgen.WorldOptions#DEMO_OPTIONS` | `crates/mc-worldgen/src/ported/world_options.rs` | 21 | `new` |
+| `net.minecraft.world.level.levelgen.WorldOptions#defaultWithRandomSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 46 | `default_with_random_seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#generateBonusChest` | `crates/mc-worldgen/src/ported/world_options.rs` | 66 | `generate_bonus_chest` |
+| `net.minecraft.world.level.levelgen.WorldOptions#generateStructures` | `crates/mc-worldgen/src/ported/world_options.rs` | 61 | `generate_structures` |
+| `net.minecraft.world.level.levelgen.WorldOptions#isOldCustomizedWorld` | `crates/mc-worldgen/src/ported/world_options.rs` | 71 | `is_old_customized_world` |
+| `net.minecraft.world.level.levelgen.WorldOptions#parseSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 106 | `parse_seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#randomSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 118 | `random_seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#seed` | `crates/mc-worldgen/src/ported/world_options.rs` | 56 | `seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#testWorldWithRandomSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 51 | `test_world_with_random_seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#withBonusChest` | `crates/mc-worldgen/src/ported/world_options.rs` | 76 | `with_bonus_chest` |
+| `net.minecraft.world.level.levelgen.WorldOptions#withSeed` | `crates/mc-worldgen/src/ported/world_options.rs` | 96 | `with_seed` |
+| `net.minecraft.world.level.levelgen.WorldOptions#withStructures` | `crates/mc-worldgen/src/ported/world_options.rs` | 86 | `with_structures` |
 | `net.minecraft.world.level.levelgen.WorldgenRandom#seedSlimeChunk` | `crates/mc-math/src/random.rs` | 651 | `seed_slime_chunk` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(RandomSupport$Seed128bit)` | `crates/mc-math/src/random.rs` | 414 | `from_seed128` |
 | `net.minecraft.world.level.levelgen.Xoroshiro128PlusPlus#<init>(long,long)` | `crates/mc-math/src/random.rs` | 405 | `new` |

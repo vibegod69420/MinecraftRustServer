@@ -240,3 +240,4 @@ pub mod waterlogged_vegetation_patch_feature;
 pub mod nether_fossil_structure;
 pub mod ocean_ruin_structure;
 pub mod woodland_mansion_structure;
+pub mod world_options;
