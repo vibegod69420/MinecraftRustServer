@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 06:16:26 UTC
+- **Updated**: 2026-11-23 06:16:48 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7623 / 66676 (11.433%)
 - **Mapped Java Classes**: 1611 / 7163 (22.491%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2328 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (765.1s)
 - [PASS] `net.minecraft.world.level.levelgen.Aquifer` -> `mc-worldgen` (1188.6s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.RegionFileStorage` -> `mc-worldgen` (479.7s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.RecreatingSimpleRegionStorage` -> `mc-worldgen` (479.7s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.network.protocol.game.ClientboundCommandsPacket` -> `mc-protocol` (2042.6s)
 - [PASS] `net.minecraft.world.level.chunk.StructureAccess` -> `mc-worldgen` (249.1s)
 - [PASS] `net.minecraft.world.level.chunk.ChunkGenerators` -> `mc-worldgen` (249.1s)
-- [PASS] `net.minecraft.world.level.chunk.Palette` -> `mc-worldgen` (249.1s)

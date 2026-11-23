@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 06:16:26 UTC",
-  "updated_epoch": 1795414586,
+  "updated_at": "2026-11-23 06:16:48 UTC",
+  "updated_epoch": 1795414608,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 22.4906,
     "method_coverage_pct": 11.4329,
     "harness_verified_classes": 996,
-    "harness_failed_attempts": 291
+    "harness_failed_attempts": 292
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 1401,
-    "prompt_tokens": 4100800,
-    "completion_tokens": 23042658,
-    "reasoning_tokens": 16620449,
-    "avg_latency_s": 268.6
+    "calls_total": 1402,
+    "prompt_tokens": 4115524,
+    "completion_tokens": 23056382,
+    "reasoning_tokens": 16622994,
+    "avg_latency_s": 268.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T06:16:47Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 765.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T06:16:25Z",
       "class_name": "net.minecraft.world.level.levelgen.Aquifer",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 610.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T05:45:54Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.TemplateStructurePiece",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 578.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f129ae3",
+      "ts": "2026-11-23T06:16:27+00:00",
+      "message": "Worker sync: 7623 mapped Java methods"
+    },
     {
       "sha": "f3e0767",
       "ts": "2026-11-23T06:15:28+00:00",
@@ -445,11 +450,6 @@
       "sha": "116c7f8",
       "ts": "2026-11-23T05:48:20+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "e2a28cc",
-      "ts": "2026-11-23T05:48:03+00:00",
-      "message": "Worker sync: 7457 mapped Java methods"
     }
   ]
 }
