@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:28:02 UTC
+- **Updated**: 2026-11-23 02:28:20 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 5742 / 66676 (8.612%)
 - **Mapped Java Classes**: 1305 / 7163 (18.219%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1404 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetContainerContents` -> `mc-nbt` (1266.5s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.treedecorators.AttachedToLeavesDecorator` -> `mc-worldgen` (276.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.EndPodiumFeature` -> `mc-worldgen` (609.1s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature` -> `mc-worldgen` (609.1s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.login.ServerboundKeyPacket` -> `mc-protocol` (484.8s)
 - [PASS] `net.minecraft.network.protocol.login.ClientboundCustomQueryPacket` -> `mc-protocol` (484.8s)
 - [PASS] `net.minecraft.network.protocol.login.LoginPacketTypes` -> `mc-protocol` (484.8s)
-- [PASS] `net.minecraft.network.protocol.common.CommonPacketTypes` -> `mc-protocol` (224.0s)
