@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 06:34:06 UTC",
-  "updated_epoch": 1795415646,
+  "updated_at": "2026-11-23 06:36:01 UTC",
+  "updated_epoch": 1795415761,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 22.8256,
     "method_coverage_pct": 11.7194,
     "harness_verified_classes": 1011,
-    "harness_failed_attempts": 298
+    "harness_failed_attempts": 299
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 1444,
-    "prompt_tokens": 4266898,
-    "completion_tokens": 23888638,
-    "reasoning_tokens": 17205016,
-    "avg_latency_s": 272.5
+    "calls_total": 1446,
+    "prompt_tokens": 4269869,
+    "completion_tokens": 23919567,
+    "reasoning_tokens": 17232166,
+    "avg_latency_s": 272.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T06:34:53Z",
+      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 836.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T06:34:02Z",
       "class_name": "net.minecraft.world.level.chunk.storage.SimpleRegionStorage",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1056.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T06:07:42Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 811.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7faa603",
+      "ts": "2026-11-23T06:34:06+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "3292813",
       "ts": "2026-11-23T06:34:03+00:00",
@@ -445,11 +450,6 @@
       "sha": "f3e0767",
       "ts": "2026-11-23T06:15:28+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "57fe249",
-      "ts": "2026-11-23T06:14:27+00:00",
-      "message": "Worker sync: 7557 mapped Java methods"
     }
   ]
 }
