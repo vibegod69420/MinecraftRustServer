@@ -330,3 +330,8 @@ pub mod single_value_palette;
 pub mod hash_map_palette;
 pub mod linear_palette;
 pub mod aquifer;
+pub mod paletted_container_factory;
+pub mod empty_level_chunk;
+pub mod bulk_section_access;
+pub mod chunk_pyramid;
+pub mod strategy;
