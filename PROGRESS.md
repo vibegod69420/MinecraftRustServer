@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:53:55 UTC
+- **Updated**: 2026-11-23 04:56:32 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7292 / 66676 (10.937%)
-- **Mapped Java Classes**: 1559 / 7163 (21.765%)
+- **Mapped Java Methods**: 7303 / 66676 (10.953%)
+- **Mapped Java Classes**: 1560 / 7163 (21.779%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,12 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 1952 mapped methods
+- `mc-worldgen`: 1964 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.Beardifier` -> `mc-worldgen` (1859.0s)
+- [FAIL] `net.minecraft.world.level.levelgen.WorldDimensions` -> `mc-worldgen` (1154.2s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature` -> `mc-worldgen` (923.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece` -> `mc-worldgen` (1759.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (760.3s)
 - [PASS] `net.minecraft.world.level.storage.LevelStorageSource` -> `mc-nbt` (1838.4s)
@@ -26,6 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces` -> `mc-worldgen` (180.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (992.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.IglooPieces` -> `mc-worldgen` (1114.8s)
-- [FAIL] `net.minecraft.server.ServerTickRateManager` -> `mc-protocol` (1061.4s)
-- [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (1332.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (871.5s)

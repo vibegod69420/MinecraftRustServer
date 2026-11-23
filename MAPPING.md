@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7292** across **1559** classes.
+Total mapped Java symbols: **7303** across **1560** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6371,6 +6371,18 @@ Total mapped Java symbols: **7292** across **1559** classes.
 | `net.minecraft.world.level.border.WorldBorder#getWarningTime` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 84 | `get_warning_time` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
+| `net.minecraft.world.level.levelgen.Beardifier#<init>` | `crates/mc-worldgen/src/ported/beardifier.rs` | 291 | `new` |
+| `net.minecraft.world.level.levelgen.Beardifier#compute` | `crates/mc-worldgen/src/ported/beardifier.rs` | 393 | `compute` |
+| `net.minecraft.world.level.levelgen.Beardifier#computeBeardContribution` | `crates/mc-worldgen/src/ported/beardifier.rs` | 517 | `compute_beard_contribution_int` |
+| `net.minecraft.world.level.levelgen.Beardifier#computeBeardContribution` | `crates/mc-worldgen/src/ported/beardifier.rs` | 522 | `compute_beard_contribution` |
+| `net.minecraft.world.level.levelgen.Beardifier#fillArray` | `crates/mc-worldgen/src/ported/beardifier.rs` | 379 | `fill_array` |
+| `net.minecraft.world.level.levelgen.Beardifier#forStructuresInChunk` | `crates/mc-worldgen/src/ported/beardifier.rs` | 304 | `for_structures_in_chunk` |
+| `net.minecraft.world.level.levelgen.Beardifier#getBeardContribution` | `crates/mc-worldgen/src/ported/beardifier.rs` | 492 | `get_beard_contribution` |
+| `net.minecraft.world.level.levelgen.Beardifier#getBuryContribution` | `crates/mc-worldgen/src/ported/beardifier.rs` | 486 | `get_bury_contribution` |
+| `net.minecraft.world.level.levelgen.Beardifier#includeBoundingBox` | `crates/mc-worldgen/src/ported/beardifier.rs` | 478 | `include_bounding_box` |
+| `net.minecraft.world.level.levelgen.Beardifier#isInKernelRange` | `crates/mc-worldgen/src/ported/beardifier.rs` | 512 | `is_in_kernel_range` |
+| `net.minecraft.world.level.levelgen.Beardifier#maxValue` | `crates/mc-worldgen/src/ported/beardifier.rs` | 472 | `max_value` |
+| `net.minecraft.world.level.levelgen.Beardifier#minValue` | `crates/mc-worldgen/src/ported/beardifier.rs` | 467 | `min_value` |
 | `net.minecraft.world.level.levelgen.BelowZeroRetrogen#<init>` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 240 | `new` |
 | `net.minecraft.world.level.levelgen.BelowZeroRetrogen#RETAINED_RETROGEN_BIOMES` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 163 | `<item>` |
 | `net.minecraft.world.level.levelgen.BelowZeroRetrogen#UPGRADE_HEIGHT_ACCESSOR` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 102 | `<item>` |
