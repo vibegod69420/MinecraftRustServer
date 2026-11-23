@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6092** across **1361** classes.
+Total mapped Java symbols: **6101** across **1362** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5349,6 +5349,15 @@ Total mapped Java symbols: **6092** across **1361** classes.
 | `net.minecraft.world.level.border.WorldBorder#getWarningTime` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 84 | `get_warning_time` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#<init>` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 240 | `new` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#RETAINED_RETROGEN_BIOMES` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 163 | `<item>` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#UPGRADE_HEIGHT_ACCESSOR` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 102 | `<item>` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#applyBedrockMask` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 257 | `apply_bedrock_mask` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#getBiomeResolver` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 295 | `get_biome_resolver` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#hasBedrockHole` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 288 | `has_bedrock_hole` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#hasBedrockHoles` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 283 | `has_bedrock_holes` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#replaceOldBedrock` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 248 | `replace_old_bedrock` |
+| `net.minecraft.world.level.levelgen.BelowZeroRetrogen#targetStatus` | `crates/mc-worldgen/src/ported/below_zero_retrogen.rs` | 278 | `target_status` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextBoolean` | `crates/mc-math/src/random.rs` | 339 | `next_boolean` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextDouble` | `crates/mc-math/src/random.rs` | 286 | `bit_next_double` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextDouble` | `crates/mc-math/src/random.rs` | 349 | `next_double` |
