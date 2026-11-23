@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 07:25:57 UTC",
-  "updated_epoch": 1795418757,
+  "updated_at": "2026-11-23 07:28:11 UTC",
+  "updated_epoch": 1795418891,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1696,
-    "mapped_methods": 7986,
-    "class_coverage_pct": 23.6772,
-    "method_coverage_pct": 11.9773,
-    "harness_verified_classes": 1054,
-    "harness_failed_attempts": 314
+    "mapped_classes": 1714,
+    "mapped_methods": 8023,
+    "class_coverage_pct": 23.9285,
+    "method_coverage_pct": 12.0328,
+    "harness_verified_classes": 1062,
+    "harness_failed_attempts": 315
   },
   "crates": [
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2271
+      "mapped_methods": 2330
     },
     {
       "name": "mc-nbt",
@@ -47,13 +47,85 @@
     }
   ],
   "usage": {
-    "calls_total": 1535,
-    "prompt_tokens": 4657843,
-    "completion_tokens": 25423203,
-    "reasoning_tokens": 18247783,
+    "calls_total": 1542,
+    "prompt_tokens": 4678759,
+    "completion_tokens": 25530235,
+    "reasoning_tokens": 18323096,
     "avg_latency_s": 283.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T07:27:30Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.ChunkRegionReadEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 184.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:27:30Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.PacketReceivedEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 184.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:27:30Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.PacketSentEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 184.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:27:30Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 184.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:26:39Z",
+      "class_name": "net.minecraft.world.level.chunk.ProtoChunk",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2187.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:25:57Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1481",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:25:57Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1801",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:25:57Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V4531",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:25:57Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V2568",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T07:25:38Z",
       "class_name": "net.minecraft.util.datafix.schemas.V4421",
@@ -301,81 +373,14 @@
       "verified": true,
       "seconds": 178.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:19:13Z",
-      "class_name": "net.minecraft.util.profiling.ProfileCollector",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 178.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:18:34Z",
-      "class_name": "net.minecraft.util.profiling.metrics.storage.RecordedDeviation",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 100.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:18:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BlockEntityShulkerBoxColorFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 183.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:18:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FilteredSignsFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 183.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:18:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.DyeItemRenameFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 183.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:18:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityTippedArrowFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 183.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:16:53Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.IOWorker",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1820.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:16:14Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1781.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:15:13Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseRouterData",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1720.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7e0abf5",
+      "ts": "2026-11-23T07:25:57+00:00",
+      "message": "Port 8 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "2c5f099",
       "ts": "2026-11-23T07:24:25+00:00",
@@ -445,11 +450,6 @@
       "sha": "ecdd257",
       "ts": "2026-11-23T06:55:21+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "4919061",
-      "ts": "2026-11-23T06:52:06+00:00",
-      "message": "Worker sync: 7859 mapped Java methods"
     }
   ]
 }
