@@ -225,3 +225,4 @@ pub mod clientbound_set_entity_link_packet;
 pub mod clientbound_update_recipes_packet;
 pub mod clientbound_set_border_center_packet;
 pub mod clientbound_entity_event_packet;
+pub mod clientbound_entity_position_sync_packet;

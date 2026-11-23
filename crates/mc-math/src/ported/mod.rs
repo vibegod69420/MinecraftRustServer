@@ -190,3 +190,5 @@ pub mod string_representable;
 pub mod crude_incremental_int_identity_hash_bi_map;
 pub mod blockable_event_loop;
 pub mod ease;
+pub mod block_util;
+pub mod sorted_array_set;

@@ -1,19 +1,24 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:12:06 UTC
+- **Updated**: 2026-11-23 01:13:13 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 4683 / 66676 (7.024%)
-- **Mapped Java Classes**: 1119 / 7163 (15.622%)
+- **Mapped Java Methods**: 4720 / 66676 (7.079%)
+- **Mapped Java Classes**: 1123 / 7163 (15.678%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 1651 mapped methods
+- `mc-math`: 1681 mapped methods
 - `mc-nbt`: 1390 mapped methods
-- `mc-protocol`: 1518 mapped methods
+- `mc-protocol`: 1534 mapped methods
 - `mc-worldgen`: 1260 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider` -> `mc-worldgen` (677.2s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.DualNoiseProvider` -> `mc-worldgen` (677.2s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.NoiseThresholdProvider` -> `mc-worldgen` (677.2s)
+- [PASS] `net.minecraft.util.BlockUtil` -> `mc-math` (398.2s)
+- [FAIL] `net.minecraft.world.level.storage.ValueInputContextHelper` -> `mc-nbt` (617.3s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.SetAttributesFunction` -> `mc-nbt` (271.6s)
 - [PASS] `net.minecraft.util.Ease` -> `mc-math` (278.7s)
 - [PASS] `net.minecraft.util.thread.BlockableEventLoop` -> `mc-math` (391.9s)
@@ -24,8 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure` -> `mc-worldgen` (454.5s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure` -> `mc-worldgen` (454.5s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (559.6s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction` -> `mc-nbt` (286.5s)
-- [FAIL] `net.minecraft.util.thread.AbstractConsecutiveExecutor` -> `mc-math` (685.2s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetNameFunction` -> `mc-nbt` (181.1s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.CappedProcessor` -> `mc-worldgen` (641.0s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType` -> `mc-worldgen` (641.0s)
