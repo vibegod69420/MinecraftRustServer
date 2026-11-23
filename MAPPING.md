@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6810** across **1473** classes.
+Total mapped Java symbols: **6828** across **1474** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6862,6 +6862,10 @@ Total mapped Java symbols: **6810** across **1473** classes.
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer#<init>` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 263 | `new` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 285 | `place_trunk` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer#type` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 280 | `placer_type` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#<init>` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 309 | `new` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#generateBranch` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 462 | `generate_branch` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 377 | `place_trunk` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#type` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 335 | `placer_type` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#<init>` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 251 | `new` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 265 | `place_trunk` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#type` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 260 | `placer_type` |
@@ -6875,14 +6879,17 @@ Total mapped Java symbols: **6810** across **1473** classes.
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer#type` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 110 | `type_` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#getTreeHeight` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 139 | `get_tree_height` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLog` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 213 | `place_log` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLog` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 354 | `place_log` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLog` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 203 | `place_log` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLog` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 163 | `place_log` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLog` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 126 | `place_log` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#placeLogIfFree` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 176 | `place_log_if_free` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#setDirtAt` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 199 | `set_dirt_at` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#setDirtAt` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 340 | `set_dirt_at` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#setDirtAt` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 189 | `set_dirt_at` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#setDirtAt` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 152 | `set_dirt_at` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#setDirtAt` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 115 | `set_dirt_at` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer#validTreePos` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 372 | `valid_tree_pos` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType#<init>` | `crates/mc-worldgen/src/ported/trunk_placer_type.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType#codec` | `crates/mc-worldgen/src/ported/trunk_placer_type.rs` | 77 | `codec` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType#register` | `crates/mc-worldgen/src/ported/trunk_placer_type.rs` | 70 | `register` |
@@ -7236,8 +7243,27 @@ Total mapped Java symbols: **6810** across **1473** classes.
 | `net.minecraft.world.level.levelgen.structure.pools.ListPoolElement#setProjectionOnEachElement` | `crates/mc-worldgen/src/ported/list_pool_element.rs` | 214 | `set_projection_on_each_element` |
 | `net.minecraft.world.level.levelgen.structure.pools.ListPoolElement#toString` | `crates/mc-worldgen/src/ported/list_pool_element.rs` | 322 | `fmt` |
 | `net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement#getSettings` | `crates/mc-worldgen/src/ported/legacy_single_pool_element.rs` | 154 | `super_get_settings` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#<init>` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 132 | `new` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#empty` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 497 | `empty` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#feature` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 575 | `feature` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getBoundingBox` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 144 | `get_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getBoundingBox` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 168 | `get_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getGroundLevelDelta` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 223 | `get_ground_level_delta` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getProjection` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 216 | `get_projection` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getShuffledJigsawBlocks` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 159 | `get_shuffled_jigsaw_blocks` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getSize` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 152 | `get_size` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getType` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 192 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#handleDataMarker` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 195 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#legacy` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 502 | `legacy` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#legacy` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 512 | `legacy_with_processors` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#list` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 585 | `list` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#place` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 154 | `place` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#place` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 176 | `place` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#setProjection` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 207 | `set_projection` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#single` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 525 | `single` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#single` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 535 | `single_with_processors` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#single` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 548 | `single_with_liquid_settings` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#single` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 561 | `single_with_processors_and_liquid_settings` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#codec` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 55 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#register` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 60 | `register` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 116 | `all_targets` |

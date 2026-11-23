@@ -284,3 +284,5 @@ pub mod flat_level_source;
 pub mod tree_configuration;
 pub mod column;
 pub mod pool_element_structure_piece;
+pub mod structure_pool_element;
+pub mod cherry_trunk_placer;
