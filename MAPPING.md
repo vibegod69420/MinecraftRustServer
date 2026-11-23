@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6930** across **1500** classes.
+Total mapped Java symbols: **6934** across **1501** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2609,6 +2609,10 @@ Total mapped Java symbols: **6930** across **1500** classes.
 | `net.minecraft.network.chat.contents.PlainTextContents$LiteralContents#toString` | `crates/mc-protocol/src/ported/plain_text_contents.rs` | 57 | `fmt` |
 | `net.minecraft.network.chat.contents.PlainTextContents$LiteralContents#visit` | `crates/mc-protocol/src/ported/plain_text_contents.rs` | 42 | `visit_content` |
 | `net.minecraft.network.chat.contents.PlainTextContents$LiteralContents#visit` | `crates/mc-protocol/src/ported/plain_text_contents.rs` | 47 | `visit_styled_content` |
+| `net.minecraft.network.chat.contents.ScoreContents#findTargetName` | `crates/mc-protocol/src/ported/score_contents.rs` | 199 | `find_target_name` |
+| `net.minecraft.network.chat.contents.ScoreContents#getScore` | `crates/mc-protocol/src/ported/score_contents.rs` | 224 | `get_score` |
+| `net.minecraft.network.chat.contents.ScoreContents#resolve` | `crates/mc-protocol/src/ported/score_contents.rs` | 243 | `resolve` |
+| `net.minecraft.network.chat.contents.ScoreContents#toString` | `crates/mc-protocol/src/ported/score_contents.rs` | 269 | `fmt` |
 | `net.minecraft.network.chat.contents.SelectorContents#codec` | `crates/mc-protocol/src/ported/selector_contents.rs` | 169 | `codec` |
 | `net.minecraft.network.chat.contents.SelectorContents#resolve` | `crates/mc-protocol/src/ported/selector_contents.rs` | 174 | `resolve` |
 | `net.minecraft.network.chat.contents.SelectorContents#selector` | `crates/mc-protocol/src/ported/selector_contents.rs` | 159 | `selector` |

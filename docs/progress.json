@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 04:12:08 UTC",
-  "updated_epoch": 1795407128,
+  "updated_at": "2026-11-23 04:12:42 UTC",
+  "updated_epoch": 1795407162,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1500,
-    "mapped_methods": 6930,
-    "class_coverage_pct": 20.9409,
-    "method_coverage_pct": 10.3935,
+    "mapped_classes": 1501,
+    "mapped_methods": 6934,
+    "class_coverage_pct": 20.9549,
+    "method_coverage_pct": 10.3995,
     "harness_verified_classes": 938,
     "harness_failed_attempts": 239
   },
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 3128
+      "mapped_methods": 3132
     },
     {
       "name": "mc-worldgen",
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "bb62b2d",
+      "ts": "2026-11-23T04:12:08+00:00",
+      "message": "Worker sync: 6930 mapped Java methods"
+    },
+    {
       "sha": "14aa2af",
       "ts": "2026-11-23T04:10:11+00:00",
       "message": "Worker sync: 6862 mapped Java methods"
@@ -445,11 +450,6 @@
       "sha": "8ca6014",
       "ts": "2026-11-23T03:46:10+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "5793295",
-      "ts": "2026-11-23T03:46:08+00:00",
-      "message": "Worker sync: 6582 mapped Java methods"
     }
   ]
 }

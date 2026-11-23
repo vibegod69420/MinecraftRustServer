@@ -1,16 +1,16 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:12:08 UTC
+- **Updated**: 2026-11-23 04:12:42 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 6930 / 66676 (10.393%)
-- **Mapped Java Classes**: 1500 / 7163 (20.941%)
+- **Mapped Java Methods**: 6934 / 66676 (10.399%)
+- **Mapped Java Classes**: 1501 / 7163 (20.955%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1656 mapped methods
-- `mc-protocol`: 3128 mapped methods
+- `mc-protocol`: 3132 mapped methods
 - `mc-worldgen`: 1857 mapped methods
 
 ## Recent Verified Work
