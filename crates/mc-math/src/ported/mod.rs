@@ -398,3 +398,7 @@ pub mod remove_empty_item_in_brushable_block_fix;
 pub mod goat_horn_id_fix;
 pub mod remote_sample_logger;
 pub mod entity_fields_rename_fix;
+pub mod custom_model_data_expand_fix;
+pub mod structure_reference_count_fix;
+pub mod options_menu_blurriness_fix;
+pub mod player_uuid_fix;
