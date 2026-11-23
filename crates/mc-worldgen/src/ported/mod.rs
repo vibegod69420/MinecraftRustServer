@@ -235,3 +235,5 @@ pub mod vegetation_patch_configuration;
 pub mod dripstone_cluster_configuration;
 pub mod bonus_chest_feature;
 pub mod pointed_dripstone_feature;
+pub mod coral_feature;
+pub mod waterlogged_vegetation_patch_feature;

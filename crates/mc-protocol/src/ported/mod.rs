@@ -263,3 +263,5 @@ pub mod signed_message_link;
 pub mod message_signature_cache;
 pub mod remote_chat_session;
 pub mod keybind_contents;
+pub mod clientbound_level_event_packet;
+pub mod clientbound_set_entity_data_packet;
