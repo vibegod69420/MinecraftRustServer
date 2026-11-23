@@ -103,3 +103,5 @@ pub mod set_item_count_function;
 pub mod bonus_level_table_condition;
 pub mod scoreboard_value;
 pub mod context_nbt_provider;
+pub mod loot_item_conditions;
+pub mod loot_item_block_state_property_condition;
