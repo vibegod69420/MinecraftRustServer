@@ -316,3 +316,4 @@ pub mod debug_entity_name_generator;
 pub mod clientbound_login_packet;
 pub mod clientbound_player_look_at_packet;
 pub mod clientbound_damage_event_packet;
+pub mod clientbound_update_mob_effect_packet;

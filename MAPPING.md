@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6407** across **1408** classes.
+Total mapped Java symbols: **6425** across **1410** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3595,6 +3595,19 @@ Total mapped Java symbols: **6407** across **1408** classes.
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#tickSteps` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 125 | `tick_steps` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#type` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 115 | `get_type` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#write` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 110 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 193 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 220 | `from_buf` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#effectShowsIcon` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 285 | `effect_shows_icon` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#getEffect` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 260 | `get_effect` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#getEffectAmplifier` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 265 | `get_effect_amplifier` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#getEffectDurationTicks` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 270 | `get_effect_duration_ticks` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#getEntityId` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 255 | `get_entity_id` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#handle` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 250 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#isEffectAmbient` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 280 | `is_effect_ambient` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#isEffectVisible` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 275 | `is_effect_visible` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#shouldBlend` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 290 | `should_blend` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#type` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 245 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#write` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 236 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_recipes_packet.rs` | 137 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_update_recipes_packet.rs` | 149 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateRecipesPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_update_recipes_packet.rs` | 166 | `write` |
@@ -5443,6 +5456,12 @@ Total mapped Java symbols: **6407** across **1408** classes.
 | `net.minecraft.world.Difficulty#getId` | `crates/mc-protocol/src/ported/serverbound_change_difficulty_packet.rs` | 32 | `id` |
 | `net.minecraft.world.attribute.LerpFunction#apply` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 18 | `apply` |
 | `net.minecraft.world.attribute.LerpFunction#apply` | `crates/mc-math/src/ported/keyframe_track_sampler.rs` | 26 | `apply` |
+| `net.minecraft.world.effect.MobEffectInstance#getAmplifier` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 132 | `get_amplifier` |
+| `net.minecraft.world.effect.MobEffectInstance#getDuration` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 137 | `get_duration` |
+| `net.minecraft.world.effect.MobEffectInstance#getEffect` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 127 | `get_effect` |
+| `net.minecraft.world.effect.MobEffectInstance#isAmbient` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 142 | `is_ambient` |
+| `net.minecraft.world.effect.MobEffectInstance#isVisible` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 147 | `is_visible` |
+| `net.minecraft.world.effect.MobEffectInstance#showIcon` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 152 | `show_icon` |
 | `net.minecraft.world.entity.Entity#<init>` | `crates/mc-protocol/src/ported/serverbound_player_command_packet.rs` | 47 | `new` |
 | `net.minecraft.world.entity.Entity#getId` | `crates/mc-protocol/src/ported/serverbound_player_command_packet.rs` | 52 | `get_id` |
 | `net.minecraft.world.entity.EquipmentSlot` | `crates/mc-protocol/src/ported/clientbound_set_equipment_packet.rs` | 6 | `<item>` |
