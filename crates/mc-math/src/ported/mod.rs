@@ -407,3 +407,5 @@ pub mod v3685;
 pub mod v3807;
 pub mod v100;
 pub mod v2684;
+pub mod zone;
+pub mod inactive_profiler;

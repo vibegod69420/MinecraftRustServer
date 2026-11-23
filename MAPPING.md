@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8451** across **1879** classes.
+Total mapped Java symbols: **8473** across **1881** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6645,6 +6645,22 @@ Total mapped Java symbols: **8451** across **1879** classes.
 | `net.minecraft.util.profiling.EmptyProfileResults#getStartTimeTicks` | `crates/mc-math/src/ported/empty_profile_results.rs` | 83 | `get_start_time_ticks` |
 | `net.minecraft.util.profiling.EmptyProfileResults#getTimes` | `crates/mc-math/src/ported/empty_profile_results.rs` | 68 | `get_times` |
 | `net.minecraft.util.profiling.EmptyProfileResults#saveResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 73 | `save_results` |
+| `net.minecraft.util.profiling.InactiveProfiler#<init>` | `crates/mc-math/src/ported/inactive_profiler.rs` | 52 | `new` |
+| `net.minecraft.util.profiling.InactiveProfiler#endTick` | `crates/mc-math/src/ported/inactive_profiler.rs` | 62 | `end_tick` |
+| `net.minecraft.util.profiling.InactiveProfiler#getChartedPaths` | `crates/mc-math/src/ported/inactive_profiler.rs` | 111 | `get_charted_paths` |
+| `net.minecraft.util.profiling.InactiveProfiler#getEntry` | `crates/mc-math/src/ported/inactive_profiler.rs` | 106 | `get_entry` |
+| `net.minecraft.util.profiling.InactiveProfiler#getResults` | `crates/mc-math/src/ported/inactive_profiler.rs` | 101 | `get_results` |
+| `net.minecraft.util.profiling.InactiveProfiler#incrementCounter(String,int)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 93 | `increment_counter` |
+| `net.minecraft.util.profiling.InactiveProfiler#incrementCounter(Supplier,int)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 96 | `increment_counter_supplier` |
+| `net.minecraft.util.profiling.InactiveProfiler#markForCharting` | `crates/mc-math/src/ported/inactive_profiler.rs` | 71 | `mark_for_charting` |
+| `net.minecraft.util.profiling.InactiveProfiler#pop` | `crates/mc-math/src/ported/inactive_profiler.rs` | 74 | `pop` |
+| `net.minecraft.util.profiling.InactiveProfiler#popPush(String)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 77 | `pop_push` |
+| `net.minecraft.util.profiling.InactiveProfiler#popPush(Supplier)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 80 | `pop_push_supplier` |
+| `net.minecraft.util.profiling.InactiveProfiler#push(String)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 65 | `push` |
+| `net.minecraft.util.profiling.InactiveProfiler#push(Supplier)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 68 | `push_supplier` |
+| `net.minecraft.util.profiling.InactiveProfiler#startTick` | `crates/mc-math/src/ported/inactive_profiler.rs` | 59 | `start_tick` |
+| `net.minecraft.util.profiling.InactiveProfiler#zone(String)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 83 | `zone` |
+| `net.minecraft.util.profiling.InactiveProfiler#zone(Supplier)` | `crates/mc-math/src/ported/inactive_profiler.rs` | 88 | `zone_supplier` |
 | `net.minecraft.util.profiling.ProfileCollector` | `crates/mc-math/src/ported/profile_collector.rs` | 58 | `get_results` |
 | `net.minecraft.util.profiling.ProfileCollector#getChartedPaths` | `crates/mc-math/src/ported/profile_collector.rs` | 66 | `get_charted_paths` |
 | `net.minecraft.util.profiling.ProfileCollector#getEntry` | `crates/mc-math/src/ported/profile_collector.rs` | 63 | `get_entry` |
@@ -6691,6 +6707,12 @@ Total mapped Java symbols: **8451** across **1879** classes.
 | `net.minecraft.util.profiling.ResultField#<init>` | `crates/mc-math/src/ported/result_field.rs` | 13 | `new` |
 | `net.minecraft.util.profiling.ResultField#compareTo` | `crates/mc-math/src/ported/result_field.rs` | 23 | `compare_to` |
 | `net.minecraft.util.profiling.ResultField#getColor` | `crates/mc-math/src/ported/result_field.rs` | 34 | `get_color` |
+| `net.minecraft.util.profiling.Zone#<init>` | `crates/mc-math/src/ported/zone.rs` | 15 | `new` |
+| `net.minecraft.util.profiling.Zone#addText(String)` | `crates/mc-math/src/ported/zone.rs` | 20 | `add_text` |
+| `net.minecraft.util.profiling.Zone#addText(Supplier)` | `crates/mc-math/src/ported/zone.rs` | 28 | `add_text_supplier` |
+| `net.minecraft.util.profiling.Zone#addValue` | `crates/mc-math/src/ported/zone.rs` | 36 | `add_value` |
+| `net.minecraft.util.profiling.Zone#close` | `crates/mc-math/src/ported/zone.rs` | 52 | `close` |
+| `net.minecraft.util.profiling.Zone#setColor` | `crates/mc-math/src/ported/zone.rs` | 44 | `set_color` |
 | `net.minecraft.util.profiling.jfr.Environment#from` | `crates/mc-math/src/ported/environment.rs` | 14 | `from_server` |
 | `net.minecraft.util.profiling.jfr.Environment#getDescription` | `crates/mc-math/src/ported/environment.rs` | 23 | `get_description` |
 | `net.minecraft.util.profiling.jfr.Percentiles#evaluate` | `crates/mc-math/src/ported/percentiles.rs` | 28 | `evaluate_longs` |
