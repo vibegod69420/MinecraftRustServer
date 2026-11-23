@@ -230,3 +230,6 @@ pub mod clientbound_teleport_entity_packet;
 pub mod clientbound_set_entity_motion_packet;
 pub mod clientbound_animate_packet;
 pub mod clientbound_set_titles_animation_packet;
+pub mod serverbound_chat_command_signed_packet;
+pub mod clientbound_set_health_packet;
+pub mod clientbound_tag_query_packet;
