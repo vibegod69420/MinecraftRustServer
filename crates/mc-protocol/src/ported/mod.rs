@@ -212,3 +212,5 @@ pub mod serverbound_command_suggestion_packet;
 pub mod serverbound_player_abilities_packet;
 pub mod serverbound_custom_payload_packet;
 pub mod serverbound_resource_pack_packet;
+pub mod clientbound_select_advancements_tab_packet;
+pub mod clientbound_move_minecart_packet;
