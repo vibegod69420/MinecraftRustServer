@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3668** across **921** classes.
+Total mapped Java symbols: **3687** across **925** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2490,8 +2490,10 @@ Total mapped Java symbols: **3668** across **921** classes.
 | `net.minecraft.util.Mth#log2` | `crates/mc-math/src/mth.rs` | 325 | `log2` |
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/mth.rs` | 331 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#nextFloat(net.minecraft.util.RandomSource,float,float)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 41 | `next_float` |
+| `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
 | `net.minecraft.util.Mth#positiveModulo(int,int)` | `crates/mc-math/src/mth.rs` | 411 | `positive_modulo_i32` |
+| `net.minecraft.util.Mth#randomBetweenInclusive` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 55 | `random_between_inclusive` |
 | `net.minecraft.util.Mth#sin` | `crates/mc-math/src/mth.rs` | 96 | `sin` |
 | `net.minecraft.util.Mth#sin` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 125 | `mth_sin` |
 | `net.minecraft.util.Mth#smallestEncompassingPowerOfTwo` | `crates/mc-math/src/mth.rs` | 295 | `smallest_encompassing_power_of_two` |
@@ -2510,6 +2512,9 @@ Total mapped Java symbols: **3668** across **921** classes.
 | `net.minecraft.util.RandomSource#create(long)` | `crates/mc-worldgen/src/ported/rule_processor.rs` | 45 | `create` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 9 | `next_float` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 9 | `next_float` |
+| `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 42 | `next_int` |
+| `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 44 | `next_int` |
+| `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 42 | `next_int` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 113 | `next_int` |
@@ -3131,6 +3136,9 @@ Total mapped Java symbols: **3668** across **921** classes.
 | `net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource#next` | `crates/mc-worldgen/src/ported/thread_safe_legacy_random_source.rs` | 72 | `next` |
 | `net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource#nextGaussian` | `crates/mc-worldgen/src/ported/thread_safe_legacy_random_source.rs` | 121 | `next_gaussian` |
 | `net.minecraft.world.level.levelgen.ThreadSafeLegacyRandomSource#setSeed` | `crates/mc-worldgen/src/ported/thread_safe_legacy_random_source.rs` | 66 | `set_seed` |
+| `net.minecraft.world.level.levelgen.VerticalAnchor#resolveY` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 17 | `resolve_y` |
+| `net.minecraft.world.level.levelgen.VerticalAnchor#resolveY` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 19 | `resolve_y` |
+| `net.minecraft.world.level.levelgen.VerticalAnchor#resolveY` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 17 | `resolve_y` |
 | `net.minecraft.world.level.levelgen.WorldGenSettings#<init>` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 60 | `new` |
 | `net.minecraft.world.level.levelgen.WorldGenSettings#dimensions` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 70 | `dimensions` |
 | `net.minecraft.world.level.levelgen.WorldGenSettings#encode` | `crates/mc-worldgen/src/ported/world_gen_settings.rs` | 75 | `encode` |
@@ -3532,6 +3540,11 @@ Total mapped Java symbols: **3668** across **921** classes.
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#FlatLevelGeneratorPreset` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 65 | `new` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#displayItem` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 73 | `display_item` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#settings` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 78 | `settings` |
+| `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#<init>` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 60 | `new` |
+| `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#getType` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 91 | `get_type` |
+| `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#of` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 69 | `of` |
+| `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#sample` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 74 | `sample` |
+| `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#toString` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 98 | `fmt` |
 | `net.minecraft.world.level.levelgen.heightproviders.ConstantHeight#<init>` | `crates/mc-worldgen/src/ported/constant_height.rs` | 83 | `new` |
 | `net.minecraft.world.level.levelgen.heightproviders.ConstantHeight#getType` | `crates/mc-worldgen/src/ported/constant_height.rs` | 100 | `get_type` |
 | `net.minecraft.world.level.levelgen.heightproviders.ConstantHeight#getValue` | `crates/mc-worldgen/src/ported/constant_height.rs` | 88 | `get_value` |
@@ -3545,6 +3558,16 @@ Total mapped Java symbols: **3668** across **921** classes.
 | `net.minecraft.world.level.levelgen.heightproviders.HeightProvider#sample` | `crates/mc-worldgen/src/ported/weighted_list_height.rs` | 34 | `sample` |
 | `net.minecraft.world.level.levelgen.heightproviders.HeightProviderType#codec` | `crates/mc-worldgen/src/ported/height_provider_type.rs` | 31 | `codec` |
 | `net.minecraft.world.level.levelgen.heightproviders.HeightProviderType#register` | `crates/mc-worldgen/src/ported/height_provider_type.rs` | 36 | `register` |
+| `net.minecraft.world.level.levelgen.heightproviders.UniformHeight#<init>` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 69 | `new` |
+| `net.minecraft.world.level.levelgen.heightproviders.UniformHeight#getType` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 98 | `get_type` |
+| `net.minecraft.world.level.levelgen.heightproviders.UniformHeight#of` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 78 | `of` |
+| `net.minecraft.world.level.levelgen.heightproviders.UniformHeight#sample` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 83 | `sample` |
+| `net.minecraft.world.level.levelgen.heightproviders.UniformHeight#toString` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 105 | `fmt` |
+| `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight#<init>` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 75 | `new` |
+| `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight#getType` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 107 | `get_type` |
+| `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight#of` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 84 | `of` |
+| `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight#sample` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 89 | `sample` |
+| `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight#toString` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 114 | `fmt` |
 | `net.minecraft.world.level.levelgen.heightproviders.WeightedListHeight#<init>` | `crates/mc-worldgen/src/ported/weighted_list_height.rs` | 87 | `new` |
 | `net.minecraft.world.level.levelgen.heightproviders.WeightedListHeight#getType` | `crates/mc-worldgen/src/ported/weighted_list_height.rs` | 105 | `get_type` |
 | `net.minecraft.world.level.levelgen.heightproviders.WeightedListHeight#sample` | `crates/mc-worldgen/src/ported/weighted_list_height.rs` | 98 | `sample` |

@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:24:54 UTC
+- **Updated**: 2026-11-23 00:26:04 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 3668 / 66676 (5.501%)
-- **Mapped Java Classes**: 921 / 7163 (12.858%)
+- **Mapped Java Methods**: 3687 / 66676 (5.530%)
+- **Mapped Java Classes**: 925 / 7163 (12.914%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,12 @@
 - `mc-math`: 1299 mapped methods
 - `mc-nbt`: 1157 mapped methods
 - `mc-protocol`: 1102 mapped methods
-- `mc-worldgen`: 910 mapped methods
+- `mc-worldgen`: 933 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight` -> `mc-worldgen` (582.6s)
+- [PASS] `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight` -> `mc-worldgen` (582.6s)
+- [PASS] `net.minecraft.world.level.levelgen.heightproviders.UniformHeight` -> `mc-worldgen` (582.6s)
 - [FAIL] `net.minecraft.util.BoundedFloatFunction` -> `mc-math` (529.3s)
 - [PASS] `net.minecraft.util.FutureChain` -> `mc-math` (529.3s)
 - [PASS] `net.minecraft.util.ZeroBitStorage` -> `mc-math` (529.3s)
@@ -26,6 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.CoralMushroomFeature` -> `mc-worldgen` (2169.4s)
 - [PASS] `net.minecraft.util.ClassTreeIdRegistry` -> `mc-math` (449.0s)
 - [PASS] `net.minecraft.util.TriState` -> `mc-math` (449.0s)
-- [PASS] `net.minecraft.util.ListAndDeque` -> `mc-math` (449.0s)
-- [PASS] `net.minecraft.util.Brightness` -> `mc-math` (449.0s)
-- [PASS] `net.minecraft.network.protocol.game.ServerboundPaddleBoatPacket` -> `mc-protocol` (303.7s)

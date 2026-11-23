@@ -179,3 +179,6 @@ pub mod end_gateway_feature;
 pub mod stronghold_structure;
 pub mod block_blob_feature;
 pub mod huge_fungus_configuration;
+pub mod uniform_height;
+pub mod biased_to_bottom_height;
+pub mod very_biased_to_bottom_height;
