@@ -208,3 +208,4 @@ pub mod fossil_feature_configuration;
 pub mod huge_brown_mushroom_feature;
 pub mod creaking_heart_decorator;
 pub mod coral_claw_feature;
+pub mod random_spread_foliage_placer;

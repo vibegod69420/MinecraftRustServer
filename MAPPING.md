@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4344** across **1062** classes.
+Total mapped Java symbols: **4355** across **1065** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -171,6 +171,7 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.core.BlockPos#above()` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 15 | `above` |
 | `net.minecraft.core.BlockPos#above()` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 24 | `above` |
 | `net.minecraft.core.BlockPos#above(int)` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 25 | `above` |
+| `net.minecraft.core.BlockPos#above(int)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 33 | `above` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 126 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/clientbound_game_test_highlight_pos_packet.rs` | 31 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_block_packet.rs` | 31 | `as_long` |
@@ -214,8 +215,10 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.core.BlockPos#immutable()` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 24 | `immutable` |
 | `net.minecraft.core.BlockPos#max` | `crates/mc-math/src/ported/block_box.rs` | 85 | `max_pos` |
 | `net.minecraft.core.BlockPos#min` | `crates/mc-math/src/ported/block_box.rs` | 80 | `min_pos` |
+| `net.minecraft.core.BlockPos#mutable` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 24 | `mutable` |
 | `net.minecraft.core.BlockPos#new` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#new` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#new (constructor)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 19 | `new` |
 | `net.minecraft.core.BlockPos#new(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 32 | `new` |
 | `net.minecraft.core.BlockPos#new(int,int,int)` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 25 | `new` |
 | `net.minecraft.core.BlockPos#north` | `crates/mc-worldgen/src/ported/leave_vine_decorator.rs` | 32 | `north` |
@@ -258,9 +261,11 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.core.BlockPos#withinManhattan` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 37 | `within_manhattan` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 88 | `new` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#clamp` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 90 | `clamp` |
+| `net.minecraft.core.BlockPos$MutableBlockPos#immutable (equivalent conversion)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 59 | `immutable` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#move` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 104 | `move_dir` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#set(Vec3i)` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 93 | `set` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/random_patch_feature.rs` | 26 | `set_with_offset` |
+| `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 51 | `set_with_offset` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#setY` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 101 | `set_y` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 53 | `new` |
@@ -3104,6 +3109,7 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.util.RandomSource#consumeCount` | `crates/mc-math/src/random.rs` | 171 | `consume_count` |
 | `net.minecraft.util.RandomSource#create (behavioral stub for deterministic seeding)` | `crates/mc-worldgen/src/ported/pool_alias_lookup.rs` | 115 | `create` |
 | `net.minecraft.util.RandomSource#create(long)` | `crates/mc-worldgen/src/ported/rule_processor.rs` | 45 | `create` |
+| `net.minecraft.util.RandomSource#nextBoolean` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 68 | `next_boolean` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 9 | `next_float` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 9 | `next_float` |
 | `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 42 | `next_int` |
@@ -3112,6 +3118,7 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 113 | `next_int` |
+| `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 66 | `next_int` |
 | `net.minecraft.util.RandomSource#nextIntBetweenInclusive` | `crates/mc-math/src/random.rs` | 166 | `next_int_between_inclusive` |
 | `net.minecraft.util.RandomSource#nextLong` | `crates/mc-worldgen/src/ported/append_loot.rs` | 42 | `next_long` |
 | `net.minecraft.util.RandomSource#nextLong` | `crates/mc-worldgen/src/ported/append_static.rs` | 46 | `next_long` |
@@ -3586,6 +3593,7 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.util.valueproviders.IntProvider#sample` | `crates/mc-math/src/ported/uniform_int.rs` | 17 | `sample` |
 | `net.minecraft.util.valueproviders.IntProvider#sample` | `crates/mc-math/src/ported/weighted_list_int.rs` | 17 | `sample` |
 | `net.minecraft.util.valueproviders.IntProvider#sample` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 41 | `sample` |
+| `net.minecraft.util.valueproviders.IntProvider#sample` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 73 | `sample` |
 | `net.minecraft.util.valueproviders.IntProviderType#codec` | `crates/mc-math/src/ported/int_provider_type.rs` | 20 | `codec_name` |
 | `net.minecraft.util.valueproviders.IntProviderType#register` | `crates/mc-math/src/ported/int_provider_type.rs` | 25 | `register` |
 | `net.minecraft.util.valueproviders.MultipliedFloats` | `crates/mc-math/src/ported/multiplied_floats.rs` | 11 | `<item>` |
@@ -4061,6 +4069,7 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature#place` | `crates/mc-worldgen/src/ported/simple_random_selector_feature.rs` | 86 | `place` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#<init>` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#place` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 112 | `place` |
+| `net.minecraft.world.level.levelgen.feature.TreeFeature#validTreePos (abstracted)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 81 | `is_valid_tree_pos` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#place` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 134 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 184 | `new` |
@@ -4231,13 +4240,19 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 166 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 181 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 168 | `try_place_leaf` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 129 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 175 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 66 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 97 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 99 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 70 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#doubleTrunk` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 85 | `double_trunk` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#doubleTrunk` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 118 | `double_trunk` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#pos` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 75 | `pos` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#pos` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 108 | `pos` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#radiusOffset` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 80 | `radius_offset` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#radiusOffset` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 113 | `radius_offset` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageSetter#set` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 87 | `set` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 104 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 170 | `create_foliage` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 210 | `foliage_height` |
@@ -4249,6 +4264,11 @@ Total mapped Java symbols: **4344** across **1062** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 216 | `foliage_radius` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 236 | `should_skip_location` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#type` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 114 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 157 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 177 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 210 | `foliage_height` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 215 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer#type` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 172 | `foliage_placer_type` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 101 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 187 | `create_foliage` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 231 | `foliage_height` |
