@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8149** across **1759** classes.
+Total mapped Java symbols: **8157** across **1763** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5963,6 +5963,8 @@ Total mapped Java symbols: **8149** across **1759** classes.
 | `net.minecraft.util.datafix.schemas.V1931#registerEntities` | `crates/mc-math/src/ported/v1931.rs` | 38 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2502#<init>` | `crates/mc-math/src/ported/v2502.rs` | 41 | `new` |
 | `net.minecraft.util.datafix.schemas.V2502#registerEntities` | `crates/mc-math/src/ported/v2502.rs` | 52 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2505#<init>` | `crates/mc-math/src/ported/v2505.rs` | 71 | `new` |
+| `net.minecraft.util.datafix.schemas.V2505#registerEntities` | `crates/mc-math/src/ported/v2505.rs` | 78 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2509#<init>` | `crates/mc-math/src/ported/v2509.rs` | 29 | `new` |
 | `net.minecraft.util.datafix.schemas.V2509#registerEntities` | `crates/mc-math/src/ported/v2509.rs` | 42 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2511_1#<init>` | `crates/mc-math/src/ported/v2511_1.rs` | 71 | `new` |
@@ -5983,6 +5985,8 @@ Total mapped Java symbols: **8149** across **1759** classes.
 | `net.minecraft.util.datafix.schemas.V2707#registerEntities` | `crates/mc-math/src/ported/v2707.rs` | 80 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V3076#<init>` | `crates/mc-math/src/ported/v3076.rs` | 52 | `new` |
 | `net.minecraft.util.datafix.schemas.V3076#registerBlockEntities` | `crates/mc-math/src/ported/v3076.rs` | 59 | `register_block_entities` |
+| `net.minecraft.util.datafix.schemas.V3082#<init>` | `crates/mc-math/src/ported/v3082.rs` | 71 | `new` |
+| `net.minecraft.util.datafix.schemas.V3082#registerEntities` | `crates/mc-math/src/ported/v3082.rs` | 78 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V3202#<init>` | `crates/mc-math/src/ported/v3202.rs` | 57 | `new` |
 | `net.minecraft.util.datafix.schemas.V3202#registerBlockEntities` | `crates/mc-math/src/ported/v3202.rs` | 64 | `register_block_entities` |
 | `net.minecraft.util.datafix.schemas.V3203#<init>` | `crates/mc-math/src/ported/v3203.rs` | 41 | `new` |
@@ -6002,8 +6006,12 @@ Total mapped Java symbols: **8149** across **1759** classes.
 | `net.minecraft.util.datafix.schemas.V3683#registerEntities` | `crates/mc-math/src/ported/v3683.rs` | 76 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V3799#<init>` | `crates/mc-math/src/ported/v3799.rs` | 46 | `new` |
 | `net.minecraft.util.datafix.schemas.V3799#registerEntities` | `crates/mc-math/src/ported/v3799.rs` | 53 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V3808#<init>` | `crates/mc-math/src/ported/v3808.rs` | 71 | `new` |
+| `net.minecraft.util.datafix.schemas.V3808#registerEntities` | `crates/mc-math/src/ported/v3808.rs` | 78 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V3816#<init>` | `crates/mc-math/src/ported/v3816.rs` | 41 | `new` |
 | `net.minecraft.util.datafix.schemas.V3816#registerEntities` | `crates/mc-math/src/ported/v3816.rs` | 52 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V3825#<init>` | `crates/mc-math/src/ported/v3825.rs` | 71 | `new` |
+| `net.minecraft.util.datafix.schemas.V3825#registerEntities` | `crates/mc-math/src/ported/v3825.rs` | 78 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V4421#<init>` | `crates/mc-math/src/ported/v4421.rs` | 46 | `new` |
 | `net.minecraft.util.datafix.schemas.V4421#registerEntities` | `crates/mc-math/src/ported/v4421.rs` | 53 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V4531#<init>` | `crates/mc-math/src/ported/v4531.rs` | 64 | `new` |

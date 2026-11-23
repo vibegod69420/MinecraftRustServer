@@ -305,3 +305,7 @@ pub mod entity_ravager_rename_fix;
 pub mod entity_shulker_color_fix;
 pub mod entity_pufferfish_rename_fix;
 pub mod world_border_warning_time_fix;
+pub mod v3808;
+pub mod v3825;
+pub mod v2505;
+pub mod v3082;
