@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9160** across **2103** classes.
+Total mapped Java symbols: **9163** across **2104** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6546,6 +6546,9 @@ Total mapped Java symbols: **9160** across **2103** classes.
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#makeRule` | `crates/mc-math/src/ported/item_rename_fix.rs` | 10 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#NAMES_BY_COLOR` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 35 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#makeRule` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 55 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ItemSpawnEggFix#ID_TO_ENTITY` | `crates/mc-math/src/ported/item_spawn_egg_fix.rs` | 84 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ItemSpawnEggFix#ItemSpawnEggFix` | `crates/mc-math/src/ported/item_spawn_egg_fix.rs` | 163 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemSpawnEggFix#makeRule` | `crates/mc-math/src/ported/item_spawn_egg_fix.rs` | 168 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#ItemStackCustomNameToOverrideComponentFix` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 44 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#fixBanner` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 84 | `fix_banner` |
 | `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#fixCustomName` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 90 | `fix_custom_name` |
