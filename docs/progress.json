@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 01:14:50 UTC",
-  "updated_epoch": 1795396490,
+  "updated_at": "2026-11-23 01:16:06 UTC",
+  "updated_epoch": 1795396566,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1125,
-    "mapped_methods": 4733,
-    "class_coverage_pct": 15.7057,
-    "method_coverage_pct": 7.0985,
-    "harness_verified_classes": 742,
+    "mapped_classes": 1128,
+    "mapped_methods": 4742,
+    "class_coverage_pct": 15.7476,
+    "method_coverage_pct": 7.112,
+    "harness_verified_classes": 746,
     "harness_failed_attempts": 148
   },
   "crates": [
@@ -43,17 +43,49 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 1260
+      "mapped_methods": 1269
     }
   ],
   "usage": {
-    "calls_total": 711,
-    "prompt_tokens": 1884472,
-    "completion_tokens": 9788335,
-    "reasoning_tokens": 7023677,
-    "avg_latency_s": 223.0
+    "calls_total": 717,
+    "prompt_tokens": 1904664,
+    "completion_tokens": 9898640,
+    "reasoning_tokens": 7103172,
+    "avg_latency_s": 222.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T01:16:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseSettings",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 246.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:16:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseRouter",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 246.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:16:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.GeodeBlockSettings",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 246.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:14:51Z",
+      "class_name": "net.minecraft.world.level.storage.loot.LootPool",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 379.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T01:13:13Z",
       "class_name": "net.minecraft.util.SortedArraySet",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 883.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:03:41Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundEntityTagQueryPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 883.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:03:41Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerPositionPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 883.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:03:24Z",
-      "class_name": "net.minecraft.world.level.storage.DerivedLevelData",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 501.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:02:39Z",
-      "class_name": "net.minecraft.world.level.storage.loot.LootContextArg",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 762.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1a7895a",
+      "ts": "2026-11-23T01:14:50+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "2fc156a",
       "ts": "2026-11-23T01:13:13+00:00",
@@ -445,11 +450,6 @@
       "sha": "9f3a183",
       "ts": "2026-11-23T01:00:56+00:00",
       "message": "Port 5 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "b4ae710",
-      "ts": "2026-11-23T01:00:31+00:00",
-      "message": "Worker sync: 4387 mapped Java methods"
     }
   ]
 }

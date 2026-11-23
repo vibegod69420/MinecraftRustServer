@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4733** across **1125** classes.
+Total mapped Java symbols: **4742** across **1128** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4038,6 +4038,7 @@ Total mapped Java symbols: **4733** across **1125** classes.
 | `net.minecraft.world.level.levelgen.Density#unrecoverablyThin` | `crates/mc-worldgen/src/ported/density.rs` | 14 | `unrecoverably_thin` |
 | `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 37 | `get_name` |
 | `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getSerializedName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 54 | `get_serialized_name_value` |
+| `net.minecraft.world.level.levelgen.GeodeBlockSettings#<init>` | `crates/mc-worldgen/src/ported/geode_block_settings.rs` | 32 | `new` |
 | `net.minecraft.world.level.levelgen.GeodeCrackSettings#<init>` | `crates/mc-worldgen/src/ported/geode_crack_settings.rs` | 13 | `new` |
 | `net.minecraft.world.level.levelgen.GeodeLayerSettings#<init>` | `crates/mc-worldgen/src/ported/geode_layer_settings.rs` | 17 | `new` |
 | `net.minecraft.world.level.levelgen.LegacyRandomSource#<init>` | `crates/mc-math/src/random.rs` | 240 | `new` |
@@ -4053,6 +4054,14 @@ Total mapped Java symbols: **4733** across **1125** classes.
 | `net.minecraft.world.level.levelgen.LegacyRandomSource$LegacyPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 392 | `from_seed` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#nextGaussian` | `crates/mc-math/src/random.rs` | 207 | `next_gaussian` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#reset` | `crates/mc-math/src/random.rs` | 202 | `reset` |
+| `net.minecraft.world.level.levelgen.NoiseRouter#<init>` | `crates/mc-worldgen/src/ported/noise_router.rs` | 34 | `new` |
+| `net.minecraft.world.level.levelgen.NoiseRouter#mapAll` | `crates/mc-worldgen/src/ported/noise_router.rs` | 72 | `map_all` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#<init>` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 53 | `new` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#clampToHeightAccessor` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 98 | `clamp_to_height_accessor` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#create` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 79 | `create` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#getCellHeight` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 88 | `get_cell_height` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#getCellWidth` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 93 | `get_cell_width` |
+| `net.minecraft.world.level.levelgen.NoiseSettings#guardY` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 63 | `guard_y` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 52 | `at_block_pos` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 68 | `at` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 57 | `from_hash_of_identifier` |

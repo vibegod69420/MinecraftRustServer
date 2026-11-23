@@ -223,3 +223,6 @@ pub mod capped_processor;
 pub mod noise_threshold_provider;
 pub mod dual_noise_provider;
 pub mod trapezoid_height;
+pub mod geode_block_settings;
+pub mod noise_router;
+pub mod noise_settings;

@@ -1,8 +1,8 @@
 # Reference Coverage Matrix (`COVERAGE.md`)
 
 - **Target**: Minecraft Java Edition `1.21.11`
-- **Mapped Classes**: 1125 / 7163 (15.706%)
-- **Mapped Methods**: 4733 / 66676 (7.098%)
+- **Mapped Classes**: 1128 / 7163 (15.748%)
+- **Mapped Methods**: 4742 / 66676 (7.112%)
 
 ## Crate Breakdown
 | Crate | Mapped Methods | Status |
@@ -11,7 +11,7 @@
 | `mc-math` | 1681 | Verified / Active |
 | `mc-nbt` | 1403 | Verified / Active |
 | `mc-protocol` | 1534 | Verified / Active |
-| `mc-worldgen` | 1260 | Verified / Active |
+| `mc-worldgen` | 1269 | Verified / Active |
 
 ## Explicit Exclusions
 - `net.minecraft.client.*` (client rendering, audio, LWJGL, GLFW, client GUI) — server-only target.
