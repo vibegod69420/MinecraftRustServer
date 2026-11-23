@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7814** across **1635** classes.
+Total mapped Java symbols: **7833** across **1643** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -43,7 +43,9 @@ Total mapped Java symbols: **7814** across **1635** classes.
 | `com.mojang.brigadier.StringReader#peek` | `crates/mc-nbt/src/ported/tag_parser.rs` | 74 | `peek` |
 | `com.mojang.brigadier.StringReader#read` | `crates/mc-nbt/src/ported/tag_parser.rs` | 79 | `read` |
 | `com.mojang.brigadier.StringReader#skipWhitespace` | `crates/mc-nbt/src/ported/tag_parser.rs` | 86 | `skip_whitespace` |
+| `com.mojang.brigadier.exceptions.DynamicCommandExceptionType#createWithContext` | `crates/mc-math/src/ported/delayed_exception.rs` | 65 | `create_with_context` |
 | `com.mojang.brigadier.exceptions.SimpleCommandExceptionType#<init>` | `crates/mc-nbt/src/ported/tag_parser.rs` | 111 | `new` |
+| `com.mojang.brigadier.exceptions.SimpleCommandExceptionType#createWithContext` | `crates/mc-math/src/ported/delayed_exception.rs` | 48 | `create_with_context` |
 | `com.mojang.brigadier.exceptions.SimpleCommandExceptionType#createWithContext` | `crates/mc-nbt/src/ported/tag_parser.rs` | 116 | `create_with_context` |
 | `com.mojang.math.MatrixUtil#isIdentity` | `crates/mc-math/src/ported/block_math.rs` | 230 | `is_identity` |
 | `com.mojang.math.Transformation#compose` | `crates/mc-math/src/ported/block_math.rs` | 278 | `compose` |
@@ -5880,6 +5882,22 @@ Total mapped Java symbols: **7814** across **1635** classes.
 | `net.minecraft.util.parsing.packrat.Atom#name` | `crates/mc-math/src/ported/atom.rs` | 29 | `name` |
 | `net.minecraft.util.parsing.packrat.Atom#of` | `crates/mc-math/src/ported/atom.rs` | 21 | `of` |
 | `net.minecraft.util.parsing.packrat.Atom#toString` | `crates/mc-math/src/ported/atom.rs` | 36 | `fmt` |
+| `net.minecraft.util.parsing.packrat.Control#cut` | `crates/mc-math/src/ported/control.rs` | 5 | `cut` |
+| `net.minecraft.util.parsing.packrat.Control#cut` | `crates/mc-math/src/ported/control.rs` | 17 | `cut` |
+| `net.minecraft.util.parsing.packrat.Control#cut` | `crates/mc-math/src/ported/control.rs` | 55 | `cut` |
+| `net.minecraft.util.parsing.packrat.Control#cut` | `crates/mc-math/src/ported/parse_state.rs` | 22 | `cut` |
+| `net.minecraft.util.parsing.packrat.Control#cut` | `crates/mc-math/src/ported/parse_state.rs` | 104 | `cut` |
+| `net.minecraft.util.parsing.packrat.Control#hasCut` | `crates/mc-math/src/ported/control.rs` | 8 | `has_cut` |
+| `net.minecraft.util.parsing.packrat.Control#hasCut` | `crates/mc-math/src/ported/control.rs` | 20 | `has_cut` |
+| `net.minecraft.util.parsing.packrat.Control#hasCut` | `crates/mc-math/src/ported/control.rs` | 59 | `has_cut` |
+| `net.minecraft.util.parsing.packrat.Control#hasCut` | `crates/mc-math/src/ported/parse_state.rs` | 25 | `has_cut` |
+| `net.minecraft.util.parsing.packrat.Control#hasCut` | `crates/mc-math/src/ported/parse_state.rs` | 108 | `has_cut` |
+| `net.minecraft.util.parsing.packrat.DelayedException#create` | `crates/mc-math/src/ported/delayed_exception.rs` | 77 | `create` |
+| `net.minecraft.util.parsing.packrat.DelayedException#create` | `crates/mc-math/src/ported/delayed_exception.rs` | 85 | `create` |
+| `net.minecraft.util.parsing.packrat.DelayedException#create` | `crates/mc-math/src/ported/delayed_exception.rs` | 91 | `create_simple` |
+| `net.minecraft.util.parsing.packrat.DelayedException#create` | `crates/mc-math/src/ported/delayed_exception.rs` | 100 | `create_dynamic` |
+| `net.minecraft.util.parsing.packrat.ErrorCollector#finish` | `crates/mc-math/src/ported/parse_state.rs` | 13 | `finish` |
+| `net.minecraft.util.parsing.packrat.ErrorCollector#finish` | `crates/mc-math/src/ported/parse_state.rs` | 93 | `finish` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#<init>` | `crates/mc-math/src/ported/error_entry.rs` | 87 | `new` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#cursor` | `crates/mc-math/src/ported/error_entry.rs` | 96 | `cursor` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#equals` | `crates/mc-math/src/ported/error_entry.rs` | 133 | `eq` |
@@ -5887,6 +5905,31 @@ Total mapped Java symbols: **7814** across **1635** classes.
 | `net.minecraft.util.parsing.packrat.ErrorEntry#reason` | `crates/mc-math/src/ported/error_entry.rs` | 106 | `reason` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#suggestions` | `crates/mc-math/src/ported/error_entry.rs` | 101 | `suggestions` |
 | `net.minecraft.util.parsing.packrat.ErrorEntry#toString` | `crates/mc-math/src/ported/error_entry.rs` | 153 | `fmt` |
+| `net.minecraft.util.parsing.packrat.NamedRule#name` | `crates/mc-math/src/ported/named_rule.rs` | 18 | `name` |
+| `net.minecraft.util.parsing.packrat.NamedRule#name` | `crates/mc-math/src/ported/named_rule.rs` | 46 | `name` |
+| `net.minecraft.util.parsing.packrat.NamedRule#value` | `crates/mc-math/src/ported/named_rule.rs` | 21 | `value` |
+| `net.minecraft.util.parsing.packrat.NamedRule#value` | `crates/mc-math/src/ported/named_rule.rs` | 51 | `value` |
+| `net.minecraft.util.parsing.packrat.ParseState#acquireControl` | `crates/mc-math/src/ported/parse_state.rs` | 64 | `acquire_control` |
+| `net.minecraft.util.parsing.packrat.ParseState#acquireControl` | `crates/mc-math/src/ported/parse_state.rs` | 216 | `acquire_control` |
+| `net.minecraft.util.parsing.packrat.ParseState#errorCollector` | `crates/mc-math/src/ported/parse_state.rs` | 36 | `error_collector` |
+| `net.minecraft.util.parsing.packrat.ParseState#errorCollector` | `crates/mc-math/src/ported/parse_state.rs` | 191 | `error_collector` |
+| `net.minecraft.util.parsing.packrat.ParseState#input` | `crates/mc-math/src/ported/parse_state.rs` | 55 | `input` |
+| `net.minecraft.util.parsing.packrat.ParseState#input` | `crates/mc-math/src/ported/parse_state.rs` | 201 | `input` |
+| `net.minecraft.util.parsing.packrat.ParseState#mark` | `crates/mc-math/src/ported/parse_state.rs` | 58 | `mark` |
+| `net.minecraft.util.parsing.packrat.ParseState#mark` | `crates/mc-math/src/ported/parse_state.rs` | 206 | `mark` |
+| `net.minecraft.util.parsing.packrat.ParseState#parse` | `crates/mc-math/src/ported/parse_state.rs` | 52 | `parse` |
+| `net.minecraft.util.parsing.packrat.ParseState#parse` | `crates/mc-math/src/ported/parse_state.rs` | 196 | `parse` |
+| `net.minecraft.util.parsing.packrat.ParseState#parseTopRule` | `crates/mc-math/src/ported/parse_state.rs` | 39 | `parse_top_rule` |
+| `net.minecraft.util.parsing.packrat.ParseState#releaseControl` | `crates/mc-math/src/ported/parse_state.rs` | 67 | `release_control` |
+| `net.minecraft.util.parsing.packrat.ParseState#releaseControl` | `crates/mc-math/src/ported/parse_state.rs` | 221 | `release_control` |
+| `net.minecraft.util.parsing.packrat.ParseState#restore` | `crates/mc-math/src/ported/parse_state.rs` | 61 | `restore` |
+| `net.minecraft.util.parsing.packrat.ParseState#restore` | `crates/mc-math/src/ported/parse_state.rs` | 211 | `restore` |
+| `net.minecraft.util.parsing.packrat.ParseState#scope` | `crates/mc-math/src/ported/parse_state.rs` | 33 | `scope` |
+| `net.minecraft.util.parsing.packrat.ParseState#scope` | `crates/mc-math/src/ported/parse_state.rs` | 177 | `scope` |
+| `net.minecraft.util.parsing.packrat.ParseState#silent` | `crates/mc-math/src/ported/parse_state.rs` | 70 | `silent` |
+| `net.minecraft.util.parsing.packrat.ParseState#silent` | `crates/mc-math/src/ported/parse_state.rs` | 226 | `silent` |
+| `net.minecraft.util.parsing.packrat.Scope#hasOnlySingleFrame` | `crates/mc-math/src/ported/parse_state.rs` | 7 | `has_only_single_frame` |
+| `net.minecraft.util.parsing.packrat.Scope#hasOnlySingleFrame` | `crates/mc-math/src/ported/parse_state.rs` | 82 | `has_only_single_frame` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#empty` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 98 | `empty` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 54 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 104 | `possible_values` |
@@ -5895,6 +5938,7 @@ Total mapped Java symbols: **7814** across **1635** classes.
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 350 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 395 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 429 | `possible_values` |
+| `net.minecraft.util.parsing.packrat.commands.StringReaderTerms#createReader` | `crates/mc-math/src/ported/delayed_exception.rs` | 32 | `create_reader` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 18 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 82 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCounters` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 21 | `get_counters` |
