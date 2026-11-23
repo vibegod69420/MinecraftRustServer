@@ -504,3 +504,7 @@ pub mod fix_wolf_health;
 pub mod chunk_status_fix2;
 pub mod raid_renames_data_fix;
 pub mod legacy_dimension_id_fix;
+pub mod item_stack_tag_fix;
+pub mod item_stack_uuid_fix;
+pub mod abstract_poi_section_fix;
+pub mod unflatten_text_component_fix;

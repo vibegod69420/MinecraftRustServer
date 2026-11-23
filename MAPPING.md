@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8815** across **2003** classes.
+Total mapped Java symbols: **8828** across **2006** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6094,6 +6094,12 @@ Total mapped Java symbols: **8815** across **2003** classes.
 | `net.minecraft.util.datafix.fixes.AbstractArrowPickupFix#updateEntity` | `crates/mc-math/src/ported/abstract_arrow_pickup_fix.rs` | 102 | `update_entity` |
 | `net.minecraft.util.datafix.fixes.AbstractArrowPickupFix#updatePickup` | `crates/mc-math/src/ported/abstract_arrow_pickup_fix.rs` | 91 | `update_pickup` |
 | `net.minecraft.util.datafix.fixes.AbstractArrowPickupFix#updateProjectiles` | `crates/mc-math/src/ported/abstract_arrow_pickup_fix.rs` | 84 | `update_projectiles` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#<init>` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 122 | `new` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#cap` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 127 | `cap` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#makeRule` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 170 | `make_rule_description` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#processRecords` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 162 | `apply_with` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#processSection` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 140 | `process_section` |
+| `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix#processSectionRecords` | `crates/mc-math/src/ported/abstract_poi_section_fix.rs` | 148 | `process_section_records` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#createUUIDFromLongs` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 61 | `create_uuid_from_longs` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#createUUIDFromLongs` | `crates/mc-math/src/ported/saved_data_uuid_fix.rs` | 54 | `create_uuid_from_longs` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/gossip_uuid_fix.rs` | 94 | `abstract_uuid_fix_replace_uuid_least_most` |
@@ -6295,9 +6301,13 @@ Total mapped Java symbols: **8815** across **2003** classes.
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#makeRule` | `crates/mc-math/src/ported/item_rename_fix.rs` | 10 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#<init>` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#makeRule` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 64 | `apply` |
+| `net.minecraft.util.datafix.fixes.ItemStackTagFix#<init>` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 106 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#<init>` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 206 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemStackTagFix#createFixer` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 119 | `create_fixer` |
+| `net.minecraft.util.datafix.fixes.ItemStackTagFix#fixItemStackTag` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 139 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#fixItemStackTag` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 220 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#getInputSchema` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 215 | `get_input_schema` |
+| `net.minecraft.util.datafix.fixes.ItemStackTagFix#makeRule` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 133 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#ItemStackTagRemainderFix` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 121 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 131 | `fix_item_stack_tag_dynamic` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 136 | `fix_item_stack_tag_typed` |
@@ -6305,6 +6315,10 @@ Total mapped Java symbols: **8815** across **2003** classes.
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag (test impl)` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 191 | `overflow_fix` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag (test impl)` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 218 | `identity_fix` |
 | `net.minecraft.util.datafix.fixes.ItemStackTheFlatteningFix#updateItem` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 101 | `update_item` |
+| `net.minecraft.util.datafix.fixes.ItemStackUUIDFix#<init>` | `crates/mc-math/src/ported/item_stack_uuid_fix.rs` | 168 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemStackUUIDFix#makeRule` | `crates/mc-math/src/ported/item_stack_uuid_fix.rs` | 192 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ItemStackUUIDFix#updateAttributeModifiers` | `crates/mc-math/src/ported/item_stack_uuid_fix.rs` | 175 | `update_attribute_modifiers` |
+| `net.minecraft.util.datafix.fixes.ItemStackUUIDFix#updateSkullOwner` | `crates/mc-math/src/ported/item_stack_uuid_fix.rs` | 187 | `update_skull_owner` |
 | `net.minecraft.util.datafix.fixes.JigsawPropertiesFix#fix` | `crates/mc-math/src/ported/jigsaw_properties_fix.rs` | 92 | `fix` |
 | `net.minecraft.util.datafix.fixes.JigsawPropertiesFix#fixTag` | `crates/mc-math/src/ported/jigsaw_properties_fix.rs` | 81 | `fix_tag` |
 | `net.minecraft.util.datafix.fixes.JigsawRotationFix#<init>` | `crates/mc-math/src/ported/jigsaw_rotation_fix.rs` | 69 | `new` |
@@ -6439,6 +6453,7 @@ Total mapped Java symbols: **8815** across **2003** classes.
 | `net.minecraft.util.datafix.fixes.TrialSpawnerConfigFix#moveToConfigTag` | `crates/mc-math/src/ported/trial_spawner_config_fix.rs` | 94 | `move_to_config_tag` |
 | `net.minecraft.util.datafix.fixes.TridentAnimationFix#<init>` | `crates/mc-math/src/ported/trident_animation_fix.rs` | 86 | `new` |
 | `net.minecraft.util.datafix.fixes.TridentAnimationFix#fixComponent` | `crates/mc-math/src/ported/trident_animation_fix.rs` | 91 | `fix_component` |
+| `net.minecraft.util.datafix.fixes.UnflattenTextComponentFix#unflattenJson` | `crates/mc-math/src/ported/unflatten_text_component_fix.rs` | 3 | `unflatten_json` |
 | `net.minecraft.util.datafix.fixes.VariantRenameFix#<init>` | `crates/mc-math/src/ported/variant_rename_fix.rs` | 19 | `new` |
 | `net.minecraft.util.datafix.fixes.VariantRenameFix#fix` | `crates/mc-math/src/ported/variant_rename_fix.rs` | 24 | `fix` |
 | `net.minecraft.util.datafix.fixes.VillagerFollowRangeFix#apply` | `crates/mc-math/src/ported/villager_follow_range_fix.rs` | 18 | `apply` |
