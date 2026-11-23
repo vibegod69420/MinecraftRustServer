@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 22:14:01 UTC",
-  "updated_epoch": 1795472041,
+  "updated_at": "2026-11-23 22:20:01 UTC",
+  "updated_epoch": 1795472401,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.0572,
     "method_coverage_pct": 14.224,
     "harness_verified_classes": 1366,
-    "harness_failed_attempts": 480
+    "harness_failed_attempts": 486
   },
   "crates": [
     {
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 2194,
-    "prompt_tokens": 7073106,
-    "completion_tokens": 35765530,
-    "reasoning_tokens": 25628681,
-    "avg_latency_s": 214.5
+    "calls_total": 2212,
+    "prompt_tokens": 7124671,
+    "completion_tokens": 36178677,
+    "reasoning_tokens": 25964061,
+    "avg_latency_s": 222.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T22:19:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 877.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T22:17:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1829.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T22:17:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1829.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T22:17:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1829.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T22:15:33Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 913.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T22:14:21Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 840.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T22:12:16Z",
       "class_name": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
@@ -325,57 +373,14 @@
       "verified": true,
       "seconds": 3274.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:47:12Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
-      "crate": "mc-protocol",
-      "verified": false,
-      "seconds": 2893.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:47:12Z",
-      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2953.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:47:12Z",
-      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3274.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:47:12Z",
-      "class_name": "net.minecraft.network.chat.contents.TranslatableContents",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 3151.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:47:12Z",
-      "class_name": "net.minecraft.core.RegistrySynchronization",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3274.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T21:09:59Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetObjectivePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 1041.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8d7b7f7",
+      "ts": "2026-11-23T22:14:01+00:00",
+      "message": "Worker sync: 9484 mapped Java methods"
+    },
     {
       "sha": "e33d69c",
       "ts": "2026-11-23T22:12:19+00:00",
@@ -445,11 +450,6 @@
       "sha": "5f777b9",
       "ts": "2026-11-23T20:52:24+00:00",
       "message": "Worker sync: 9407 mapped Java methods"
-    },
-    {
-      "sha": "1bd97b4",
-      "ts": "2026-11-23T20:26:40+00:00",
-      "message": "Worker sync: 9405 mapped Java methods"
     }
   ]
 }
