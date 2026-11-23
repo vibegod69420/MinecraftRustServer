@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:24:26 UTC",
-  "updated_epoch": 1795400666,
+  "updated_at": "2026-11-23 02:26:34 UTC",
+  "updated_epoch": 1795400794,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 5733,
     "class_coverage_pct": 18.2047,
     "method_coverage_pct": 8.5983,
-    "harness_verified_classes": 841,
-    "harness_failed_attempts": 177
+    "harness_verified_classes": 842,
+    "harness_failed_attempts": 179
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 861,
-    "prompt_tokens": 2391304,
-    "completion_tokens": 12800757,
-    "reasoning_tokens": 9196081,
-    "avg_latency_s": 231.7
+    "calls_total": 867,
+    "prompt_tokens": 2402345,
+    "completion_tokens": 12879081,
+    "reasoning_tokens": 9258215,
+    "avg_latency_s": 233.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T02:26:33Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.EndPodiumFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 609.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:26:33Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.TwistingVinesFeature",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 609.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:25:32Z",
+      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1915.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T02:24:16Z",
       "class_name": "net.minecraft.network.protocol.game.ServerboundPlayerCommandPacket",
@@ -349,33 +373,14 @@
       "verified": true,
       "seconds": 1304.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:12:12Z",
-      "class_name": "net.minecraft.util.HashOps",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 837.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:11:45Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 924.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:11:45Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralFeature",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 924.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6f885a4",
+      "ts": "2026-11-23T02:24:26+00:00",
+      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "b2a5b09",
       "ts": "2026-11-23T02:24:17+00:00",
@@ -445,11 +450,6 @@
       "sha": "8454ae9",
       "ts": "2026-11-23T02:11:46+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "452a9ae",
-      "ts": "2026-11-23T02:10:25+00:00",
-      "message": "Port 7 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

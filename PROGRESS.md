@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:24:16 UTC
+- **Updated**: 2026-11-23 02:26:34 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 5733 / 66676 (8.598%)
 - **Mapped Java Classes**: 1304 / 7163 (18.205%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 1392 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.EndPodiumFeature` -> `mc-worldgen` (609.1s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature` -> `mc-worldgen` (609.1s)
+- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1915.2s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundPlayerCommandPacket` -> `mc-protocol` (215.3s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundContainerSetSlotPacket` -> `mc-protocol` (215.3s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundBlockEventPacket` -> `mc-protocol` (215.3s)
@@ -26,6 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.login.LoginPacketTypes` -> `mc-protocol` (484.8s)
 - [PASS] `net.minecraft.network.protocol.common.CommonPacketTypes` -> `mc-protocol` (224.0s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket` -> `mc-protocol` (224.0s)
-- [FAIL] `net.minecraft.world.level.storage.PlayerDataStorage` -> `mc-nbt` (1073.5s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (439.1s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider` -> `mc-worldgen` (765.3s)
