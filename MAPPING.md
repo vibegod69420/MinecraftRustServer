@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4988** across **1169** classes.
+Total mapped Java symbols: **4994** across **1171** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3540,6 +3540,12 @@ Total mapped Java symbols: **4988** across **1169** classes.
 | `net.minecraft.util.SortedArraySet$ArrayIterator#hasNext` | `crates/mc-math/src/ported/sorted_array_set.rs` | 250 | `has_next` |
 | `net.minecraft.util.SortedArraySet$ArrayIterator#next` | `crates/mc-math/src/ported/sorted_array_set.rs` | 255 | `next` |
 | `net.minecraft.util.SortedArraySet$ArrayIterator#remove` | `crates/mc-math/src/ported/sorted_array_set.rs` | 266 | `remove` |
+| `net.minecraft.util.SpawnUtil#moveToPossibleSpawnPosition` | `crates/mc-math/src/ported/spawn_util.rs` | 275 | `move_to_possible_spawn_position` |
+| `net.minecraft.util.SpawnUtil#trySpawnMob` | `crates/mc-math/src/ported/spawn_util.rs` | 226 | `try_spawn_mob` |
+| `net.minecraft.util.SpawnUtil$Strategy#LEGACY_IRON_GOLEM` | `crates/mc-math/src/ported/spawn_util.rs` | 145 | `can_spawn_on` |
+| `net.minecraft.util.SpawnUtil$Strategy#ON_TOP_OF_COLLIDER` | `crates/mc-math/src/ported/spawn_util.rs` | 182 | `can_spawn_on` |
+| `net.minecraft.util.SpawnUtil$Strategy#ON_TOP_OF_COLLIDER_NO_LEAVES` | `crates/mc-math/src/ported/spawn_util.rs` | 199 | `can_spawn_on` |
+| `net.minecraft.util.SpawnUtil$Strategy#canSpawnOn` | `crates/mc-math/src/ported/spawn_util.rs` | 128 | `can_spawn_on` |
 | `net.minecraft.util.SpecialDates#dayNow` | `crates/mc-math/src/ported/special_dates.rs` | 40 | `day_now` |
 | `net.minecraft.util.SpecialDates#isExtendedChristmas` | `crates/mc-math/src/ported/special_dates.rs` | 56 | `is_extended_christmas` |
 | `net.minecraft.util.SpecialDates#isHalloween` | `crates/mc-math/src/ported/special_dates.rs` | 51 | `is_halloween` |
