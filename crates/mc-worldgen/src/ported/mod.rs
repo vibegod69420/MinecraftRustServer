@@ -248,3 +248,4 @@ pub mod ore_veinifier;
 pub mod attached_to_leaves_decorator;
 pub mod bending_trunk_placer;
 pub mod forking_trunk_placer;
+pub mod random_spread_structure_placement;
