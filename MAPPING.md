@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8178** across **1772** classes.
+Total mapped Java symbols: **8183** across **1777** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6327,9 +6327,14 @@ Total mapped Java symbols: **8178** across **1772** classes.
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 45 | `finish` |
+| `net.minecraft.util.profiling.jfr.event.ChunkRegionIoEvent#<init>` | `crates/mc-math/src/ported/chunk_region_write_event.rs` | 26 | `new` |
 | `net.minecraft.util.profiling.jfr.event.ChunkRegionReadEvent#<init>` | `crates/mc-math/src/ported/chunk_region_read_event.rs` | 46 | `new` |
+| `net.minecraft.util.profiling.jfr.event.ChunkRegionWriteEvent#<init>` | `crates/mc-math/src/ported/chunk_region_write_event.rs` | 50 | `new` |
+| `net.minecraft.util.profiling.jfr.event.ClientFpsEvent#<init>` | `crates/mc-math/src/ported/client_fps_event.rs` | 9 | `new` |
+| `net.minecraft.util.profiling.jfr.event.PacketEvent#<init>` | `crates/mc-math/src/ported/packet_event.rs` | 11 | `new` |
 | `net.minecraft.util.profiling.jfr.event.PacketReceivedEvent#<init>` | `crates/mc-math/src/ported/packet_received_event.rs` | 24 | `new` |
 | `net.minecraft.util.profiling.jfr.event.PacketSentEvent#<init>` | `crates/mc-math/src/ported/packet_sent_event.rs` | 24 | `new` |
+| `net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent#<init>` | `crates/mc-math/src/ported/server_tick_time_event.rs` | 9 | `new` |
 | `net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent#<init>` | `crates/mc-math/src/ported/world_load_finished_event.rs` | 19 | `new` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#from` | `crates/mc-math/src/ported/chunk_gen_stat.rs` | 68 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkIdentification#from` | `crates/mc-math/src/ported/chunk_identification.rs` | 16 | `from` |

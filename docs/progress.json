@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 08:06:01 UTC",
-  "updated_epoch": 1795421161,
+  "updated_at": "2026-11-23 08:07:38 UTC",
+  "updated_epoch": 1795421258,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1772,
-    "mapped_methods": 8178,
-    "class_coverage_pct": 24.7382,
-    "method_coverage_pct": 12.2653,
-    "harness_verified_classes": 1105,
+    "mapped_classes": 1777,
+    "mapped_methods": 8183,
+    "class_coverage_pct": 24.808,
+    "method_coverage_pct": 12.2728,
+    "harness_verified_classes": 1109,
     "harness_failed_attempts": 326
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2507
+      "mapped_methods": 2512
     },
     {
       "name": "mc-nbt",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 1615,
-    "prompt_tokens": 5011923,
-    "completion_tokens": 26698774,
-    "reasoning_tokens": 19046436,
-    "avg_latency_s": 284.9
+    "calls_total": 1616,
+    "prompt_tokens": 5015122,
+    "completion_tokens": 26708759,
+    "reasoning_tokens": 19053943,
+    "avg_latency_s": 285.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T08:07:37Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.PacketEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 162.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:07:37Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 162.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:07:37Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.ClientFpsEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 162.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:07:37Z",
+      "class_name": "net.minecraft.util.profiling.jfr.event.ChunkRegionWriteEvent",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 162.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T08:01:14Z",
       "class_name": "net.minecraft.util.datafix.fixes.EntityWolfColorFix",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 264.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:51:30Z",
-      "class_name": "net.minecraft.world.level.chunk.ProtoChunk",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 1231.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:49:47Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1486",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 151.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:49:47Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V4648",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 151.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:49:47Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V4656",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 151.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a64d1fb",
+      "ts": "2026-11-23T08:06:02+00:00",
+      "message": "Worker sync: 8178 mapped Java methods"
+    },
     {
       "sha": "a5d0b9b",
       "ts": "2026-11-23T08:00:22+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6d928a1",
       "ts": "2026-11-23T07:38:01+00:00",
-      "message": "Worker sync: 8023 mapped Java methods"
-    },
-    {
-      "sha": "ff25638",
-      "ts": "2026-11-23T07:32:02+00:00",
       "message": "Worker sync: 8023 mapped Java methods"
     }
   ]

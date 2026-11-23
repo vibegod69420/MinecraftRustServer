@@ -314,3 +314,7 @@ pub mod map_id_fix;
 pub mod block_entity_keep_packed;
 pub mod entity_wolf_color_fix;
 pub mod block_state_structure_template_fix;
+pub mod chunk_region_write_event;
+pub mod client_fps_event;
+pub mod server_tick_time_event;
+pub mod packet_event;
