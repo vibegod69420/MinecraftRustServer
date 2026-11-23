@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 03:45:06 UTC",
-  "updated_epoch": 1795405506,
+  "updated_at": "2026-11-23 03:46:08 UTC",
+  "updated_epoch": 1795405568,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1431,
-    "mapped_methods": 6566,
-    "class_coverage_pct": 19.9777,
-    "method_coverage_pct": 9.8476,
-    "harness_verified_classes": 918,
+    "mapped_classes": 1437,
+    "mapped_methods": 6582,
+    "class_coverage_pct": 20.0614,
+    "method_coverage_pct": 9.8716,
+    "harness_verified_classes": 921,
     "harness_failed_attempts": 231
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2902
+      "mapped_methods": 2919
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 1063,
-    "prompt_tokens": 2919032,
-    "completion_tokens": 16390613,
-    "reasoning_tokens": 11821761,
-    "avg_latency_s": 246.7
+    "calls_total": 1066,
+    "prompt_tokens": 2923531,
+    "completion_tokens": 16430923,
+    "reasoning_tokens": 11851097,
+    "avg_latency_s": 247.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T03:46:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 246.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:45:39Z",
+      "class_name": "net.minecraft.network.protocol.status.ServerStatus",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 176.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:45:06Z",
+      "class_name": "net.minecraft.util.HashOps",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1331.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T03:44:44Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.FeatureCountTracker",
@@ -349,33 +373,14 @@
       "verified": true,
       "seconds": 503.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:31:16Z",
-      "class_name": "net.minecraft.util.GsonHelper",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 501.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:30:20Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 445.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:30:20Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 445.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a026936",
+      "ts": "2026-11-23T03:45:06+00:00",
+      "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "fef552b",
       "ts": "2026-11-23T03:44:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "b28fef8",
       "ts": "2026-11-23T03:31:19+00:00",
-      "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "b5fdc27",
-      "ts": "2026-11-23T03:29:46+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6566** across **1431** classes.
+Total mapped Java symbols: **6582** across **1437** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3716,6 +3716,16 @@ Total mapped Java symbols: **6566** across **1431** classes.
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket#shouldReset` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 457 | `should_reset` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket#shouldShowAdvancements` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 462 | `should_show_advancements` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket#write` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 423 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 304 | `from_instances` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 324 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#getEntityId` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 342 | `get_entity_id` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#getValues` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 347 | `get_values` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#handle` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 337 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket#type` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 332 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot#<init>` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 228 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot#attribute` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 241 | `attribute` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot#base` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 246 | `base` |
+| `net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot#modifiers` | `crates/mc-protocol/src/ported/clientbound_update_attributes_packet.rs` | 251 | `modifiers` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 193 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 220 | `from_buf` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket#effectShowsIcon` | `crates/mc-protocol/src/ported/clientbound_update_mob_effect_packet.rs` | 285 | `effect_shows_icon` |
@@ -4222,6 +4232,13 @@ Total mapped Java symbols: **6566** across **1431** classes.
 | `net.minecraft.network.protocol.status.ClientboundStatusResponsePacket#handle` | `crates/mc-protocol/src/ported/clientbound_status_response_packet.rs` | 88 | `handle` |
 | `net.minecraft.network.protocol.status.ClientboundStatusResponsePacket#status` | `crates/mc-protocol/src/ported/clientbound_status_response_packet.rs` | 62 | `status` |
 | `net.minecraft.network.protocol.status.ClientboundStatusResponsePacket#type` | `crates/mc-protocol/src/ported/clientbound_status_response_packet.rs` | 83 | `type_` |
+| `net.minecraft.network.protocol.status.ServerStatus#ServerStatus` | `crates/mc-protocol/src/ported/server_status.rs` | 72 | `new` |
+| `net.minecraft.network.protocol.status.ServerStatus$Favicon#Favicon` | `crates/mc-protocol/src/ported/server_status.rs` | 99 | `new` |
+| `net.minecraft.network.protocol.status.ServerStatus$Favicon#decode` | `crates/mc-protocol/src/ported/server_status.rs` | 104 | `decode` |
+| `net.minecraft.network.protocol.status.ServerStatus$Favicon#encode` | `crates/mc-protocol/src/ported/server_status.rs` | 121 | `encode` |
+| `net.minecraft.network.protocol.status.ServerStatus$Players#Players` | `crates/mc-protocol/src/ported/server_status.rs` | 139 | `new` |
+| `net.minecraft.network.protocol.status.ServerStatus$Version#Version` | `crates/mc-protocol/src/ported/server_status.rs` | 153 | `new` |
+| `net.minecraft.network.protocol.status.ServerStatus$Version#current` | `crates/mc-protocol/src/ported/server_status.rs` | 158 | `current` |
 | `net.minecraft.network.protocol.status.ServerStatusPacketListener#handleStatusRequest` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 22 | `handle_status_request` |
 | `net.minecraft.network.protocol.status.ServerStatusPacketListener#protocol` | `crates/mc-protocol/src/ported/server_status_packet_listener.rs` | 17 | `protocol` |
 | `net.minecraft.network.protocol.status.ServerboundStatusRequestPacket#handle` | `crates/mc-protocol/src/ported/serverbound_status_request_packet.rs` | 82 | `handle` |

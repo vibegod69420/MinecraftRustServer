@@ -321,3 +321,5 @@ pub mod last_seen_messages_validator;
 pub mod clientbound_section_blocks_update_packet;
 pub mod serverbound_set_jigsaw_block_packet;
 pub mod clientbound_update_advancements_packet;
+pub mod server_status;
+pub mod clientbound_update_attributes_packet;
