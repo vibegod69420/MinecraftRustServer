@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7859** across **1654** classes.
+Total mapped Java symbols: **7873** across **1655** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6561,6 +6561,20 @@ Total mapped Java symbols: **7859** across **1654** classes.
 | `net.minecraft.world.level.chunk.CarvingMask$Mask#test` | `crates/mc-worldgen/src/ported/carving_mask.rs` | 108 | `test` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
 | `net.minecraft.world.level.chunk.ChunkGenerators#bootstrap` | `crates/mc-worldgen/src/ported/chunk_generators.rs` | 68 | `bootstrap` |
+| `net.minecraft.world.level.chunk.ChunkSource#close()` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 81 | `close` |
+| `net.minecraft.world.level.chunk.ChunkSource#gatherStats()` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 75 | `gather_stats` |
+| `net.minecraft.world.level.chunk.ChunkSource#getChunk(int,int,ChunkStatus,boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 37 | `get_chunk_with_status` |
+| `net.minecraft.world.level.chunk.ChunkSource#getChunk(int,int,boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 46 | `get_chunk` |
+| `net.minecraft.world.level.chunk.ChunkSource#getChunkForLighting(int,int)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 57 | `get_chunk_for_lighting` |
+| `net.minecraft.world.level.chunk.ChunkSource#getChunkNow(int,int)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 52 | `get_chunk_now` |
+| `net.minecraft.world.level.chunk.ChunkSource#getForceLoadedChunks()` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 97 | `get_force_loaded_chunks` |
+| `net.minecraft.world.level.chunk.ChunkSource#getLightEngine()` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 86 | `get_light_engine` |
+| `net.minecraft.world.level.chunk.ChunkSource#getLoadedChunksCount()` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 78 | `get_loaded_chunks_count` |
+| `net.minecraft.world.level.chunk.ChunkSource#hasChunk(int,int)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 63 | `has_chunk` |
+| `net.minecraft.world.level.chunk.ChunkSource#onSectionEmptinessChanged(int,int,int,boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 72 | `on_section_emptiness_changed` |
+| `net.minecraft.world.level.chunk.ChunkSource#setSpawnSettings(boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 89 | `set_spawn_settings` |
+| `net.minecraft.world.level.chunk.ChunkSource#tick(BooleanSupplier,boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 69 | `tick` |
+| `net.minecraft.world.level.chunk.ChunkSource#updateChunkForced(ChunkPos,boolean)` | `crates/mc-worldgen/src/ported/chunk_source.rs` | 92 | `update_chunk_forced` |
 | `net.minecraft.world.level.chunk.Configuration#alwaysRepack` | `crates/mc-worldgen/src/ported/configuration.rs` | 31 | `always_repack` |
 | `net.minecraft.world.level.chunk.Configuration#bitsInMemory` | `crates/mc-worldgen/src/ported/configuration.rs` | 39 | `bits_in_memory` |
 | `net.minecraft.world.level.chunk.Configuration#bitsInStorage` | `crates/mc-worldgen/src/ported/configuration.rs` | 47 | `bits_in_storage` |

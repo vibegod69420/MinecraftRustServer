@@ -343,3 +343,4 @@ pub mod ocean_ruin_pieces;
 pub mod imposter_proto_chunk;
 pub mod simple_region_storage;
 pub mod region_file_version;
+pub mod chunk_source;
