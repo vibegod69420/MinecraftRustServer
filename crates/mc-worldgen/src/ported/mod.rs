@@ -317,3 +317,7 @@ pub mod noises;
 pub mod random_state;
 pub mod ruined_portal_piece;
 pub mod chunk_status_task;
+pub mod light_chunk;
+pub mod palette;
+pub mod chunk_generators;
+pub mod structure_access;
