@@ -136,3 +136,4 @@ pub mod debug_game_event_listener_info;
 pub mod debug_path_info;
 pub mod debug_breeze_info;
 pub mod task_scheduler;
+pub mod abortable_iteration_consumer;
