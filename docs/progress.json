@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 14:07:15 UTC",
-  "updated_epoch": 1795442835,
+  "updated_at": "2026-11-23 14:08:03 UTC",
+  "updated_epoch": 1795442883,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 9171,
     "class_coverage_pct": 29.4011,
     "method_coverage_pct": 13.7546,
-    "harness_verified_classes": 1341,
-    "harness_failed_attempts": 376
+    "harness_verified_classes": 1343,
+    "harness_failed_attempts": 381
   },
   "crates": [
     {
@@ -54,6 +54,62 @@
     "avg_latency_s": 225.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3042.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityIdFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3042.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3041.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ItemSpawnEggFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 3042.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V2832",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 5438.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3041.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:07:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 3041.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T13:43:25Z",
       "class_name": "net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix",
@@ -317,65 +373,14 @@
       "verified": true,
       "seconds": 2213.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3466.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BannerEntityCustomNameToOverrideComponentFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 7891.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MobSpawnerEntityIdentifiersFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 7891.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AttributesRenameLegacy",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 7891.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.profiling.jfr.parse.JfrStatsResult",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 7891.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FixProjectileStoredItem",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2213.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2213.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "839cd93",
+      "ts": "2026-11-23T14:07:16+00:00",
+      "message": "Port 9 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "4f2c773",
       "ts": "2026-11-23T14:00:07+00:00",
@@ -445,11 +450,6 @@
       "sha": "16e586f",
       "ts": "2026-11-23T12:34:04+00:00",
       "message": "Worker sync: 9036 mapped Java methods"
-    },
-    {
-      "sha": "52146ac",
-      "ts": "2026-11-23T12:31:15+00:00",
-      "message": "Port 17 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
