@@ -119,3 +119,4 @@ pub mod derived_level_data;
 pub mod set_stew_effect_function;
 pub mod set_name_function;
 pub mod enchant_randomly_function;
+pub mod set_custom_model_data_function;

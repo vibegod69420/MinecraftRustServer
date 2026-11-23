@@ -220,3 +220,5 @@ pub mod nether_fortress_structure;
 pub mod shipwreck_structure;
 pub mod structure_processor_type;
 pub mod capped_processor;
+pub mod noise_threshold_provider;
+pub mod dual_noise_provider;
