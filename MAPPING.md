@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5087** across **1187** classes.
+Total mapped Java symbols: **5116** across **1198** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3517,7 +3517,49 @@ Total mapped Java symbols: **5087** across **1187** classes.
 | `net.minecraft.util.PngInfo#fromBytes` | `crates/mc-math/src/ported/png_info.rs` | 45 | `from_bytes` |
 | `net.minecraft.util.PngInfo#fromStream` | `crates/mc-math/src/ported/png_info.rs` | 14 | `from_stream` |
 | `net.minecraft.util.PngInfo#validateHeader` | `crates/mc-math/src/ported/png_info.rs` | 51 | `validate_header` |
+| `net.minecraft.util.ProblemReporter#forChild` | `crates/mc-math/src/ported/problem_reporter.rs` | 145 | `for_child` |
+| `net.minecraft.util.ProblemReporter#forChild` | `crates/mc-math/src/ported/problem_reporter.rs` | 158 | `for_child` |
+| `net.minecraft.util.ProblemReporter#report` | `crates/mc-math/src/ported/problem_reporter.rs` | 148 | `report` |
+| `net.minecraft.util.ProblemReporter#report` | `crates/mc-math/src/ported/problem_reporter.rs` | 163 | `report` |
+| `net.minecraft.util.ProblemReporter$Collector#Collector` | `crates/mc-math/src/ported/problem_reporter.rs` | 190 | `new` |
+| `net.minecraft.util.ProblemReporter$Collector#Collector` | `crates/mc-math/src/ported/problem_reporter.rs` | 195 | `with_element` |
+| `net.minecraft.util.ProblemReporter$Collector#Collector` | `crates/mc-math/src/ported/problem_reporter.rs` | 206 | `from_parent` |
+| `net.minecraft.util.ProblemReporter$Collector#EMPTY_ROOT` | `crates/mc-math/src/ported/problem_reporter.rs` | 131 | `get` |
+| `net.minecraft.util.ProblemReporter$Collector#forChild` | `crates/mc-math/src/ported/problem_reporter.rs` | 217 | `for_child` |
+| `net.minecraft.util.ProblemReporter$Collector#forChild` | `crates/mc-math/src/ported/problem_reporter.rs` | 320 | `for_child` |
+| `net.minecraft.util.ProblemReporter$Collector#forChild` | `crates/mc-math/src/ported/problem_reporter.rs` | 463 | `for_child` |
+| `net.minecraft.util.ProblemReporter$Collector#forEach` | `crates/mc-math/src/ported/problem_reporter.rs` | 243 | `for_each` |
+| `net.minecraft.util.ProblemReporter$Collector#getReport` | `crates/mc-math/src/ported/problem_reporter.rs` | 263 | `get_report` |
+| `net.minecraft.util.ProblemReporter$Collector#getTreeReport` | `crates/mc-math/src/ported/problem_reporter.rs` | 285 | `get_tree_report` |
+| `net.minecraft.util.ProblemReporter$Collector#isEmpty` | `crates/mc-math/src/ported/problem_reporter.rs` | 238 | `is_empty` |
+| `net.minecraft.util.ProblemReporter$Collector#report` | `crates/mc-math/src/ported/problem_reporter.rs` | 222 | `report` |
+| `net.minecraft.util.ProblemReporter$Collector#report` | `crates/mc-math/src/ported/problem_reporter.rs` | 325 | `report` |
+| `net.minecraft.util.ProblemReporter$Collector#report` | `crates/mc-math/src/ported/problem_reporter.rs` | 468 | `report` |
+| `net.minecraft.util.ProblemReporter$Collector$ProblemTreeNode#ProblemTreeNode` | `crates/mc-math/src/ported/problem_reporter.rs` | 338 | `new` |
+| `net.minecraft.util.ProblemReporter$Collector$ProblemTreeNode#child` | `crates/mc-math/src/ported/problem_reporter.rs` | 347 | `child` |
+| `net.minecraft.util.ProblemReporter$Collector$ProblemTreeNode#getLines` | `crates/mc-math/src/ported/problem_reporter.rs` | 359 | `get_lines` |
+| `net.minecraft.util.ProblemReporter$ElementReferencePathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 52 | `<item>` |
+| `net.minecraft.util.ProblemReporter$ElementReferencePathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 59 | `get` |
+| `net.minecraft.util.ProblemReporter$FieldPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 65 | `<item>` |
 | `net.minecraft.util.ProblemReporter$FieldPathElement#<init>` | `crates/mc-nbt/src/ported/slot_loot.rs` | 56 | `new` |
+| `net.minecraft.util.ProblemReporter$FieldPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 72 | `get` |
+| `net.minecraft.util.ProblemReporter$IndexedFieldPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 78 | `<item>` |
+| `net.minecraft.util.ProblemReporter$IndexedFieldPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 86 | `get` |
+| `net.minecraft.util.ProblemReporter$IndexedPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 92 | `<item>` |
+| `net.minecraft.util.ProblemReporter$IndexedPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 99 | `get` |
+| `net.minecraft.util.ProblemReporter$PathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 33 | `get` |
+| `net.minecraft.util.ProblemReporter$PathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 136 | `get` |
+| `net.minecraft.util.ProblemReporter$Problem#description` | `crates/mc-math/src/ported/problem_reporter.rs` | 14 | `description` |
+| `net.minecraft.util.ProblemReporter$Problem#description` | `crates/mc-math/src/ported/problem_reporter.rs` | 19 | `description` |
+| `net.minecraft.util.ProblemReporter$Problem#description` | `crates/mc-math/src/ported/problem_reporter.rs` | 26 | `description` |
+| `net.minecraft.util.ProblemReporter$RootElementPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 105 | `<item>` |
+| `net.minecraft.util.ProblemReporter$RootElementPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 112 | `get` |
+| `net.minecraft.util.ProblemReporter$RootFieldPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 118 | `<item>` |
+| `net.minecraft.util.ProblemReporter$RootFieldPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 125 | `get` |
+| `net.minecraft.util.ProblemReporter$ScopedCollector#ScopedCollector` | `crates/mc-math/src/ported/problem_reporter.rs` | 417 | `new` |
+| `net.minecraft.util.ProblemReporter$ScopedCollector#ScopedCollector` | `crates/mc-math/src/ported/problem_reporter.rs` | 426 | `with_element` |
+| `net.minecraft.util.ProblemReporter$ScopedCollector#close` | `crates/mc-math/src/ported/problem_reporter.rs` | 435 | `close` |
+| `net.minecraft.util.ProblemReporter$ScopedCollector#close` | `crates/mc-math/src/ported/problem_reporter.rs` | 454 | `drop` |
 | `net.minecraft.util.ProgressListener#progressStage` | `crates/mc-math/src/ported/progress_listener.rs` | 20 | `progress_stage` |
 | `net.minecraft.util.ProgressListener#progressStagePercentage` | `crates/mc-math/src/ported/progress_listener.rs` | 23 | `progress_stage_percentage` |
 | `net.minecraft.util.ProgressListener#progressStart` | `crates/mc-math/src/ported/progress_listener.rs` | 17 | `progress_start` |
