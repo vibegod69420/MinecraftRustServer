@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7209** across **1548** classes.
+Total mapped Java symbols: **7214** across **1550** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7289,6 +7289,11 @@ Total mapped Java symbols: **7209** across **1548** classes.
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#FlatLevelGeneratorPreset` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 65 | `new` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#displayItem` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 73 | `display_item` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPreset#settings` | `crates/mc-worldgen/src/ported/flat_level_generator_preset.rs` | 78 | `settings` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets#bootstrap` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 424 | `bootstrap` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets#register` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 397 | `register_key` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#<init>` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 434 | `new` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#register` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 439 | `register` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#run` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 494 | `run` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#<init>` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 60 | `new` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#getType` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 91 | `get_type` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#of` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 69 | `of` |

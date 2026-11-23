@@ -293,3 +293,4 @@ pub mod noise_generator_settings;
 pub mod vegetation_patch_feature;
 pub mod jigsaw_structure;
 pub mod shipwreck_pieces;
+pub mod flat_level_generator_presets;
