@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 21:10:26 UTC",
-  "updated_epoch": 1795468226,
+  "updated_at": "2026-11-23 21:46:05 UTC",
+  "updated_epoch": 1795470365,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 2142,
-    "mapped_methods": 9417,
-    "class_coverage_pct": 29.9037,
-    "method_coverage_pct": 14.1235,
+    "mapped_classes": 2144,
+    "mapped_methods": 9422,
+    "class_coverage_pct": 29.9316,
+    "method_coverage_pct": 14.131,
     "harness_verified_classes": 1360,
     "harness_failed_attempts": 447
   },
@@ -35,7 +35,7 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 1769
+      "mapped_methods": 1775
     },
     {
       "name": "mc-protocol",
@@ -47,11 +47,11 @@
     }
   ],
   "usage": {
-    "calls_total": 2121,
-    "prompt_tokens": 6857370,
-    "completion_tokens": 34625324,
-    "reasoning_tokens": 24843262,
-    "avg_latency_s": 216.7
+    "calls_total": 2133,
+    "prompt_tokens": 6896650,
+    "completion_tokens": 34860046,
+    "reasoning_tokens": 24993180,
+    "avg_latency_s": 217.4
   },
   "recent_work": [
     {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "d5197b6",
+      "ts": "2026-11-23T21:10:27+00:00",
+      "message": "Worker sync: 9417 mapped Java methods"
+    },
+    {
       "sha": "b4a95a9",
       "ts": "2026-11-23T20:54:02+00:00",
       "message": "Worker sync: 9407 mapped Java methods"
@@ -444,11 +449,6 @@
     {
       "sha": "e866a28",
       "ts": "2026-11-23T16:09:28+00:00",
-      "message": "Worker sync: 9221 mapped Java methods"
-    },
-    {
-      "sha": "007af98",
-      "ts": "2026-11-23T15:56:43+00:00",
       "message": "Worker sync: 9221 mapped Java methods"
     }
   ]

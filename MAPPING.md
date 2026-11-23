@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9417** across **2142** classes.
+Total mapped Java symbols: **9422** across **2144** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11276,6 +11276,12 @@ Total mapped Java symbols: **9417** across **2142** classes.
 | `net.minecraft.world.level.storage.loot.LootContextUser#getReferencedContextParams` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 84 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.LootContextUser#getReferencedContextParams` | `crates/mc-nbt/src/ported/loot_context_user.rs` | 33 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.LootContextUser#validate` | `crates/mc-nbt/src/ported/loot_context_user.rs` | 38 | `validate` |
+| `net.minecraft.world.level.storage.loot.LootDataType#createLootTableValidator` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 184 | `create_loot_table_validator` |
+| `net.minecraft.world.level.storage.loot.LootDataType#createSimpleValidator` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 173 | `create_simple_validator` |
+| `net.minecraft.world.level.storage.loot.LootDataType#runValidation` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 167 | `run_validation` |
+| `net.minecraft.world.level.storage.loot.LootDataType#values` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 232 | `values` |
+| `net.minecraft.world.level.storage.loot.LootDataType$Validator#run` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 148 | `run` |
+| `net.minecraft.world.level.storage.loot.LootDataType$Validator#run` | `crates/mc-nbt/src/ported/loot_data_type.rs` | 153 | `run` |
 | `net.minecraft.world.level.storage.loot.LootParams#<init>` | `crates/mc-nbt/src/ported/loot_params.rs` | 182 | `new` |
 | `net.minecraft.world.level.storage.loot.LootParams#addDynamicDrops` | `crates/mc-nbt/src/ported/loot_params.rs` | 207 | `add_dynamic_drops` |
 | `net.minecraft.world.level.storage.loot.LootParams#contextMap` | `crates/mc-nbt/src/ported/loot_params.rs` | 202 | `context_map` |
