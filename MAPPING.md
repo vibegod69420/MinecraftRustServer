@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7919** across **1666** classes.
+Total mapped Java symbols: **7928** across **1671** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5794,6 +5794,14 @@ Total mapped Java symbols: **7919** across **1666** classes.
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#rename` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 21 | `rename` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#<init>` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 49 | `new` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
+| `net.minecraft.util.datafix.schemas.V1904#<init>` | `crates/mc-math/src/ported/v1904.rs` | 33 | `new` |
+| `net.minecraft.util.datafix.schemas.V1904#registerEntities` | `crates/mc-math/src/ported/v1904.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V1931#<init>` | `crates/mc-math/src/ported/v1931.rs` | 33 | `new` |
+| `net.minecraft.util.datafix.schemas.V1931#registerEntities` | `crates/mc-math/src/ported/v1931.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2571#<init>` | `crates/mc-math/src/ported/v2571.rs` | 33 | `new` |
+| `net.minecraft.util.datafix.schemas.V2571#registerEntities` | `crates/mc-math/src/ported/v2571.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2704#<init>` | `crates/mc-math/src/ported/v2704.rs` | 33 | `new` |
+| `net.minecraft.util.datafix.schemas.V2704#registerEntities` | `crates/mc-math/src/ported/v2704.rs` | 38 | `register_entities` |
 | `net.minecraft.util.debug.DebugBeeInfo#<init>` | `crates/mc-math/src/ported/debug_bee_info.rs` | 14 | `new` |
 | `net.minecraft.util.debug.DebugBeeInfo#hasHive` | `crates/mc-math/src/ported/debug_bee_info.rs` | 29 | `has_hive` |
 | `net.minecraft.util.debug.DebugBrainDump#DebugBrainDump` | `crates/mc-math/src/ported/debug_brain_dump.rs` | 135 | `from_buf` |
@@ -6019,6 +6027,7 @@ Total mapped Java symbols: **7919** across **1666** classes.
 | `net.minecraft.util.profiling.jfr.stats.PacketIdentification#from` | `crates/mc-math/src/ported/packet_identification.rs` | 14 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TickTimeStat#from` | `crates/mc-math/src/ported/tick_time_stat.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
+| `net.minecraft.util.profiling.metrics.MetricCategory#getDescription` | `crates/mc-math/src/ported/metric_category.rs` | 15 | `get_description` |
 | `net.minecraft.util.profiling.metrics.MetricsSamplerProvider#samplers` | `crates/mc-math/src/ported/metrics_sampler_provider.rs` | 43 | `samplers` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 32 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 45 | `profiled_metrics` |
