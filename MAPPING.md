@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8831** across **2007** classes.
+Total mapped Java symbols: **8838** across **2009** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6132,6 +6132,9 @@ Total mapped Java symbols: **8831** across **2007** classes.
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#<init>` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 54 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fix` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 70 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fixBurnTime` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 61 | `fix_burn_time` |
+| `net.minecraft.util.datafix.fixes.BlockEntityIdFix#<init>` | `crates/mc-math/src/ported/block_entity_id_fix.rs` | 12 | `new` |
+| `net.minecraft.util.datafix.fixes.BlockEntityIdFix#ID_MAP` | `crates/mc-math/src/ported/block_entity_id_fix.rs` | 23 | `block_entity_id_map` |
+| `net.minecraft.util.datafix.fixes.BlockEntityIdFix#makeRule` | `crates/mc-math/src/ported/block_entity_id_fix.rs` | 17 | `fix_block_entity_id` |
 | `net.minecraft.util.datafix.fixes.BlockEntityJukeboxFix#<init>` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 124 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityJukeboxFix#fix` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 129 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityKeepPacked#BlockEntityKeepPacked` | `crates/mc-math/src/ported/block_entity_keep_packed.rs` | 111 | `new` |
@@ -6438,6 +6441,10 @@ Total mapped Java symbols: **8831** across **2007** classes.
 | `net.minecraft.util.datafix.fixes.SavedDataUUIDFix#makeRule` | `crates/mc-math/src/ported/saved_data_uuid_fix.rs` | 86 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ScoreboardDisplayNameFix#<init>` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 44 | `new` |
 | `net.minecraft.util.datafix.fixes.ScoreboardDisplayNameFix#makeRule` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 61 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ScoreboardDisplaySlotFix#<init>` | `crates/mc-math/src/ported/scoreboard_display_slot_fix.rs` | 10 | `new` |
+| `net.minecraft.util.datafix.fixes.ScoreboardDisplaySlotFix#SLOT_RENAMES` | `crates/mc-math/src/ported/scoreboard_display_slot_fix.rs` | 21 | `slot_renames` |
+| `net.minecraft.util.datafix.fixes.ScoreboardDisplaySlotFix#makeRule` | `crates/mc-math/src/ported/scoreboard_display_slot_fix.rs` | 15 | `fix_display_slot` |
+| `net.minecraft.util.datafix.fixes.ScoreboardDisplaySlotFix#rename` | `crates/mc-math/src/ported/scoreboard_display_slot_fix.rs` | 49 | `rename` |
 | `net.minecraft.util.datafix.fixes.SignTextStrictJsonFix#<init>` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 14 | `new` |
 | `net.minecraft.util.datafix.fixes.SignTextStrictJsonFix#fix` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 19 | `fix` |
 | `net.minecraft.util.datafix.fixes.SimpleEntityRenameFix#SimpleEntityRenameFix` | `crates/mc-math/src/ported/simple_entity_rename_fix.rs` | 83 | `new` |

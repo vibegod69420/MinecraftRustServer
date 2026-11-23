@@ -509,3 +509,5 @@ pub mod item_stack_uuid_fix;
 pub mod abstract_poi_section_fix;
 pub mod unflatten_text_component_fix;
 pub mod feature_flag_remove_fix;
+pub mod block_entity_id_fix;
+pub mod scoreboard_display_slot_fix;
