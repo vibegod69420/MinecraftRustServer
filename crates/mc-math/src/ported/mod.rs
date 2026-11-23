@@ -497,3 +497,6 @@ pub mod empty_item_in_hotbar_fix;
 pub mod structure_generation_event;
 pub mod chunk_generation_event;
 pub mod network_summary_event;
+pub mod reorganize_poi;
+pub mod entity_zombie_split_fix;
+pub mod abstract_arrow_pickup_fix;
