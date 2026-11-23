@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 08:16:15 UTC",
-  "updated_epoch": 1795421775,
+  "updated_at": "2026-11-23 08:22:02 UTC",
+  "updated_epoch": 1795422122,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1823,
-    "mapped_methods": 8305,
-    "class_coverage_pct": 25.4502,
-    "method_coverage_pct": 12.4558,
-    "harness_verified_classes": 1142,
+    "mapped_classes": 1836,
+    "mapped_methods": 8335,
+    "class_coverage_pct": 25.6317,
+    "method_coverage_pct": 12.5007,
+    "harness_verified_classes": 1150,
     "harness_failed_attempts": 326
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2701
+      "mapped_methods": 2731
     },
     {
       "name": "mc-nbt",
@@ -47,13 +47,77 @@
     }
   ],
   "usage": {
-    "calls_total": 1644,
-    "prompt_tokens": 5143950,
-    "completion_tokens": 27143785,
-    "reasoning_tokens": 19334576,
-    "avg_latency_s": 283.9
+    "calls_total": 1653,
+    "prompt_tokens": 5188871,
+    "completion_tokens": 27336993,
+    "reasoning_tokens": 19469864,
+    "avg_latency_s": 283.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V3083",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 336.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V3327",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 336.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V4071",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 336.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V808",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 336.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1800",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 679.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V2688",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 679.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V3818_5",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 679.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T08:16:15Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V3818_4",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 679.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T08:14:28Z",
       "class_name": "net.minecraft.util.datafix.schemas.V3813",
@@ -309,73 +373,14 @@
       "verified": true,
       "seconds": 208.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:08:24Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1451",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 208.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:07:37Z",
-      "class_name": "net.minecraft.util.profiling.jfr.event.PacketEvent",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 162.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:07:37Z",
-      "class_name": "net.minecraft.util.profiling.jfr.event.ServerTickTimeEvent",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 162.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:07:37Z",
-      "class_name": "net.minecraft.util.profiling.jfr.event.ClientFpsEvent",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 162.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:07:37Z",
-      "class_name": "net.minecraft.util.profiling.jfr.event.ChunkRegionWriteEvent",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 162.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:01:14Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityWolfColorFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 687.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:01:14Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BlockEntityKeepPacked",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 687.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T08:01:14Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MapIdFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 687.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b44beef",
+      "ts": "2026-11-23T08:16:15+00:00",
+      "message": "Port 12 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "3f64bb5",
       "ts": "2026-11-23T08:16:12+00:00",
@@ -445,11 +450,6 @@
       "sha": "b654060",
       "ts": "2026-11-23T07:56:02+00:00",
       "message": "Worker sync: 8106 mapped Java methods"
-    },
-    {
-      "sha": "756b851",
-      "ts": "2026-11-23T07:55:08+00:00",
-      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
