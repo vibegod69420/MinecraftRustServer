@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:22:02 UTC
+- **Updated**: 2026-11-23 01:22:39 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 4970 / 66676 (7.454%)
 - **Mapped Java Classes**: 1166 / 7163 (16.278%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1283 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.parameters.LootContextParamSets` -> `mc-nbt` (604.0s)
 - [PASS] `net.minecraft.world.level.storage.LevelSummary` -> `mc-nbt` (223.9s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.ApplyBonusCount` -> `mc-nbt` (467.2s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundTagQueryPacket` -> `mc-protocol` (847.5s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.placement.PlacementModifierType` -> `mc-worldgen` (1337.6s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.CopyCustomDataFunction` -> `mc-nbt` (301.0s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetTitlesAnimationPacket` -> `mc-protocol` (287.7s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundAnimatePacket` -> `mc-protocol` (287.7s)

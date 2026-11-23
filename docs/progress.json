@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 01:22:02 UTC",
-  "updated_epoch": 1795396922,
+  "updated_at": "2026-11-23 01:22:39 UTC",
+  "updated_epoch": 1795396959,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 16.2781,
     "method_coverage_pct": 7.454,
     "harness_verified_classes": 763,
-    "harness_failed_attempts": 149
+    "harness_failed_attempts": 150
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 732,
-    "prompt_tokens": 1956546,
-    "completion_tokens": 10152607,
-    "reasoning_tokens": 7285842,
-    "avg_latency_s": 222.6
+    "calls_total": 734,
+    "prompt_tokens": 1963882,
+    "completion_tokens": 10197729,
+    "reasoning_tokens": 7325593,
+    "avg_latency_s": 223.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T01:22:38Z",
+      "class_name": "net.minecraft.world.level.storage.loot.parameters.LootContextParamSets",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 604.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T01:20:29Z",
       "class_name": "net.minecraft.world.level.storage.LevelSummary",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 286.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:07:26Z",
-      "class_name": "net.minecraft.util.thread.AbstractConsecutiveExecutor",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 685.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f814af5",
+      "ts": "2026-11-23T01:22:02+00:00",
+      "message": "Worker sync: 4970 mapped Java methods"
+    },
     {
       "sha": "d39ada2",
       "ts": "2026-11-23T01:20:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "5eca9fb",
       "ts": "2026-11-23T01:08:11+00:00",
       "message": "Worker sync: 4567 mapped Java methods"
-    },
-    {
-      "sha": "b69eee5",
-      "ts": "2026-11-23T01:06:53+00:00",
-      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
