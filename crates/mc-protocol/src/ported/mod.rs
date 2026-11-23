@@ -197,3 +197,7 @@ pub mod clientbound_hurt_animation_packet;
 pub mod clientbound_set_border_warning_delay_packet;
 pub mod clientbound_set_chunk_cache_center_packet;
 pub mod clientbound_custom_chat_completions_packet;
+pub mod serverbound_edit_book_packet;
+pub mod serverbound_container_slot_state_changed_packet;
+pub mod clientbound_remove_mob_effect_packet;
+pub mod clientbound_respawn_packet;

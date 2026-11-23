@@ -188,3 +188,6 @@ pub mod fancy_foliage_placer;
 pub mod acacia_foliage_placer;
 pub mod pine_foliage_placer;
 pub mod spruce_foliage_placer;
+pub mod block_column_configuration;
+pub mod large_dripstone_configuration;
+pub mod fallen_tree_configuration;

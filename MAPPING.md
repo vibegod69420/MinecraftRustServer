@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3922** across **968** classes.
+Total mapped Java symbols: **3958** across **978** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2125,6 +2125,12 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookSettingsPacket#bookSettings` | `crates/mc-protocol/src/ported/clientbound_recipe_book_settings_packet.rs` | 34 | `book_settings` |
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookSettingsPacket#handle` | `crates/mc-protocol/src/ported/clientbound_recipe_book_settings_packet.rs` | 44 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookSettingsPacket#type` | `crates/mc-protocol/src/ported/clientbound_recipe_book_settings_packet.rs` | 39 | `type_` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 134 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 139 | `decode` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 146 | `encode` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#getEntity` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 163 | `get_entity` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#handle` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 158 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket#type` | `crates/mc-protocol/src/ported/clientbound_remove_mob_effect_packet.rs` | 153 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 128 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 136 | `from_buf` |
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#handle` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 154 | `handle` |
@@ -2132,6 +2138,12 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#owner` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 159 | `owner` |
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#type` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 149 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundResetScorePacket#write` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 143 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 136 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 144 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#handle` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 162 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#shouldKeep` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 167 | `should_keep` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#type` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 157 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundRespawnPacket#write` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 151 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundServerDataPacket#<init>(Component,Optional<byte[]>)` | `crates/mc-protocol/src/ported/clientbound_server_data_packet.rs` | 315 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundServerDataPacket#STREAM_CODEC encode` | `crates/mc-protocol/src/ported/clientbound_server_data_packet.rs` | 322 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundServerDataPacket#handle(ClientGamePacketListener)` | `crates/mc-protocol/src/ported/clientbound_server_data_packet.rs` | 333 | `handle` |
@@ -2246,6 +2258,8 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#tickSteps` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 125 | `tick_steps` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#type` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 115 | `get_type` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#write` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 110 | `write` |
+| `net.minecraft.network.protocol.game.CommonPlayerSpawnInfo#<init>` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 109 | `read` |
+| `net.minecraft.network.protocol.game.CommonPlayerSpawnInfo#write` | `crates/mc-protocol/src/ported/clientbound_respawn_packet.rs` | 115 | `write` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleChatSessionUpdate` | `crates/mc-protocol/src/ported/serverbound_chat_session_update_packet.rs` | 99 | `handle_chat_session_update` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleClientTickEnd` | `crates/mc-protocol/src/ported/serverbound_client_tick_end_packet.rs` | 31 | `handle_client_tick_end` |
 | `net.minecraft.network.protocol.game.ServerGamePacketListener#handleSetCarriedItem` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 46 | `handle_set_carried_item` |
@@ -2304,6 +2318,16 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.network.protocol.game.ServerboundContainerClosePacket#handle` | `crates/mc-protocol/src/ported/serverbound_container_close_packet.rs` | 103 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundContainerClosePacket#type` | `crates/mc-protocol/src/ported/serverbound_container_close_packet.rs` | 98 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundContainerClosePacket#write` | `crates/mc-protocol/src/ported/serverbound_container_close_packet.rs` | 93 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 97 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 106 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#handle` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 126 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#type` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 121 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#write` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 114 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundEditBookPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 201 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundEditBookPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 206 | `decode` |
+| `net.minecraft.network.protocol.game.ServerboundEditBookPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 214 | `encode` |
+| `net.minecraft.network.protocol.game.ServerboundEditBookPacket#handle` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 227 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundEditBookPacket#type` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 222 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 49 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 54 | `from_buf` |
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#handle` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 71 | `handle` |
@@ -3607,6 +3631,16 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#<init>` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 32 | `new` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/random_selector_feature.rs` | 50 | `place` |
 | `net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature#place` | `crates/mc-worldgen/src/ported/weighted_placed_feature.rs` | 37 | `place` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 60 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#allowedPlacement` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 85 | `allowed_placement` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#direction` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 80 | `direction` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#layer` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 95 | `layer` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#layers` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 75 | `layers` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#prioritizeTip` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 90 | `prioritize_tip` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration#simple` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 100 | `simple` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration.Layer#<init>` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 33 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration.Layer#height` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 38 | `height` |
+| `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration.Layer#state` | `crates/mc-worldgen/src/ported/block_column_configuration.rs` | 43 | `state` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 29 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration#<init>` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_config.rs` | 26 | `new` |
@@ -3635,6 +3669,11 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#getExit` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 40 | `get_exit` |
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#isExitExact` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 45 | `is_exit_exact` |
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#knownExit` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 30 | `known_exit` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration#<init>` | `crates/mc-worldgen/src/ported/fallen_tree_configuration.rs` | 23 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration.FallenTreeConfigurationBuilder#<init>` | `crates/mc-worldgen/src/ported/fallen_tree_configuration.rs` | 48 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration.FallenTreeConfigurationBuilder#build` | `crates/mc-worldgen/src/ported/fallen_tree_configuration.rs` | 70 | `build` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration.FallenTreeConfigurationBuilder#logDecorators` | `crates/mc-worldgen/src/ported/fallen_tree_configuration.rs` | 64 | `log_decorators` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration.FallenTreeConfigurationBuilder#stumpDecorators` | `crates/mc-worldgen/src/ported/fallen_tree_configuration.rs` | 58 | `stump_decorators` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/block_pile_configuration.rs` | 11 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/block_state_configuration.rs` | 11 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/column_feature_configuration.rs` | 2 | `<item>` |
@@ -3656,6 +3695,7 @@ Total mapped Java symbols: **3922** across **968** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/replace_block_configuration.rs` | 13 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 9 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/huge_mushroom_feature_configuration.rs` | 27 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.LargeDripstoneConfiguration#<init>` | `crates/mc-worldgen/src/ported/large_dripstone_configuration.rs` | 25 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.LayerConfiguration` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 17 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.LayerConfiguration#LayerConfiguration` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 27 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.NetherForestVegetationConfig#<init>` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_config.rs` | 46 | `new` |
