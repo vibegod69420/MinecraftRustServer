@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 14:43:33 UTC
+- **Updated**: 2026-11-23 15:39:37 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9221 / 66676 (13.830%)
 - **Mapped Java Classes**: 2114 / 7163 (29.513%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix` -> `mc-math` (2988.9s)
 - [PASS] `net.minecraft.util.datafix.fixes.ItemPotionFix` -> `mc-math` (1525.3s)
 - [PASS] `net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix` -> `mc-math` (1524.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (1524.8s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.datafix.fixes.ItemSpawnEggFix` -> `mc-math` (3042.0s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V2832` -> `mc-math` (5438.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (3041.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix` -> `mc-math` (3041.6s)
