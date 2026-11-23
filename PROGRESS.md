@@ -1,17 +1,17 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:48:23 UTC
+- **Updated**: 2026-11-23 02:49:45 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 5998 / 66676 (8.996%)
-- **Mapped Java Classes**: 1349 / 7163 (18.833%)
+- **Mapped Java Methods**: 6031 / 66676 (9.045%)
+- **Mapped Java Classes**: 1353 / 7163 (18.889%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1604 mapped methods
-- `mc-protocol`: 2363 mapped methods
-- `mc-worldgen`: 1553 mapped methods
+- `mc-protocol`: 2398 mapped methods
+- `mc-worldgen`: 1561 mapped methods
 
 ## Recent Verified Work
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure` -> `mc-worldgen` (247.1s)

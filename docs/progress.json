@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:48:23 UTC",
-  "updated_epoch": 1795402103,
+  "updated_at": "2026-11-23 02:49:45 UTC",
+  "updated_epoch": 1795402185,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1349,
-    "mapped_methods": 5998,
-    "class_coverage_pct": 18.8329,
-    "method_coverage_pct": 8.9957,
+    "mapped_classes": 1353,
+    "mapped_methods": 6031,
+    "class_coverage_pct": 18.8887,
+    "method_coverage_pct": 9.0452,
     "harness_verified_classes": 873,
     "harness_failed_attempts": 200
   },
@@ -39,19 +39,19 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2363
+      "mapped_methods": 2398
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 1553
+      "mapped_methods": 1561
     }
   ],
   "usage": {
-    "calls_total": 950,
-    "prompt_tokens": 2608586,
-    "completion_tokens": 14283319,
-    "reasoning_tokens": 10327650,
-    "avg_latency_s": 236.8
+    "calls_total": 953,
+    "prompt_tokens": 2615432,
+    "completion_tokens": 14318467,
+    "reasoning_tokens": 10350578,
+    "avg_latency_s": 235.3
   },
   "recent_work": [
     {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "61d5a3b",
+      "ts": "2026-11-23T02:48:23+00:00",
+      "message": "Worker sync: 5998 mapped Java methods"
+    },
+    {
       "sha": "aa8e43e",
       "ts": "2026-11-23T02:46:27+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
@@ -445,11 +450,6 @@
       "sha": "9ce528f",
       "ts": "2026-11-23T02:30:08+00:00",
       "message": "Worker sync: 5753 mapped Java methods"
-    },
-    {
-      "sha": "f033777",
-      "ts": "2026-11-23T02:28:20+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

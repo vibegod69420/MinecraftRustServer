@@ -293,3 +293,5 @@ pub mod compression_decoder;
 pub mod serverbound_seen_advancements_packet;
 pub mod clientbound_sound_entity_packet;
 pub mod lp_vec3;
+pub mod sub_string_source;
+pub mod signed_message_body;
