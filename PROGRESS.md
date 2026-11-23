@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:48:03 UTC
+- **Updated**: 2026-11-23 05:48:20 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7457 / 66676 (11.184%)
 - **Mapped Java Classes**: 1585 / 7163 (22.128%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2120 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (723.8s)
 - [PASS] `net.minecraft.world.level.levelgen.Noises` -> `mc-worldgen` (644.8s)
 - [FAIL] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (615.1s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket` -> `mc-protocol` (610.7s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.chunk.PaletteResize` -> `mc-worldgen` (210.8s)
 - [PASS] `net.minecraft.world.level.chunk.MissingPaletteEntryException` -> `mc-worldgen` (210.8s)
 - [PASS] `net.minecraft.world.level.chunk.BlockColumn` -> `mc-worldgen` (210.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator` -> `mc-worldgen` (1247.0s)
