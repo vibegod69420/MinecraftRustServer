@@ -105,3 +105,4 @@ pub mod scoreboard_value;
 pub mod context_nbt_provider;
 pub mod loot_item_conditions;
 pub mod loot_item_block_state_property_condition;
+pub mod set_banner_pattern_function;

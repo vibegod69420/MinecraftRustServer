@@ -173,3 +173,7 @@ pub mod coral_mushroom_feature;
 pub mod configured_feature;
 pub mod legacy_single_pool_element;
 pub mod empty_pool_element;
+pub mod glowstone_feature;
+pub mod nether_forest_vegetation_feature;
+pub mod end_gateway_feature;
+pub mod stronghold_structure;
