@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7889** across **1661** classes.
+Total mapped Java symbols: **7890** across **1662** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5982,6 +5982,7 @@ Total mapped Java symbols: **7889** across **1661** classes.
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#getProfiler` | `crates/mc-math/src/ported/metrics_recorder.rs` | 27 | `get_profiler` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#isRecording` | `crates/mc-math/src/ported/metrics_recorder.rs` | 24 | `is_recording` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#startTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 21 | `start_tick` |
+| `net.minecraft.util.profiling.metrics.storage.RecordedDeviation#<init>` | `crates/mc-math/src/ported/recorded_deviation.rs` | 20 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 53 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 164 | `<item>` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 172 | `<item>` |

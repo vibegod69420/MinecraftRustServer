@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 07:18:18 UTC",
-  "updated_epoch": 1795418298,
+  "updated_at": "2026-11-23 07:18:34 UTC",
+  "updated_epoch": 1795418314,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1661,
-    "mapped_methods": 7889,
-    "class_coverage_pct": 23.1886,
-    "method_coverage_pct": 11.8318,
+    "mapped_classes": 1662,
+    "mapped_methods": 7890,
+    "class_coverage_pct": 23.2026,
+    "method_coverage_pct": 11.8333,
     "harness_verified_classes": 1026,
     "harness_failed_attempts": 309
   },
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2123
+      "mapped_methods": 2124
     },
     {
       "name": "mc-nbt",
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "ea0fb08",
+      "ts": "2026-11-23T07:18:18+00:00",
+      "message": "Worker sync: 7889 mapped Java methods"
+    },
+    {
       "sha": "d22d70b",
       "ts": "2026-11-23T07:16:02+00:00",
       "message": "Worker sync: 7881 mapped Java methods"
@@ -445,11 +450,6 @@
       "sha": "3292813",
       "ts": "2026-11-23T06:34:03+00:00",
       "message": "Worker sync: 7814 mapped Java methods"
-    },
-    {
-      "sha": "784ae94",
-      "ts": "2026-11-23T06:30:49+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
