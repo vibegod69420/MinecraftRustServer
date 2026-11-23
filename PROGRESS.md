@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:15:34 UTC
+- **Updated**: 2026-11-23 05:36:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7413 / 66676 (11.118%)
 - **Mapped Java Classes**: 1579 / 7163 (22.044%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2088 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.chunk.storage.RegionBitmap` -> `mc-worldgen` (259.4s)
+- [PASS] `net.minecraft.world.level.chunk.storage.LegacyTagFixer` -> `mc-worldgen` (259.4s)
+- [PASS] `net.minecraft.world.level.chunk.storage.RegionStorageInfo` -> `mc-worldgen` (259.4s)
+- [PASS] `net.minecraft.world.level.chunk.storage.ChunkScanAccess` -> `mc-worldgen` (259.4s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces` -> `mc-worldgen` (1448.3s)
 - [PASS] `net.minecraft.world.level.chunk.LightChunkGetter` -> `mc-worldgen` (210.8s)
 - [PASS] `net.minecraft.world.level.chunk.PaletteResize` -> `mc-worldgen` (210.8s)
@@ -25,7 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.SpikeFeature` -> `mc-worldgen` (1946.0s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece` -> `mc-worldgen` (335.2s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler` -> `mc-worldgen` (1491.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (974.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1001.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (2327.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece` -> `mc-worldgen` (640.5s)
