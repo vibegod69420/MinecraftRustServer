@@ -152,3 +152,7 @@ pub mod serverbound_place_recipe_packet;
 pub mod serverbound_swing_packet;
 pub mod clientbound_ticking_step_packet;
 pub mod serverbound_lock_difficulty_packet;
+pub mod clientbound_clear_titles_packet;
+pub mod clientbound_system_chat_packet;
+pub mod serverbound_accept_teleportation_packet;
+pub mod clientbound_open_book_packet;
