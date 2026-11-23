@@ -275,3 +275,5 @@ pub mod tree_decorator;
 pub mod ocean_monument_structure;
 pub mod basalt_pillar_feature;
 pub mod fossil_feature;
+pub mod end_podium_feature;
+pub mod bamboo_feature;

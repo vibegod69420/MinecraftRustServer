@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6452** across **1415** classes.
+Total mapped Java symbols: **6461** across **1417** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -178,7 +178,9 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 161 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 149 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 9 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 18 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/leave_vine_decorator.rs` | 9 | `new` |
@@ -206,6 +208,7 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 147 | `read` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 16 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 40 | `above` |
+| `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 47 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 16 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/kelp_feature.rs` | 28 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 25 | `above` |
@@ -255,8 +258,10 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 45 | `between_closed` |
+| `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 79 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(BlockPos, BlockPos)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 49 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(net.minecraft.core.BlockPos,net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 59 | `between_closed` |
+| `net.minecraft.core.BlockPos#closerThan` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 74 | `closer_than` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-math/src/packing.rs` | 33 | `containing` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-nbt/src/ported/exploration_map_function.rs` | 129 | `containing` |
 | `net.minecraft.core.BlockPos#distManhattan` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 9 | `dist_manhattan` |
@@ -305,6 +310,7 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos#immutable()` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 24 | `immutable` |
 | `net.minecraft.core.BlockPos#max` | `crates/mc-math/src/ported/block_box.rs` | 85 | `max_pos` |
 | `net.minecraft.core.BlockPos#min` | `crates/mc-math/src/ported/block_box.rs` | 80 | `min_pos` |
+| `net.minecraft.core.BlockPos#mutable` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 29 | `mutable` |
 | `net.minecraft.core.BlockPos#mutable` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 40 | `mutable` |
 | `net.minecraft.core.BlockPos#mutable` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 40 | `mutable` |
 | `net.minecraft.core.BlockPos#mutable` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 24 | `mutable` |
@@ -354,6 +360,7 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos#offset(int,int,int)` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 20 | `offset` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-math/src/ported/block_box.rs` | 90 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/blue_ice_feature.rs` | 89 | `relative` |
+| `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 56 | `relative` |
 | `net.minecraft.core.BlockPos#relative` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 13 | `relative` |
 | `net.minecraft.core.BlockPos#relative(Direction)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 17 | `relative` |
 | `net.minecraft.core.BlockPos#relative(Direction)` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 16 | `relative` |
@@ -386,10 +393,13 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 51 | `set_with_offset` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#setWithOffset(Vec3i,Direction)` | `crates/mc-worldgen/src/ported/waterlogged_vegetation_patch_feature.rs` | 44 | `set_with_offset` |
 | `net.minecraft.core.BlockPos$MutableBlockPos#setY` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 101 | `set_y` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 43 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 57 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 53 | `new` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#immutable (conceptual)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 66 | `immutable` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#move` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 71 | `move_dir` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 303 | `set` |
+| `net.minecraft.core.BlockPos.MutableBlockPos#set` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 63 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 62 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#set(int,int,int)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 58 | `set` |
 | `net.minecraft.core.BlockPos.MutableBlockPos#setWithOffset` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 99 | `set_with_offset` |
@@ -727,6 +737,7 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.Vec3i#distManhattan` | `crates/mc-math/src/ported/vec3i.rs` | 341 | `dist_manhattan` |
 | `net.minecraft.core.Vec3i#distSqr` | `crates/mc-math/src/ported/vec3i.rs` | 311 | `dist_sqr` |
 | `net.minecraft.core.Vec3i#distSqr` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 35 | `dist_sqr` |
+| `net.minecraft.core.Vec3i#distSqr` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 66 | `dist_sqr` |
 | `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 320 | `dist_to_center_sqr_pos` |
 | `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 325 | `dist_to_center_sqr` |
 | `net.minecraft.core.Vec3i#distToLowCornerSqr` | `crates/mc-math/src/ported/vec3i.rs` | 333 | `dist_to_low_corner_sqr` |
@@ -736,8 +747,11 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.Vec3i#get` | `crates/mc-math/src/ported/vec3i.rs` | 357 | `get` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-math/src/ported/vec3i.rs` | 89 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 31 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 14 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 48 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 14 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 16 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 23 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 26 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 14 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 14 | `get_x` |
@@ -745,9 +759,12 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 19 | `get_x` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-math/src/ported/vec3i.rs` | 94 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 36 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 19 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 53 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 9 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 19 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 21 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 28 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 31 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/pale_moss_decorator.rs` | 18 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 19 | `get_y` |
@@ -756,8 +773,11 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.Vec3i#getY()` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 28 | `get_y` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-math/src/ported/vec3i.rs` | 99 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 41 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 24 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 58 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/block_pile_feature.rs` | 24 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 26 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 33 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 36 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/replace_blobs_feature.rs` | 24 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 19 | `get_z` |
@@ -770,6 +790,7 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.core.Vec3i#north` | `crates/mc-math/src/ported/vec3i.rs` | 219 | `north_n` |
 | `net.minecraft.core.Vec3i#offset` | `crates/mc-math/src/ported/vec3i.rs` | 143 | `offset` |
 | `net.minecraft.core.Vec3i#offset` | `crates/mc-math/src/ported/vec3i.rs` | 156 | `offset_vec` |
+| `net.minecraft.core.Vec3i#offset` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 38 | `offset` |
 | `net.minecraft.core.Vec3i#relative` | `crates/mc-math/src/ported/vec3i.rs` | 254 | `relative` |
 | `net.minecraft.core.Vec3i#relative` | `crates/mc-math/src/ported/vec3i.rs` | 270 | `relative_axis` |
 | `net.minecraft.core.Vec3i#setX` | `crates/mc-math/src/ported/vec3i.rs` | 104 | `set_x` |
@@ -4824,6 +4845,8 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.util.RandomSource#nextBoolean` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 68 | `next_boolean` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 9 | `next_float` |
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 9 | `next_float` |
+| `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 261 | `next_float` |
+| `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 259 | `next_int` |
 | `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/bending_trunk_placer.rs` | 152 | `next_int` |
 | `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 42 | `next_int` |
 | `net.minecraft.util.RandomSource#nextInt` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 147 | `next_int` |
@@ -5679,7 +5702,9 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.world.level.WorldGenLevel#setBlock` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 108 | `set_block` |
 | `net.minecraft.world.level.block.Block#<init>` | `crates/mc-protocol/src/ported/clientbound_block_event_packet.rs` | 46 | `new` |
 | `net.minecraft.world.level.block.Block#builtInRegistryHolder` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 74 | `built_in_registry_holder` |
+| `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 135 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/block_state_provider.rs` | 16 | `default_block_state` |
+| `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 154 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 29 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 41 | `lava_default` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 17 | `default_block_state` |
@@ -5717,17 +5742,21 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 49 | `is_water` |
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is(Block)` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 180 | `is_lava` |
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is(Block)` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 182 | `is_water` |
+| `net.minecraft.world.level.block.state.BlockState#canSurvive` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 202 | `can_survive` |
 | `net.minecraft.world.level.block.state.BlockState#getBlock` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 48 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getShape` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 34 | `get_shape` |
 | `net.minecraft.world.level.block.state.BlockState#hasProperty` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 48 | `has_property` |
 | `net.minecraft.world.level.block.state.BlockState#is` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 121 | `is` |
 | `net.minecraft.world.level.block.state.BlockState#is` | `crates/mc-worldgen/src/ported/blue_ice_feature.rs` | 24 | `is` |
+| `net.minecraft.world.level.block.state.BlockState#is` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 174 | `is` |
 | `net.minecraft.world.level.block.state.BlockState#is(TagKey)` | `crates/mc-worldgen/src/ported/protected_block_processor.rs` | 20 | `is` |
 | `net.minecraft.world.level.block.state.BlockState#is(net.minecraft.tags.TagKey)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 59 | `is` |
 | `net.minecraft.world.level.block.state.BlockState#is(net.minecraft.world.level.block.Block)` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 29 | `is` |
 | `net.minecraft.world.level.block.state.BlockState#isAir` | `crates/mc-worldgen/src/ported/blue_ice_feature.rs` | 29 | `is_air` |
 | `net.minecraft.world.level.block.state.BlockState#isAir` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 17 | `is_air` |
 | `net.minecraft.world.level.block.state.BlockState#isAir()` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 178 | `is_air` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 197 | `set_value` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 179 | `set_value` |
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 58 | `set_value` |
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 90 | `set_value` |
 | `net.minecraft.world.level.block.state.StateDefinition#getStateDefinition (simplified access)` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 81 | `get_state_definition` |
@@ -6001,6 +6030,8 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.world.level.levelgen.carver.WorldCarver#canReach` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 149 | `can_reach` |
 | `net.minecraft.world.level.levelgen.carver.WorldCarver#getRange` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 181 | `get_range` |
 | `net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature#placeMushroomBlock` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 148 | `place_mushroom_block` |
+| `net.minecraft.world.level.levelgen.feature.BambooFeature#<init>` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 345 | `new` |
+| `net.minecraft.world.level.levelgen.feature.BambooFeature#place` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 350 | `place` |
 | `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#<init>` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 193 | `new` |
 | `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#place` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 198 | `place` |
 | `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#placeBaseHangOff` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 308 | `place_base_hang_off` |
@@ -6041,21 +6072,33 @@ Total mapped Java symbols: **6452** across **1415** classes.
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 108 | `new` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#createEndPlatform` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 124 | `create_end_platform` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#place` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 113 | `place` |
+| `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#<init>` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 248 | `new` |
+| `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#dropPreviousAndSetBlock` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 258 | `drop_previous_and_set_block` |
+| `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#getLocation` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 243 | `get_location` |
+| `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#place` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 271 | `place` |
+| `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 223 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 132 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 123 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isReplaceable` | `crates/mc-worldgen/src/ported/protected_block_processor.rs` | 45 | `is_replaceable` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isStone` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 137 | `is_stone` |
 | `net.minecraft.world.level.levelgen.feature.Feature#markAboveForPostProcessing` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 218 | `mark_above_for_post_processing` |
 | `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 70 | `set_block` |
+| `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 253 | `set_block` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 307 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 76 | `config` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 297 | `level` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 231 | `level` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 120 | `level` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 66 | `level` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#level` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 157 | `level` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 292 | `origin` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 226 | `origin` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 110 | `origin` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 71 | `origin` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#origin` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 162 | `origin` |
+| `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#random` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 302 | `random` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#random` | `crates/mc-worldgen/src/ported/replace_block_feature.rs` | 81 | `random` |
 | `net.minecraft.world.level.levelgen.feature.FillLayerFeature#<init>` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 137 | `new` |
 | `net.minecraft.world.level.levelgen.feature.FillLayerFeature#place` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 149 | `place` |
