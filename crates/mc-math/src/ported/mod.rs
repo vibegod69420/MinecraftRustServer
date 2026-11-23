@@ -572,3 +572,4 @@ pub mod block_pos_format_and_renames_fix;
 pub mod missing_dimension_fix;
 pub mod minecraft_server_statistics;
 pub mod server_metrics_samplers_provider;
+pub mod chunk_bed_block_entity_injecter_fix;

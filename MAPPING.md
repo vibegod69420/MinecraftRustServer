@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9120** across **2091** classes.
+Total mapped Java symbols: **9123** across **2092** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6262,6 +6262,9 @@ Total mapped Java symbols: **9120** across **2091** classes.
 | `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#horseLikeInventoryIndexingFixer` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 191 | `fix_item_stack_slot` |
 | `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#makeRule` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 28 | `as_int` |
 | `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#makeRule` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 117 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#ChunkBedBlockEntityInjecterFix` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 95 | `new` |
+| `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#cap` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 110 | `cap` |
+| `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#makeRule` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 103 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteIgnoredLightDataFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_ignored_light_data_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteLightFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_light_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkLightRemoveFix#<init>` | `crates/mc-math/src/ported/chunk_light_remove_fix.rs` | 50 | `new` |
