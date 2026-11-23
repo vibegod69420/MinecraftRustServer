@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7674** across **1617** classes.
+Total mapped Java symbols: **7689** across **1618** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6626,6 +6626,21 @@ Total mapped Java symbols: **7674** across **1617** classes.
 | `net.minecraft.world.level.chunk.status.ChunkPyramid#steps` | `crates/mc-worldgen/src/ported/chunk_pyramid.rs` | 109 | `steps` |
 | `net.minecraft.world.level.chunk.status.ChunkPyramid$Builder#build` | `crates/mc-worldgen/src/ported/chunk_pyramid.rs` | 132 | `build` |
 | `net.minecraft.world.level.chunk.status.ChunkPyramid$Builder#step` | `crates/mc-worldgen/src/ported/chunk_pyramid.rs` | 137 | `step` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#<init>` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 82 | `new` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#byName` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 126 | `by_name` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#getChunkType` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 121 | `get_chunk_type` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#getIndex` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 107 | `get_index` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#getName` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 190 | `get_name` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#getParent` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 112 | `get_parent` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#getStatusList` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 174 | `get_status_list` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#heightmapsAfter` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 140 | `heightmaps_after` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#isAfter` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 150 | `is_after` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#isBefore` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 160 | `is_before` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#isOrAfter` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 145 | `is_or_after` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#isOrBefore` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 155 | `is_or_before` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#max` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 165 | `max` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#register` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 207 | `register` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#toString` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 201 | `fmt` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 42 | `do_work` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 78 | `do_work` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 92 | `do_work` |
