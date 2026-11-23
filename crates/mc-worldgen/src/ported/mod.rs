@@ -197,3 +197,8 @@ pub mod kelp_feature;
 pub mod block_column_feature;
 pub mod carver_debug_settings;
 pub mod canyon_carver_configuration;
+pub mod cave_carver_configuration;
+pub mod disk_feature;
+pub mod block_pile_feature;
+pub mod replace_blobs_feature;
+pub mod spring_feature;
