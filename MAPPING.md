@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7191** across **1544** classes.
+Total mapped Java symbols: **7200** across **1546** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7712,6 +7712,18 @@ Total mapped Java symbols: **7191** across **1544** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.IglooStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/igloo_structure.rs` | 257 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.IglooStructure#generatePieces` | `crates/mc-worldgen/src/ported/igloo_structure.rs` | 271 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.structures.IglooStructure#type` | `crates/mc-worldgen/src/ported/igloo_structure.rs` | 286 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 309 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 338 | `with_heightmap` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 362 | `without_heightmap` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 385 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#getPoolAliases` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 421 | `get_pool_aliases` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#getStartPool` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 416 | `get_start_pool` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#type` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 411 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure#verifyRange` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 289 | `verify_range` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 212 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 220 | `symmetric` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#horizontal` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 228 | `horizontal` |
+| `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#vertical` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 233 | `vertical` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#<init>` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 49 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#type` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 60 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#<init>` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 454 | `new` |
