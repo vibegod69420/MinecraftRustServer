@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9438** across **2145** classes.
+Total mapped Java symbols: **9447** across **2147** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11595,6 +11595,16 @@ Total mapped Java symbols: **9438** across **2145** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#getType` | `crates/mc-nbt/src/ported/set_components_function.rs` | 83 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#run` | `crates/mc-nbt/src/ported/set_components_function.rs` | 88 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.SetComponentsFunction#setComponent` | `crates/mc-nbt/src/ported/set_components_function.rs` | 94 | `set_component` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#<init>` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 155 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#getType` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 168 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#run` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 173 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#run` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 216 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#setContents` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 209 | `set_contents` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents#validate` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 194 | `validate` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents$Builder#<init>` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 229 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents$Builder#build` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 260 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents$Builder#getThis` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 238 | `get_this` |
+| `net.minecraft.world.level.storage.loot.functions.SetContainerContents$Builder#withEntry` | `crates/mc-nbt/src/ported/set_container_contents.rs` | 253 | `with_entry` |
 | `net.minecraft.world.level.storage.loot.functions.SetContainerLootTable#<init>` | `crates/mc-nbt/src/ported/set_container_loot_table.rs` | 188 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetContainerLootTable#getType` | `crates/mc-nbt/src/ported/set_container_loot_table.rs` | 206 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetContainerLootTable#run` | `crates/mc-nbt/src/ported/set_container_loot_table.rs` | 211 | `run` |
