@@ -346,3 +346,4 @@ pub mod signed_message_chain;
 pub mod game_protocols;
 pub mod clientbound_set_player_team_packet;
 pub mod tick_task;
+pub mod clientbound_boss_event_packet;

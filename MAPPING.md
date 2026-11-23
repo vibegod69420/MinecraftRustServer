@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7129** across **1533** classes.
+Total mapped Java symbols: **7175** across **1542** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3203,6 +3203,52 @@ Total mapped Java symbols: **7129** across **1533** classes.
 | `net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket#getBlockState` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 164 | `get_block_state` |
 | `net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket#getPos` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 169 | `get_pos` |
 | `net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket#handle` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 159 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 620 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#<init>(UUID,Operation)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 615 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createAddPacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 628 | `create_add_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createRemovePacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 636 | `create_remove_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createUpdateNamePacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 654 | `create_update_name_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createUpdateProgressPacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 644 | `create_update_progress_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createUpdatePropertiesPacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 675 | `create_update_properties_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#createUpdateStylePacket` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 664 | `create_update_style_packet` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 719 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#encodeProperties` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 694 | `encode_properties` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#handle` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 714 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#type` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 709 | `type_` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 687 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$AddOperation#<init>(BossEvent)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 331 | `from_boss_event` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$AddOperation#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 344 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$AddOperation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 370 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$AddOperation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 365 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$AddOperation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 384 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#add` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 278 | `add` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#remove` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 292 | `remove` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#updateName` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 298 | `update_name` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#updateProgress` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 295 | `update_progress` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#updateProperties` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 304 | `update_properties` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Handler#updateStyle` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 301 | `update_style` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Operation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 565 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Operation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 553 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$Operation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 577 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$OperationType#reader` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 591 | `read_operation` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateNameOperation#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 433 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateNameOperation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 445 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateNameOperation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 440 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateNameOperation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 450 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateProgressOperation#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 404 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateProgressOperation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 416 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateProgressOperation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 411 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateProgressOperation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 421 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdatePropertiesOperation#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 509 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdatePropertiesOperation#<init>(boolean,boolean,boolean)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 500 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdatePropertiesOperation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 527 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdatePropertiesOperation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 522 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdatePropertiesOperation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 532 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateStyleOperation#<init>(BossBarColor,BossBarOverlay)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 463 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateStyleOperation#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 468 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateStyleOperation#dispatch` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 480 | `dispatch` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateStyleOperation#getType` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 475 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundBossEventPacket$UpdateStyleOperation#write` | `crates/mc-protocol/src/ported/clientbound_boss_event_packet.rs` | 485 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundBundleDelimiterPacket#type` | `crates/mc-protocol/src/ported/clientbound_bundle_delimiter_packet.rs` | 96 | `type_` |
 | `net.minecraft.network.protocol.game.ClientboundBundlePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_bundle_packet.rs` | 100 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundBundlePacket#handle` | `crates/mc-protocol/src/ported/clientbound_bundle_packet.rs` | 112 | `handle` |
