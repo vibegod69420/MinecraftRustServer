@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 08:28:32 UTC",
-  "updated_epoch": 1795422512,
+  "updated_at": "2026-11-23 08:38:08 UTC",
+  "updated_epoch": 1795423088,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1846,
-    "mapped_methods": 8357,
-    "class_coverage_pct": 25.7713,
-    "method_coverage_pct": 12.5337,
+    "mapped_classes": 1868,
+    "mapped_methods": 8415,
+    "class_coverage_pct": 26.0785,
+    "method_coverage_pct": 12.6207,
     "harness_verified_classes": 1154,
     "harness_failed_attempts": 326
   },
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2755
+      "mapped_methods": 2835
     },
     {
       "name": "mc-nbt",
@@ -47,11 +47,11 @@
     }
   ],
   "usage": {
-    "calls_total": 1669,
-    "prompt_tokens": 5256937,
-    "completion_tokens": 27601169,
-    "reasoning_tokens": 19639267,
-    "avg_latency_s": 282.5
+    "calls_total": 1682,
+    "prompt_tokens": 5321234,
+    "completion_tokens": 27884015,
+    "reasoning_tokens": 19835955,
+    "avg_latency_s": 283.8
   },
   "recent_work": [
     {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "3f928dd",
+      "ts": "2026-11-23T08:28:32+00:00",
+      "message": "Worker sync: 8357 mapped Java methods"
+    },
+    {
       "sha": "90a254f",
       "ts": "2026-11-23T08:24:01+00:00",
       "message": "Worker sync: 8335 mapped Java methods"
@@ -445,11 +450,6 @@
       "sha": "df9e939",
       "ts": "2026-11-23T08:00:20+00:00",
       "message": "Worker sync: 8157 mapped Java methods"
-    },
-    {
-      "sha": "c05ed3e",
-      "ts": "2026-11-23T07:59:55+00:00",
-      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
