@@ -297,3 +297,4 @@ pub mod flat_level_generator_presets;
 pub mod fancy_trunk_placer;
 pub mod structure_piece_type;
 pub mod beardifier;
+pub mod flat_level_generator_settings;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7303** across **1560** classes.
+Total mapped Java symbols: **7317** across **1561** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7317,6 +7317,22 @@ Total mapped Java symbols: **7303** across **1560** classes.
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#<init>` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 434 | `new` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#register` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 439 | `register` |
 | `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets$Bootstrap#run` | `crates/mc-worldgen/src/ported/flat_level_generator_presets.rs` | 494 | `run` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#<init>` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 325 | `new` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#<init>` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 343 | `new_with_layers` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#adjustGenerationSettings` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 417 | `adjust_generation_settings` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#createLakesList` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 542 | `create_lakes_list` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getBiome` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 370 | `get_biome_or_default` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getBiome` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 473 | `get_biome` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getDefault` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 509 | `get_default` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getDefaultBiome` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 537 | `get_default_biome` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getLayers` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 487 | `get_layers` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#getLayersInfo` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 478 | `get_layers_info` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#setAddLakes` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 412 | `set_add_lakes` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#setDecoration` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 407 | `set_decoration` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#structureOverrides` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 468 | `structure_overrides` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#updateLayers` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 492 | `update_layers` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#validateHeight` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 307 | `validate_height` |
+| `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings#withBiomeAndLayers` | `crates/mc-worldgen/src/ported/flat_level_generator_settings.rs` | 384 | `with_biome_and_layers` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#<init>` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 60 | `new` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#getType` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 91 | `get_type` |
 | `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight#of` | `crates/mc-worldgen/src/ported/biased_to_bottom_height.rs` | 69 | `of` |
