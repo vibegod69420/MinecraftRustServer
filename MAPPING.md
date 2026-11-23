@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9099** across **2084** classes.
+Total mapped Java symbols: **9120** across **2091** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -34,10 +34,16 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 55 | `is_reserved_windows_filename` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 86 | `is_strict_path_segment` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 95 | `<item>` |
+| `ProfilerSamplerAdapter#newSamplersFoundInProfiler` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 218 | `new_samplers_found_in_profiler` |
 | `RESERVED_WINDOWS_FILENAMES is case` | `crates/mc-math/src/ported/file_util.rs` | 556 | `<item>` |
 | `Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, Identifier.withDefaultNamespace($$0), new LootItemConditionType($$1))` | `crates/mc-nbt/src/ported/loot_item_conditions.rs` | 65 | `<item>` |
 | `START_PRESENT` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 38 | `<item>` |
 | `STREAM_CODEC models StreamCodec.composite(ByteBufCodecs.VAR_INT, slot getter, constructor)` | `crates/mc-protocol/src/ported/clientbound_set_held_slot_packet.rs` | 23 | `<item>` |
+| `ServerMetricsSamplersProvider#ServerMetricsSamplersProvider` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 264 | `new` |
+| `ServerMetricsSamplersProvider#runtimeIndependentSamplers` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 277 | `runtime_independent_samplers` |
+| `ServerMetricsSamplersProvider#samplers` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 303 | `samplers` |
+| `ServerMetricsSamplersProvider#tickTimeSampler` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 310 | `tick_time_sampler` |
+| `ServerMetricsSamplersProvider.CpuStats#loadForCpu` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 240 | `load_for_cpu` |
 | `StatsRenameFix#createCriteriaRule` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 38 | `rename` |
 | `StatsRenameFix#createCriteriaRule()` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 47 | `apply_criteria_renames` |
 | `StatsRenameFix#createStatRule()` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 56 | `apply_stat_renames` |
@@ -468,6 +474,7 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `net.minecraft.ReportedException (minimal self` | `crates/mc-math/src/ported/threading_detector.rs` | 20 | `<item>` |
 | `net.minecraft.ReportedException#<init>` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 30 | `new` |
 | `net.minecraft.ReportedException#getReport` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 35 | `report` |
+| `net.minecraft.SystemReport#sizeInMiB` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 37 | `size_in_mib` |
 | `net.minecraft.Util#allOf` | `crates/mc-nbt/src/ported/all_of_condition.rs` | 23 | `util_all_of` |
 | `net.minecraft.Util#getRandom` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 147 | `get_random` |
 | `net.minecraft.Util#getRandom(T[], net.minecraft.util.RandomSource)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 107 | `get_random_element` |
@@ -5164,8 +5171,10 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-worldgen/src/ported/noises.rs` | 40 | `identifier` |
 | `net.minecraft.resources.ResourceLocation#<init>` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 10 | `new` |
 | `net.minecraft.server.MinecraftServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 17 | `get_resource_manager` |
+| `net.minecraft.server.MinecraftServer#getCurrentSmoothedTickTime` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 6 | `get_current_smoothed_tick_time` |
 | `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
+| `net.minecraft.server.MinecraftServer#getTickTimesNanos` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 4 | `get_tick_times_nanos` |
 | `net.minecraft.server.MinecraftServer#registryAccess` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 26 | `registry_access` |
 | `net.minecraft.server.ServerTickRateManager#<init>` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 125 | `new` |
 | `net.minecraft.server.ServerTickRateManager#checkShouldSprintThisTick` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 273 | `check_should_sprint_this_tick` |
@@ -7287,6 +7296,17 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `net.minecraft.util.eventlog.JsonEventLogReader#create` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 21 | `create` |
 | `net.minecraft.util.eventlog.JsonEventLogReader#next` | `crates/mc-math/src/ported/json_event_log.rs` | 29 | `next` |
 | `net.minecraft.util.eventlog.JsonEventLogReader#next` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 31 | `next` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#MinecraftServerStatistics` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 79 | `new` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#getAttribute` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 134 | `get_attribute` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#getAttributes` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 144 | `get_attributes` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#getAverageTickTime` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 124 | `get_average_tick_time` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#getMBeanInfo` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 172 | `get_m_bean_info` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#getTickTimes` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 129 | `get_tick_times` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#invoke` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 162 | `invoke` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#registerJmxMonitoring` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 119 | `register_jmx_monitoring` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#setAttribute` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 141 | `set_attribute` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics#setAttributes` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 157 | `set_attributes` |
+| `net.minecraft.util.monitoring.jmx.MinecraftServerStatistics.AttributeDescription#asMBeanAttributeInfo` | `crates/mc-math/src/ported/minecraft_server_statistics.rs` | 59 | `as_m_bean_attribute_info` |
 | `net.minecraft.util.parsing.packrat.Atom#name` | `crates/mc-math/src/ported/atom.rs` | 29 | `name` |
 | `net.minecraft.util.parsing.packrat.Atom#of` | `crates/mc-math/src/ported/atom.rs` | 21 | `of` |
 | `net.minecraft.util.parsing.packrat.Atom#toString` | `crates/mc-math/src/ported/atom.rs` | 36 | `fmt` |
@@ -7651,6 +7671,7 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `net.minecraft.util.profiling.metrics.MetricsRegistry#add` | `crates/mc-math/src/ported/metrics_registry.rs` | 211 | `add` |
 | `net.minecraft.util.profiling.metrics.MetricsRegistry#aggregateDuplicates` | `crates/mc-math/src/ported/metrics_registry.rs` | 250 | `aggregate_duplicates` |
 | `net.minecraft.util.profiling.metrics.MetricsRegistry#getRegisteredSamplers` | `crates/mc-math/src/ported/metrics_registry.rs` | 228 | `get_registered_samplers` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#getRegisteredSamplers` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 51 | `get_registered_samplers` |
 | `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#<init>` | `crates/mc-math/src/ported/metrics_registry.rs` | 104 | `aggregated` |
 | `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#averageValueFromDelegates` | `crates/mc-math/src/ported/metrics_registry.rs` | 139 | `average_value_from_delegates` |
 | `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#beforeTick` | `crates/mc-math/src/ported/metrics_registry.rs` | 132 | `before_tick` |
@@ -7676,6 +7697,7 @@ Total mapped Java symbols: **9099** across **2084** classes.
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#startTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 21 | `start_tick` |
 | `net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter#newSamplersFoundInProfiler` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 100 | `new_samplers_found_in_profiler` |
 | `net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter#samplerForProfilingPath` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 124 | `sampler_for_profiling_path` |
+| `net.minecraft.util.profiling.metrics.profiling.ServerMetricsSamplersProvider` | `crates/mc-math/src/ported/server_metrics_samplers_provider.rs` | 1 | `<item>` |
 | `net.minecraft.util.profiling.metrics.storage.RecordedDeviation#<init>` | `crates/mc-math/src/ported/recorded_deviation.rs` | 20 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 53 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 164 | `<item>` |
