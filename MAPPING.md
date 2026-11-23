@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8994** across **2053** classes.
+Total mapped Java symbols: **9013** across **2057** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6337,6 +6337,15 @@ Total mapped Java symbols: **8994** across **2053** classes.
 | `net.minecraft.util.datafix.fixes.EntitySkeletonSplitFix#getNewNameAndTag` | `crates/mc-math/src/ported/entity_skeleton_split_fix.rs` | 64 | `get_new_name_and_tag` |
 | `net.minecraft.util.datafix.fixes.EntityStringUuidFix#EntityStringUuidFix` | `crates/mc-math/src/ported/entity_string_uuid_fix.rs` | 78 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityStringUuidFix#makeRule` | `crates/mc-math/src/ported/entity_string_uuid_fix.rs` | 85 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#EntityTheRenameningFix` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 75 | `new` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_BLOCKS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 19 | `<item>` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_BLOCKS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 52 | `renamed_blocks` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_IDS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 3 | `<item>` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_IDS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 47 | `renamed_ids` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_ITEMS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 37 | `renamed_items_entries` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#RENAMED_ITEMS` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 57 | `renamed_items` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#rename` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 65 | `rename` |
+| `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#rename` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 83 | `rename` |
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#<init>` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 12 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#rename` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 21 | `rename` |
 | `net.minecraft.util.datafix.fixes.EntityUUIDFix#updateEntityUUID` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 113 | `update_entity_uuid` |
@@ -6363,6 +6372,13 @@ Total mapped Java symbols: **8994** across **2053** classes.
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#<init>` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#fixComponent` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 69 | `fix_component` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#FixProjectileStoredItem` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 30 | `new` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#castUnchecked` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 76 | `cast_unchecked` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#createItemStack` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 36 | `create_item_stack` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#fixArrow` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 57 | `fix_arrow` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#fixSpectralArrow` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 67 | `fix_spectral_arrow` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#getArrowType` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 44 | `get_arrow_type` |
+| `net.minecraft.util.datafix.fixes.FixProjectileStoredItem#makeRule` | `crates/mc-math/src/ported/fix_projectile_stored_item.rs` | 81 | `<item>` |
 | `net.minecraft.util.datafix.fixes.FixWolfHealth#fix` | `crates/mc-math/src/ported/fix_wolf_health.rs` | 66 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ForcePoiRebuild#<init>` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 138 | `new` |
 | `net.minecraft.util.datafix.fixes.ForcePoiRebuild#cap` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 157 | `cap` |
@@ -6405,6 +6421,11 @@ Total mapped Java symbols: **8994** across **2053** classes.
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#makeRule` | `crates/mc-math/src/ported/item_rename_fix.rs` | 10 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#NAMES_BY_COLOR` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 35 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#makeRule` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 55 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#ItemStackCustomNameToOverrideComponentFix` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 44 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#fixBanner` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 84 | `fix_banner` |
+| `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#fixCustomName` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 90 | `fix_custom_name` |
+| `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#fixMap` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 78 | `fix_map` |
+| `net.minecraft.util.datafix.fixes.ItemStackCustomNameToOverrideComponentFix#makeRule` | `crates/mc-math/src/ported/item_stack_custom_name_to_override_component_fix.rs` | 110 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#<init>` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#makeRule` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 64 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#<init>` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 106 | `new` |
@@ -6543,6 +6564,10 @@ Total mapped Java symbols: **8994** across **2053** classes.
 | `net.minecraft.util.datafix.fixes.RemapChunkStatusFix#RemapChunkStatusFix` | `crates/mc-math/src/ported/remap_chunk_status_fix.rs` | 83 | `new` |
 | `net.minecraft.util.datafix.fixes.RemapChunkStatusFix#fixStatus` | `crates/mc-math/src/ported/remap_chunk_status_fix.rs` | 99 | `fix_status` |
 | `net.minecraft.util.datafix.fixes.RemapChunkStatusFix#makeRule` | `crates/mc-math/src/ported/remap_chunk_status_fix.rs` | 91 | `apply` |
+| `net.minecraft.util.datafix.fixes.RemoveBlockEntityTagFix#RemoveBlockEntityTagFix` | `crates/mc-math/src/ported/remove_block_entity_tag_fix.rs` | 3 | `<item>` |
+| `net.minecraft.util.datafix.fixes.RemoveBlockEntityTagFix#RemoveBlockEntityTagFix` | `crates/mc-math/src/ported/remove_block_entity_tag_fix.rs` | 9 | `new` |
+| `net.minecraft.util.datafix.fixes.RemoveBlockEntityTagFix#removeBlockEntity` | `crates/mc-math/src/ported/remove_block_entity_tag_fix.rs` | 16 | `should_drop` |
+| `net.minecraft.util.datafix.fixes.RemoveBlockEntityTagFix#removeBlockEntity` | `crates/mc-math/src/ported/remove_block_entity_tag_fix.rs` | 21 | `remove_block_entity_tag` |
 | `net.minecraft.util.datafix.fixes.RemoveEmptyItemInBrushableBlockFix#<init>` | `crates/mc-math/src/ported/remove_empty_item_in_brushable_block_fix.rs` | 64 | `new` |
 | `net.minecraft.util.datafix.fixes.RemoveEmptyItemInBrushableBlockFix#fix` | `crates/mc-math/src/ported/remove_empty_item_in_brushable_block_fix.rs` | 69 | `fix` |
 | `net.minecraft.util.datafix.fixes.RemoveEmptyItemInBrushableBlockFix#isEmptyStack` | `crates/mc-math/src/ported/remove_empty_item_in_brushable_block_fix.rs` | 80 | `is_empty_stack` |

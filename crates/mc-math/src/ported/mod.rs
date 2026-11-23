@@ -549,3 +549,7 @@ pub mod banner_entity_custom_name_to_override_component_fix;
 pub mod metrics_registry;
 pub mod ominous_banner_rarity_fix;
 pub mod boat_split_fix;
+pub mod entity_the_renamening_fix;
+pub mod remove_block_entity_tag_fix;
+pub mod item_stack_custom_name_to_override_component_fix;
+pub mod fix_projectile_stored_item;
