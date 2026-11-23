@@ -201,3 +201,5 @@ pub mod debug_brain_dump;
 pub mod particle_utils;
 pub mod problem_reporter;
 pub mod encoder_cache;
+pub mod directory_lock;
+pub mod file_util;
