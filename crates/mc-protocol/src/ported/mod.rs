@@ -208,3 +208,5 @@ pub mod serverbound_teleport_to_entity_packet;
 pub mod vec_delta_codec;
 pub mod clientbound_set_border_warning_distance_packet;
 pub mod clientbound_container_set_content_packet;
+pub mod serverbound_command_suggestion_packet;
+pub mod serverbound_player_abilities_packet;
