@@ -352,3 +352,4 @@ pub mod server_tick_rate_manager;
 pub mod packet_decoder;
 pub mod packet_processor;
 pub mod hashed_patch_map;
+pub mod clientbound_set_objective_packet;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9407** across **2141** classes.
+Total mapped Java symbols: **9417** across **2142** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4350,6 +4350,16 @@ Total mapped Java symbols: **9407** across **2141** classes.
 | `net.minecraft.network.protocol.game.ClientboundSetHealthPacket#write(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_set_health_packet.rs` | 120 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundSetHeldSlotPacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_held_slot_packet.rs` | 14 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundSetHeldSlotPacket#type` | `crates/mc-protocol/src/ported/clientbound_set_held_slot_packet.rs` | 4 | `type_` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#<init>(Objective,int)` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 218 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 229 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#getDisplayName` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 281 | `get_display_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#getMethod` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 286 | `get_method` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#getNumberFormat` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 296 | `get_number_format` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#getObjectiveName` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 276 | `get_objective_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#getRenderType` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 291 | `get_render_type` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 271 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#type` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 266 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket#write` | `crates/mc-protocol/src/ported/clientbound_set_objective_packet.rs` | 255 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundSetPassengersPacket#<init>(Entity)` | `crates/mc-protocol/src/ported/clientbound_set_passengers_packet.rs` | 77 | `from_entity` |
 | `net.minecraft.network.protocol.game.ClientboundSetPassengersPacket#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_set_passengers_packet.rs` | 85 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundSetPassengersPacket#getPassengers` | `crates/mc-protocol/src/ported/clientbound_set_passengers_packet.rs` | 103 | `get_passengers` |
