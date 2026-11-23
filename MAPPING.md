@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5637** across **1289** classes.
+Total mapped Java symbols: **5642** across **1290** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5550,6 +5550,11 @@ Total mapped Java symbols: **5637** across **1289** classes.
 | `net.minecraft.world.level.levelgen.feature.stateproviders.NoiseThresholdProvider#<init>` | `crates/mc-worldgen/src/ported/noise_threshold_provider.rs` | 124 | `new` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.NoiseThresholdProvider#getState` | `crates/mc-worldgen/src/ported/noise_threshold_provider.rs` | 185 | `get_state` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.NoiseThresholdProvider#type` | `crates/mc-worldgen/src/ported/noise_threshold_provider.rs` | 180 | `provider_type` |
+| `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider#<init>(BlockStateProvider, IntegerProperty, IntProvider)` | `crates/mc-worldgen/src/ported/randomized_int_state_provider.rs` | 124 | `new` |
+| `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider#<init>(BlockStateProvider, String, IntProvider)` | `crates/mc-worldgen/src/ported/randomized_int_state_provider.rs` | 153 | `new_with_name` |
+| `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider#findProperty` | `crates/mc-worldgen/src/ported/randomized_int_state_provider.rs` | 208 | `find_property` |
+| `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider#getState` | `crates/mc-worldgen/src/ported/randomized_int_state_provider.rs` | 168 | `get_state` |
+| `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider#type` | `crates/mc-worldgen/src/ported/randomized_int_state_provider.rs` | 163 | `get_type` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.RotatedBlockProvider` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 86 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.RotatedBlockProvider#<init>` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 93 | `new` |
 | `net.minecraft.world.level.levelgen.feature.stateproviders.RotatedBlockProvider#getState` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 105 | `get_state` |
