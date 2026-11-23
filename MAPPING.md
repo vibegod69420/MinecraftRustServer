@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6159** across **1371** classes.
+Total mapped Java symbols: **6168** across **1373** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5650,6 +5650,13 @@ Total mapped Java symbols: **6159** across **1371** classes.
 | `net.minecraft.world.level.levelgen.carver.CanyonCarverConfiguration#<init>(CarverConfiguration, FloatProvider, CanyonCarverConfiguration.CanyonShapeConfiguration)` | `crates/mc-worldgen/src/ported/canyon_carver_configuration.rs` | 139 | `from_base` |
 | `net.minecraft.world.level.levelgen.carver.CanyonCarverConfiguration#<init>(float, HeightProvider, FloatProvider, VerticalAnchor, CarverDebugSettings, HolderSet, FloatProvider, CanyonCarverConfiguration.CanyonShapeConfiguration)` | `crates/mc-worldgen/src/ported/canyon_carver_configuration.rs` | 114 | `new` |
 | `net.minecraft.world.level.levelgen.carver.CanyonCarverConfiguration$CanyonShapeConfiguration#<init>(FloatProvider, FloatProvider, int, FloatProvider, float, float)` | `crates/mc-worldgen/src/ported/canyon_carver_configuration.rs` | 85 | `new` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#<init>` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 176 | `new` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#carve` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 191 | `carve` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#doCarve` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 241 | `do_carve` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#initWidthFactors` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 320 | `init_width_factors` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#isStartChunk` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 186 | `is_start_chunk` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#shouldSkip` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 359 | `should_skip` |
+| `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver#updateVerticalRadius` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 343 | `update_vertical_radius` |
 | `net.minecraft.world.level.levelgen.carver.CarverConfiguration#<init>` | `crates/mc-worldgen/src/ported/carver_configuration.rs` | 54 | `new` |
 | `net.minecraft.world.level.levelgen.carver.CarverConfiguration#<init>(float,HeightProvider,FloatProvider,VerticalAnchor,CarverDebugSettings,HolderSet)` | `crates/mc-worldgen/src/ported/cave_carver_configuration.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.carver.CarverDebugSettings#<clinit>` | `crates/mc-worldgen/src/ported/cave_carver_configuration.rs` | 85 | `<item>` |
@@ -5679,6 +5686,8 @@ Total mapped Java symbols: **6159** across **1371** classes.
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getCaveBound` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 151 | `get_cave_bound` |
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getThickness` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 156 | `get_thickness` |
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getYScale` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 163 | `get_y_scale` |
+| `net.minecraft.world.level.levelgen.carver.WorldCarver#canReach` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 149 | `can_reach` |
+| `net.minecraft.world.level.levelgen.carver.WorldCarver#getRange` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 181 | `get_range` |
 | `net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature#placeMushroomBlock` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 148 | `place_mushroom_block` |
 | `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#<init>` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 127 | `new` |
 | `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#place` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 142 | `place` |

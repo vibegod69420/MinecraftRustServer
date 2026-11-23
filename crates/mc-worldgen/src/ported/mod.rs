@@ -270,3 +270,4 @@ pub mod debug_level_source;
 pub mod feature_pool_element;
 pub mod below_zero_retrogen;
 pub mod list_pool_element;
+pub mod canyon_world_carver;
