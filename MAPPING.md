@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3303** across **819** classes.
+Total mapped Java symbols: **3327** across **828** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2145,6 +2145,10 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.util.AbortableIterationConsumer#accept` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 23 | `accept` |
 | `net.minecraft.util.AbortableIterationConsumer#forConsumer` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 29 | `for_consumer` |
 | `net.minecraft.util.AbortableIterationConsumer.Continuation#shouldAbort` | `crates/mc-math/src/ported/abortable_iteration_consumer.rs` | 8 | `should_abort` |
+| `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 24 | `with_easing` |
+| `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 34 | `new` |
+| `net.minecraft.util.BinaryAnimator#getFactor` | `crates/mc-math/src/ported/binary_animator.rs` | 51 | `get_factor` |
+| `net.minecraft.util.BinaryAnimator#tick` | `crates/mc-math/src/ported/binary_animator.rs` | 39 | `tick` |
 | `net.minecraft.util.BitStorage#copy` | `crates/mc-math/src/ported/bit_storage.rs` | 26 | `copy` |
 | `net.minecraft.util.BitStorage#get` | `crates/mc-math/src/ported/bit_storage.rs` | 8 | `get` |
 | `net.minecraft.util.BitStorage#getAll` | `crates/mc-math/src/ported/bit_storage.rs` | 20 | `get_all` |
@@ -2158,10 +2162,12 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.util.ColorRGBA#rgba` | `crates/mc-math/src/ported/color_rgba.rs` | 14 | `rgba` |
 | `net.minecraft.util.ColorRGBA#toString` | `crates/mc-math/src/ported/color_rgba.rs` | 21 | `fmt` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
+| `net.minecraft.util.EasingType#apply` | `crates/mc-math/src/ported/binary_animator.rs` | 7 | `apply` |
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 23 | `accept` |
 | `net.minecraft.util.FormattedCharSink#accept` | `crates/mc-math/src/ported/formatted_char_sink.rs` | 31 | `accept` |
+| `net.minecraft.util.Graph#depthFirstSearch` | `crates/mc-math/src/ported/graph.rs` | 7 | `depth_first_search` |
 | `net.minecraft.util.KeyDispatchDataCodec#codec` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 81 | `codec` |
 | `net.minecraft.util.KeyDispatchDataCodec#of` | `crates/mc-math/src/ported/key_dispatch_data_codec.rs` | 86 | `of` |
 | `net.minecraft.util.Keyframe#<init>` | `crates/mc-math/src/ported/keyframe.rs` | 14 | `new` |
@@ -2243,8 +2249,15 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.util.RandomSource#triangle(double,double)` | `crates/mc-math/src/random.rs` | 178 | `triangle_f64` |
 | `net.minecraft.util.RandomSource#triangle(float,float)` | `crates/mc-math/src/random.rs` | 183 | `triangle_f32` |
 | `net.minecraft.util.RegistryContextSwapper#swapTo` | `crates/mc-math/src/ported/registry_context_swapper.rs` | 48 | `swap_to` |
+| `net.minecraft.util.SignatureUpdater` | `crates/mc-math/src/ported/signer.rs` | 5 | `update` |
 | `net.minecraft.util.SignatureUpdater#update` | `crates/mc-math/src/ported/signature_updater.rs` | 40 | `update` |
+| `net.minecraft.util.SignatureUpdater#update` | `crates/mc-math/src/ported/signer.rs` | 7 | `update` |
 | `net.minecraft.util.SignatureUpdater$Output#update` | `crates/mc-math/src/ported/signature_updater.rs` | 26 | `update` |
+| `net.minecraft.util.Signer` | `crates/mc-math/src/ported/signer.rs` | 26 | `sign` |
+| `net.minecraft.util.Signer#from` | `crates/mc-math/src/ported/signer.rs` | 51 | `from` |
+| `net.minecraft.util.Signer#sign` | `crates/mc-math/src/ported/signer.rs` | 28 | `sign` |
+| `net.minecraft.util.Signer#sign` | `crates/mc-math/src/ported/signer.rs` | 31 | `sign_bytes` |
+| `net.minecraft.util.Signer#sign` | `crates/mc-math/src/ported/signer.rs` | 63 | `sign` |
 | `net.minecraft.util.SimpleBitStorage#<init>(int,int,int[])` | `crates/mc-math/src/packing.rs` | 212 | `from_ints` |
 | `net.minecraft.util.SimpleBitStorage#<init>(int,int,long[])` | `crates/mc-math/src/packing.rs` | 179 | `new` |
 | `net.minecraft.util.SimpleBitStorage#cellIndex` | `crates/mc-math/src/packing.rs` | 239 | `cell_index` |
@@ -2255,6 +2268,8 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.util.SimpleBitStorage#unpack` | `crates/mc-math/src/packing.rs` | 286 | `unpack` |
 | `net.minecraft.util.SingleKeyCache#<init>` | `crates/mc-math/src/ported/single_key_cache.rs` | 13 | `new` |
 | `net.minecraft.util.SingleKeyCache#getValue` | `crates/mc-math/src/ported/single_key_cache.rs` | 22 | `get_value` |
+| `net.minecraft.util.SmoothDouble#getNewDeltaValue` | `crates/mc-math/src/ported/smooth_double.rs` | 23 | `get_new_delta_value` |
+| `net.minecraft.util.SmoothDouble#reset` | `crates/mc-math/src/ported/smooth_double.rs` | 38 | `reset` |
 | `net.minecraft.util.TickThrottler#<init>` | `crates/mc-math/src/ported/tick_throttler.rs` | 9 | `new` |
 | `net.minecraft.util.TickThrottler#increment` | `crates/mc-math/src/ported/tick_throttler.rs` | 18 | `increment` |
 | `net.minecraft.util.TickThrottler#isUnderThreshold` | `crates/mc-math/src/ported/tick_throttler.rs` | 30 | `is_under_threshold` |
@@ -2329,12 +2344,23 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.util.debug.DebugBreezeInfo#<init>` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 10 | `new` |
 | `net.minecraft.util.debug.DebugBreezeInfo#attackTarget` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 18 | `attack_target` |
 | `net.minecraft.util.debug.DebugBreezeInfo#jumpTarget` | `crates/mc-math/src/ported/debug_breeze_info.rs` | 23 | `jump_target` |
+| `net.minecraft.util.debug.DebugEntityBlockIntersection#BY_ID` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 31 | `by_id` |
+| `net.minecraft.util.debug.DebugEntityBlockIntersection#color` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 13 | `color` |
+| `net.minecraft.util.debug.DebugEntityBlockIntersection#id` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 22 | `id` |
 | `net.minecraft.util.debug.DebugGameEventListenerInfo#<init>` | `crates/mc-math/src/ported/debug_game_event_listener_info.rs` | 7 | `new` |
 | `net.minecraft.util.debug.DebugGameEventListenerInfo#listenerRadius` | `crates/mc-math/src/ported/debug_game_event_listener_info.rs` | 12 | `listener_radius` |
 | `net.minecraft.util.debug.DebugPathInfo#<init>` | `crates/mc-math/src/ported/debug_path_info.rs` | 12 | `new` |
 | `net.minecraft.util.debug.DebugPathInfo#maxNodeDistance` | `crates/mc-math/src/ported/debug_path_info.rs` | 25 | `max_node_distance` |
 | `net.minecraft.util.debug.DebugPathInfo#path` | `crates/mc-math/src/ported/debug_path_info.rs` | 20 | `path` |
 | `net.minecraft.util.debug.DebugSubscription$Update#<init>` | `crates/mc-protocol/src/ported/clientbound_debug_chunk_value_packet.rs` | 38 | `new` |
+| `net.minecraft.util.debug.DebugValueAccess#forEachBlock` | `crates/mc-math/src/ported/debug_value_access.rs` | 68 | `for_each_block` |
+| `net.minecraft.util.debug.DebugValueAccess#forEachChunk` | `crates/mc-math/src/ported/debug_value_access.rs` | 54 | `for_each_chunk` |
+| `net.minecraft.util.debug.DebugValueAccess#forEachEntity` | `crates/mc-math/src/ported/debug_value_access.rs` | 82 | `for_each_entity` |
+| `net.minecraft.util.debug.DebugValueAccess#forEachEvent` | `crates/mc-math/src/ported/debug_value_access.rs` | 96 | `for_each_event` |
+| `net.minecraft.util.debug.DebugValueAccess#getBlockValue` | `crates/mc-math/src/ported/debug_value_access.rs` | 75 | `get_block_value` |
+| `net.minecraft.util.debug.DebugValueAccess#getChunkValue` | `crates/mc-math/src/ported/debug_value_access.rs` | 61 | `get_chunk_value` |
+| `net.minecraft.util.debug.DebugValueAccess#getEntityValue` | `crates/mc-math/src/ported/debug_value_access.rs` | 89 | `get_entity_value` |
+| `net.minecraft.util.debug.DebugValueAccess$EventVisitor#accept` | `crates/mc-math/src/ported/debug_value_access.rs` | 43 | `accept` |
 | `net.minecraft.util.debug.DebugValueSource#registerDebugValues` | `crates/mc-math/src/ported/debug_value_source.rs` | 38 | `register_debug_values` |
 | `net.minecraft.util.debug.DebugValueSource$Registration#register` | `crates/mc-math/src/ported/debug_value_source.rs` | 33 | `register` |
 | `net.minecraft.util.debug.DebugValueSource$ValueGetter#get` | `crates/mc-math/src/ported/debug_value_source.rs` | 28 | `get` |
@@ -2796,6 +2822,8 @@ Total mapped Java symbols: **3303** across **819** classes.
 | `net.minecraft.world.level.levelgen.blockpredicates.BlockPos#offset` | `crates/mc-worldgen/src/ported/not_predicate.rs` | 11 | `offset` |
 | `net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate#test` | `crates/mc-worldgen/src/ported/not_predicate.rs` | 39 | `test` |
 | `net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate#type` | `crates/mc-worldgen/src/ported/not_predicate.rs` | 42 | `type_` |
+| `net.minecraft.world.level.levelgen.blockpredicates.BlockPredicateType#codec` | `crates/mc-worldgen/src/ported/block_predicate_type.rs` | 85 | `codec` |
+| `net.minecraft.world.level.levelgen.blockpredicates.BlockPredicateType#register` | `crates/mc-worldgen/src/ported/block_predicate_type.rs` | 96 | `register` |
 | `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#<init>` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 46 | `new` |
 | `net.minecraft.world.level.levelgen.blockpredicates.CombiningPredicate#codec` | `crates/mc-worldgen/src/ported/combining_predicate.rs` | 51 | `codec` |
 | `net.minecraft.world.level.levelgen.blockpredicates.HasSturdyFacePredicate#<init>(Vec3i,Direction)` | `crates/mc-worldgen/src/ported/has_sturdy_face_predicate.rs` | 101 | `new` |

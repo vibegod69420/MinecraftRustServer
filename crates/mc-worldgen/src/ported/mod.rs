@@ -164,3 +164,4 @@ pub mod carving_context;
 pub mod configured_world_carver;
 pub mod nether_world_carver;
 pub mod carver_configuration;
+pub mod block_predicate_type;
