@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 11:33:29 UTC
+- **Updated**: 2026-11-23 11:34:04 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 8958 / 66676 (13.435%)
 - **Mapped Java Classes**: 2039 / 7163 (28.466%)
@@ -14,18 +14,18 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
-- [PASS] `net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix` -> `mc-math` (2285.0s)
-- [PASS] `net.minecraft.util.datafix.fixes.AbstractArrowPickupFix` -> `mc-math` (2285.0s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntityZombieSplitFix` -> `mc-math` (2285.0s)
-- [PASS] `net.minecraft.util.datafix.fixes.ReorganizePoi` -> `mc-math` (2285.0s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHorseSaddleFix` -> `mc-math` (2198.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.AbstractPoiSectionFix` -> `mc-math` (2198.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.ItemStackUUIDFix` -> `mc-math` (2198.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.ItemStackTagFix` -> `mc-math` (2198.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.LegacyDimensionIdFix` -> `mc-math` (1464.1s)
-- [PASS] `net.minecraft.util.datafix.fixes.RaidRenamesDataFix` -> `mc-math` (1464.1s)
-- [PASS] `net.minecraft.util.datafix.fixes.ChunkStatusFix2` -> `mc-math` (1464.1s)
-- [PASS] `net.minecraft.util.datafix.fixes.FixWolfHealth` -> `mc-math` (1464.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (3495.6s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkBiomeFix` -> `mc-math` (3495.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.EmptyItemInHotbarFix` -> `mc-math` (3495.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (4425.2s)
+- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (4425.2s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.UnflattenTextComponentFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.CavesAndCliffsRenames` -> `mc-math` (4424.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlockEntitySignDoubleSidedEditableTextFix` -> `mc-math` (4424.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.EffectDurationFix` -> `mc-math` (4424.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.WallPropertyFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.LegacyWorldBorderFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.EntityRenameFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.HeightmapRenamingFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.VillagerDataFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.AttributesRenameFix` -> `mc-math` (4425.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix` -> `mc-math` (4425.2s)
