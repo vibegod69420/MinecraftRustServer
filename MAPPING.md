@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7384** across **1568** classes.
+Total mapped Java symbols: **7392** across **1572** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6369,7 +6369,16 @@ Total mapped Java symbols: **7384** across **1568** classes.
 | `net.minecraft.world.level.block.state.properties.TestBlockMode#getId` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 192 | `get_id` |
 | `net.minecraft.world.level.border.WorldBorder#getLerpTarget` | `crates/mc-protocol/src/ported/clientbound_set_border_size_packet.rs` | 37 | `get_lerp_target` |
 | `net.minecraft.world.level.border.WorldBorder#getWarningTime` | `crates/mc-protocol/src/ported/clientbound_set_border_warning_delay_packet.rs` | 84 | `get_warning_time` |
+| `net.minecraft.world.level.chunk.BlockColumn#getBlock` | `crates/mc-worldgen/src/ported/block_column.rs` | 7 | `get_block` |
+| `net.minecraft.world.level.chunk.BlockColumn#setBlock` | `crates/mc-worldgen/src/ported/block_column.rs` | 10 | `set_block` |
 | `net.minecraft.world.level.chunk.ChunkGenerator#getSeaLevel` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 62 | `get_sea_level` |
+| `net.minecraft.world.level.chunk.LightChunkGetter#getChunkForLighting` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 32 | `get_chunk_for_lighting` |
+| `net.minecraft.world.level.chunk.LightChunkGetter#getLevel` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 38 | `get_level` |
+| `net.minecraft.world.level.chunk.LightChunkGetter#onLightUpdate` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 35 | `on_light_update` |
+| `net.minecraft.world.level.chunk.MissingPaletteEntryException#<init>` | `crates/mc-worldgen/src/ported/missing_palette_entry_exception.rs` | 11 | `new` |
+| `net.minecraft.world.level.chunk.PaletteResize#noResizeExpected` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 38 | `no_resize_expected` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 5 | `on_resize` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 29 | `on_resize` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.levelgen.Beardifier#<init>` | `crates/mc-worldgen/src/ported/beardifier.rs` | 291 | `new` |
 | `net.minecraft.world.level.levelgen.Beardifier#compute` | `crates/mc-worldgen/src/ported/beardifier.rs` | 393 | `compute` |

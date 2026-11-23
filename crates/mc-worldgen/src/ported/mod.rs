@@ -302,3 +302,7 @@ pub mod legacy_structure_data_handler;
 pub mod desert_pyramid_piece;
 pub mod spike_feature;
 pub mod blending_data;
+pub mod block_column;
+pub mod missing_palette_entry_exception;
+pub mod palette_resize;
+pub mod light_chunk_getter;
