@@ -584,3 +584,8 @@ pub mod recipes_fix;
 pub mod entity_riding_to_passengers_fix;
 pub mod item_spawn_egg_fix;
 pub mod entity_spawner_item_variant_component_fix;
+pub mod equipment_format_fix;
+pub mod v1451_6;
+pub mod item_potion_fix;
+pub mod structures_become_configured_fix;
+pub mod advancements_fix;

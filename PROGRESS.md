@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 14:09:38 UTC
+- **Updated**: 2026-11-23 14:32:21 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 9171 / 66676 (13.755%)
-- **Mapped Java Classes**: 2106 / 7163 (29.401%)
+- **Mapped Java Methods**: 9221 / 66676 (13.830%)
+- **Mapped Java Classes**: 2114 / 7163 (29.513%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 3909 mapped methods
+- `mc-math`: 3976 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.datafix.fixes.EquipmentFormatFix` -> `mc-math` (482.3s)
 - [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (1546.2s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (3042.0s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (3042.0s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.datafix.fixes.TrappedChestBlockEntityFix` -> `mc-math` (1610.9s)
 - [PASS] `net.minecraft.util.datafix.fixes.EntityEquipmentToArmorAndHandFix` -> `mc-math` (1610.9s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (4007.5s)
-- [PASS] `net.minecraft.util.datafix.fixes.ItemStackSpawnEggFix` -> `mc-math` (1610.9s)
