@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4355** across **1065** classes.
+Total mapped Java symbols: **4359** across **1066** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2589,6 +2589,10 @@ Total mapped Java symbols: **4355** across **1065** classes.
 | `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#handle` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 126 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#type` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 121 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundContainerSlotStateChangedPacket#write` | `crates/mc-protocol/src/ported/serverbound_container_slot_state_changed_packet.rs` | 114 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundDebugSubscriptionRequestPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_debug_subscription_request_packet.rs` | 54 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundDebugSubscriptionRequestPacket#read` | `crates/mc-protocol/src/ported/serverbound_debug_subscription_request_packet.rs` | 72 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundDebugSubscriptionRequestPacket#subscriptions` | `crates/mc-protocol/src/ported/serverbound_debug_subscription_request_packet.rs` | 59 | `subscriptions` |
+| `net.minecraft.network.protocol.game.ServerboundDebugSubscriptionRequestPacket#write` | `crates/mc-protocol/src/ported/serverbound_debug_subscription_request_packet.rs` | 64 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundEditBookPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 201 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundEditBookPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 206 | `decode` |
 | `net.minecraft.network.protocol.game.ServerboundEditBookPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_edit_book_packet.rs` | 214 | `encode` |

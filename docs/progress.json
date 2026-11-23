@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:56:12 UTC",
-  "updated_epoch": 1795395372,
+  "updated_at": "2026-11-23 00:58:12 UTC",
+  "updated_epoch": 1795395492,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1065,
-    "mapped_methods": 4355,
-    "class_coverage_pct": 14.8681,
-    "method_coverage_pct": 6.5316,
-    "harness_verified_classes": 695,
-    "harness_failed_attempts": 132
+    "mapped_classes": 1066,
+    "mapped_methods": 4359,
+    "class_coverage_pct": 14.882,
+    "method_coverage_pct": 6.5376,
+    "harness_verified_classes": 697,
+    "harness_failed_attempts": 134
   },
   "crates": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 1479
+      "mapped_methods": 1483
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 643,
-    "prompt_tokens": 1692347,
-    "completion_tokens": 8721056,
-    "reasoning_tokens": 6248495,
-    "avg_latency_s": 213.5
+    "calls_total": 650,
+    "prompt_tokens": 1707983,
+    "completion_tokens": 8865937,
+    "reasoning_tokens": 6357573,
+    "avg_latency_s": 215.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:58:12Z",
+      "class_name": "net.minecraft.util.FastBufferedInputStream",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1342.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:58:12Z",
+      "class_name": "net.minecraft.util.SequencedPriorityIterator",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1342.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:58:12Z",
+      "class_name": "net.minecraft.util.ClassInstanceMultiMap",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1342.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:58:12Z",
+      "class_name": "net.minecraft.util.StaticCache2D",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1342.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:56:07Z",
       "class_name": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 922.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:48:57Z",
-      "class_name": "net.minecraft.util.DependencySorter",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 922.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:48:57Z",
-      "class_name": "net.minecraft.util.PngInfo",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 922.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:48:57Z",
-      "class_name": "net.minecraft.util.DelegateDataOutput",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 922.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:48:57Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 686.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "44780e9",
+      "ts": "2026-11-23T00:56:12+00:00",
+      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "54ba2df",
       "ts": "2026-11-23T00:56:01+00:00",
@@ -445,11 +450,6 @@
       "sha": "a1f90a9",
       "ts": "2026-11-23T00:41:38+00:00",
       "message": "Port 10 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "7c1e669",
-      "ts": "2026-11-23T00:40:33+00:00",
-      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
