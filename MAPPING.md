@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8828** across **2006** classes.
+Total mapped Java symbols: **8831** across **2007** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6256,6 +6256,9 @@ Total mapped Java symbols: **8828** across **2006** classes.
 | `net.minecraft.util.datafix.fixes.EntityZombifiedPiglinRenameFix#rename` | `crates/mc-math/src/ported/entity_zombified_piglin_rename_fix.rs` | 21 | `rename` |
 | `net.minecraft.util.datafix.fixes.EquippableAssetRenameFix#<init>` | `crates/mc-math/src/ported/equippable_asset_rename_fix.rs` | 31 | `new` |
 | `net.minecraft.util.datafix.fixes.EquippableAssetRenameFix#makeRule` | `crates/mc-math/src/ported/equippable_asset_rename_fix.rs` | 36 | `fix_data_components` |
+| `net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix#<init>` | `crates/mc-math/src/ported/feature_flag_remove_fix.rs` | 129 | `new` |
+| `net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix#fixTag` | `crates/mc-math/src/ported/feature_flag_remove_fix.rs` | 142 | `fix_tag` |
+| `net.minecraft.util.datafix.fixes.FeatureFlagRemoveFix#makeRule` | `crates/mc-math/src/ported/feature_flag_remove_fix.rs` | 137 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.FilteredBooksFix#<init>` | `crates/mc-math/src/ported/filtered_books_fix.rs` | 90 | `new` |
 | `net.minecraft.util.datafix.fixes.FilteredBooksFix#fixItemStackTag` | `crates/mc-math/src/ported/filtered_books_fix.rs` | 102 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#<init>` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 49 | `new` |
