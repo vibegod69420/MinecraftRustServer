@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 03:38:40 UTC",
-  "updated_epoch": 1795405120,
+  "updated_at": "2026-11-23 03:40:07 UTC",
+  "updated_epoch": 1795405207,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1410,
-    "mapped_methods": 6425,
-    "class_coverage_pct": 19.6845,
-    "method_coverage_pct": 9.6362,
-    "harness_verified_classes": 908,
-    "harness_failed_attempts": 225
+    "mapped_classes": 1412,
+    "mapped_methods": 6431,
+    "class_coverage_pct": 19.7124,
+    "method_coverage_pct": 9.6451,
+    "harness_verified_classes": 909,
+    "harness_failed_attempts": 226
   },
   "crates": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2785
+      "mapped_methods": 2791
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 1044,
-    "prompt_tokens": 2867752,
-    "completion_tokens": 15940007,
-    "reasoning_tokens": 11519780,
-    "avg_latency_s": 241.9
+    "calls_total": 1054,
+    "prompt_tokens": 2892710,
+    "completion_tokens": 16143831,
+    "reasoning_tokens": 11622177,
+    "avg_latency_s": 244.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T03:40:07Z",
+      "class_name": "net.minecraft.network.chat.LastSeenMessagesValidator",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 375.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T03:39:19Z",
+      "class_name": "net.minecraft.util.CubicSpline",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 984.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T03:38:10Z",
       "class_name": "net.minecraft.network.protocol.game.ClientboundDamageEventPacket",
@@ -357,25 +373,14 @@
       "verified": true,
       "seconds": 723.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:56:42Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 832.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:55:16Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 692.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "31a026a",
+      "ts": "2026-11-23T03:38:40+00:00",
+      "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "d5cf26d",
       "ts": "2026-11-23T03:38:11+00:00",
@@ -445,11 +450,6 @@
       "sha": "e7375bd",
       "ts": "2026-11-23T03:08:01+00:00",
       "message": "Worker sync: 6168 mapped Java methods"
-    },
-    {
-      "sha": "d5b969c",
-      "ts": "2026-11-23T03:05:23+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

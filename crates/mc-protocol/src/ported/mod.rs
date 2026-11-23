@@ -317,3 +317,4 @@ pub mod clientbound_login_packet;
 pub mod clientbound_player_look_at_packet;
 pub mod clientbound_damage_event_packet;
 pub mod clientbound_update_mob_effect_packet;
+pub mod last_seen_messages_validator;

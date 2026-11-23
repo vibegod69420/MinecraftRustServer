@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6425** across **1410** classes.
+Total mapped Java symbols: **6431** across **1412** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2317,6 +2317,12 @@ Total mapped Java symbols: **6425** across **1410** classes.
 | `net.minecraft.network.chat.LastSeenMessagesTracker#getAndClearOffset` | `crates/mc-protocol/src/ported/last_seen_messages_tracker.rs` | 189 | `get_and_clear_offset` |
 | `net.minecraft.network.chat.LastSeenMessagesTracker#ignorePending` | `crates/mc-protocol/src/ported/last_seen_messages_tracker.rs` | 174 | `ignore_pending` |
 | `net.minecraft.network.chat.LastSeenMessagesTracker#offset` | `crates/mc-protocol/src/ported/last_seen_messages_tracker.rs` | 222 | `offset` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator#<init>` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 185 | `new` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator#addPending` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 200 | `add_pending` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator#applyOffset` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 218 | `apply_offset` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator#applyUpdate` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 235 | `apply_update` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator#trackedMessagesCount` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 213 | `tracked_messages_count` |
+| `net.minecraft.network.chat.LastSeenMessagesValidator$ValidationException#<init>` | `crates/mc-protocol/src/ported/last_seen_messages_validator.rs` | 164 | `new` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#<init>` | `crates/mc-protocol/src/ported/last_seen_messages_tracker.rs` | 26 | `new` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_messages_tracker.rs` | 41 | `acknowledge` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_tracked_entry.rs` | 15 | `acknowledge` |
