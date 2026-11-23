@@ -277,3 +277,4 @@ pub mod basalt_pillar_feature;
 pub mod fossil_feature;
 pub mod end_podium_feature;
 pub mod bamboo_feature;
+pub mod feature_count_tracker;

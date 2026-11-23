@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6508** across **1425** classes.
+Total mapped Java symbols: **6566** across **1431** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4633,6 +4633,64 @@ Total mapped Java symbols: **6508** across **1425** classes.
 | `net.minecraft.util.FutureChain#append` | `crates/mc-math/src/ported/future_chain.rs` | 121 | `append` |
 | `net.minecraft.util.FutureChain#close` | `crates/mc-math/src/ported/future_chain.rs` | 176 | `close` |
 | `net.minecraft.util.Graph#depthFirstSearch` | `crates/mc-math/src/ported/graph.rs` | 7 | `depth_first_search` |
+| `net.minecraft.util.HashOps#<init>` | `crates/mc-math/src/ported/hash_ops.rs` | 295 | `new` |
+| `net.minecraft.util.HashOps#convertTo` | `crates/mc-math/src/ported/hash_ops.rs` | 480 | `convert_to` |
+| `net.minecraft.util.HashOps#createBoolean` | `crates/mc-math/src/ported/hash_ops.rs` | 397 | `create_boolean` |
+| `net.minecraft.util.HashOps#createByte` | `crates/mc-math/src/ported/hash_ops.rs` | 339 | `create_byte` |
+| `net.minecraft.util.HashOps#createByteList` | `crates/mc-math/src/ported/hash_ops.rs` | 434 | `create_byte_list` |
+| `net.minecraft.util.HashOps#createDouble` | `crates/mc-math/src/ported/hash_ops.rs` | 379 | `create_double` |
+| `net.minecraft.util.HashOps#createFloat` | `crates/mc-math/src/ported/hash_ops.rs` | 371 | `create_float` |
+| `net.minecraft.util.HashOps#createInt` | `crates/mc-math/src/ported/hash_ops.rs` | 355 | `create_int` |
+| `net.minecraft.util.HashOps#createIntList` | `crates/mc-math/src/ported/hash_ops.rs` | 443 | `create_int_list` |
+| `net.minecraft.util.HashOps#createList` | `crates/mc-math/src/ported/hash_ops.rs` | 423 | `create_list` |
+| `net.minecraft.util.HashOps#createLong` | `crates/mc-math/src/ported/hash_ops.rs` | 363 | `create_long` |
+| `net.minecraft.util.HashOps#createLongList` | `crates/mc-math/src/ported/hash_ops.rs` | 454 | `create_long_list` |
+| `net.minecraft.util.HashOps#createMap` | `crates/mc-math/src/ported/hash_ops.rs` | 406 | `create_map` |
+| `net.minecraft.util.HashOps#createMap` | `crates/mc-math/src/ported/hash_ops.rs` | 413 | `create_map_pairs` |
+| `net.minecraft.util.HashOps#createNumeric` | `crates/mc-math/src/ported/hash_ops.rs` | 327 | `create_numeric` |
+| `net.minecraft.util.HashOps#createShort` | `crates/mc-math/src/ported/hash_ops.rs` | 347 | `create_short` |
+| `net.minecraft.util.HashOps#createString` | `crates/mc-math/src/ported/hash_ops.rs` | 387 | `create_string` |
+| `net.minecraft.util.HashOps#empty` | `crates/mc-math/src/ported/hash_ops.rs` | 312 | `empty` |
+| `net.minecraft.util.HashOps#emptyList` | `crates/mc-math/src/ported/hash_ops.rs` | 322 | `empty_list` |
+| `net.minecraft.util.HashOps#emptyMap` | `crates/mc-math/src/ported/hash_ops.rs` | 317 | `empty_map` |
+| `net.minecraft.util.HashOps#get` | `crates/mc-math/src/ported/hash_ops.rs` | 520 | `get` |
+| `net.minecraft.util.HashOps#getBooleanValue` | `crates/mc-math/src/ported/hash_ops.rs` | 530 | `get_boolean_value` |
+| `net.minecraft.util.HashOps#getByteBuffer` | `crates/mc-math/src/ported/hash_ops.rs` | 635 | `get_byte_buffer` |
+| `net.minecraft.util.HashOps#getGeneric` | `crates/mc-math/src/ported/hash_ops.rs` | 525 | `get_generic` |
+| `net.minecraft.util.HashOps#getIntStream` | `crates/mc-math/src/ported/hash_ops.rs` | 640 | `get_int_stream` |
+| `net.minecraft.util.HashOps#getList` | `crates/mc-math/src/ported/hash_ops.rs` | 625 | `get_list` |
+| `net.minecraft.util.HashOps#getLongStream` | `crates/mc-math/src/ported/hash_ops.rs` | 645 | `get_long_stream` |
+| `net.minecraft.util.HashOps#getMap` | `crates/mc-math/src/ported/hash_ops.rs` | 630 | `get_map` |
+| `net.minecraft.util.HashOps#getMapEntries` | `crates/mc-math/src/ported/hash_ops.rs` | 615 | `get_map_entries` |
+| `net.minecraft.util.HashOps#getMapValues` | `crates/mc-math/src/ported/hash_ops.rs` | 607 | `get_map_values` |
+| `net.minecraft.util.HashOps#getNumberValue` | `crates/mc-math/src/ported/hash_ops.rs` | 485 | `get_number_value_or` |
+| `net.minecraft.util.HashOps#getNumberValue` | `crates/mc-math/src/ported/hash_ops.rs` | 490 | `get_number_value` |
+| `net.minecraft.util.HashOps#getStream` | `crates/mc-math/src/ported/hash_ops.rs` | 620 | `get_stream` |
+| `net.minecraft.util.HashOps#getStringValue` | `crates/mc-math/src/ported/hash_ops.rs` | 535 | `get_string_value` |
+| `net.minecraft.util.HashOps#hashMap` | `crates/mc-math/src/ported/hash_ops.rs` | 250 | `hash_map` |
+| `net.minecraft.util.HashOps#hashMap` | `crates/mc-math/src/ported/hash_ops.rs` | 262 | `hash_map_pairs` |
+| `net.minecraft.util.HashOps#isEmpty` | `crates/mc-math/src/ported/hash_ops.rs` | 540 | `is_empty` |
+| `net.minecraft.util.HashOps#listBuilder` | `crates/mc-math/src/ported/hash_ops.rs` | 475 | `list_builder` |
+| `net.minecraft.util.HashOps#mapBuilder` | `crates/mc-math/src/ported/hash_ops.rs` | 470 | `map_builder` |
+| `net.minecraft.util.HashOps#mergeToList` | `crates/mc-math/src/ported/hash_ops.rs` | 545 | `merge_to_list` |
+| `net.minecraft.util.HashOps#mergeToList` | `crates/mc-math/src/ported/hash_ops.rs` | 554 | `merge_to_list_values` |
+| `net.minecraft.util.HashOps#mergeToMap` | `crates/mc-math/src/ported/hash_ops.rs` | 567 | `merge_to_map` |
+| `net.minecraft.util.HashOps#mergeToMap` | `crates/mc-math/src/ported/hash_ops.rs` | 581 | `merge_to_map_entries` |
+| `net.minecraft.util.HashOps#mergeToMap` | `crates/mc-math/src/ported/hash_ops.rs` | 594 | `merge_to_map_pairs` |
+| `net.minecraft.util.HashOps#remove` | `crates/mc-math/src/ported/hash_ops.rs` | 465 | `remove` |
+| `net.minecraft.util.HashOps#set` | `crates/mc-math/src/ported/hash_ops.rs` | 495 | `set` |
+| `net.minecraft.util.HashOps#toString` | `crates/mc-math/src/ported/hash_ops.rs` | 652 | `fmt` |
+| `net.minecraft.util.HashOps#unsupported` | `crates/mc-math/src/ported/hash_ops.rs` | 277 | `unsupported` |
+| `net.minecraft.util.HashOps#update` | `crates/mc-math/src/ported/hash_ops.rs` | 500 | `update` |
+| `net.minecraft.util.HashOps#updateGeneric` | `crates/mc-math/src/ported/hash_ops.rs` | 510 | `update_generic` |
+| `net.minecraft.util.HashOps$ListHashBuilder#<init>` | `crates/mc-math/src/ported/hash_ops.rs` | 664 | `new` |
+| `net.minecraft.util.HashOps$ListHashBuilder#append` | `crates/mc-math/src/ported/hash_ops.rs` | 679 | `append` |
+| `net.minecraft.util.HashOps$ListHashBuilder#build` | `crates/mc-math/src/ported/hash_ops.rs` | 689 | `build` |
+| `net.minecraft.util.HashOps$ListHashBuilder#initBuilder` | `crates/mc-math/src/ported/hash_ops.rs` | 672 | `init_builder` |
+| `net.minecraft.util.HashOps$MapHashBuilder#<init>` | `crates/mc-math/src/ported/hash_ops.rs` | 703 | `new` |
+| `net.minecraft.util.HashOps$MapHashBuilder#append` | `crates/mc-math/src/ported/hash_ops.rs` | 716 | `append` |
+| `net.minecraft.util.HashOps$MapHashBuilder#build` | `crates/mc-math/src/ported/hash_ops.rs` | 726 | `build` |
+| `net.minecraft.util.HashOps$MapHashBuilder#initBuilder` | `crates/mc-math/src/ported/hash_ops.rs` | 711 | `init_builder` |
 | `net.minecraft.util.HttpUtil#cachedFilePath` | `crates/mc-math/src/ported/http_util.rs` | 153 | `cached_file_path` |
 | `net.minecraft.util.HttpUtil#checkExistingFile` | `crates/mc-math/src/ported/http_util.rs` | 137 | `check_existing_file` |
 | `net.minecraft.util.HttpUtil#downloadAndHash` | `crates/mc-math/src/ported/http_util.rs` | 158 | `download_and_hash` |
@@ -6162,6 +6220,12 @@ Total mapped Java symbols: **6508** across **1425** classes.
 | `net.minecraft.world.level.levelgen.feature.Feature#markAboveForPostProcessing` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 218 | `mark_above_for_post_processing` |
 | `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 70 | `set_block` |
 | `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 253 | `set_block` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker#chunkDecorated` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 162 | `chunk_decorated` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker#clearCounts` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 209 | `clear_counts` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker#featurePlaced` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 181 | `feature_placed` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker#logCounts` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 216 | `log_counts` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker$FeatureData` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 32 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.FeatureCountTracker$LevelData` | `crates/mc-worldgen/src/ported/feature_count_tracker.rs` | 77 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 307 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |

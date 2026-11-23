@@ -208,3 +208,4 @@ pub mod world_upgrader;
 pub mod extra_codecs;
 pub mod placeholder_lookup_provider;
 pub mod array_list_deque;
+pub mod hash_ops;
