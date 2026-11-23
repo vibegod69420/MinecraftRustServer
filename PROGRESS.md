@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 19:18:45 UTC
+- **Updated**: 2026-11-23 20:02:42 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 9377 / 66676 (14.063%)
-- **Mapped Java Classes**: 2139 / 7163 (29.862%)
+- **Mapped Java Methods**: 9405 / 66676 (14.105%)
+- **Mapped Java Classes**: 2140 / 7163 (29.876%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 4090 mapped methods
-- `mc-nbt`: 1736 mapped methods
+- `mc-nbt`: 1769 mapped methods
 - `mc-protocol`: 3450 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.storage.ValueInputContextHelper` -> `mc-nbt` (2759.8s)
 - [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (11233.4s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (2531.4s)
 - [FAIL] `net.minecraft.network.chat.SignableCommand` -> `mc-protocol` (12066.2s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (9533.7s)
 - [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (9546.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature` -> `mc-worldgen` (9448.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (9448.5s)

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9377** across **2139** classes.
+Total mapped Java symbols: **9405** across **2140** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11173,6 +11173,39 @@ Total mapped Java symbols: **9377** across **2139** classes.
 | `net.minecraft.world.level.storage.ValueInput$ValueInputList#isEmpty` | `crates/mc-nbt/src/ported/value_input.rs` | 148 | `is_empty` |
 | `net.minecraft.world.level.storage.ValueInput$ValueInputList#stream` | `crates/mc-nbt/src/ported/value_input.rs` | 50 | `stream` |
 | `net.minecraft.world.level.storage.ValueInput$ValueInputList#stream` | `crates/mc-nbt/src/ported/value_input.rs` | 153 | `stream` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#<init>` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 138 | `new` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#child` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 192 | `child` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#childOrEmpty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 197 | `child_or_empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#childrenList` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 204 | `children_list` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#childrenListOrEmpty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 209 | `children_list_or_empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#empty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 159 | `empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#emptyList` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 164 | `empty_list` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#emptyTypedList` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 169 | `empty_typed_list` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getBooleanOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 224 | `get_boolean_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getByteOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 229 | `get_byte_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getDoubleOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 264 | `get_double_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getFloatOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 259 | `get_float_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getInt` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 239 | `get_int` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getIntArray` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 284 | `get_int_array` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getIntOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 244 | `get_int_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getLong` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 254 | `get_long` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getLongOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 249 | `get_long_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getShortOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 234 | `get_short_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getString` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 269 | `get_string` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#getStringOr` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 274 | `get_string_or` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#isEmpty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 70 | `is_empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#isEmpty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 99 | `is_empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#iterator` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 80 | `iterator` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#iterator` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 109 | `iterator` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#list` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 214 | `list` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#listOrEmpty` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 219 | `list_or_empty` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#lookup` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 154 | `lookup` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#lookup` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 279 | `lookup` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#ops` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 149 | `ops` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#read` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 182 | `read` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#read` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 187 | `read_map` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#stream` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 75 | `stream` |
+| `net.minecraft.world.level.storage.ValueInputContextHelper#stream` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 104 | `stream` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 10 | `set_spawn` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 27 | `set_spawn` |
 | `net.minecraft.world.level.storage.loot.BuiltInLootTables (minimal)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 346 | `<item>` |
