@@ -290,3 +290,4 @@ pub mod nether_fossil_pieces;
 pub mod structure_template_pool;
 pub mod fallen_tree_feature;
 pub mod noise_generator_settings;
+pub mod vegetation_patch_feature;

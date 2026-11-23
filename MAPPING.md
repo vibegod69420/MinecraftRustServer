@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7185** across **1543** classes.
+Total mapped Java symbols: **7191** across **1544** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6848,6 +6848,12 @@ Total mapped Java symbols: **7185** across **1543** classes.
 | `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#isVisibleFromOutside` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 367 | `is_visible_from_outside` |
 | `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#isWaterOrAir` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 362 | `is_water_or_air` |
 | `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#place` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 298 | `place` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#<init>` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 210 | `new` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#distributeVegetation` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 340 | `distribute_vegetation` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#place` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 215 | `place` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#placeGround` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 377 | `place_ground` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#placeGroundPatch` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 250 | `place_ground_patch` |
+| `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature#placeVegetation` | `crates/mc-worldgen/src/ported/vegetation_patch_feature.rs` | 360 | `place_vegetation` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#place` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 134 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 184 | `new` |
