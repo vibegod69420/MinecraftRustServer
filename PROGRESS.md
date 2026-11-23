@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:26:08 UTC
+- **Updated**: 2026-11-23 04:29:46 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7175 / 66676 (10.761%)
-- **Mapped Java Classes**: 1542 / 7163 (21.527%)
+- **Mapped Java Methods**: 7185 / 66676 (10.776%)
+- **Mapped Java Classes**: 1543 / 7163 (21.541%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,11 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1656 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 1892 mapped methods
+- `mc-worldgen`: 1902 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.NoiseGeneratorSettings` -> `mc-worldgen` (243.5s)
+- [FAIL] `net.minecraft.world.level.storage.loot.BuiltInLootTables` -> `mc-nbt` (624.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (778.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.MonsterRoomFeature` -> `mc-worldgen` (769.2s)
 - [FAIL] `net.minecraft.network.Connection` -> `mc-protocol` (596.9s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.network.protocol.game.ClientboundSetObjectivePacket` -> `mc-protocol` (892.2s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundChunksBiomesPacket` -> `mc-protocol` (892.2s)
 - [FAIL] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (876.7s)
-- [PASS] `net.minecraft.network.chat.SignedMessageChain` -> `mc-protocol` (812.2s)
-- [PASS] `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket` -> `mc-protocol` (753.6s)

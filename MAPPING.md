@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7175** across **1542** classes.
+Total mapped Java symbols: **7185** across **1543** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6482,6 +6482,16 @@ Total mapped Java symbols: **7175** across **1542** classes.
 | `net.minecraft.world.level.levelgen.LegacyRandomSource$LegacyPositionalRandomFactory#fromSeed` | `crates/mc-math/src/random.rs` | 392 | `from_seed` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#nextGaussian` | `crates/mc-math/src/random.rs` | 207 | `next_gaussian` |
 | `net.minecraft.world.level.levelgen.MarsagliaPolarGaussian#reset` | `crates/mc-math/src/random.rs` | 202 | `reset` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#bootstrap` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 173 | `bootstrap` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#caves` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 247 | `caves` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#dummy` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 289 | `dummy` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#end` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 192 | `end` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#floatingIslands` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 268 | `floating_islands` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#getRandomSource` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 164 | `get_random_source` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#isAquifersEnabled` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 154 | `is_aquifers_enabled` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#nether` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 209 | `nether` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#oreVeinsEnabled` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 159 | `ore_veins_enabled` |
+| `net.minecraft.world.level.levelgen.NoiseGeneratorSettings#overworld` | `crates/mc-worldgen/src/ported/noise_generator_settings.rs` | 226 | `overworld` |
 | `net.minecraft.world.level.levelgen.NoiseRouter#<init>` | `crates/mc-worldgen/src/ported/noise_router.rs` | 34 | `new` |
 | `net.minecraft.world.level.levelgen.NoiseRouter#mapAll` | `crates/mc-worldgen/src/ported/noise_router.rs` | 72 | `map_all` |
 | `net.minecraft.world.level.levelgen.NoiseSettings#<init>` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 53 | `new` |
