@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5047** across **1180** classes.
+Total mapped Java symbols: **5078** across **1186** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5536,6 +5536,38 @@ Total mapped Java symbols: **5047** across **1180** classes.
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 52 | `parse` |
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 57 | `parse_with_defaults` |
 | `net.minecraft.world.level.storage.LevelVersion#snapshot` | `crates/mc-nbt/src/ported/level_version.rs` | 105 | `snapshot` |
+| `net.minecraft.world.level.storage.TagValueOutput#<init>` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 484 | `new` |
+| `net.minecraft.world.level.storage.TagValueOutput#buildResult` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 674 | `build_result` |
+| `net.minecraft.world.level.storage.TagValueOutput#child` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 616 | `child` |
+| `net.minecraft.world.level.storage.TagValueOutput#childrenList` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 627 | `children_list` |
+| `net.minecraft.world.level.storage.TagValueOutput#createWithContext` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 493 | `create_with_context` |
+| `net.minecraft.world.level.storage.TagValueOutput#createWithoutContext` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 477 | `create_without_context` |
+| `net.minecraft.world.level.storage.TagValueOutput#discard` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 664 | `discard` |
+| `net.minecraft.world.level.storage.TagValueOutput#isEmpty` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 669 | `is_empty` |
+| `net.minecraft.world.level.storage.TagValueOutput#list` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 643 | `list` |
+| `net.minecraft.world.level.storage.TagValueOutput#putBoolean` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 565 | `put_boolean` |
+| `net.minecraft.world.level.storage.TagValueOutput#putByte` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 570 | `put_byte` |
+| `net.minecraft.world.level.storage.TagValueOutput#putDouble` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 595 | `put_double` |
+| `net.minecraft.world.level.storage.TagValueOutput#putFloat` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 590 | `put_float` |
+| `net.minecraft.world.level.storage.TagValueOutput#putInt` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 580 | `put_int` |
+| `net.minecraft.world.level.storage.TagValueOutput#putIntArray` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 605 | `put_int_array` |
+| `net.minecraft.world.level.storage.TagValueOutput#putLong` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 585 | `put_long` |
+| `net.minecraft.world.level.storage.TagValueOutput#putShort` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 575 | `put_short` |
+| `net.minecraft.world.level.storage.TagValueOutput#putString` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 600 | `put_string` |
+| `net.minecraft.world.level.storage.TagValueOutput#reporterForChild` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 610 | `reporter_for_child` |
+| `net.minecraft.world.level.storage.TagValueOutput#store` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 505 | `store` |
+| `net.minecraft.world.level.storage.TagValueOutput#store` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 541 | `store_map` |
+| `net.minecraft.world.level.storage.TagValueOutput#storeNullable` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 529 | `store_nullable` |
+| `net.minecraft.world.level.storage.TagValueOutput.EncodeToFieldFailedProblem#description` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 424 | `description` |
+| `net.minecraft.world.level.storage.TagValueOutput.EncodeToListFailedProblem#description` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 441 | `description` |
+| `net.minecraft.world.level.storage.TagValueOutput.EncodeToMapFailedProblem#description` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 457 | `description` |
+| `net.minecraft.world.level.storage.TagValueOutput.ListWrapper#<init>` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 697 | `new` |
+| `net.minecraft.world.level.storage.TagValueOutput.ListWrapper#addChild` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 709 | `add_child` |
+| `net.minecraft.world.level.storage.TagValueOutput.ListWrapper#discardLast` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 725 | `discard_last` |
+| `net.minecraft.world.level.storage.TagValueOutput.ListWrapper#isEmpty` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 730 | `is_empty` |
+| `net.minecraft.world.level.storage.TagValueOutput.TypedListWrapper#<init>` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 750 | `new` |
+| `net.minecraft.world.level.storage.TagValueOutput.TypedListWrapper#add` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 768 | `add` |
+| `net.minecraft.world.level.storage.TagValueOutput.TypedListWrapper#isEmpty` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 788 | `is_empty` |
 | `net.minecraft.world.level.storage.ValueInput` | `crates/mc-nbt/src/ported/value_input.rs` | 54 | `child` |
 | `net.minecraft.world.level.storage.ValueInput` | `crates/mc-nbt/src/ported/value_input.rs` | 108 | `read` |
 | `net.minecraft.world.level.storage.ValueInput#child` | `crates/mc-nbt/src/ported/value_input.rs` | 56 | `child` |

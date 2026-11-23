@@ -127,3 +127,4 @@ pub mod copy_custom_data_function;
 pub mod copy_components_function;
 pub mod apply_bonus_count;
 pub mod level_summary;
+pub mod tag_value_output;
