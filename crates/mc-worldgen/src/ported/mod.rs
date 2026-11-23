@@ -177,3 +177,5 @@ pub mod glowstone_feature;
 pub mod nether_forest_vegetation_feature;
 pub mod end_gateway_feature;
 pub mod stronghold_structure;
+pub mod block_blob_feature;
+pub mod huge_fungus_configuration;

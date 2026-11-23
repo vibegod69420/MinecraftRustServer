@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3633** across **912** classes.
+Total mapped Java symbols: **3642** across **916** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -122,10 +122,12 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 166 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong()` | `crates/mc-math/src/packing.rs` | 48 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong(int,int,int)` | `crates/mc-math/src/packing.rs` | 39 | `as_long_coords` |
+| `net.minecraft.core.BlockPos#below` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 14 | `below` |
 | `net.minecraft.core.BlockPos#below` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 16 | `below` |
 | `net.minecraft.core.BlockPos#below` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 16 | `below` |
 | `net.minecraft.core.BlockPos#below()` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 15 | `below` |
 | `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-math/src/ported/block_box.rs` | 186 | `between_closed` |
+| `net.minecraft.core.BlockPos#betweenClosed` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 43 | `between_closed` |
 | `net.minecraft.core.BlockPos#betweenClosed(net.minecraft.core.BlockPos,net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 59 | `between_closed` |
 | `net.minecraft.core.BlockPos#containing` | `crates/mc-math/src/packing.rs` | 33 | `containing` |
 | `net.minecraft.core.BlockPos#distManhattan` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 9 | `dist_manhattan` |
@@ -156,6 +158,7 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 24 | `offset` |
+| `net.minecraft.core.BlockPos#offset(int,int,int)` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 23 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int,int,int)` | `crates/mc-worldgen/src/ported/end_gateway_feature.rs` | 15 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int,int,int)` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 20 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int,int,int)` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 16 | `offset` |
@@ -451,6 +454,7 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.core.Vec3i#distChessboard` | `crates/mc-math/src/ported/vec3i.rs` | 349 | `dist_chessboard` |
 | `net.minecraft.core.Vec3i#distManhattan` | `crates/mc-math/src/ported/vec3i.rs` | 341 | `dist_manhattan` |
 | `net.minecraft.core.Vec3i#distSqr` | `crates/mc-math/src/ported/vec3i.rs` | 311 | `dist_sqr` |
+| `net.minecraft.core.Vec3i#distSqr` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 35 | `dist_sqr` |
 | `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 320 | `dist_to_center_sqr_pos` |
 | `net.minecraft.core.Vec3i#distToCenterSqr` | `crates/mc-math/src/ported/vec3i.rs` | 325 | `dist_to_center_sqr` |
 | `net.minecraft.core.Vec3i#distToLowCornerSqr` | `crates/mc-math/src/ported/vec3i.rs` | 333 | `dist_to_low_corner_sqr` |
@@ -463,6 +467,7 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 26 | `get_x` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-math/src/ported/vec3i.rs` | 94 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 36 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 9 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 31 | `get_y` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-math/src/ported/vec3i.rs` | 99 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 41 | `get_z` |
@@ -2497,6 +2502,7 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.util.RandomSource#nextFloat` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 9 | `next_float` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/binomial_distribution_generator.rs` | 7 | `next_int_bound` |
 | `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 7 | `next_int_bound` |
+| `net.minecraft.util.RandomSource#nextInt(int)` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 113 | `next_int` |
 | `net.minecraft.util.RandomSource#nextIntBetweenInclusive` | `crates/mc-math/src/random.rs` | 166 | `next_int_between_inclusive` |
 | `net.minecraft.util.RandomSource#nextLong` | `crates/mc-worldgen/src/ported/append_loot.rs` | 42 | `next_long` |
 | `net.minecraft.util.RandomSource#nextLong` | `crates/mc-worldgen/src/ported/append_static.rs` | 46 | `next_long` |
@@ -3005,10 +3011,14 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.world.level.ChunkPos#toLong` | `crates/mc-protocol/src/ported/clientbound_debug_chunk_value_packet.rs` | 18 | `to_long` |
 | `net.minecraft.world.level.GameType` | `crates/mc-protocol/src/ported/serverbound_change_game_mode_packet.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.ItemLike#asItem` | `crates/mc-nbt/src/ported/loot_item.rs` | 23 | `as_item` |
+| `net.minecraft.world.level.LevelHeightAccessor#getMinY` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 102 | `get_min_y` |
+| `net.minecraft.world.level.LevelReader#getBlockState` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 106 | `get_block_state` |
+| `net.minecraft.world.level.LevelReader#isEmptyBlock` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 104 | `is_empty_block` |
 | `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 36 | `get_server` |
 | `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 41 | `get_server` |
 | `net.minecraft.world.level.WorldGenLevel#isOutsideBuildHeight(net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 35 | `is_outside_build_height` |
 | `net.minecraft.world.level.WorldGenLevel#isUnobstructed(...)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 53 | `is_unobstructed` |
+| `net.minecraft.world.level.WorldGenLevel#setBlock` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 108 | `set_block` |
 | `net.minecraft.world.level.block.Block#builtInRegistryHolder` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 74 | `built_in_registry_holder` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/block_state_provider.rs` | 16 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 29 | `default_block_state` |
@@ -3213,6 +3223,8 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getCaveBound` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 151 | `get_cave_bound` |
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getThickness` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 156 | `get_thickness` |
 | `net.minecraft.world.level.levelgen.carver.NetherWorldCarver#getYScale` | `crates/mc-worldgen/src/ported/nether_world_carver.rs` | 163 | `get_y_scale` |
+| `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#<init>` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 127 | `new` |
+| `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#place` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 142 | `place` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#<init>` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 106 | `new` |
 | `net.minecraft.world.level.levelgen.feature.ChorusPlantFeature#place` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 111 | `place` |
 | `net.minecraft.world.level.levelgen.feature.ConfiguredFeature#getFeatures` | `crates/mc-worldgen/src/ported/configured_feature.rs` | 68 | `get_features` |
@@ -3227,7 +3239,9 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 108 | `new` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#createEndPlatform` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 124 | `create_end_platform` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#place` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 113 | `place` |
+| `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 132 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isReplaceable` | `crates/mc-worldgen/src/ported/protected_block_processor.rs` | 45 | `is_replaceable` |
+| `net.minecraft.world.level.levelgen.feature.Feature#isStone` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 137 | `is_stone` |
 | `net.minecraft.world.level.levelgen.feature.Feature#setBlock` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 70 | `set_block` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 115 | `config` |
 | `net.minecraft.world.level.levelgen.feature.FeaturePlaceContext#config` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 18 | `config` |
@@ -3241,6 +3255,7 @@ Total mapped Java symbols: **3633** across **912** classes.
 | `net.minecraft.world.level.levelgen.feature.FillLayerFeature#place` | `crates/mc-worldgen/src/ported/fill_layer_feature.rs` | 149 | `place` |
 | `net.minecraft.world.level.levelgen.feature.GlowstoneFeature#<init>(com.mojang.serialization.Codec)` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 116 | `new` |
 | `net.minecraft.world.level.levelgen.feature.GlowstoneFeature#place(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext)` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 121 | `place` |
+| `net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration#<init>` | `crates/mc-worldgen/src/ported/huge_fungus_configuration.rs` | 25 | `new` |
 | `net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature#<init>(com.mojang.serialization.Codec)` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature#place(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext)` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 67 | `place` |
 | `net.minecraft.world.level.levelgen.feature.NoOpFeature#<init>` | `crates/mc-worldgen/src/ported/no_op_feature.rs` | 31 | `new` |
