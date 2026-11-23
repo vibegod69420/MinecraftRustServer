@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7928** across **1671** classes.
+Total mapped Java symbols: **7954** across **1683** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5794,14 +5794,38 @@ Total mapped Java symbols: **7928** across **1671** classes.
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#rename` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 21 | `rename` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#<init>` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 49 | `new` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v2502.rs` | 19 | `new` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v2522.rs` | 19 | `new` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v3203.rs` | 19 | `new` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v3816.rs` | 19 | `new` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#registerEntities` | `crates/mc-math/src/ported/v2502.rs` | 28 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#registerEntities` | `crates/mc-math/src/ported/v2522.rs` | 28 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#registerEntities` | `crates/mc-math/src/ported/v3203.rs` | 28 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.NamespacedSchema#registerEntities` | `crates/mc-math/src/ported/v3816.rs` | 28 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V1904#<init>` | `crates/mc-math/src/ported/v1904.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.schemas.V1904#registerEntities` | `crates/mc-math/src/ported/v1904.rs` | 38 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V1931#<init>` | `crates/mc-math/src/ported/v1931.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.schemas.V1931#registerEntities` | `crates/mc-math/src/ported/v1931.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2502#<init>` | `crates/mc-math/src/ported/v2502.rs` | 41 | `new` |
+| `net.minecraft.util.datafix.schemas.V2502#registerEntities` | `crates/mc-math/src/ported/v2502.rs` | 52 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2519#<init>` | `crates/mc-math/src/ported/v2519.rs` | 65 | `new` |
+| `net.minecraft.util.datafix.schemas.V2519#registerEntities` | `crates/mc-math/src/ported/v2519.rs` | 80 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2522#<init>` | `crates/mc-math/src/ported/v2522.rs` | 41 | `new` |
+| `net.minecraft.util.datafix.schemas.V2522#registerEntities` | `crates/mc-math/src/ported/v2522.rs` | 52 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2571#<init>` | `crates/mc-math/src/ported/v2571.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.schemas.V2571#registerEntities` | `crates/mc-math/src/ported/v2571.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2686#<init>` | `crates/mc-math/src/ported/v2686.rs` | 65 | `new` |
+| `net.minecraft.util.datafix.schemas.V2686#registerEntities` | `crates/mc-math/src/ported/v2686.rs` | 80 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2704#<init>` | `crates/mc-math/src/ported/v2704.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.schemas.V2704#registerEntities` | `crates/mc-math/src/ported/v2704.rs` | 38 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V2707#<init>` | `crates/mc-math/src/ported/v2707.rs` | 65 | `new` |
+| `net.minecraft.util.datafix.schemas.V2707#registerEntities` | `crates/mc-math/src/ported/v2707.rs` | 80 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V3203#<init>` | `crates/mc-math/src/ported/v3203.rs` | 41 | `new` |
+| `net.minecraft.util.datafix.schemas.V3203#registerEntities` | `crates/mc-math/src/ported/v3203.rs` | 52 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V3326#<init>` | `crates/mc-math/src/ported/v3326.rs` | 65 | `new` |
+| `net.minecraft.util.datafix.schemas.V3326#registerEntities` | `crates/mc-math/src/ported/v3326.rs` | 80 | `register_entities` |
+| `net.minecraft.util.datafix.schemas.V3816#<init>` | `crates/mc-math/src/ported/v3816.rs` | 41 | `new` |
+| `net.minecraft.util.datafix.schemas.V3816#registerEntities` | `crates/mc-math/src/ported/v3816.rs` | 52 | `register_entities` |
 | `net.minecraft.util.debug.DebugBeeInfo#<init>` | `crates/mc-math/src/ported/debug_bee_info.rs` | 14 | `new` |
 | `net.minecraft.util.debug.DebugBeeInfo#hasHive` | `crates/mc-math/src/ported/debug_bee_info.rs` | 29 | `has_hive` |
 | `net.minecraft.util.debug.DebugBrainDump#DebugBrainDump` | `crates/mc-math/src/ported/debug_brain_dump.rs` | 135 | `from_buf` |
@@ -6017,6 +6041,16 @@ Total mapped Java symbols: **7928** across **1671** classes.
 | `net.minecraft.util.profiling.ResultField#<init>` | `crates/mc-math/src/ported/result_field.rs` | 13 | `new` |
 | `net.minecraft.util.profiling.ResultField#compareTo` | `crates/mc-math/src/ported/result_field.rs` | 23 | `compare_to` |
 | `net.minecraft.util.profiling.ResultField#getColor` | `crates/mc-math/src/ported/result_field.rs` | 34 | `get_color` |
+| `net.minecraft.util.profiling.jfr.Environment#from` | `crates/mc-math/src/ported/environment.rs` | 14 | `from_server` |
+| `net.minecraft.util.profiling.jfr.Environment#getDescription` | `crates/mc-math/src/ported/environment.rs` | 23 | `get_description` |
+| `net.minecraft.util.profiling.jfr.Percentiles#evaluate` | `crates/mc-math/src/ported/percentiles.rs` | 28 | `evaluate_longs` |
+| `net.minecraft.util.profiling.jfr.Percentiles#evaluate` | `crates/mc-math/src/ported/percentiles.rs` | 38 | `evaluate_ints` |
+| `net.minecraft.util.profiling.jfr.Percentiles#evaluate` | `crates/mc-math/src/ported/percentiles.rs` | 48 | `evaluate_doubles` |
+| `net.minecraft.util.profiling.jfr.Percentiles#sorted` | `crates/mc-math/src/ported/percentiles.rs` | 58 | `sorted` |
+| `net.minecraft.util.profiling.jfr.SummaryReporter#<init>` | `crates/mc-math/src/ported/summary_reporter.rs` | 10 | `new` |
+| `net.minecraft.util.profiling.jfr.SummaryReporter#infoWithFallback` | `crates/mc-math/src/ported/summary_reporter.rs` | 83 | `info_with_fallback` |
+| `net.minecraft.util.profiling.jfr.SummaryReporter#recordingStopped` | `crates/mc-math/src/ported/summary_reporter.rs` | 17 | `recording_stopped` |
+| `net.minecraft.util.profiling.jfr.SummaryReporter#warnWithFallback` | `crates/mc-math/src/ported/summary_reporter.rs` | 88 | `warn_with_fallback` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 11 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
