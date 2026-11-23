@@ -330,3 +330,4 @@ pub mod clientbound_tracked_waypoint_packet;
 pub mod unconfigured_pipeline_handler;
 pub mod chat_type_decoration;
 pub mod clientbound_add_entity_packet;
+pub mod configuration_protocols;

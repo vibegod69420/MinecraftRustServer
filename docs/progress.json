@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 04:08:02 UTC",
-  "updated_epoch": 1795406882,
+  "updated_at": "2026-11-23 04:08:57 UTC",
+  "updated_epoch": 1795406937,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1474,
-    "mapped_methods": 6828,
-    "class_coverage_pct": 20.578,
-    "method_coverage_pct": 10.2406,
-    "harness_verified_classes": 935,
+    "mapped_classes": 1475,
+    "mapped_methods": 6832,
+    "class_coverage_pct": 20.5919,
+    "method_coverage_pct": 10.2466,
+    "harness_verified_classes": 936,
     "harness_failed_attempts": 239
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 3014
+      "mapped_methods": 3022
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 1116,
-    "prompt_tokens": 3049958,
-    "completion_tokens": 17231402,
-    "reasoning_tokens": 12433195,
-    "avg_latency_s": 247.7
+    "calls_total": 1117,
+    "prompt_tokens": 3051847,
+    "completion_tokens": 17240217,
+    "reasoning_tokens": 12439214,
+    "avg_latency_s": 247.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T04:08:57Z",
+      "class_name": "net.minecraft.network.protocol.configuration.ConfigurationProtocols",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 147.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T03:57:08Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 1146.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:40:07Z",
-      "class_name": "net.minecraft.network.chat.LastSeenMessagesValidator",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 375.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "37d5f3d",
+      "ts": "2026-11-23T04:08:02+00:00",
+      "message": "Worker sync: 6828 mapped Java methods"
+    },
     {
       "sha": "0c9113e",
       "ts": "2026-11-23T04:06:15+00:00",
@@ -445,11 +450,6 @@
       "sha": "fef552b",
       "ts": "2026-11-23T03:44:02+00:00",
       "message": "Worker sync: 6508 mapped Java methods"
-    },
-    {
-      "sha": "28a28fe",
-      "ts": "2026-11-23T03:43:26+00:00",
-      "message": "Port 7 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

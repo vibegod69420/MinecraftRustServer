@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6828** across **1474** classes.
+Total mapped Java symbols: **6832** across **1475** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2749,15 +2749,19 @@ Total mapped Java symbols: **6828** across **1474** classes.
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#<init>` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 279 | `new` |
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#add` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 287 | `add` |
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#build` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 304 | `build` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 109 | `add_packet` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket` | `crates/mc-protocol/src/ported/login_protocols.rs` | 36 | `add_packet` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket` | `crates/mc-protocol/src/ported/status_protocols.rs` | 148 | `add_packet` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket(PacketType, StreamCodec)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 118 | `add_packet` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#clientboundProtocol` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 88 | `clientbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#clientboundProtocol` | `crates/mc-protocol/src/ported/login_protocols.rs` | 123 | `clientbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#clientboundProtocol` | `crates/mc-protocol/src/ported/status_protocols.rs` | 130 | `clientbound_protocol` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 67 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol` | `crates/mc-protocol/src/ported/login_protocols.rs` | 101 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol` | `crates/mc-protocol/src/ported/status_protocols.rs` | 112 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol(ConnectionProtocol, Consumer)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 162 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 27 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 37 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/login_protocols.rs` | 60 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 29 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 56 | `bind` |
@@ -2951,6 +2955,10 @@ Total mapped Java symbols: **6828** across **1474** classes.
 | `net.minecraft.network.protocol.configuration.ConfigurationPacketTypes#SERVERBOUND_SELECT_KNOWN_PACKS` | `crates/mc-protocol/src/ported/configuration_packet_types.rs` | 93 | `serverbound_select_known_packs` |
 | `net.minecraft.network.protocol.configuration.ConfigurationPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/configuration_packet_types.rs` | 37 | `create_clientbound` |
 | `net.minecraft.network.protocol.configuration.ConfigurationPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/configuration_packet_types.rs` | 45 | `create_serverbound` |
+| `net.minecraft.network.protocol.configuration.ConfigurationProtocols#CLIENTBOUND` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 255 | `clientbound` |
+| `net.minecraft.network.protocol.configuration.ConfigurationProtocols#CLIENTBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 168 | `clientbound_template` |
+| `net.minecraft.network.protocol.configuration.ConfigurationProtocols#SERVERBOUND` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 163 | `serverbound` |
+| `net.minecraft.network.protocol.configuration.ConfigurationProtocols#SERVERBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/configuration_protocols.rs` | 116 | `serverbound_template` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleAcceptCodeOfConduct` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 38 | `handle_accept_code_of_conduct` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleConfigurationFinished` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 32 | `handle_configuration_finished` |
 | `net.minecraft.network.protocol.configuration.ServerConfigurationPacketListener#handleSelectKnownPacks` | `crates/mc-protocol/src/ported/server_configuration_packet_listener.rs` | 35 | `handle_select_known_packs` |
