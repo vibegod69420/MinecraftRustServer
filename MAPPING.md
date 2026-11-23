@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5271** across **1234** classes.
+Total mapped Java symbols: **5280** across **1237** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -965,6 +965,7 @@ Total mapped Java symbols: **5271** across **1234** classes.
 | `net.minecraft.core.particles.VibrationParticleOption#getType` | `crates/mc-math/src/ported/vibration_particle_option.rs` | 57 | `get_type` |
 | `net.minecraft.core.registries.BuiltInRegistries` | `crates/mc-data/build.rs` | 154 | `get_registry` |
 | `net.minecraft.core.registries.Registries#ROOT_REGISTRY_NAME` | `crates/mc-math/src/ported/registries.rs` | 71 | `create_registry_key` |
+| `net.minecraft.core.registries.Registries#STRUCTURE` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 46 | `structure` |
 | `net.minecraft.core.registries.Registries#STRUCTURE_SET` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 43 | `register` |
 | `net.minecraft.core.registries.Registries#createRegistryKey` | `crates/mc-math/src/ported/registries.rs` | 75 | `create_registry_key` |
 | `net.minecraft.core.registries.Registries#elementsDirPath` | `crates/mc-math/src/ported/registries.rs` | 241 | `elements_dir_path` |
@@ -3288,12 +3289,14 @@ Total mapped Java symbols: **5271** across **1234** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/font_description.rs` | 10 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 10 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 15 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.ResourceKey` | `crates/mc-math/src/ported/cloner.rs` | 15 | `new` |
 | `net.minecraft.resources.ResourceKey (minimal support for Registries)` | `crates/mc-math/src/ported/registries.rs` | 38 | `<item>` |
 | `net.minecraft.resources.ResourceKey#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 71 | `new` |
 | `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 27 | `create` |
+| `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 32 | `create` |
 | `net.minecraft.resources.ResourceKey#createRegistryKey` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 23 | `create_registry_key` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-math/src/ported/cloner.rs` | 22 | `identifier` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 28 | `identifier` |
@@ -5389,8 +5392,14 @@ Total mapped Java symbols: **5271** across **1234** classes.
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#VILLAGES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 52 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#WOODLAND_MANSIONS` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 66 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#register` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 47 | `register` |
+| `net.minecraft.world.level.levelgen.structure.BuiltinStructures#createKey` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 52 | `create_key` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 213 | `new` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 239 | `from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 251 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#updateAverageGroundHeight` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 263 | `update_average_ground_height` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#updateHeightPositionToLowestGroundHeight` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 318 | `update_height_position_to_lowest_ground_height` |
 | `net.minecraft.world.level.levelgen.structure.SinglePieceStructure#<init>` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 155 | `new` |
 | `net.minecraft.world.level.levelgen.structure.SinglePieceStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 165 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.SinglePieceStructure#generatePieces` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 177 | `generate_pieces` |
@@ -5420,6 +5429,10 @@ Total mapped Java symbols: **5271** across **1234** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#hasUnhandledIndex` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 54 | `has_unhandled_index` |
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#removeIndex` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 59 | `remove_index` |
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#type` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 34 | `type_` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 177 | `new` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 187 | `from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#makeBoundingBox` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 130 | `make_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#setOrientation` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 197 | `set_orientation` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
