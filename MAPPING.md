@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7047** across **1518** classes.
+Total mapped Java symbols: **7059** across **1519** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6603,6 +6603,18 @@ Total mapped Java symbols: **7047** across **1518** classes.
 | `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#dropPreviousAndSetBlock` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 258 | `drop_previous_and_set_block` |
 | `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#getLocation` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 243 | `get_location` |
 | `net.minecraft.world.level.levelgen.feature.EndPodiumFeature#place` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 271 | `place` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#canPlaceEntireFallenLog` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 299 | `can_place_entire_fallen_log` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#decorateLogs` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 381 | `decorate_logs` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#getDecorationSetter` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 402 | `get_decoration_setter` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#getSidewaysStateModifier` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 231 | `get_sideways_state_modifier` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#isOverSolidGround` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 361 | `is_over_solid_ground` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#mayPlaceOn` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 356 | `may_place_on` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#place` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 239 | `place` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#placeFallenLog` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 332 | `place_fallen_log` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#placeFallenTree` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 248 | `place_fallen_tree` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#placeLogBlock` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 366 | `place_log_block` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#placeStump` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 285 | `place_stump` |
+| `net.minecraft.world.level.levelgen.feature.FallenTreeFeature#setGroundHeightForFallenLogStartPos` | `crates/mc-worldgen/src/ported/fallen_tree_feature.rs` | 268 | `set_ground_height_for_fallen_log_start_pos` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 223 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 132 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 123 | `is_dirt` |
