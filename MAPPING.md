@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7873** across **1655** classes.
+Total mapped Java symbols: **7881** across **1656** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6443,6 +6443,7 @@ Total mapped Java symbols: **7873** across **1655** classes.
 | `net.minecraft.world.level.ChunkPos#getWorldPosition` | `crates/mc-worldgen/src/ported/stronghold_structure.rs` | 17 | `get_world_position` |
 | `net.minecraft.world.level.ChunkPos#toLong` | `crates/mc-protocol/src/ported/clientbound_chunks_biomes_packet.rs` | 16 | `to_long` |
 | `net.minecraft.world.level.ChunkPos#toLong` | `crates/mc-protocol/src/ported/clientbound_debug_chunk_value_packet.rs` | 18 | `to_long` |
+| `net.minecraft.world.level.ChunkPos#toLong` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 32 | `to_long` |
 | `net.minecraft.world.level.GameType` | `crates/mc-protocol/src/ported/serverbound_change_game_mode_packet.rs` | 19 | `<item>` |
 | `net.minecraft.world.level.ItemLike#asItem` | `crates/mc-nbt/src/ported/loot_item.rs` | 23 | `as_item` |
 | `net.minecraft.world.level.LevelHeightAccessor#getMaxY()` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 191 | `get_max_y` |
@@ -6809,6 +6810,14 @@ Total mapped Java symbols: **7873** across **1655** classes.
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 92 | `do_work` |
 | `net.minecraft.world.level.chunk.status.WorldGenContext#<init>` | `crates/mc-worldgen/src/ported/world_gen_context.rs` | 22 | `new` |
 | `net.minecraft.world.level.chunk.storage.ChunkScanAccess#scanChunk` | `crates/mc-worldgen/src/ported/chunk_scan_access.rs` | 22 | `scan_chunk` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#<init>` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 242 | `new` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#close` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 412 | `close` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#emptyChunk` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 252 | `empty_chunk` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#flush` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 406 | `flush` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#loadEntities` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 257 | `load_entities` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#reportLoadFailureIfPresent` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 367 | `report_load_failure_if_present` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#reportSaveFailureIfPresent` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 339 | `report_save_failure_if_present` |
+| `net.minecraft.world.level.chunk.storage.EntityStorage#storeEntities` | `crates/mc-worldgen/src/ported/entity_storage.rs` | 318 | `store_entities` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 28 | `apply_fix` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 45 | `apply_fix` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#markChunkDone` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 31 | `mark_chunk_done` |
