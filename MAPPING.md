@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8630** across **1939** classes.
+Total mapped Java symbols: **8673** across **1954** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -226,7 +226,10 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `com.mojang.math.Transformation#getMatrix` | `crates/mc-math/src/ported/block_math.rs` | 266 | `get_matrix` |
 | `com.mojang.math.Transformation#identity` | `crates/mc-math/src/ported/block_math.rs` | 243 | `identity` |
 | `com.mojang.math.Transformation#inverse` | `crates/mc-math/src/ported/block_math.rs` | 271 | `inverse` |
+| `com.mojang.serialization.Codec#encodeStart (adapted)` | `crates/mc-math/src/ported/json_event_log.rs` | 11 | `encode` |
 | `com.mojang.serialization.Codec#fieldOf` | `crates/mc-protocol/src/ported/fixed_format.rs` | 51 | `field_of` |
+| `com.mojang.serialization.Codec#parse (adapted)` | `crates/mc-math/src/ported/json_event_log.rs` | 13 | `decode` |
+| `com.mojang.serialization.Codec#parse (adapted)` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 7 | `decode` |
 | `com.mojang.serialization.DataResult` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 26 | `<item>` |
 | `com.mojang.serialization.DataResult#apply2stable` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 98 | `apply2stable` |
 | `com.mojang.serialization.DataResult#error` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 54 | `error` |
@@ -6031,6 +6034,8 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.context.ContextMap$Builder#withOptionalParameter` | `crates/mc-math/src/ported/context_map.rs` | 310 | `with_optional_parameter` |
 | `net.minecraft.util.context.ContextMap$Builder#withParameter` | `crates/mc-math/src/ported/context_map.rs` | 304 | `with_parameter` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#cast` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 48 | `cast` |
+| `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_custom_name_to_component_fix.rs` | 55 | `create_text_component_json` |
+| `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/item_lore_fix.rs` | 45 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 11 | `create_text_component_json` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#rewriteFromLenient` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 30 | `rewrite_from_lenient` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#rewriteFromLenient` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 184 | `rewrite_from_lenient` |
@@ -6039,6 +6044,9 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 71 | `replace_uuid_least_most` |
 | `net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix#<init>` | `crates/mc-math/src/ported/add_flag_if_not_present_fix.rs` | 142 | `new` |
 | `net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix#makeRule` | `crates/mc-math/src/ported/add_flag_if_not_present_fix.rs` | 164 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.AddNewChoices#<init>` | `crates/mc-math/src/ported/add_new_choices.rs` | 49 | `new` |
+| `net.minecraft.util.datafix.fixes.AddNewChoices#cap` | `crates/mc-math/src/ported/add_new_choices.rs` | 57 | `cap` |
+| `net.minecraft.util.datafix.fixes.AddNewChoices#makeRule` | `crates/mc-math/src/ported/add_new_choices.rs` | 78 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.AdvancementsRenameFix#<init>` | `crates/mc-math/src/ported/advancements_rename_fix.rs` | 54 | `new` |
 | `net.minecraft.util.datafix.fixes.AdvancementsRenameFix#makeRule` | `crates/mc-math/src/ported/advancements_rename_fix.rs` | 59 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.AreaEffectCloudDurationScaleFix#<init>` | `crates/mc-math/src/ported/area_effect_cloud_duration_scale_fix.rs` | 82 | `new` |
@@ -6059,6 +6067,8 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#<init>` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 54 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fix` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 70 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityFurnaceBurnTimeFix#fixBurnTime` | `crates/mc-math/src/ported/block_entity_furnace_burn_time_fix.rs` | 61 | `fix_burn_time` |
+| `net.minecraft.util.datafix.fixes.BlockEntityJukeboxFix#<init>` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 124 | `new` |
+| `net.minecraft.util.datafix.fixes.BlockEntityJukeboxFix#fix` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 129 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityKeepPacked#BlockEntityKeepPacked` | `crates/mc-math/src/ported/block_entity_keep_packed.rs` | 111 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockEntityKeepPacked#fix` | `crates/mc-math/src/ported/block_entity_keep_packed.rs` | 127 | `fix` |
 | `net.minecraft.util.datafix.fixes.BlockEntityKeepPacked#fixTag` | `crates/mc-math/src/ported/block_entity_keep_packed.rs` | 122 | `fix_tag` |
@@ -6097,6 +6107,9 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.CopperGolemWeatherStateFix#<init>` | `crates/mc-math/src/ported/copper_golem_weather_state_fix.rs` | 40 | `new` |
 | `net.minecraft.util.datafix.fixes.CopperGolemWeatherStateFix#fix` | `crates/mc-math/src/ported/copper_golem_weather_state_fix.rs` | 45 | `fix` |
 | `net.minecraft.util.datafix.fixes.CopperGolemWeatherStateFix#fixWeatherState` | `crates/mc-math/src/ported/copper_golem_weather_state_fix.rs` | 50 | `fix_weather_state` |
+| `net.minecraft.util.datafix.fixes.CriteriaRenameFix#<init>` | `crates/mc-math/src/ported/criteria_rename_fix.rs` | 95 | `new` |
+| `net.minecraft.util.datafix.fixes.CriteriaRenameFix#fixAdvancements` | `crates/mc-math/src/ported/criteria_rename_fix.rs` | 114 | `fix_advancements` |
+| `net.minecraft.util.datafix.fixes.CriteriaRenameFix#makeRule` | `crates/mc-math/src/ported/criteria_rename_fix.rs` | 109 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.CustomModelDataExpandFix#<init>` | `crates/mc-math/src/ported/custom_model_data_expand_fix.rs` | 70 | `new` |
 | `net.minecraft.util.datafix.fixes.CustomModelDataExpandFix#makeRule` | `crates/mc-math/src/ported/custom_model_data_expand_fix.rs` | 75 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.DebugProfileOverlayReferenceFix#<init>` | `crates/mc-math/src/ported/debug_profile_overlay_reference_fix.rs` | 67 | `new` |
@@ -6173,6 +6186,11 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.GoatHornIdFix#fixItemStackTag` | `crates/mc-math/src/ported/goat_horn_id_fix.rs` | 86 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.GossipUUIDFix#<init>` | `crates/mc-math/src/ported/gossip_uuid_fix.rs` | 142 | `new` |
 | `net.minecraft.util.datafix.fixes.GossipUUIDFix#fix` | `crates/mc-math/src/ported/gossip_uuid_fix.rs` | 151 | `fix` |
+| `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#<init>` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 83 | `new` |
+| `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#fixTag` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 95 | `fix_tag` |
+| `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#isIglooPiece` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 125 | `is_igloo_piece` |
+| `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#makeRule` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 90 | `apply` |
+| `net.minecraft.util.datafix.fixes.IglooMetadataRemovalFix#removeIglooPieces` | `crates/mc-math/src/ported/igloo_metadata_removal_fix.rs` | 111 | `remove_igloo_pieces` |
 | `net.minecraft.util.datafix.fixes.InvalidBlockEntityLockFix#<init>` | `crates/mc-math/src/ported/invalid_block_entity_lock_fix.rs` | 60 | `new` |
 | `net.minecraft.util.datafix.fixes.InvalidBlockEntityLockFix#makeRule` | `crates/mc-math/src/ported/invalid_block_entity_lock_fix.rs` | 65 | `fix_dynamic` |
 | `net.minecraft.util.datafix.fixes.InvalidLockComponentFix#<init>` | `crates/mc-math/src/ported/invalid_lock_component_fix.rs` | 32 | `new` |
@@ -6181,6 +6199,17 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.InvalidLockComponentFix#fixLock` | `crates/mc-math/src/ported/invalid_lock_component_fix.rs` | 42 | `fix_lock` |
 | `net.minecraft.util.datafix.fixes.InvalidLockComponentFix#isBrokenLock` | `crates/mc-math/src/ported/invalid_lock_component_fix.rs` | 58 | `is_broken_lock` |
 | `net.minecraft.util.datafix.fixes.InvalidLockComponentFix#isMapWithOneField` | `crates/mc-math/src/ported/invalid_lock_component_fix.rs` | 67 | `is_map_with_one_field` |
+| `net.minecraft.util.datafix.fixes.ItemCustomNameToComponentFix#<init>` | `crates/mc-math/src/ported/item_custom_name_to_component_fix.rs` | 83 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemCustomNameToComponentFix#makeRule` | `crates/mc-math/src/ported/item_custom_name_to_component_fix.rs` | 88 | `fix` |
+| `net.minecraft.util.datafix.fixes.ItemIdFix#getItem` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 80 | `get_item` |
+| `net.minecraft.util.datafix.fixes.ItemLoreFix#<init>` | `crates/mc-math/src/ported/item_lore_fix.rs` | 59 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemLoreFix#makeRule` | `crates/mc-math/src/ported/item_lore_fix.rs` | 64 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#<init>` | `crates/mc-math/src/ported/item_rename_fix.rs` | 60 | `new` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#create` | `crates/mc-math/src/ported/item_rename_fix.rs` | 30 | `create` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#create` | `crates/mc-math/src/ported/item_rename_fix.rs` | 68 | `create_item_rename_fix` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#fixItem` | `crates/mc-math/src/ported/item_rename_fix.rs` | 7 | `fix_item` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#fixItem` | `crates/mc-math/src/ported/item_rename_fix.rs` | 47 | `fix_item` |
+| `net.minecraft.util.datafix.fixes.ItemRenameFix#makeRule` | `crates/mc-math/src/ported/item_rename_fix.rs` | 10 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#<init>` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 206 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#fixItemStackTag` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 220 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#getInputSchema` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 215 | `get_input_schema` |
@@ -6190,6 +6219,7 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag (test impl)` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 147 | `fix_fn` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag (test impl)` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 191 | `overflow_fix` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagRemainderFix#fixItemStackTag (test impl)` | `crates/mc-math/src/ported/item_stack_tag_remainder_fix.rs` | 218 | `identity_fix` |
+| `net.minecraft.util.datafix.fixes.ItemStackTheFlatteningFix#updateItem` | `crates/mc-math/src/ported/block_entity_jukebox_fix.rs` | 101 | `update_item` |
 | `net.minecraft.util.datafix.fixes.JigsawPropertiesFix#fix` | `crates/mc-math/src/ported/jigsaw_properties_fix.rs` | 92 | `fix` |
 | `net.minecraft.util.datafix.fixes.JigsawPropertiesFix#fixTag` | `crates/mc-math/src/ported/jigsaw_properties_fix.rs` | 81 | `fix_tag` |
 | `net.minecraft.util.datafix.fixes.JigsawRotationFix#<init>` | `crates/mc-math/src/ported/jigsaw_rotation_fix.rs` | 69 | `new` |
@@ -6198,6 +6228,8 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#<init>` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#fix` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 65 | `fix` |
 | `net.minecraft.util.datafix.fixes.JukeboxTicksSinceSongStartedFix#fixTag` | `crates/mc-math/src/ported/jukebox_ticks_since_song_started_fix.rs` | 38 | `fix_tag` |
+| `net.minecraft.util.datafix.fixes.LevelLegacyWorldGenSettingsFix#<init>` | `crates/mc-math/src/ported/level_legacy_world_gen_settings_fix.rs` | 84 | `new` |
+| `net.minecraft.util.datafix.fixes.LevelLegacyWorldGenSettingsFix#makeRule` | `crates/mc-math/src/ported/level_legacy_world_gen_settings_fix.rs` | 89 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.LockComponentPredicateFix#LockComponentPredicateFix` | `crates/mc-math/src/ported/lock_component_predicate_fix.rs` | 60 | `new` |
 | `net.minecraft.util.datafix.fixes.LockComponentPredicateFix#fixComponent` | `crates/mc-math/src/ported/lock_component_predicate_fix.rs` | 65 | `fix_component` |
 | `net.minecraft.util.datafix.fixes.LockComponentPredicateFix#fixLock` | `crates/mc-math/src/ported/container_block_entity_lock_predicate_fix.rs` | 114 | `lock_component_predicate_fix_lock` |
@@ -6232,6 +6264,11 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.OptionsFancyGraphicsToGraphicsModeFix#fixGraphicsMode` | `crates/mc-math/src/ported/options_fancy_graphics_to_graphics_mode_fix.rs` | 61 | `fix_graphics_mode` |
 | `net.minecraft.util.datafix.fixes.OptionsForceVBOFix#<init>` | `crates/mc-math/src/ported/options_force_vbo_fix.rs` | 163 | `new` |
 | `net.minecraft.util.datafix.fixes.OptionsForceVBOFix#makeRule` | `crates/mc-math/src/ported/options_force_vbo_fix.rs` | 170 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.OptionsGraphicsModeSplitFix#<init>` | `crates/mc-math/src/ported/options_graphics_mode_split_fix.rs` | 68 | `new` |
+| `net.minecraft.util.datafix.fixes.OptionsGraphicsModeSplitFix#getValue` | `crates/mc-math/src/ported/options_graphics_mode_split_fix.rs` | 83 | `get_value` |
+| `net.minecraft.util.datafix.fixes.OptionsGraphicsModeSplitFix#makeRule` | `crates/mc-math/src/ported/options_graphics_mode_split_fix.rs` | 92 | `fix` |
+| `net.minecraft.util.datafix.fixes.OptionsKeyTranslationFix#<init>` | `crates/mc-math/src/ported/options_key_translation_fix.rs` | 39 | `new` |
+| `net.minecraft.util.datafix.fixes.OptionsKeyTranslationFix#makeRule` | `crates/mc-math/src/ported/options_key_translation_fix.rs` | 46 | `apply` |
 | `net.minecraft.util.datafix.fixes.OptionsLowerCaseLanguageFix#<init>` | `crates/mc-math/src/ported/options_lower_case_language_fix.rs` | 90 | `new` |
 | `net.minecraft.util.datafix.fixes.OptionsLowerCaseLanguageFix#makeRule` | `crates/mc-math/src/ported/options_lower_case_language_fix.rs` | 98 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.OptionsMenuBlurrinessFix#<init>` | `crates/mc-math/src/ported/options_menu_blurriness_fix.rs` | 51 | `new` |
@@ -6302,6 +6339,8 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.datafix.fixes.WeaponSmithChestLootTableFix#fix` | `crates/mc-math/src/ported/weapon_smith_chest_loot_table_fix.rs` | 106 | `fix` |
 | `net.minecraft.util.datafix.fixes.WorldBorderWarningTimeFix#<init>` | `crates/mc-math/src/ported/world_border_warning_time_fix.rs` | 86 | `new` |
 | `net.minecraft.util.datafix.fixes.WorldBorderWarningTimeFix#makeRule` | `crates/mc-math/src/ported/world_border_warning_time_fix.rs` | 94 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.WorldSpawnDataFix#<init>` | `crates/mc-math/src/ported/world_spawn_data_fix.rs` | 80 | `new` |
+| `net.minecraft.util.datafix.fixes.WorldSpawnDataFix#makeRule` | `crates/mc-math/src/ported/world_spawn_data_fix.rs` | 85 | `apply` |
 | `net.minecraft.util.datafix.fixes.WriteAndReadFix#<init>` | `crates/mc-math/src/ported/write_and_read_fix.rs` | 32 | `new` |
 | `net.minecraft.util.datafix.fixes.WriteAndReadFix#makeRule` | `crates/mc-math/src/ported/write_and_read_fix.rs` | 69 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.WrittenBookPagesStrictJsonFix#<init>` | `crates/mc-math/src/ported/written_book_pages_strict_json_fix.rs` | 239 | `new` |
@@ -6738,6 +6777,18 @@ Total mapped Java symbols: **8630** across **1939** classes.
 | `net.minecraft.util.debugchart.TpsDebugDimensions#ordinal` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 38 | `ordinal` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#valueOf` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 59 | `value_of` |
 | `net.minecraft.util.debugchart.TpsDebugDimensions#values` | `crates/mc-math/src/ported/tps_debug_dimensions.rs` | 26 | `values` |
+| `net.minecraft.util.eventlog.JsonEventLog#<init>` | `crates/mc-math/src/ported/json_event_log.rs` | 128 | `new` |
+| `net.minecraft.util.eventlog.JsonEventLog#close` | `crates/mc-math/src/ported/json_event_log.rs` | 184 | `close` |
+| `net.minecraft.util.eventlog.JsonEventLog#open` | `crates/mc-math/src/ported/json_event_log.rs` | 138 | `open` |
+| `net.minecraft.util.eventlog.JsonEventLog#openReader` | `crates/mc-math/src/ported/json_event_log.rs` | 166 | `open_reader` |
+| `net.minecraft.util.eventlog.JsonEventLog#releaseReference` | `crates/mc-math/src/ported/json_event_log.rs` | 102 | `release_reference` |
+| `net.minecraft.util.eventlog.JsonEventLog#releaseReference` | `crates/mc-math/src/ported/json_event_log.rs` | 189 | `release_reference` |
+| `net.minecraft.util.eventlog.JsonEventLog#write` | `crates/mc-math/src/ported/json_event_log.rs` | 149 | `write` |
+| `net.minecraft.util.eventlog.JsonEventLogReader#close` | `crates/mc-math/src/ported/json_event_log.rs` | 83 | `close` |
+| `net.minecraft.util.eventlog.JsonEventLogReader#close` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 71 | `close` |
+| `net.minecraft.util.eventlog.JsonEventLogReader#create` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 21 | `create` |
+| `net.minecraft.util.eventlog.JsonEventLogReader#next` | `crates/mc-math/src/ported/json_event_log.rs` | 29 | `next` |
+| `net.minecraft.util.eventlog.JsonEventLogReader#next` | `crates/mc-math/src/ported/json_event_log_reader.rs` | 31 | `next` |
 | `net.minecraft.util.parsing.packrat.Atom#name` | `crates/mc-math/src/ported/atom.rs` | 29 | `name` |
 | `net.minecraft.util.parsing.packrat.Atom#of` | `crates/mc-math/src/ported/atom.rs` | 21 | `of` |
 | `net.minecraft.util.parsing.packrat.Atom#toString` | `crates/mc-math/src/ported/atom.rs` | 36 | `fmt` |
