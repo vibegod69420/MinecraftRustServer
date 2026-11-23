@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9509** across **2160** classes.
+Total mapped Java symbols: **9513** across **2162** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6502,6 +6502,8 @@ Total mapped Java symbols: **9509** across **2160** classes.
 | `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#ChunkBedBlockEntityInjecterFix` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 95 | `new` |
 | `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#cap` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 110 | `cap` |
 | `net.minecraft.util.datafix.fixes.ChunkBedBlockEntityInjecterFix#makeRule` | `crates/mc-math/src/ported/chunk_bed_block_entity_injecter_fix.rs` | 103 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ChunkBiomeFix#<init>` | `crates/mc-math/src/ported/chunk_biome_fix.rs` | 5 | `new` |
+| `net.minecraft.util.datafix.fixes.ChunkBiomeFix#makeRule` | `crates/mc-math/src/ported/chunk_biome_fix.rs` | 10 | `fix_biomes` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteIgnoredLightDataFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_ignored_light_data_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteLightFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_light_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkLightRemoveFix#<init>` | `crates/mc-math/src/ported/chunk_light_remove_fix.rs` | 50 | `new` |
@@ -7380,6 +7382,8 @@ Total mapped Java symbols: **9509** across **2160** classes.
 | `net.minecraft.util.datafix.schemas.V2707#registerEntities` | `crates/mc-math/src/ported/v2707.rs` | 80 | `register_entities` |
 | `net.minecraft.util.datafix.schemas.V2831#<init>` | `crates/mc-math/src/ported/v2831.rs` | 135 | `new` |
 | `net.minecraft.util.datafix.schemas.V2831#registerTypes` | `crates/mc-math/src/ported/v2831.rs` | 142 | `register_types` |
+| `net.minecraft.util.datafix.schemas.V2832#<init>` | `crates/mc-math/src/ported/v2832.rs` | 184 | `new` |
+| `net.minecraft.util.datafix.schemas.V2832#registerTypes` | `crates/mc-math/src/ported/v2832.rs` | 195 | `register_types` |
 | `net.minecraft.util.datafix.schemas.V2842#<init>` | `crates/mc-math/src/ported/v2842.rs` | 118 | `new` |
 | `net.minecraft.util.datafix.schemas.V2842#registerTypes` | `crates/mc-math/src/ported/v2842.rs` | 125 | `register_types` |
 | `net.minecraft.util.datafix.schemas.V3076#<init>` | `crates/mc-math/src/ported/v3076.rs` | 52 | `new` |
