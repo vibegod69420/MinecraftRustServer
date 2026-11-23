@@ -124,3 +124,4 @@ pub mod exploration_map_function;
 pub mod set_attributes_function;
 pub mod loot_pool;
 pub mod copy_custom_data_function;
+pub mod copy_components_function;

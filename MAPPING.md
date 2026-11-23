@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4847** across **1143** classes.
+Total mapped Java symbols: **4865** across **1147** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5430,9 +5430,11 @@ Total mapped Java symbols: **4847** across **1143** classes.
 | `net.minecraft.world.level.storage.loot.LootContext$EntityTarget#contextParam` | `crates/mc-nbt/src/ported/loot_item_entity_property_condition.rs` | 44 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContext.EntityTarget#contextParam` | `crates/mc-nbt/src/ported/entity_has_score_condition.rs` | 17 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#cast` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 66 | `cast` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#contextParam` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 131 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#contextParam` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 42 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#contextParam` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 60 | `context_param` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#createArgCodec` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 199 | `create_arg_codec` |
+| `net.minecraft.world.level.storage.loot.LootContextArg#get` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 139 | `get` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 39 | `get` |
 | `net.minecraft.world.level.storage.loot.LootContextArg#get` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 55 | `get` |
 | `net.minecraft.world.level.storage.loot.LootContextArg$ArgCodecBuilder#anyBlockEntity` | `crates/mc-nbt/src/ported/loot_context_arg.rs` | 167 | `any_block_entity` |
@@ -5529,6 +5531,24 @@ Total mapped Java symbols: **4847** across **1143** classes.
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#explosionDecay` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 59 | `explosion_decay` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#getType` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 36 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay#run` | `crates/mc-nbt/src/ported/apply_explosion_decay.rs` | 41 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#<init>` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 161 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#copyComponentsFromBlockEntity` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 241 | `copy_components_from_block_entity` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#copyComponentsFromEntity` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 236 | `copy_components_from_entity` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 201 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#getType` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 196 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction#run` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 208 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$BlockEntitySource#<init>` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 104 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$BlockEntitySource#contextParam` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 109 | `context_param` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$BlockEntitySource#get` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 114 | `resolve` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#<init>` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 272 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#build` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 308 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#exclude` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 290 | `exclude` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#getConditions` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 303 | `get_conditions` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#getThis` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 298 | `get_this` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$Builder#include` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 282 | `include` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$DirectSource#<init>` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 78 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$DirectSource#contextParam` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 83 | `context_param` |
+| `net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction$DirectSource#get` | `crates/mc-nbt/src/ported/copy_components_function.rs` | 88 | `resolve` |
 | `net.minecraft.world.level.storage.loot.functions.CopyCustomDataFunction#<init>` | `crates/mc-nbt/src/ported/copy_custom_data_function.rs` | 305 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.CopyCustomDataFunction#copyData` | `crates/mc-nbt/src/ported/copy_custom_data_function.rs` | 348 | `copy_data` |
 | `net.minecraft.world.level.storage.loot.functions.CopyCustomDataFunction#copyData` | `crates/mc-nbt/src/ported/copy_custom_data_function.rs` | 353 | `copy_data_from_entity_target` |
