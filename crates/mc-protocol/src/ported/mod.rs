@@ -349,3 +349,6 @@ pub mod tick_task;
 pub mod clientbound_boss_event_packet;
 pub mod serverbound_set_structure_block_packet;
 pub mod server_tick_rate_manager;
+pub mod packet_decoder;
+pub mod packet_processor;
+pub mod hashed_patch_map;
