@@ -540,3 +540,6 @@ pub mod wall_property_fix;
 pub mod effect_duration_fix;
 pub mod block_entity_sign_double_sided_editable_text_fix;
 pub mod caves_and_cliffs_renames;
+pub mod chested_horses_inventory_zero_indexing_fix;
+pub mod item_shulker_box_color_fix;
+pub mod stats_rename_fix;

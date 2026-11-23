@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8958** across **2039** classes.
+Total mapped Java symbols: **8968** across **2044** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -35,6 +35,10 @@ Total mapped Java symbols: **8958** across **2039** classes.
 | `Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, Identifier.withDefaultNamespace($$0), new LootItemConditionType($$1))` | `crates/mc-nbt/src/ported/loot_item_conditions.rs` | 65 | `<item>` |
 | `START_PRESENT` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 38 | `<item>` |
 | `STREAM_CODEC models StreamCodec.composite(ByteBufCodecs.VAR_INT, slot getter, constructor)` | `crates/mc-protocol/src/ported/clientbound_set_held_slot_packet.rs` | 23 | `<item>` |
+| `StatsRenameFix#createCriteriaRule` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 38 | `rename` |
+| `StatsRenameFix#createCriteriaRule()` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 47 | `apply_criteria_renames` |
+| `StatsRenameFix#createStatRule()` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 56 | `apply_stat_renames` |
+| `StatsRenameFix.<init>(Schema, String, Map<String, String>)` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 19 | `new` |
 | `StreamCodec.composite(GameType.STREAM_CODEC, mode getter, constructor)` | `crates/mc-protocol/src/ported/serverbound_change_game_mode_packet.rs` | 31 | `<item>` |
 | `Util.pauseInIde(...) is an IDE debug hook` | `crates/mc-math/src/ported/weighted_random.rs` | 42 | `<item>` |
 | `VERSION_CUSTOM (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 172 | `<item>` |
@@ -6222,6 +6226,13 @@ Total mapped Java symbols: **8958** across **2039** classes.
 | `net.minecraft.util.datafix.fixes.CauldronRenameFix#fix` | `crates/mc-math/src/ported/cauldron_rename_fix.rs` | 101 | `fix` |
 | `net.minecraft.util.datafix.fixes.CauldronRenameFix#makeRule` | `crates/mc-math/src/ported/cauldron_rename_fix.rs` | 116 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.CavesAndCliffsRenames#<init>` | `crates/mc-math/src/ported/caves_and_cliffs_renames.rs` | 83 | `new` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#<init>` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 110 | `new` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#horseLikeInventoryIndexingFixer` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 50 | `create_byte` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#horseLikeInventoryIndexingFixer` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 147 | `horse_like_inventory_indexing_fixer` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#horseLikeInventoryIndexingFixer` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 167 | `fix_entity_dynamic` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#horseLikeInventoryIndexingFixer` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 191 | `fix_item_stack_slot` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#makeRule` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 28 | `as_int` |
+| `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix#makeRule` | `crates/mc-math/src/ported/chested_horses_inventory_zero_indexing_fix.rs` | 117 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteIgnoredLightDataFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_ignored_light_data_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkDeleteLightFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_light_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkLightRemoveFix#<init>` | `crates/mc-math/src/ported/chunk_light_remove_fix.rs` | 50 | `new` |
@@ -6383,6 +6394,8 @@ Total mapped Java symbols: **8958** across **2039** classes.
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#fixItem` | `crates/mc-math/src/ported/item_rename_fix.rs` | 7 | `fix_item` |
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#fixItem` | `crates/mc-math/src/ported/item_rename_fix.rs` | 47 | `fix_item` |
 | `net.minecraft.util.datafix.fixes.ItemRenameFix#makeRule` | `crates/mc-math/src/ported/item_rename_fix.rs` | 10 | `apply` |
+| `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#NAMES_BY_COLOR` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 35 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix#makeRule` | `crates/mc-math/src/ported/item_shulker_box_color_fix.rs` | 55 | `<item>` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#<init>` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.ItemStackMapIdFix#makeRule` | `crates/mc-math/src/ported/item_stack_map_id_fix.rs` | 64 | `apply` |
 | `net.minecraft.util.datafix.fixes.ItemStackTagFix#<init>` | `crates/mc-math/src/ported/item_stack_tag_fix.rs` | 106 | `new` |
@@ -6553,6 +6566,7 @@ Total mapped Java symbols: **8958** across **2039** classes.
 | `net.minecraft.util.datafix.fixes.SpawnerDataFix#makeRule` | `crates/mc-math/src/ported/spawner_data_fix.rs` | 110 | `fix_spawner` |
 | `net.minecraft.util.datafix.fixes.SpawnerDataFix#wrapEntityToSpawnData` | `crates/mc-math/src/ported/spawner_data_fix.rs` | 127 | `wrap_entity_to_spawn_data` |
 | `net.minecraft.util.datafix.fixes.SpawnerDataFix#wrapSpawnPotentialsToWeightedEntries` | `crates/mc-math/src/ported/spawner_data_fix.rs` | 136 | `wrap_spawn_potentials_to_weighted_entries` |
+| `net.minecraft.util.datafix.fixes.StatsRenameFix` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 11 | `<item>` |
 | `net.minecraft.util.datafix.fixes.StriderGravityFix#<init>` | `crates/mc-math/src/ported/strider_gravity_fix.rs` | 91 | `new` |
 | `net.minecraft.util.datafix.fixes.StriderGravityFix#fix` | `crates/mc-math/src/ported/strider_gravity_fix.rs` | 112 | `fix` |
 | `net.minecraft.util.datafix.fixes.StriderGravityFix#fixTag` | `crates/mc-math/src/ported/strider_gravity_fix.rs` | 102 | `fix_tag` |
