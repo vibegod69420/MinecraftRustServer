@@ -240,3 +240,5 @@ pub mod clientbound_container_set_data_packet;
 pub mod packet_bundle_packer;
 pub mod varint21_frame_decoder;
 pub mod utf8_string;
+pub mod styled_format;
+pub mod status_protocols;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5116** across **1198** classes.
+Total mapped Java symbols: **5129** across **1201** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1501,6 +1501,7 @@ Total mapped Java symbols: **5116** across **1198** classes.
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/serverbound_entity_tag_query_packet.rs` | 17 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 9 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 16 | `from_bytes` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/status_protocols.rs` | 24 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>()` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 35 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#asByteBuf` | `crates/mc-protocol/src/ported/clientbound_place_ghost_recipe_packet.rs` | 23 | `as_bytes` |
 | `net.minecraft.network.FriendlyByteBuf#asByteBuf` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 23 | `as_bytes` |
@@ -1998,6 +1999,12 @@ Total mapped Java symbols: **5116** across **1198** classes.
 | `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 70 | `stream_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatType#streamCodec` | `crates/mc-protocol/src/ported/number_format_type.rs` | 92 | `stream_codec` |
 | `net.minecraft.network.chat.numbers.NumberFormatTypes#bootstrap` | `crates/mc-protocol/src/ported/number_format_types.rs` | 139 | `bootstrap` |
+| `net.minecraft.network.chat.numbers.StyledFormat#<init>` | `crates/mc-protocol/src/ported/styled_format.rs` | 91 | `new` |
+| `net.minecraft.network.chat.numbers.StyledFormat#format` | `crates/mc-protocol/src/ported/styled_format.rs` | 103 | `format` |
+| `net.minecraft.network.chat.numbers.StyledFormat#style` | `crates/mc-protocol/src/ported/styled_format.rs` | 96 | `style` |
+| `net.minecraft.network.chat.numbers.StyledFormat#type` | `crates/mc-protocol/src/ported/styled_format.rs` | 108 | `number_format_type` |
+| `net.minecraft.network.chat.numbers.StyledFormat$1#mapCodec` | `crates/mc-protocol/src/ported/styled_format.rs` | 58 | `map_codec` |
+| `net.minecraft.network.chat.numbers.StyledFormat$1#streamCodec` | `crates/mc-protocol/src/ported/styled_format.rs` | 63 | `stream_codec` |
 | `net.minecraft.network.codec.ByteBufCodecs#CONTAINER_ID decode` | `crates/mc-protocol/src/ported/serverbound_place_recipe_packet.rs` | 102 | `read_container_id` |
 | `net.minecraft.network.codec.ByteBufCodecs#CONTAINER_ID encode` | `crates/mc-protocol/src/ported/serverbound_place_recipe_packet.rs` | 107 | `write_container_id` |
 | `net.minecraft.network.codec.ByteBufCodecs#ROTATION_BYTE` | `crates/mc-protocol/src/ported/clientbound_move_minecart_packet.rs` | 155 | `read_rotation_byte` |
@@ -2069,12 +2076,16 @@ Total mapped Java symbols: **5116** across **1198** classes.
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#<init>` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 279 | `new` |
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#add` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 287 | `add` |
 | `net.minecraft.network.protocol.ProtocolCodecBuilder#build` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 304 | `build` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket` | `crates/mc-protocol/src/ported/status_protocols.rs` | 148 | `add_packet` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#addPacket(PacketType, StreamCodec)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 118 | `add_packet` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#clientboundProtocol` | `crates/mc-protocol/src/ported/status_protocols.rs` | 130 | `clientbound_protocol` |
+| `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol` | `crates/mc-protocol/src/ported/status_protocols.rs` | 112 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.ProtocolInfoBuilder#serverboundProtocol(ConnectionProtocol, Consumer)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 162 | `serverbound_protocol` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 27 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 29 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 56 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/simple_unbound_protocol.rs` | 95 | `bind` |
+| `net.minecraft.network.protocol.SimpleUnboundProtocol#bind` | `crates/mc-protocol/src/ported/status_protocols.rs` | 90 | `bind` |
 | `net.minecraft.network.protocol.SimpleUnboundProtocol#bind(Function)` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 139 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 27 | `bind` |
 | `net.minecraft.network.protocol.UnboundProtocol#bind` | `crates/mc-protocol/src/ported/unbound_protocol.rs` | 29 | `bind` |
@@ -3048,6 +3059,10 @@ Total mapped Java symbols: **5116** across **1198** classes.
 | `net.minecraft.network.protocol.status.StatusPacketTypes#SERVERBOUND_STATUS_REQUEST` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 71 | `create_clientbound` |
 | `net.minecraft.network.protocol.status.StatusPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 75 | `create_clientbound` |
 | `net.minecraft.network.protocol.status.StatusPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/status_packet_types.rs` | 83 | `create_serverbound` |
+| `net.minecraft.network.protocol.status.StatusProtocols#CLIENTBOUND` | `crates/mc-protocol/src/ported/status_protocols.rs` | 250 | `clientbound` |
+| `net.minecraft.network.protocol.status.StatusProtocols#CLIENTBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/status_protocols.rs` | 235 | `clientbound_template` |
+| `net.minecraft.network.protocol.status.StatusProtocols#SERVERBOUND` | `crates/mc-protocol/src/ported/status_protocols.rs` | 230 | `serverbound` |
+| `net.minecraft.network.protocol.status.StatusProtocols#SERVERBOUND_TEMPLATE` | `crates/mc-protocol/src/ported/status_protocols.rs` | 216 | `serverbound_template` |
 | `net.minecraft.network.syncher.EntityDataAccessor#equals` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 35 | `eq` |
 | `net.minecraft.network.syncher.EntityDataAccessor#hashCode` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 44 | `hash` |
 | `net.minecraft.network.syncher.EntityDataAccessor#toString` | `crates/mc-protocol/src/ported/entity_data_accessor.rs` | 51 | `fmt` |
