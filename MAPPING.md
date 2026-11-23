@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4398** across **1076** classes.
+Total mapped Java symbols: **4407** across **1078** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4250,6 +4250,12 @@ Total mapped Java symbols: **4398** across **1076** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 135 | `create_foliage` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 169 | `should_skip_location` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#type` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 111 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 120 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 183 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 265 | `foliage_height` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 298 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 275 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer#type` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 125 | `foliage_placer_type` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 101 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 194 | `create_foliage` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 226 | `should_skip_location` |
@@ -4259,6 +4265,7 @@ Total mapped Java symbols: **4398** across **1076** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 119 | `foliage_radius` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 117 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/blob_foliage_placer.rs` | 202 | `place_leaves_row` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 155 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 132 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 143 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/mega_pine_foliage_placer.rs` | 222 | `place_leaves_row` |
@@ -4266,6 +4273,7 @@ Total mapped Java symbols: **4398** across **1076** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 126 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 144 | `should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/blob_foliage_placer.rs` | 178 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 130 | `base_should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 159 | `should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 118 | `should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/mega_pine_foliage_placer.rs` | 198 | `should_skip_location_signed` |
@@ -4273,6 +4281,7 @@ Total mapped Java symbols: **4398** across **1076** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 153 | `should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 166 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/blob_foliage_placer.rs` | 235 | `try_place_leaf` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/dark_oak_foliage_placer.rs` | 98 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 181 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/mega_pine_foliage_placer.rs` | 255 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 168 | `try_place_leaf` |
@@ -4729,6 +4738,9 @@ Total mapped Java symbols: **4398** across **1076** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 99 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#getType` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 142 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#processBlock` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 104 | `process_block` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor#<init>` | `crates/mc-worldgen/src/ported/jigsaw_replacement_processor.rs` | 93 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor#getType` | `crates/mc-worldgen/src/ported/jigsaw_replacement_processor.rs` | 147 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.JigsawReplacementProcessor#processBlock` | `crates/mc-worldgen/src/ported/jigsaw_replacement_processor.rs` | 98 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor#getType` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 107 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor#processBlock` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 84 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LinearPosTest#<init>` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 52 | `new` |

@@ -214,3 +214,5 @@ pub mod mega_pine_foliage_placer;
 pub mod foliage_placer_type;
 pub mod piece_generator_supplier;
 pub mod pieces_container;
+pub mod jigsaw_replacement_processor;
+pub mod dark_oak_foliage_placer;
