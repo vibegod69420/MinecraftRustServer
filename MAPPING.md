@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9221** across **2114** classes.
+Total mapped Java symbols: **9255** across **2121** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5501,6 +5501,15 @@ Total mapped Java symbols: **9221** across **2114** classes.
 | `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#values` | `crates/mc-math/src/ported/extra_codecs.rs` | 279 | `values` |
 | `net.minecraft.util.ExtraCodecs.TagOrElementLocation#decoratedId` | `crates/mc-math/src/ported/extra_codecs.rs` | 20 | `decorated_id` |
 | `net.minecraft.util.ExtraCodecs.TagOrElementLocation#toString` | `crates/mc-math/src/ported/extra_codecs.rs` | 31 | `fmt` |
+| `net.minecraft.util.FastBufferedInputStream#<init>(InputStream)` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 13 | `new` |
+| `net.minecraft.util.FastBufferedInputStream#<init>(InputStream, int)` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 18 | `with_capacity` |
+| `net.minecraft.util.FastBufferedInputStream#available` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 102 | `available` |
+| `net.minecraft.util.FastBufferedInputStream#bytesInBuffer` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 28 | `bytes_in_buffer` |
+| `net.minecraft.util.FastBufferedInputStream#close` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 109 | `close` |
+| `net.minecraft.util.FastBufferedInputStream#fill` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 33 | `fill` |
+| `net.minecraft.util.FastBufferedInputStream#read()` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 44 | `read_byte` |
+| `net.minecraft.util.FastBufferedInputStream#read(byte[], int, int)` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 57 | `read_into` |
+| `net.minecraft.util.FastBufferedInputStream#skip` | `crates/mc-math/src/ported/fast_buffered_input_stream.rs` | 85 | `skip` |
 | `net.minecraft.util.FileSystemUtil#safeGetPath` | `crates/mc-math/src/ported/file_system_util.rs` | 87 | `safe_get_path` |
 | `net.minecraft.util.FileUtil#containsAllowedCharactersOnly` | `crates/mc-math/src/ported/file_util.rs` | 492 | `contains_allowed_characters_only` |
 | `net.minecraft.util.FileUtil#createDirectoriesSafe` | `crates/mc-math/src/ported/file_util.rs` | 517 | `create_directories_safe` |
@@ -5933,6 +5942,10 @@ Total mapped Java symbols: **9221** across **2114** classes.
 | `net.minecraft.util.SegmentedAnglePrecision#normalize` | `crates/mc-math/src/ported/segmented_angle_precision.rs` | 78 | `normalize` |
 | `net.minecraft.util.SegmentedAnglePrecision#toDegrees` | `crates/mc-math/src/ported/segmented_angle_precision.rs` | 68 | `to_degrees` |
 | `net.minecraft.util.SegmentedAnglePrecision#toDegreesWithTurns` | `crates/mc-math/src/ported/segmented_angle_precision.rs` | 63 | `to_degrees_with_turns` |
+| `net.minecraft.util.SequencedPriorityIterator#<init>` | `crates/mc-math/src/ported/sequenced_priority_iterator.rs` | 10 | `new` |
+| `net.minecraft.util.SequencedPriorityIterator#add` | `crates/mc-math/src/ported/sequenced_priority_iterator.rs` | 19 | `add` |
+| `net.minecraft.util.SequencedPriorityIterator#computeNext` | `crates/mc-math/src/ported/sequenced_priority_iterator.rs` | 39 | `compute_next` |
+| `net.minecraft.util.SequencedPriorityIterator#switchCacheToNextHighestPrioQueue` | `crates/mc-math/src/ported/sequenced_priority_iterator.rs` | 58 | `switch_cache_to_next_highest_prio_queue` |
 | `net.minecraft.util.SignatureUpdater` | `crates/mc-math/src/ported/signer.rs` | 5 | `update` |
 | `net.minecraft.util.SignatureUpdater#update` | `crates/mc-math/src/ported/signature_updater.rs` | 40 | `update` |
 | `net.minecraft.util.SignatureUpdater#update` | `crates/mc-math/src/ported/signer.rs` | 7 | `update` |
@@ -7915,6 +7928,28 @@ Total mapped Java symbols: **9221** across **2114** classes.
 | `net.minecraft.util.thread.BlockableEventLoop#wrapRunnable` | `crates/mc-math/src/ported/blockable_event_loop.rs` | 109 | `wrap_runnable` |
 | `net.minecraft.util.thread.ConsecutiveExecutor#<init>` | `crates/mc-math/src/ported/consecutive_executor.rs` | 146 | `new` |
 | `net.minecraft.util.thread.ConsecutiveExecutor#wrapRunnable` | `crates/mc-math/src/ported/consecutive_executor.rs` | 160 | `wrap_runnable` |
+| `net.minecraft.util.thread.ParallelMapTransform#schedule` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 458 | `schedule` |
+| `net.minecraft.util.thread.ParallelMapTransform#schedule` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 502 | `schedule_default` |
+| `net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter#<init>` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 430 | `batched_task_splitter_new` |
+| `net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter#batchSize` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 333 | `batched_batch_size` |
+| `net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter#createTask` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 342 | `batched_create_task` |
+| `net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter#scheduleBatch` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 369 | `batched_schedule_batch` |
+| `net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter#scheduleFinalOperation` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 389 | `batched_schedule_final_operation` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#<init>` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 127 | `new` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#applyOperation` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 147 | `apply_operation` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#copyOut` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 156 | `copy_out` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#input` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 104 | `input` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#key` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 99 | `key` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#output` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 112 | `output` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#put` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 140 | `put` |
+| `net.minecraft.util.thread.ParallelMapTransform$Container#size` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 169 | `size` |
+| `net.minecraft.util.thread.ParallelMapTransform$SingleTaskSplitter#<init>` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 422 | `single_task_splitter_new` |
+| `net.minecraft.util.thread.ParallelMapTransform$SingleTaskSplitter#batchSize` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 284 | `single_batch_size` |
+| `net.minecraft.util.thread.ParallelMapTransform$SingleTaskSplitter#scheduleBatch` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 289 | `single_schedule_batch` |
+| `net.minecraft.util.thread.ParallelMapTransform$SingleTaskSplitter#scheduleFinalOperation` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 311 | `single_schedule_final_operation` |
+| `net.minecraft.util.thread.ParallelMapTransform$SplitterBase#<init>` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 405 | `splitter_base_new` |
+| `net.minecraft.util.thread.ParallelMapTransform$SplitterBase#pendingBatchSize` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 194 | `pending_batch_size` |
+| `net.minecraft.util.thread.ParallelMapTransform$SplitterBase#scheduleTasks` | `crates/mc-math/src/ported/parallel_map_transform.rs` | 206 | `schedule_tasks` |
 | `net.minecraft.util.thread.PriorityConsecutiveExecutor#<init>` | `crates/mc-math/src/ported/priority_consecutive_executor.rs` | 136 | `new` |
 | `net.minecraft.util.thread.PriorityConsecutiveExecutor#scheduleWithResult` | `crates/mc-math/src/ported/priority_consecutive_executor.rs` | 155 | `schedule_with_result` |
 | `net.minecraft.util.thread.PriorityConsecutiveExecutor#wrapRunnable` | `crates/mc-math/src/ported/priority_consecutive_executor.rs` | 150 | `wrap_runnable` |

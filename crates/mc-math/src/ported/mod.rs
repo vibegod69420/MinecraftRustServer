@@ -589,3 +589,6 @@ pub mod v1451_6;
 pub mod item_potion_fix;
 pub mod structures_become_configured_fix;
 pub mod advancements_fix;
+pub mod parallel_map_transform;
+pub mod sequenced_priority_iterator;
+pub mod fast_buffered_input_stream;
