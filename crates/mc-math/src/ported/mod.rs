@@ -557,3 +557,4 @@ pub mod item_banner_color_fix;
 pub mod entity_projectile_owner_fix;
 pub mod saddle_equipment_slot_fix;
 pub mod new_village_fix;
+pub mod v2551;
