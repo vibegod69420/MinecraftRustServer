@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:56:01 UTC",
-  "updated_epoch": 1795395361,
+  "updated_at": "2026-11-23 00:56:12 UTC",
+  "updated_epoch": 1795395372,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 14.8681,
     "method_coverage_pct": 6.5316,
     "harness_verified_classes": 695,
-    "harness_failed_attempts": 131
+    "harness_failed_attempts": 132
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 642,
-    "prompt_tokens": 1689558,
-    "completion_tokens": 8708352,
-    "reasoning_tokens": 6237228,
-    "avg_latency_s": 213.8
+    "calls_total": 643,
+    "prompt_tokens": 1692347,
+    "completion_tokens": 8721056,
+    "reasoning_tokens": 6248495,
+    "avg_latency_s": 213.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:56:07Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetLoreFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 358.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:56:01Z",
       "class_name": "net.minecraft.world.level.storage.loot.functions.SetContainerContents",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 686.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:48:57Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.FilteredFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 686.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "54ba2df",
+      "ts": "2026-11-23T00:56:01+00:00",
+      "message": "Worker sync: 4355 mapped Java methods"
+    },
     {
       "sha": "29e4742",
       "ts": "2026-11-23T00:55:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "7c1e669",
       "ts": "2026-11-23T00:40:33+00:00",
       "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "7bf9d2b",
-      "ts": "2026-11-23T00:40:06+00:00",
-      "message": "Worker sync: 3922 mapped Java methods"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:56:01 UTC
+- **Updated**: 2026-11-23 00:56:12 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 4355 / 66676 (6.532%)
 - **Mapped Java Classes**: 1065 / 7163 (14.868%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1170 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetLoreFunction` -> `mc-nbt` (358.7s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetContainerContents` -> `mc-nbt` (364.5s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundResourcePackPushPacket` -> `mc-protocol` (869.2s)
 - [PASS] `net.minecraft.network.protocol.common.ClientboundUpdateTagsPacket` -> `mc-protocol` (869.2s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.SeagrassFeature` -> `mc-worldgen` (984.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (913.4s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.treedecorators.CreakingHeartDecorator` -> `mc-worldgen` (913.4s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator` -> `mc-worldgen` (913.4s)
