@@ -139,3 +139,4 @@ pub mod loot_data_type;
 pub mod set_container_contents;
 pub mod level_data;
 pub mod player_data_storage;
+pub mod loot_context_param_sets;

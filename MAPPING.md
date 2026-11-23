@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9480** across **2152** classes.
+Total mapped Java symbols: **9484** across **2153** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5253,6 +5253,7 @@ Total mapped Java symbols: **9480** across **2152** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-math/src/ported/context_key_set.rs` | 18 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-math/src/ported/context_map.rs` | 19 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/dynamic_loot.rs` | 10 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 12 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/loot_pool_entries.rs` | 8 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/nbt_providers.rs` | 12 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/number_providers.rs` | 11 | `with_default_namespace` |
@@ -6274,20 +6275,28 @@ Total mapped Java symbols: **9480** across **2152** classes.
 | `net.minecraft.util.context.ContextKeySet#<init>` | `crates/mc-math/src/ported/context_map.rs` | 154 | `new` |
 | `net.minecraft.util.context.ContextKeySet#allowed` | `crates/mc-math/src/ported/context_key_set.rs` | 166 | `allowed` |
 | `net.minecraft.util.context.ContextKeySet#allowed` | `crates/mc-math/src/ported/context_map.rs` | 166 | `allowed` |
+| `net.minecraft.util.context.ContextKeySet#allowed` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 67 | `allowed` |
+| `net.minecraft.util.context.ContextKeySet#isAllowed` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 57 | `is_allowed` |
+| `net.minecraft.util.context.ContextKeySet#isRequired` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 52 | `is_required` |
 | `net.minecraft.util.context.ContextKeySet#required` | `crates/mc-math/src/ported/context_key_set.rs` | 161 | `required` |
 | `net.minecraft.util.context.ContextKeySet#required` | `crates/mc-math/src/ported/context_map.rs` | 161 | `required` |
+| `net.minecraft.util.context.ContextKeySet#required` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 62 | `required` |
 | `net.minecraft.util.context.ContextKeySet#toString` | `crates/mc-math/src/ported/context_key_set.rs` | 173 | `fmt` |
 | `net.minecraft.util.context.ContextKeySet#toString` | `crates/mc-math/src/ported/context_map.rs` | 173 | `fmt` |
 | `net.minecraft.util.context.ContextKeySet$Builder` | `crates/mc-math/src/ported/context_key_set.rs` | 188 | `<item>` |
 | `net.minecraft.util.context.ContextKeySet$Builder` | `crates/mc-math/src/ported/context_map.rs` | 188 | `<item>` |
 | `net.minecraft.util.context.ContextKeySet$Builder#<init>` | `crates/mc-math/src/ported/context_key_set.rs` | 201 | `new` |
 | `net.minecraft.util.context.ContextKeySet$Builder#<init>` | `crates/mc-math/src/ported/context_map.rs` | 201 | `new` |
+| `net.minecraft.util.context.ContextKeySet$Builder#<init>` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 80 | `new` |
 | `net.minecraft.util.context.ContextKeySet$Builder#build` | `crates/mc-math/src/ported/context_key_set.rs` | 229 | `build` |
 | `net.minecraft.util.context.ContextKeySet$Builder#build` | `crates/mc-math/src/ported/context_map.rs` | 229 | `build` |
+| `net.minecraft.util.context.ContextKeySet$Builder#build` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 98 | `build` |
 | `net.minecraft.util.context.ContextKeySet$Builder#optional` | `crates/mc-math/src/ported/context_key_set.rs` | 219 | `optional` |
 | `net.minecraft.util.context.ContextKeySet$Builder#optional` | `crates/mc-math/src/ported/context_map.rs` | 219 | `optional` |
+| `net.minecraft.util.context.ContextKeySet$Builder#optional` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 92 | `optional` |
 | `net.minecraft.util.context.ContextKeySet$Builder#required` | `crates/mc-math/src/ported/context_key_set.rs` | 209 | `required` |
 | `net.minecraft.util.context.ContextKeySet$Builder#required` | `crates/mc-math/src/ported/context_map.rs` | 209 | `required` |
+| `net.minecraft.util.context.ContextKeySet$Builder#required` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 85 | `required` |
 | `net.minecraft.util.context.ContextMap` | `crates/mc-math/src/ported/context_map.rs` | 235 | `fmt` |
 | `net.minecraft.util.context.ContextMap#<init>` | `crates/mc-math/src/ported/context_map.rs` | 249 | `new` |
 | `net.minecraft.util.context.ContextMap#getOptional` | `crates/mc-math/src/ported/context_map.rs` | 265 | `get_optional` |
@@ -11734,6 +11743,9 @@ Total mapped Java symbols: **9480** across **2152** classes.
 | `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#<init>` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 56 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#getType` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 73 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.ToggleTooltips#run` | `crates/mc-nbt/src/ported/toggle_tooltips.rs` | 61 | `run` |
+| `net.minecraft.world.level.storage.loot.parameters.LootContextParamSets#CODEC` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 360 | `codec_decode` |
+| `net.minecraft.world.level.storage.loot.parameters.LootContextParamSets#CODEC` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 371 | `codec_encode` |
+| `net.minecraft.world.level.storage.loot.parameters.LootContextParamSets#register` | `crates/mc-nbt/src/ported/loot_context_param_sets.rs` | 141 | `register` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 50 | `<item>` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams (minimal)` | `crates/mc-nbt/src/ported/enchanted_count_increase_function.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.storage.loot.parameters.LootContextParams#ATTACKING_ENTITY` | `crates/mc-nbt/src/ported/loot_context_params.rs` | 90 | `<item>` |
