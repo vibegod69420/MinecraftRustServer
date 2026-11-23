@@ -193,3 +193,5 @@ pub mod large_dripstone_configuration;
 pub mod fallen_tree_configuration;
 pub mod seagrass_feature;
 pub mod leave_vine_decorator;
+pub mod kelp_feature;
+pub mod block_column_feature;

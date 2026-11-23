@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:42:02 UTC",
-  "updated_epoch": 1795394522,
+  "updated_at": "2026-11-23 00:43:38 UTC",
+  "updated_epoch": 1795394618,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 990,
-    "mapped_methods": 4023,
-    "class_coverage_pct": 13.821,
-    "method_coverage_pct": 6.0337,
+    "mapped_classes": 992,
+    "mapped_methods": 4028,
+    "class_coverage_pct": 13.8489,
+    "method_coverage_pct": 6.0412,
     "harness_verified_classes": 653,
-    "harness_failed_attempts": 119
+    "harness_failed_attempts": 122
   },
   "crates": [
     {
@@ -43,17 +43,41 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 1042
+      "mapped_methods": 1052
     }
   ],
   "usage": {
-    "calls_total": 591,
-    "prompt_tokens": 1540973,
-    "completion_tokens": 7887694,
-    "reasoning_tokens": 5642433,
-    "avg_latency_s": 204.8
+    "calls_total": 595,
+    "prompt_tokens": 1555878,
+    "completion_tokens": 7979716,
+    "reasoning_tokens": 5705265,
+    "avg_latency_s": 206.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:43:21Z",
+      "class_name": "net.minecraft.world.level.storage.LevelData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 790.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:43:21Z",
+      "class_name": "net.minecraft.world.level.storage.WorldData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 790.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:43:21Z",
+      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 790.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:41:38Z",
       "class_name": "net.minecraft.network.protocol.game.ClientboundSetBorderWarningDistancePacket",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 338.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:50Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 338.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:26Z",
-      "class_name": "net.minecraft.util.thread.StrictQueue",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 315.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:26Z",
-      "class_name": "net.minecraft.util.thread.PriorityConsecutiveExecutor",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 315.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ea9f34b",
+      "ts": "2026-11-23T00:42:02+00:00",
+      "message": "Worker sync: 4023 mapped Java methods"
+    },
     {
       "sha": "a1f90a9",
       "ts": "2026-11-23T00:41:38+00:00",
@@ -445,11 +450,6 @@
       "sha": "53256c9",
       "ts": "2026-11-23T00:26:40+00:00",
       "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "a40d32a",
-      "ts": "2026-11-23T00:26:04+00:00",
-      "message": "Worker sync: 3687 mapped Java methods"
     }
   ]
 }
