@@ -1,31 +1,31 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:43:38 UTC
+- **Updated**: 2026-11-23 00:45:52 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 4028 / 66676 (6.041%)
-- **Mapped Java Classes**: 992 / 7163 (13.849%)
+- **Mapped Java Methods**: 4104 / 66676 (6.155%)
+- **Mapped Java Classes**: 1003 / 7163 (14.002%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 1430 mapped methods
-- `mc-nbt`: 1173 mapped methods
-- `mc-protocol`: 1324 mapped methods
-- `mc-worldgen`: 1052 mapped methods
+- `mc-math`: 1478 mapped methods
+- `mc-nbt`: 1191 mapped methods
+- `mc-protocol`: 1333 mapped methods
+- `mc-worldgen`: 1064 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.protocol.game.ClientboundContainerSetContentPacket` -> `mc-protocol` (594.6s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundCustomChatCompletionsPacket` -> `mc-protocol` (594.6s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundSetChunkCacheCenterPacket` -> `mc-protocol` (594.6s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundSetBorderWarningDelayPacket` -> `mc-protocol` (594.6s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (848.2s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (848.2s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (848.2s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (848.2s)
+- [PASS] `net.minecraft.core.component.PatchedDataComponentMap` -> `mc-math` (820.1s)
 - [FAIL] `net.minecraft.world.level.storage.LevelData` -> `mc-nbt` (790.1s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (790.1s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (790.1s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetBorderWarningDistancePacket` -> `mc-protocol` (313.5s)
 - [PASS] `net.minecraft.network.protocol.game.VecDeltaCodec` -> `mc-protocol` (313.5s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundTeleportToEntityPacket` -> `mc-protocol` (313.5s)
-- [PASS] `net.minecraft.network.protocol.game.ServerboundClientCommandPacket` -> `mc-protocol` (313.5s)
-- [PASS] `net.minecraft.network.protocol.configuration.ClientboundRegistryDataPacket` -> `mc-protocol` (653.7s)
-- [PASS] `net.minecraft.network.protocol.configuration.ClientboundUpdateEnabledFeaturesPacket` -> `mc-protocol` (653.7s)
-- [PASS] `net.minecraft.network.protocol.configuration.ConfigurationPacketTypes` -> `mc-protocol` (653.7s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.configurations.FallenTreeConfiguration` -> `mc-worldgen` (211.0s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.configurations.LargeDripstoneConfiguration` -> `mc-worldgen` (211.0s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.configurations.BlockColumnConfiguration` -> `mc-worldgen` (211.0s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundRespawnPacket` -> `mc-protocol` (622.2s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundRemoveMobEffectPacket` -> `mc-protocol` (622.2s)

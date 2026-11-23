@@ -108,3 +108,5 @@ pub mod loot_item_block_state_property_condition;
 pub mod set_banner_pattern_function;
 pub mod set_container_loot_table;
 pub mod filtered_function;
+pub mod container_component_manipulators;
+pub mod entity_has_score_condition;

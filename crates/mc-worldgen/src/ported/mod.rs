@@ -195,3 +195,5 @@ pub mod seagrass_feature;
 pub mod leave_vine_decorator;
 pub mod kelp_feature;
 pub mod block_column_feature;
+pub mod carver_debug_settings;
+pub mod canyon_carver_configuration;
