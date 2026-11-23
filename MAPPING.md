@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7036** across **1516** classes.
+Total mapped Java symbols: **7047** across **1518** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -134,8 +134,10 @@ Total mapped Java symbols: **7036** across **1516** classes.
 | `net.minecraft.Util#getRandom(T[], net.minecraft.util.RandomSource)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 107 | `get_random_element` |
 | `net.minecraft.Util#shuffle` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 130 | `shuffle` |
 | `net.minecraft.Util#shuffle` | `crates/mc-worldgen/src/ported/pale_moss_decorator.rs` | 156 | `<item>` |
+| `net.minecraft.Util#shuffle` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 108 | `shuffle` |
 | `net.minecraft.Util#shuffledCopy` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 140 | `shuffled_copy` |
 | `net.minecraft.Util#shuffledCopy` | `crates/mc-worldgen/src/ported/pale_moss_decorator.rs` | 154 | `shuffled_copy` |
+| `net.minecraft.Util#shuffledCopy` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 120 | `shuffled_copy` |
 | `net.minecraft.Util#toShuffledList(java.util.stream.IntStream, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 129 | `to_shuffled_list` |
 | `net.minecraft.advancements.Advancement` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 258 | `<item>` |
 | `net.minecraft.advancements.Advancement#<init>` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 266 | `new` |
@@ -7499,6 +7501,18 @@ Total mapped Java symbols: **7036** across **1516** classes.
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#single` | `crates/mc-worldgen/src/ported/structure_pool_element.rs` | 561 | `single_with_processors_and_liquid_settings` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#codec` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 55 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#register` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 60 | `register` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#<init>` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 137 | `new` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#<init>` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 155 | `from_projection_factories` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#getFallback` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 209 | `get_fallback` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#getMaxSize` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 183 | `get_max_size` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#getRandomTemplate` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 214 | `get_random_template` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#getShuffledTemplates` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 224 | `get_shuffled_templates` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#getTemplates` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 204 | `get_templates` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool#size` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 229 | `size` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool$Projection#byName` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 82 | `by_name` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool$Projection#getName` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 74 | `get_name` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool$Projection#getProcessors` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 91 | `get_processors` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool$Projection#getSerializedName` | `crates/mc-worldgen/src/ported/structure_template_pool.rs` | 102 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 116 | `all_targets` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 140 | `all_targets` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#codec` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 121 | `codec` |
