@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 22:52:02 UTC
+- **Updated**: 2026-11-23 22:52:48 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9509 / 66676 (14.261%)
 - **Mapped Java Classes**: 2160 / 7163 (30.155%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (2296.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (562.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (562.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (562.8s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.util.datafix.fixes.EntityHorseSplitFix` -> `mc-math` (785.5s)
 - [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (1122.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (2528.0s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.SerializableChunkData` -> `mc-worldgen` (396.2s)
