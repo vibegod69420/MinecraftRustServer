@@ -309,3 +309,8 @@ pub mod v3808;
 pub mod v3825;
 pub mod v2505;
 pub mod v3082;
+pub mod item_stack_tag_remainder_fix;
+pub mod map_id_fix;
+pub mod block_entity_keep_packed;
+pub mod entity_wolf_color_fix;
+pub mod block_state_structure_template_fix;
