@@ -595,3 +595,4 @@ pub mod fast_buffered_input_stream;
 pub mod abstract_consecutive_executor;
 pub mod gson_helper;
 pub mod defaulted_mapped_registry;
+pub mod entity_horse_saddle_fix;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9405** across **2140** classes.
+Total mapped Java symbols: **9407** across **2141** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6559,6 +6559,8 @@ Total mapped Java symbols: **9405** across **2140** classes.
 | `net.minecraft.util.datafix.fixes.EntityFieldsRenameFix#fixTag` | `crates/mc-math/src/ported/entity_fields_rename_fix.rs` | 77 | `fix_tag` |
 | `net.minecraft.util.datafix.fixes.EntityGoatMissingStateFix#<init>` | `crates/mc-math/src/ported/entity_goat_missing_state_fix.rs` | 82 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityGoatMissingStateFix#fix` | `crates/mc-math/src/ported/entity_goat_missing_state_fix.rs` | 92 | `fix` |
+| `net.minecraft.util.datafix.fixes.EntityHorseSaddleFix#<init>` | `crates/mc-math/src/ported/entity_horse_saddle_fix.rs` | 86 | `new` |
+| `net.minecraft.util.datafix.fixes.EntityHorseSaddleFix#fix` | `crates/mc-math/src/ported/entity_horse_saddle_fix.rs` | 91 | `fix` |
 | `net.minecraft.util.datafix.fixes.EntityItemFrameDirectionFix#direction2dTo3d` | `crates/mc-math/src/ported/entity_item_frame_direction_fix.rs` | 94 | `direction_2d_to_3d` |
 | `net.minecraft.util.datafix.fixes.EntityItemFrameDirectionFix#fix` | `crates/mc-math/src/ported/entity_item_frame_direction_fix.rs` | 89 | `fix` |
 | `net.minecraft.util.datafix.fixes.EntityItemFrameDirectionFix#fixTag` | `crates/mc-math/src/ported/entity_item_frame_direction_fix.rs` | 81 | `fix_tag` |
