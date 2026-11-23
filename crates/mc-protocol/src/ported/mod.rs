@@ -336,3 +336,6 @@ pub mod clientbound_player_info_update_packet;
 pub mod serverbound_interact_packet;
 pub mod clientbound_move_entity_packet;
 pub mod score_contents;
+pub mod chat_type;
+pub mod clientbound_chunks_biomes_packet;
+pub mod hover_event;

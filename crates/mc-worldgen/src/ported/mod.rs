@@ -286,3 +286,4 @@ pub mod column;
 pub mod pool_element_structure_piece;
 pub mod structure_pool_element;
 pub mod cherry_trunk_placer;
+pub mod nether_fossil_pieces;
