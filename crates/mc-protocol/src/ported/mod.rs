@@ -342,3 +342,4 @@ pub mod hover_event;
 pub mod nbt_contents;
 pub mod entity_data_serializers;
 pub mod serverbound_move_player_packet;
+pub mod signed_message_chain;

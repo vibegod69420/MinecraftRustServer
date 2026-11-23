@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:19:40 UTC
+- **Updated**: 2026-11-23 04:20:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7090 / 66676 (10.633%)
-- **Mapped Java Classes**: 1524 / 7163 (21.276%)
+- **Mapped Java Methods**: 7096 / 66676 (10.643%)
+- **Mapped Java Classes**: 1528 / 7163 (21.332%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1656 mapped methods
-- `mc-protocol`: 3280 mapped methods
+- `mc-protocol`: 3291 mapped methods
 - `mc-worldgen`: 1892 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.chat.SignedMessageChain` -> `mc-protocol` (812.2s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket` -> `mc-protocol` (753.6s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.FallenTreeFeature` -> `mc-worldgen` (704.4s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool` -> `mc-worldgen` (198.2s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket` -> `mc-protocol` (277.3s)
 - [PASS] `net.minecraft.network.chat.ClickEvent` -> `mc-protocol` (172.3s)
 - [PASS] `net.minecraft.network.protocol.configuration.ConfigurationProtocols` -> `mc-protocol` (147.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature` -> `mc-worldgen` (1068.8s)

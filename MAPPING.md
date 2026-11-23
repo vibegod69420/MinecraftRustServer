@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7090** across **1524** classes.
+Total mapped Java symbols: **7096** across **1528** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2620,6 +2620,17 @@ Total mapped Java symbols: **7090** across **1524** classes.
 | `net.minecraft.network.chat.SignedMessageBody$Packed#write` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 285 | `write` |
 | `net.minecraft.network.chat.SignedMessageBody$Packed#write(net.minecraft.network.FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 224 | `write` |
 | `net.minecraft.network.chat.SignedMessageBody.Packed` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 178 | `<item>` |
+| `net.minecraft.network.chat.SignedMessageChain#<init>` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 273 | `new` |
+| `net.minecraft.network.chat.SignedMessageChain#decoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 286 | `decoder` |
+| `net.minecraft.network.chat.SignedMessageChain#decoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 331 | `unpack` |
+| `net.minecraft.network.chat.SignedMessageChain#decoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 376 | `set_chain_broken` |
+| `net.minecraft.network.chat.SignedMessageChain#encoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 281 | `encoder` |
+| `net.minecraft.network.chat.SignedMessageChain#encoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 306 | `pack` |
+| `net.minecraft.network.chat.SignedMessageChain#encoder` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 318 | `pack` |
+| `net.minecraft.network.chat.SignedMessageChain$DecodeException#<init>` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 198 | `new` |
+| `net.minecraft.network.chat.SignedMessageChain$Decoder#unsigned` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 241 | `unsigned` |
+| `net.minecraft.network.chat.SignedMessageChain$Decoder#unsigned` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 251 | `unpack` |
+| `net.minecraft.network.chat.SignedMessageChain$Encoder#pack` | `crates/mc-protocol/src/ported/signed_message_chain.rs` | 219 | `pack` |
 | `net.minecraft.network.chat.SignedMessageLink#advance` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 76 | `advance` |
 | `net.minecraft.network.chat.SignedMessageLink#isDescendantOf` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 69 | `is_descendant_of` |
 | `net.minecraft.network.chat.SignedMessageLink#root` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 49 | `root` |
