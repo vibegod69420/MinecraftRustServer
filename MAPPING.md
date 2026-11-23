@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6307** across **1392** classes.
+Total mapped Java symbols: **6319** across **1394** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6339,6 +6339,18 @@ Total mapped Java symbols: **6307** across **1392** classes.
 | `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#attemptToPlaceBlockAbove` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 283 | `attempt_to_place_block_above` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#place` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 241 | `place` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator#type` | `crates/mc-worldgen/src/ported/place_on_ground_decorator.rs` | 236 | `type_` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator#place` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 93 | `place` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator#type` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 90 | `decorator_type` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#<init>` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 108 | `new` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#checkBlock` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 149 | `check_block` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#isAir` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 143 | `is_air` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#leaves` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 169 | `leaves` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#level` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 154 | `level` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#logs` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 164 | `logs` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#placeVine` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 133 | `place_vine` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#random` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 159 | `random` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#roots` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 174 | `roots` |
+| `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator$Context#setBlock` | `crates/mc-worldgen/src/ported/tree_decorator.rs` | 138 | `set_block` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#<init>` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#codec` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 112 | `codec` |
 | `net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType#register` | `crates/mc-worldgen/src/ported/tree_decorator_type.rs` | 118 | `register` |

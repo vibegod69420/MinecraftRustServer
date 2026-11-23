@@ -271,3 +271,4 @@ pub mod feature_pool_element;
 pub mod below_zero_retrogen;
 pub mod list_pool_element;
 pub mod canyon_world_carver;
+pub mod tree_decorator;
