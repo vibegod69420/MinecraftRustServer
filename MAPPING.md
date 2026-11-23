@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5078** across **1186** classes.
+Total mapped Java symbols: **5087** across **1187** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3505,6 +3505,15 @@ Total mapped Java symbols: **5078** across **1186** classes.
 | `net.minecraft.util.NullOps$NullMapBuilder#append` | `crates/mc-math/src/ported/null_ops.rs` | 364 | `append` |
 | `net.minecraft.util.NullOps$NullMapBuilder#build` | `crates/mc-math/src/ported/null_ops.rs` | 369 | `build` |
 | `net.minecraft.util.NullOps$NullMapBuilder#initBuilder` | `crates/mc-math/src/ported/null_ops.rs` | 359 | `init_builder` |
+| `net.minecraft.util.ParticleUtils#getRandomSpeedRanges` | `crates/mc-math/src/ported/particle_utils.rs` | 208 | `get_random_speed_ranges` |
+| `net.minecraft.util.ParticleUtils#spawnParticleBelow` | `crates/mc-math/src/ported/particle_utils.rs` | 338 | `spawn_particle_below` |
+| `net.minecraft.util.ParticleUtils#spawnParticleInBlock` | `crates/mc-math/src/ported/particle_utils.rs` | 351 | `spawn_particle_in_block` |
+| `net.minecraft.util.ParticleUtils#spawnParticleOnFace` | `crates/mc-math/src/ported/particle_utils.rs` | 301 | `spawn_particle_on_face` |
+| `net.minecraft.util.ParticleUtils#spawnParticles` | `crates/mc-math/src/ported/particle_utils.rs` | 367 | `spawn_particles` |
+| `net.minecraft.util.ParticleUtils#spawnParticlesAlongAxis` | `crates/mc-math/src/ported/particle_utils.rs` | 256 | `spawn_particles_along_axis` |
+| `net.minecraft.util.ParticleUtils#spawnParticlesOnBlockFace` | `crates/mc-math/src/ported/particle_utils.rs` | 237 | `spawn_particles_on_block_face` |
+| `net.minecraft.util.ParticleUtils#spawnParticlesOnBlockFaces` | `crates/mc-math/src/ported/particle_utils.rs` | 217 | `spawn_particles_on_block_faces` |
+| `net.minecraft.util.ParticleUtils#spawnSmashAttackParticles` | `crates/mc-math/src/ported/particle_utils.rs` | 397 | `spawn_smash_attack_particles` |
 | `net.minecraft.util.PngInfo#fromBytes` | `crates/mc-math/src/ported/png_info.rs` | 45 | `from_bytes` |
 | `net.minecraft.util.PngInfo#fromStream` | `crates/mc-math/src/ported/png_info.rs` | 14 | `from_stream` |
 | `net.minecraft.util.PngInfo#validateHeader` | `crates/mc-math/src/ported/png_info.rs` | 51 | `validate_header` |
