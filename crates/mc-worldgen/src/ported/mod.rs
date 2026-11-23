@@ -278,3 +278,4 @@ pub mod fossil_feature;
 pub mod end_podium_feature;
 pub mod bamboo_feature;
 pub mod feature_count_tracker;
+pub mod block_age_processor;

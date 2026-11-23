@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6582** across **1437** classes.
+Total mapped Java symbols: **6592** across **1438** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7173,6 +7173,17 @@ Total mapped Java symbols: **6582** across **1437** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlackstoneReplaceProcessor#<init>` | `crates/mc-worldgen/src/ported/blackstone_replace_processor.rs` | 132 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlackstoneReplaceProcessor#getType` | `crates/mc-worldgen/src/ported/blackstone_replace_processor.rs` | 208 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlackstoneReplaceProcessor#processBlock` | `crates/mc-worldgen/src/ported/blackstone_replace_processor.rs` | 176 | `process_block` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#<init>` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 345 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#getRandomBlock` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 334 | `get_random_block_from_slice` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#getRandomBlock` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 473 | `get_random_block` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#getRandomFacingStairs` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 324 | `get_random_facing_stairs` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#getType` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 487 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#maybeReplaceFullStoneBlock` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 390 | `maybe_replace_full_stone_block` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#maybeReplaceObsidian` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 464 | `maybe_replace_obsidian` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#maybeReplaceSlab` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 430 | `maybe_replace_slab` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#maybeReplaceStairs` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 410 | `maybe_replace_stairs` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#maybeReplaceWall` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 447 | `maybe_replace_wall` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockAgeProcessor#processBlock` | `crates/mc-worldgen/src/ported/block_age_processor.rs` | 350 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#<init>` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 77 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#AIR` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 114 | `air_ignore` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#STRUCTURE_AND_AIR` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 119 | `structure_and_air_ignore` |
