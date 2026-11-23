@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4720** across **1123** classes.
+Total mapped Java symbols: **4733** across **1125** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5303,6 +5303,19 @@ Total mapped Java symbols: **4720** across **1123** classes.
 | `net.minecraft.world.level.storage.loot.LootParams$Builder#withOptionalParameter` | `crates/mc-nbt/src/ported/loot_params.rs` | 260 | `with_optional_parameter` |
 | `net.minecraft.world.level.storage.loot.LootParams$Builder#withParameter` | `crates/mc-nbt/src/ported/loot_params.rs` | 254 | `with_parameter` |
 | `net.minecraft.world.level.storage.loot.LootParams$DynamicDrop#add` | `crates/mc-nbt/src/ported/loot_params.rs` | 158 | `add` |
+| `net.minecraft.world.level.storage.loot.LootPool#<init>` | `crates/mc-nbt/src/ported/loot_pool.rs` | 135 | `new` |
+| `net.minecraft.world.level.storage.loot.LootPool#addRandomItem` | `crates/mc-nbt/src/ported/loot_pool.rs` | 152 | `add_random_item` |
+| `net.minecraft.world.level.storage.loot.LootPool#addRandomItems` | `crates/mc-nbt/src/ported/loot_pool.rs` | 185 | `add_random_items` |
+| `net.minecraft.world.level.storage.loot.LootPool#lootPool` | `crates/mc-nbt/src/ported/loot_pool.rs` | 222 | `loot_pool` |
+| `net.minecraft.world.level.storage.loot.LootPool#validate` | `crates/mc-nbt/src/ported/loot_pool.rs` | 207 | `validate` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#<init>` | `crates/mc-nbt/src/ported/loot_pool.rs` | 238 | `new` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#add` | `crates/mc-nbt/src/ported/loot_pool.rs` | 266 | `add` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#apply` | `crates/mc-nbt/src/ported/loot_pool.rs` | 278 | `apply` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#build` | `crates/mc-nbt/src/ported/loot_pool.rs` | 284 | `build` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#setBonusRolls` | `crates/mc-nbt/src/ported/loot_pool.rs` | 260 | `set_bonus_rolls` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#setRolls` | `crates/mc-nbt/src/ported/loot_pool.rs` | 249 | `set_rolls` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#unwrap` | `crates/mc-nbt/src/ported/loot_pool.rs` | 255 | `unwrap` |
+| `net.minecraft.world.level.storage.loot.LootPool$Builder#when` | `crates/mc-nbt/src/ported/loot_pool.rs` | 272 | `when` |
 | `net.minecraft.world.level.storage.loot.ValidationContext#forChild` | `crates/mc-nbt/src/ported/slot_loot.rs` | 75 | `for_child` |
 | `net.minecraft.world.level.storage.loot.ValidationContext#forChild (FieldPathElement simplified)` | `crates/mc-nbt/src/ported/modify_container_contents.rs` | 43 | `for_child` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_FALSE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 45 | `always_false` |

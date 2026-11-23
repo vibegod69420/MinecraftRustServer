@@ -122,3 +122,4 @@ pub mod enchant_randomly_function;
 pub mod set_custom_model_data_function;
 pub mod exploration_map_function;
 pub mod set_attributes_function;
+pub mod loot_pool;

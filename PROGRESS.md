@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:13:13 UTC
+- **Updated**: 2026-11-23 01:14:50 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 4720 / 66676 (7.079%)
-- **Mapped Java Classes**: 1123 / 7163 (15.678%)
+- **Mapped Java Methods**: 4733 / 66676 (7.098%)
+- **Mapped Java Classes**: 1125 / 7163 (15.706%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 1681 mapped methods
-- `mc-nbt`: 1390 mapped methods
+- `mc-nbt`: 1403 mapped methods
 - `mc-protocol`: 1534 mapped methods
 - `mc-worldgen`: 1260 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.SortedArraySet` -> `mc-math` (282.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider` -> `mc-worldgen` (677.2s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.DualNoiseProvider` -> `mc-worldgen` (677.2s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.NoiseThresholdProvider` -> `mc-worldgen` (677.2s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.NetherFossilStructure` -> `mc-worldgen` (454.5s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure` -> `mc-worldgen` (454.5s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure` -> `mc-worldgen` (454.5s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (559.6s)
