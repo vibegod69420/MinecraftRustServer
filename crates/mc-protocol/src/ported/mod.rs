@@ -220,3 +220,4 @@ pub mod clientbound_remove_entities_packet;
 pub mod clientbound_update_tags_packet;
 pub mod clientbound_resource_pack_push_packet;
 pub mod serverbound_debug_subscription_request_packet;
+pub mod clientbound_projectile_power_packet;

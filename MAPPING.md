@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4426** across **1083** classes.
+Total mapped Java symbols: **4469** across **1085** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2349,6 +2349,13 @@ Total mapped Java symbols: **4426** across **1083** classes.
 | `net.minecraft.network.protocol.game.ClientboundPlayerRotationPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_player_rotation_packet.rs` | 59 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundPlayerRotationPacket#handle` | `crates/mc-protocol/src/ported/clientbound_player_rotation_packet.rs` | 45 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundPlayerRotationPacket#type` | `crates/mc-protocol/src/ported/clientbound_player_rotation_packet.rs` | 40 | `get_type` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 114 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 122 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#getAccelerationPower` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 153 | `get_acceleration_power` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#getId` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 148 | `get_id` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#handle` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 143 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#type` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 138 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket#write` | `crates/mc-protocol/src/ported/clientbound_projectile_power_packet.rs` | 132 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookRemovePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_recipe_book_remove_packet.rs` | 55 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookRemovePacket#handle` | `crates/mc-protocol/src/ported/clientbound_recipe_book_remove_packet.rs` | 70 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundRecipeBookRemovePacket#recipes` | `crates/mc-protocol/src/ported/clientbound_recipe_book_remove_packet.rs` | 60 | `recipes` |
@@ -4882,6 +4889,43 @@ Total mapped Java symbols: **4426** across **1083** classes.
 | `net.minecraft.world.level.storage.DataVersion#isSideSeries` | `crates/mc-nbt/src/ported/data_version.rs` | 31 | `is_side_series` |
 | `net.minecraft.world.level.storage.DataVersion#series` | `crates/mc-nbt/src/ported/data_version.rs` | 26 | `series` |
 | `net.minecraft.world.level.storage.DataVersion#version` | `crates/mc-nbt/src/ported/data_version.rs` | 21 | `version` |
+| `net.minecraft.world.level.storage.DerivedLevelData#<init>` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 136 | `new` |
+| `net.minecraft.world.level.storage.DerivedLevelData#fillCrashReportCategory` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 295 | `fill_crash_report_category` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getClearWeatherTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 166 | `get_clear_weather_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getDayTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 156 | `get_day_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getDifficulty` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 256 | `get_difficulty` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getGameRules` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 243 | `get_game_rules` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getGameTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 151 | `get_game_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getGameType` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 194 | `get_game_type` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getLegacyWorldBorderSettings` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 248 | `get_legacy_world_border_settings` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getLevelName` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 161 | `get_level_name` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getRainTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 189 | `get_rain_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getRespawnData` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 146 | `get_respawn_data` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getScheduledEvents` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 266 | `get_scheduled_events` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getThunderTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 179 | `get_thunder_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getWanderingTraderId` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 287 | `get_wandering_trader_id` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 279 | `get_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.DerivedLevelData#getWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 271 | `get_wandering_trader_spawn_delay` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isAllowCommands` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 230 | `is_allow_commands` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isDifficultyLocked` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 261 | `is_difficulty_locked` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isHardcore` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 225 | `is_hardcore` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isInitialized` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 235 | `is_initialized` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isRaining` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 184 | `is_raining` |
+| `net.minecraft.world.level.storage.DerivedLevelData#isThundering` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 174 | `is_thundering` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setClearWeatherTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 171 | `set_clear_weather_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setDayTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 202 | `set_day_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setGameTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 199 | `set_game_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setGameType` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 222 | `set_game_type` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setInitialized` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 240 | `set_initialized` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setLegacyWorldBorderSettings` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 253 | `set_legacy_world_border_settings` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setRainTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 219 | `set_rain_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setRaining` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 216 | `set_raining` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setSpawn` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 205 | `set_spawn` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setThunderTime` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 213 | `set_thunder_time` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setThundering` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 210 | `set_thundering` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setWanderingTraderId` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 292 | `set_wandering_trader_id` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 284 | `set_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.DerivedLevelData#setWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/derived_level_data.rs` | 276 | `set_wandering_trader_spawn_delay` |
 | `net.minecraft.world.level.storage.DimensionDataStorage#computeIfAbsent` | `crates/mc-nbt/src/ported/command_storage.rs` | 45 | `compute_if_absent` |
 | `net.minecraft.world.level.storage.DimensionDataStorage#get` | `crates/mc-nbt/src/ported/command_storage.rs` | 42 | `get` |
 | `net.minecraft.world.level.storage.FileNameDateFormatter` | `crates/mc-nbt/src/ported/file_name_date_formatter.rs` | 1 | `<item>` |
