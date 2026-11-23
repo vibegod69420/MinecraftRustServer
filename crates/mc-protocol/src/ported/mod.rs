@@ -265,3 +265,6 @@ pub mod remote_chat_session;
 pub mod keybind_contents;
 pub mod clientbound_level_event_packet;
 pub mod clientbound_set_entity_data_packet;
+pub mod clientbound_set_display_objective_packet;
+pub mod serverbound_recipe_book_change_settings_packet;
+pub mod clientbound_light_update_packet;

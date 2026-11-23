@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5438** across **1267** classes.
+Total mapped Java symbols: **5458** across **1270** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2647,6 +2647,14 @@ Total mapped Java symbols: **5438** across **1267** classes.
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#isGlobalEvent` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 186 | `is_global_event` |
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#type` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 176 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundLevelEventPacket#write` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 168 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 216 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 234 | `from_buf` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#getLightData` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 269 | `get_light_data` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#getX` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 259 | `get_x` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#getZ` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 264 | `get_z` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#handle` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 254 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#type` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 249 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundLightUpdatePacket#write` | `crates/mc-protocol/src/ported/clientbound_light_update_packet.rs` | 242 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundMountScreenOpenPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_mount_screen_open_packet.rs` | 66 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundMountScreenOpenPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_mount_screen_open_packet.rs` | 75 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundMountScreenOpenPacket#getContainerId` | `crates/mc-protocol/src/ported/clientbound_mount_screen_open_packet.rs` | 107 | `get_container_id` |
@@ -2851,6 +2859,13 @@ Total mapped Java symbols: **5438** across **1267** classes.
 | `net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_default_spawn_position_packet.rs` | 155 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket#respawnData` | `crates/mc-protocol/src/ported/clientbound_set_default_spawn_position_packet.rs` | 145 | `respawn_data` |
 | `net.minecraft.network.protocol.game.ClientboundSetDefaultSpawnPositionPacket#type` | `crates/mc-protocol/src/ported/clientbound_set_default_spawn_position_packet.rs` | 150 | `type_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 201 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 213 | `from_buf` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#getObjectiveName` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 244 | `get_objective_name` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#getSlot` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 239 | `get_slot` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 234 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#type` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 229 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket#write` | `crates/mc-protocol/src/ported/clientbound_set_display_objective_packet.rs` | 223 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundSetEntityDataPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 159 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundSetEntityDataPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 164 | `from_buf` |
 | `net.minecraft.network.protocol.game.ClientboundSetEntityDataPacket#handle` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 205 | `handle` |
@@ -3183,6 +3198,14 @@ Total mapped Java symbols: **5438** across **1267** classes.
 | `net.minecraft.network.protocol.game.ServerboundPlayerInputPacket#type` | `crates/mc-protocol/src/ported/serverbound_player_input_packet.rs` | 107 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundPlayerLoadedPacket#handle` | `crates/mc-protocol/src/ported/serverbound_player_loaded_packet.rs` | 64 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundPlayerLoadedPacket#type` | `crates/mc-protocol/src/ported/serverbound_player_loaded_packet.rs` | 59 | `type_` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 124 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 133 | `from_buf` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#getBookType` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 164 | `get_book_type` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#handle` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 159 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#isFiltering` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 174 | `is_filtering` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#isOpen` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 169 | `is_open` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#type` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 154 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundRecipeBookChangeSettingsPacket#write` | `crates/mc-protocol/src/ported/serverbound_recipe_book_change_settings_packet.rs` | 147 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundRecipeBookSeenRecipePacket#<init>` | `crates/mc-protocol/src/ported/serverbound_recipe_book_seen_recipe_packet.rs` | 103 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundRecipeBookSeenRecipePacket#handle` | `crates/mc-protocol/src/ported/serverbound_recipe_book_seen_recipe_packet.rs` | 118 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundRecipeBookSeenRecipePacket#recipe` | `crates/mc-protocol/src/ported/serverbound_recipe_book_seen_recipe_packet.rs` | 108 | `recipe` |
