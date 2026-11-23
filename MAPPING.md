@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6832** across **1475** classes.
+Total mapped Java symbols: **6862** across **1485** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2368,6 +2368,38 @@ Total mapped Java symbols: **6832** across **1475** classes.
 | `net.minecraft.network.chat.ChatTypeDecoration#withSender` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 144 | `with_sender` |
 | `net.minecraft.network.chat.ChatTypeDecoration$Parameter#getSerializedName` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 108 | `get_serialized_name` |
 | `net.minecraft.network.chat.ChatTypeDecoration$Parameter#select` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 99 | `select` |
+| `net.minecraft.network.chat.ClickEvent#action` | `crates/mc-protocol/src/ported/click_event.rs` | 95 | `action` |
+| `net.minecraft.network.chat.ClickEvent.Action#filterForSerialization` | `crates/mc-protocol/src/ported/click_event.rs` | 61 | `filter_for_serialization` |
+| `net.minecraft.network.chat.ClickEvent.Action#getSerializedName` | `crates/mc-protocol/src/ported/click_event.rs` | 47 | `get_serialized_name` |
+| `net.minecraft.network.chat.ClickEvent.Action#isAllowedFromServer` | `crates/mc-protocol/src/ported/click_event.rs` | 33 | `is_allowed_from_server` |
+| `net.minecraft.network.chat.ClickEvent.ChangePage#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 117 | `new` |
+| `net.minecraft.network.chat.ClickEvent.ChangePage#action` | `crates/mc-protocol/src/ported/click_event.rs` | 127 | `action` |
+| `net.minecraft.network.chat.ClickEvent.ChangePage#page` | `crates/mc-protocol/src/ported/click_event.rs` | 122 | `page` |
+| `net.minecraft.network.chat.ClickEvent.CopyToClipboard#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 140 | `new` |
+| `net.minecraft.network.chat.ClickEvent.CopyToClipboard#action` | `crates/mc-protocol/src/ported/click_event.rs` | 152 | `action` |
+| `net.minecraft.network.chat.ClickEvent.CopyToClipboard#value` | `crates/mc-protocol/src/ported/click_event.rs` | 147 | `value` |
+| `net.minecraft.network.chat.ClickEvent.Custom#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 166 | `new` |
+| `net.minecraft.network.chat.ClickEvent.Custom#action` | `crates/mc-protocol/src/ported/click_event.rs` | 181 | `action` |
+| `net.minecraft.network.chat.ClickEvent.Custom#id` | `crates/mc-protocol/src/ported/click_event.rs` | 171 | `id` |
+| `net.minecraft.network.chat.ClickEvent.Custom#payload` | `crates/mc-protocol/src/ported/click_event.rs` | 176 | `payload` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 194 | `new` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 199 | `from_file` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 206 | `from_path` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#action` | `crates/mc-protocol/src/ported/click_event.rs` | 223 | `action` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#file` | `crates/mc-protocol/src/ported/click_event.rs` | 213 | `file` |
+| `net.minecraft.network.chat.ClickEvent.OpenFile#path` | `crates/mc-protocol/src/ported/click_event.rs` | 218 | `path` |
+| `net.minecraft.network.chat.ClickEvent.OpenUrl#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 236 | `new` |
+| `net.minecraft.network.chat.ClickEvent.OpenUrl#action` | `crates/mc-protocol/src/ported/click_event.rs` | 246 | `action` |
+| `net.minecraft.network.chat.ClickEvent.OpenUrl#uri` | `crates/mc-protocol/src/ported/click_event.rs` | 241 | `uri` |
+| `net.minecraft.network.chat.ClickEvent.RunCommand#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 259 | `new` |
+| `net.minecraft.network.chat.ClickEvent.RunCommand#action` | `crates/mc-protocol/src/ported/click_event.rs` | 271 | `action` |
+| `net.minecraft.network.chat.ClickEvent.RunCommand#command` | `crates/mc-protocol/src/ported/click_event.rs` | 266 | `command` |
+| `net.minecraft.network.chat.ClickEvent.ShowDialog#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 284 | `new` |
+| `net.minecraft.network.chat.ClickEvent.ShowDialog#action` | `crates/mc-protocol/src/ported/click_event.rs` | 294 | `action` |
+| `net.minecraft.network.chat.ClickEvent.ShowDialog#dialog` | `crates/mc-protocol/src/ported/click_event.rs` | 289 | `dialog` |
+| `net.minecraft.network.chat.ClickEvent.SuggestCommand#<init>` | `crates/mc-protocol/src/ported/click_event.rs` | 307 | `new` |
+| `net.minecraft.network.chat.ClickEvent.SuggestCommand#action` | `crates/mc-protocol/src/ported/click_event.rs` | 319 | `action` |
+| `net.minecraft.network.chat.ClickEvent.SuggestCommand#command` | `crates/mc-protocol/src/ported/click_event.rs` | 314 | `command` |
 | `net.minecraft.network.chat.CommonComponents#days` | `crates/mc-protocol/src/ported/common_components.rs` | 139 | `days` |
 | `net.minecraft.network.chat.CommonComponents#disconnectButtonLabel` | `crates/mc-protocol/src/ported/common_components.rs` | 163 | `disconnect_button_label` |
 | `net.minecraft.network.chat.CommonComponents#hours` | `crates/mc-protocol/src/ported/common_components.rs` | 144 | `hours` |
