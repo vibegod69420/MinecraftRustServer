@@ -287,3 +287,5 @@ pub mod file_io_stat;
 pub mod entity_salmon_size_fix;
 pub mod trident_animation_fix;
 pub mod cat_type_fix;
+pub mod inactive_metrics_recorder;
+pub mod profiler_sampler_adapter;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8096** across **1737** classes.
+Total mapped Java symbols: **8106** across **1741** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6142,6 +6142,7 @@ Total mapped Java symbols: **8096** across **1737** classes.
 | `net.minecraft.util.parsing.packrat.commands.StringReaderParserState#mark` | `crates/mc-math/src/ported/string_reader_parser_state.rs` | 109 | `mark` |
 | `net.minecraft.util.parsing.packrat.commands.StringReaderParserState#restore` | `crates/mc-math/src/ported/string_reader_parser_state.rs` | 114 | `restore` |
 | `net.minecraft.util.parsing.packrat.commands.StringReaderTerms#createReader` | `crates/mc-math/src/ported/delayed_exception.rs` | 32 | `create_reader` |
+| `net.minecraft.util.profiling.ActiveProfiler$PathEntry#getMaxDuration` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 23 | `get_max_duration` |
 | `net.minecraft.util.profiling.EmptyProfileResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 48 | `<item>` |
 | `net.minecraft.util.profiling.EmptyProfileResults#<init>` | `crates/mc-math/src/ported/empty_profile_results.rs` | 56 | `new` |
 | `net.minecraft.util.profiling.EmptyProfileResults#EMPTY` | `crates/mc-math/src/ported/empty_profile_results.rs` | 52 | `new` |
@@ -6227,17 +6228,26 @@ Total mapped Java symbols: **8096** across **1737** classes.
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#summary` | `crates/mc-math/src/ported/timed_stat_summary.rs` | 34 | `summary` |
 | `net.minecraft.util.profiling.metrics.MetricCategory#getDescription` | `crates/mc-math/src/ported/metric_category.rs` | 15 | `get_description` |
+| `net.minecraft.util.profiling.metrics.MetricSampler#create` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 43 | `create` |
 | `net.minecraft.util.profiling.metrics.MetricsSamplerProvider#samplers` | `crates/mc-math/src/ported/metrics_sampler_provider.rs` | 43 | `samplers` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 32 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 45 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 65 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 81 | `profiled_metrics` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#cancel` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 36 | `cancel` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#end` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 33 | `end` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#endTick` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 52 | `end_tick` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#getProfiler` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 47 | `get_profiler` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#isRecording` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 42 | `is_recording` |
+| `net.minecraft.util.profiling.metrics.profiling.InactiveMetricsRecorder#startTick` | `crates/mc-math/src/ported/inactive_metrics_recorder.rs` | 39 | `start_tick` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#cancel` | `crates/mc-math/src/ported/metrics_recorder.rs` | 18 | `cancel` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#end` | `crates/mc-math/src/ported/metrics_recorder.rs` | 15 | `end` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#endTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 30 | `end_tick` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#getProfiler` | `crates/mc-math/src/ported/metrics_recorder.rs` | 27 | `get_profiler` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#isRecording` | `crates/mc-math/src/ported/metrics_recorder.rs` | 24 | `is_recording` |
 | `net.minecraft.util.profiling.metrics.profiling.MetricsRecorder#startTick` | `crates/mc-math/src/ported/metrics_recorder.rs` | 21 | `start_tick` |
+| `net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter#newSamplersFoundInProfiler` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 100 | `new_samplers_found_in_profiler` |
+| `net.minecraft.util.profiling.metrics.profiling.ProfilerSamplerAdapter#samplerForProfilingPath` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 124 | `sampler_for_profiling_path` |
 | `net.minecraft.util.profiling.metrics.storage.RecordedDeviation#<init>` | `crates/mc-math/src/ported/recorded_deviation.rs` | 20 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 53 | `new` |
 | `net.minecraft.util.random.Weighted#<init>` | `crates/mc-math/src/ported/weighted.rs` | 164 | `<item>` |
