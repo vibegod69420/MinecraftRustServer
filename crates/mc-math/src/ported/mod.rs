@@ -217,3 +217,7 @@ pub mod cpu_load_stat;
 pub mod tick_time_stat;
 pub mod packet_identification;
 pub mod chunk_identification;
+pub mod entity_tipped_arrow_fix;
+pub mod dye_item_rename_fix;
+pub mod filtered_signs_fix;
+pub mod block_entity_shulker_box_color_fix;
