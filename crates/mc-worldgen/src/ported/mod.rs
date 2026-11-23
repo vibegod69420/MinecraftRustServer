@@ -203,3 +203,8 @@ pub mod block_pile_feature;
 pub mod replace_blobs_feature;
 pub mod spring_feature;
 pub mod world_preset;
+pub mod blue_ice_feature;
+pub mod fossil_feature_configuration;
+pub mod huge_brown_mushroom_feature;
+pub mod creaking_heart_decorator;
+pub mod coral_claw_feature;

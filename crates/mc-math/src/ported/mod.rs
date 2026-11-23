@@ -178,3 +178,6 @@ pub mod inclusive_range;
 pub mod formatted_char_sequence;
 pub mod dependency_sorter;
 pub mod file_zipper;
+pub mod static_cache2_d;
+pub mod class_instance_multi_map;
+pub mod threading_detector;
