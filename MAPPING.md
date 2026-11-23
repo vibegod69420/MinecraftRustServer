@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8564** across **1913** classes.
+Total mapped Java symbols: **8570** across **1915** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6003,6 +6003,7 @@ Total mapped Java symbols: **8564** across **1913** classes.
 | `net.minecraft.util.context.ContextMap$Builder#withParameter` | `crates/mc-math/src/ported/context_map.rs` | 304 | `with_parameter` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#cast` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 48 | `cast` |
 | `net.minecraft.util.datafix.LegacyComponentDataFixUtils#createTextComponentJson` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 11 | `create_text_component_json` |
+| `net.minecraft.util.datafix.LegacyComponentDataFixUtils#rewriteFromLenient` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 30 | `rewrite_from_lenient` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#createUUIDFromLongs` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 61 | `create_uuid_from_longs` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/gossip_uuid_fix.rs` | 94 | `abstract_uuid_fix_replace_uuid_least_most` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 71 | `replace_uuid_least_most` |
@@ -6221,6 +6222,8 @@ Total mapped Java symbols: **8564** across **1913** classes.
 | `net.minecraft.util.datafix.fixes.RenamedCoralFansFix#RENAMED_IDS` | `crates/mc-math/src/ported/renamed_coral_fans_fix.rs` | 7 | `renamed_ids` |
 | `net.minecraft.util.datafix.fixes.ScoreboardDisplayNameFix#<init>` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 44 | `new` |
 | `net.minecraft.util.datafix.fixes.ScoreboardDisplayNameFix#makeRule` | `crates/mc-math/src/ported/scoreboard_display_name_fix.rs` | 61 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.SignTextStrictJsonFix#<init>` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 14 | `new` |
+| `net.minecraft.util.datafix.fixes.SignTextStrictJsonFix#fix` | `crates/mc-math/src/ported/sign_text_strict_json_fix.rs` | 19 | `fix` |
 | `net.minecraft.util.datafix.fixes.SimpleEntityRenameFix#SimpleEntityRenameFix` | `crates/mc-math/src/ported/simple_entity_rename_fix.rs` | 83 | `new` |
 | `net.minecraft.util.datafix.fixes.SimpleEntityRenameFix#fix` | `crates/mc-math/src/ported/simple_entity_rename_fix.rs` | 96 | `fix` |
 | `net.minecraft.util.datafix.fixes.SimpleEntityRenameFix#getNewNameAndTag` | `crates/mc-math/src/ported/simple_entity_rename_fix.rs` | 103 | `get_new_name_and_tag` |
@@ -6718,6 +6721,10 @@ Total mapped Java symbols: **8564** across **1913** classes.
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 429 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.commands.CommandArgumentParser#parseForCommands` | `crates/mc-math/src/ported/parser_based_argument.rs` | 60 | `parse_for_commands` |
 | `net.minecraft.util.parsing.packrat.commands.CommandArgumentParser#parseForSuggestions` | `crates/mc-math/src/ported/parser_based_argument.rs` | 63 | `parse_for_suggestions` |
+| `net.minecraft.util.parsing.packrat.commands.GreedyPredicateParseRule#<init>` | `crates/mc-math/src/ported/greedy_predicate_parse_rule.rs` | 115 | `new` |
+| `net.minecraft.util.parsing.packrat.commands.GreedyPredicateParseRule#<init>` | `crates/mc-math/src/ported/greedy_predicate_parse_rule.rs` | 124 | `with_max` |
+| `net.minecraft.util.parsing.packrat.commands.GreedyPredicateParseRule#isAccepted` | `crates/mc-math/src/ported/greedy_predicate_parse_rule.rs` | 165 | `is_accepted` |
+| `net.minecraft.util.parsing.packrat.commands.GreedyPredicateParseRule#parse` | `crates/mc-math/src/ported/greedy_predicate_parse_rule.rs` | 139 | `parse` |
 | `net.minecraft.util.parsing.packrat.commands.IdentifierParseRule#<init>` | `crates/mc-math/src/ported/identifier_parse_rule.rs` | 118 | `new` |
 | `net.minecraft.util.parsing.packrat.commands.IdentifierParseRule#INSTANCE` | `crates/mc-math/src/ported/identifier_parse_rule.rs` | 124 | `parse` |
 | `net.minecraft.util.parsing.packrat.commands.IdentifierParseRule#parse` | `crates/mc-math/src/ported/identifier_parse_rule.rs` | 128 | `parse` |

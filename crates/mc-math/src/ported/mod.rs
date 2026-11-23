@@ -434,3 +434,5 @@ pub mod scoreboard_display_name_fix;
 pub mod add_flag_if_not_present_fix;
 pub mod area_effect_cloud_potion_fix;
 pub mod namespaced_type_rename_fix;
+pub mod sign_text_strict_json_fix;
+pub mod greedy_predicate_parse_rule;
