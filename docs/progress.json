@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 06:46:18 UTC",
-  "updated_epoch": 1795416378,
+  "updated_at": "2026-11-23 06:51:03 UTC",
+  "updated_epoch": 1795416663,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1647,
-    "mapped_methods": 7837,
-    "class_coverage_pct": 22.9932,
-    "method_coverage_pct": 11.7539,
-    "harness_verified_classes": 1019,
-    "harness_failed_attempts": 299
+    "mapped_classes": 1654,
+    "mapped_methods": 7859,
+    "class_coverage_pct": 23.0909,
+    "method_coverage_pct": 11.7868,
+    "harness_verified_classes": 1020,
+    "harness_failed_attempts": 302
   },
   "crates": [
     {
@@ -43,17 +43,49 @@
     },
     {
       "name": "mc-worldgen",
-      "mapped_methods": 2555
+      "mapped_methods": 2578
     }
   ],
   "usage": {
-    "calls_total": 1461,
-    "prompt_tokens": 4335762,
-    "completion_tokens": 24172547,
-    "reasoning_tokens": 17398517,
-    "avg_latency_s": 273.2
+    "calls_total": 1470,
+    "prompt_tokens": 4353750,
+    "completion_tokens": 24245016,
+    "reasoning_tokens": 17440938,
+    "avg_latency_s": 271.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T06:51:02Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFileVersion",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 269.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T06:50:12Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 219.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T06:50:12Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RecreatingSimpleRegionStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 219.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T06:50:12Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 219.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T06:40:03Z",
       "class_name": "net.minecraft.util.profiling.jfr.stats.ChunkIdentification",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 309.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T06:15:28Z",
-      "class_name": "net.minecraft.world.level.chunk.HashMapPalette",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 309.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T06:15:28Z",
-      "class_name": "net.minecraft.world.level.chunk.SingleValuePalette",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 309.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T06:15:04Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkDependencies",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 651.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T06:15:04Z",
-      "class_name": "net.minecraft.world.level.chunk.status.WorldGenContext",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 651.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "075e4f5",
+      "ts": "2026-11-23T06:46:18+00:00",
+      "message": "Worker sync: 7837 mapped Java methods"
+    },
     {
       "sha": "1fb14cf",
       "ts": "2026-11-23T06:40:03+00:00",
@@ -445,11 +450,6 @@
       "sha": "dfc72bf",
       "ts": "2026-11-23T06:20:31+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "6b64044",
-      "ts": "2026-11-23T06:20:09+00:00",
-      "message": "Worker sync: 7670 mapped Java methods"
     }
   ]
 }

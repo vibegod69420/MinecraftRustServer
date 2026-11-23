@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7837** across **1647** classes.
+Total mapped Java symbols: **7859** across **1654** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -24,6 +24,7 @@ Total mapped Java symbols: **7837** across **1647** classes.
 | `Files.createDirectories(Files.exists($$0)` | `crates/mc-math/src/ported/file_util.rs` | 519 | `<item>` |
 | `Files.deleteIfExists($$9)` | `crates/mc-math/src/ported/file_util.rs` | 183 | `<item>` |
 | `LOGGER.error(` | `crates/mc-math/src/ported/future_chain.rs` | 164 | `<item>` |
+| `LOGGER.error(` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 261 | `<item>` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 51 | `is_reserved_windows_filename` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 55 | `is_reserved_windows_filename` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 86 | `is_strict_path_segment` |
@@ -34,6 +35,11 @@ Total mapped Java symbols: **7837** across **1647** classes.
 | `STREAM_CODEC models StreamCodec.composite(ByteBufCodecs.VAR_INT, slot getter, constructor)` | `crates/mc-protocol/src/ported/clientbound_set_held_slot_packet.rs` | 23 | `<item>` |
 | `StreamCodec.composite(GameType.STREAM_CODEC, mode getter, constructor)` | `crates/mc-protocol/src/ported/serverbound_change_game_mode_packet.rs` | 31 | `<item>` |
 | `Util.pauseInIde(...) is an IDE debug hook` | `crates/mc-math/src/ported/weighted_random.rs` | 42 | `<item>` |
+| `VERSION_CUSTOM (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 172 | `<item>` |
+| `VERSION_DEFLATE (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 148 | `<item>` |
+| `VERSION_GZIP (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 140 | `<item>` |
+| `VERSION_LZ4 (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 164 | `<item>` |
+| `VERSION_NONE (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 156 | `<item>` |
 | `com.mojang.brigadier.StringReader#<init>` | `crates/mc-nbt/src/ported/tag_parser.rs` | 50 | `new` |
 | `com.mojang.brigadier.StringReader#canRead` | `crates/mc-nbt/src/ported/tag_parser.rs` | 64 | `can_read` |
 | `com.mojang.brigadier.StringReader#canRead` | `crates/mc-nbt/src/ported/tag_parser.rs` | 69 | `can_read_n` |
@@ -6797,6 +6803,23 @@ Total mapped Java symbols: **7837** across **1647** classes.
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#force` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 176 | `force` |
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#free` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 182 | `free` |
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#getUsed` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 202 | `get_used` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 51 | `<item>` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#<init>` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 69 | `new` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#DEFAULT` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 238 | `default_version` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#VERSION_CUSTOM` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 233 | `version_custom` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#VERSION_DEFLATE` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 218 | `version_deflate` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#VERSION_GZIP` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 213 | `version_gzip` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#VERSION_LZ4` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 228 | `version_lz4` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#VERSION_NONE` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 223 | `version_none` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#configure` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 250 | `configure` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#fromId` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 243 | `from_id` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#getId` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 88 | `get_id` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#getSelected` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 277 | `get_selected` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#isValidVersion` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 284 | `is_valid_version` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#register` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 126 | `register` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#wrap(java.io.InputStream)` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 103 | `wrap_input` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion#wrap(java.io.OutputStream)` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 98 | `wrap_output` |
+| `net.minecraft.world.level.chunk.storage.RegionFileVersion$StreamWrapper` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 14 | `wrap` |
 | `net.minecraft.world.level.chunk.storage.RegionStorageInfo#withTypeSuffix` | `crates/mc-worldgen/src/ported/region_storage_info.rs` | 40 | `with_type_suffix` |
 | `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#<init>` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 241 | `new` |
 | `net.minecraft.world.level.chunk.storage.SimpleRegionStorage#<init>` | `crates/mc-worldgen/src/ported/simple_region_storage.rs` | 255 | `new_with_legacy_fixer` |
