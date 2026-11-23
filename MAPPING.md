@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5818** across **1321** classes.
+Total mapped Java symbols: **5825** across **1322** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6100,6 +6100,14 @@ Total mapped Java symbols: **5818** across **1321** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 42 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/swamp_hut_structure.rs` | 105 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#<init>` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 101 | `new` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#<init>` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 126 | `new_simple` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#count` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 151 | `count` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#distance` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 141 | `distance` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#isPlacementChunk` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 161 | `is_placement_chunk` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#preferredBiomes` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 156 | `preferred_biomes` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#spread` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 146 | `spread` |
+| `net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement#type` | `crates/mc-worldgen/src/ported/concentric_rings_structure_placement.rs` | 174 | `placement_type` |
 | `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement#RandomSpreadStructurePlacement` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 197 | `new` |
 | `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement#RandomSpreadStructurePlacement` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 220 | `with_defaults` |
 | `net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement#getPotentialStructureChunk` | `crates/mc-worldgen/src/ported/random_spread_structure_placement.rs` | 254 | `get_potential_structure_chunk` |
