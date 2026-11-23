@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:40:54 UTC
+- **Updated**: 2026-11-23 01:52:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 5116 / 66676 (7.673%)
 - **Mapped Java Classes**: 1198 / 7163 (16.725%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1283 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.DimensionDataStorage` -> `mc-nbt` (2089.5s)
 - [PASS] `net.minecraft.util.ProblemReporter` -> `mc-math` (1434.7s)
 - [FAIL] `net.minecraft.util.thread.ParallelMapTransform` -> `mc-math` (1454.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (1330.7s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetScorePacket` -> `mc-protocol` (728.7s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundTakeItemEntityPacket` -> `mc-protocol` (728.7s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundRotateHeadPacket` -> `mc-protocol` (728.7s)
-- [FAIL] `net.minecraft.util.FileUtil` -> `mc-math` (897.7s)
