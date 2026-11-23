@@ -231,3 +231,5 @@ pub mod count_on_every_layer_placement;
 pub mod environment_scan_placement;
 pub mod builtin_structures;
 pub mod scattered_feature_piece;
+pub mod vegetation_patch_configuration;
+pub mod dripstone_cluster_configuration;

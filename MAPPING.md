@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5280** across **1237** classes.
+Total mapped Java symbols: **5282** across **1239** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4921,6 +4921,7 @@ Total mapped Java symbols: **5280** across **1237** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#radius` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 62 | `radius` |
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#stateProvider` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 52 | `state_provider` |
 | `net.minecraft.world.level.levelgen.feature.configurations.DiskConfiguration#target` | `crates/mc-worldgen/src/ported/disk_configuration.rs` | 57 | `target` |
+| `net.minecraft.world.level.levelgen.feature.configurations.DripstoneClusterConfiguration#<init>` | `crates/mc-worldgen/src/ported/dripstone_cluster_configuration.rs` | 39 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#<init>` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 25 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#delayedExitSearch` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 35 | `delayed_exit_search` |
 | `net.minecraft.world.level.levelgen.feature.configurations.EndGatewayConfiguration#getExit` | `crates/mc-worldgen/src/ported/end_gateway_configuration.rs` | 40 | `get_exit` |
@@ -5002,6 +5003,7 @@ Total mapped Java symbols: **5280** across **1237** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#spreadHeight` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 31 | `spread_height` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#spreadWidth` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 26 | `spread_width` |
 | `net.minecraft.world.level.levelgen.feature.configurations.UnderwaterMagmaConfiguration#<init>` | `crates/mc-worldgen/src/ported/underwater_magma_configuration.rs` | 20 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration#<init>` | `crates/mc-worldgen/src/ported/vegetation_patch_configuration.rs` | 70 | `new` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#<init>` | `crates/mc-worldgen/src/ported/feature_size.rs` | 37 | `new` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#<init>` | `crates/mc-worldgen/src/ported/three_layers_feature_size.rs` | 16 | `new` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 27 | `new` |
