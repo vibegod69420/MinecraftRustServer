@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 18:40:15 UTC
+- **Updated**: 2026-11-23 19:18:45 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9377 / 66676 (14.063%)
 - **Mapped Java Classes**: 2139 / 7163 (29.862%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (11233.4s)
+- [PASS] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (2531.4s)
+- [FAIL] `net.minecraft.network.chat.SignableCommand` -> `mc-protocol` (12066.2s)
 - [PASS] `net.minecraft.core.DefaultedMappedRegistry` -> `mc-math` (9776.8s)
 - [PASS] `net.minecraft.network.HashedPatchMap` -> `mc-protocol` (9546.7s)
 - [PASS] `net.minecraft.network.PacketProcessor` -> `mc-protocol` (9546.7s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (9546.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature` -> `mc-worldgen` (9448.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (9448.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.DeltaFeature` -> `mc-worldgen` (9448.5s)
-- [FAIL] `net.minecraft.network.chat.contents.data.BlockDataSource` -> `mc-protocol` (9534.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (8535.4s)
