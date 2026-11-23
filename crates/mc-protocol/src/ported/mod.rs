@@ -332,3 +332,6 @@ pub mod chat_type_decoration;
 pub mod clientbound_add_entity_packet;
 pub mod configuration_protocols;
 pub mod click_event;
+pub mod clientbound_player_info_update_packet;
+pub mod serverbound_interact_packet;
+pub mod clientbound_move_entity_packet;
