@@ -302,3 +302,4 @@ pub mod serverbound_set_command_block_packet;
 pub mod signed_message_validator;
 pub mod last_seen_messages;
 pub mod formatted_text;
+pub mod clientbound_initialize_border_packet;
