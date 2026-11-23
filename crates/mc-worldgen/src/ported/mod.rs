@@ -209,3 +209,8 @@ pub mod huge_brown_mushroom_feature;
 pub mod creaking_heart_decorator;
 pub mod coral_claw_feature;
 pub mod random_spread_foliage_placer;
+pub mod blob_foliage_placer;
+pub mod mega_pine_foliage_placer;
+pub mod foliage_placer_type;
+pub mod piece_generator_supplier;
+pub mod pieces_container;
