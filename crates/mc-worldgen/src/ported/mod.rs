@@ -263,3 +263,5 @@ pub mod weeping_vines_feature;
 pub mod cherry_foliage_placer;
 pub mod blackstone_replace_processor;
 pub mod pale_moss_decorator;
+pub mod patrol_spawner;
+pub mod mineshaft_structure;

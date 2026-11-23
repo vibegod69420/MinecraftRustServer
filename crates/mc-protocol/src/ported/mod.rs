@@ -292,3 +292,4 @@ pub mod bundler_info;
 pub mod compression_decoder;
 pub mod serverbound_seen_advancements_packet;
 pub mod clientbound_sound_entity_packet;
+pub mod lp_vec3;

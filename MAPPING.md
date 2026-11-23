@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5978** across **1344** classes.
+Total mapped Java symbols: **5998** across **1349** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -19,6 +19,7 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `` | `crates/mc-worldgen/src/ported/structure_check_result.rs` | 19 | `<item>` |
 | `` | `crates/mc-worldgen/src/ported/underwater_magma_configuration.rs` | 6 | `<item>` |
 | `$$0.resolve($$0.getFileSystem().getPath($$1.get(0), $$3))` | `crates/mc-math/src/ported/file_util.rs` | 482 | `<item>` |
+| `(int)Math.ceil(getEffectiveDifficulty())` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 517 | `<item>` |
 | `AutoCloseable#close` | `crates/mc-math/src/ported/future_chain.rs` | 240 | `<item>` |
 | `Files.createDirectories(Files.exists($$0)` | `crates/mc-math/src/ported/file_util.rs` | 519 | `<item>` |
 | `Files.deleteIfExists($$9)` | `crates/mc-math/src/ported/file_util.rs` | 183 | `<item>` |
@@ -2052,6 +2053,13 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `net.minecraft.network.HiddenByteBuf#unpack` | `crates/mc-protocol/src/ported/monitored_local_frame_decoder.rs` | 18 | `unpack` |
 | `net.minecraft.network.LocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/local_frame_decoder.rs` | 21 | `channel_read` |
 | `net.minecraft.network.LocalFrameEncoder#write` | `crates/mc-protocol/src/ported/local_frame_encoder.rs` | 21 | `write` |
+| `net.minecraft.network.LpVec3` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 59 | `<item>` |
+| `net.minecraft.network.LpVec3#hasContinuationBit` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 75 | `has_continuation_bit` |
+| `net.minecraft.network.LpVec3#pack` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 148 | `pack` |
+| `net.minecraft.network.LpVec3#read` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 80 | `read` |
+| `net.minecraft.network.LpVec3#sanitize` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 139 | `sanitize` |
+| `net.minecraft.network.LpVec3#unpack` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 153 | `unpack` |
+| `net.minecraft.network.LpVec3#write` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 105 | `write` |
 | `net.minecraft.network.MonitoredLocalFrameDecoder#<init>` | `crates/mc-protocol/src/ported/monitored_local_frame_decoder.rs` | 35 | `new` |
 | `net.minecraft.network.MonitoredLocalFrameDecoder#channelRead` | `crates/mc-protocol/src/ported/monitored_local_frame_decoder.rs` | 40 | `channel_read` |
 | `net.minecraft.network.PacketBundlePacker#<init>` | `crates/mc-protocol/src/ported/packet_bundle_packer.rs` | 39 | `new` |
@@ -2107,10 +2115,12 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `net.minecraft.network.VarInt#hasContinuationBit` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 28 | `varint_has_continuation_bit` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 17 | `read_varint` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/compression_decoder.rs` | 15 | `varint_read_buf` |
+| `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 29 | `read` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 22 | `read_varint` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/utf8_string.rs` | 35 | `varint_read` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 33 | `varint_read` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 33 | `write_varint` |
+| `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/lp_vec3.rs` | 46 | `write` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 38 | `write_varint` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/utf8_string.rs` | 59 | `varint_write` |
 | `net.minecraft.network.VarInt#write` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 125 | `write` |
@@ -4231,6 +4241,7 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/weeping_vines_feature.rs` | 233 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
 | `net.minecraft.util.Mth#positiveModulo(int,int)` | `crates/mc-math/src/mth.rs` | 411 | `positive_modulo_i32` |
+| `net.minecraft.util.Mth#randomBetweenInclusive` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 166 | `random_between_inclusive` |
 | `net.minecraft.util.Mth#randomBetweenInclusive` | `crates/mc-worldgen/src/ported/trapezoid_height.rs` | 22 | `mth_random_between_inclusive` |
 | `net.minecraft.util.Mth#randomBetweenInclusive` | `crates/mc-worldgen/src/ported/uniform_height.rs` | 55 | `random_between_inclusive` |
 | `net.minecraft.util.Mth#sin` | `crates/mc-math/src/mth.rs` | 96 | `sin` |
@@ -5290,6 +5301,8 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `net.minecraft.world.level.levelgen.NoiseSettings#getCellWidth` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 93 | `get_cell_width` |
 | `net.minecraft.world.level.levelgen.NoiseSettings#guardY` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 63 | `guard_y` |
 | `net.minecraft.world.level.levelgen.OreVeinifier#create` | `crates/mc-worldgen/src/ported/ore_veinifier.rs` | 86 | `create` |
+| `net.minecraft.world.level.levelgen.PatrolSpawner#spawnPatrolMember` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 224 | `spawn_patrol_member` |
+| `net.minecraft.world.level.levelgen.PatrolSpawner#tick` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 130 | `tick` |
 | `net.minecraft.world.level.levelgen.PhantomSpawner#tick` | `crates/mc-worldgen/src/ported/phantom_spawner.rs` | 91 | `tick` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 52 | `at_block_pos` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 68 | `at` |
@@ -6323,6 +6336,16 @@ Total mapped Java symbols: **5978** across **1344** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.IglooStructure#type` | `crates/mc-worldgen/src/ported/igloo_structure.rs` | 286 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#<init>` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 49 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#type` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 60 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#<init>` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 454 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 459 | `find_generation_point` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#generatePiecesAndAdjust` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 480 | `generate_pieces_and_adjust` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#type` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 527 | `structure_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#byId` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 409 | `by_id` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#getFenceState` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 433 | `get_fence_state` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#getName` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 401 | `get_name` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#getPlanksState` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 425 | `get_planks_state` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#getSerializedName` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 441 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure.Type#getWoodState` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 417 | `get_wood_state` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#<init>` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 257 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#FORTRESS_ENEMIES` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 243 | `fortress_enemies` |
 | `net.minecraft.world.level.levelgen.structure.structures.NetherFortressStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/nether_fortress_structure.rs` | 262 | `find_generation_point` |
