@@ -272,3 +272,6 @@ pub mod serverbound_sign_update_packet;
 pub mod login_packet_types;
 pub mod clientbound_custom_query_packet;
 pub mod serverbound_key_packet;
+pub mod clientbound_custom_payload_packet;
+pub mod common_packet_types;
+pub mod clientbound_hello_packet;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5642** across **1290** classes.
+Total mapped Java symbols: **5667** across **1296** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2209,6 +2209,7 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.codec.IdDispatchCodec.Builder#add` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 137 | `add` |
 | `net.minecraft.network.codec.IdDispatchCodec.Builder#build` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 172 | `build` |
 | `net.minecraft.network.codec.StreamCodec` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 87 | `decode` |
+| `net.minecraft.network.codec.StreamCodec (stub constructor)` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 59 | `create` |
 | `net.minecraft.network.codec.StreamCodec#<init>` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 74 | `new` |
 | `net.minecraft.network.codec.StreamCodec#Vec3_STREAM_CODEC_decode` | `crates/mc-protocol/src/ported/clientbound_entity_position_sync_packet.rs` | 16 | `read` |
 | `net.minecraft.network.codec.StreamCodec#Vec3_STREAM_CODEC_encode` | `crates/mc-protocol/src/ported/clientbound_entity_position_sync_packet.rs` | 25 | `write` |
@@ -2216,6 +2217,7 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.codec.StreamCodec#composite` | `crates/mc-protocol/src/ported/fixed_format.rs` | 91 | `composite` |
 | `net.minecraft.network.codec.StreamCodec#decode` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 89 | `decode` |
 | `net.minecraft.network.codec.StreamCodec#encode` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 92 | `encode` |
+| `net.minecraft.network.codec.StreamCodec#map` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 67 | `map` |
 | `net.minecraft.network.codec.StreamCodec#unit` | `crates/mc-protocol/src/ported/blank_format.rs` | 52 | `unit` |
 | `net.minecraft.network.codec.StreamCodec#unit` | `crates/mc-protocol/src/ported/clientbound_chunk_batch_start_packet.rs` | 17 | `unit` |
 | `net.minecraft.network.codec.StreamCodec#unit` | `crates/mc-protocol/src/ported/serverbound_client_tick_end_packet.rs` | 17 | `unit` |
@@ -2255,6 +2257,8 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.protocol.PacketType (identity` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 32 | `<item>` |
 | `net.minecraft.network.protocol.PacketType (info accessor)` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 66 | `info` |
 | `net.minecraft.network.protocol.PacketType#<init>` | `crates/mc-protocol/src/ported/clientbound_chunk_batch_start_packet.rs` | 7 | `new` |
+| `net.minecraft.network.protocol.PacketType#<init>` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 36 | `new` |
+| `net.minecraft.network.protocol.PacketType#<init>` | `crates/mc-protocol/src/ported/common_packet_types.rs` | 34 | `new` |
 | `net.minecraft.network.protocol.PacketType#<init>` | `crates/mc-protocol/src/ported/serverbound_client_tick_end_packet.rs` | 7 | `new` |
 | `net.minecraft.network.protocol.PacketType#<init> (conceptual)` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 48 | `new` |
 | `net.minecraft.network.protocol.PacketType#<init>(PacketFlow, Identifier)` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 45 | `new` |
@@ -2296,6 +2300,10 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.protocol.common.ClientCommonPacketListener#handleUpdateTags` | `crates/mc-protocol/src/ported/client_common_packet_listener.rs` | 51 | `handle_update_tags` |
 | `net.minecraft.network.protocol.common.ClientboundClearDialogPacket#handle` | `crates/mc-protocol/src/ported/clientbound_clear_dialog_packet.rs` | 69 | `handle` |
 | `net.minecraft.network.protocol.common.ClientboundClearDialogPacket#type` | `crates/mc-protocol/src/ported/clientbound_clear_dialog_packet.rs` | 64 | `packet_type` |
+| `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 156 | `new` |
+| `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket#handle` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 174 | `handle` |
+| `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket#payload` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 161 | `payload` |
+| `net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket#type` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 166 | `packet_type` |
 | `net.minecraft.network.protocol.common.ClientboundCustomReportDetailsPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_custom_report_details_packet.rs` | 43 | `new` |
 | `net.minecraft.network.protocol.common.ClientboundCustomReportDetailsPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_custom_report_details_packet.rs` | 63 | `encode` |
 | `net.minecraft.network.protocol.common.ClientboundCustomReportDetailsPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_custom_report_details_packet.rs` | 68 | `decode` |
@@ -2358,6 +2366,8 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.protocol.common.ClientboundUpdateTagsPacket#handle` | `crates/mc-protocol/src/ported/clientbound_update_tags_packet.rs` | 294 | `handle` |
 | `net.minecraft.network.protocol.common.ClientboundUpdateTagsPacket#type` | `crates/mc-protocol/src/ported/clientbound_update_tags_packet.rs` | 289 | `get_type` |
 | `net.minecraft.network.protocol.common.ClientboundUpdateTagsPacket#write` | `crates/mc-protocol/src/ported/clientbound_update_tags_packet.rs` | 280 | `write` |
+| `net.minecraft.network.protocol.common.CommonPacketTypes#createClientbound` | `crates/mc-protocol/src/ported/common_packet_types.rs` | 65 | `create_clientbound` |
+| `net.minecraft.network.protocol.common.CommonPacketTypes#createServerbound` | `crates/mc-protocol/src/ported/common_packet_types.rs` | 70 | `create_serverbound` |
 | `net.minecraft.network.protocol.common.ServerCommonPacketListener#handleClientInformation` | `crates/mc-protocol/src/ported/server_common_packet_listener.rs` | 48 | `handle_client_information` |
 | `net.minecraft.network.protocol.common.ServerCommonPacketListener#handleCustomClickAction` | `crates/mc-protocol/src/ported/server_common_packet_listener.rs` | 51 | `handle_custom_click_action` |
 | `net.minecraft.network.protocol.common.ServerCommonPacketListener#handleCustomPayload` | `crates/mc-protocol/src/ported/server_common_packet_listener.rs` | 42 | `handle_custom_payload` |
@@ -2402,9 +2412,14 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action#ordinal` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 45 | `ordinal` |
 | `net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action#values` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 59 | `from_ordinal` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#<init>` | `crates/mc-protocol/src/ported/brand_payload.rs` | 189 | `read` |
+| `net.minecraft.network.protocol.common.custom.BrandPayload#STREAM_CODEC (stub accessor)` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 91 | `stream_codec` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#type` | `crates/mc-protocol/src/ported/brand_payload.rs` | 201 | `payload_type` |
+| `net.minecraft.network.protocol.common.custom.BrandPayload#type (TYPE identifier)` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 86 | `type_id` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#write` | `crates/mc-protocol/src/ported/brand_payload.rs` | 196 | `write` |
+| `net.minecraft.network.protocol.common.custom.CustomPacketPayload#codec` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 134 | `codec` |
 | `net.minecraft.network.protocol.common.custom.CustomPacketPayload#type` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 26 | `payload_type` |
+| `net.minecraft.network.protocol.common.custom.CustomPacketPayload.TypeAndCodec#<init>` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 123 | `new` |
+| `net.minecraft.network.protocol.common.custom.DiscardedPayload#codec` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 104 | `codec` |
 | `net.minecraft.network.protocol.common.custom.DiscardedPayload#codec` | `crates/mc-protocol/src/ported/discarded_payload.rs` | 101 | `codec` |
 | `net.minecraft.network.protocol.common.custom.DiscardedPayload#type` | `crates/mc-protocol/src/ported/discarded_payload.rs` | 63 | `payload_type` |
 | `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener#handleCodeOfConduct` | `crates/mc-protocol/src/ported/client_configuration_packet_listener.rs` | 47 | `handle_code_of_conduct` |
@@ -3337,6 +3352,15 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.network.protocol.login.ClientboundCustomQueryPacket#readUnknownPayload(Identifier, FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 221 | `read_unknown_payload` |
 | `net.minecraft.network.protocol.login.ClientboundCustomQueryPacket#type()` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 240 | `get_type` |
 | `net.minecraft.network.protocol.login.ClientboundCustomQueryPacket#write(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 232 | `write` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 194 | `new` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 209 | `read` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#getChallenge` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 251 | `get_challenge` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#getPublicKey` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 246 | `get_public_key` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#getServerId` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 241 | `get_server_id` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#handle` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 236 | `handle` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#shouldAuthenticate` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 256 | `should_authenticate` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#type` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 231 | `packet_type` |
+| `net.minecraft.network.protocol.login.ClientboundHelloPacket#write` | `crates/mc-protocol/src/ported/clientbound_hello_packet.rs` | 223 | `write` |
 | `net.minecraft.network.protocol.login.ClientboundLoginCompressionPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_login_compression_packet.rs` | 107 | `new` |
 | `net.minecraft.network.protocol.login.ClientboundLoginCompressionPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_login_compression_packet.rs` | 114 | `read` |
 | `net.minecraft.network.protocol.login.ClientboundLoginCompressionPacket#getCompressionThreshold` | `crates/mc-protocol/src/ported/clientbound_login_compression_packet.rs` | 137 | `get_compression_threshold` |
@@ -3481,6 +3505,8 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/number_providers.rs` | 11 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-nbt/src/ported/storage_nbt_provider.rs` | 12 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/atlas_sprite.rs` | 30 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/clientbound_custom_payload_packet.rs` | 13 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/common_packet_types.rs` | 17 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/configuration_packet_types.rs` | 10 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/cookie_packet_types.rs` | 20 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/font_description.rs` | 10 | `with_default_namespace` |
@@ -3951,6 +3977,7 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 234 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#nextFloat(net.minecraft.util.RandomSource,float,float)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 41 | `next_float` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 102 | `mth_next_int` |
+| `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 188 | `next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
 | `net.minecraft.util.Mth#positiveModulo(int,int)` | `crates/mc-math/src/mth.rs` | 411 | `positive_modulo_i32` |
@@ -5258,6 +5285,11 @@ Total mapped Java symbols: **5642** across **1290** classes.
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#<init>` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 107 | `new` |
 | `net.minecraft.world.level.levelgen.feature.SpringFeature#place` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 112 | `place` |
 | `net.minecraft.world.level.levelgen.feature.TreeFeature#validTreePos (abstracted)` | `crates/mc-worldgen/src/ported/random_spread_foliage_placer.rs` | 81 | `is_valid_tree_pos` |
+| `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#<init>` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 224 | `new` |
+| `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#findFirstAirBlockAboveGround` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 282 | `find_first_air_block_above_ground` |
+| `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#isInvalidPlacementLocation` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 324 | `is_invalid_placement_location` |
+| `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#place` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 229 | `place` |
+| `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#placeWeepingVinesColumn` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 300 | `place_weeping_vines_column` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#place` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 134 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 184 | `new` |
