@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9023** across **2063** classes.
+Total mapped Java symbols: **9036** across **2068** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6248,6 +6248,23 @@ Total mapped Java symbols: **9023** across **2063** classes.
 | `net.minecraft.util.datafix.fixes.ChunkDeleteLightFix#makeRule` | `crates/mc-math/src/ported/chunk_delete_light_fix.rs` | 81 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkLightRemoveFix#<init>` | `crates/mc-math/src/ported/chunk_light_remove_fix.rs` | 50 | `new` |
 | `net.minecraft.util.datafix.fixes.ChunkLightRemoveFix#makeRule` | `crates/mc-math/src/ported/chunk_light_remove_fix.rs` | 55 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Structures sub` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 228 | `update_structures` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Typed construction context)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 90 | `new` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Typed#get` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 100 | `remainder` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Typed#getValue analog)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 95 | `get_value` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Typed#set remainder analog)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 105 | `set_remainder` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (Typed#update remainder analog)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 110 | `update_remainder` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (helper behavior)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 36 | `as_map` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (helper behavior)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 44 | `as_map_mut` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (helper behavior)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 52 | `remove` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (helper behavior)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 64 | `get` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix (helper behavior)` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 69 | `set_field` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#<init>` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 123 | `new` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#appendChunkName` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 195 | `append_chunk_name` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#makeRule` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 128 | `apply` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#mergeRemainders` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 203 | `merge_remainders` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#renameField` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 170 | `rename_field` |
+| `net.minecraft.util.datafix.fixes.ChunkRenamesFix#renameFieldHelper` | `crates/mc-math/src/ported/chunk_renames_fix.rs` | 176 | `rename_field_helper` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#<init>` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 166 | `new` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 173 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 179 | `apply_to_chunk` |
