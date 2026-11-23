@@ -431,3 +431,6 @@ pub mod invalid_lock_component_fix;
 pub mod entity_redundant_chance_tags_fix;
 pub mod tipped_arrow_potion_to_item_fix;
 pub mod scoreboard_display_name_fix;
+pub mod add_flag_if_not_present_fix;
+pub mod area_effect_cloud_potion_fix;
+pub mod namespaced_type_rename_fix;

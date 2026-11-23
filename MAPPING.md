@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8558** across **1910** classes.
+Total mapped Java symbols: **8564** across **1913** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6006,10 +6006,15 @@ Total mapped Java symbols: **8558** across **1910** classes.
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#createUUIDFromLongs` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 61 | `create_uuid_from_longs` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/gossip_uuid_fix.rs` | 94 | `abstract_uuid_fix_replace_uuid_least_most` |
 | `net.minecraft.util.datafix.fixes.AbstractUUIDFix#replaceUUIDLeastMost` | `crates/mc-math/src/ported/player_uuid_fix.rs` | 71 | `replace_uuid_least_most` |
+| `net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix#<init>` | `crates/mc-math/src/ported/add_flag_if_not_present_fix.rs` | 142 | `new` |
+| `net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix#makeRule` | `crates/mc-math/src/ported/add_flag_if_not_present_fix.rs` | 164 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.AdvancementsRenameFix#<init>` | `crates/mc-math/src/ported/advancements_rename_fix.rs` | 54 | `new` |
 | `net.minecraft.util.datafix.fixes.AdvancementsRenameFix#makeRule` | `crates/mc-math/src/ported/advancements_rename_fix.rs` | 59 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.AreaEffectCloudDurationScaleFix#<init>` | `crates/mc-math/src/ported/area_effect_cloud_duration_scale_fix.rs` | 82 | `new` |
 | `net.minecraft.util.datafix.fixes.AreaEffectCloudDurationScaleFix#fix` | `crates/mc-math/src/ported/area_effect_cloud_duration_scale_fix.rs` | 92 | `fix` |
+| `net.minecraft.util.datafix.fixes.AreaEffectCloudPotionFix#<init>` | `crates/mc-math/src/ported/area_effect_cloud_potion_fix.rs` | 118 | `new` |
+| `net.minecraft.util.datafix.fixes.AreaEffectCloudPotionFix#fix` | `crates/mc-math/src/ported/area_effect_cloud_potion_fix.rs` | 124 | `fix` |
+| `net.minecraft.util.datafix.fixes.AreaEffectCloudPotionFix#fix` | `crates/mc-math/src/ported/area_effect_cloud_potion_fix.rs` | 129 | `fix_dynamic` |
 | `net.minecraft.util.datafix.fixes.AttributeIdPrefixFix#AttributeIdPrefixFix` | `crates/mc-math/src/ported/attribute_id_prefix_fix.rs` | 25 | `new` |
 | `net.minecraft.util.datafix.fixes.AttributeIdPrefixFix#replaceId` | `crates/mc-math/src/ported/attribute_id_prefix_fix.rs` | 33 | `replace_id` |
 | `net.minecraft.util.datafix.fixes.BedItemColorFix#<init>` | `crates/mc-math/src/ported/bed_item_color_fix.rs` | 53 | `new` |
@@ -6158,6 +6163,8 @@ Total mapped Java symbols: **8558** across **1910** classes.
 | `net.minecraft.util.datafix.fixes.NamedEntityConvertUncheckedFix#<init>` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 66 | `new` |
 | `net.minecraft.util.datafix.fixes.NamedEntityConvertUncheckedFix#fix` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 87 | `fix` |
 | `net.minecraft.util.datafix.fixes.NamedEntityWriteReadFix#<init>` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 23 | `new` |
+| `net.minecraft.util.datafix.fixes.NamespacedTypeRenameFix#<init>` | `crates/mc-math/src/ported/namespaced_type_rename_fix.rs` | 85 | `new` |
+| `net.minecraft.util.datafix.fixes.NamespacedTypeRenameFix#makeRule` | `crates/mc-math/src/ported/namespaced_type_rename_fix.rs` | 100 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ObjectiveRenderTypeFix#getRenderType` | `crates/mc-math/src/ported/objective_render_type_fix.rs` | 1 | `get_render_type` |
 | `net.minecraft.util.datafix.fixes.ObjectiveRenderTypeFix#resolve` | `crates/mc-math/src/ported/objective_render_type_fix.rs` | 11 | `resolve_render_type` |
 | `net.minecraft.util.datafix.fixes.OminousBannerBlockEntityRenameFix#<init>` | `crates/mc-math/src/ported/ominous_banner_block_entity_rename_fix.rs` | 11 | `<item>` |
