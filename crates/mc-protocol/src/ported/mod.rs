@@ -312,3 +312,5 @@ pub mod clientbound_block_entity_data_packet;
 pub mod clientbound_sound_packet;
 pub mod clientbound_player_abilities_packet;
 pub mod clientbound_command_suggestions_packet;
+pub mod debug_entity_name_generator;
+pub mod clientbound_login_packet;
