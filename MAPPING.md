@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5802** across **1316** classes.
+Total mapped Java symbols: **5815** across **1319** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5472,6 +5472,12 @@ Total mapped Java symbols: **5802** across **1316** classes.
 | `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#isInvalidPlacementLocation` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 324 | `is_invalid_placement_location` |
 | `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#place` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 229 | `place` |
 | `net.minecraft.world.level.levelgen.feature.TwistingVinesFeature#placeWeepingVinesColumn` | `crates/mc-worldgen/src/ported/twisting_vines_feature.rs` | 300 | `place_weeping_vines_column` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#<init>` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 293 | `new` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#getFloorY` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 329 | `get_floor_y` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#isValidPlacement` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 347 | `is_valid_placement` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#isVisibleFromOutside` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 367 | `is_visible_from_outside` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#isWaterOrAir` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 362 | `is_water_or_air` |
+| `net.minecraft.world.level.levelgen.feature.UnderwaterMagmaFeature#place` | `crates/mc-worldgen/src/ported/underwater_magma_feature.rs` | 298 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#<init>` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 129 | `new` |
 | `net.minecraft.world.level.levelgen.feature.VinesFeature#place` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 134 | `place` |
 | `net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature#<init>` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 184 | `new` |
@@ -6067,6 +6073,8 @@ Total mapped Java symbols: **5802** across **1316** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#boundingBox` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 28 | `bounding_box` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride#spawns` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 33 | `spawns` |
 | `net.minecraft.world.level.levelgen.structure.StructureSpawnOverride$BoundingBoxType#getSerializedName` | `crates/mc-worldgen/src/ported/structure_spawn_override.rs` | 47 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.StructureType#codec` | `crates/mc-worldgen/src/ported/structure_type.rs` | 45 | `codec` |
+| `net.minecraft.world.level.levelgen.structure.StructureType#register` | `crates/mc-worldgen/src/ported/structure_type.rs` | 59 | `register` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator#generatePieces` | `crates/mc-worldgen/src/ported/piece_generator.rs` | 66 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator#generatePieces` | `crates/mc-worldgen/src/ported/piece_generator.rs` | 74 | `generate_pieces` |
@@ -6158,6 +6166,11 @@ Total mapped Java symbols: **5802** across **1316** classes.
 | `net.minecraft.world.level.levelgen.structure.pools.alias.RandomPoolAlias#codec` | `crates/mc-worldgen/src/ported/random_pool_alias.rs` | 133 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.RandomPoolAlias#forEachResolved` | `crates/mc-worldgen/src/ported/random_pool_alias.rs` | 114 | `for_each_resolved` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.RandomPoolAlias#targets` | `crates/mc-worldgen/src/ported/random_pool_alias.rs` | 109 | `targets` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces#BuriedTreasurePiece(BlockPos)` | `crates/mc-worldgen/src/ported/buried_treasure_pieces.rs` | 297 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces#BuriedTreasurePiece(CompoundTag)` | `crates/mc-worldgen/src/ported/buried_treasure_pieces.rs` | 306 | `from_tag` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/buried_treasure_pieces.rs` | 315 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces#isLiquid` | `crates/mc-worldgen/src/ported/buried_treasure_pieces.rs` | 391 | `is_liquid` |
+| `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces#postProcess` | `crates/mc-worldgen/src/ported/buried_treasure_pieces.rs` | 323 | `post_process` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasurePieces.BuriedTreasurePiece#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 82 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#<init>` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 159 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.BuriedTreasureStructure#CODEC` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 187 | `<item>` |

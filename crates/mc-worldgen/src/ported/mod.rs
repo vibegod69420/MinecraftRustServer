@@ -249,3 +249,6 @@ pub mod attached_to_leaves_decorator;
 pub mod bending_trunk_placer;
 pub mod forking_trunk_placer;
 pub mod random_spread_structure_placement;
+pub mod structure_type;
+pub mod buried_treasure_pieces;
+pub mod underwater_magma_feature;
