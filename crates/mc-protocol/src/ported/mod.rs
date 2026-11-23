@@ -289,3 +289,6 @@ pub mod entity_data_source;
 pub mod clientbound_stop_sound_packet;
 pub mod serverbound_container_click_packet;
 pub mod bundler_info;
+pub mod compression_decoder;
+pub mod serverbound_seen_advancements_packet;
+pub mod clientbound_sound_entity_packet;
