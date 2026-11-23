@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 05:50:14 UTC",
-  "updated_epoch": 1795413014,
+  "updated_at": "2026-11-23 05:50:15 UTC",
+  "updated_epoch": 1795413015,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "8152ad6",
+      "ts": "2026-11-23T05:50:14+00:00",
+      "message": "Worker sync: 7470 mapped Java methods"
+    },
+    {
       "sha": "116c7f8",
       "ts": "2026-11-23T05:48:20+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
@@ -445,11 +450,6 @@
       "sha": "2ad086d",
       "ts": "2026-11-23T05:04:11+00:00",
       "message": "Worker sync: 7317 mapped Java methods"
-    },
-    {
-      "sha": "16d8a64",
-      "ts": "2026-11-23T05:01:22+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
