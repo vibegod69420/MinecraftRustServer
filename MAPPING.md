@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5419** across **1264** classes.
+Total mapped Java symbols: **5438** across **1267** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3607,6 +3607,29 @@ Total mapped Java symbols: **5419** across **1264** classes.
 | `net.minecraft.util.EncoderCache$Key#resolve` | `crates/mc-math/src/ported/encoder_cache.rs` | 159 | `resolve` |
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
+| `net.minecraft.util.ExtraCodecs#ensureHomogenous` | `crates/mc-math/src/ported/extra_codecs.rs` | 223 | `ensure_homogenous` |
+| `net.minecraft.util.ExtraCodecs#floatRange` | `crates/mc-math/src/ported/extra_codecs.rs` | 180 | `float_range` |
+| `net.minecraft.util.ExtraCodecs#floatRangeMinExclusiveWithMessage` | `crates/mc-math/src/ported/extra_codecs.rs` | 145 | `float_range_min_exclusive_with_message` |
+| `net.minecraft.util.ExtraCodecs#floatRangeMinInclusiveWithMessage` | `crates/mc-math/src/ported/extra_codecs.rs` | 108 | `float_range_min_inclusive_with_message` |
+| `net.minecraft.util.ExtraCodecs#fromOptionalLong` | `crates/mc-math/src/ported/extra_codecs.rs` | 192 | `from_optional_long` |
+| `net.minecraft.util.ExtraCodecs#hexColor` | `crates/mc-math/src/ported/extra_codecs.rs` | 37 | `parse_hex_color` |
+| `net.minecraft.util.ExtraCodecs#hexColor` | `crates/mc-math/src/ported/extra_codecs.rs` | 64 | `format_hex_color` |
+| `net.minecraft.util.ExtraCodecs#idResolverCodec` | `crates/mc-math/src/ported/extra_codecs.rs` | 197 | `id_resolver_from_int` |
+| `net.minecraft.util.ExtraCodecs#idResolverCodec` | `crates/mc-math/src/ported/extra_codecs.rs` | 212 | `id_resolver_to_value` |
+| `net.minecraft.util.ExtraCodecs#intRange` | `crates/mc-math/src/ported/extra_codecs.rs` | 82 | `int_range` |
+| `net.minecraft.util.ExtraCodecs#intRangeWithMessage` | `crates/mc-math/src/ported/extra_codecs.rs` | 70 | `int_range_with_message` |
+| `net.minecraft.util.ExtraCodecs#longRange` | `crates/mc-math/src/ported/extra_codecs.rs` | 101 | `long_range` |
+| `net.minecraft.util.ExtraCodecs#longRangeWithMessage` | `crates/mc-math/src/ported/extra_codecs.rs` | 89 | `long_range_with_message` |
+| `net.minecraft.util.ExtraCodecs#orElsePartial` | `crates/mc-math/src/ported/extra_codecs.rs` | 295 | `or_else_partial` |
+| `net.minecraft.util.ExtraCodecs#orElsePartial` | `crates/mc-math/src/ported/extra_codecs.rs` | 303 | `or_else_partial_value` |
+| `net.minecraft.util.ExtraCodecs#toOptionalLong` | `crates/mc-math/src/ported/extra_codecs.rs` | 187 | `to_optional_long` |
+| `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#LateBoundIdMapper` | `crates/mc-math/src/ported/extra_codecs.rs` | 254 | `new` |
+| `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#codec` | `crates/mc-math/src/ported/extra_codecs.rs` | 269 | `get_by_id` |
+| `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#codec` | `crates/mc-math/src/ported/extra_codecs.rs` | 274 | `get_id_by_value` |
+| `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#put` | `crates/mc-math/src/ported/extra_codecs.rs` | 262 | `put` |
+| `net.minecraft.util.ExtraCodecs.LateBoundIdMapper#values` | `crates/mc-math/src/ported/extra_codecs.rs` | 279 | `values` |
+| `net.minecraft.util.ExtraCodecs.TagOrElementLocation#decoratedId` | `crates/mc-math/src/ported/extra_codecs.rs` | 20 | `decorated_id` |
+| `net.minecraft.util.ExtraCodecs.TagOrElementLocation#toString` | `crates/mc-math/src/ported/extra_codecs.rs` | 31 | `fmt` |
 | `net.minecraft.util.FileSystemUtil#safeGetPath` | `crates/mc-math/src/ported/file_system_util.rs` | 87 | `safe_get_path` |
 | `net.minecraft.util.FileUtil#containsAllowedCharactersOnly` | `crates/mc-math/src/ported/file_util.rs` | 492 | `contains_allowed_characters_only` |
 | `net.minecraft.util.FileUtil#createDirectoriesSafe` | `crates/mc-math/src/ported/file_util.rs` | 517 | `create_directories_safe` |
