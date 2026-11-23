@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:14:15 UTC",
-  "updated_epoch": 1795400055,
+  "updated_at": "2026-11-23 02:16:11 UTC",
+  "updated_epoch": 1795400171,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,10 +17,10 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1278,
-    "mapped_methods": 5493,
-    "class_coverage_pct": 17.8417,
-    "method_coverage_pct": 8.2383,
+    "mapped_classes": 1281,
+    "mapped_methods": 5511,
+    "class_coverage_pct": 17.8836,
+    "method_coverage_pct": 8.2653,
     "harness_verified_classes": 817,
     "harness_failed_attempts": 169
   },
@@ -35,11 +35,11 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 1530
+      "mapped_methods": 1541
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2053
+      "mapped_methods": 2061
     },
     {
       "name": "mc-worldgen",
@@ -47,11 +47,11 @@
     }
   ],
   "usage": {
-    "calls_total": 826,
-    "prompt_tokens": 2294044,
-    "completion_tokens": 12173009,
-    "reasoning_tokens": 8733631,
-    "avg_latency_s": 231.9
+    "calls_total": 834,
+    "prompt_tokens": 2314958,
+    "completion_tokens": 12335307,
+    "reasoning_tokens": 8852381,
+    "avg_latency_s": 230.7
   },
   "recent_work": [
     {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "ab7877e",
+      "ts": "2026-11-23T02:14:16+00:00",
+      "message": "Worker sync: 5493 mapped Java methods"
+    },
+    {
       "sha": "55f5139",
       "ts": "2026-11-23T02:13:47+00:00",
       "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
@@ -445,11 +450,6 @@
       "sha": "def9822",
       "ts": "2026-11-23T01:59:40+00:00",
       "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "be29c61",
-      "ts": "2026-11-23T01:58:14+00:00",
-      "message": "Port 8 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5493** across **1278** classes.
+Total mapped Java symbols: **5511** across **1281** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3248,6 +3248,14 @@ Total mapped Java symbols: **5493** across **1278** classes.
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 243 | `read` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#handle` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 256 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#type` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 251 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#<init>` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 213 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#<init>` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 229 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#getLines` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 284 | `get_lines` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#getPos` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 274 | `get_pos` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#handle` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 269 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#isFrontText` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 279 | `is_front_text` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#type` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 264 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundSignUpdatePacket#write` | `crates/mc-protocol/src/ported/serverbound_sign_update_packet.rs` | 252 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundSwingPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_swing_packet.rs` | 105 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundSwingPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_swing_packet.rs` | 110 | `from_buf` |
 | `net.minecraft.network.protocol.game.ServerboundSwingPacket#getHand` | `crates/mc-protocol/src/ported/serverbound_swing_packet.rs` | 132 | `get_hand` |
@@ -6544,6 +6552,17 @@ Total mapped Java symbols: **5493** across **1278** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#<init>` | `crates/mc-nbt/src/ported/set_item_function.rs` | 70 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#getType` | `crates/mc-nbt/src/ported/set_item_function.rs` | 75 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#run` | `crates/mc-nbt/src/ported/set_item_function.rs` | 80 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#<init>` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 141 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 161 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#getType` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 156 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#run` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 169 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#setLore` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 189 | `set_lore` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction#updateLore` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 177 | `update_lore` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder#addLine` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 224 | `add_line` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder#build` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 235 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder#getThis` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 230 | `get_this` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder#setMode` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 212 | `set_mode` |
+| `net.minecraft.world.level.storage.loot.functions.SetLoreFunction$Builder#setResolutionContext` | `crates/mc-nbt/src/ported/set_lore_function.rs` | 218 | `set_resolution_context` |
 | `net.minecraft.world.level.storage.loot.functions.SetNameFunction#SetNameFunction` | `crates/mc-nbt/src/ported/set_name_function.rs` | 234 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetNameFunction#createResolver` | `crates/mc-nbt/src/ported/set_name_function.rs` | 266 | `create_resolver` |
 | `net.minecraft.world.level.storage.loot.functions.SetNameFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/set_name_function.rs` | 254 | `get_referenced_context_params` |
