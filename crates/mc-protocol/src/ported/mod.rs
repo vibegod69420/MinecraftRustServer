@@ -257,3 +257,5 @@ pub mod clientbound_block_update_packet;
 pub mod serverbound_jigsaw_generate_packet;
 pub mod clientbound_set_passengers_packet;
 pub mod packet_encoder;
+pub mod clientbound_open_screen_packet;
+pub mod serverbound_use_item_packet;
