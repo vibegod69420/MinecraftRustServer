@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:52:14 UTC",
-  "updated_epoch": 1795395134,
+  "updated_at": "2026-11-23 00:54:04 UTC",
+  "updated_epoch": 1795395244,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1038,
-    "mapped_methods": 4248,
-    "class_coverage_pct": 14.4911,
-    "method_coverage_pct": 6.3711,
-    "harness_verified_classes": 684,
+    "mapped_classes": 1045,
+    "mapped_methods": 4283,
+    "class_coverage_pct": 14.5889,
+    "method_coverage_pct": 6.4236,
+    "harness_verified_classes": 690,
     "harness_failed_attempts": 130
   },
   "crates": [
@@ -31,11 +31,11 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 1518
+      "mapped_methods": 1533
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 1200
+      "mapped_methods": 1227
     },
     {
       "name": "mc-protocol",
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 623,
-    "prompt_tokens": 1638669,
-    "completion_tokens": 8449933,
-    "reasoning_tokens": 6044626,
-    "avg_latency_s": 211.8
+    "calls_total": 631,
+    "prompt_tokens": 1658872,
+    "completion_tokens": 8555254,
+    "reasoning_tokens": 6121749,
+    "avg_latency_s": 212.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:53:01Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.NestedLootTable",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 243.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:52:51Z",
+      "class_name": "net.minecraft.world.level.storage.CommandStorage",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 174.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:52:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.CoralClawFeature",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 984.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:52:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BlockColumnFeature",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 984.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:52:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.KelpFeature",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 984.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:52:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SeagrassFeature",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 984.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:51:03Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
@@ -325,57 +373,14 @@
       "verified": true,
       "seconds": 594.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:44:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 848.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:44:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 848.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:44:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 848.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:44:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 848.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:43:51Z",
-      "class_name": "net.minecraft.core.component.PatchedDataComponentMap",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 820.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:43:21Z",
-      "class_name": "net.minecraft.world.level.storage.LevelData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 790.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "02638e3",
+      "ts": "2026-11-23T00:52:14+00:00",
+      "message": "Port 10 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "2f5b78d",
       "ts": "2026-11-23T00:52:13+00:00",
@@ -445,11 +450,6 @@
       "sha": "b9777a6",
       "ts": "2026-11-23T00:38:02+00:00",
       "message": "Worker sync: 3843 mapped Java methods"
-    },
-    {
-      "sha": "8566f74",
-      "ts": "2026-11-23T00:37:02+00:00",
-      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
