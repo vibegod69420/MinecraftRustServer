@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 04:24:27 UTC",
-  "updated_epoch": 1795407867,
+  "updated_at": "2026-11-23 04:26:08 UTC",
+  "updated_epoch": 1795407968,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 21.5273,
     "method_coverage_pct": 10.761,
     "harness_verified_classes": 955,
-    "harness_failed_attempts": 244
+    "harness_failed_attempts": 247
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 1169,
-    "prompt_tokens": 3185954,
-    "completion_tokens": 18243126,
-    "reasoning_tokens": 13178725,
-    "avg_latency_s": 250.6
+    "calls_total": 1177,
+    "prompt_tokens": 3211292,
+    "completion_tokens": 18355612,
+    "reasoning_tokens": 13247488,
+    "avg_latency_s": 249.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T04:25:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 778.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T04:25:32Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.MonsterRoomFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 769.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T04:24:33Z",
+      "class_name": "net.minecraft.network.Connection",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 596.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T04:24:26Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.TemplateStructurePiece",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 588.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:51:44Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 207.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:51:16Z",
-      "class_name": "net.minecraft.world.level.levelgen.FlatLevelSource",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 306.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T03:50:53Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 167.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5d1521f",
+      "ts": "2026-11-23T04:24:27+00:00",
+      "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "911fed6",
       "ts": "2026-11-23T04:24:10+00:00",
@@ -445,11 +450,6 @@
       "sha": "bb62b2d",
       "ts": "2026-11-23T04:12:08+00:00",
       "message": "Worker sync: 6930 mapped Java methods"
-    },
-    {
-      "sha": "14aa2af",
-      "ts": "2026-11-23T04:10:11+00:00",
-      "message": "Worker sync: 6862 mapped Java methods"
     }
   ]
 }

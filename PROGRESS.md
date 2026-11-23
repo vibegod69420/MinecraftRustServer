@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:24:27 UTC
+- **Updated**: 2026-11-23 04:26:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7175 / 66676 (10.761%)
 - **Mapped Java Classes**: 1542 / 7163 (21.527%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 1892 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (778.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.MonsterRoomFeature` -> `mc-worldgen` (769.2s)
+- [FAIL] `net.minecraft.network.Connection` -> `mc-protocol` (596.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece` -> `mc-worldgen` (684.4s)
 - [FAIL] `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket` -> `mc-protocol` (1036.6s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundBossEventPacket` -> `mc-protocol` (637.6s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (876.7s)
 - [PASS] `net.minecraft.network.chat.SignedMessageChain` -> `mc-protocol` (812.2s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket` -> `mc-protocol` (753.6s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.FallenTreeFeature` -> `mc-worldgen` (704.4s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool` -> `mc-worldgen` (198.2s)
-- [PASS] `net.minecraft.network.syncher.EntityDataSerializers` -> `mc-protocol` (183.6s)
