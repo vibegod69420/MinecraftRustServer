@@ -189,3 +189,8 @@ pub mod serverbound_set_beacon_packet;
 pub mod clientbound_container_close_packet;
 pub mod clientbound_player_combat_kill_packet;
 pub mod clientbound_award_stats_packet;
+pub mod configuration_packet_types;
+pub mod clientbound_tab_list_packet;
+pub mod clientbound_debug_block_value_packet;
+pub mod clientbound_debug_sample_packet;
+pub mod clientbound_hurt_animation_packet;
