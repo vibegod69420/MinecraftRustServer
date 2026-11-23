@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 05:50:15 UTC",
-  "updated_epoch": 1795413015,
+  "updated_at": "2026-11-23 05:52:03 UTC",
+  "updated_epoch": 1795413123,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 22.1416,
     "method_coverage_pct": 11.2034,
     "harness_verified_classes": 983,
-    "harness_failed_attempts": 270
+    "harness_failed_attempts": 272
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 1334,
-    "prompt_tokens": 3817276,
-    "completion_tokens": 21656190,
-    "reasoning_tokens": 15642650,
-    "avg_latency_s": 262.2
+    "calls_total": 1341,
+    "prompt_tokens": 3838068,
+    "completion_tokens": 21773405,
+    "reasoning_tokens": 15726862,
+    "avg_latency_s": 261.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T05:52:03Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheck",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 331.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T05:50:16Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 839.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T05:49:59Z",
       "class_name": "net.minecraft.world.level.levelgen.RandomState",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 2020.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T04:42:27Z",
-      "class_name": "net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 853.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T04:40:30Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 180.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "cfbf8cb",
+      "ts": "2026-11-23T05:50:16+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "8152ad6",
       "ts": "2026-11-23T05:50:14+00:00",
@@ -445,11 +450,6 @@
       "sha": "ad9c00d",
       "ts": "2026-11-23T05:05:24+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "2ad086d",
-      "ts": "2026-11-23T05:04:11+00:00",
-      "message": "Worker sync: 7317 mapped Java methods"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:50:14 UTC
+- **Updated**: 2026-11-23 05:52:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7470 / 66676 (11.203%)
 - **Mapped Java Classes**: 1586 / 7163 (22.142%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2136 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (331.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece` -> `mc-worldgen` (839.4s)
 - [PASS] `net.minecraft.world.level.levelgen.RandomState` -> `mc-worldgen` (822.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (723.8s)
 - [PASS] `net.minecraft.world.level.levelgen.Noises` -> `mc-worldgen` (644.8s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.world.level.chunk.storage.ChunkScanAccess` -> `mc-worldgen` (259.4s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces` -> `mc-worldgen` (1448.3s)
 - [PASS] `net.minecraft.world.level.chunk.LightChunkGetter` -> `mc-worldgen` (210.8s)
-- [PASS] `net.minecraft.world.level.chunk.PaletteResize` -> `mc-worldgen` (210.8s)
-- [PASS] `net.minecraft.world.level.chunk.MissingPaletteEntryException` -> `mc-worldgen` (210.8s)
