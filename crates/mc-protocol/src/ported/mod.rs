@@ -194,3 +194,6 @@ pub mod clientbound_tab_list_packet;
 pub mod clientbound_debug_block_value_packet;
 pub mod clientbound_debug_sample_packet;
 pub mod clientbound_hurt_animation_packet;
+pub mod clientbound_set_border_warning_delay_packet;
+pub mod clientbound_set_chunk_cache_center_packet;
+pub mod clientbound_custom_chat_completions_packet;

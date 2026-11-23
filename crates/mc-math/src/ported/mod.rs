@@ -172,3 +172,4 @@ pub mod csv_output;
 pub mod debug_subscription;
 pub mod delegate_data_output;
 pub mod png_info;
+pub mod signature_validator;
