@@ -596,3 +596,8 @@ pub mod abstract_consecutive_executor;
 pub mod gson_helper;
 pub mod defaulted_mapped_registry;
 pub mod entity_horse_saddle_fix;
+pub mod entity_horse_split_fix;
+pub mod world_gen_settings_disallow_old_custom_worlds_fix;
+pub mod entity_attribute_base_value_fix;
+pub mod map_banner_block_pos_format_fix;
+pub mod gc_heap_stat;
