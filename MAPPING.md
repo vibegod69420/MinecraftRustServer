@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7317** across **1561** classes.
+Total mapped Java symbols: **7327** across **1562** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7497,6 +7497,16 @@ Total mapped Java symbols: **7317** across **1561** classes.
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#WOODLAND_MANSIONS` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 66 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#register` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 47 | `register` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructures#createKey` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 52 | `create_key` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#<init>` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 310 | `new` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#applyFix` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 352 | `apply_fix` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#getLegacyTagFixer` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 580 | `get_legacy_tag_fixer` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#hasLegacyStart` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 429 | `has_legacy_start` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#isUnhandledStructureStart` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 447 | `is_unhandled_structure_start` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#markChunkDone` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 334 | `mark_chunk_done` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#populateCaches` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 495 | `populate_caches` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#targetDataVersion` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 347 | `target_data_version` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#updateFromLegacy` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 380 | `update_from_legacy` |
+| `net.minecraft.world.level.levelgen.structure.LegacyStructureDataHandler#updateStructureStart` | `crates/mc-worldgen/src/ported/legacy_structure_data_handler.rs` | 467 | `update_structure_start` |
 | `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#<init>` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 217 | `new` |
 | `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#addJunction` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 305 | `add_junction` |
 | `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getElement` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 290 | `get_element` |
