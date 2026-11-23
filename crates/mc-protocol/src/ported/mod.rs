@@ -210,3 +210,5 @@ pub mod clientbound_set_border_warning_distance_packet;
 pub mod clientbound_container_set_content_packet;
 pub mod serverbound_command_suggestion_packet;
 pub mod serverbound_player_abilities_packet;
+pub mod serverbound_custom_payload_packet;
+pub mod serverbound_resource_pack_packet;

@@ -110,3 +110,4 @@ pub mod set_container_loot_table;
 pub mod filtered_function;
 pub mod container_component_manipulators;
 pub mod entity_has_score_condition;
+pub mod enchant_with_levels_function;

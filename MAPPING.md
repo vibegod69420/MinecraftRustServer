@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4119** across **1005** classes.
+Total mapped Java symbols: **4153** across **1015** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -84,6 +84,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `java.lang.Math#round` | `crates/mc-nbt/src/ported/enchantment_level_provider.rs` | 75 | `java_math_round_f32` |
 | `java.lang.Math#round` | `crates/mc-nbt/src/ported/number_provider.rs` | 12 | `java_math_round_f32` |
 | `java.lang.Math#round(float)` | `crates/mc-worldgen/src/ported/scattered_ore_feature.rs` | 114 | `java_math_round_f32` |
+| `java.util.UUID#<init>` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 11 | `new` |
 | `java.util.concurrent.CompletableFuture` | `crates/mc-math/src/ported/task_scheduler.rs` | 5 | `clone` |
 | `java.util.concurrent.CompletableFuture#complete` | `crates/mc-math/src/ported/task_scheduler.rs` | 32 | `complete` |
 | `java.util.concurrent.CompletableFuture#completedFuture` | `crates/mc-math/src/ported/future_chain.rs` | 50 | `completed_future` |
@@ -1471,6 +1472,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.FriendlyByteBuf#readNullable` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 98 | `read_nullable` |
 | `net.minecraft.network.FriendlyByteBuf#readNullable` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 163 | `read_nullable_byte_array` |
 | `net.minecraft.network.FriendlyByteBuf#readShort` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 33 | `read_short` |
+| `net.minecraft.network.FriendlyByteBuf#readUUID` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 114 | `read_uuid` |
 | `net.minecraft.network.FriendlyByteBuf#readUUID()` | `crates/mc-protocol/src/ported/clientbound_player_info_remove_packet.rs` | 112 | `read_uuid` |
 | `net.minecraft.network.FriendlyByteBuf#readUtf` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 49 | `read_utf` |
 | `net.minecraft.network.FriendlyByteBuf#readUtf` | `crates/mc-protocol/src/ported/clientbound_custom_chat_completions_packet.rs` | 72 | `read_utf` |
@@ -1517,6 +1519,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_container_button_click_packet.rs` | 17 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_container_close_packet.rs` | 32 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_entity_packet.rs` | 33 | `read_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 78 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_select_bundle_item_packet.rs` | 16 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 74 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_swing_packet.rs` | 23 | `read_var_int` |
@@ -1568,6 +1571,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.FriendlyByteBuf#writeNullable` | `crates/mc-protocol/src/ported/clientbound_reset_score_packet.rs` | 82 | `write_nullable` |
 | `net.minecraft.network.FriendlyByteBuf#writeNullable` | `crates/mc-protocol/src/ported/serverbound_cookie_response_packet.rs` | 179 | `write_nullable_byte_array` |
 | `net.minecraft.network.FriendlyByteBuf#writeShort` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 28 | `write_short` |
+| `net.minecraft.network.FriendlyByteBuf#writeUUID` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 124 | `write_uuid` |
 | `net.minecraft.network.FriendlyByteBuf#writeUUID(UUID)` | `crates/mc-protocol/src/ported/clientbound_player_info_remove_packet.rs` | 119 | `write_uuid` |
 | `net.minecraft.network.FriendlyByteBuf#writeUtf` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 82 | `write_utf` |
 | `net.minecraft.network.FriendlyByteBuf#writeUtf` | `crates/mc-protocol/src/ported/clientbound_custom_chat_completions_packet.rs` | 109 | `write_utf` |
@@ -1614,6 +1618,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_container_button_click_packet.rs` | 34 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_container_close_packet.rs` | 49 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_entity_packet.rs` | 20 | `write_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 101 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_select_bundle_item_packet.rs` | 42 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 62 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_swing_packet.rs` | 41 | `write_var_int` |
@@ -1940,6 +1945,10 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.protocol.common.ServerboundCustomClickActionPacket#id` | `crates/mc-protocol/src/ported/serverbound_custom_click_action_packet.rs` | 87 | `id` |
 | `net.minecraft.network.protocol.common.ServerboundCustomClickActionPacket#payload` | `crates/mc-protocol/src/ported/serverbound_custom_click_action_packet.rs` | 92 | `payload` |
 | `net.minecraft.network.protocol.common.ServerboundCustomClickActionPacket#type` | `crates/mc-protocol/src/ported/serverbound_custom_click_action_packet.rs` | 97 | `get_type` |
+| `net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 48 | `new` |
+| `net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket#handle` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 63 | `handle` |
+| `net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket#payload` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 53 | `payload` |
+| `net.minecraft.network.protocol.common.ServerboundCustomPayloadPacket#type` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 58 | `get_type` |
 | `net.minecraft.network.protocol.common.ServerboundKeepAlivePacket#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_keep_alive_packet.rs` | 23 | `read` |
 | `net.minecraft.network.protocol.common.ServerboundKeepAlivePacket#<init>(long)` | `crates/mc-protocol/src/ported/serverbound_keep_alive_packet.rs` | 18 | `new` |
 | `net.minecraft.network.protocol.common.ServerboundKeepAlivePacket#getId()` | `crates/mc-protocol/src/ported/serverbound_keep_alive_packet.rs` | 43 | `get_id` |
@@ -1952,9 +1961,18 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.network.protocol.common.ServerboundPongPacket#handle` | `crates/mc-protocol/src/ported/serverbound_pong_packet.rs` | 95 | `handle` |
 | `net.minecraft.network.protocol.common.ServerboundPongPacket#type` | `crates/mc-protocol/src/ported/serverbound_pong_packet.rs` | 90 | `type_` |
 | `net.minecraft.network.protocol.common.ServerboundPongPacket#write` | `crates/mc-protocol/src/ported/serverbound_pong_packet.rs` | 84 | `write` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket#<init>(java.util.UUID,net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action)` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 137 | `new` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket#<init>(net.minecraft.network.FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 142 | `read` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket#handle` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 160 | `handle` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket#type` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 155 | `get_type` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket#write` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 149 | `write` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action#isTerminal` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 40 | `is_terminal` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action#ordinal` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 45 | `ordinal` |
+| `net.minecraft.network.protocol.common.ServerboundResourcePackPacket$Action#values` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 59 | `from_ordinal` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#<init>` | `crates/mc-protocol/src/ported/brand_payload.rs` | 189 | `read` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#type` | `crates/mc-protocol/src/ported/brand_payload.rs` | 201 | `payload_type` |
 | `net.minecraft.network.protocol.common.custom.BrandPayload#write` | `crates/mc-protocol/src/ported/brand_payload.rs` | 196 | `write` |
+| `net.minecraft.network.protocol.common.custom.CustomPacketPayload#type` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 26 | `payload_type` |
 | `net.minecraft.network.protocol.common.custom.DiscardedPayload#codec` | `crates/mc-protocol/src/ported/discarded_payload.rs` | 101 | `codec` |
 | `net.minecraft.network.protocol.common.custom.DiscardedPayload#type` | `crates/mc-protocol/src/ported/discarded_payload.rs` | 63 | `payload_type` |
 | `net.minecraft.network.protocol.configuration.ClientConfigurationPacketListener#handleCodeOfConduct` | `crates/mc-protocol/src/ported/client_configuration_packet_listener.rs` | 47 | `handle_code_of_conduct` |
@@ -2680,6 +2698,7 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.resources.ResourceKey#createRegistryKey` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 23 | `create_registry_key` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-math/src/ported/cloner.rs` | 22 | `identifier` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 28 | `identifier` |
+| `net.minecraft.resources.ResourceLocation#<init>` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 10 | `new` |
 | `net.minecraft.server.MinecraftServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 17 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
@@ -2775,6 +2794,14 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.util.DelegateDataOutput#writeLong(long)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 99 | `write_long` |
 | `net.minecraft.util.DelegateDataOutput#writeShort(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 84 | `write_short` |
 | `net.minecraft.util.DelegateDataOutput#writeUTF(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 124 | `write_utf` |
+| `net.minecraft.util.DependencySorter#<init>` | `crates/mc-math/src/ported/dependency_sorter.rs` | 18 | `new` |
+| `net.minecraft.util.DependencySorter#addDependencyIfNotCyclic` | `crates/mc-math/src/ported/dependency_sorter.rs` | 69 | `add_dependency_if_not_cyclic` |
+| `net.minecraft.util.DependencySorter#addEntry` | `crates/mc-math/src/ported/dependency_sorter.rs` | 25 | `add_entry` |
+| `net.minecraft.util.DependencySorter#isCyclic` | `crates/mc-math/src/ported/dependency_sorter.rs` | 54 | `is_cyclic` |
+| `net.minecraft.util.DependencySorter#orderByDependencies` | `crates/mc-math/src/ported/dependency_sorter.rs` | 79 | `order_by_dependencies` |
+| `net.minecraft.util.DependencySorter#visitDependenciesAndElement` | `crates/mc-math/src/ported/dependency_sorter.rs` | 31 | `visit_dependencies_and_element` |
+| `net.minecraft.util.DependencySorter$Entry#visitOptionalDependencies` | `crates/mc-math/src/ported/dependency_sorter.rs` | 8 | `visit_optional_dependencies` |
+| `net.minecraft.util.DependencySorter$Entry#visitRequiredDependencies` | `crates/mc-math/src/ported/dependency_sorter.rs` | 6 | `visit_required_dependencies` |
 | `net.minecraft.util.EasingType#apply` | `crates/mc-math/src/ported/binary_animator.rs` | 7 | `apply` |
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
@@ -4689,6 +4716,15 @@ Total mapped Java symbols: **4119** across **1005** classes.
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#discardItem` | `crates/mc-nbt/src/ported/discard_item.rs` | 132 | `discard_item` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#getType` | `crates/mc-nbt/src/ported/discard_item.rs` | 122 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#run` | `crates/mc-nbt/src/ported/discard_item.rs` | 127 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#<init>` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 124 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#enchantWithLevels` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 155 | `enchant_with_levels` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 142 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#getType` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 137 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#run` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 147 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction$Builder#<init>` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 185 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction$Builder#build` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 205 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction$Builder#fromOptions` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 199 | `from_options` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction$Builder#getThis` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 194 | `get_this` |
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#<init>` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 153 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#fillPlayerHead` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 186 | `fill_player_head` |
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#getReferencedContextParams` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 166 | `get_referenced_context_params` |
