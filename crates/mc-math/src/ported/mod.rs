@@ -480,3 +480,4 @@ pub mod v1022;
 pub mod v4290;
 pub mod v1125;
 pub mod item_stack_map_id_fix;
+pub mod force_poi_rebuild;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8717** across **1968** classes.
+Total mapped Java symbols: **8720** across **1969** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6214,6 +6214,9 @@ Total mapped Java symbols: **8717** across **1968** classes.
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#<init>` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#fixComponent` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 69 | `fix_component` |
+| `net.minecraft.util.datafix.fixes.ForcePoiRebuild#<init>` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 138 | `new` |
+| `net.minecraft.util.datafix.fixes.ForcePoiRebuild#cap` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 157 | `cap` |
+| `net.minecraft.util.datafix.fixes.ForcePoiRebuild#makeRule` | `crates/mc-math/src/ported/force_poi_rebuild.rs` | 146 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ForcedChunkToTicketFix#<init>` | `crates/mc-math/src/ported/forced_chunk_to_ticket_fix.rs` | 97 | `new` |
 | `net.minecraft.util.datafix.fixes.ForcedChunkToTicketFix#makeRule` | `crates/mc-math/src/ported/forced_chunk_to_ticket_fix.rs` | 102 | `apply` |
 | `net.minecraft.util.datafix.fixes.GoatHornIdFix#<init>` | `crates/mc-math/src/ported/goat_horn_id_fix.rs` | 81 | `new` |
