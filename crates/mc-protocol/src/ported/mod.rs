@@ -158,3 +158,8 @@ pub mod serverbound_accept_teleportation_packet;
 pub mod clientbound_open_book_packet;
 pub mod clientbound_player_rotation_packet;
 pub mod packet_listener;
+pub mod serverbound_container_close_packet;
+pub mod clientbound_set_chunk_cache_radius_packet;
+pub mod clientbound_disguised_chat_packet;
+pub mod clientbound_set_border_size_packet;
+pub mod serverbound_set_test_block_packet;

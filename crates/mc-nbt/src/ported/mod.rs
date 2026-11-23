@@ -102,3 +102,4 @@ pub mod modify_container_contents;
 pub mod set_item_count_function;
 pub mod bonus_level_table_condition;
 pub mod scoreboard_value;
+pub mod context_nbt_provider;
