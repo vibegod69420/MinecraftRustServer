@@ -226,3 +226,6 @@ pub mod trapezoid_height;
 pub mod geode_block_settings;
 pub mod noise_router;
 pub mod noise_settings;
+pub mod placement_modifier_type;
+pub mod count_on_every_layer_placement;
+pub mod environment_scan_placement;
