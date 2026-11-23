@@ -326,3 +326,5 @@ pub mod clientbound_update_attributes_packet;
 pub mod clientbound_level_particles_packet;
 pub mod common_components;
 pub mod clientbound_game_event_packet;
+pub mod clientbound_tracked_waypoint_packet;
+pub mod unconfigured_pipeline_handler;

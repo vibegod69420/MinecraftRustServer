@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6636** across **1443** classes.
+Total mapped Java symbols: **6687** across **1454** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -105,6 +105,7 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `java.time.Instant#toEpochMilli()` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 21 | `to_epoch_milli` |
 | `java.util.Random#next(int)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 48 | `next_bits` |
 | `java.util.Random#nextInt(int)` | `crates/mc-protocol/src/ported/debug_entity_name_generator.rs` | 58 | `next_int_bound` |
+| `java.util.UUID#<init>` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 4 | `<item>` |
 | `java.util.UUID#<init>` | `crates/mc-protocol/src/ported/serverbound_resource_pack_packet.rs` | 11 | `new` |
 | `java.util.concurrent.CompletableFuture` | `crates/mc-math/src/ported/task_scheduler.rs` | 5 | `clone` |
 | `java.util.concurrent.CompletableFuture#complete` | `crates/mc-math/src/ported/task_scheduler.rs` | 32 | `complete` |
@@ -2317,6 +2318,17 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `net.minecraft.network.SkipPacketDecoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_decoder_exception.rs` | 28 | `with_cause` |
 | `net.minecraft.network.SkipPacketEncoderException#<init>(String)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 20 | `new` |
 | `net.minecraft.network.SkipPacketEncoderException#<init>(Throwable)` | `crates/mc-protocol/src/ported/skip_packet_encoder_exception.rs` | 28 | `with_cause` |
+| `net.minecraft.network.UnconfiguredPipelineHandler#setupInboundHandler` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 191 | `setup_inbound_handler` |
+| `net.minecraft.network.UnconfiguredPipelineHandler#setupInboundProtocol` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 184 | `setup_inbound_protocol` |
+| `net.minecraft.network.UnconfiguredPipelineHandler#setupOutboundHandler` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 207 | `setup_outbound_handler` |
+| `net.minecraft.network.UnconfiguredPipelineHandler#setupOutboundProtocol` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 200 | `setup_outbound_protocol` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$Inbound#channelRead` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 219 | `channel_read` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$Inbound#write` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 239 | `write` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$InboundConfigurationTask#andThen` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 144 | `and_then` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$InboundConfigurationTask#run` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 137 | `run` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$Outbound#write` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 262 | `write` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$OutboundConfigurationTask#andThen` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 175 | `and_then` |
+| `net.minecraft.network.UnconfiguredPipelineHandler$OutboundConfigurationTask#run` | `crates/mc-protocol/src/ported/unconfigured_pipeline_handler.rs` | 168 | `run` |
 | `net.minecraft.network.Utf8String#read` | `crates/mc-protocol/src/ported/utf8_string.rs` | 71 | `read` |
 | `net.minecraft.network.Utf8String#write` | `crates/mc-protocol/src/ported/utf8_string.rs` | 116 | `write` |
 | `net.minecraft.network.VarInt#getByteSize` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 50 | `varint_get_byte_size` |
@@ -3742,6 +3754,20 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#tickSteps` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 125 | `tick_steps` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#type` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 115 | `get_type` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#write` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 110 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 170 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#addWaypointAzimuth` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 209 | `add_waypoint_azimuth` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#addWaypointChunk` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 193 | `add_waypoint_chunk` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#addWaypointPosition` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 180 | `add_waypoint_position` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#apply` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 235 | `apply` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#handle` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 230 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#removeWaypoint` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 175 | `remove_waypoint` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#type` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 225 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#updateWaypointAzimuth` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 217 | `update_waypoint_azimuth` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#updateWaypointChunk` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 201 | `update_waypoint_chunk` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket#updateWaypointPosition` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 185 | `update_waypoint_position` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket$Operation#BY_ID` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 132 | `by_id` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket$Operation#action` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 141 | `apply_action` |
+| `net.minecraft.network.protocol.game.ClientboundTrackedWaypointPacket$Operation#ordinal` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 123 | `ordinal` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 365 | `<item>` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket#<init>(RegistryFriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 393 | `read` |
 | `net.minecraft.network.protocol.game.ClientboundUpdateAdvancementsPacket#<init>(boolean,Collection,Set,Map,boolean)` | `crates/mc-protocol/src/ported/clientbound_update_advancements_packet.rs` | 376 | `new` |
@@ -5994,6 +6020,21 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `net.minecraft.world.level.levelgen.Density#surface` | `crates/mc-worldgen/src/ported/density.rs` | 4 | `surface` |
 | `net.minecraft.world.level.levelgen.Density#unrecoverablyDense` | `crates/mc-worldgen/src/ported/density.rs` | 9 | `unrecoverably_dense` |
 | `net.minecraft.world.level.levelgen.Density#unrecoverablyThin` | `crates/mc-worldgen/src/ported/density.rs` | 14 | `unrecoverably_thin` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#<init>` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 142 | `new` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#addDebugScreenInfo` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 279 | `add_debug_screen_info` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#applyCarvers` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 288 | `apply_carvers` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#buildSurface` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 180 | `build_surface` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#codec` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 170 | `codec` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#createState` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 151 | `create_state` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#fillFromNoise` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 197 | `fill_from_noise` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getBaseColumn` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 257 | `get_base_column` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getBaseHeight` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 232 | `get_base_height` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getGenDepth` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 308 | `get_gen_depth` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getMinY` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 303 | `get_min_y` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getSeaLevel` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 313 | `get_sea_level` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#getSpawnHeight` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 190 | `get_spawn_height` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#settings` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 175 | `settings` |
+| `net.minecraft.world.level.levelgen.FlatLevelSource#spawnOriginalMobs` | `crates/mc-worldgen/src/ported/flat_level_source.rs` | 300 | `spawn_original_mobs` |
 | `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 37 | `get_name` |
 | `net.minecraft.world.level.levelgen.GenerationStep$Decoration#getSerializedName` | `crates/mc-worldgen/src/ported/generation_step.rs` | 54 | `get_serialized_name_value` |
 | `net.minecraft.world.level.levelgen.GeodeBlockSettings#<init>` | `crates/mc-worldgen/src/ported/geode_block_settings.rs` | 32 | `new` |
@@ -6492,6 +6533,14 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#getSpikes` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 53 | `get_spikes` |
 | `net.minecraft.world.level.levelgen.feature.configurations.SpikeConfiguration#isCrystalInvulnerable` | `crates/mc-worldgen/src/ported/spike_configuration.rs` | 48 | `is_crystal_invulnerable` |
 | `net.minecraft.world.level.levelgen.feature.configurations.SpringConfiguration#<init>` | `crates/mc-worldgen/src/ported/spring_configuration.rs` | 15 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration#<init>` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 71 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#<init>` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 115 | `new` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#<init>` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 138 | `without_root` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#build` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 180 | `build` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#decorators` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 162 | `decorators` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#dirt` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 156 | `dirt` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#forceDirt` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 174 | `force_dirt` |
+| `net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration$TreeConfigurationBuilder#ignoreVines` | `crates/mc-worldgen/src/ported/tree_configuration.rs` | 168 | `ignore_vines` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#TwistingVinesConfig` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 17 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.TwistingVinesConfig#maxHeight` | `crates/mc-worldgen/src/ported/twisting_vines_config.rs` | 36 | `max_height` |
@@ -8390,6 +8439,10 @@ Total mapped Java symbols: **6636** across **1443** classes.
 | `net.minecraft.world.phys.Vec3#STREAM_CODEC encode` | `crates/mc-protocol/src/ported/clientbound_explode_packet.rs` | 30 | `write` |
 | `net.minecraft.world.phys.shapes.Shapes#block()` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 41 | `block` |
 | `net.minecraft.world.phys.shapes.VoxelShape#move(double, double, double)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 46 | `move_shape` |
+| `net.minecraft.world.waypoints.TrackedWaypoint#empty` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 51 | `empty` |
+| `net.minecraft.world.waypoints.TrackedWaypoint#setAzimuth` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 78 | `set_azimuth` |
+| `net.minecraft.world.waypoints.TrackedWaypoint#setChunk` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 69 | `set_chunk` |
+| `net.minecraft.world.waypoints.TrackedWaypoint#setPosition` | `crates/mc-protocol/src/ported/clientbound_tracked_waypoint_packet.rs` | 60 | `set_position` |
 | `new WorldgenRandom(new LegacyRandomSource(seed)) seeds from nextLong()` | `crates/mc-math/src/ported/perlin_simplex_noise.rs` | 66 | `<item>` |
 | `replaceAll(` | `crates/mc-math/src/ported/file_util.rs` | 130 | `<item>` |
 | `return new Weighted<>($$0.apply(this.value()), this.weight)` | `crates/mc-math/src/ported/weighted.rs` | 111 | `<item>` |
