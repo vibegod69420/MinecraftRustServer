@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7499** across **1588** classes.
+Total mapped Java symbols: **7500** across **1589** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6426,6 +6426,9 @@ Total mapped Java symbols: **7499** across **1588** classes.
 | `net.minecraft.world.level.chunk.PaletteResize#noResizeExpected` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 38 | `no_resize_expected` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 5 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 29 | `on_resize` |
+| `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 42 | `do_work` |
+| `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 78 | `do_work` |
+| `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 92 | `do_work` |
 | `net.minecraft.world.level.chunk.storage.ChunkScanAccess#scanChunk` | `crates/mc-worldgen/src/ported/chunk_scan_access.rs` | 22 | `scan_chunk` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 28 | `apply_fix` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 45 | `apply_fix` |

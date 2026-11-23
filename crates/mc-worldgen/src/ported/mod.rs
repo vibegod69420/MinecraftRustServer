@@ -316,3 +316,4 @@ pub mod template_structure_piece;
 pub mod noises;
 pub mod random_state;
 pub mod ruined_portal_piece;
+pub mod chunk_status_task;
