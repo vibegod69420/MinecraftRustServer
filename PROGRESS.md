@@ -1,19 +1,23 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 03:36:47 UTC
+- **Updated**: 2026-11-23 03:38:11 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 6368 / 66676 (9.551%)
-- **Mapped Java Classes**: 1401 / 7163 (19.559%)
+- **Mapped Java Methods**: 6407 / 66676 (9.609%)
+- **Mapped Java Classes**: 1408 / 7163 (19.657%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1604 mapped methods
-- `mc-protocol`: 2730 mapped methods
-- `mc-worldgen`: 1659 mapped methods
+- `mc-protocol`: 2766 mapped methods
+- `mc-worldgen`: 1688 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.protocol.game.ClientboundDamageEventPacket` -> `mc-protocol` (915.2s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundPlayerLookAtPacket` -> `mc-protocol` (915.2s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundInitializeBorderPacket` -> `mc-protocol` (915.2s)
+- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (832.6s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature` -> `mc-worldgen` (322.2s)
 - [FAIL] `net.minecraft.network.HashedPatchMap` -> `mc-protocol` (710.7s)
 - [FAIL] `net.minecraft.network.PacketProcessor` -> `mc-protocol` (710.7s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.network.chat.SignableCommand` -> `mc-protocol` (635.4s)
 - [PASS] `net.minecraft.network.chat.TextColor` -> `mc-protocol` (635.4s)
 - [PASS] `net.minecraft.network.chat.LastSeenMessagesTracker` -> `mc-protocol` (635.4s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundLoginPacket` -> `mc-protocol` (602.9s)
-- [PASS] `net.minecraft.network.protocol.game.DebugEntityNameGenerator` -> `mc-protocol` (602.9s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket` -> `mc-protocol` (602.9s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundCommandSuggestionsPacket` -> `mc-protocol` (503.1s)

@@ -314,3 +314,5 @@ pub mod clientbound_player_abilities_packet;
 pub mod clientbound_command_suggestions_packet;
 pub mod debug_entity_name_generator;
 pub mod clientbound_login_packet;
+pub mod clientbound_player_look_at_packet;
+pub mod clientbound_damage_event_packet;
