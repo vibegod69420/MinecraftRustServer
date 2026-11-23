@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:47:29 UTC
+- **Updated**: 2026-11-23 04:48:32 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7214 / 66676 (10.819%)
-- **Mapped Java Classes**: 1550 / 7163 (21.639%)
+- **Mapped Java Methods**: 7225 / 66676 (10.836%)
+- **Mapped Java Classes**: 1552 / 7163 (21.667%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,11 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1656 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 1935 mapped methods
+- `mc-worldgen`: 1946 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer` -> `mc-worldgen` (1540.6s)
+- [FAIL] `net.minecraft.network.protocol.game.ClientboundCommandsPacket` -> `mc-protocol` (2020.7s)
 - [PASS] `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets` -> `mc-worldgen` (853.1s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces` -> `mc-worldgen` (180.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (992.2s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature` -> `mc-worldgen` (1456.1s)
 - [PASS] `net.minecraft.world.level.levelgen.NoiseGeneratorSettings` -> `mc-worldgen` (243.5s)
 - [FAIL] `net.minecraft.world.level.storage.loot.BuiltInLootTables` -> `mc-nbt` (624.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (778.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.MonsterRoomFeature` -> `mc-worldgen` (769.2s)

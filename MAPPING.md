@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7214** across **1550** classes.
+Total mapped Java symbols: **7225** across **1552** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7254,6 +7254,17 @@ Total mapped Java symbols: **7214** across **1550** classes.
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#generateBranch` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 462 | `generate_branch` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 377 | `place_trunk` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer#type` | `crates/mc-worldgen/src/ported/cherry_trunk_placer.rs` | 335 | `placer_type` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#<init>` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 174 | `new` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#getLogAxis` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 310 | `get_log_axis` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#getSteps` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 302 | `get_steps` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#makeBranches` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 331 | `make_branches` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#makeLimb` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 262 | `make_limb` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 188 | `place_trunk` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#treeShape` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 350 | `tree_shape` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#trimBranches` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 326 | `trim_branches` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer#type` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 183 | `placer_type` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer$FoliageCoords#<init>` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 137 | `new` |
+| `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer$FoliageCoords#getBranchBase` | `crates/mc-worldgen/src/ported/fancy_trunk_placer.rs` | 145 | `get_branch_base` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#<init>` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 251 | `new` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#placeTrunk` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 265 | `place_trunk` |
 | `net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer#type` | `crates/mc-worldgen/src/ported/forking_trunk_placer.rs` | 260 | `placer_type` |
