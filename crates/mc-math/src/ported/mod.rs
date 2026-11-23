@@ -194,3 +194,4 @@ pub mod block_util;
 pub mod sorted_array_set;
 pub mod null_ops;
 pub mod native_module_lister;
+pub mod string_decomposer;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4970** across **1166** classes.
+Total mapped Java symbols: **4976** across **1167** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3540,6 +3540,15 @@ Total mapped Java symbols: **4970** across **1166** classes.
 | `net.minecraft.util.StaticCache2D#toString` | `crates/mc-math/src/ported/static_cache2_d.rs` | 91 | `fmt` |
 | `net.minecraft.util.StrictJsonParser#parse` | `crates/mc-math/src/ported/strict_json_parser.rs` | 97 | `parse_reader` |
 | `net.minecraft.util.StrictJsonParser#parse` | `crates/mc-math/src/ported/strict_json_parser.rs` | 106 | `parse` |
+| `net.minecraft.util.StringDecomposer#feedChar` | `crates/mc-math/src/ported/string_decomposer.rs` | 191 | `feed_char` |
+| `net.minecraft.util.StringDecomposer#filterBrokenSurrogates` | `crates/mc-math/src/ported/string_decomposer.rs` | 375 | `filter_broken_surrogates` |
+| `net.minecraft.util.StringDecomposer#getPlainText` | `crates/mc-math/src/ported/string_decomposer.rs` | 393 | `get_plain_text` |
+| `net.minecraft.util.StringDecomposer#iterate` | `crates/mc-math/src/ported/string_decomposer.rs` | 200 | `iterate` |
+| `net.minecraft.util.StringDecomposer#iterateBackwards` | `crates/mc-math/src/ported/string_decomposer.rs` | 236 | `iterate_backwards` |
+| `net.minecraft.util.StringDecomposer#iterateFormatted` | `crates/mc-math/src/ported/string_decomposer.rs` | 276 | `iterate_formatted` |
+| `net.minecraft.util.StringDecomposer#iterateFormatted` | `crates/mc-math/src/ported/string_decomposer.rs` | 281 | `iterate_formatted_from` |
+| `net.minecraft.util.StringDecomposer#iterateFormatted` | `crates/mc-math/src/ported/string_decomposer.rs` | 291 | `iterate_formatted_from_with_default` |
+| `net.minecraft.util.StringDecomposer#iterateFormatted` | `crates/mc-math/src/ported/string_decomposer.rs` | 356 | `iterate_formatted_text` |
 | `net.minecraft.util.StringRepresentable#createNameLookup` | `crates/mc-math/src/ported/string_representable.rs` | 10 | `create_name_lookup` |
 | `net.minecraft.util.StringRepresentable#createNameLookup` | `crates/mc-math/src/ported/string_representable.rs` | 17 | `create_name_lookup_with` |
 | `net.minecraft.util.StringRepresentable#fromEnum` | `crates/mc-math/src/ported/string_representable.rs` | 42 | `from_enum` |
