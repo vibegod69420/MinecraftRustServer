@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6364** across **1400** classes.
+Total mapped Java symbols: **6368** across **1401** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5893,6 +5893,10 @@ Total mapped Java symbols: **6364** across **1400** classes.
 | `net.minecraft.world.level.levelgen.carver.WorldCarver#canReach` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 149 | `can_reach` |
 | `net.minecraft.world.level.levelgen.carver.WorldCarver#getRange` | `crates/mc-worldgen/src/ported/canyon_world_carver.rs` | 181 | `get_range` |
 | `net.minecraft.world.level.levelgen.feature.AbstractHugeMushroomFeature#placeMushroomBlock` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 148 | `place_mushroom_block` |
+| `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#<init>` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 193 | `new` |
+| `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#place` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 198 | `place` |
+| `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#placeBaseHangOff` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 308 | `place_base_hang_off` |
+| `net.minecraft.world.level.levelgen.feature.BasaltPillarFeature#placeHangOff` | `crates/mc-worldgen/src/ported/basalt_pillar_feature.rs` | 320 | `place_hang_off` |
 | `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#<init>` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 127 | `new` |
 | `net.minecraft.world.level.levelgen.feature.BlockBlobFeature#place` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 142 | `place` |
 | `net.minecraft.world.level.levelgen.feature.BlockColumnFeature#<init>` | `crates/mc-worldgen/src/ported/block_column_feature.rs` | 201 | `new` |
