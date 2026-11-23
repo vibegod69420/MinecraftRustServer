@@ -276,3 +276,7 @@ pub mod filtered_books_fix;
 pub mod entity_elder_guardian_split_fix;
 pub mod recipes_renamening_fix;
 pub mod renamed_coral_fans_fix;
+pub mod v2509;
+pub mod v4656;
+pub mod v4648;
+pub mod v1486;

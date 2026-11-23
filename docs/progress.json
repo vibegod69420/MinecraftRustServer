@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 07:48:58 UTC",
-  "updated_epoch": 1795420138,
+  "updated_at": "2026-11-23 07:50:02 UTC",
+  "updated_epoch": 1795420202,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1725,
-    "mapped_methods": 8044,
-    "class_coverage_pct": 24.0821,
-    "method_coverage_pct": 12.0643,
-    "harness_verified_classes": 1070,
+    "mapped_classes": 1729,
+    "mapped_methods": 8052,
+    "class_coverage_pct": 24.1379,
+    "method_coverage_pct": 12.0763,
+    "harness_verified_classes": 1074,
     "harness_failed_attempts": 320
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 2361
+      "mapped_methods": 2369
     },
     {
       "name": "mc-nbt",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 1582,
-    "prompt_tokens": 4893870,
-    "completion_tokens": 26132758,
-    "reasoning_tokens": 18680149,
-    "avg_latency_s": 282.6
+    "calls_total": 1583,
+    "prompt_tokens": 4896652,
+    "completion_tokens": 26141826,
+    "reasoning_tokens": 18685939,
+    "avg_latency_s": 282.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T07:49:47Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1486",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:49:47Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V4648",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:49:47Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V4656",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T07:49:47Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V2509",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 151.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T07:48:57Z",
       "class_name": "net.minecraft.util.datafix.fixes.RenamedCoralFansFix",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 157.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:23:41Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V2522",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 157.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:23:41Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V2502",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 157.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:23:41Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V3203",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 157.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T07:23:26Z",
-      "class_name": "net.minecraft.util.profiling.jfr.SummaryReporter",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 292.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "2dc1d91",
+      "ts": "2026-11-23T07:48:58+00:00",
+      "message": "Port 4 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "b189ade",
       "ts": "2026-11-23T07:47:49+00:00",
@@ -445,11 +450,6 @@
       "sha": "ea0fb08",
       "ts": "2026-11-23T07:18:18+00:00",
       "message": "Worker sync: 7889 mapped Java methods"
-    },
-    {
-      "sha": "d22d70b",
-      "ts": "2026-11-23T07:16:02+00:00",
-      "message": "Worker sync: 7881 mapped Java methods"
     }
   ]
 }
