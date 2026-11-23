@@ -1,31 +1,31 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 11:54:18 UTC
+- **Updated**: 2026-11-23 11:58:27 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 8973 / 66676 (13.458%)
-- **Mapped Java Classes**: 2047 / 7163 (28.577%)
+- **Mapped Java Methods**: 8978 / 66676 (13.465%)
+- **Mapped Java Classes**: 2048 / 7163 (28.591%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 3616 mapped methods
+- `mc-math`: 3622 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
-- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (4425.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (4425.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.UnflattenTextComponentFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.CavesAndCliffsRenames` -> `mc-math` (4424.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.BlockEntitySignDoubleSidedEditableTextFix` -> `mc-math` (4424.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.EffectDurationFix` -> `mc-math` (4424.8s)
-- [PASS] `net.minecraft.util.datafix.fixes.WallPropertyFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.LegacyWorldBorderFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntityRenameFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.HeightmapRenamingFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.VillagerDataFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.BlockEntityCustomNameToComponentFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.AttributesRenameFix` -> `mc-math` (4425.2s)
-- [PASS] `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix` -> `mc-math` (4425.2s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.StatsRenameFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlendingDataFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.ItemShulkerBoxColorFix` -> `mc-math` (5677.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.BlockRenameFix` -> `mc-math` (5677.8s)
+- [PASS] `net.minecraft.util.datafix.fixes.DropInvalidSignDataFix` -> `mc-math` (5677.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.SpawnerDataFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.EntityCustomNameToComponentFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.OverreachingTickFix` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1451_3` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V3818_3` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.schemas.V4067` -> `mc-math` (5678.2s)
+- [PASS] `net.minecraft.util.datafix.fixes.ChestedHorsesInventoryZeroIndexingFix` -> `mc-math` (5678.1s)
+- [PASS] `net.minecraft.util.datafix.fixes.ScoreboardDisplaySlotFix` -> `mc-math` (5678.1s)

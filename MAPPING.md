@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8973** across **2047** classes.
+Total mapped Java symbols: **8978** across **2048** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7430,7 +7430,11 @@ Total mapped Java symbols: **8973** across **2047** classes.
 | `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#STRUCTURE` | `crates/mc-math/src/ported/structure_generation_event.rs` | 27 | `<item>` |
 | `net.minecraft.util.profiling.jfr.event.StructureGenerationEvent.Fields#SUCCESS` | `crates/mc-math/src/ported/structure_generation_event.rs` | 31 | `<item>` |
 | `net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent#<init>` | `crates/mc-math/src/ported/world_load_finished_event.rs` | 19 | `new` |
+| `net.minecraft.util.profiling.jfr.parse.JfrStatsResult#asJson` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 221 | `as_json` |
+| `net.minecraft.util.profiling.jfr.parse.JfrStatsResult#chunkGenSummary` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 196 | `chunk_gen_summary` |
+| `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#duration` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 98 | `duration` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#from` | `crates/mc-math/src/ported/chunk_gen_stat.rs` | 68 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#status` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 93 | `status` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkIdentification#from` | `crates/mc-math/src/ported/chunk_identification.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.CpuLoadStat#from` | `crates/mc-math/src/ported/cpu_load_stat.rs` | 14 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.FileIOStat#summary` | `crates/mc-math/src/ported/file_io_stat.rs` | 25 | `summary` |
@@ -7449,7 +7453,9 @@ Total mapped Java symbols: **8973** across **2047** classes.
 | `net.minecraft.util.profiling.jfr.stats.ThreadAllocationStat#summary` | `crates/mc-math/src/ported/thread_allocation_stat.rs` | 47 | `summary` |
 | `net.minecraft.util.profiling.jfr.stats.TickTimeStat#from` | `crates/mc-math/src/ported/tick_time_stat.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
+| `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#summary` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 130 | `summary` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#summary` | `crates/mc-math/src/ported/timed_stat_summary.rs` | 34 | `summary` |
+| `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#totalDuration` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 168 | `total_duration` |
 | `net.minecraft.util.profiling.metrics.MetricCategory#getDescription` | `crates/mc-math/src/ported/metric_category.rs` | 15 | `get_description` |
 | `net.minecraft.util.profiling.metrics.MetricSampler#create` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 43 | `create` |
 | `net.minecraft.util.profiling.metrics.MetricsSamplerProvider#samplers` | `crates/mc-math/src/ported/metrics_sampler_provider.rs` | 43 | `samplers` |

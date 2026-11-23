@@ -544,3 +544,4 @@ pub mod chested_horses_inventory_zero_indexing_fix;
 pub mod item_shulker_box_color_fix;
 pub mod stats_rename_fix;
 pub mod v1451_3;
+pub mod jfr_stats_result;
