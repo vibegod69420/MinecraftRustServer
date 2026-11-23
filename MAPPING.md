@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3290** across **818** classes.
+Total mapped Java symbols: **3303** across **819** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1395,6 +1395,15 @@ Total mapped Java symbols: **3290** across **818** classes.
 | `net.minecraft.network.PacketBundleUnpacker#<init>` | `crates/mc-protocol/src/ported/packet_bundle_unpacker.rs` | 24 | `new` |
 | `net.minecraft.network.PacketBundleUnpacker#encode` | `crates/mc-protocol/src/ported/packet_bundle_unpacker.rs` | 29 | `encode` |
 | `net.minecraft.network.PacketListener` | `crates/mc-protocol/src/ported/protocol_codec_builder.rs` | 28 | `<item>` |
+| `net.minecraft.network.PacketListener#createDisconnectionInfo` | `crates/mc-protocol/src/ported/packet_listener.rs` | 129 | `create_disconnection_info` |
+| `net.minecraft.network.PacketListener#fillCrashReport` | `crates/mc-protocol/src/ported/packet_listener.rs` | 146 | `fill_crash_report` |
+| `net.minecraft.network.PacketListener#fillListenerSpecificCrashDetails` | `crates/mc-protocol/src/ported/packet_listener.rs` | 157 | `fill_listener_specific_crash_details` |
+| `net.minecraft.network.PacketListener#flow` | `crates/mc-protocol/src/ported/packet_listener.rs` | 109 | `flow` |
+| `net.minecraft.network.PacketListener#isAcceptingMessages` | `crates/mc-protocol/src/ported/packet_listener.rs` | 138 | `is_accepting_messages` |
+| `net.minecraft.network.PacketListener#onDisconnect` | `crates/mc-protocol/src/ported/packet_listener.rs` | 115 | `on_disconnect` |
+| `net.minecraft.network.PacketListener#onPacketError` | `crates/mc-protocol/src/ported/packet_listener.rs` | 118 | `on_packet_error` |
+| `net.minecraft.network.PacketListener#protocol` | `crates/mc-protocol/src/ported/packet_listener.rs` | 112 | `protocol` |
+| `net.minecraft.network.PacketListener#shouldHandleMessage` | `crates/mc-protocol/src/ported/packet_listener.rs` | 141 | `should_handle_message` |
 | `net.minecraft.network.PacketSendListener` | `crates/mc-protocol/src/ported/packet_send_listener.rs` | 3 | `packet_type_name` |
 | `net.minecraft.network.PacketSendListener#exceptionallySend` | `crates/mc-protocol/src/ported/packet_send_listener.rs` | 28 | `exceptionally_send` |
 | `net.minecraft.network.PacketSendListener#thenRun` | `crates/mc-protocol/src/ported/packet_send_listener.rs` | 15 | `then_run` |
@@ -3951,6 +3960,11 @@ Total mapped Java symbols: **3290** across **818** classes.
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProviders#STORAGE` | `crates/mc-nbt/src/ported/number_providers.rs` | 74 | `storage` |
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProviders#UNIFORM` | `crates/mc-nbt/src/ported/number_providers.rs` | 56 | `uniform` |
 | `net.minecraft.world.level.storage.loot.providers.number.NumberProviders#register` | `crates/mc-nbt/src/ported/number_providers.rs` | 36 | `register` |
+| `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue#fromScoreboard` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 138 | `from_scoreboard` |
+| `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue#fromScoreboard` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 143 | `from_scoreboard_with_scale` |
+| `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue#getFloat` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 158 | `get_float` |
+| `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue#getReferencedContextParams` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 127 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue#getType` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 122 | `get_type` |
 | `net.minecraft.world.level.storage.loot.providers.number.StorageValue#<init>` | `crates/mc-nbt/src/ported/storage_value.rs` | 102 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.number.StorageValue#getFloat` | `crates/mc-nbt/src/ported/storage_value.rs` | 138 | `get_float` |
 | `net.minecraft.world.level.storage.loot.providers.number.StorageValue#getInt` | `crates/mc-nbt/src/ported/storage_value.rs` | 144 | `get_int` |
@@ -3965,8 +3979,11 @@ Total mapped Java symbols: **3290** across **818** classes.
 | `net.minecraft.world.level.storage.loot.providers.number.UniformGenerator#getType` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 113 | `get_type` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#<init>` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 145 | `new` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#forTarget` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 155 | `for_target` |
+| `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#forTarget` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 91 | `for_target` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#getReferencedContextParams` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 171 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#getReferencedContextParams` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 100 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#getScoreHolder` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 166 | `get_score_holder` |
+| `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#getScoreHolder` | `crates/mc-nbt/src/ported/scoreboard_value.rs` | 107 | `get_score_holder` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#getType` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 160 | `get_type` |
 | `net.minecraft.world.level.storage.loot.providers.score.ContextScoreboardNameProvider#target` | `crates/mc-nbt/src/ported/context_scoreboard_name_provider.rs` | 150 | `target` |
 | `net.minecraft.world.level.storage.loot.providers.score.FixedScoreboardNameProvider` | `crates/mc-nbt/src/ported/fixed_scoreboard_name_provider.rs` | 55 | `<item>` |

@@ -101,3 +101,4 @@ pub mod set_written_book_pages_function;
 pub mod modify_container_contents;
 pub mod set_item_count_function;
 pub mod bonus_level_table_condition;
+pub mod scoreboard_value;

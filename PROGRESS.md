@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:08:08 UTC
+- **Updated**: 2026-11-23 00:11:22 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 3290 / 66676 (4.934%)
-- **Mapped Java Classes**: 818 / 7163 (11.420%)
+- **Mapped Java Methods**: 3303 / 66676 (4.954%)
+- **Mapped Java Classes**: 819 / 7163 (11.434%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 1182 mapped methods
-- `mc-nbt`: 1098 mapped methods
-- `mc-protocol`: 882 mapped methods
+- `mc-nbt`: 1106 mapped methods
+- `mc-protocol`: 891 mapped methods
 - `mc-worldgen`: 818 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.storage.loot.providers.number.ScoreboardValue` -> `mc-nbt` (193.7s)
 - [PASS] `net.minecraft.util.AbortableIterationConsumer` -> `mc-math` (1057.6s)
 - [PASS] `net.minecraft.util.TimeUtil` -> `mc-math` (1057.6s)
 - [PASS] `net.minecraft.util.SingleKeyCache` -> `mc-math` (1057.6s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundServerDataPacket` -> `mc-protocol` (1217.5s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket` -> `mc-protocol` (1217.5s)
 - [PASS] `net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition` -> `mc-nbt` (1099.4s)
-- [PASS] `net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition` -> `mc-nbt` (1099.4s)
