@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7689** across **1618** classes.
+Total mapped Java symbols: **7738** across **1631** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -204,6 +204,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.core.BlockMath#blockCenterToCorner` | `crates/mc-math/src/ported/block_math.rs` | 322 | `block_center_to_corner` |
 | `net.minecraft.core.BlockMath#blockCornerToCenter` | `crates/mc-math/src/ported/block_math.rs` | 330 | `block_corner_to_center` |
 | `net.minecraft.core.BlockMath#getFaceTransformation` | `crates/mc-math/src/ported/block_math.rs` | 338 | `get_face_transformation` |
+| `net.minecraft.core.BlockPos` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 70 | `<item>` |
 | `net.minecraft.core.BlockPos` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 5 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/clientbound_block_event_packet.rs` | 16 | `new` |
@@ -237,6 +238,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.core.BlockPos#<streamDecode>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 179 | `decode` |
 | `net.minecraft.core.BlockPos#<streamEncode>` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 184 | `encode` |
 | `net.minecraft.core.BlockPos#BlockPos(int,int,int)` | `crates/mc-protocol/src/ported/serverbound_player_action_packet.rs` | 98 | `new` |
+| `net.minecraft.core.BlockPos#BlockPos(int,int,int)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 79 | `new` |
 | `net.minecraft.core.BlockPos#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 142 | `write` |
 | `net.minecraft.core.BlockPos#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 147 | `read` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 16 | `above` |
@@ -469,6 +471,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.core.DefaultedRegistry#getDefaultKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 33 | `get_default_key` |
 | `net.minecraft.core.DefaultedRegistry#getKey` | `crates/mc-math/src/ported/defaulted_registry.rs` | 24 | `get_key` |
 | `net.minecraft.core.DefaultedRegistry#getValue` | `crates/mc-math/src/ported/defaulted_registry.rs` | 27 | `get_value` |
+| `net.minecraft.core.Direction` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 21 | `<item>` |
 | `net.minecraft.core.Direction` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 52 | `<item>` |
 | `net.minecraft.core.Direction#from3DDataValue` | `crates/mc-protocol/src/ported/serverbound_player_action_packet.rs` | 166 | `from_3d_data_value` |
 | `net.minecraft.core.Direction#get3DDataValue` | `crates/mc-math/src/ported/default_dispense_item_behavior.rs` | 57 | `get_3d_data_value` |
@@ -478,6 +481,8 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.core.Direction#getAxisDirection` | `crates/mc-math/src/ported/block_box.rs` | 33 | `get_axis_direction` |
 | `net.minecraft.core.Direction#getNormal()` | `crates/mc-worldgen/src/ported/bonus_chest_feature.rs` | 45 | `normal` |
 | `net.minecraft.core.Direction#getNormal()` | `crates/mc-worldgen/src/ported/pointed_dripstone_feature.rs` | 75 | `normal` |
+| `net.minecraft.core.Direction#getOpposite()` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 32 | `opposite` |
+| `net.minecraft.core.Direction#getOpposite()` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 34 | `opposite` |
 | `net.minecraft.core.Direction#getOpposite()` | `crates/mc-worldgen/src/ported/pointed_dripstone_feature.rs` | 63 | `opposite` |
 | `net.minecraft.core.Direction#getOpposite()` | `crates/mc-worldgen/src/ported/waterlogged_vegetation_patch_feature.rs` | 81 | `opposite` |
 | `net.minecraft.core.Direction#getRandom(net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/pointed_dripstone_feature.rs` | 92 | `get_random` |
@@ -5521,6 +5526,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.util.ProgressListener#progressStart` | `crates/mc-math/src/ported/progress_listener.rs` | 17 | `progress_start` |
 | `net.minecraft.util.ProgressListener#progressStartNoAbort` | `crates/mc-math/src/ported/progress_listener.rs` | 14 | `progress_start_no_abort` |
 | `net.minecraft.util.ProgressListener#stop` | `crates/mc-math/src/ported/progress_listener.rs` | 26 | `stop` |
+| `net.minecraft.util.RandomSource (minimal interface)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 92 | `next_i32` |
 | `net.minecraft.util.RandomSource#consumeCount` | `crates/mc-math/src/random.rs` | 171 | `consume_count` |
 | `net.minecraft.util.RandomSource#create (behavioral stub for deterministic seeding)` | `crates/mc-worldgen/src/ported/pool_alias_lookup.rs` | 115 | `create` |
 | `net.minecraft.util.RandomSource#create(long)` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 106 | `create` |
@@ -6329,6 +6335,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.item.trading.MerchantOffers#copy` | `crates/mc-protocol/src/ported/clientbound_merchant_offers_packet.rs` | 87 | `copy` |
 | `net.minecraft.world.level.BlockGetter#getBlockState` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 195 | `get_block_state` |
 | `net.minecraft.world.level.ChunkPos` | `crates/mc-protocol/src/ported/clientbound_level_chunk_with_light_packet.rs` | 123 | `<item>` |
+| `net.minecraft.world.level.ChunkPos` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 85 | `<item>` |
 | `net.minecraft.world.level.ChunkPos#<init>` | `crates/mc-protocol/src/ported/clientbound_chunks_biomes_packet.rs` | 21 | `from_long` |
 | `net.minecraft.world.level.ChunkPos#<init>(BlockPos)` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 134 | `from_block_pos` |
 | `net.minecraft.world.level.ChunkPos#<init>(int, int)` | `crates/mc-protocol/src/ported/clientbound_forget_level_chunk_packet.rs` | 20 | `new` |
@@ -6400,12 +6407,14 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 29 | `default_block_state` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 41 | `lava_default` |
 | `net.minecraft.world.level.block.Block#defaultBlockState` | `crates/mc-worldgen/src/ported/rotated_block_provider.rs` | 17 | `default_block_state` |
+| `net.minecraft.world.level.block.Block#defaultBlockState()` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 211 | `default` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-data/build.rs` | 232 | `block_by_name` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 110 | `get_id` |
 | `net.minecraft.world.level.block.Block#getId` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 322 | `get_id` |
 | `net.minecraft.world.level.block.Block#isShapeFullBlock` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 53 | `is_shape_full_block` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-data/build.rs` | 236 | `block_for_state` |
 | `net.minecraft.world.level.block.Block#stateById` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 115 | `state_by_id` |
+| `net.minecraft.world.level.block.Blocks (minimal constants used by this piece)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 298 | `air` |
 | `net.minecraft.world.level.block.Blocks#CAVE_AIR.defaultBlockState()` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 142 | `<item>` |
 | `net.minecraft.world.level.block.Blocks#PALE_HANGING_MOSS defaultBlockState` | `crates/mc-worldgen/src/ported/pale_moss_decorator.rs` | 61 | `pale_hanging_moss` |
 | `net.minecraft.world.level.block.Blocks#VINE (defaultBlockState)` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 106 | `vine_default_state` |
@@ -6437,6 +6446,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is` | `crates/mc-worldgen/src/ported/seagrass_feature.rs` | 49 | `is_water` |
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is(Block)` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 180 | `is_lava` |
 | `net.minecraft.world.level.block.state.BlockBehaviour.BlockStateBase#is(Block)` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 182 | `is_water` |
+| `net.minecraft.world.level.block.state.BlockState (minimal)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 203 | `<item>` |
 | `net.minecraft.world.level.block.state.BlockState#canSurvive` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 202 | `can_survive` |
 | `net.minecraft.world.level.block.state.BlockState#getBlock` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 48 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getShape` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 34 | `get_shape` |
@@ -6453,8 +6463,23 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 197 | `set_value` |
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/end_podium_feature.rs` | 179 | `set_value` |
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 58 | `set_value` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 219 | `set_facing` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 225 | `set_attached` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 231 | `set_east` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 237 | `set_west` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 243 | `set_north` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 249 | `set_south` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 255 | `set_redstone_north` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 261 | `set_redstone_south` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 267 | `set_redstone_east` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 273 | `set_redstone_west` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 279 | `set_vine_south` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 285 | `set_vine_east` |
+| `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 291 | `set_lever_face` |
 | `net.minecraft.world.level.block.state.BlockState#setValue` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 90 | `set_value` |
 | `net.minecraft.world.level.block.state.StateDefinition#getStateDefinition (simplified access)` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 81 | `get_state_definition` |
+| `net.minecraft.world.level.block.state.properties.AttachFace` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 149 | `<item>` |
+| `net.minecraft.world.level.block.state.properties.RedstoneSide` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 157 | `<item>` |
 | `net.minecraft.world.level.block.state.properties.TestBlockMode#byId` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 202 | `by_id` |
 | `net.minecraft.world.level.block.state.properties.TestBlockMode#getId` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 192 | `get_id` |
 | `net.minecraft.world.level.border.WorldBorder#getLerpTarget` | `crates/mc-protocol/src/ported/clientbound_set_border_size_packet.rs` | 37 | `get_lerp_target` |
@@ -6482,6 +6507,25 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.chunk.Configuration#bitsInMemory` | `crates/mc-worldgen/src/ported/configuration.rs` | 39 | `bits_in_memory` |
 | `net.minecraft.world.level.chunk.Configuration#bitsInStorage` | `crates/mc-worldgen/src/ported/configuration.rs` | 47 | `bits_in_storage` |
 | `net.minecraft.world.level.chunk.Configuration#createPalette` | `crates/mc-worldgen/src/ported/configuration.rs` | 55 | `create_palette` |
+| `net.minecraft.world.level.chunk.DataLayer#<init>` | `crates/mc-worldgen/src/ported/data_layer.rs` | 19 | `new` |
+| `net.minecraft.world.level.chunk.DataLayer#<init>` | `crates/mc-worldgen/src/ported/data_layer.rs` | 24 | `with_default` |
+| `net.minecraft.world.level.chunk.DataLayer#<init>` | `crates/mc-worldgen/src/ported/data_layer.rs` | 32 | `from_raw` |
+| `net.minecraft.world.level.chunk.DataLayer#copy` | `crates/mc-worldgen/src/ported/data_layer.rs` | 126 | `copy` |
+| `net.minecraft.world.level.chunk.DataLayer#fill` | `crates/mc-worldgen/src/ported/data_layer.rs` | 96 | `fill` |
+| `net.minecraft.world.level.chunk.DataLayer#get` | `crates/mc-worldgen/src/ported/data_layer.rs` | 46 | `get` |
+| `net.minecraft.world.level.chunk.DataLayer#get` | `crates/mc-worldgen/src/ported/data_layer.rs` | 62 | `get_by_index` |
+| `net.minecraft.world.level.chunk.DataLayer#getByteIndex` | `crates/mc-worldgen/src/ported/data_layer.rs` | 91 | `get_byte_index` |
+| `net.minecraft.world.level.chunk.DataLayer#getData` | `crates/mc-worldgen/src/ported/data_layer.rs` | 113 | `get_data` |
+| `net.minecraft.world.level.chunk.DataLayer#getIndex` | `crates/mc-worldgen/src/ported/data_layer.rs` | 57 | `get_index` |
+| `net.minecraft.world.level.chunk.DataLayer#getNibbleIndex` | `crates/mc-worldgen/src/ported/data_layer.rs` | 86 | `get_nibble_index` |
+| `net.minecraft.world.level.chunk.DataLayer#isDefinitelyFilledWith` | `crates/mc-worldgen/src/ported/data_layer.rs` | 171 | `is_definitely_filled_with` |
+| `net.minecraft.world.level.chunk.DataLayer#isDefinitelyHomogenous` | `crates/mc-worldgen/src/ported/data_layer.rs` | 166 | `is_definitely_homogenous` |
+| `net.minecraft.world.level.chunk.DataLayer#isEmpty` | `crates/mc-worldgen/src/ported/data_layer.rs` | 176 | `is_empty` |
+| `net.minecraft.world.level.chunk.DataLayer#layerToString` | `crates/mc-worldgen/src/ported/data_layer.rs` | 153 | `layer_to_string` |
+| `net.minecraft.world.level.chunk.DataLayer#packFilled` | `crates/mc-worldgen/src/ported/data_layer.rs` | 102 | `pack_filled` |
+| `net.minecraft.world.level.chunk.DataLayer#set` | `crates/mc-worldgen/src/ported/data_layer.rs` | 51 | `set` |
+| `net.minecraft.world.level.chunk.DataLayer#set` | `crates/mc-worldgen/src/ported/data_layer.rs` | 74 | `set_by_index` |
+| `net.minecraft.world.level.chunk.DataLayer#toString` | `crates/mc-worldgen/src/ported/data_layer.rs` | 137 | `to_string_repr` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#<init>(Level, ChunkPos, Holder)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 77 | `new` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#addAndRegisterBlockEntity(BlockEntity)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 119 | `add_and_register_block_entity` |
 | `net.minecraft.world.level.chunk.EmptyLevelChunk#getBlockEntity(BlockPos, LevelChunk.EntityCreationType)` | `crates/mc-worldgen/src/ported/empty_level_chunk.rs` | 110 | `get_block_entity` |
@@ -7852,8 +7896,10 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.levelgen.presets.WorldPreset#dimensionsInOrder` | `crates/mc-worldgen/src/ported/world_preset.rs` | 88 | `dimensions_in_order` |
 | `net.minecraft.world.level.levelgen.presets.WorldPreset#overworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 104 | `overworld` |
 | `net.minecraft.world.level.levelgen.presets.WorldPreset#requireOverworld` | `crates/mc-worldgen/src/ported/world_preset.rs` | 109 | `require_overworld` |
+| `net.minecraft.world.level.levelgen.structure.BoundingBox` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 47 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#forAllCorners` | `crates/mc-worldgen/src/ported/fossil_feature.rs` | 111 | `for_all_corners` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#intersects` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 36 | `intersects` |
+| `net.minecraft.world.level.levelgen.structure.BoundingBox#isInside(net.minecraft.core.Vec3i)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 59 | `is_inside` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#minX` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 45 | `min_x` |
 | `net.minecraft.world.level.levelgen.structure.BoundingBox#minZ` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 50 | `min_z` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#ANCIENT_CITIES` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 84 | `<item>` |
@@ -7901,9 +7947,11 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#toString` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 317 | `fmt` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece (partial)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 603 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 213 | `new` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 239 | `from_nbt` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 251 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#updateAverageGroundHeight` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 614 | `update_average_ground_height` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#updateAverageGroundHeight` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 263 | `update_average_ground_height` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#updateHeightPositionToLowestGroundHeight` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 318 | `update_height_position_to_lowest_ground_height` |
 | `net.minecraft.world.level.levelgen.structure.SinglePieceStructure#<init>` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 155 | `new` |
@@ -7939,14 +7987,30 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#hasUnhandledIndex` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 54 | `has_unhandled_index` |
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#removeIndex` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 59 | `remove_index` |
 | `net.minecraft.world.level.levelgen.structure.StructureFeatureIndexSavedData#type` | `crates/mc-worldgen/src/ported/structure_feature_index_saved_data.rs` | 34 | `type_` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece (partial)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 414 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 177 | `new` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 187 | `from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#createChest` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 548 | `create_chest` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#createDispenser` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 575 | `create_dispenser` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#generateAirBox` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 484 | `generate_air_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#generateBox(..., BlockSelector)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 505 | `generate_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getBlock` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 466 | `get_block` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#getBoundingBox` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 228 | `get_bounding_box` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#getOrientation` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 236 | `get_orientation` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getRandomHorizontalDirection` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 707 | `get_random_horizontal_direction` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getWorldX` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 423 | `get_world_x` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getWorldY` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 433 | `get_world_y` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#getWorldZ` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 438 | `get_world_z` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#makeBoundingBox` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 130 | `make_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#maybeGenerateBlock` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 531 | `maybe_generate_block` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#move` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 189 | `move_piece` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#placeBlock` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 448 | `place_block` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#reorient` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 211 | `reorient_chest` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#setOrientation` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 197 | `set_orientation` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece.BlockSelector` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 405 | `next` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece.BlockSelector#getNext()` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 410 | `get_next` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece.BlockSelector#getNext()` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 691 | `get_next` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece.BlockSelector#next` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 407 | `next` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#findCollisionPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 64 | `find_collision_piece` |
@@ -8001,7 +8065,9 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#pieces` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 256 | `pieces` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#save` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 260 | `save` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 1 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext (minimal)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 365 | `get_boolean_or` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext#fromLevel` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 47 | `from_level` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 15 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#load` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 96 | `load` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#setFullContextPieceId` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 137 | `set_full_context_piece_id` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#setPieceId` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 142 | `set_piece_id` |
@@ -8208,6 +8274,13 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#<init>` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 220 | `symmetric` |
 | `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#horizontal` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 228 | `horizontal` |
 | `net.minecraft.world.level.levelgen.structure.structures.JigsawStructure$MaxDistance#vertical` | `crates/mc-worldgen/src/ported/jigsaw_structure.rs` | 233 | `vertical` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 697 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece#<init>(net.minecraft.nbt.CompoundTag)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 771 | `from_tag` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece#<init>(net.minecraft.util.RandomSource,int,int)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 748 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 797 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece#postProcess` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 810 | `post_process` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece.MossStoneSelector` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 667 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece.MossStoneSelector#next` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 682 | `next` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#<init>` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 49 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.JungleTempleStructure#type` | `crates/mc-worldgen/src/ported/jungle_temple_structure.rs` | 60 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.MineshaftStructure#<init>` | `crates/mc-worldgen/src/ported/mineshaft_structure.rs` | 454 | `new` |
@@ -8857,6 +8930,7 @@ Total mapped Java symbols: **7689** across **1618** classes.
 | `net.minecraft.world.level.storage.ValueInput$ValueInputList#stream` | `crates/mc-nbt/src/ported/value_input.rs` | 153 | `stream` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 10 | `set_spawn` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 27 | `set_spawn` |
+| `net.minecraft.world.level.storage.loot.BuiltInLootTables (minimal)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 346 | `<item>` |
 | `net.minecraft.world.level.storage.loot.BuiltInLootTables#SIMPLE_DUNGEON` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 161 | `<item>` |
 | `net.minecraft.world.level.storage.loot.ContainerComponentManipulator#modifyItems` | `crates/mc-nbt/src/ported/modify_container_contents.rs` | 51 | `modify_items` |
 | `net.minecraft.world.level.storage.loot.ContainerComponentManipulator#modifyItems (stubbed for container contents)` | `crates/mc-nbt/src/ported/modify_container_contents.rs` | 63 | `modify_items` |

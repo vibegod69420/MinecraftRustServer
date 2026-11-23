@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 06:22:09 UTC
+- **Updated**: 2026-11-23 06:25:30 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7689 / 66676 (11.532%)
-- **Mapped Java Classes**: 1618 / 7163 (22.588%)
+- **Mapped Java Methods**: 7738 / 66676 (11.605%)
+- **Mapped Java Classes**: 1631 / 7163 (22.770%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,10 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
-- `mc-worldgen`: 2396 mapped methods
+- `mc-worldgen`: 2470 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.structure.structures.JungleTemplePiece` -> `mc-worldgen` (1534.3s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkSource` -> `mc-worldgen` (742.4s)
 - [PASS] `net.minecraft.world.level.chunk.BulkSectionAccess` -> `mc-worldgen` (742.4s)
 - [PASS] `net.minecraft.world.level.chunk.EmptyLevelChunk` -> `mc-worldgen` (742.4s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.network.syncher.SynchedEntityData` -> `mc-protocol` (2655.1s)
 - [PASS] `net.minecraft.world.level.chunk.status.ChunkPyramid` -> `mc-worldgen` (250.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (2482.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (765.1s)

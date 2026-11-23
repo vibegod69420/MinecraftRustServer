@@ -337,3 +337,5 @@ pub mod chunk_pyramid;
 pub mod strategy;
 pub mod configuration;
 pub mod chunk_status;
+pub mod jungle_temple_piece;
+pub mod data_layer;
