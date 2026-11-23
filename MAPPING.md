@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8038** across **1721** classes.
+Total mapped Java symbols: **8044** across **1725** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5833,14 +5833,20 @@ Total mapped Java symbols: **8038** across **1721** classes.
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#<init>` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 117 | `new` |
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#fix` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 127 | `fix` |
 | `net.minecraft.util.datafix.fixes.DyeItemRenameFix#RENAMED_IDS` | `crates/mc-math/src/ported/dye_item_rename_fix.rs` | 6 | `<item>` |
+| `net.minecraft.util.datafix.fixes.EntityElderGuardianSplitFix#<init>` | `crates/mc-math/src/ported/entity_elder_guardian_split_fix.rs` | 62 | `new` |
+| `net.minecraft.util.datafix.fixes.EntityElderGuardianSplitFix#getNewNameAndTag` | `crates/mc-math/src/ported/entity_elder_guardian_split_fix.rs` | 71 | `get_new_name_and_tag` |
 | `net.minecraft.util.datafix.fixes.EntityGoatMissingStateFix#<init>` | `crates/mc-math/src/ported/entity_goat_missing_state_fix.rs` | 82 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityGoatMissingStateFix#fix` | `crates/mc-math/src/ported/entity_goat_missing_state_fix.rs` | 92 | `fix` |
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#<init>` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 12 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityTippedArrowFix#rename` | `crates/mc-math/src/ported/entity_tipped_arrow_fix.rs` | 21 | `rename` |
+| `net.minecraft.util.datafix.fixes.FilteredBooksFix#<init>` | `crates/mc-math/src/ported/filtered_books_fix.rs` | 90 | `new` |
+| `net.minecraft.util.datafix.fixes.FilteredBooksFix#fixItemStackTag` | `crates/mc-math/src/ported/filtered_books_fix.rs` | 102 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#<init>` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 49 | `new` |
 | `net.minecraft.util.datafix.fixes.FilteredSignsFix#fix` | `crates/mc-math/src/ported/filtered_signs_fix.rs` | 60 | `fix` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#<init>` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 59 | `new` |
 | `net.minecraft.util.datafix.fixes.FireResistantToDamageResistantComponentFix#fixComponent` | `crates/mc-math/src/ported/fire_resistant_to_damage_resistant_component_fix.rs` | 69 | `fix_component` |
+| `net.minecraft.util.datafix.fixes.RecipesRenameningFix#RECIPES` | `crates/mc-math/src/ported/recipes_renamening_fix.rs` | 7 | `recipes` |
+| `net.minecraft.util.datafix.fixes.RenamedCoralFansFix#RENAMED_IDS` | `crates/mc-math/src/ported/renamed_coral_fans_fix.rs` | 7 | `renamed_ids` |
 | `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v1451_5.rs` | 26 | `new` |
 | `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v1481.rs` | 33 | `new` |
 | `net.minecraft.util.datafix.schemas.NamespacedSchema#<init>` | `crates/mc-math/src/ported/v1483.rs` | 27 | `new` |
