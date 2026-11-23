@@ -147,3 +147,5 @@ pub mod common_colors;
 pub mod special_dates;
 pub mod task_chainer;
 pub mod file_system_util;
+pub mod debug_game_event_info;
+pub mod debug_goal_info;

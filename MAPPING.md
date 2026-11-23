@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3381** across **843** classes.
+Total mapped Java symbols: **3412** across **853** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -98,6 +98,8 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 161 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/surface_water_depth_filter.rs` | 9 | `new` |
+| `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 26 | `new` |
+| `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 21 | `new` |
 | `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 25 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 25 | `above` |
@@ -434,8 +436,14 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.core.Vec3i#equals` | `crates/mc-math/src/ported/vec3i.rs` | 369 | `eq` |
 | `net.minecraft.core.Vec3i#get` | `crates/mc-math/src/ported/vec3i.rs` | 357 | `get` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-math/src/ported/vec3i.rs` | 89 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 31 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 26 | `get_x` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-math/src/ported/vec3i.rs` | 94 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 36 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 31 | `get_y` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-math/src/ported/vec3i.rs` | 99 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 41 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 36 | `get_z` |
 | `net.minecraft.core.Vec3i#hashCode` | `crates/mc-math/src/ported/vec3i.rs` | 122 | `hash_code` |
 | `net.minecraft.core.Vec3i#multiply` | `crates/mc-math/src/ported/vec3i.rs` | 170 | `multiply_scalar` |
 | `net.minecraft.core.Vec3i#multiply` | `crates/mc-math/src/ported/vec3i.rs` | 185 | `multiply` |
@@ -2253,6 +2261,7 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.util.Mth#clamp(float,float,float)` | `crates/mc-math/src/mth.rs` | 194 | `clamp_f32` |
 | `net.minecraft.util.Mth#clamp(int,int,int)` | `crates/mc-math/src/mth.rs` | 182 | `clamp_i32` |
 | `net.minecraft.util.Mth#clamp(long,long,long)` | `crates/mc-math/src/mth.rs` | 188 | `clamp_i64` |
+| `net.minecraft.util.Mth#clampedLerp` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 61 | `mth_clamped_lerp` |
 | `net.minecraft.util.Mth#clampedLerp` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 32 | `clamped_lerp` |
 | `net.minecraft.util.Mth#clampedLerp(double,double,double)` | `crates/mc-math/src/mth.rs` | 218 | `clamped_lerp_f64` |
 | `net.minecraft.util.Mth#clampedLerp(float,float,float)` | `crates/mc-math/src/mth.rs` | 230 | `clamped_lerp_f32` |
@@ -2266,6 +2275,7 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.util.Mth#getSeed(BlockPos)` | `crates/mc-worldgen/src/ported/rule_processor.rs` | 81 | `get_seed_from_pos` |
 | `net.minecraft.util.Mth#getSeed(int,int,int)` | `crates/mc-math/src/mth.rs` | 341 | `get_seed` |
 | `net.minecraft.util.Mth#getSeed(int,int,int)` | `crates/mc-worldgen/src/ported/rule_processor.rs` | 69 | `get_seed` |
+| `net.minecraft.util.Mth#inverseLerp` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 56 | `mth_inverse_lerp` |
 | `net.minecraft.util.Mth#inverseLerp` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 27 | `inverse_lerp` |
 | `net.minecraft.util.Mth#inverseLerp(double,double,double)` | `crates/mc-math/src/mth.rs` | 289 | `inverse_lerp_f64` |
 | `net.minecraft.util.Mth#isPowerOfTwo` | `crates/mc-math/src/mth.rs` | 307 | `is_power_of_two` |
@@ -2414,8 +2424,17 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.util.debug.DebugEntityBlockIntersection#BY_ID` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 31 | `by_id` |
 | `net.minecraft.util.debug.DebugEntityBlockIntersection#color` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 13 | `color` |
 | `net.minecraft.util.debug.DebugEntityBlockIntersection#id` | `crates/mc-math/src/ported/debug_entity_block_intersection.rs` | 22 | `id` |
+| `net.minecraft.util.debug.DebugGameEventInfo#<init>` | `crates/mc-math/src/ported/debug_game_event_info.rs` | 38 | `new` |
+| `net.minecraft.util.debug.DebugGameEventInfo#event` | `crates/mc-math/src/ported/debug_game_event_info.rs` | 43 | `event` |
+| `net.minecraft.util.debug.DebugGameEventInfo#pos` | `crates/mc-math/src/ported/debug_game_event_info.rs` | 48 | `pos` |
 | `net.minecraft.util.debug.DebugGameEventListenerInfo#<init>` | `crates/mc-math/src/ported/debug_game_event_listener_info.rs` | 7 | `new` |
 | `net.minecraft.util.debug.DebugGameEventListenerInfo#listenerRadius` | `crates/mc-math/src/ported/debug_game_event_listener_info.rs` | 12 | `listener_radius` |
+| `net.minecraft.util.debug.DebugGoalInfo#<init>` | `crates/mc-math/src/ported/debug_goal_info.rs` | 58 | `new` |
+| `net.minecraft.util.debug.DebugGoalInfo#goals` | `crates/mc-math/src/ported/debug_goal_info.rs` | 63 | `goals` |
+| `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#<init>` | `crates/mc-math/src/ported/debug_goal_info.rs` | 20 | `new` |
+| `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#isRunning` | `crates/mc-math/src/ported/debug_goal_info.rs` | 34 | `is_running` |
+| `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#name` | `crates/mc-math/src/ported/debug_goal_info.rs` | 39 | `name` |
+| `net.minecraft.util.debug.DebugGoalInfo$DebugGoal#priority` | `crates/mc-math/src/ported/debug_goal_info.rs` | 29 | `priority` |
 | `net.minecraft.util.debug.DebugPathInfo#<init>` | `crates/mc-math/src/ported/debug_path_info.rs` | 12 | `new` |
 | `net.minecraft.util.debug.DebugPathInfo#maxNodeDistance` | `crates/mc-math/src/ported/debug_path_info.rs` | 25 | `max_node_distance` |
 | `net.minecraft.util.debug.DebugPathInfo#path` | `crates/mc-math/src/ported/debug_path_info.rs` | 20 | `path` |
@@ -2781,6 +2800,7 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.world.level.block.Blocks#VINE (defaultBlockState)` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 106 | `vine_default_state` |
 | `net.minecraft.world.level.block.ChorusFlowerBlock#generatePlant` | `crates/mc-worldgen/src/ported/chorus_plant_feature.rs` | 92 | `generate_plant` |
 | `net.minecraft.world.level.block.VineBlock#getPropertyForFace` | `crates/mc-worldgen/src/ported/vines_feature.rs` | 68 | `get_property_for_face` |
+| `net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase#getBlock` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 16 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getBlock` | `crates/mc-worldgen/src/ported/flat_layer_info.rs` | 48 | `get_block` |
 | `net.minecraft.world.level.block.state.BlockState#getShape` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 34 | `get_shape` |
 | `net.minecraft.world.level.block.state.BlockState#is(TagKey)` | `crates/mc-worldgen/src/ported/protected_block_processor.rs` | 20 | `is` |
@@ -3468,13 +3488,29 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#<init>` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 62 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#getType` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 72 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest#test` | `crates/mc-worldgen/src/ported/always_true_test.rs` | 67 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AxisAlignedLinearPosTest#<init>` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 82 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AxisAlignedLinearPosTest#getType` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 130 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.AxisAlignedLinearPosTest#test` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 96 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#<init>` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 77 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#AIR` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 114 | `air_ignore` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#STRUCTURE_AND_AIR` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 119 | `structure_and_air_ignore` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#STRUCTURE_BLOCK` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 109 | `structure_block_ignore` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#getType` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 99 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor#processBlock` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 82 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#<init>` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 51 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#getType` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 61 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest#test` | `crates/mc-worldgen/src/ported/block_match_test.rs` | 56 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockRotProcessor#<init>(HolderSet,float)` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 107 | `new_with_set` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockRotProcessor#<init>(float)` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 115 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockRotProcessor#getType` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 145 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.BlockRotProcessor#processBlock` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 123 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#<init>` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 52 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#<init>` | `crates/mc-worldgen/src/ported/replace_block_configuration.rs` | 26 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#getType` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 68 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#test` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 63 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 99 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#getType` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 142 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#processBlock` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 104 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor#getType` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 107 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LavaSubmergedBlockProcessor#processBlock` | `crates/mc-worldgen/src/ported/lava_submerged_block_processor.rs` | 84 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.LinearPosTest#<init>` | `crates/mc-worldgen/src/ported/linear_pos_test.rs` | 52 | `new` |
@@ -3509,12 +3545,18 @@ Total mapped Java symbols: **3381** across **843** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest#test` | `crates/mc-worldgen/src/ported/rule_test.rs` | 50 | `test` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType#codec` | `crates/mc-worldgen/src/ported/rule_test_type.rs` | 82 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType#register` | `crates/mc-worldgen/src/ported/rule_test_type.rs` | 93 | `register` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings#getRandom` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 85 | `get_random` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#finalizeProcessing` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 49 | `finalize_processing` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#getType` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 46 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#processBlock` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 33 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#<init>` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 12 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#list` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 17 | `list` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#toString` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 24 | `fmt` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 43 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 58 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#nbt` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 73 | `nbt` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#pos` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 63 | `pos` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#state` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 68 | `state` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#<init>` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 75 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#getType` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 85 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest#test` | `crates/mc-worldgen/src/ported/tag_match_test.rs` | 80 | `test` |

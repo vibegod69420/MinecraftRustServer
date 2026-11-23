@@ -165,3 +165,7 @@ pub mod configured_world_carver;
 pub mod nether_world_carver;
 pub mod carver_configuration;
 pub mod block_predicate_type;
+pub mod gravity_processor;
+pub mod axis_aligned_linear_pos_test;
+pub mod block_ignore_processor;
+pub mod block_rot_processor;
