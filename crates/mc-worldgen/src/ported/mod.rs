@@ -244,3 +244,4 @@ pub mod world_options;
 pub mod jigsaw_junction;
 pub mod randomized_int_state_provider;
 pub mod twisting_vines_feature;
+pub mod ore_veinifier;

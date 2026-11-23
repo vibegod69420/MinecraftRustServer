@@ -275,3 +275,7 @@ pub mod serverbound_key_packet;
 pub mod clientbound_custom_payload_packet;
 pub mod common_packet_types;
 pub mod clientbound_hello_packet;
+pub mod clientbound_explode_packet;
+pub mod clientbound_block_event_packet;
+pub mod clientbound_container_set_slot_packet;
+pub mod serverbound_player_command_packet;
