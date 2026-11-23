@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4937** across **1162** classes.
+Total mapped Java symbols: **4970** across **1166** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5398,6 +5398,39 @@ Total mapped Java symbols: **4937** across **1162** classes.
 | `net.minecraft.world.level.storage.LevelResource#toString` | `crates/mc-nbt/src/ported/level_resource.rs` | 44 | `fmt` |
 | `net.minecraft.world.level.storage.LevelStorageException#<init>` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 30 | `new` |
 | `net.minecraft.world.level.storage.LevelStorageException#getMessageComponent` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 39 | `get_message_component` |
+| `net.minecraft.world.level.storage.LevelSummary#<init>` | `crates/mc-nbt/src/ported/level_summary.rs` | 284 | `new` |
+| `net.minecraft.world.level.storage.LevelSummary#backupStatus` | `crates/mc-nbt/src/ported/level_summary.rs` | 433 | `backup_status` |
+| `net.minecraft.world.level.storage.LevelSummary#canDelete` | `crates/mc-nbt/src/ported/level_summary.rs` | 605 | `can_delete` |
+| `net.minecraft.world.level.storage.LevelSummary#canEdit` | `crates/mc-nbt/src/ported/level_summary.rs` | 589 | `can_edit` |
+| `net.minecraft.world.level.storage.LevelSummary#canRecreate` | `crates/mc-nbt/src/ported/level_summary.rs` | 597 | `can_recreate` |
+| `net.minecraft.world.level.storage.LevelSummary#canUpload` | `crates/mc-nbt/src/ported/level_summary.rs` | 581 | `can_upload` |
+| `net.minecraft.world.level.storage.LevelSummary#compareTo` | `crates/mc-nbt/src/ported/level_summary.rs` | 364 | `compare_to` |
+| `net.minecraft.world.level.storage.LevelSummary#createInfo` | `crates/mc-nbt/src/ported/level_summary.rs` | 492 | `create_info` |
+| `net.minecraft.world.level.storage.LevelSummary#getGameMode` | `crates/mc-nbt/src/ported/level_summary.rs` | 386 | `get_game_mode` |
+| `net.minecraft.world.level.storage.LevelSummary#getIcon` | `crates/mc-nbt/src/ported/level_summary.rs` | 336 | `get_icon` |
+| `net.minecraft.world.level.storage.LevelSummary#getInfo` | `crates/mc-nbt/src/ported/level_summary.rs` | 482 | `get_info` |
+| `net.minecraft.world.level.storage.LevelSummary#getLastPlayed` | `crates/mc-nbt/src/ported/level_summary.rs` | 351 | `get_last_played` |
+| `net.minecraft.world.level.storage.LevelSummary#getLevelId` | `crates/mc-nbt/src/ported/level_summary.rs` | 312 | `get_level_id` |
+| `net.minecraft.world.level.storage.LevelSummary#getLevelName` | `crates/mc-nbt/src/ported/level_summary.rs` | 317 | `get_level_name` |
+| `net.minecraft.world.level.storage.LevelSummary#getSettings` | `crates/mc-nbt/src/ported/level_summary.rs` | 381 | `get_settings` |
+| `net.minecraft.world.level.storage.LevelSummary#getWorldVersionName` | `crates/mc-nbt/src/ported/level_summary.rs` | 404 | `get_world_version_name` |
+| `net.minecraft.world.level.storage.LevelSummary#hasCommands` | `crates/mc-nbt/src/ported/level_summary.rs` | 396 | `has_commands` |
+| `net.minecraft.world.level.storage.LevelSummary#isCompatible` | `crates/mc-nbt/src/ported/level_summary.rs` | 470 | `is_compatible` |
+| `net.minecraft.world.level.storage.LevelSummary#isDisabled` | `crates/mc-nbt/src/ported/level_summary.rs` | 456 | `is_disabled` |
+| `net.minecraft.world.level.storage.LevelSummary#isDowngrade` | `crates/mc-nbt/src/ported/level_summary.rs` | 428 | `is_downgrade` |
+| `net.minecraft.world.level.storage.LevelSummary#isExperimental` | `crates/mc-nbt/src/ported/level_summary.rs` | 346 | `is_experimental` |
+| `net.minecraft.world.level.storage.LevelSummary#isHardcore` | `crates/mc-nbt/src/ported/level_summary.rs` | 391 | `is_hardcore` |
+| `net.minecraft.world.level.storage.LevelSummary#isLocked` | `crates/mc-nbt/src/ported/level_summary.rs` | 451 | `is_locked` |
+| `net.minecraft.world.level.storage.LevelSummary#levelVersion` | `crates/mc-nbt/src/ported/level_summary.rs` | 418 | `level_version` |
+| `net.minecraft.world.level.storage.LevelSummary#primaryActionActive` | `crates/mc-nbt/src/ported/level_summary.rs` | 573 | `primary_action_active` |
+| `net.minecraft.world.level.storage.LevelSummary#primaryActionMessage` | `crates/mc-nbt/src/ported/level_summary.rs` | 564 | `primary_action_message` |
+| `net.minecraft.world.level.storage.LevelSummary#requiresManualConversion` | `crates/mc-nbt/src/ported/level_summary.rs` | 341 | `requires_manual_conversion` |
+| `net.minecraft.world.level.storage.LevelSummary#shouldBackup` | `crates/mc-nbt/src/ported/level_summary.rs` | 423 | `should_backup` |
+| `net.minecraft.world.level.storage.LevelSummary.BackupStatus#getTranslationKey` | `crates/mc-nbt/src/ported/level_summary.rs` | 252 | `get_translation_key` |
+| `net.minecraft.world.level.storage.LevelSummary.BackupStatus#isSevere` | `crates/mc-nbt/src/ported/level_summary.rs` | 243 | `is_severe` |
+| `net.minecraft.world.level.storage.LevelSummary.BackupStatus#shouldBackup` | `crates/mc-nbt/src/ported/level_summary.rs` | 234 | `should_backup` |
+| `net.minecraft.world.level.storage.LevelSummary.CorruptedLevelSummary#<init>` | `crates/mc-nbt/src/ported/level_summary.rs` | 638 | `new` |
+| `net.minecraft.world.level.storage.LevelSummary.SymlinkLevelSummary#<init>` | `crates/mc-nbt/src/ported/level_summary.rs` | 658 | `new` |
 | `net.minecraft.world.level.storage.LevelVersion` | `crates/mc-nbt/src/ported/level_version.rs` | 23 | `<item>` |
 | `net.minecraft.world.level.storage.LevelVersion#<init>` | `crates/mc-nbt/src/ported/level_version.rs` | 34 | `new` |
 | `net.minecraft.world.level.storage.LevelVersion#lastPlayed` | `crates/mc-nbt/src/ported/level_version.rs` | 90 | `last_played` |
