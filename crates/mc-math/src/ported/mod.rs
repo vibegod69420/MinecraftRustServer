@@ -195,3 +195,4 @@ pub mod sorted_array_set;
 pub mod null_ops;
 pub mod native_module_lister;
 pub mod string_decomposer;
+pub mod http_util;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4976** across **1167** classes.
+Total mapped Java symbols: **4988** across **1169** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3247,6 +3247,18 @@ Total mapped Java symbols: **4976** across **1167** classes.
 | `net.minecraft.util.FutureChain#append` | `crates/mc-math/src/ported/future_chain.rs` | 121 | `append` |
 | `net.minecraft.util.FutureChain#close` | `crates/mc-math/src/ported/future_chain.rs` | 176 | `close` |
 | `net.minecraft.util.Graph#depthFirstSearch` | `crates/mc-math/src/ported/graph.rs` | 7 | `depth_first_search` |
+| `net.minecraft.util.HttpUtil#cachedFilePath` | `crates/mc-math/src/ported/http_util.rs` | 153 | `cached_file_path` |
+| `net.minecraft.util.HttpUtil#checkExistingFile` | `crates/mc-math/src/ported/http_util.rs` | 137 | `check_existing_file` |
+| `net.minecraft.util.HttpUtil#downloadAndHash` | `crates/mc-math/src/ported/http_util.rs` | 158 | `download_and_hash` |
+| `net.minecraft.util.HttpUtil#downloadFile` | `crates/mc-math/src/ported/http_util.rs` | 198 | `download_file` |
+| `net.minecraft.util.HttpUtil#getAvailablePort` | `crates/mc-math/src/ported/http_util.rs` | 321 | `get_available_port` |
+| `net.minecraft.util.HttpUtil#hashFile` | `crates/mc-math/src/ported/http_util.rs` | 122 | `hash_file` |
+| `net.minecraft.util.HttpUtil#isPortAvailable` | `crates/mc-math/src/ported/http_util.rs` | 332 | `is_port_available` |
+| `net.minecraft.util.HttpUtil#updateModificationTime` | `crates/mc-math/src/ported/http_util.rs` | 111 | `update_modification_time` |
+| `net.minecraft.util.HttpUtil$DownloadProgressListener#downloadStart` | `crates/mc-math/src/ported/http_util.rs` | 46 | `download_start` |
+| `net.minecraft.util.HttpUtil$DownloadProgressListener#downloadedBytes` | `crates/mc-math/src/ported/http_util.rs` | 48 | `downloaded_bytes` |
+| `net.minecraft.util.HttpUtil$DownloadProgressListener#requestFinished` | `crates/mc-math/src/ported/http_util.rs` | 50 | `request_finished` |
+| `net.minecraft.util.HttpUtil$DownloadProgressListener#requestStart` | `crates/mc-math/src/ported/http_util.rs` | 44 | `request_start` |
 | `net.minecraft.util.IdentifierPattern#<init>` | `crates/mc-math/src/ported/identifier_pattern.rs` | 43 | `new` |
 | `net.minecraft.util.IdentifierPattern#locationPredicate` | `crates/mc-math/src/ported/identifier_pattern.rs` | 70 | `location_predicate` |
 | `net.minecraft.util.IdentifierPattern#namespacePredicate` | `crates/mc-math/src/ported/identifier_pattern.rs` | 60 | `namespace_predicate` |
