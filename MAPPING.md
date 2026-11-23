@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8978** across **2048** classes.
+Total mapped Java symbols: **8994** across **2053** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6159,6 +6159,9 @@ Total mapped Java symbols: **8978** across **2048** classes.
 | `net.minecraft.util.datafix.fixes.AttributesRenameLegacy#fixItemStackTag` | `crates/mc-math/src/ported/attributes_rename_legacy.rs` | 284 | `fix_item_stack_tag` |
 | `net.minecraft.util.datafix.fixes.AttributesRenameLegacy#fixName` | `crates/mc-math/src/ported/attributes_rename_legacy.rs` | 274 | `fix_name` |
 | `net.minecraft.util.datafix.fixes.AttributesRenameLegacy#makeRule` | `crates/mc-math/src/ported/attributes_rename_legacy.rs` | 254 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.BannerEntityCustomNameToOverrideComponentFix#<init>` | `crates/mc-math/src/ported/banner_entity_custom_name_to_override_component_fix.rs` | 171 | `new` |
+| `net.minecraft.util.datafix.fixes.BannerEntityCustomNameToOverrideComponentFix#fix` | `crates/mc-math/src/ported/banner_entity_custom_name_to_override_component_fix.rs` | 194 | `fix` |
+| `net.minecraft.util.datafix.fixes.BannerEntityCustomNameToOverrideComponentFix#makeRule` | `crates/mc-math/src/ported/banner_entity_custom_name_to_override_component_fix.rs` | 176 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.BedItemColorFix#<init>` | `crates/mc-math/src/ported/bed_item_color_fix.rs` | 53 | `new` |
 | `net.minecraft.util.datafix.fixes.BedItemColorFix#makeRule` | `crates/mc-math/src/ported/bed_item_color_fix.rs` | 58 | `apply` |
 | `net.minecraft.util.datafix.fixes.BeehiveFieldRenameFix#<init>` | `crates/mc-math/src/ported/beehive_field_rename_fix.rs` | 65 | `new` |
@@ -6221,6 +6224,7 @@ Total mapped Java symbols: **8978** across **2048** classes.
 | `net.minecraft.util.datafix.fixes.BlockStateData#upgradeBlock` | `crates/mc-math/src/ported/block_name_flattening_fix.rs` | 35 | `upgrade_block_string` |
 | `net.minecraft.util.datafix.fixes.BlockStateStructureTemplateFix#<init>` | `crates/mc-math/src/ported/block_state_structure_template_fix.rs` | 95 | `new` |
 | `net.minecraft.util.datafix.fixes.BlockStateStructureTemplateFix#makeRule` | `crates/mc-math/src/ported/block_state_structure_template_fix.rs` | 111 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.BoatSplitFix` | `crates/mc-math/src/ported/boat_split_fix.rs` | 1 | `is_normal_boat` |
 | `net.minecraft.util.datafix.fixes.CarvingStepRemoveFix#CarvingStepRemoveFix` | `crates/mc-math/src/ported/carving_step_remove_fix.rs` | 52 | `new` |
 | `net.minecraft.util.datafix.fixes.CarvingStepRemoveFix#fixChunk` | `crates/mc-math/src/ported/carving_step_remove_fix.rs` | 62 | `fix_chunk` |
 | `net.minecraft.util.datafix.fixes.CarvingStepRemoveFix#makeRule` | `crates/mc-math/src/ported/carving_step_remove_fix.rs` | 57 | `make_rule` |
@@ -6463,6 +6467,7 @@ Total mapped Java symbols: **8978** across **2048** classes.
 | `net.minecraft.util.datafix.fixes.OminousBannerBlockEntityRenameFix#<init>` | `crates/mc-math/src/ported/ominous_banner_block_entity_rename_fix.rs` | 11 | `<item>` |
 | `net.minecraft.util.datafix.fixes.OminousBannerBlockEntityRenameFix#<init>` | `crates/mc-math/src/ported/ominous_banner_block_entity_rename_fix.rs` | 19 | `new` |
 | `net.minecraft.util.datafix.fixes.OminousBannerBlockEntityRenameFix#fix` | `crates/mc-math/src/ported/ominous_banner_block_entity_rename_fix.rs` | 1 | `fix_custom_name` |
+| `net.minecraft.util.datafix.fixes.OminousBannerRarityFix` | `crates/mc-math/src/ported/ominous_banner_rarity_fix.rs` | 1 | `extract_translation_string` |
 | `net.minecraft.util.datafix.fixes.OminousBannerRenameFix#<init>` | `crates/mc-math/src/ported/ominous_banner_rename_fix.rs` | 94 | `new` |
 | `net.minecraft.util.datafix.fixes.OminousBannerRenameFix#fixItemStackTag` | `crates/mc-math/src/ported/ominous_banner_rename_fix.rs` | 101 | `fix_item_stack_tag_dynamic` |
 | `net.minecraft.util.datafix.fixes.OminousBannerRenameFix#fixItemStackTag` | `crates/mc-math/src/ported/ominous_banner_rename_fix.rs` | 118 | `fix_item_stack_tag` |
@@ -7458,6 +7463,17 @@ Total mapped Java symbols: **8978** across **2048** classes.
 | `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#totalDuration` | `crates/mc-math/src/ported/jfr_stats_result.rs` | 168 | `total_duration` |
 | `net.minecraft.util.profiling.metrics.MetricCategory#getDescription` | `crates/mc-math/src/ported/metric_category.rs` | 15 | `get_description` |
 | `net.minecraft.util.profiling.metrics.MetricSampler#create` | `crates/mc-math/src/ported/profiler_sampler_adapter.rs` | 43 | `create` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#<init>` | `crates/mc-math/src/ported/metrics_registry.rs` | 204 | `new` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#INSTANCE` | `crates/mc-math/src/ported/metrics_registry.rs` | 200 | `new` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#add` | `crates/mc-math/src/ported/metrics_registry.rs` | 211 | `add` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#aggregateDuplicates` | `crates/mc-math/src/ported/metrics_registry.rs` | 250 | `aggregate_duplicates` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry#getRegisteredSamplers` | `crates/mc-math/src/ported/metrics_registry.rs` | 228 | `get_registered_samplers` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#<init>` | `crates/mc-math/src/ported/metrics_registry.rs` | 104 | `aggregated` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#averageValueFromDelegates` | `crates/mc-math/src/ported/metrics_registry.rs` | 139 | `average_value_from_delegates` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#beforeTick` | `crates/mc-math/src/ported/metrics_registry.rs` | 132 | `before_tick` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#equals` | `crates/mc-math/src/ported/metrics_registry.rs` | 148 | `equals` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#hashCode` | `crates/mc-math/src/ported/metrics_registry.rs` | 163 | `hash_code` |
+| `net.minecraft.util.profiling.metrics.MetricsRegistry$AggregatedMetricSampler#thresholdTest` | `crates/mc-math/src/ported/metrics_registry.rs` | 122 | `threshold_test` |
 | `net.minecraft.util.profiling.metrics.MetricsSamplerProvider#samplers` | `crates/mc-math/src/ported/metrics_sampler_provider.rs` | 43 | `samplers` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 32 | `profiled_metrics` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 45 | `profiled_metrics` |

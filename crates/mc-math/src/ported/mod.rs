@@ -545,3 +545,7 @@ pub mod item_shulker_box_color_fix;
 pub mod stats_rename_fix;
 pub mod v1451_3;
 pub mod jfr_stats_result;
+pub mod banner_entity_custom_name_to_override_component_fix;
+pub mod metrics_registry;
+pub mod ominous_banner_rarity_fix;
+pub mod boat_split_fix;
