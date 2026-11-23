@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8052** across **1729** classes.
+Total mapped Java symbols: **8089** across **1734** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6209,12 +6209,16 @@ Total mapped Java symbols: **8052** across **1729** classes.
 | `net.minecraft.util.profiling.jfr.event.PacketReceivedEvent#<init>` | `crates/mc-math/src/ported/packet_received_event.rs` | 24 | `new` |
 | `net.minecraft.util.profiling.jfr.event.PacketSentEvent#<init>` | `crates/mc-math/src/ported/packet_sent_event.rs` | 24 | `new` |
 | `net.minecraft.util.profiling.jfr.event.WorldLoadFinishedEvent#<init>` | `crates/mc-math/src/ported/world_load_finished_event.rs` | 19 | `new` |
+| `net.minecraft.util.profiling.jfr.stats.ChunkGenStat#from` | `crates/mc-math/src/ported/chunk_gen_stat.rs` | 68 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.ChunkIdentification#from` | `crates/mc-math/src/ported/chunk_identification.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.CpuLoadStat#from` | `crates/mc-math/src/ported/cpu_load_stat.rs` | 14 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.FileIOStat#summary` | `crates/mc-math/src/ported/file_io_stat.rs` | 25 | `summary` |
 | `net.minecraft.util.profiling.jfr.stats.FpsStat#from` | `crates/mc-math/src/ported/fps_stat.rs` | 27 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.PacketIdentification#from` | `crates/mc-math/src/ported/packet_identification.rs` | 14 | `from` |
+| `net.minecraft.util.profiling.jfr.stats.StructureGenStat#from` | `crates/mc-math/src/ported/structure_gen_stat.rs` | 43 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TickTimeStat#from` | `crates/mc-math/src/ported/tick_time_stat.rs` | 16 | `from` |
 | `net.minecraft.util.profiling.jfr.stats.TimedStat#duration` | `crates/mc-math/src/ported/timed_stat.rs` | 9 | `duration` |
+| `net.minecraft.util.profiling.jfr.stats.TimedStatSummary#summary` | `crates/mc-math/src/ported/timed_stat_summary.rs` | 34 | `summary` |
 | `net.minecraft.util.profiling.metrics.MetricCategory#getDescription` | `crates/mc-math/src/ported/metric_category.rs` | 15 | `get_description` |
 | `net.minecraft.util.profiling.metrics.MetricsSamplerProvider#samplers` | `crates/mc-math/src/ported/metrics_sampler_provider.rs` | 43 | `samplers` |
 | `net.minecraft.util.profiling.metrics.ProfilerMeasured#profiledMetrics` | `crates/mc-math/src/ported/profiler_measured.rs` | 32 | `profiled_metrics` |
@@ -6996,6 +7000,41 @@ Total mapped Java symbols: **8052** across **1729** classes.
 | `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 27 | `new` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 36 | `with_bits` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO$Unpacker#read` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 47 | `read` |
+| `net.minecraft.world.level.chunk.ProtoChunk#<init>` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 437 | `new` |
+| `net.minecraft.world.level.chunk.ProtoChunk#<init>` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 458 | `new_with_sections` |
+| `net.minecraft.world.level.chunk.ProtoChunk#addEntity` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 682 | `add_entity_tag` |
+| `net.minecraft.world.level.chunk.ProtoChunk#addEntity` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 687 | `add_entity` |
+| `net.minecraft.world.level.chunk.ProtoChunk#addPackedPostProcess` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 778 | `add_packed_post_process` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBelowZeroRetrogen` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 835 | `get_below_zero_retrogen` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockEntities` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 677 | `get_block_entities` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockEntity` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 672 | `get_block_entity` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockEntityNbtForSaving` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 792 | `get_block_entity_nbt_for_saving` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockEntityNbts` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 787 | `get_block_entity_nbts` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockState` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 563 | `get_block_state` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getBlockTicks` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 545 | `get_block_ticks` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getCarvingMask` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 807 | `get_carving_mask` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getEntities` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 712 | `get_entities` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getFluidState` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 580 | `get_fluid_state` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getFluidTicks` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 550 | `get_fluid_ticks` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getHeightAccessorForGeneration` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 855 | `get_height_accessor_for_generation` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getNoiseBiome` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 733 | `get_noise_biome` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getOrCreateCarvingMask` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 812 | `get_or_create_carving_mask` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getPersistedStatus` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 717 | `get_persisted_status` |
+| `net.minecraft.world.level.chunk.ProtoChunk#getTicksForSerialization` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 555 | `get_ticks_for_serialization` |
+| `net.minecraft.world.level.chunk.ProtoChunk#markPosForPostprocessing` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 767 | `mark_pos_for_postprocessing` |
+| `net.minecraft.world.level.chunk.ProtoChunk#packOffsetCoordinates` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 744 | `pack_offset_coordinates` |
+| `net.minecraft.world.level.chunk.ProtoChunk#removeBlockEntity` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 801 | `remove_block_entity` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setBelowZeroRetrogen` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 830 | `set_below_zero_retrogen` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setBlockEntity` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 665 | `set_block_entity` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setBlockState` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 597 | `set_block_state` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setCarvingMask` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 820 | `set_carving_mask` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setLightEngine` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 825 | `set_light_engine` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setPersistedStatus` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 722 | `set_persisted_status` |
+| `net.minecraft.world.level.chunk.ProtoChunk#setStartForStructure` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 695 | `set_start_for_structure` |
+| `net.minecraft.world.level.chunk.ProtoChunk#unpackBlockTicks` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 845 | `unpack_block_ticks` |
+| `net.minecraft.world.level.chunk.ProtoChunk#unpackFluidTicks` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 850 | `unpack_fluid_ticks` |
+| `net.minecraft.world.level.chunk.ProtoChunk#unpackOffsetCoordinates` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 755 | `unpack_offset_coordinates` |
+| `net.minecraft.world.level.chunk.ProtoChunk#unpackTicks` | `crates/mc-worldgen/src/ported/proto_chunk.rs` | 840 | `unpack_ticks` |
 | `net.minecraft.world.level.chunk.SingleValuePalette#<init>` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 87 | `new` |
 | `net.minecraft.world.level.chunk.SingleValuePalette#copy` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 169 | `copy` |
 | `net.minecraft.world.level.chunk.SingleValuePalette#create` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 102 | `create` |
@@ -7045,6 +7084,7 @@ Total mapped Java symbols: **8052** across **1729** classes.
 | `net.minecraft.world.level.chunk.status.ChunkPyramid$Builder#build` | `crates/mc-worldgen/src/ported/chunk_pyramid.rs` | 132 | `build` |
 | `net.minecraft.world.level.chunk.status.ChunkPyramid$Builder#step` | `crates/mc-worldgen/src/ported/chunk_pyramid.rs` | 137 | `step` |
 | `net.minecraft.world.level.chunk.status.ChunkStatus#<init>` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 82 | `new` |
+| `net.minecraft.world.level.chunk.status.ChunkStatus#byName` | `crates/mc-math/src/ported/chunk_gen_stat.rs` | 33 | `by_name` |
 | `net.minecraft.world.level.chunk.status.ChunkStatus#byName` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 126 | `by_name` |
 | `net.minecraft.world.level.chunk.status.ChunkStatus#getChunkType` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 121 | `get_chunk_type` |
 | `net.minecraft.world.level.chunk.status.ChunkStatus#getIndex` | `crates/mc-worldgen/src/ported/chunk_status.rs` | 107 | `get_index` |

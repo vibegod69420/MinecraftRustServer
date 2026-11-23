@@ -345,3 +345,4 @@ pub mod simple_region_storage;
 pub mod region_file_version;
 pub mod chunk_source;
 pub mod entity_storage;
+pub mod proto_chunk;

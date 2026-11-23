@@ -280,3 +280,7 @@ pub mod v2509;
 pub mod v4656;
 pub mod v4648;
 pub mod v1486;
+pub mod structure_gen_stat;
+pub mod chunk_gen_stat;
+pub mod timed_stat_summary;
+pub mod file_io_stat;
