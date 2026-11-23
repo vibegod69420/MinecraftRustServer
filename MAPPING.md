@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4010** across **988** classes.
+Total mapped Java symbols: **4023** across **990** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4588,6 +4588,17 @@ Total mapped Java symbols: **4010** across **988** classes.
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#getReferencedContextParams` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 166 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#getType` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 161 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.FillPlayerHead#run` | `crates/mc-nbt/src/ported/fill_player_head.rs` | 171 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#<init>` | `crates/mc-nbt/src/ported/filtered_function.rs` | 105 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#filtered` | `crates/mc-nbt/src/ported/filtered_function.rs` | 149 | `filtered` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#getType` | `crates/mc-nbt/src/ported/filtered_function.rs` | 120 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#run` | `crates/mc-nbt/src/ported/filtered_function.rs` | 125 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#validate` | `crates/mc-nbt/src/ported/filtered_function.rs` | 138 | `validate` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction#validate` | `crates/mc-nbt/src/ported/filtered_function.rs` | 164 | `validate` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#<init>` | `crates/mc-nbt/src/ported/filtered_function.rs` | 178 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#build` | `crates/mc-nbt/src/ported/filtered_function.rs` | 205 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#getThis` | `crates/mc-nbt/src/ported/filtered_function.rs` | 188 | `get_this` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#onFail` | `crates/mc-nbt/src/ported/filtered_function.rs` | 199 | `on_fail` |
+| `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#onPass` | `crates/mc-nbt/src/ported/filtered_function.rs` | 193 | `on_pass` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 19 | `apply` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 22 | `apply_iterable` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 35 | `apply_array` |
@@ -4598,9 +4609,14 @@ Total mapped Java symbols: **4010** across **988** classes.
 | `net.minecraft.world.level.storage.loot.functions.LimitCount#limitCount` | `crates/mc-nbt/src/ported/limit_count.rs` | 101 | `limit_count` |
 | `net.minecraft.world.level.storage.loot.functions.LimitCount#run` | `crates/mc-nbt/src/ported/limit_count.rs` | 94 | `run` |
 | `net.minecraft.world.level.storage.loot.functions.ListOperation#apply` | `crates/mc-nbt/src/ported/set_written_book_pages_function.rs` | 62 | `apply` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#<init>` | `crates/mc-nbt/src/ported/filtered_function.rs` | 67 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#apply` | `crates/mc-nbt/src/ported/filtered_function.rs` | 80 | `can_run` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#apply` | `crates/mc-nbt/src/ported/filtered_function.rs` | 156 | `apply` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#getConditions` | `crates/mc-nbt/src/ported/filtered_function.rs` | 72 | `get_conditions` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#simpleBuilder` | `crates/mc-nbt/src/ported/discard_item.rs` | 87 | `simple_builder` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#simpleBuilder` | `crates/mc-nbt/src/ported/set_instrument_function.rs` | 78 | `simple_builder` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#simpleBuilder` | `crates/mc-nbt/src/ported/set_item_count_function.rs` | 65 | `simple_builder` |
+| `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#validate` | `crates/mc-nbt/src/ported/filtered_function.rs` | 77 | `validate` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction#validate` | `crates/mc-nbt/src/ported/set_container_loot_table.rs` | 203 | `validate_base` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder#build` | `crates/mc-nbt/src/ported/discard_item.rs` | 76 | `build` |
 | `net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction$Builder#getConditions` | `crates/mc-nbt/src/ported/set_banner_pattern_function.rs` | 219 | `get_conditions` |

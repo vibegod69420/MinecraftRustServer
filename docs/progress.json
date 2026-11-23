@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:41:38 UTC",
-  "updated_epoch": 1795394498,
+  "updated_at": "2026-11-23 00:42:02 UTC",
+  "updated_epoch": 1795394522,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 988,
-    "mapped_methods": 4010,
-    "class_coverage_pct": 13.7931,
-    "method_coverage_pct": 6.0142,
-    "harness_verified_classes": 649,
+    "mapped_classes": 990,
+    "mapped_methods": 4023,
+    "class_coverage_pct": 13.821,
+    "method_coverage_pct": 6.0337,
+    "harness_verified_classes": 653,
     "harness_failed_attempts": 119
   },
   "crates": [
@@ -35,7 +35,7 @@
     },
     {
       "name": "mc-nbt",
-      "mapped_methods": 1157
+      "mapped_methods": 1173
     },
     {
       "name": "mc-protocol",
@@ -54,6 +54,38 @@
     "avg_latency_s": 204.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:41:38Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundSetBorderWarningDistancePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 313.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:41:38Z",
+      "class_name": "net.minecraft.network.protocol.game.VecDeltaCodec",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 313.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:41:38Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundTeleportToEntityPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 313.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:41:38Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundClientCommandPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 313.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:41:05Z",
       "class_name": "net.minecraft.network.protocol.configuration.ClientboundRegistryDataPacket",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 315.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:03Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 291.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:03Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 291.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:35:03Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 291.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:34:58Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 287.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a1f90a9",
+      "ts": "2026-11-23T00:41:38+00:00",
+      "message": "Port 10 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "7c1e669",
       "ts": "2026-11-23T00:40:33+00:00",
@@ -445,11 +450,6 @@
       "sha": "a40d32a",
       "ts": "2026-11-23T00:26:04+00:00",
       "message": "Worker sync: 3687 mapped Java methods"
-    },
-    {
-      "sha": "ef9674e",
-      "ts": "2026-11-23T00:24:54+00:00",
-      "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
