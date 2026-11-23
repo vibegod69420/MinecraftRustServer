@@ -218,3 +218,5 @@ pub mod jigsaw_replacement_processor;
 pub mod dark_oak_foliage_placer;
 pub mod nether_fortress_structure;
 pub mod shipwreck_structure;
+pub mod structure_processor_type;
+pub mod capped_processor;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4522** across **1097** classes.
+Total mapped Java symbols: **4547** across **1100** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2976,6 +2976,25 @@ Total mapped Java symbols: **4522** across **1097** classes.
 | `net.minecraft.util.CommonColors#class` | `crates/mc-math/src/ported/common_colors.rs` | 1 | `<item>` |
 | `net.minecraft.util.CommonLinks#extendRealms` | `crates/mc-math/src/ported/common_links.rs` | 47 | `extend_realms` |
 | `net.minecraft.util.CommonLinks#extendRealms` | `crates/mc-math/src/ported/common_links.rs` | 59 | `extend_realms_with_profile` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#<init>(Object[],int[],Object[],int,int)` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 26 | `from_parts` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#<init>(int)` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 15 | `new` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#add` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 83 | `add` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#addMapping` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 120 | `add_mapping` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#byId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 55 | `by_id` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#clear` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 193 | `clear` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#contains` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 73 | `contains_key` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#contains` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 78 | `contains_id` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#copy` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 210 | `copy` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#create` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 43 | `create` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#findEmpty` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 173 | `find_empty` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#getId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 49 | `get_id` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#getValue` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 64 | `get_value` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#grow` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 100 | `grow` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#hash` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 142 | `hash` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#indexOf` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 152 | `index_of` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#iterator` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 188 | `iter` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#nextId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 90 | `next_id_slot` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#size` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 205 | `size` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.CsvOutput#<init>` | `crates/mc-math/src/ported/csv_output.rs` | 16 | `new` |
 | `net.minecraft.util.CsvOutput#builder` | `crates/mc-math/src/ported/csv_output.rs` | 10 | `builder` |
@@ -3150,6 +3169,7 @@ Total mapped Java symbols: **4522** across **1097** classes.
 | `net.minecraft.util.Mth#lfloor` | `crates/mc-math/src/mth.rs` | 138 | `lfloor` |
 | `net.minecraft.util.Mth#log2` | `crates/mc-math/src/mth.rs` | 325 | `log2` |
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/mth.rs` | 331 | `murmur_hash3_mixer` |
+| `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 234 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#nextFloat(net.minecraft.util.RandomSource,float,float)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 41 | `next_float` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
@@ -4813,6 +4833,9 @@ Total mapped Java symbols: **4522** across **1097** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#<init>` | `crates/mc-worldgen/src/ported/replace_block_configuration.rs` | 26 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#getType` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 68 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.BlockStateMatchTest#test` | `crates/mc-worldgen/src/ported/block_state_match_test.rs` | 63 | `test` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.CappedProcessor#<init>` | `crates/mc-worldgen/src/ported/capped_processor.rs` | 255 | `new` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.CappedProcessor#finalizeProcessing` | `crates/mc-worldgen/src/ported/capped_processor.rs` | 277 | `finalize_processing` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.CappedProcessor#getType` | `crates/mc-worldgen/src/ported/capped_processor.rs` | 271 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 99 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#getType` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 142 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.GravityProcessor#processBlock` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 104 | `process_block` |
@@ -4856,12 +4879,17 @@ Total mapped Java symbols: **4522** across **1097** classes.
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings#addProcessor` | `crates/mc-worldgen/src/ported/legacy_single_pool_element.rs` | 123 | `add_processor` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings#getRandom` | `crates/mc-worldgen/src/ported/block_rot_processor.rs` | 85 | `get_random` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings#popProcessor` | `crates/mc-worldgen/src/ported/legacy_single_pool_element.rs` | 112 | `pop_processor` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor` | `crates/mc-worldgen/src/ported/structure_processor_type.rs` | 26 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#finalizeProcessing` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 49 | `finalize_processing` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#getType` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 46 | `get_type` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#getType` | `crates/mc-worldgen/src/ported/structure_processor_type.rs` | 29 | `get_type` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor#processBlock` | `crates/mc-worldgen/src/ported/structure_processor.rs` | 33 | `process_block` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#<init>` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 12 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#list` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 17 | `list` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList#toString` | `crates/mc-worldgen/src/ported/structure_processor_list.rs` | 24 | `fmt` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType` | `crates/mc-worldgen/src/ported/structure_processor_type.rs` | 56 | `<item>` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType#codec` | `crates/mc-worldgen/src/ported/structure_processor_type.rs` | 107 | `codec` |
+| `net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorType#register` | `crates/mc-worldgen/src/ported/structure_processor_type.rs` | 117 | `register` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/block_ignore_processor.rs` | 43 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#<init>` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 58 | `new` |
 | `net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate$StructureBlockInfo#nbt` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 73 | `nbt` |
