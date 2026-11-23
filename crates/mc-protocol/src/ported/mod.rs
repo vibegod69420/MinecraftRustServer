@@ -171,3 +171,7 @@ pub mod blank_format;
 pub mod fixed_format;
 pub mod number_format_types;
 pub mod object_contents;
+pub mod clientbound_test_instance_block_status;
+pub mod clientbound_ticking_state_packet;
+pub mod serverbound_set_creative_mode_slot_packet;
+pub mod clientbound_player_combat_end_packet;

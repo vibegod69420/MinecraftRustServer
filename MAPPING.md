@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3510** across **883** classes.
+Total mapped Java symbols: **3531** across **887** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -1887,6 +1887,12 @@ Total mapped Java symbols: **3510** across **883** classes.
 | `net.minecraft.network.protocol.game.ClientboundPlaceGhostRecipePacket#handle` | `crates/mc-protocol/src/ported/clientbound_place_ghost_recipe_packet.rs` | 129 | `handle` |
 | `net.minecraft.network.protocol.game.ClientboundPlaceGhostRecipePacket#recipeDisplay` | `crates/mc-protocol/src/ported/clientbound_place_ghost_recipe_packet.rs` | 139 | `recipe_display` |
 | `net.minecraft.network.protocol.game.ClientboundPlaceGhostRecipePacket#type` | `crates/mc-protocol/src/ported/clientbound_place_ghost_recipe_packet.rs` | 124 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 18 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 23 | `from_combat_tracker` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 28 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#handle` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 48 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#type` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 43 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundPlayerCombatEndPacket#write` | `crates/mc-protocol/src/ported/clientbound_player_combat_end_packet.rs` | 34 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundPlayerCombatEnterPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_player_combat_enter_packet.rs` | 16 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundPlayerCombatEnterPacket#INSTANCE` | `crates/mc-protocol/src/ported/clientbound_player_combat_enter_packet.rs` | 40 | `handle_player_combat_enter` |
 | `net.minecraft.network.protocol.game.ClientboundPlayerCombatEnterPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_player_combat_enter_packet.rs` | 31 | `encode` |
@@ -1985,6 +1991,19 @@ Total mapped Java symbols: **3510** across **883** classes.
 | `net.minecraft.network.protocol.game.ClientboundSystemChatPacket#overlay` | `crates/mc-protocol/src/ported/clientbound_system_chat_packet.rs` | 53 | `overlay` |
 | `net.minecraft.network.protocol.game.ClientboundSystemChatPacket#type` | `crates/mc-protocol/src/ported/clientbound_system_chat_packet.rs` | 58 | `packet_type` |
 | `net.minecraft.network.protocol.game.ClientboundSystemChatPacket#write` | `crates/mc-protocol/src/ported/clientbound_system_chat_packet.rs` | 42 | `write` |
+| `net.minecraft.network.protocol.game.ClientboundTestInstanceBlockStatus#<init>` | `crates/mc-protocol/src/ported/clientbound_test_instance_block_status.rs` | 62 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundTestInstanceBlockStatus#handle` | `crates/mc-protocol/src/ported/clientbound_test_instance_block_status.rs` | 107 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundTestInstanceBlockStatus#size` | `crates/mc-protocol/src/ported/clientbound_test_instance_block_status.rs` | 72 | `size` |
+| `net.minecraft.network.protocol.game.ClientboundTestInstanceBlockStatus#status` | `crates/mc-protocol/src/ported/clientbound_test_instance_block_status.rs` | 67 | `status` |
+| `net.minecraft.network.protocol.game.ClientboundTestInstanceBlockStatus#type` | `crates/mc-protocol/src/ported/clientbound_test_instance_block_status.rs` | 102 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 20 | `new` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#<init>` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 28 | `read` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#from` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 41 | `from_manager` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#handle` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 67 | `handle` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#isFrozen` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 57 | `is_frozen` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#tickRate` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 52 | `tick_rate` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#type` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 62 | `packet_type` |
+| `net.minecraft.network.protocol.game.ClientboundTickingStatePacket#write` | `crates/mc-protocol/src/ported/clientbound_ticking_state_packet.rs` | 46 | `write` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 93 | `new` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#<init>` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 98 | `from_buf` |
 | `net.minecraft.network.protocol.game.ClientboundTickingStepPacket#from` | `crates/mc-protocol/src/ported/clientbound_ticking_step_packet.rs` | 105 | `from_tick_rate_manager` |
@@ -2102,6 +2121,12 @@ Total mapped Java symbols: **3510** across **883** classes.
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#handle` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 77 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#type` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 72 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#write` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 67 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 49 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 57 | `from_i32` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#handle` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 97 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#itemStack` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 70 | `item_stack` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#slotNum` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 65 | `slot_num` |
+| `net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket#type` | `crates/mc-protocol/src/ported/serverbound_set_creative_mode_slot_packet.rs` | 92 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 226 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 235 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 243 | `read` |
