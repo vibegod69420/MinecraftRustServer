@@ -1,19 +1,24 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 01:03:41 UTC
+- **Updated**: 2026-11-23 01:05:26 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 4469 / 66676 (6.703%)
-- **Mapped Java Classes**: 1085 / 7163 (15.147%)
+- **Mapped Java Methods**: 4489 / 66676 (6.733%)
+- **Mapped Java Classes**: 1091 / 7163 (15.231%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
-- `mc-math`: 1563 mapped methods
+- `mc-math`: 1577 mapped methods
 - `mc-nbt`: 1289 mapped methods
 - `mc-protocol`: 1490 mapped methods
-- `mc-worldgen`: 1214 mapped methods
+- `mc-worldgen`: 1233 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.network.protocol.game.ClientboundOpenSignEditorPacket` -> `mc-protocol` (773.1s)
+- [FAIL] `net.minecraft.network.protocol.game.ServerboundBlockEntityTagQueryPacket` -> `mc-protocol` (773.1s)
+- [FAIL] `net.minecraft.network.protocol.game.ServerboundChatPacket` -> `mc-protocol` (773.1s)
+- [PASS] `net.minecraft.network.protocol.game.ServerboundDebugSubscriptionRequestPacket` -> `mc-protocol` (773.1s)
+- [PASS] `net.minecraft.util.StringRepresentable` -> `mc-math` (201.7s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundProjectilePowerPacket` -> `mc-protocol` (883.1s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundRemoveEntitiesPacket` -> `mc-protocol` (883.1s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundEntityTagQueryPacket` -> `mc-protocol` (883.1s)
@@ -24,8 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer` -> `mc-worldgen` (595.8s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer` -> `mc-worldgen` (595.8s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.CopyBlockState` -> `mc-nbt` (543.7s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.PointedDripstoneFeature` -> `mc-worldgen` (707.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (707.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.BonusChestFeature` -> `mc-worldgen` (707.1s)
-- [PASS] `net.minecraft.util.debug.DebugSubscriptions` -> `mc-math` (475.8s)
-- [PASS] `net.minecraft.util.KeyframeTrackSampler` -> `mc-math` (659.7s)
