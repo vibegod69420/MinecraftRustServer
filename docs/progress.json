@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 18:08:08 UTC",
-  "updated_epoch": 1795457288,
+  "updated_at": "2026-11-23 18:16:15 UTC",
+  "updated_epoch": 1795457775,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 29.5128,
     "method_coverage_pct": 13.8296,
     "harness_verified_classes": 1348,
-    "harness_failed_attempts": 418
+    "harness_failed_attempts": 424
   },
   "crates": [
     {
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 2032,
-    "prompt_tokens": 6565089,
-    "completion_tokens": 33197481,
-    "reasoning_tokens": 23803501,
-    "avg_latency_s": 219.3
+    "calls_total": 2039,
+    "prompt_tokens": 6589818,
+    "completion_tokens": 33256245,
+    "reasoning_tokens": 23845006,
+    "avg_latency_s": 219.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T18:16:10Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.AlternativesEntry",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 305.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T18:16:10Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 305.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T18:16:10Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.TagEntry",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 305.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T18:16:06Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 8380.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T18:11:06Z",
+      "class_name": "net.minecraft.core.particles.DustColorTransitionOptions",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 8092.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T18:11:05Z",
+      "class_name": "net.minecraft.core.MappedRegistry",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 8079.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T17:08:33Z",
       "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
@@ -325,57 +373,14 @@
       "verified": false,
       "seconds": 2988.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemPotionFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1525.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1524.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1524.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1451_6",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1525.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AdvancementsFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1525.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:32:41Z",
-      "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1525.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "3e2327c",
+      "ts": "2026-11-23T18:08:09+00:00",
+      "message": "Worker sync: 9221 mapped Java methods"
+    },
     {
       "sha": "783ed6a",
       "ts": "2026-11-23T16:20:40+00:00",
@@ -445,11 +450,6 @@
       "sha": "1865176",
       "ts": "2026-11-23T13:48:29+00:00",
       "message": "Worker sync: 9163 mapped Java methods"
-    },
-    {
-      "sha": "d02c265",
-      "ts": "2026-11-23T13:43:25+00:00",
-      "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
