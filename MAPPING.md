@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **4547** across **1100** classes.
+Total mapped Java symbols: **4567** across **1104** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3171,6 +3171,7 @@ Total mapped Java symbols: **4547** across **1100** classes.
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/mth.rs` | 331 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#murmurHash3Mixer` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 234 | `murmur_hash3_mixer` |
 | `net.minecraft.util.Mth#nextFloat(net.minecraft.util.RandomSource,float,float)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 41 | `next_float` |
+| `net.minecraft.util.Mth#nextInt` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 102 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt` | `crates/mc-worldgen/src/ported/very_biased_to_bottom_height.rs` | 53 | `mth_next_int` |
 | `net.minecraft.util.Mth#nextInt(net.minecraft.util.RandomSource,int,int)` | `crates/mc-nbt/src/ported/uniform_generator.rs` | 30 | `next_int` |
 | `net.minecraft.util.Mth#positiveModulo(int,int)` | `crates/mc-math/src/mth.rs` | 411 | `positive_modulo_i32` |
@@ -3323,6 +3324,7 @@ Total mapped Java symbols: **4547** across **1100** classes.
 | `net.minecraft.util.Unit#valueOf` | `crates/mc-math/src/ported/unit.rs` | 7 | `instance` |
 | `net.minecraft.util.Util#anyOf` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 51 | `util_any_of` |
 | `net.minecraft.util.Util#getRandom(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 144 | `get_random` |
+| `net.minecraft.util.Util#getRandomSafe` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 113 | `get_random_safe` |
 | `net.minecraft.util.Util#shuffle(List, RandomSource)` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 118 | `util_shuffle` |
 | `net.minecraft.util.Util#shuffle(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 127 | `shuffle` |
 | `net.minecraft.util.Util#shuffledCopy(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 137 | `shuffled_copy` |
@@ -5230,6 +5232,18 @@ Total mapped Java symbols: **4547** across **1100** classes.
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#discardItem` | `crates/mc-nbt/src/ported/discard_item.rs` | 132 | `discard_item` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#getType` | `crates/mc-nbt/src/ported/discard_item.rs` | 122 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.DiscardItem#run` | `crates/mc-nbt/src/ported/discard_item.rs` | 127 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#<init>` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 143 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#enchantItem` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 190 | `enchant_item` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#enchantItem` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 219 | `enchant_item` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#getType` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 156 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#randomApplicableEnchantment` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 213 | `random_applicable_enchantment` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#randomEnchantment` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 208 | `random_enchantment` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction#run` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 161 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction$Builder#allowingIncompatibleEnchantments` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 271 | `allowing_incompatible_enchantments` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction$Builder#build` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 278 | `build` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction$Builder#getThis` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 252 | `get_this` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction$Builder#withEnchantment` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 257 | `with_enchantment` |
+| `net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction$Builder#withOneOf` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 264 | `with_one_of` |
 | `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#<init>` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 124 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#enchantWithLevels` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 155 | `enchant_with_levels` |
 | `net.minecraft.world.level.storage.loot.functions.EnchantWithLevelsFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/enchant_with_levels_function.rs` | 142 | `get_referenced_context_params` |
@@ -5346,6 +5360,15 @@ Total mapped Java symbols: **4547** across **1100** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#<init>` | `crates/mc-nbt/src/ported/set_item_function.rs` | 70 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#getType` | `crates/mc-nbt/src/ported/set_item_function.rs` | 75 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetItemFunction#run` | `crates/mc-nbt/src/ported/set_item_function.rs` | 80 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#SetNameFunction` | `crates/mc-nbt/src/ported/set_name_function.rs` | 234 | `new` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#createResolver` | `crates/mc-nbt/src/ported/set_name_function.rs` | 266 | `create_resolver` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#getReferencedContextParams` | `crates/mc-nbt/src/ported/set_name_function.rs` | 254 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#getType` | `crates/mc-nbt/src/ported/set_name_function.rs` | 249 | `get_type` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#run` | `crates/mc-nbt/src/ported/set_name_function.rs` | 291 | `run` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#setName` | `crates/mc-nbt/src/ported/set_name_function.rs` | 301 | `set_name` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction#setName` | `crates/mc-nbt/src/ported/set_name_function.rs` | 306 | `set_name_with_entity` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction$Target#component` | `crates/mc-nbt/src/ported/set_name_function.rs` | 217 | `component` |
+| `net.minecraft.world.level.storage.loot.functions.SetNameFunction$Target#getSerializedName` | `crates/mc-nbt/src/ported/set_name_function.rs` | 209 | `get_serialized_name` |
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#<init>` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 94 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#getType` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 99 | `get_type` |
 | `net.minecraft.world.level.storage.loot.functions.SetPotionFunction#run` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 104 | `run` |
