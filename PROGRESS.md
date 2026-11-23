@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:48:32 UTC
+- **Updated**: 2026-11-23 04:50:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7225 / 66676 (10.836%)
-- **Mapped Java Classes**: 1552 / 7163 (21.667%)
+- **Mapped Java Methods**: 7231 / 66676 (10.845%)
+- **Mapped Java Classes**: 1555 / 7163 (21.709%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,7 +11,7 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1656 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 1946 mapped methods
+- `mc-worldgen`: 1952 mapped methods
 
 ## Recent Verified Work
 - [PASS] `net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer` -> `mc-worldgen` (1540.6s)

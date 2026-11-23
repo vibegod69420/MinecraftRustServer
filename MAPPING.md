@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7225** across **1552** classes.
+Total mapped Java symbols: **7231** across **1555** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -7574,6 +7574,12 @@ Total mapped Java symbols: **7225** across **1552** classes.
 | `net.minecraft.world.level.levelgen.structure.pieces.PiecesContainer#save` | `crates/mc-worldgen/src/ported/pieces_container.rs` | 260 | `save` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 1 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext#fromLevel` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 47 | `from_level` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#load` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 96 | `load` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#setFullContextPieceId` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 137 | `set_full_context_piece_id` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#setPieceId` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 142 | `set_piece_id` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType#setTemplatePieceId` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 147 | `set_template_piece_id` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$ContextlessType#load` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 110 | `load_contextless` |
+| `net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType$StructureTemplateType#load` | `crates/mc-worldgen/src/ported/structure_piece_type.rs` | 119 | `load_template` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/buried_treasure_structure.rs` | 115 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 272 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder#addPiece` | `crates/mc-worldgen/src/ported/single_piece_structure.rs` | 42 | `add_piece` |
