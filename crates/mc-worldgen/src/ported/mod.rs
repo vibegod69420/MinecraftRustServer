@@ -346,3 +346,4 @@ pub mod region_file_version;
 pub mod chunk_source;
 pub mod entity_storage;
 pub mod proto_chunk;
+pub mod surface_system;
