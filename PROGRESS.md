@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:12:13 UTC
+- **Updated**: 2026-11-23 05:15:34 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7392 / 66676 (11.086%)
-- **Mapped Java Classes**: 1572 / 7163 (21.946%)
+- **Mapped Java Methods**: 7413 / 66676 (11.118%)
+- **Mapped Java Classes**: 1579 / 7163 (22.044%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,10 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3372 mapped methods
-- `mc-worldgen`: 2057 mapped methods
+- `mc-worldgen`: 2088 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces` -> `mc-worldgen` (1448.3s)
 - [PASS] `net.minecraft.world.level.chunk.LightChunkGetter` -> `mc-worldgen` (210.8s)
 - [PASS] `net.minecraft.world.level.chunk.PaletteResize` -> `mc-worldgen` (210.8s)
 - [PASS] `net.minecraft.world.level.chunk.MissingPaletteEntryException` -> `mc-worldgen` (210.8s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1001.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (2327.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece` -> `mc-worldgen` (640.5s)
-- [PASS] `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings` -> `mc-worldgen` (1079.1s)

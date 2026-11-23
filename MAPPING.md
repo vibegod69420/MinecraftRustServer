@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7392** across **1572** classes.
+Total mapped Java symbols: **7413** across **1579** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6379,6 +6379,16 @@ Total mapped Java symbols: **7392** across **1572** classes.
 | `net.minecraft.world.level.chunk.PaletteResize#noResizeExpected` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 38 | `no_resize_expected` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 5 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 29 | `on_resize` |
+| `net.minecraft.world.level.chunk.storage.ChunkScanAccess#scanChunk` | `crates/mc-worldgen/src/ported/chunk_scan_access.rs` | 22 | `scan_chunk` |
+| `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 28 | `apply_fix` |
+| `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 45 | `apply_fix` |
+| `net.minecraft.world.level.chunk.storage.LegacyTagFixer#markChunkDone` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 31 | `mark_chunk_done` |
+| `net.minecraft.world.level.chunk.storage.LegacyTagFixer#targetDataVersion` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 34 | `target_data_version` |
+| `net.minecraft.world.level.chunk.storage.RegionBitmap#allocate` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 188 | `allocate` |
+| `net.minecraft.world.level.chunk.storage.RegionBitmap#force` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 176 | `force` |
+| `net.minecraft.world.level.chunk.storage.RegionBitmap#free` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 182 | `free` |
+| `net.minecraft.world.level.chunk.storage.RegionBitmap#getUsed` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 202 | `get_used` |
+| `net.minecraft.world.level.chunk.storage.RegionStorageInfo#withTypeSuffix` | `crates/mc-worldgen/src/ported/region_storage_info.rs` | 40 | `with_type_suffix` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
 | `net.minecraft.world.level.levelgen.Beardifier#<init>` | `crates/mc-worldgen/src/ported/beardifier.rs` | 291 | `new` |
 | `net.minecraft.world.level.levelgen.Beardifier#compute` | `crates/mc-worldgen/src/ported/beardifier.rs` | 393 | `compute` |
@@ -7831,6 +7841,27 @@ Total mapped Java symbols: **7392** across **1572** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeSand` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 665 | `place_sand` |
 | `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#placeSandBox` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 671 | `place_sand_box` |
 | `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidPiece#postProcess` | `crates/mc-worldgen/src/ported/desert_pyramid_piece.rs` | 426 | `post_process` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces#addHelper` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 586 | `add_helper` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces#addPiece` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 488 | `add_piece` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces#recursiveChildren` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 592 | `recursive_children` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces#startHouseTower` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 520 | `start_house_tower` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#<init>` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 306 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#<init>` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 328 | `from_tag` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 379 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#handleDataMarker` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 390 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#makeIdentifier` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 431 | `make_identifier` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#makeSettings` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 422 | `make_settings` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$EndCityPiece#makeTemplateLocation` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 374 | `make_template_location` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#generate` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 448 | `generate` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#generate` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 643 | `generate` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#generate` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 768 | `generate` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#generate` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 902 | `generate` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#generate` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 1024 | `generate` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#init` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 446 | `init` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#init` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 640 | `init` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#init` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 765 | `init` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#init` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 897 | `init` |
+| `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces$SectionGenerator#init` | `crates/mc-worldgen/src/ported/end_city_pieces.rs` | 1021 | `init` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#<init>` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 242 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#findGenerationPoint` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 277 | `find_generation_point` |
 | `net.minecraft.world.level.levelgen.structure.structures.EndCityStructure#generatePieces` | `crates/mc-worldgen/src/ported/end_city_structure.rs` | 294 | `generate_pieces` |

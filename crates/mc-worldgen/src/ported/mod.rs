@@ -306,3 +306,8 @@ pub mod block_column;
 pub mod missing_palette_entry_exception;
 pub mod palette_resize;
 pub mod light_chunk_getter;
+pub mod end_city_pieces;
+pub mod chunk_scan_access;
+pub mod region_storage_info;
+pub mod legacy_tag_fixer;
+pub mod region_bitmap;
