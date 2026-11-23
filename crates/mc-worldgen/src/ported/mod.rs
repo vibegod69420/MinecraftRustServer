@@ -282,3 +282,5 @@ pub mod block_age_processor;
 pub mod structure_start;
 pub mod flat_level_source;
 pub mod tree_configuration;
+pub mod column;
+pub mod pool_element_structure_piece;

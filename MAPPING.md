@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6687** across **1454** classes.
+Total mapped Java symbols: **6741** across **1462** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -370,6 +370,7 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 52 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 25 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 29 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 29 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 34 | `offset` |
@@ -2359,6 +2360,14 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.network.chat.ChatType$Bound#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_disguised_chat_packet.rs` | 120 | `read` |
 | `net.minecraft.network.chat.ChatType$Bound#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_disguised_chat_packet.rs` | 137 | `write` |
 | `net.minecraft.network.chat.ChatType.Bound` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 284 | `<item>` |
+| `net.minecraft.network.chat.ChatTypeDecoration#decorate` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 186 | `decorate` |
+| `net.minecraft.network.chat.ChatTypeDecoration#incomingDirectMessage` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 153 | `incoming_direct_message` |
+| `net.minecraft.network.chat.ChatTypeDecoration#outgoingDirectMessage` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 165 | `outgoing_direct_message` |
+| `net.minecraft.network.chat.ChatTypeDecoration#resolveParameters` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 192 | `resolve_parameters` |
+| `net.minecraft.network.chat.ChatTypeDecoration#teamMessage` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 177 | `team_message` |
+| `net.minecraft.network.chat.ChatTypeDecoration#withSender` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 144 | `with_sender` |
+| `net.minecraft.network.chat.ChatTypeDecoration$Parameter#getSerializedName` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 108 | `get_serialized_name` |
+| `net.minecraft.network.chat.ChatTypeDecoration$Parameter#select` | `crates/mc-protocol/src/ported/chat_type_decoration.rs` | 99 | `select` |
 | `net.minecraft.network.chat.CommonComponents#days` | `crates/mc-protocol/src/ported/common_components.rs` | 139 | `days` |
 | `net.minecraft.network.chat.CommonComponents#disconnectButtonLabel` | `crates/mc-protocol/src/ported/common_components.rs` | 163 | `disconnect_button_label` |
 | `net.minecraft.network.chat.CommonComponents#hours` | `crates/mc-protocol/src/ported/common_components.rs` | 144 | `hours` |
@@ -6002,6 +6011,38 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextLong` | `crates/mc-math/src/random.rs` | 332 | `next_long` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextLong` | `crates/mc-worldgen/src/ported/single_threaded_random_source.rs` | 121 | `next_long` |
 | `net.minecraft.world.level.levelgen.BitRandomSource#nextLong` | `crates/mc-worldgen/src/ported/thread_safe_legacy_random_source.rs` | 96 | `next_long` |
+| `net.minecraft.world.level.levelgen.Column#above` | `crates/mc-worldgen/src/ported/column.rs` | 122 | `above` |
+| `net.minecraft.world.level.levelgen.Column#around` | `crates/mc-worldgen/src/ported/column.rs` | 102 | `around` |
+| `net.minecraft.world.level.levelgen.Column#below` | `crates/mc-worldgen/src/ported/column.rs` | 112 | `below` |
+| `net.minecraft.world.level.levelgen.Column#create` | `crates/mc-worldgen/src/ported/column.rs` | 137 | `create` |
+| `net.minecraft.world.level.levelgen.Column#fromHighest` | `crates/mc-worldgen/src/ported/column.rs` | 117 | `from_highest` |
+| `net.minecraft.world.level.levelgen.Column#fromLowest` | `crates/mc-worldgen/src/ported/column.rs` | 127 | `from_lowest` |
+| `net.minecraft.world.level.levelgen.Column#getCeiling` | `crates/mc-worldgen/src/ported/column.rs` | 147 | `get_ceiling` |
+| `net.minecraft.world.level.levelgen.Column#getFloor` | `crates/mc-worldgen/src/ported/column.rs` | 156 | `get_floor` |
+| `net.minecraft.world.level.levelgen.Column#getHeight` | `crates/mc-worldgen/src/ported/column.rs` | 165 | `get_height` |
+| `net.minecraft.world.level.levelgen.Column#inside` | `crates/mc-worldgen/src/ported/column.rs` | 107 | `inside` |
+| `net.minecraft.world.level.levelgen.Column#line` | `crates/mc-worldgen/src/ported/column.rs` | 132 | `line` |
+| `net.minecraft.world.level.levelgen.Column#scan` | `crates/mc-worldgen/src/ported/column.rs` | 184 | `scan` |
+| `net.minecraft.world.level.levelgen.Column#scanDirection` | `crates/mc-worldgen/src/ported/column.rs` | 219 | `scan_direction` |
+| `net.minecraft.world.level.levelgen.Column#withCeiling` | `crates/mc-worldgen/src/ported/column.rs` | 179 | `with_ceiling` |
+| `net.minecraft.world.level.levelgen.Column#withFloor` | `crates/mc-worldgen/src/ported/column.rs` | 174 | `with_floor` |
+| `net.minecraft.world.level.levelgen.Column$Line#getCeiling` | `crates/mc-worldgen/src/ported/column.rs` | 256 | `get_ceiling` |
+| `net.minecraft.world.level.levelgen.Column$Line#getFloor` | `crates/mc-worldgen/src/ported/column.rs` | 261 | `get_floor` |
+| `net.minecraft.world.level.levelgen.Column$Line#getHeight` | `crates/mc-worldgen/src/ported/column.rs` | 266 | `get_height` |
+| `net.minecraft.world.level.levelgen.Column$Line#toString` | `crates/mc-worldgen/src/ported/column.rs` | 273 | `fmt` |
+| `net.minecraft.world.level.levelgen.Column$Range#<init>` | `crates/mc-worldgen/src/ported/column.rs` | 280 | `new` |
+| `net.minecraft.world.level.levelgen.Column$Range#ceiling` | `crates/mc-worldgen/src/ported/column.rs` | 304 | `ceiling` |
+| `net.minecraft.world.level.levelgen.Column$Range#floor` | `crates/mc-worldgen/src/ported/column.rs` | 309 | `floor` |
+| `net.minecraft.world.level.levelgen.Column$Range#getCeiling` | `crates/mc-worldgen/src/ported/column.rs` | 289 | `get_ceiling` |
+| `net.minecraft.world.level.levelgen.Column$Range#getFloor` | `crates/mc-worldgen/src/ported/column.rs` | 294 | `get_floor` |
+| `net.minecraft.world.level.levelgen.Column$Range#getHeight` | `crates/mc-worldgen/src/ported/column.rs` | 299 | `get_height` |
+| `net.minecraft.world.level.levelgen.Column$Range#height` | `crates/mc-worldgen/src/ported/column.rs` | 314 | `height` |
+| `net.minecraft.world.level.levelgen.Column$Range#toString` | `crates/mc-worldgen/src/ported/column.rs` | 321 | `fmt` |
+| `net.minecraft.world.level.levelgen.Column$Ray#<init>` | `crates/mc-worldgen/src/ported/column.rs` | 328 | `new` |
+| `net.minecraft.world.level.levelgen.Column$Ray#getCeiling` | `crates/mc-worldgen/src/ported/column.rs` | 333 | `get_ceiling` |
+| `net.minecraft.world.level.levelgen.Column$Ray#getFloor` | `crates/mc-worldgen/src/ported/column.rs` | 342 | `get_floor` |
+| `net.minecraft.world.level.levelgen.Column$Ray#getHeight` | `crates/mc-worldgen/src/ported/column.rs` | 351 | `get_height` |
+| `net.minecraft.world.level.levelgen.Column$Ray#toString` | `crates/mc-worldgen/src/ported/column.rs` | 358 | `fmt` |
 | `net.minecraft.world.level.levelgen.DebugLevelSource#<init>` | `crates/mc-worldgen/src/ported/debug_level_source.rs` | 188 | `new` |
 | `net.minecraft.world.level.levelgen.DebugLevelSource#addDebugScreenInfo` | `crates/mc-worldgen/src/ported/debug_level_source.rs` | 283 | `add_debug_screen_info` |
 | `net.minecraft.world.level.levelgen.DebugLevelSource#applyBiomeDecoration` | `crates/mc-worldgen/src/ported/debug_level_source.rs` | 213 | `apply_biome_decoration` |
@@ -6995,6 +7036,17 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#WOODLAND_MANSIONS` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 66 | `<item>` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructureSets#register` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 47 | `register` |
 | `net.minecraft.world.level.levelgen.structure.BuiltinStructures#createKey` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 52 | `create_key` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#<init>` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 217 | `new` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#addJunction` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 305 | `add_junction` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getElement` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 290 | `get_element` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getGroundLevelDelta` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 300 | `get_ground_level_delta` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getJunctions` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 310 | `get_junctions` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getPosition` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 295 | `get_position` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#getRotation` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 285 | `get_rotation` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#move` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 279 | `move_by` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#place` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 253 | `place` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#postProcess` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 239 | `post_process` |
+| `net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece#toString` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 317 | `fmt` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 43 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.PostPlacementProcessor#afterPlace` | `crates/mc-worldgen/src/ported/post_placement_processor.rs` | 61 | `after_place` |
 | `net.minecraft.world.level.levelgen.structure.ScatteredFeaturePiece#<init>` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 213 | `new` |
@@ -7040,6 +7092,7 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#getBoundingBox` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 228 | `get_bounding_box` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#getOrientation` | `crates/mc-worldgen/src/ported/ocean_monument_structure.rs` | 236 | `get_orientation` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#makeBoundingBox` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 130 | `make_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.StructurePiece#move` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 189 | `move_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePiece#setOrientation` | `crates/mc-worldgen/src/ported/scattered_feature_piece.rs` | 197 | `set_orientation` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 61 | `add_piece` |
 | `net.minecraft.world.level.levelgen.structure.StructurePieceAccessor#addPiece` | `crates/mc-worldgen/src/ported/structure_piece_accessor.rs` | 110 | `add_piece` |
@@ -7161,6 +7214,8 @@ Total mapped Java symbols: **6687** across **1454** classes.
 | `net.minecraft.world.level.levelgen.structure.pools.ListPoolElement#setProjectionOnEachElement` | `crates/mc-worldgen/src/ported/list_pool_element.rs` | 214 | `set_projection_on_each_element` |
 | `net.minecraft.world.level.levelgen.structure.pools.ListPoolElement#toString` | `crates/mc-worldgen/src/ported/list_pool_element.rs` | 322 | `fmt` |
 | `net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement#getSettings` | `crates/mc-worldgen/src/ported/legacy_single_pool_element.rs` | 154 | `super_get_settings` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#getBoundingBox` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 144 | `get_bounding_box` |
+| `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement#place` | `crates/mc-worldgen/src/ported/pool_element_structure_piece.rs` | 154 | `place` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#codec` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 55 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.pools.StructurePoolElementType#register` | `crates/mc-worldgen/src/ported/structure_pool_element_type.rs` | 60 | `register` |
 | `net.minecraft.world.level.levelgen.structure.pools.alias.DirectPoolAlias#allTargets` | `crates/mc-worldgen/src/ported/direct_pool_alias.rs` | 116 | `all_targets` |

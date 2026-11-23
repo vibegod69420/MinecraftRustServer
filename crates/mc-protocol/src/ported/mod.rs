@@ -328,3 +328,4 @@ pub mod common_components;
 pub mod clientbound_game_event_packet;
 pub mod clientbound_tracked_waypoint_packet;
 pub mod unconfigured_pipeline_handler;
+pub mod chat_type_decoration;
