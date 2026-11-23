@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7231** across **1555** classes.
+Total mapped Java symbols: **7292** across **1559** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -8069,6 +8069,70 @@ Total mapped Java symbols: **7231** across **1555** classes.
 | `net.minecraft.world.level.storage.LevelResource#toString` | `crates/mc-nbt/src/ported/level_resource.rs` | 44 | `fmt` |
 | `net.minecraft.world.level.storage.LevelStorageException#<init>` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 30 | `new` |
 | `net.minecraft.world.level.storage.LevelStorageException#getMessageComponent` | `crates/mc-nbt/src/ported/level_storage_exception.rs` | 39 | `get_message_component` |
+| `net.minecraft.world.level.storage.LevelStorageSource#<init>` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 834 | `new` |
+| `net.minecraft.world.level.storage.LevelStorageSource#createAccess` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1135 | `create_access` |
+| `net.minecraft.world.level.storage.LevelStorageSource#createDefault` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 863 | `create_default` |
+| `net.minecraft.world.level.storage.LevelStorageSource#findLevelCandidates` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 904 | `find_level_candidates` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getBackupPath` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1112 | `get_backup_path` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getBaseDir` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1107 | `get_base_dir` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getFileModificationTime` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1025 | `get_level_directory_modification_time_static` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getFileModificationTime` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1147 | `get_file_modification_time` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getLevelDataAndDimensions` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 889 | `get_level_data_and_dimensions` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getLevelPath` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1102 | `get_level_path` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getName` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 899 | `get_name` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getPackConfig` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 875 | `get_pack_config` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getStorageVersion` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 944 | `get_storage_version` |
+| `net.minecraft.world.level.storage.LevelStorageSource#getWorldDirValidator` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1141 | `get_world_dir_validator` |
+| `net.minecraft.world.level.storage.LevelStorageSource#isNewLevelIdAcceptable` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1085 | `is_new_level_id_acceptable` |
+| `net.minecraft.world.level.storage.LevelStorageSource#levelExists` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1097 | `level_exists` |
+| `net.minecraft.world.level.storage.LevelStorageSource#loadLevelSummaries` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 932 | `load_level_summaries` |
+| `net.minecraft.world.level.storage.LevelStorageSource#makeLevelSummary` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1030 | `make_level_summary` |
+| `net.minecraft.world.level.storage.LevelStorageSource#parseFeatureFlagsFromSummary` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1062 | `parse_feature_flags_from_summary` |
+| `net.minecraft.world.level.storage.LevelStorageSource#parseValidator` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 850 | `parse_validator` |
+| `net.minecraft.world.level.storage.LevelStorageSource#readDataConfig` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 870 | `read_data_config` |
+| `net.minecraft.world.level.storage.LevelStorageSource#readLevelDataTagFixed` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 957 | `read_level_data_tag_fixed` |
+| `net.minecraft.world.level.storage.LevelStorageSource#readLevelDataTagRaw` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 949 | `read_level_data_tag_raw` |
+| `net.minecraft.world.level.storage.LevelStorageSource#readLevelSummary` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 981 | `read_level_summary` |
+| `net.minecraft.world.level.storage.LevelStorageSource#readLightweightData` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1077 | `read_lightweight_data` |
+| `net.minecraft.world.level.storage.LevelStorageSource#validateAndCreateAccess` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1117 | `validate_and_create_access` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelCandidates#isEmpty` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1177 | `is_empty` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelCandidates#iterator` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1182 | `iterator` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#corruptedDataFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1220 | `corrupted_data_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#dataFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1210 | `data_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#directoryName` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1202 | `directory_name` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#iconFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1238 | `icon_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#lockFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1243 | `lock_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#oldDataFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1215 | `old_data_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#rawDataFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1229 | `raw_data_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelDirectory#resourcePath` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1248 | `resource_path` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#<init>` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1271 | `new` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#checkForLowDiskSpace` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1293 | `check_for_low_disk_space` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#checkLock` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1333 | `check_lock` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#close` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1517 | `close` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#createPlayerStorage` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1340 | `create_player_storage` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#deleteLevel` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1415 | `delete_level` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#estimateDiskSpace` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1288 | `estimate_disk_space` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getDataTag` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1355 | `get_data_tag` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getDataTag` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1365 | `get_data_tag_flag` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getDataTagFallback` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1360 | `get_data_tag_fallback` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getDimensionPath` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1328 | `get_dimension_path` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getFileModificationTime` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1533 | `get_file_modification_time_flag` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getIconFile` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1407 | `get_icon_file` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getLevelDirectory` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1308 | `get_level_directory` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getLevelId` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1313 | `get_level_id` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getLevelPath` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1318 | `get_level_path` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#getSummary` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1348 | `get_summary` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#hasWorldData` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1512 | `has_world_data` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#makeWorldBackup` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1468 | `make_world_backup` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#modifyLevelDataWithoutDatafix` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1455 | `modify_level_data_without_datafix` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#parent` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1303 | `parent` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#renameAndDropPlayer` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1446 | `rename_and_drop_player` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#renameLevel` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1438 | `rename_level` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#restoreLevelDataFromOld` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1522 | `restore_level_data_from_old` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#safeClose` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1298 | `safe_close` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#saveDataTag` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1376 | `save_data_tag` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#saveDataTag` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1381 | `save_data_tag_with_player` |
+| `net.minecraft.world.level.storage.LevelStorageSource.LevelStorageAccess#saveLevelData` | `crates/mc-nbt/src/ported/level_storage_source.rs` | 1393 | `save_level_data` |
 | `net.minecraft.world.level.storage.LevelSummary#<init>` | `crates/mc-nbt/src/ported/level_summary.rs` | 284 | `new` |
 | `net.minecraft.world.level.storage.LevelSummary#backupStatus` | `crates/mc-nbt/src/ported/level_summary.rs` | 433 | `backup_status` |
 | `net.minecraft.world.level.storage.LevelSummary#canDelete` | `crates/mc-nbt/src/ported/level_summary.rs` | 605 | `can_delete` |
