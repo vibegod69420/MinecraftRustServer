@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7470** across **1586** classes.
+Total mapped Java symbols: **7484** across **1587** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4792,6 +4792,20 @@ Total mapped Java symbols: **7470** across **1586** classes.
 | `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getStructureManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 30 | `get_structure_manager` |
 | `net.minecraft.server.MinecraftServer#registryAccess` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 26 | `registry_access` |
+| `net.minecraft.server.ServerTickRateManager#<init>` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 125 | `new` |
+| `net.minecraft.server.ServerTickRateManager#checkShouldSprintThisTick` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 273 | `check_should_sprint_this_tick` |
+| `net.minecraft.server.ServerTickRateManager#endTickWork` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 287 | `end_tick_work` |
+| `net.minecraft.server.ServerTickRateManager#finishTickSprint` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 249 | `finish_tick_sprint` |
+| `net.minecraft.server.ServerTickRateManager#isSprinting` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 176 | `is_sprinting` |
+| `net.minecraft.server.ServerTickRateManager#requestGameToSprint` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 238 | `request_game_to_sprint` |
+| `net.minecraft.server.ServerTickRateManager#setFrozen` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 191 | `set_frozen` |
+| `net.minecraft.server.ServerTickRateManager#setTickRate` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 294 | `set_tick_rate` |
+| `net.minecraft.server.ServerTickRateManager#stepGameIfPaused` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 209 | `step_game_if_paused` |
+| `net.minecraft.server.ServerTickRateManager#stopSprinting` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 229 | `stop_sprinting` |
+| `net.minecraft.server.ServerTickRateManager#stopStepping` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 219 | `stop_stepping` |
+| `net.minecraft.server.ServerTickRateManager#updateJoiningPlayer` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 181 | `update_joining_player` |
+| `net.minecraft.server.ServerTickRateManager#updateStateToClients` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 197 | `update_state_to_clients` |
+| `net.minecraft.server.ServerTickRateManager#updateStepTicks` | `crates/mc-protocol/src/ported/server_tick_rate_manager.rs` | 203 | `update_step_ticks` |
 | `net.minecraft.server.TickTask#<init>` | `crates/mc-protocol/src/ported/tick_task.rs` | 12 | `new` |
 | `net.minecraft.server.TickTask#getTick` | `crates/mc-protocol/src/ported/tick_task.rs` | 23 | `get_tick` |
 | `net.minecraft.server.TickTask#run` | `crates/mc-protocol/src/ported/tick_task.rs` | 28 | `run` |

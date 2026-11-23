@@ -1,19 +1,21 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 05:52:03 UTC
+- **Updated**: 2026-11-23 05:54:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7470 / 66676 (11.203%)
-- **Mapped Java Classes**: 1586 / 7163 (22.142%)
+- **Mapped Java Methods**: 7484 / 66676 (11.224%)
+- **Mapped Java Classes**: 1587 / 7163 (22.155%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
-- `mc-protocol`: 3394 mapped methods
+- `mc-protocol`: 3408 mapped methods
 - `mc-worldgen`: 2136 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.server.ServerTickRateManager` -> `mc-protocol` (1071.7s)
+- [FAIL] `net.minecraft.network.Connection` -> `mc-protocol` (1046.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (331.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece` -> `mc-worldgen` (839.4s)
 - [PASS] `net.minecraft.world.level.levelgen.RandomState` -> `mc-worldgen` (822.4s)
@@ -27,5 +29,3 @@
 - [PASS] `net.minecraft.world.level.chunk.storage.LegacyTagFixer` -> `mc-worldgen` (259.4s)
 - [PASS] `net.minecraft.world.level.chunk.storage.RegionStorageInfo` -> `mc-worldgen` (259.4s)
 - [PASS] `net.minecraft.world.level.chunk.storage.ChunkScanAccess` -> `mc-worldgen` (259.4s)
-- [PASS] `net.minecraft.world.level.levelgen.structure.structures.EndCityPieces` -> `mc-worldgen` (1448.3s)
-- [PASS] `net.minecraft.world.level.chunk.LightChunkGetter` -> `mc-worldgen` (210.8s)
