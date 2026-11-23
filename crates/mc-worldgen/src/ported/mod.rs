@@ -313,3 +313,4 @@ pub mod legacy_tag_fixer;
 pub mod region_bitmap;
 pub mod monster_room_feature;
 pub mod template_structure_piece;
+pub mod noises;

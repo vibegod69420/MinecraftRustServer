@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7453** across **1584** classes.
+Total mapped Java symbols: **7457** across **1585** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -537,10 +537,12 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.core.Holder#tags` | `crates/mc-math/src/ported/holder.rs` | 138 | `tags` |
 | `net.minecraft.core.Holder#unwrap` | `crates/mc-math/src/ported/holder.rs` | 141 | `unwrap` |
 | `net.minecraft.core.Holder#unwrapKey` | `crates/mc-math/src/ported/holder.rs` | 144 | `unwrap_key` |
+| `net.minecraft.core.Holder#unwrapKey` | `crates/mc-worldgen/src/ported/noises.rs` | 114 | `unwrap_key` |
 | `net.minecraft.core.Holder#value` | `crates/mc-math/src/ported/holder.rs` | 117 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-nbt/src/ported/set_item_function.rs` | 22 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-nbt/src/ported/set_potion_function.rs` | 8 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-protocol/src/ported/clientbound_show_dialog_packet.rs` | 24 | `value` |
+| `net.minecraft.core.Holder#value` | `crates/mc-worldgen/src/ported/noises.rs` | 117 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-worldgen/src/ported/random_patch_configuration.rs` | 24 | `value` |
 | `net.minecraft.core.Holder#value` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 26 | `value` |
 | `net.minecraft.core.Holder#value()` | `crates/mc-protocol/src/ported/chat_type.rs` | 114 | `value` |
@@ -584,6 +586,7 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 365 | `get_tag` |
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 429 | `get` |
 | `net.minecraft.core.HolderGetter#get` | `crates/mc-math/src/ported/holder_lookup.rs` | 434 | `get_tag` |
+| `net.minecraft.core.HolderGetter#getOrThrow` | `crates/mc-worldgen/src/ported/noises.rs` | 125 | `get_or_throw` |
 | `net.minecraft.core.HolderLookup#listElementIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 251 | `list_element_ids` |
 | `net.minecraft.core.HolderLookup#listElementIds` | `crates/mc-math/src/ported/holder_lookup.rs` | 385 | `list_element_ids` |
 | `net.minecraft.core.HolderLookup#listElements` | `crates/mc-math/src/ported/holder_lookup.rs` | 248 | `list_elements` |
@@ -4766,6 +4769,7 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-protocol/src/ported/font_description.rs` | 10 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 10 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 15 | `with_default_namespace` |
+| `net.minecraft.resources.Identifier#withDefaultNamespace` | `crates/mc-worldgen/src/ported/noises.rs` | 14 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/chat_type.rs` | 59 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 8 | `with_default_namespace` |
 | `net.minecraft.resources.Identifier#withDefaultNamespace(String)` | `crates/mc-protocol/src/ported/handshake_packet_types.rs` | 17 | `with_default_namespace` |
@@ -4777,10 +4781,12 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.resources.ResourceKey#<init>` | `crates/mc-worldgen/src/ported/append_loot.rs` | 71 | `new` |
 | `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/builtin_structure_sets.rs` | 27 | `create` |
 | `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/builtin_structures.rs` | 32 | `create` |
+| `net.minecraft.resources.ResourceKey#create` | `crates/mc-worldgen/src/ported/noises.rs` | 31 | `create` |
 | `net.minecraft.resources.ResourceKey#create(ResourceKey, Identifier)` | `crates/mc-protocol/src/ported/chat_type.rs` | 81 | `create` |
 | `net.minecraft.resources.ResourceKey#createRegistryKey` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 23 | `create_registry_key` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-math/src/ported/cloner.rs` | 22 | `identifier` |
 | `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-protocol/src/ported/clientbound_registry_data_packet.rs` | 28 | `identifier` |
+| `net.minecraft.resources.ResourceKey#identifier` | `crates/mc-worldgen/src/ported/noises.rs` | 40 | `identifier` |
 | `net.minecraft.resources.ResourceLocation#<init>` | `crates/mc-protocol/src/ported/serverbound_custom_payload_packet.rs` | 10 | `new` |
 | `net.minecraft.server.MinecraftServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 17 | `get_resource_manager` |
 | `net.minecraft.server.MinecraftServer#getResourceManager` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 22 | `get_resource_manager` |
@@ -6558,12 +6564,15 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.world.level.levelgen.NoiseSettings#getCellHeight` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 88 | `get_cell_height` |
 | `net.minecraft.world.level.levelgen.NoiseSettings#getCellWidth` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 93 | `get_cell_width` |
 | `net.minecraft.world.level.levelgen.NoiseSettings#guardY` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 63 | `guard_y` |
+| `net.minecraft.world.level.levelgen.Noises#createKey` | `crates/mc-worldgen/src/ported/noises.rs` | 226 | `create_key` |
+| `net.minecraft.world.level.levelgen.Noises#instantiate` | `crates/mc-worldgen/src/ported/noises.rs` | 231 | `instantiate` |
 | `net.minecraft.world.level.levelgen.OreVeinifier#create` | `crates/mc-worldgen/src/ported/ore_veinifier.rs` | 86 | `create` |
 | `net.minecraft.world.level.levelgen.PatrolSpawner#spawnPatrolMember` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 224 | `spawn_patrol_member` |
 | `net.minecraft.world.level.levelgen.PatrolSpawner#tick` | `crates/mc-worldgen/src/ported/patrol_spawner.rs` | 130 | `tick` |
 | `net.minecraft.world.level.levelgen.PhantomSpawner#tick` | `crates/mc-worldgen/src/ported/phantom_spawner.rs` | 91 | `tick` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 52 | `at_block_pos` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 68 | `at` |
+| `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/noises.rs` | 108 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 57 | `from_hash_of_identifier` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 62 | `from_hash_of` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromSeed` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 65 | `from_seed` |
@@ -8144,6 +8153,7 @@ Total mapped Java symbols: **7453** across **1584** classes.
 | `net.minecraft.world.level.levelgen.synth.NoiseUtils#biasTowardsExtreme(double,double)` | `crates/mc-math/src/ported/noise_utils.rs` | 4 | `bias_towards_extreme` |
 | `net.minecraft.world.level.levelgen.synth.NoiseUtils#parityNoiseOctaveConfigString(StringBuilder,double,double,double,byte[])` | `crates/mc-math/src/ported/noise_utils.rs` | 9 | `parity_noise_octave_config_string_bytes` |
 | `net.minecraft.world.level.levelgen.synth.NoiseUtils#parityNoiseOctaveConfigString(StringBuilder,double,double,double,int[])` | `crates/mc-math/src/ported/noise_utils.rs` | 30 | `parity_noise_octave_config_string_ints` |
+| `net.minecraft.world.level.levelgen.synth.NormalNoise#create` | `crates/mc-worldgen/src/ported/noises.rs` | 134 | `create` |
 | `net.minecraft.world.level.levelgen.synth.NormalNoise#create(RandomSource,int,double...)` | `crates/mc-math/src/noise.rs` | 474 | `create` |
 | `net.minecraft.world.level.levelgen.synth.NormalNoise#getValue` | `crates/mc-math/src/noise.rs` | 497 | `get_value` |
 | `net.minecraft.world.level.levelgen.synth.PerlinNoise#<init>` | `crates/mc-math/src/noise.rs` | 358 | `new_internal` |
