@@ -419,3 +419,8 @@ pub mod entity_string_uuid_fix;
 pub mod lock_component_predicate_fix;
 pub mod carving_step_remove_fix;
 pub mod block_entity_rename_fix;
+pub mod v135;
+pub mod v3078;
+pub mod v703;
+pub mod v3689;
+pub mod v4307;
