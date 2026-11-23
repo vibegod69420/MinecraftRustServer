@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:30:08 UTC",
-  "updated_epoch": 1795393808,
+  "updated_at": "2026-11-23 00:33:35 UTC",
+  "updated_epoch": 1795394015,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 934,
-    "mapped_methods": 3725,
-    "class_coverage_pct": 13.0392,
-    "method_coverage_pct": 5.5867,
-    "harness_verified_classes": 619,
+    "mapped_classes": 938,
+    "mapped_methods": 3745,
+    "class_coverage_pct": 13.0951,
+    "method_coverage_pct": 5.6167,
+    "harness_verified_classes": 623,
     "harness_failed_attempts": 103
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 1102
+      "mapped_methods": 1125
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 544,
-    "prompt_tokens": 1364244,
-    "completion_tokens": 7218034,
-    "reasoning_tokens": 5182072,
-    "avg_latency_s": 197.5
+    "calls_total": 552,
+    "prompt_tokens": 1392368,
+    "completion_tokens": 7261334,
+    "reasoning_tokens": 5209836,
+    "avg_latency_s": 197.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:33:35Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundAwardStatsPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 203.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:33:35Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerCombatKillPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 203.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:33:35Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundContainerClosePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 203.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:33:35Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundSetBeaconPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 203.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:29:19Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.structures.ShipwreckStructure",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 303.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:21:14Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundSelectBundleItemPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 303.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:20:17Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.AlternativesEntry",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 380.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:20:17Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 380.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:20:17Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.TagEntry",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 380.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "57ca0c8",
+      "ts": "2026-11-23T00:30:08+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "dcdc6e9",
       "ts": "2026-11-23T00:30:05+00:00",
@@ -445,11 +450,6 @@
       "sha": "9eda279",
       "ts": "2026-11-23T00:17:54+00:00",
       "message": "Port 7 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "c17b297",
-      "ts": "2026-11-23T00:16:04+00:00",
-      "message": "Port 9 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }

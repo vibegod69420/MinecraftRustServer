@@ -185,3 +185,7 @@ pub mod serverbound_select_bundle_item_packet;
 pub mod clientbound_move_vehicle_packet;
 pub mod clientbound_set_camera_packet;
 pub mod serverbound_paddle_boat_packet;
+pub mod serverbound_set_beacon_packet;
+pub mod clientbound_container_close_packet;
+pub mod clientbound_player_combat_kill_packet;
+pub mod clientbound_award_stats_packet;
