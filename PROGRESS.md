@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:20:02 UTC
+- **Updated**: 2026-11-23 02:20:41 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 5642 / 66676 (8.462%)
 - **Mapped Java Classes**: 1290 / 7163 (18.009%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1385 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.PlayerDataStorage` -> `mc-nbt` (1073.5s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction` -> `mc-nbt` (439.1s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider` -> `mc-worldgen` (765.3s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.pools.JigsawJunction` -> `mc-worldgen` (172.2s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ClientboundSetDisplayObjectivePacket` -> `mc-protocol` (597.6s)
 - [FAIL] `net.minecraft.network.chat.SignableCommand` -> `mc-protocol` (971.1s)
 - [PASS] `net.minecraft.network.chat.RemoteChatSession` -> `mc-protocol` (971.1s)
-- [PASS] `net.minecraft.network.chat.MessageSignatureCache` -> `mc-protocol` (971.1s)
