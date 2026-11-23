@@ -163,3 +163,7 @@ pub mod clientbound_set_chunk_cache_radius_packet;
 pub mod clientbound_disguised_chat_packet;
 pub mod clientbound_set_border_size_packet;
 pub mod serverbound_set_test_block_packet;
+pub mod var_long;
+pub mod cipher_base;
+pub mod compression_encoder;
+pub mod clientbound_status_response_packet;
