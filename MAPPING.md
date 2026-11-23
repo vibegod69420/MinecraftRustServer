@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **8431** across **1873** classes.
+Total mapped Java symbols: **8436** across **1875** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6090,6 +6090,7 @@ Total mapped Java symbols: **8431** across **1873** classes.
 | `net.minecraft.util.datafix.fixes.MapIdFix#makeRule` | `crates/mc-math/src/ported/map_id_fix.rs` | 126 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.NamedEntityConvertUncheckedFix#<init>` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 66 | `new` |
 | `net.minecraft.util.datafix.fixes.NamedEntityConvertUncheckedFix#fix` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 87 | `fix` |
+| `net.minecraft.util.datafix.fixes.NamedEntityWriteReadFix#<init>` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 23 | `new` |
 | `net.minecraft.util.datafix.fixes.OptionsAccessibilityOnboardFix#<init>` | `crates/mc-math/src/ported/options_accessibility_onboard_fix.rs` | 67 | `new` |
 | `net.minecraft.util.datafix.fixes.OptionsAccessibilityOnboardFix#makeRule` | `crates/mc-math/src/ported/options_accessibility_onboard_fix.rs` | 75 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.OptionsAmbientOcclusionFix#<init>` | `crates/mc-math/src/ported/options_ambient_occlusion_fix.rs` | 47 | `new` |
@@ -6125,6 +6126,10 @@ Total mapped Java symbols: **8431** across **1873** classes.
 | `net.minecraft.util.datafix.fixes.PoiTypeRemoveFix#shouldKeepRecord` | `crates/mc-math/src/ported/poi_type_remove_fix.rs` | 53 | `should_keep_record` |
 | `net.minecraft.util.datafix.fixes.PoiTypeRenameFix#<init>` | `crates/mc-math/src/ported/poi_type_rename_fix.rs` | 47 | `new` |
 | `net.minecraft.util.datafix.fixes.PoiTypeRenameFix#processRecords` | `crates/mc-math/src/ported/poi_type_rename_fix.rs` | 52 | `process_records` |
+| `net.minecraft.util.datafix.fixes.PrimedTntBlockStateFixer#<init>` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 141 | `new` |
+| `net.minecraft.util.datafix.fixes.PrimedTntBlockStateFixer#fix` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 176 | `fix` |
+| `net.minecraft.util.datafix.fixes.PrimedTntBlockStateFixer#insertBlockState` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 167 | `insert_block_state` |
+| `net.minecraft.util.datafix.fixes.PrimedTntBlockStateFixer#renameFuse` | `crates/mc-math/src/ported/primed_tnt_block_state_fixer.rs` | 158 | `rename_fuse` |
 | `net.minecraft.util.datafix.fixes.RandomSequenceSettingsFix#<init>` | `crates/mc-math/src/ported/random_sequence_settings_fix.rs` | 68 | `new` |
 | `net.minecraft.util.datafix.fixes.RandomSequenceSettingsFix#makeRule` | `crates/mc-math/src/ported/random_sequence_settings_fix.rs` | 76 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.RecipesRenameningFix#RECIPES` | `crates/mc-math/src/ported/recipes_renamening_fix.rs` | 7 | `recipes` |

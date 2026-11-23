@@ -402,3 +402,4 @@ pub mod custom_model_data_expand_fix;
 pub mod structure_reference_count_fix;
 pub mod options_menu_blurriness_fix;
 pub mod player_uuid_fix;
+pub mod primed_tnt_block_state_fixer;
