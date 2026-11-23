@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9422** across **2144** classes.
+Total mapped Java symbols: **9438** across **2145** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3175,6 +3175,24 @@ Total mapped Java symbols: **9422** across **2144** classes.
 | `net.minecraft.network.chat.contents.SelectorContents#toString` | `crates/mc-protocol/src/ported/selector_contents.rs` | 209 | `fmt` |
 | `net.minecraft.network.chat.contents.SelectorContents#visit` | `crates/mc-protocol/src/ported/selector_contents.rs` | 194 | `visit_styled_content` |
 | `net.minecraft.network.chat.contents.SelectorContents#visit` | `crates/mc-protocol/src/ported/selector_contents.rs` | 203 | `visit_content` |
+| `net.minecraft.network.chat.contents.TranslatableContents#<init>` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 235 | `new` |
+| `net.minecraft.network.chat.contents.TranslatableContents#adjustArgs` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 259 | `adjust_args_to_optional` |
+| `net.minecraft.network.chat.contents.TranslatableContents#adjustArgs` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 268 | `adjust_args_from_optional` |
+| `net.minecraft.network.chat.contents.TranslatableContents#create` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 276 | `create` |
+| `net.minecraft.network.chat.contents.TranslatableContents#decompose` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 281 | `decompose` |
+| `net.minecraft.network.chat.contents.TranslatableContents#decomposeTemplate` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 308 | `decompose_template` |
+| `net.minecraft.network.chat.contents.TranslatableContents#equals` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 220 | `eq` |
+| `net.minecraft.network.chat.contents.TranslatableContents#filterAllowedArguments` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 245 | `filter_allowed_arguments` |
+| `net.minecraft.network.chat.contents.TranslatableContents#getArgs` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 472 | `get_args` |
+| `net.minecraft.network.chat.contents.TranslatableContents#getArgument` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 372 | `get_argument` |
+| `net.minecraft.network.chat.contents.TranslatableContents#getFallback` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 467 | `get_fallback` |
+| `net.minecraft.network.chat.contents.TranslatableContents#getKey` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 462 | `get_key` |
+| `net.minecraft.network.chat.contents.TranslatableContents#hashCode` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 437 | `hash_code` |
+| `net.minecraft.network.chat.contents.TranslatableContents#isAllowedPrimitiveArgument` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 254 | `is_allowed_primitive_argument` |
+| `net.minecraft.network.chat.contents.TranslatableContents#resolve` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 413 | `resolve` |
+| `net.minecraft.network.chat.contents.TranslatableContents#toString` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 450 | `to_string_java` |
+| `net.minecraft.network.chat.contents.TranslatableContents#visit` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 385 | `visit_styled` |
+| `net.minecraft.network.chat.contents.TranslatableContents#visit` | `crates/mc-protocol/src/ported/translatable_contents.rs` | 401 | `visit_content` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 11 | `new_parse_error` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 19 | `new_invalid_index` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 27 | `new_with_cause` |
