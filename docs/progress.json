@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 02:56:01 UTC",
-  "updated_epoch": 1795402561,
+  "updated_at": "2026-11-23 02:59:10 UTC",
+  "updated_epoch": 1795402750,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1364,
-    "mapped_methods": 6123,
-    "class_coverage_pct": 19.0423,
-    "method_coverage_pct": 9.1832,
-    "harness_verified_classes": 887,
-    "harness_failed_attempts": 207
+    "mapped_classes": 1365,
+    "mapped_methods": 6131,
+    "class_coverage_pct": 19.0563,
+    "method_coverage_pct": 9.1952,
+    "harness_verified_classes": 888,
+    "harness_failed_attempts": 210
   },
   "crates": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 2484
+      "mapped_methods": 2495
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 973,
-    "prompt_tokens": 2664222,
-    "completion_tokens": 14639878,
-    "reasoning_tokens": 10573028,
-    "avg_latency_s": 238.1
+    "calls_total": 975,
+    "prompt_tokens": 2670258,
+    "completion_tokens": 14677963,
+    "reasoning_tokens": 10597966,
+    "avg_latency_s": 238.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T02:59:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 723.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:59:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundSoundPacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 723.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:59:10Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 723.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T02:56:42Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 832.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T02:55:16Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 975.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:42:50Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 975.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:42:50Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundRecipeBookAddPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 975.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:42:50Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.RootPlacer",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 441.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:42:50Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.PlaceOnGroundDecorator",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 569.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5db3d70",
+      "ts": "2026-11-23T02:56:01+00:00",
+      "message": "Worker sync: 6123 mapped Java methods"
+    },
     {
       "sha": "a167b5a",
       "ts": "2026-11-23T02:55:17+00:00",
@@ -445,11 +450,6 @@
       "sha": "8fe2851",
       "ts": "2026-11-23T02:38:06+00:00",
       "message": "Worker sync: 5837 mapped Java methods"
-    },
-    {
-      "sha": "3ba8c5a",
-      "ts": "2026-11-23T02:36:17+00:00",
-      "message": "Worker sync: 5825 mapped Java methods"
     }
   ]
 }

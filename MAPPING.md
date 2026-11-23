@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6123** across **1364** classes.
+Total mapped Java symbols: **6131** across **1365** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -224,6 +224,7 @@ Total mapped Java symbols: **6123** across **1364** classes.
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_jigsaw_generate_packet.rs` | 20 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_block_packet.rs` | 31 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_player_action_packet.rs` | 108 | `as_long` |
+| `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 147 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 166 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 154 | `as_long` |
 | `net.minecraft.core.BlockPos#asLong` | `crates/mc-protocol/src/ported/serverbound_use_item_on_packet.rs` | 125 | `pack_block_pos` |
@@ -320,6 +321,7 @@ Total mapped Java symbols: **6123** across **1364** classes.
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_jigsaw_generate_packet.rs` | 27 | `of` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_block_packet.rs` | 39 | `of` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_player_action_packet.rs` | 116 | `of_long` |
+| `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 155 | `from_long` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 174 | `of` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_test_instance_block_action_packet.rs` | 164 | `from_long` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_use_item_on_packet.rs` | 132 | `unpack_block_pos` |
@@ -3600,6 +3602,15 @@ Total mapped Java symbols: **6123** across **1364** classes.
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#handle` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 77 | `handle` |
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#type` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 72 | `packet_type` |
 | `net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket#write` | `crates/mc-protocol/src/ported/serverbound_set_carried_item_packet.rs` | 67 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 207 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 226 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#getCommand` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 265 | `get_command` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#getMode` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 285 | `get_mode` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#getPos` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 260 | `get_pos` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#isAutomatic` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 280 | `is_automatic` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#isConditional` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 275 | `is_conditional` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#isTrackOutput` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 270 | `is_track_output` |
+| `net.minecraft.network.protocol.game.ServerboundSetCommandBlockPacket#write` | `crates/mc-protocol/src/ported/serverbound_set_command_block_packet.rs` | 242 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_command_minecart_packet.rs` | 121 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_command_minecart_packet.rs` | 130 | `read` |
 | `net.minecraft.network.protocol.game.ServerboundSetCommandMinecartPacket#getCommand` | `crates/mc-protocol/src/ported/serverbound_set_command_minecart_packet.rs` | 149 | `get_command` |
