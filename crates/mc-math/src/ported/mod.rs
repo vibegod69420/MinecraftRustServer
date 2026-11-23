@@ -222,3 +222,7 @@ pub mod dye_item_rename_fix;
 pub mod filtered_signs_fix;
 pub mod block_entity_shulker_box_color_fix;
 pub mod recorded_deviation;
+pub mod profile_collector;
+pub mod profile_results;
+pub mod result_field;
+pub mod empty_profile_results;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7890** across **1662** classes.
+Total mapped Java symbols: **7919** across **1666** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5953,6 +5953,49 @@ Total mapped Java symbols: **7890** across **1662** classes.
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 395 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.SuggestionSupplier#possibleValues` | `crates/mc-math/src/ported/suggestion_supplier.rs` | 429 | `possible_values` |
 | `net.minecraft.util.parsing.packrat.commands.StringReaderTerms#createReader` | `crates/mc-math/src/ported/delayed_exception.rs` | 32 | `create_reader` |
+| `net.minecraft.util.profiling.EmptyProfileResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 48 | `<item>` |
+| `net.minecraft.util.profiling.EmptyProfileResults#<init>` | `crates/mc-math/src/ported/empty_profile_results.rs` | 56 | `new` |
+| `net.minecraft.util.profiling.EmptyProfileResults#EMPTY` | `crates/mc-math/src/ported/empty_profile_results.rs` | 52 | `new` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getEndTimeNano` | `crates/mc-math/src/ported/empty_profile_results.rs` | 88 | `get_end_time_nano` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getEndTimeTicks` | `crates/mc-math/src/ported/empty_profile_results.rs` | 93 | `get_end_time_ticks` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getProfilerResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 98 | `get_profiler_results` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getStartTimeNano` | `crates/mc-math/src/ported/empty_profile_results.rs` | 78 | `get_start_time_nano` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getStartTimeTicks` | `crates/mc-math/src/ported/empty_profile_results.rs` | 83 | `get_start_time_ticks` |
+| `net.minecraft.util.profiling.EmptyProfileResults#getTimes` | `crates/mc-math/src/ported/empty_profile_results.rs` | 68 | `get_times` |
+| `net.minecraft.util.profiling.EmptyProfileResults#saveResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 73 | `save_results` |
+| `net.minecraft.util.profiling.ProfileCollector` | `crates/mc-math/src/ported/profile_collector.rs` | 58 | `get_results` |
+| `net.minecraft.util.profiling.ProfileCollector#getChartedPaths` | `crates/mc-math/src/ported/profile_collector.rs` | 66 | `get_charted_paths` |
+| `net.minecraft.util.profiling.ProfileCollector#getEntry` | `crates/mc-math/src/ported/profile_collector.rs` | 63 | `get_entry` |
+| `net.minecraft.util.profiling.ProfileCollector#getResults` | `crates/mc-math/src/ported/profile_collector.rs` | 60 | `get_results` |
+| `net.minecraft.util.profiling.ProfileResults` | `crates/mc-math/src/ported/profile_results.rs` | 26 | `get_times` |
+| `net.minecraft.util.profiling.ProfileResults#demanglePath` | `crates/mc-math/src/ported/profile_results.rs` | 62 | `demangle_path` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeNano` | `crates/mc-math/src/ported/empty_profile_results.rs` | 26 | `get_end_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeNano` | `crates/mc-math/src/ported/profile_collector.rs` | 36 | `get_end_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeNano` | `crates/mc-math/src/ported/profile_results.rs` | 40 | `get_end_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeTicks` | `crates/mc-math/src/ported/empty_profile_results.rs` | 29 | `get_end_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeTicks` | `crates/mc-math/src/ported/profile_collector.rs` | 39 | `get_end_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getEndTimeTicks` | `crates/mc-math/src/ported/profile_results.rs` | 43 | `get_end_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getNanoDuration` | `crates/mc-math/src/ported/empty_profile_results.rs` | 32 | `get_nano_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getNanoDuration` | `crates/mc-math/src/ported/profile_collector.rs` | 42 | `get_nano_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getNanoDuration` | `crates/mc-math/src/ported/profile_results.rs` | 46 | `get_nano_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getProfilerResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 44 | `get_profiler_results` |
+| `net.minecraft.util.profiling.ProfileResults#getProfilerResults` | `crates/mc-math/src/ported/profile_collector.rs` | 54 | `get_profiler_results` |
+| `net.minecraft.util.profiling.ProfileResults#getProfilerResults` | `crates/mc-math/src/ported/profile_results.rs` | 58 | `get_profiler_results` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeNano` | `crates/mc-math/src/ported/empty_profile_results.rs` | 20 | `get_start_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeNano` | `crates/mc-math/src/ported/profile_collector.rs` | 30 | `get_start_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeNano` | `crates/mc-math/src/ported/profile_results.rs` | 34 | `get_start_time_nano` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeTicks` | `crates/mc-math/src/ported/empty_profile_results.rs` | 23 | `get_start_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeTicks` | `crates/mc-math/src/ported/profile_collector.rs` | 33 | `get_start_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getStartTimeTicks` | `crates/mc-math/src/ported/profile_results.rs` | 37 | `get_start_time_ticks` |
+| `net.minecraft.util.profiling.ProfileResults#getTickDuration` | `crates/mc-math/src/ported/empty_profile_results.rs` | 38 | `get_tick_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getTickDuration` | `crates/mc-math/src/ported/profile_collector.rs` | 48 | `get_tick_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getTickDuration` | `crates/mc-math/src/ported/profile_results.rs` | 52 | `get_tick_duration` |
+| `net.minecraft.util.profiling.ProfileResults#getTimes` | `crates/mc-math/src/ported/empty_profile_results.rs` | 14 | `get_times` |
+| `net.minecraft.util.profiling.ProfileResults#getTimes` | `crates/mc-math/src/ported/profile_collector.rs` | 24 | `get_times` |
+| `net.minecraft.util.profiling.ProfileResults#getTimes` | `crates/mc-math/src/ported/profile_results.rs` | 28 | `get_times` |
+| `net.minecraft.util.profiling.ProfileResults#saveResults` | `crates/mc-math/src/ported/empty_profile_results.rs` | 17 | `save_results` |
+| `net.minecraft.util.profiling.ProfileResults#saveResults` | `crates/mc-math/src/ported/profile_collector.rs` | 27 | `save_results` |
+| `net.minecraft.util.profiling.ProfileResults#saveResults` | `crates/mc-math/src/ported/profile_results.rs` | 31 | `save_results` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 18 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCount` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 82 | `get_count` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getCounters` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 21 | `get_counters` |
@@ -5961,6 +6004,11 @@ Total mapped Java symbols: **7890** across **1662** classes.
 | `net.minecraft.util.profiling.ProfilerPathEntry#getDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 72 | `get_duration` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getMaxDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 15 | `get_max_duration` |
 | `net.minecraft.util.profiling.ProfilerPathEntry#getMaxDuration` | `crates/mc-math/src/ported/profiler_path_entry.rs` | 77 | `get_max_duration` |
+| `net.minecraft.util.profiling.ResultField` | `crates/mc-math/src/ported/result_field.rs` | 3 | `<item>` |
+| `net.minecraft.util.profiling.ResultField#<init>` | `crates/mc-math/src/ported/profile_results.rs` | 15 | `new` |
+| `net.minecraft.util.profiling.ResultField#<init>` | `crates/mc-math/src/ported/result_field.rs` | 13 | `new` |
+| `net.minecraft.util.profiling.ResultField#compareTo` | `crates/mc-math/src/ported/result_field.rs` | 23 | `compare_to` |
+| `net.minecraft.util.profiling.ResultField#getColor` | `crates/mc-math/src/ported/result_field.rs` | 34 | `get_color` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 11 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 19 | `finish` |
 | `net.minecraft.util.profiling.jfr.callback.ProfiledDuration#finish` | `crates/mc-math/src/ported/profiled_duration.rs` | 35 | `finish` |
