@@ -214,3 +214,8 @@ pub mod serverbound_custom_payload_packet;
 pub mod serverbound_resource_pack_packet;
 pub mod clientbound_select_advancements_tab_packet;
 pub mod clientbound_move_minecart_packet;
+pub mod clientbound_player_position_packet;
+pub mod serverbound_entity_tag_query_packet;
+pub mod clientbound_remove_entities_packet;
+pub mod clientbound_update_tags_packet;
+pub mod clientbound_resource_pack_push_packet;
