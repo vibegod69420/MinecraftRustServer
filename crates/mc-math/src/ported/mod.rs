@@ -169,3 +169,4 @@ pub mod strict_queue;
 pub mod bounded_float_function;
 pub mod identifier_pattern;
 pub mod csv_output;
+pub mod debug_subscription;

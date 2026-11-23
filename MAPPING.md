@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3832** across **954** classes.
+Total mapped Java symbols: **3843** across **956** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2823,9 +2823,21 @@ Total mapped Java symbols: **3832** across **954** classes.
 | `net.minecraft.util.debug.DebugPoiInfo#<init>` | `crates/mc-math/src/ported/debug_poi_info.rs` | 70 | `from_poi_record` |
 | `net.minecraft.util.debug.DebugStructureInfo#<init>` | `crates/mc-math/src/ported/debug_structure_info.rs` | 52 | `new` |
 | `net.minecraft.util.debug.DebugStructureInfo$Piece#<init>` | `crates/mc-math/src/ported/debug_structure_info.rs` | 34 | `new` |
+| `net.minecraft.util.debug.DebugSubscription#<init>` | `crates/mc-math/src/ported/debug_subscription.rs` | 44 | `new` |
+| `net.minecraft.util.debug.DebugSubscription#<init>` | `crates/mc-math/src/ported/debug_subscription.rs` | 55 | `with_no_expiry` |
+| `net.minecraft.util.debug.DebugSubscription#emptyUpdate` | `crates/mc-math/src/ported/debug_subscription.rs` | 70 | `empty_update` |
+| `net.minecraft.util.debug.DebugSubscription#expireAfterTicks` | `crates/mc-math/src/ported/debug_subscription.rs` | 98 | `expire_after_ticks` |
+| `net.minecraft.util.debug.DebugSubscription#packEvent` | `crates/mc-math/src/ported/debug_subscription.rs` | 78 | `pack_event` |
+| `net.minecraft.util.debug.DebugSubscription#packUpdate` | `crates/mc-math/src/ported/debug_subscription.rs` | 62 | `pack_update` |
+| `net.minecraft.util.debug.DebugSubscription#toString` | `crates/mc-math/src/ported/debug_subscription.rs` | 86 | `registered_name_fallback` |
+| `net.minecraft.util.debug.DebugSubscription#valueStreamCodec` | `crates/mc-math/src/ported/debug_subscription.rs` | 93 | `value_stream_codec` |
+| `net.minecraft.util.debug.DebugSubscription$Event#subscription` | `crates/mc-math/src/ported/debug_subscription.rs` | 120 | `subscription` |
+| `net.minecraft.util.debug.DebugSubscription$Event#value` | `crates/mc-math/src/ported/debug_subscription.rs` | 125 | `value` |
 | `net.minecraft.util.debug.DebugSubscription$Update#<init>` | `crates/mc-protocol/src/ported/clientbound_debug_chunk_value_packet.rs` | 38 | `new` |
 | `net.minecraft.util.debug.DebugSubscription$Update#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 162 | `read` |
 | `net.minecraft.util.debug.DebugSubscription$Update#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 169 | `write` |
+| `net.minecraft.util.debug.DebugSubscription$Update#subscription` | `crates/mc-math/src/ported/debug_subscription.rs` | 150 | `subscription` |
+| `net.minecraft.util.debug.DebugSubscription$Update#value` | `crates/mc-math/src/ported/debug_subscription.rs` | 155 | `value` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachBlock` | `crates/mc-math/src/ported/debug_value_access.rs` | 68 | `for_each_block` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachChunk` | `crates/mc-math/src/ported/debug_value_access.rs` | 54 | `for_each_chunk` |
 | `net.minecraft.util.debug.DebugValueAccess#forEachEntity` | `crates/mc-math/src/ported/debug_value_access.rs` | 82 | `for_each_entity` |
