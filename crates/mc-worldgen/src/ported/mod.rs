@@ -241,3 +241,4 @@ pub mod nether_fossil_structure;
 pub mod ocean_ruin_structure;
 pub mod woodland_mansion_structure;
 pub mod world_options;
+pub mod jigsaw_junction;

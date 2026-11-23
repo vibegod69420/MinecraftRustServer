@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 02:18:10 UTC
+- **Updated**: 2026-11-23 02:19:17 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 5592 / 66676 (8.387%)
-- **Mapped Java Classes**: 1285 / 7163 (17.939%)
+- **Mapped Java Methods**: 5637 / 66676 (8.454%)
+- **Mapped Java Classes**: 1289 / 7163 (17.995%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 2009 mapped methods
 - `mc-nbt`: 1541 mapped methods
-- `mc-protocol`: 2061 mapped methods
-- `mc-worldgen`: 1369 mapped methods
+- `mc-protocol`: 2112 mapped methods
+- `mc-worldgen`: 1380 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.structure.pools.JigsawJunction` -> `mc-worldgen` (172.2s)
 - [PASS] `net.minecraft.util.ArrayListDeque` -> `mc-math` (1309.6s)
 - [FAIL] `net.minecraft.util.GsonHelper` -> `mc-math` (773.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DeltaFeature` -> `mc-worldgen` (1534.5s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.chat.MessageSignatureCache` -> `mc-protocol` (971.1s)
 - [PASS] `net.minecraft.network.chat.SignedMessageLink` -> `mc-protocol` (971.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.OceanMonumentStructure` -> `mc-worldgen` (483.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure` -> `mc-worldgen` (483.5s)

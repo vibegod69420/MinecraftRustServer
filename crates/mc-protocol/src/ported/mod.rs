@@ -269,3 +269,6 @@ pub mod clientbound_set_display_objective_packet;
 pub mod serverbound_recipe_book_change_settings_packet;
 pub mod clientbound_light_update_packet;
 pub mod serverbound_sign_update_packet;
+pub mod login_packet_types;
+pub mod clientbound_custom_query_packet;
+pub mod serverbound_key_packet;
