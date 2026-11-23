@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9036** across **2068** classes.
+Total mapped Java symbols: **9042** across **2069** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6269,6 +6269,60 @@ Total mapped Java symbols: **9036** across **2068** classes.
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 173 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix#makeRule` | `crates/mc-math/src/ported/chunk_status_fix.rs` | 179 | `apply_to_chunk` |
 | `net.minecraft.util.datafix.fixes.ChunkStatusFix2#makeRule` | `crates/mc-math/src/ported/chunk_status_fix2.rs` | 38 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 3 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 16 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 23 | `success` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 28 | `empty` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 33 | `result` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 41 | `is_empty` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 46 | `map` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 58 | `null` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 63 | `bool` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 68 | `int` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 73 | `long` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 78 | `short` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 83 | `string` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 88 | `list` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 93 | `map` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 98 | `byte_buffer` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 103 | `from_pairs` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 108 | `get` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 116 | `update` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 133 | `set` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 149 | `remove` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 161 | `as_boolean` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 171 | `as_int` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 187 | `as_number` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 196 | `as_byte_buffer_opt` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 204 | `as_stream_opt` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 212 | `create_string` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 217 | `create_boolean` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 222 | `create_short` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 227 | `create_int_list` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 232 | `create_list` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 238 | `create_string` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 243 | `create_boolean` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 248 | `create_short` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 253 | `create_int_list` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 258 | `create_list` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 332 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 336 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 340 | `<item>` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 348 | `new` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#fixChunkData` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 311 | `fix_chunk_data` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#fixChunkData` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 361 | `fix_chunk_data` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#fixChunkData` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 399 | `fix_chunk_data_carved_status` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#makeRule` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 356 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#packOffsetCoordinates` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 263 | `pack_offset_coordinates` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#packOffsetCoordinates` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 376 | `pack_offset_coordinates` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#packOffsetCoordinates` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 386 | `pack_offset_coordinates_basic` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#packOffsetCoordinates` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 392 | `pack_offset_coordinates_masks_negative_and_overflow` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackBiomes` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 268 | `repack_biomes` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackBiomes` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 366 | `repack_biomes` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackBiomes` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 411 | `repack_biomes_byte_buffer` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackTicks` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 285 | `repack_ticks` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackTicks` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 371 | `repack_ticks` |
+| `net.minecraft.util.datafix.fixes.ChunkToProtochunkFix#repackTicks` | `crates/mc-math/src/ported/chunk_to_protochunk_fix.rs` | 430 | `repack_ticks_groups_by_section` |
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#<init>` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 117 | `new` |
 | `net.minecraft.util.datafix.fixes.ColorlessShulkerEntityFix#fix` | `crates/mc-math/src/ported/colorless_shulker_entity_fix.rs` | 127 | `fix` |
 | `net.minecraft.util.datafix.fixes.ContainerBlockEntityLockPredicateFix#<init>` | `crates/mc-math/src/ported/container_block_entity_lock_predicate_fix.rs` | 125 | `new` |
