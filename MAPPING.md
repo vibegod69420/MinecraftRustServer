@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7484** across **1587** classes.
+Total mapped Java symbols: **7499** across **1588** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -8006,6 +8006,22 @@ Total mapped Java symbols: **7484** across **1587** classes.
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure#type` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 198 | `structure_type` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 90 | `get_name` |
 | `net.minecraft.world.level.levelgen.structure.structures.OceanRuinStructure$Type#getSerializedName` | `crates/mc-worldgen/src/ported/ocean_ruin_structure.rs` | 98 | `get_serialized_name` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#<init>` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 435 | `new` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#addNetherrackDripColumn` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 620 | `add_netherrack_drip_column` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#addNetherrackDripColumnsBelowPortal` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 604 | `add_netherrack_drip_columns_below_portal` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#canBlockBeReplacedByNetherrackOrMagma` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 689 | `can_block_be_replaced_by_netherrack_or_magma` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#getBlockReplaceRule` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 508 | `get_block_replace_rule_with_probability` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#getBlockReplaceRule` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 517 | `get_block_replace_rule` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#getHeightMapType` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 712 | `get_height_map_type` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#getLavaProcessorRule` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 490 | `get_lava_processor_rule` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#getSurfaceY` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 707 | `get_surface_y` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#handleDataMarker` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 565 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#makeSettings` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 455 | `make_settings` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#maybeAddLeavesAbove` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 593 | `maybe_add_leaves_above` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#maybeAddVines` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 576 | `maybe_add_vines` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#placeNetherrackOrMagma` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 698 | `place_netherrack_or_magma` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#postProcess` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 522 | `post_process` |
+| `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalPiece#spreadNetherrack` | `crates/mc-worldgen/src/ported/ruined_portal_piece.rs` | 632 | `spread_netherrack` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces#addRandomPiece` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 290 | `add_random_piece` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#<init>` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 325 | `new` |
 | `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces.ShipwreckPiece#<init>` | `crates/mc-worldgen/src/ported/shipwreck_pieces.rs` | 344 | `from_tag` |
