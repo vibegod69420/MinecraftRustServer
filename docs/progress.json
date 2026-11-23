@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 16:09:27 UTC",
-  "updated_epoch": 1795450167,
+  "updated_at": "2026-11-23 16:20:39 UTC",
+  "updated_epoch": 1795450839,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 29.5128,
     "method_coverage_pct": 13.8296,
     "harness_verified_classes": 1348,
-    "harness_failed_attempts": 403
+    "harness_failed_attempts": 412
   },
   "crates": [
     {
@@ -47,13 +47,85 @@
     }
   ],
   "usage": {
-    "calls_total": 1996,
-    "prompt_tokens": 6449288,
-    "completion_tokens": 32505782,
-    "reasoning_tokens": 23307512,
-    "avg_latency_s": 222.2
+    "calls_total": 2003,
+    "prompt_tokens": 6474242,
+    "completion_tokens": 32631184,
+    "reasoning_tokens": 23399948,
+    "avg_latency_s": 218.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T16:13:05Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 395.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:13:05Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 395.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:13:05Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LocationCheck",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 395.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:11:59Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 933.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:11:59Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 933.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:11:59Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 933.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:10:18Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.CompositeEntryBase",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 833.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:10:18Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.EntryGroup",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 833.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T16:10:18Z",
+      "class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 833.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T16:06:29Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
@@ -301,81 +373,14 @@
       "verified": true,
       "seconds": 3042.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:07:16Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V2832",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 5438.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:07:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3041.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T14:07:16Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 3041.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 4007.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.OptionsKeyLwjgl3Fix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1610.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TooltipDisplayComponentFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1610.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TrappedChestBlockEntityFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1610.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityEquipmentToArmorAndHandFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 1610.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T13:43:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4007.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e866a28",
+      "ts": "2026-11-23T16:09:28+00:00",
+      "message": "Worker sync: 9221 mapped Java methods"
+    },
     {
       "sha": "007af98",
       "ts": "2026-11-23T15:56:43+00:00",
@@ -445,11 +450,6 @@
       "sha": "2f6a370",
       "ts": "2026-11-23T13:40:25+00:00",
       "message": "Worker sync: 9156 mapped Java methods"
-    },
-    {
-      "sha": "0470c25",
-      "ts": "2026-11-23T13:24:17+00:00",
-      "message": "Worker sync: 9132 mapped Java methods"
     }
   ]
 }
