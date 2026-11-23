@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 03:10:01 UTC
+- **Updated**: 2026-11-23 03:24:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 6168 / 66676 (9.251%)
 - **Mapped Java Classes**: 1373 / 7163 (19.168%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1612 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.VegetationPatchFeature` -> `mc-worldgen` (2129.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature` -> `mc-worldgen` (1180.9s)
 - [PASS] `net.minecraft.world.level.levelgen.carver.CanyonWorldCarver` -> `mc-worldgen` (1352.5s)
 - [PASS] `net.minecraft.network.chat.FormattedText` -> `mc-protocol` (720.0s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.network.protocol.game.ServerboundPlayerActionPacket` -> `mc-protocol` (939.1s)
 - [PASS] `net.minecraft.network.protocol.game.ServerboundSeenAdvancementsPacket` -> `mc-protocol` (939.1s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.pools.ListPoolElement` -> `mc-worldgen` (913.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.DensityFunction` -> `mc-worldgen` (1082.1s)

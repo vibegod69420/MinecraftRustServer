@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 03:20:02 UTC",
-  "updated_epoch": 1795404002,
+  "updated_at": "2026-11-23 03:26:01 UTC",
+  "updated_epoch": 1795404361,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 19.1679,
     "method_coverage_pct": 9.2507,
     "harness_verified_classes": 892,
-    "harness_failed_attempts": 211
+    "harness_failed_attempts": 212
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 981,
-    "prompt_tokens": 2685491,
-    "completion_tokens": 14861688,
-    "reasoning_tokens": 10753676,
-    "avg_latency_s": 242.0
+    "calls_total": 991,
+    "prompt_tokens": 2711306,
+    "completion_tokens": 15005847,
+    "reasoning_tokens": 10872603,
+    "avg_latency_s": 240.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T03:21:56Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.VegetationPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2129.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T03:09:26Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 2646.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T02:43:44Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.PaleMossDecorator",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 801.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9a07be7",
+      "ts": "2026-11-23T03:20:02+00:00",
+      "message": "Worker sync: 6168 mapped Java methods"
+    },
     {
       "sha": "84a65ae",
       "ts": "2026-11-23T03:14:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "61d5a3b",
       "ts": "2026-11-23T02:48:23+00:00",
       "message": "Worker sync: 5998 mapped Java methods"
-    },
-    {
-      "sha": "aa8e43e",
-      "ts": "2026-11-23T02:46:27+00:00",
-      "message": "Port 3 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
