@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **6131** across **1365** classes.
+Total mapped Java symbols: **6159** across **1371** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2210,16 +2210,44 @@ Total mapped Java symbols: **6131** across **1365** classes.
 | `net.minecraft.network.chat.FontDescription#CODEC` | `crates/mc-protocol/src/ported/font_description.rs` | 96 | `codec_encode` |
 | `net.minecraft.network.chat.FontDescription#DEFAULT` | `crates/mc-protocol/src/ported/font_description.rs` | 69 | `default_font_description` |
 | `net.minecraft.network.chat.FontDescription$Resource#<init>` | `crates/mc-protocol/src/ported/font_description.rs` | 64 | `new` |
+| `net.minecraft.network.chat.FormattedText` | `crates/mc-protocol/src/ported/formatted_text.rs` | 52 | `<item>` |
+| `net.minecraft.network.chat.FormattedText#composite` | `crates/mc-protocol/src/ported/formatted_text.rs` | 74 | `composite` |
+| `net.minecraft.network.chat.FormattedText#getString` | `crates/mc-protocol/src/ported/formatted_text.rs` | 122 | `get_string` |
+| `net.minecraft.network.chat.FormattedText#of` | `crates/mc-protocol/src/ported/formatted_text.rs` | 64 | `of` |
+| `net.minecraft.network.chat.FormattedText#of` | `crates/mc-protocol/src/ported/formatted_text.rs` | 69 | `of_styled` |
+| `net.minecraft.network.chat.FormattedText#visit` | `crates/mc-protocol/src/ported/formatted_text.rs` | 79 | `visit` |
+| `net.minecraft.network.chat.FormattedText#visit` | `crates/mc-protocol/src/ported/formatted_text.rs` | 97 | `visit_styled` |
+| `net.minecraft.network.chat.FormattedText$ContentConsumer` | `crates/mc-protocol/src/ported/formatted_text.rs` | 26 | `accept` |
+| `net.minecraft.network.chat.FormattedText$ContentConsumer#accept` | `crates/mc-protocol/src/ported/formatted_text.rs` | 28 | `accept` |
+| `net.minecraft.network.chat.FormattedText$ContentConsumer#accept` | `crates/mc-protocol/src/ported/formatted_text.rs` | 33 | `accept` |
+| `net.minecraft.network.chat.FormattedText$StyledContentConsumer` | `crates/mc-protocol/src/ported/formatted_text.rs` | 39 | `accept` |
+| `net.minecraft.network.chat.FormattedText$StyledContentConsumer#accept` | `crates/mc-protocol/src/ported/formatted_text.rs` | 41 | `accept` |
+| `net.minecraft.network.chat.FormattedText$StyledContentConsumer#accept` | `crates/mc-protocol/src/ported/formatted_text.rs` | 46 | `accept` |
+| `net.minecraft.network.chat.LastSeenMessages` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 245 | `<item>` |
+| `net.minecraft.network.chat.LastSeenMessages#<init>` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 252 | `new` |
 | `net.minecraft.network.chat.LastSeenMessages#<init>` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 69 | `new` |
+| `net.minecraft.network.chat.LastSeenMessages#computeChecksum` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 287 | `compute_checksum` |
 | `net.minecraft.network.chat.LastSeenMessages#empty` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 74 | `empty` |
 | `net.minecraft.network.chat.LastSeenMessages#entries` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 15 | `entries` |
+| `net.minecraft.network.chat.LastSeenMessages#pack` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 280 | `pack` |
 | `net.minecraft.network.chat.LastSeenMessages#pack` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 89 | `pack` |
+| `net.minecraft.network.chat.LastSeenMessages#updateSignature` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 267 | `update_signature` |
 | `net.minecraft.network.chat.LastSeenMessages#updateSignature` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 81 | `update_signature` |
+| `net.minecraft.network.chat.LastSeenMessages$Packed` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 302 | `<item>` |
+| `net.minecraft.network.chat.LastSeenMessages$Packed#<init>` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 309 | `new` |
+| `net.minecraft.network.chat.LastSeenMessages$Packed#<init>` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 320 | `read` |
 | `net.minecraft.network.chat.LastSeenMessages$Packed#<init>` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 103 | `read` |
+| `net.minecraft.network.chat.LastSeenMessages$Packed#unpack` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 331 | `unpack` |
 | `net.minecraft.network.chat.LastSeenMessages$Packed#unpack` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 113 | `unpack` |
+| `net.minecraft.network.chat.LastSeenMessages$Packed#write` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 326 | `write` |
 | `net.minecraft.network.chat.LastSeenMessages$Packed#write` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 110 | `write` |
+| `net.minecraft.network.chat.LastSeenMessages$Update` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 346 | `<item>` |
+| `net.minecraft.network.chat.LastSeenMessages$Update#<init>` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 355 | `new` |
+| `net.minecraft.network.chat.LastSeenMessages$Update#<init>` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 364 | `read` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 271 | `read` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#<init>(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_chat_packet.rs` | 73 | `read` |
+| `net.minecraft.network.chat.LastSeenMessages$Update#verifyChecksum` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 383 | `verify_checksum` |
+| `net.minecraft.network.chat.LastSeenMessages$Update#write` | `crates/mc-protocol/src/ported/last_seen_messages.rs` | 376 | `write` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#write` | `crates/mc-protocol/src/ported/serverbound_chat_packet.rs` | 81 | `write` |
 | `net.minecraft.network.chat.LastSeenMessages$Update#write(FriendlyByteBuf)` | `crates/mc-protocol/src/ported/serverbound_chat_command_signed_packet.rs` | 281 | `write` |
 | `net.minecraft.network.chat.LastSeenTrackedEntry#acknowledge` | `crates/mc-protocol/src/ported/last_seen_tracked_entry.rs` | 15 | `acknowledge` |
@@ -2249,9 +2277,12 @@ Total mapped Java symbols: **6131** across **1365** classes.
 | `net.minecraft.network.chat.OutgoingChatMessage$Player#content` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 87 | `content` |
 | `net.minecraft.network.chat.OutgoingChatMessage$Player#sendToPlayer` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 92 | `send_to_player` |
 | `net.minecraft.network.chat.PlayerChatMessage#decoratedContent` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 24 | `decorated_content` |
+| `net.minecraft.network.chat.PlayerChatMessage#describeSigned` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 70 | `describe_signed` |
 | `net.minecraft.network.chat.PlayerChatMessage#filter` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 29 | `filter` |
 | `net.minecraft.network.chat.PlayerChatMessage#isFullyFiltered` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 38 | `is_fully_filtered` |
 | `net.minecraft.network.chat.PlayerChatMessage#isSystem` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 19 | `is_system` |
+| `net.minecraft.network.chat.PlayerChatMessage#removeSignature` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 59 | `remove_signature` |
+| `net.minecraft.network.chat.PlayerChatMessage#verify` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 65 | `verify` |
 | `net.minecraft.network.chat.RemoteChatSession#asData` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 138 | `as_data` |
 | `net.minecraft.network.chat.RemoteChatSession#createMessageDecoder` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 130 | `create_message_decoder` |
 | `net.minecraft.network.chat.RemoteChatSession#createMessageValidator` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 117 | `create_message_validator` |
@@ -2273,6 +2304,18 @@ Total mapped Java symbols: **6131** across **1365** classes.
 | `net.minecraft.network.chat.SignedMessageLink#root` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 49 | `root` |
 | `net.minecraft.network.chat.SignedMessageLink#unsigned` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 44 | `unsigned` |
 | `net.minecraft.network.chat.SignedMessageLink#updateSignature` | `crates/mc-protocol/src/ported/signed_message_link.rs` | 58 | `update_signature` |
+| `net.minecraft.network.chat.SignedMessageValidator` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 88 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator#ACCEPT_UNSIGNED` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 94 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator#REJECT_ALL` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 104 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator#updateAndValidate` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 90 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator#updateAndValidate` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 98 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator#updateAndValidate` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 108 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator$KeyBased` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 118 | `<item>` |
+| `net.minecraft.network.chat.SignedMessageValidator$KeyBased#<init>` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 127 | `new` |
+| `net.minecraft.network.chat.SignedMessageValidator$KeyBased#updateAndValidate` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 180 | `update_and_validate` |
+| `net.minecraft.network.chat.SignedMessageValidator$KeyBased#validate` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 158 | `validate` |
+| `net.minecraft.network.chat.SignedMessageValidator$KeyBased#validateChain` | `crates/mc-protocol/src/ported/signed_message_validator.rs` | 137 | `validate_chain` |
+| `net.minecraft.network.chat.Style#applyTo` | `crates/mc-protocol/src/ported/formatted_text.rs` | 15 | `apply_to` |
 | `net.minecraft.network.chat.SubStringSource#<init>` | `crates/mc-protocol/src/ported/sub_string_source.rs` | 86 | `new` |
 | `net.minecraft.network.chat.SubStringSource#create(FormattedText)` | `crates/mc-protocol/src/ported/sub_string_source.rs` | 162 | `create` |
 | `net.minecraft.network.chat.SubStringSource#create(FormattedText,Int2IntFunction,UnaryOperator)` | `crates/mc-protocol/src/ported/sub_string_source.rs` | 167 | `create_with_transforms` |

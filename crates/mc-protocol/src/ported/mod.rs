@@ -299,3 +299,6 @@ pub mod clientbound_merchant_offers_packet;
 pub mod serverbound_test_instance_block_action_packet;
 pub mod serverbound_player_action_packet;
 pub mod serverbound_set_command_block_packet;
+pub mod signed_message_validator;
+pub mod last_seen_messages;
+pub mod formatted_text;
