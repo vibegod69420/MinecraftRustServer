@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9447** across **2147** classes.
+Total mapped Java symbols: **9480** across **2152** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -487,6 +487,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.CrashReport#addCategory(String)` | `crates/mc-math/src/ported/threading_detector.rs` | 52 | `add_category` |
 | `net.minecraft.CrashReport#getTitle` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 16 | `message` |
 | `net.minecraft.CrashReportCategory (minimal self` | `crates/mc-math/src/ported/threading_detector.rs` | 35 | `<item>` |
+| `net.minecraft.CrashReportCategory#formatLocation` | `crates/mc-nbt/src/ported/level_data.rs` | 119 | `format_location` |
 | `net.minecraft.CrashReportCategory#setDetail(String, Object)` | `crates/mc-math/src/ported/threading_detector.rs` | 64 | `set_detail` |
 | `net.minecraft.ReportedException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 23 | `<item>` |
 | `net.minecraft.ReportedException` | `crates/mc-protocol/src/ported/packet_processor.rs` | 48 | `<item>` |
@@ -699,6 +700,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.core.BlockPos#getZ(long)` | `crates/mc-protocol/src/ported/clientbound_block_destruction_packet.rs` | 47 | `get_z` |
 | `net.minecraft.core.BlockPos#getZ(long)` | `crates/mc-protocol/src/ported/clientbound_block_update_packet.rs` | 47 | `get_z` |
 | `net.minecraft.core.BlockPos#getZ(long)` | `crates/mc-protocol/src/ported/serverbound_jigsaw_generate_packet.rs` | 47 | `get_z` |
+| `net.minecraft.core.BlockPos#immutable` | `crates/mc-nbt/src/ported/level_data.rs` | 13 | `immutable` |
 | `net.minecraft.core.BlockPos#immutable` | `crates/mc-protocol/src/ported/clientbound_level_event_packet.rs` | 28 | `immutable` |
 | `net.minecraft.core.BlockPos#immutable` | `crates/mc-protocol/src/ported/serverbound_player_action_packet.rs` | 103 | `immutable` |
 | `net.minecraft.core.BlockPos#immutable` | `crates/mc-worldgen/src/ported/attached_to_leaves_decorator.rs` | 43 | `immutable` |
@@ -899,9 +901,12 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.core.FrontAndTop#top` | `crates/mc-math/src/ported/front_and_top.rs` | 108 | `top` |
 | `net.minecraft.core.GlobalPos#<init>` | `crates/mc-math/src/ported/global_pos.rs` | 61 | `new` |
 | `net.minecraft.core.GlobalPos#dimension` | `crates/mc-math/src/ported/global_pos.rs` | 71 | `dimension` |
+| `net.minecraft.core.GlobalPos#dimension` | `crates/mc-nbt/src/ported/level_data.rs` | 42 | `dimension` |
 | `net.minecraft.core.GlobalPos#isCloseEnough` | `crates/mc-math/src/ported/global_pos.rs` | 81 | `is_close_enough` |
 | `net.minecraft.core.GlobalPos#of` | `crates/mc-math/src/ported/global_pos.rs` | 66 | `of` |
+| `net.minecraft.core.GlobalPos#of` | `crates/mc-nbt/src/ported/level_data.rs` | 37 | `of` |
 | `net.minecraft.core.GlobalPos#pos` | `crates/mc-math/src/ported/global_pos.rs` | 76 | `pos` |
+| `net.minecraft.core.GlobalPos#pos` | `crates/mc-nbt/src/ported/level_data.rs` | 47 | `pos` |
 | `net.minecraft.core.GlobalPos#toString` | `crates/mc-math/src/ported/global_pos.rs` | 88 | `fmt` |
 | `net.minecraft.core.Holder` | `crates/mc-worldgen/src/ported/fossil_feature_configuration.rs` | 23 | `<item>` |
 | `net.minecraft.core.Holder#canSerializeIn` | `crates/mc-math/src/ported/holder.rs` | 150 | `can_serialize_in` |
@@ -1783,8 +1788,10 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.nbt.NbtException#getMessage` | `crates/mc-nbt/src/ported/nbt_accounter_exception.rs` | 16 | `message` |
 | `net.minecraft.nbt.NbtFormatException#<init>` | `crates/mc-nbt/src/ported/nbt_format_exception.rs` | 51 | `new` |
 | `net.minecraft.nbt.NbtIo#read(DataInput)` | `crates/mc-nbt/src/lib.rs` | 282 | `read_nbt` |
+| `net.minecraft.nbt.NbtIo#readCompressed` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 366 | `read_compressed_nbt` |
 | `net.minecraft.nbt.NbtIo#readCompressed(InputStream,NbtAccounter)` | `crates/mc-nbt/src/lib.rs` | 293 | `read_nbt_compressed` |
 | `net.minecraft.nbt.NbtIo#write(CompoundTag,DataOutput)` | `crates/mc-nbt/src/lib.rs` | 299 | `write_nbt` |
+| `net.minecraft.nbt.NbtIo#writeCompressed` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 357 | `write_compressed_nbt` |
 | `net.minecraft.nbt.NbtIo#writeCompressed(CompoundTag,OutputStream)` | `crates/mc-nbt/src/lib.rs` | 310 | `write_nbt_compressed` |
 | `net.minecraft.nbt.NbtOps#convertTo` | `crates/mc-nbt/src/ported/nbt_ops.rs` | 573 | `convert_to` |
 | `net.minecraft.nbt.NbtOps#createBoolean` | `crates/mc-nbt/src/ported/nbt_ops.rs` | 649 | `create_boolean` |
@@ -1831,6 +1838,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.nbt.NbtOps$NbtRecordBuilder#initBuilder` | `crates/mc-nbt/src/ported/nbt_ops.rs` | 386 | `init_builder` |
 | `net.minecraft.nbt.NbtUtils#addDataVersion(net.minecraft.nbt.CompoundTag,int)` | `crates/mc-nbt/src/ported/nbt_utils.rs` | 639 | `add_data_version` |
 | `net.minecraft.nbt.NbtUtils#compareNbt` | `crates/mc-nbt/src/ported/nbt_utils.rs` | 11 | `compare_nbt` |
+| `net.minecraft.nbt.NbtUtils#getDataVersion` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 94 | `get_data_version` |
 | `net.minecraft.nbt.NbtUtils#getDataVersion(net.minecraft.nbt.CompoundTag)` | `crates/mc-nbt/src/ported/nbt_utils.rs` | 646 | `get_data_version` |
 | `net.minecraft.nbt.NbtUtils#getDataVersion(net.minecraft.nbt.CompoundTag,int)` | `crates/mc-nbt/src/ported/nbt_utils.rs` | 651 | `get_data_version_or` |
 | `net.minecraft.nbt.NbtUtils#indent` | `crates/mc-nbt/src/ported/nbt_utils.rs` | 313 | `indent_at` |
@@ -5310,6 +5318,9 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.server.packs.repository.KnownPack#id` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 39 | `id` |
 | `net.minecraft.server.packs.repository.KnownPack#namespace` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 34 | `namespace` |
 | `net.minecraft.server.packs.repository.KnownPack#version` | `crates/mc-protocol/src/ported/clientbound_select_known_packs.rs` | 44 | `version` |
+| `net.minecraft.server.players.NameAndId` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 16 | `new` |
+| `net.minecraft.server.players.NameAndId#id` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 24 | `id` |
+| `net.minecraft.server.players.NameAndId#name` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 29 | `name` |
 | `net.minecraft.sounds.SoundEvent#STREAM_CODEC decode` | `crates/mc-protocol/src/ported/clientbound_explode_packet.rs` | 68 | `read` |
 | `net.minecraft.sounds.SoundEvent#STREAM_CODEC encode` | `crates/mc-protocol/src/ported/clientbound_explode_packet.rs` | 77 | `write` |
 | `net.minecraft.sounds.SoundSource#ordinal` | `crates/mc-protocol/src/ported/clientbound_stop_sound_packet.rs` | 35 | `id` |
@@ -5844,6 +5855,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.util.Mth#clamp` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 198 | `clamp_f32` |
 | `net.minecraft.util.Mth#clamp(double,double,double)` | `crates/mc-math/src/mth.rs` | 200 | `clamp_f64` |
 | `net.minecraft.util.Mth#clamp(float,float,float)` | `crates/mc-math/src/mth.rs` | 194 | `clamp_f32` |
+| `net.minecraft.util.Mth#clamp(float,float,float)` | `crates/mc-nbt/src/ported/level_data.rs` | 86 | `clamp` |
 | `net.minecraft.util.Mth#clamp(int,int,int)` | `crates/mc-math/src/mth.rs` | 182 | `clamp_i32` |
 | `net.minecraft.util.Mth#clamp(long,long,long)` | `crates/mc-math/src/mth.rs` | 188 | `clamp_i64` |
 | `net.minecraft.util.Mth#clampedLerp` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 61 | `mth_clamped_lerp` |
@@ -5898,6 +5910,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.util.Mth#unpackDegrees` | `crates/mc-protocol/src/ported/clientbound_add_entity_packet.rs` | 106 | `mth_unpack_degrees` |
 | `net.minecraft.util.Mth#unpackDegrees` | `crates/mc-protocol/src/ported/clientbound_move_entity_packet.rs` | 109 | `unpack_degrees` |
 | `net.minecraft.util.Mth#unpackDegrees` | `crates/mc-protocol/src/ported/clientbound_rotate_head_packet.rs` | 33 | `unpack_degrees` |
+| `net.minecraft.util.Mth#wrapDegrees(float)` | `crates/mc-nbt/src/ported/level_data.rs` | 74 | `wrap_degrees` |
 | `net.minecraft.util.NativeModuleLister#addCrashSection` | `crates/mc-math/src/ported/native_module_lister.rs` | 87 | `add_crash_section` |
 | `net.minecraft.util.NativeModuleLister#findLangAndCodepage` | `crates/mc-math/src/ported/native_module_lister.rs` | 71 | `find_lang_and_codepage` |
 | `net.minecraft.util.NativeModuleLister#langTableKey` | `crates/mc-math/src/ported/native_module_lister.rs` | 66 | `lang_table_key` |
@@ -6023,6 +6036,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.util.ProblemReporter$RootElementPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 112 | `get` |
 | `net.minecraft.util.ProblemReporter$RootFieldPathElement` | `crates/mc-math/src/ported/problem_reporter.rs` | 118 | `<item>` |
 | `net.minecraft.util.ProblemReporter$RootFieldPathElement#get` | `crates/mc-math/src/ported/problem_reporter.rs` | 125 | `get` |
+| `net.minecraft.util.ProblemReporter$ScopedCollector` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 46 | `scoped_collector` |
 | `net.minecraft.util.ProblemReporter$ScopedCollector#ScopedCollector` | `crates/mc-math/src/ported/problem_reporter.rs` | 417 | `new` |
 | `net.minecraft.util.ProblemReporter$ScopedCollector#ScopedCollector` | `crates/mc-math/src/ported/problem_reporter.rs` | 426 | `with_element` |
 | `net.minecraft.util.ProblemReporter$ScopedCollector#close` | `crates/mc-math/src/ported/problem_reporter.rs` | 435 | `close` |
@@ -6224,6 +6238,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.util.Util#getRandom` | `crates/mc-worldgen/src/ported/ocean_ruin_pieces.rs` | 163 | `util_get_random_str` |
 | `net.minecraft.util.Util#getRandom(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 144 | `get_random` |
 | `net.minecraft.util.Util#getRandomSafe` | `crates/mc-nbt/src/ported/enchant_randomly_function.rs` | 113 | `get_random_safe` |
+| `net.minecraft.util.Util#safeReplaceFile` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 373 | `safe_replace_file` |
 | `net.minecraft.util.Util#shuffle(List, RandomSource)` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 118 | `util_shuffle` |
 | `net.minecraft.util.Util#shuffle(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 127 | `shuffle` |
 | `net.minecraft.util.Util#shuffledCopy(java.util.List, net.minecraft.util.RandomSource)` | `crates/mc-worldgen/src/ported/attached_to_logs_decorator.rs` | 137 | `shuffled_copy` |
@@ -6286,6 +6301,7 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.util.context.ContextMap$Builder#getParameter` | `crates/mc-math/src/ported/context_map.rs` | 328 | `get_parameter` |
 | `net.minecraft.util.context.ContextMap$Builder#withOptionalParameter` | `crates/mc-math/src/ported/context_map.rs` | 310 | `with_optional_parameter` |
 | `net.minecraft.util.context.ContextMap$Builder#withParameter` | `crates/mc-math/src/ported/context_map.rs` | 304 | `with_parameter` |
+| `net.minecraft.util.datafix.DataFixTypes#updateToCurrentVersion` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 88 | `update_to_current_version` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#cast` | `crates/mc-math/src/ported/named_entity_convert_unchecked_fix.rs` | 48 | `cast` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#fixBlockPos` | `crates/mc-math/src/ported/legacy_dragon_fight_fix.rs` | 115 | `fix_block_pos` |
 | `net.minecraft.util.datafix.ExtraDataFixUtils#fixInlineBlockPos` | `crates/mc-math/src/ported/raid_renames_data_fix.rs` | 52 | `<item>` |
@@ -10877,6 +10893,22 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.world.level.storage.FileNameDateFormatter` | `crates/mc-nbt/src/ported/file_name_date_formatter.rs` | 1 | `<item>` |
 | `net.minecraft.world.level.storage.FileNameDateFormatter#FORMATTER` | `crates/mc-nbt/src/ported/file_name_date_formatter.rs` | 7 | `format` |
 | `net.minecraft.world.level.storage.FileNameDateFormatter#format` | `crates/mc-nbt/src/ported/file_name_date_formatter.rs` | 11 | `format` |
+| `net.minecraft.world.level.storage.LevelData` | `crates/mc-nbt/src/ported/level_data.rs` | 182 | `get_respawn_data` |
+| `net.minecraft.world.level.storage.LevelData#fillCrashReportCategory` | `crates/mc-nbt/src/ported/level_data.rs` | 211 | `fill_crash_report_category` |
+| `net.minecraft.world.level.storage.LevelData#getDayTime` | `crates/mc-nbt/src/ported/level_data.rs` | 190 | `get_day_time` |
+| `net.minecraft.world.level.storage.LevelData#getDifficulty` | `crates/mc-nbt/src/ported/level_data.rs` | 205 | `get_difficulty` |
+| `net.minecraft.world.level.storage.LevelData#getGameTime` | `crates/mc-nbt/src/ported/level_data.rs` | 187 | `get_game_time` |
+| `net.minecraft.world.level.storage.LevelData#getRespawnData` | `crates/mc-nbt/src/ported/level_data.rs` | 184 | `get_respawn_data` |
+| `net.minecraft.world.level.storage.LevelData#isDifficultyLocked` | `crates/mc-nbt/src/ported/level_data.rs` | 208 | `is_difficulty_locked` |
+| `net.minecraft.world.level.storage.LevelData#isHardcore` | `crates/mc-nbt/src/ported/level_data.rs` | 202 | `is_hardcore` |
+| `net.minecraft.world.level.storage.LevelData#isRaining` | `crates/mc-nbt/src/ported/level_data.rs` | 196 | `is_raining` |
+| `net.minecraft.world.level.storage.LevelData#isThundering` | `crates/mc-nbt/src/ported/level_data.rs` | 193 | `is_thundering` |
+| `net.minecraft.world.level.storage.LevelData#setRaining` | `crates/mc-nbt/src/ported/level_data.rs` | 199 | `set_raining` |
+| `net.minecraft.world.level.storage.LevelData$RespawnData` | `crates/mc-nbt/src/ported/level_data.rs` | 138 | `<item>` |
+| `net.minecraft.world.level.storage.LevelData$RespawnData#DEFAULT` | `crates/mc-nbt/src/ported/level_data.rs` | 147 | `default_data` |
+| `net.minecraft.world.level.storage.LevelData$RespawnData#dimension` | `crates/mc-nbt/src/ported/level_data.rs` | 165 | `dimension` |
+| `net.minecraft.world.level.storage.LevelData$RespawnData#of` | `crates/mc-nbt/src/ported/level_data.rs` | 156 | `of` |
+| `net.minecraft.world.level.storage.LevelData$RespawnData#pos` | `crates/mc-nbt/src/ported/level_data.rs` | 170 | `pos` |
 | `net.minecraft.world.level.storage.LevelDataAndDimensions#dimensions` | `crates/mc-nbt/src/ported/level_data_and_dimensions.rs` | 22 | `dimensions` |
 | `net.minecraft.world.level.storage.LevelDataAndDimensions#worldData` | `crates/mc-nbt/src/ported/level_data_and_dimensions.rs` | 17 | `world_data` |
 | `net.minecraft.world.level.storage.LevelResource#<init>` | `crates/mc-nbt/src/ported/level_resource.rs` | 32 | `new` |
@@ -11002,6 +11034,12 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 52 | `parse` |
 | `net.minecraft.world.level.storage.LevelVersion#parse` | `crates/mc-nbt/src/ported/level_version.rs` | 57 | `parse_with_defaults` |
 | `net.minecraft.world.level.storage.LevelVersion#snapshot` | `crates/mc-nbt/src/ported/level_version.rs` | 105 | `snapshot` |
+| `net.minecraft.world.level.storage.PlayerDataStorage` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 393 | `<item>` |
+| `net.minecraft.world.level.storage.PlayerDataStorage#<init>` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 400 | `new` |
+| `net.minecraft.world.level.storage.PlayerDataStorage#backup` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 435 | `backup` |
+| `net.minecraft.world.level.storage.PlayerDataStorage#load(NameAndId)` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 468 | `load` |
+| `net.minecraft.world.level.storage.PlayerDataStorage#load(NameAndId, String)` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 454 | `load_with_suffix` |
+| `net.minecraft.world.level.storage.PlayerDataStorage#save` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 409 | `save` |
 | `net.minecraft.world.level.storage.PrimaryLevelData#<init>` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 461 | `new_full` |
 | `net.minecraft.world.level.storage.PrimaryLevelData#<init>` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 521 | `new` |
 | `net.minecraft.world.level.storage.PrimaryLevelData#createTag` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 611 | `create_tag` |
@@ -11118,9 +11156,11 @@ Total mapped Java symbols: **9447** across **2147** classes.
 | `net.minecraft.world.level.storage.TagValueInput$UnexpectedNonNumberProblem#description` | `crates/mc-nbt/src/ported/tag_value_input.rs` | 45 | `description` |
 | `net.minecraft.world.level.storage.TagValueInput$UnexpectedTypeProblem#description` | `crates/mc-nbt/src/ported/tag_value_input.rs` | 46 | `description` |
 | `net.minecraft.world.level.storage.TagValueOutput#<init>` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 484 | `new` |
+| `net.minecraft.world.level.storage.TagValueOutput#buildResult` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 64 | `build_result` |
 | `net.minecraft.world.level.storage.TagValueOutput#buildResult` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 674 | `build_result` |
 | `net.minecraft.world.level.storage.TagValueOutput#child` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 616 | `child` |
 | `net.minecraft.world.level.storage.TagValueOutput#childrenList` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 627 | `children_list` |
+| `net.minecraft.world.level.storage.TagValueOutput#createWithContext` | `crates/mc-nbt/src/ported/player_data_storage.rs` | 57 | `create_with_context` |
 | `net.minecraft.world.level.storage.TagValueOutput#createWithContext` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 493 | `create_with_context` |
 | `net.minecraft.world.level.storage.TagValueOutput#createWithoutContext` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 477 | `create_without_context` |
 | `net.minecraft.world.level.storage.TagValueOutput#discard` | `crates/mc-nbt/src/ported/tag_value_output.rs` | 664 | `discard` |

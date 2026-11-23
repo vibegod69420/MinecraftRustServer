@@ -137,3 +137,5 @@ pub mod enchanted_count_increase_function;
 pub mod value_input_context_helper;
 pub mod loot_data_type;
 pub mod set_container_contents;
+pub mod level_data;
+pub mod player_data_storage;
