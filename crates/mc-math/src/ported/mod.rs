@@ -403,3 +403,7 @@ pub mod structure_reference_count_fix;
 pub mod options_menu_blurriness_fix;
 pub mod player_uuid_fix;
 pub mod primed_tnt_block_state_fixer;
+pub mod v3685;
+pub mod v3807;
+pub mod v100;
+pub mod v2684;
