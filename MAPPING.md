@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7059** across **1519** classes.
+Total mapped Java symbols: **7090** across **1524** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4202,6 +4202,39 @@ Total mapped Java symbols: **7059** across **1519** classes.
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#isLocked` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 76 | `is_locked` |
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#type` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 66 | `get_type` |
 | `net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket#write` | `crates/mc-protocol/src/ported/serverbound_lock_difficulty_packet.rs` | 61 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 150 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#getX` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 446 | `get_x` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#getXRot` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 486 | `get_x_rot` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#getY` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 456 | `get_y` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#getYRot` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 476 | `get_y_rot` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#getZ` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 466 | `get_z` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#handle` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 441 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#hasPosition` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 506 | `has_position` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#hasRotation` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 511 | `has_rotation` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#horizontalCollision` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 501 | `horizontal_collision` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#isOnGround` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 496 | `is_on_ground` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#packFlags` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 113 | `pack_flags` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#type` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 431 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#unpackHorizontalCollision` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 130 | `unpack_horizontal_collision` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket#unpackOnGround` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 125 | `unpack_on_ground` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Pos#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 183 | `from_vec` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Pos#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 188 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Pos#read` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 205 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Pos#type` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 225 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Pos#write` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 216 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$PosRot#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 238 | `from_vec` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$PosRot#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 257 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$PosRot#read` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 282 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$PosRot#type` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 314 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$PosRot#write` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 303 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Rot#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 327 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Rot#read` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 344 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Rot#type` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 362 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$Rot#write` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 354 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$StatusOnly#<init>` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 375 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$StatusOnly#read` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 392 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$StatusOnly#type` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 406 | `packet_type` |
+| `net.minecraft.network.protocol.game.ServerboundMovePlayerPacket$StatusOnly#write` | `crates/mc-protocol/src/ported/serverbound_move_player_packet.rs` | 400 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket#<init>` | `crates/mc-protocol/src/ported/serverbound_move_vehicle_packet.rs` | 59 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_move_vehicle_packet.rs` | 88 | `read` |
 | `net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_move_vehicle_packet.rs` | 102 | `write` |
