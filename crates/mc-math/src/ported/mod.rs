@@ -289,3 +289,6 @@ pub mod trident_animation_fix;
 pub mod cat_type_fix;
 pub mod inactive_metrics_recorder;
 pub mod profiler_sampler_adapter;
+pub mod write_and_read_fix;
+pub mod named_entity_convert_unchecked_fix;
+pub mod strider_gravity_fix;
