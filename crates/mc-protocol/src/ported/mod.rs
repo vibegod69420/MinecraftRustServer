@@ -303,3 +303,6 @@ pub mod signed_message_validator;
 pub mod last_seen_messages;
 pub mod formatted_text;
 pub mod clientbound_initialize_border_packet;
+pub mod clientbound_set_equipment_packet;
+pub mod clientbound_level_chunk_with_light_packet;
+pub mod clientbound_player_chat_packet;
