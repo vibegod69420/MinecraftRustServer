@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5816** across **1320** classes.
+Total mapped Java symbols: **5818** across **1321** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4096,10 +4096,12 @@ Total mapped Java symbols: **5816** across **1320** classes.
 | `net.minecraft.util.ModCheck$Confidence#VERY_LIKELY` | `crates/mc-math/src/ported/mod_check.rs` | 7 | `<item>` |
 | `net.minecraft.util.ModCheck$Confidence#description` | `crates/mc-math/src/ported/mod_check.rs` | 14 | `description` |
 | `net.minecraft.util.ModCheck$Confidence#shouldReportAsModified` | `crates/mc-math/src/ported/mod_check.rs` | 23 | `should_report_as_modified` |
+| `net.minecraft.util.Mth#abs(int)` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 114 | `mth_abs_int` |
 | `net.minecraft.util.Mth#atan2` | `crates/mc-math/src/mth.rs` | 364 | `atan2` |
 | `net.minecraft.util.Mth#ceil` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 46 | `mth_ceil` |
 | `net.minecraft.util.Mth#ceil(double)` | `crates/mc-math/src/mth.rs` | 160 | `ceil_f64` |
 | `net.minecraft.util.Mth#ceil(float)` | `crates/mc-math/src/mth.rs` | 149 | `ceil_f32` |
+| `net.minecraft.util.Mth#ceil(float)` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 104 | `mth_ceil` |
 | `net.minecraft.util.Mth#ceilLong` | `crates/mc-math/src/mth.rs` | 171 | `ceil_long` |
 | `net.minecraft.util.Mth#ceillog2` | `crates/mc-math/src/mth.rs` | 313 | `ceillog2` |
 | `net.minecraft.util.Mth#clamp(double,double,double)` | `crates/mc-math/src/mth.rs` | 200 | `clamp_f64` |
@@ -5409,6 +5411,7 @@ Total mapped Java symbols: **5816** across **1320** classes.
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#createEndPlatform` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 124 | `create_end_platform` |
 | `net.minecraft.world.level.levelgen.feature.EndPlatformFeature#place` | `crates/mc-worldgen/src/ported/end_platform_feature.rs` | 113 | `place` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 132 | `is_dirt` |
+| `net.minecraft.world.level.levelgen.feature.Feature#isDirt` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 123 | `is_dirt` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isReplaceable` | `crates/mc-worldgen/src/ported/protected_block_processor.rs` | 45 | `is_replaceable` |
 | `net.minecraft.world.level.levelgen.feature.Feature#isStone` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 137 | `is_stone` |
 | `net.minecraft.world.level.levelgen.feature.Feature#markAboveForPostProcessing` | `crates/mc-worldgen/src/ported/disk_feature.rs` | 218 | `mark_above_for_post_processing` |
@@ -5432,6 +5435,7 @@ Total mapped Java symbols: **5816** across **1320** classes.
 | `net.minecraft.world.level.levelgen.feature.HugeBrownMushroomFeature#getTreeRadiusForHeight` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 210 | `get_tree_radius_for_height` |
 | `net.minecraft.world.level.levelgen.feature.HugeBrownMushroomFeature#makeCap` | `crates/mc-worldgen/src/ported/huge_brown_mushroom_feature.rs` | 161 | `make_cap` |
 | `net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration#<init>` | `crates/mc-worldgen/src/ported/huge_fungus_configuration.rs` | 25 | `new` |
+| `net.minecraft.world.level.levelgen.feature.IceSpikeFeature#place` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 132 | `place` |
 | `net.minecraft.world.level.levelgen.feature.KelpFeature#<init>` | `crates/mc-worldgen/src/ported/kelp_feature.rs` | 136 | `new` |
 | `net.minecraft.world.level.levelgen.feature.KelpFeature#place` | `crates/mc-worldgen/src/ported/kelp_feature.rs` | 141 | `place` |
 | `net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature#<init>(com.mojang.serialization.Codec)` | `crates/mc-worldgen/src/ported/nether_forest_vegetation_feature.rs` | 62 | `new` |

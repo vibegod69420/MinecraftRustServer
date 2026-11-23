@@ -253,3 +253,4 @@ pub mod structure_type;
 pub mod buried_treasure_pieces;
 pub mod underwater_magma_feature;
 pub mod phantom_spawner;
+pub mod ice_spike_feature;
