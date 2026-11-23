@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 01:53:36 UTC",
-  "updated_epoch": 1795398816,
+  "updated_at": "2026-11-23 01:56:19 UTC",
+  "updated_epoch": 1795398979,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 1201,
-    "mapped_methods": 5129,
-    "class_coverage_pct": 16.7667,
-    "method_coverage_pct": 7.6924,
-    "harness_verified_classes": 778,
+    "mapped_classes": 1211,
+    "mapped_methods": 5194,
+    "class_coverage_pct": 16.9063,
+    "method_coverage_pct": 7.7899,
+    "harness_verified_classes": 783,
     "harness_failed_attempts": 155
   },
   "crates": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "mc-math",
-      "mapped_methods": 1828
+      "mapped_methods": 1834
     },
     {
       "name": "mc-nbt",
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 1755
+      "mapped_methods": 1845
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 761,
-    "prompt_tokens": 2059662,
-    "completion_tokens": 10956431,
-    "reasoning_tokens": 7906600,
-    "avg_latency_s": 234.5
+    "calls_total": 775,
+    "prompt_tokens": 2104602,
+    "completion_tokens": 11175409,
+    "reasoning_tokens": 8046766,
+    "avg_latency_s": 235.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T01:55:03Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundMoveVehiclePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:55:03Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundBlockEntityTagQueryPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:55:03Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundChatPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:55:03Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundOpenSignEditorPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 248.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T01:53:37Z",
+      "class_name": "net.minecraft.network.protocol.status.StatusProtocols",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 162.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T01:53:23Z",
       "class_name": "net.minecraft.network.chat.numbers.StyledFormat",
@@ -333,49 +373,14 @@
       "verified": true,
       "seconds": 287.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:16:45Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundAnimatePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 287.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:16:45Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 287.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:16:45Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundTeleportEntityPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 287.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:16:33Z",
-      "class_name": "net.minecraft.util.NullOps",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 470.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T01:16:05Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseSettings",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 246.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "70209f4",
+      "ts": "2026-11-23T01:53:37+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "5508d31",
       "ts": "2026-11-23T01:52:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "167ee8e",
       "ts": "2026-11-23T01:25:59+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "e52125b",
-      "ts": "2026-11-23T01:23:54+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
