@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7426** across **1582** classes.
+Total mapped Java symbols: **7453** across **1584** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -4470,6 +4470,26 @@ Total mapped Java symbols: **7426** across **1582** classes.
 | `net.minecraft.network.protocol.game.ServerboundSetJigsawBlockPacket#getSelectionPriority` | `crates/mc-protocol/src/ported/serverbound_set_jigsaw_block_packet.rs` | 321 | `get_selection_priority` |
 | `net.minecraft.network.protocol.game.ServerboundSetJigsawBlockPacket#getTarget` | `crates/mc-protocol/src/ported/serverbound_set_jigsaw_block_packet.rs` | 301 | `get_target` |
 | `net.minecraft.network.protocol.game.ServerboundSetJigsawBlockPacket#write` | `crates/mc-protocol/src/ported/serverbound_set_jigsaw_block_packet.rs` | 279 | `write` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 410 | `new` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 448 | `read` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getData` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 576 | `get_data` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getIntegrity` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 601 | `get_integrity` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getMirror` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 566 | `get_mirror` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getMode` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 546 | `get_mode` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getName` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 551 | `get_name` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getOffset` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 556 | `get_offset` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getPos` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 536 | `get_pos` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getRotation` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 571 | `get_rotation` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getSeed` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 606 | `get_seed` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getSize` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 561 | `get_size` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#getUpdateType` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 541 | `get_update_type` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#handle` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 531 | `handle` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#isIgnoreEntities` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 581 | `is_ignore_entities` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#isShowAir` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 591 | `is_show_air` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#isShowBoundingBox` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 596 | `is_show_bounding_box` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#isStrict` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 586 | `is_strict` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#type` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 526 | `get_type` |
+| `net.minecraft.network.protocol.game.ServerboundSetStructureBlockPacket#write` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 493 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 226 | `new` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 235 | `write` |
 | `net.minecraft.network.protocol.game.ServerboundSetTestBlockPacket#STREAM_CODEC` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 243 | `read` |
@@ -5248,6 +5268,8 @@ Total mapped Java symbols: **7426** across **1582** classes.
 | `net.minecraft.util.Mth#ceil(float)` | `crates/mc-worldgen/src/ported/ice_spike_feature.rs` | 104 | `mth_ceil` |
 | `net.minecraft.util.Mth#ceilLong` | `crates/mc-math/src/mth.rs` | 171 | `ceil_long` |
 | `net.minecraft.util.Mth#ceillog2` | `crates/mc-math/src/mth.rs` | 313 | `ceillog2` |
+| `net.minecraft.util.Mth#clamp` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 187 | `clamp_i32` |
+| `net.minecraft.util.Mth#clamp` | `crates/mc-protocol/src/ported/serverbound_set_structure_block_packet.rs` | 198 | `clamp_f32` |
 | `net.minecraft.util.Mth#clamp(double,double,double)` | `crates/mc-math/src/mth.rs` | 200 | `clamp_f64` |
 | `net.minecraft.util.Mth#clamp(float,float,float)` | `crates/mc-math/src/mth.rs` | 194 | `clamp_f32` |
 | `net.minecraft.util.Mth#clamp(int,int,int)` | `crates/mc-math/src/mth.rs` | 182 | `clamp_i32` |
@@ -7670,6 +7692,14 @@ Total mapped Java symbols: **7426** across **1582** classes.
 | `net.minecraft.world.level.levelgen.structure.StructureStart#placeInChunk` | `crates/mc-worldgen/src/ported/structure_start.rs` | 327 | `place_in_chunk` |
 | `net.minecraft.world.level.levelgen.structure.StructureType#codec` | `crates/mc-worldgen/src/ported/structure_type.rs` | 45 | `codec` |
 | `net.minecraft.world.level.levelgen.structure.StructureType#register` | `crates/mc-worldgen/src/ported/structure_type.rs` | 59 | `register` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#TemplateStructurePiece` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 259 | `new_from_parts` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#TemplateStructurePiece` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 286 | `new_from_nbt` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#addAdditionalSaveData` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 317 | `add_additional_save_data` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#getRotation` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 392 | `get_rotation` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#handleDataMarker` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 234 | `handle_data_marker` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#makeTemplateLocation` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 254 | `make_template_location_from_name` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#move` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 386 | `move_piece` |
+| `net.minecraft.world.level.levelgen.structure.TemplateStructurePiece#postProcess` | `crates/mc-worldgen/src/ported/template_structure_piece.rs` | 326 | `post_process` |
 | `net.minecraft.world.level.levelgen.structure.TerrainAdjustment#getSerializedName` | `crates/mc-worldgen/src/ported/terrain_adjustment.rs` | 24 | `get_serialized_name` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator#generatePieces` | `crates/mc-worldgen/src/ported/piece_generator.rs` | 66 | `generate_pieces` |
 | `net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator#generatePieces` | `crates/mc-worldgen/src/ported/piece_generator.rs` | 74 | `generate_pieces` |
