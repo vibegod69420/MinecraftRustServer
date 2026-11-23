@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7755** across **1633** classes.
+Total mapped Java symbols: **7802** across **1634** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6566,6 +6566,53 @@ Total mapped Java symbols: **7755** across **1633** classes.
 | `net.minecraft.world.level.chunk.HashMapPalette#read` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 240 | `read` |
 | `net.minecraft.world.level.chunk.HashMapPalette#valueFor` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 217 | `value_for` |
 | `net.minecraft.world.level.chunk.HashMapPalette#write` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 251 | `write` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#<init>` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 215 | `new` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#addEntity` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 270 | `add_entity` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#addReferenceForStructure` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 345 | `add_reference_for_structure` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#canBeSerialized` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 361 | `can_be_serialized` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#fillBiomesFromNoise` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 480 | `fill_biomes_from_noise` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#findBlocks` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 404 | `find_blocks` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#fixType` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 292 | `fix_type` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getAllReferences` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 348 | `get_all_references` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getAllStarts` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 332 | `get_all_starts` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlendingData` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 436 | `get_blending_data` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlockEntity` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 225 | `get_block_entity` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlockEntityNbt` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 390 | `get_block_entity_nbt` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlockEntityNbtForSaving` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 395 | `get_block_entity_nbt_for_saving` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlockState` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 230 | `get_block_state` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getBlockTicks` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 413 | `get_block_ticks` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getCarvingMask` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 441 | `get_carving_mask` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getFluidState` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 235 | `get_fluid_state` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getFluidTicks` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 422 | `get_fluid_ticks` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getHeight` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 308 | `get_height` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getNoiseBiome` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 314 | `get_noise_biome` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getOrCreateCarvingMask` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 453 | `get_or_create_carving_mask` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getOrCreateHeightmapUnprimed` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 303 | `get_or_create_heightmap_unprimed` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getPersistedStatus` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 376 | `get_persisted_status` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getPos` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 319 | `get_pos` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getReferencesForStructure` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 340 | `get_references_for_structure` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getSection` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 240 | `get_section` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getSections` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 284 | `get_sections` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getSkyLightSources` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 492 | `get_sky_light_sources` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getStartForStructure` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 324 | `get_start_for_structure` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getTicksForSerialization` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 431 | `get_ticks_for_serialization` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#getWrapped` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 465 | `get_wrapped` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#initializeLightSources` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 487 | `initialize_light_sources` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#isLightCorrect` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 470 | `is_light_correct` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#isUnsaved` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 371 | `is_unsaved` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#markPosForPostprocessing` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 384 | `mark_pos_for_postprocessing` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#markUnsaved` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 356 | `mark_unsaved` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#removeBlockEntity` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 381 | `remove_block_entity` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setAllReferences` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 353 | `set_all_references` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setAllStarts` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 337 | `set_all_starts` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setBlockEntity` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 263 | `set_block_entity` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setBlockEntityNbt` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 387 | `set_block_entity_nbt` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setBlockState` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 249 | `set_block_state` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setHeightmap` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 289 | `set_heightmap` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setLightCorrect` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 475 | `set_light_correct` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setPersistedStatus` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 277 | `set_persisted_status` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#setStartForStructure` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 329 | `set_start_for_structure` |
+| `net.minecraft.world.level.chunk.ImposterProtoChunk#tryMarkSaved` | `crates/mc-worldgen/src/ported/imposter_proto_chunk.rs` | 366 | `try_mark_saved` |
 | `net.minecraft.world.level.chunk.LightChunk#findBlockLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 28 | `find_block_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunk#getSkyLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 31 | `get_sky_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#getChunkForLighting` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 32 | `get_chunk_for_lighting` |

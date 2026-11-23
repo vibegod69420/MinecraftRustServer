@@ -340,3 +340,4 @@ pub mod chunk_status;
 pub mod jungle_temple_piece;
 pub mod data_layer;
 pub mod ocean_ruin_pieces;
+pub mod imposter_proto_chunk;

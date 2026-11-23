@@ -1,9 +1,9 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 06:29:30 UTC
+- **Updated**: 2026-11-23 06:30:49 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 7755 / 66676 (11.631%)
-- **Mapped Java Classes**: 1633 / 7163 (22.798%)
+- **Mapped Java Methods**: 7802 / 66676 (11.701%)
+- **Mapped Java Classes**: 1634 / 7163 (22.812%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
@@ -11,9 +11,10 @@
 - `mc-math`: 2067 mapped methods
 - `mc-nbt`: 1720 mapped methods
 - `mc-protocol`: 3408 mapped methods
-- `mc-worldgen`: 2492 mapped methods
+- `mc-worldgen`: 2539 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.chunk.ImposterProtoChunk` -> `mc-worldgen` (615.8s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.OceanRuinPieces` -> `mc-worldgen` (2062.2s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.RegionFileVersion` -> `mc-worldgen` (610.1s)
 - [PASS] `net.minecraft.world.level.chunk.DataLayer` -> `mc-worldgen` (646.5s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.chunk.Configuration` -> `mc-worldgen` (769.0s)
 - [PASS] `net.minecraft.world.level.chunk.CarvingMask` -> `mc-worldgen` (769.0s)
 - [PASS] `net.minecraft.world.level.chunk.PalettedContainerRO` -> `mc-worldgen` (769.0s)
-- [PASS] `net.minecraft.world.level.chunk.GlobalPalette` -> `mc-worldgen` (769.0s)
