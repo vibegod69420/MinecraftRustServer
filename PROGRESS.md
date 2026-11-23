@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:08:06 UTC
+- **Updated**: 2026-11-23 00:08:08 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 3290 / 66676 (4.934%)
 - **Mapped Java Classes**: 818 / 7163 (11.420%)
@@ -14,18 +14,18 @@
 - `mc-worldgen`: 818 mapped methods
 
 ## Recent Verified Work
-- [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (2314.4s)
-- [PASS] `net.minecraft.util.debug.DebugBreezeInfo` -> `mc-math` (1257.3s)
-- [PASS] `net.minecraft.util.debug.DebugPathInfo` -> `mc-math` (1257.3s)
-- [PASS] `net.minecraft.util.debug.DebugGameEventListenerInfo` -> `mc-math` (1257.3s)
-- [PASS] `net.minecraft.util.debug.DebugValueSource` -> `mc-math` (1257.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetItemCountFunction` -> `mc-nbt` (811.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.ModifyContainerContents` -> `mc-nbt` (811.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetWrittenBookPagesFunction` -> `mc-nbt` (811.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction` -> `mc-nbt` (811.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SmeltItemFunction` -> `mc-nbt` (979.4s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.FillPlayerHead` -> `mc-nbt` (979.4s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SequenceFunction` -> `mc-nbt` (979.4s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetWritableBookPagesFunction` -> `mc-nbt` (979.4s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (2190.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (2190.6s)
+- [PASS] `net.minecraft.util.AbortableIterationConsumer` -> `mc-math` (1057.6s)
+- [PASS] `net.minecraft.util.TimeUtil` -> `mc-math` (1057.6s)
+- [PASS] `net.minecraft.util.SingleKeyCache` -> `mc-math` (1057.6s)
+- [PASS] `net.minecraft.util.TickThrottler` -> `mc-math` (1057.6s)
+- [FAIL] `net.minecraft.util.thread.PriorityConsecutiveExecutor` -> `mc-math` (1284.7s)
+- [PASS] `net.minecraft.util.thread.TaskScheduler` -> `mc-math` (1284.7s)
+- [PASS] `net.minecraft.util.thread.ReentrantBlockableEventLoop` -> `mc-math` (1284.7s)
+- [PASS] `net.minecraft.util.thread.ConsecutiveExecutor` -> `mc-math` (1284.7s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize` -> `mc-worldgen` (979.6s)
+- [FAIL] `net.minecraft.network.protocol.game.ClientboundDebugSamplePacket` -> `mc-protocol` (1217.5s)
+- [PASS] `net.minecraft.network.protocol.game.ServerboundPlaceRecipePacket` -> `mc-protocol` (1217.5s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundServerDataPacket` -> `mc-protocol` (1217.5s)
+- [PASS] `net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket` -> `mc-protocol` (1217.5s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition` -> `mc-nbt` (1099.4s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition` -> `mc-nbt` (1099.4s)

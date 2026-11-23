@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 00:08:07 UTC",
-  "updated_epoch": 1795392487,
+  "updated_at": "2026-11-23 00:08:08 UTC",
+  "updated_epoch": 1795392488,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 3290,
     "class_coverage_pct": 11.4198,
     "method_coverage_pct": 4.9343,
-    "harness_verified_classes": 508,
-    "harness_failed_attempts": 68
+    "harness_verified_classes": 539,
+    "harness_failed_attempts": 70
   },
   "crates": [
     {
@@ -54,6 +54,270 @@
     "avg_latency_s": 193.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.AbortableIterationConsumer",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1057.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.TimeUtil",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1057.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.SingleKeyCache",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1057.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.TickThrottler",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1057.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.thread.PriorityConsecutiveExecutor",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1284.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.thread.TaskScheduler",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1284.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.thread.ReentrantBlockableEventLoop",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1284.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.util.thread.ConsecutiveExecutor",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1284.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 979.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundDebugSamplePacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 1217.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundPlaceRecipePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1217.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundServerDataPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1217.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1217.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.TimeCheck",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.WeatherCheck",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.stateproviders.RuleBasedBlockStateProvider",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1398.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.stateproviders.NoiseProvider",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1398.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProviderType",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1398.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.stateproviders.NoiseBasedStateProvider",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1398.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundPlayerRotationPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundLockDifficultyPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundTickingStepPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.network.protocol.game.ServerboundSwingPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 1099.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.carver.CarverConfiguration",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1048.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.carver.NetherWorldCarver",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1048.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1048.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.carver.CarvingContext",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1048.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.placement.RandomOffsetPlacement",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1175.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.placement.SurfaceRelativeThresholdFilter",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1175.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.placement.NoiseBasedCountPlacement",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1175.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T00:08:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.placement.FixedPlacement",
+      "crate": "mc-worldgen",
+      "verified": true,
+      "seconds": 1175.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T00:06:07Z",
       "class_name": "net.minecraft.nbt.TextComponentTagVisitor",
@@ -109,273 +373,14 @@
       "verified": true,
       "seconds": 811.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetWrittenBookPagesFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 811.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 811.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SmeltItemFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 979.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.FillPlayerHead",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 979.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SequenceFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 979.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetWritableBookPagesFunction",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 979.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2190.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2190.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2190.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.EndPlatformFeature",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 2190.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pools.alias.PoolAliasBinding",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 1209.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pools.alias.RandomPoolAlias",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 1209.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundOpenBookPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 904.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundAcceptTeleportationPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 904.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundSystemChatPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 904.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T00:06:07Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundClearTitlesPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 904.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:54:56Z",
-      "class_name": "net.minecraft.util.context.ContextMap",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 308.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:54:56Z",
-      "class_name": "net.minecraft.util.context.ContextKeySet",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 308.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:54:56Z",
-      "class_name": "net.minecraft.util.context.ContextKey",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 308.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:52:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 827.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:52:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 827.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:52:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 827.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:52:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 827.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:51:47Z",
-      "class_name": "net.minecraft.core.MappedRegistry",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 907.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:51:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 683.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:51:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 683.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:51:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer",
-      "crate": "mc-worldgen",
-      "verified": true,
-      "seconds": 683.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:50:39Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundSelectTradePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 519.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:50:39Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundRenameItemPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 519.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:50:39Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundDebugEntityValuePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 519.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:50:39Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundDebugChunkValuePacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 519.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:50:30Z",
-      "class_name": "net.minecraft.world.level.storage.loot.parameters.LootContextParams",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 112.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-22T23:49:48Z",
-      "class_name": "net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket",
-      "crate": "mc-protocol",
-      "verified": true,
-      "seconds": 318.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "78a7a11",
+      "ts": "2026-11-23T00:08:07+00:00",
+      "message": "Port 19 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "6cb150c",
       "ts": "2026-11-23T00:08:06+00:00",
@@ -445,11 +450,6 @@
       "sha": "cfcc5ae",
       "ts": "2026-11-22T23:43:10+00:00",
       "message": "Port 5 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "e2eec56",
-      "ts": "2026-11-22T23:42:00+00:00",
-      "message": "Port 6 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
