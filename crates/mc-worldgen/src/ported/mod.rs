@@ -184,3 +184,7 @@ pub mod biased_to_bottom_height;
 pub mod very_biased_to_bottom_height;
 pub mod void_start_platform_feature;
 pub mod scattered_ore_feature;
+pub mod fancy_foliage_placer;
+pub mod acacia_foliage_placer;
+pub mod pine_foliage_placer;
+pub mod spruce_foliage_placer;

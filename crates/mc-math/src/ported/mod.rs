@@ -170,3 +170,5 @@ pub mod bounded_float_function;
 pub mod identifier_pattern;
 pub mod csv_output;
 pub mod debug_subscription;
+pub mod delegate_data_output;
+pub mod png_info;

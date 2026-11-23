@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **3843** across **956** classes.
+Total mapped Java symbols: **3898** across **964** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -63,6 +63,20 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `io.netty.buffer.ByteBuf#readerIndex` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 51 | `reader_index` |
 | `io.netty.buffer.ByteBuf#writeByte` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 69 | `write_byte` |
 | `io.netty.buffer.ByteBuf#writeBytes` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 81 | `write_bytes` |
+| `java.io.DataOutput#write(byte[])` | `crates/mc-math/src/ported/delegate_data_output.rs` | 7 | `write_bytes` |
+| `java.io.DataOutput#write(byte[],int,int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 9 | `write_bytes_offset` |
+| `java.io.DataOutput#write(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 5 | `write` |
+| `java.io.DataOutput#writeBoolean(boolean)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 11 | `write_boolean` |
+| `java.io.DataOutput#writeByte(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 13 | `write_byte` |
+| `java.io.DataOutput#writeBytes(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 27 | `write_bytes_str` |
+| `java.io.DataOutput#writeChar(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 17 | `write_char` |
+| `java.io.DataOutput#writeChars(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 29 | `write_chars_str` |
+| `java.io.DataOutput#writeDouble(double)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 25 | `write_double` |
+| `java.io.DataOutput#writeFloat(float)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 23 | `write_float` |
+| `java.io.DataOutput#writeInt(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 19 | `write_int` |
+| `java.io.DataOutput#writeLong(long)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 21 | `write_long` |
+| `java.io.DataOutput#writeShort(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 15 | `write_short` |
+| `java.io.DataOutput#writeUTF(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 31 | `write_utf` |
 | `java.lang.Enum#ordinal()` | `crates/mc-math/src/ported/axis_cycle.rs` | 30 | `ordinal` |
 | `java.lang.Float#compare` | `crates/mc-nbt/src/ported/constant_value.rs` | 80 | `java_float_compare` |
 | `java.lang.Float#floatToIntBits` | `crates/mc-nbt/src/ported/constant_value.rs` | 71 | `java_float_to_int_bits` |
@@ -120,6 +134,10 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.core.BlockMath#getFaceTransformation` | `crates/mc-math/src/ported/block_math.rs` | 338 | `get_face_transformation` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 161 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 11 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-worldgen/src/ported/surface_water_depth_filter.rs` | 9 | `new` |
 | `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 26 | `new` |
 | `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/gravity_processor.rs` | 21 | `new` |
@@ -127,7 +145,11 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.core.BlockPos#<init>(int,int,int)` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 14 | `new` |
 | `net.minecraft.core.BlockPos#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 142 | `write` |
 | `net.minecraft.core.BlockPos#STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_debug_block_value_packet.rs` | 147 | `read` |
+| `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 16 | `above` |
+| `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 16 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 25 | `above` |
+| `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 16 | `above` |
+| `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 16 | `above` |
 | `net.minecraft.core.BlockPos#above` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 25 | `above` |
 | `net.minecraft.core.BlockPos#above()` | `crates/mc-worldgen/src/ported/glowstone_feature.rs` | 15 | `above` |
 | `net.minecraft.core.BlockPos#above(int)` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 25 | `above` |
@@ -170,8 +192,12 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_pick_item_from_block_packet.rs` | 39 | `of` |
 | `net.minecraft.core.BlockPos#of` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 174 | `of` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-math/src/ported/block_box.rs` | 100 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/end_island_feature.rs` | 13 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 52 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 25 | `offset` |
+| `net.minecraft.core.BlockPos#offset` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 25 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/matching_block_tag_predicate.rs` | 24 | `offset` |
 | `net.minecraft.core.BlockPos#offset(int, int, int)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 24 | `offset` |
@@ -2544,6 +2570,21 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.util.CsvOutput$Builder#<init>` | `crates/mc-math/src/ported/csv_output.rs` | 99 | `new` |
 | `net.minecraft.util.CsvOutput$Builder#addColumn` | `crates/mc-math/src/ported/csv_output.rs` | 106 | `add_column` |
 | `net.minecraft.util.CsvOutput$Builder#build` | `crates/mc-math/src/ported/csv_output.rs` | 112 | `build` |
+| `net.minecraft.util.DelegateDataOutput#<init>` | `crates/mc-math/src/ported/delegate_data_output.rs` | 40 | `new` |
+| `net.minecraft.util.DelegateDataOutput#write(byte[])` | `crates/mc-math/src/ported/delegate_data_output.rs` | 64 | `write_bytes` |
+| `net.minecraft.util.DelegateDataOutput#write(byte[],int,int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 69 | `write_bytes_offset` |
+| `net.minecraft.util.DelegateDataOutput#write(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 59 | `write` |
+| `net.minecraft.util.DelegateDataOutput#writeBoolean(boolean)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 74 | `write_boolean` |
+| `net.minecraft.util.DelegateDataOutput#writeByte(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 79 | `write_byte` |
+| `net.minecraft.util.DelegateDataOutput#writeBytes(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 114 | `write_bytes_str` |
+| `net.minecraft.util.DelegateDataOutput#writeChar(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 89 | `write_char` |
+| `net.minecraft.util.DelegateDataOutput#writeChars(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 119 | `write_chars_str` |
+| `net.minecraft.util.DelegateDataOutput#writeDouble(double)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 109 | `write_double` |
+| `net.minecraft.util.DelegateDataOutput#writeFloat(float)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 104 | `write_float` |
+| `net.minecraft.util.DelegateDataOutput#writeInt(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 94 | `write_int` |
+| `net.minecraft.util.DelegateDataOutput#writeLong(long)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 99 | `write_long` |
+| `net.minecraft.util.DelegateDataOutput#writeShort(int)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 84 | `write_short` |
+| `net.minecraft.util.DelegateDataOutput#writeUTF(String)` | `crates/mc-math/src/ported/delegate_data_output.rs` | 124 | `write_utf` |
 | `net.minecraft.util.EasingType#apply` | `crates/mc-math/src/ported/binary_animator.rs` | 7 | `apply` |
 | `net.minecraft.util.ExceptionCollector#add` | `crates/mc-math/src/ported/exception_collector.rs` | 37 | `add` |
 | `net.minecraft.util.ExceptionCollector#throwIfPresent` | `crates/mc-math/src/ported/exception_collector.rs` | 46 | `throw_if_present` |
@@ -2644,6 +2685,9 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.util.Mth#smoothstepDerivative` | `crates/mc-math/src/mth.rs` | 277 | `smoothstep_derivative` |
 | `net.minecraft.util.Mth#sqrt` | `crates/mc-math/src/mth.rs` | 110 | `sqrt_f32` |
 | `net.minecraft.util.Mth#square(double)` | `crates/mc-math/src/mth.rs` | 283 | `square_f64` |
+| `net.minecraft.util.PngInfo#fromBytes` | `crates/mc-math/src/ported/png_info.rs` | 45 | `from_bytes` |
+| `net.minecraft.util.PngInfo#fromStream` | `crates/mc-math/src/ported/png_info.rs` | 14 | `from_stream` |
+| `net.minecraft.util.PngInfo#validateHeader` | `crates/mc-math/src/ported/png_info.rs` | 51 | `validate_header` |
 | `net.minecraft.util.ProblemReporter$FieldPathElement#<init>` | `crates/mc-nbt/src/ported/slot_loot.rs` | 56 | `new` |
 | `net.minecraft.util.ProgressListener#progressStage` | `crates/mc-math/src/ported/progress_listener.rs` | 20 | `progress_stage` |
 | `net.minecraft.util.ProgressListener#progressStagePercentage` | `crates/mc-math/src/ported/progress_listener.rs` | 23 | `progress_stage_percentage` |
@@ -3638,12 +3682,37 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#<init>` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 52 | `new_with_min_clipped_height` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#getSizeAtHeight` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 72 | `get_size_at_height` |
 | `net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize#type` | `crates/mc-worldgen/src/ported/two_layers_feature_size.rs` | 67 | `get_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 100 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 178 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 227 | `foliage_height` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 237 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer#type` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 105 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 115 | `foliage_height` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 102 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 135 | `create_foliage` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 169 | `should_skip_location` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer#type` | `crates/mc-worldgen/src/ported/bush_foliage_placer.rs` | 111 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 101 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 194 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 226 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer#type` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 110 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 110 | `foliage_radius` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 125 | `foliage_radius` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 119 | `foliage_radius` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 117 | `place_leaves_row` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 132 | `place_leaves_row` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 143 | `place_leaves_row` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 119 | `place_leaves_row` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#placeLeavesRow` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 126 | `place_leaves_row` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 144 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 159 | `should_skip_location_signed` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 118 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 146 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#shouldSkipLocationSigned` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 153 | `should_skip_location_signed` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/acacia_foliage_placer.rs` | 166 | `try_place_leaf` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/fancy_foliage_placer.rs` | 181 | `try_place_leaf` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 168 | `try_place_leaf` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer#tryPlaceLeaf` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 175 | `try_place_leaf` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 66 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/mega_jungle_trunk_placer.rs` | 97 | `new` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer$FoliageAttachment#<init>` | `crates/mc-worldgen/src/ported/straight_trunk_placer.rs` | 70 | `new` |
@@ -3655,6 +3724,17 @@ Total mapped Java symbols: **3843** across **956** classes.
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 210 | `foliage_height` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 220 | `should_skip_location` |
 | `net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer#type` | `crates/mc-worldgen/src/ported/mega_jungle_foliage_placer.rs` | 113 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 101 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 180 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 226 | `foliage_height` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#foliageRadius` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 216 | `foliage_radius` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 236 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer#type` | `crates/mc-worldgen/src/ported/pine_foliage_placer.rs` | 114 | `foliage_placer_type` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#<init>` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 101 | `new` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#createFoliage` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 187 | `create_foliage` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#foliageHeight` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 231 | `foliage_height` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#shouldSkipLocation` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 243 | `should_skip_location` |
+| `net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer#type` | `crates/mc-worldgen/src/ported/spruce_foliage_placer.rs` | 114 | `foliage_placer_type` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#<init>` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 16 | `new` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootPlacementChance` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 29 | `above_root_placement_chance` |
 | `net.minecraft.world.level.levelgen.feature.rootplacers.AboveRootPlacement#aboveRootProvider` | `crates/mc-worldgen/src/ported/above_root_placement.rs` | 24 | `above_root_provider` |
