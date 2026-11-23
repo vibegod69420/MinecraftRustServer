@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9163** across **2104** classes.
+Total mapped Java symbols: **9171** across **2106** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -24,6 +24,7 @@ Total mapped Java symbols: **9163** across **2104** classes.
 | `)` | `crates/mc-math/src/ported/block_state_structure_template_fix.rs` | 117 | `<item>` |
 | `AutoCloseable#close` | `crates/mc-math/src/ported/future_chain.rs` | 240 | `<item>` |
 | `ExtraDataFixUtils#fixBlockPos (used by this fix)` | `crates/mc-math/src/ported/block_pos_format_and_renames_fix.rs` | 84 | `fix_block_pos` |
+| `ExtraDataFixUtils.dyeColorIdToName(int)` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 192 | `<item>` |
 | `Files.createDirectories(Files.exists($$0)` | `crates/mc-math/src/ported/file_util.rs` | 519 | `<item>` |
 | `Files.deleteIfExists($$9)` | `crates/mc-math/src/ported/file_util.rs` | 183 | `<item>` |
 | `LOGGER.error(` | `crates/mc-math/src/ported/future_chain.rs` | 164 | `<item>` |
@@ -6444,6 +6445,13 @@ Total mapped Java symbols: **9163** across **2104** classes.
 | `net.minecraft.util.datafix.fixes.EntityShulkerRotationFix#fixTag` | `crates/mc-math/src/ported/entity_shulker_rotation_fix.rs` | 112 | `fix_tag` |
 | `net.minecraft.util.datafix.fixes.EntitySkeletonSplitFix#<init>` | `crates/mc-math/src/ported/entity_skeleton_split_fix.rs` | 57 | `new` |
 | `net.minecraft.util.datafix.fixes.EntitySkeletonSplitFix#getNewNameAndTag` | `crates/mc-math/src/ported/entity_skeleton_split_fix.rs` | 64 | `get_new_name_and_tag` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#fixAxolotlBucket` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 281 | `fix_axolotl_bucket` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#fixPainting` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 322 | `fix_painting` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#fixSalmonBucket` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 307 | `fix_salmon_bucket` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#fixTropicalFishBucket` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 245 | `fix_tropical_fish_bucket` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#getBaseColor` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 214 | `get_base_color` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#getPattern` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 226 | `get_pattern` |
+| `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix#getPatternColor` | `crates/mc-math/src/ported/entity_spawner_item_variant_component_fix.rs` | 220 | `get_pattern_color` |
 | `net.minecraft.util.datafix.fixes.EntityStringUuidFix#EntityStringUuidFix` | `crates/mc-math/src/ported/entity_string_uuid_fix.rs` | 78 | `new` |
 | `net.minecraft.util.datafix.fixes.EntityStringUuidFix#makeRule` | `crates/mc-math/src/ported/entity_string_uuid_fix.rs` | 85 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.EntityTheRenameningFix#EntityTheRenameningFix` | `crates/mc-math/src/ported/entity_the_renamening_fix.rs` | 75 | `new` |

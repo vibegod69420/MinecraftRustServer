@@ -583,3 +583,4 @@ pub mod item_stack_enchantment_names_fix;
 pub mod recipes_fix;
 pub mod entity_riding_to_passengers_fix;
 pub mod item_spawn_egg_fix;
+pub mod entity_spawner_item_variant_component_fix;
