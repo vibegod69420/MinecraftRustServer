@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5815** across **1319** classes.
+Total mapped Java symbols: **5816** across **1320** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5194,6 +5194,7 @@ Total mapped Java symbols: **5815** across **1319** classes.
 | `net.minecraft.world.level.levelgen.NoiseSettings#getCellWidth` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 93 | `get_cell_width` |
 | `net.minecraft.world.level.levelgen.NoiseSettings#guardY` | `crates/mc-worldgen/src/ported/noise_settings.rs` | 63 | `guard_y` |
 | `net.minecraft.world.level.levelgen.OreVeinifier#create` | `crates/mc-worldgen/src/ported/ore_veinifier.rs` | 86 | `create` |
+| `net.minecraft.world.level.levelgen.PhantomSpawner#tick` | `crates/mc-worldgen/src/ported/phantom_spawner.rs` | 91 | `tick` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 52 | `at_block_pos` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#at` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 68 | `at` |
 | `net.minecraft.world.level.levelgen.PositionalRandomFactory#fromHashOf` | `crates/mc-worldgen/src/ported/positional_random_factory.rs` | 57 | `from_hash_of_identifier` |
