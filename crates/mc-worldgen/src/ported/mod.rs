@@ -329,3 +329,4 @@ pub mod chunk_dependencies;
 pub mod single_value_palette;
 pub mod hash_map_palette;
 pub mod linear_palette;
+pub mod aquifer;

@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7600** across **1608** classes.
+Total mapped Java symbols: **7623** across **1611** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6588,6 +6588,31 @@ Total mapped Java symbols: **7600** across **1608** classes.
 | `net.minecraft.world.level.chunk.storage.RegionBitmap#getUsed` | `crates/mc-worldgen/src/ported/region_bitmap.rs` | 202 | `get_used` |
 | `net.minecraft.world.level.chunk.storage.RegionStorageInfo#withTypeSuffix` | `crates/mc-worldgen/src/ported/region_storage_info.rs` | 40 | `with_type_suffix` |
 | `net.minecraft.world.level.dimension.DimensionType#Y_SIZE` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 6 | `<item>` |
+| `net.minecraft.world.level.levelgen.Aquifer#computeSubstance` | `crates/mc-worldgen/src/ported/aquifer.rs` | 265 | `compute_substance` |
+| `net.minecraft.world.level.levelgen.Aquifer#computeSubstance` | `crates/mc-worldgen/src/ported/aquifer.rs` | 303 | `compute_substance` |
+| `net.minecraft.world.level.levelgen.Aquifer#create` | `crates/mc-worldgen/src/ported/aquifer.rs` | 272 | `create` |
+| `net.minecraft.world.level.levelgen.Aquifer#createDisabled` | `crates/mc-worldgen/src/ported/aquifer.rs` | 293 | `create_disabled` |
+| `net.minecraft.world.level.levelgen.Aquifer#shouldScheduleFluidUpdate` | `crates/mc-worldgen/src/ported/aquifer.rs` | 268 | `should_schedule_fluid_update` |
+| `net.minecraft.world.level.levelgen.Aquifer#shouldScheduleFluidUpdate` | `crates/mc-worldgen/src/ported/aquifer.rs` | 316 | `should_schedule_fluid_update` |
+| `net.minecraft.world.level.levelgen.Aquifer$FluidStatus#at` | `crates/mc-worldgen/src/ported/aquifer.rs` | 250 | `at` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#<init>` | `crates/mc-worldgen/src/ported/aquifer.rs` | 396 | `new` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#adjustSurfaceLevel` | `crates/mc-worldgen/src/ported/aquifer.rs` | 523 | `adjust_surface_level` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#calculatePressure` | `crates/mc-worldgen/src/ported/aquifer.rs` | 689 | `calculate_pressure` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#computeFluid` | `crates/mc-worldgen/src/ported/aquifer.rs` | 544 | `compute_fluid` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#computeFluidType` | `crates/mc-worldgen/src/ported/aquifer.rs` | 662 | `compute_fluid_type` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#computeRandomizedFluidSurfaceLevel` | `crates/mc-worldgen/src/ported/aquifer.rs` | 641 | `compute_randomized_fluid_surface_level` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#computeSubstance` | `crates/mc-worldgen/src/ported/aquifer.rs` | 751 | `compute_substance` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#computeSurfaceLevel` | `crates/mc-worldgen/src/ported/aquifer.rs` | 598 | `compute_surface_level` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#fromGridX` | `crates/mc-worldgen/src/ported/aquifer.rs` | 498 | `from_grid_x` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#fromGridY` | `crates/mc-worldgen/src/ported/aquifer.rs` | 508 | `from_grid_y` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#fromGridZ` | `crates/mc-worldgen/src/ported/aquifer.rs` | 518 | `from_grid_z` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#getAquiferStatus` | `crates/mc-worldgen/src/ported/aquifer.rs` | 528 | `get_aquifer_status` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#getIndex` | `crates/mc-worldgen/src/ported/aquifer.rs` | 477 | `get_index` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#gridX` | `crates/mc-worldgen/src/ported/aquifer.rs` | 493 | `grid_x` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#gridY` | `crates/mc-worldgen/src/ported/aquifer.rs` | 503 | `grid_y` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#gridZ` | `crates/mc-worldgen/src/ported/aquifer.rs` | 513 | `grid_z` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#shouldScheduleFluidUpdate` | `crates/mc-worldgen/src/ported/aquifer.rs` | 924 | `should_schedule_fluid_update` |
+| `net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer#similarity` | `crates/mc-worldgen/src/ported/aquifer.rs` | 488 | `similarity` |
 | `net.minecraft.world.level.levelgen.Beardifier#<init>` | `crates/mc-worldgen/src/ported/beardifier.rs` | 291 | `new` |
 | `net.minecraft.world.level.levelgen.Beardifier#compute` | `crates/mc-worldgen/src/ported/beardifier.rs` | 393 | `compute` |
 | `net.minecraft.world.level.levelgen.Beardifier#computeBeardContribution` | `crates/mc-worldgen/src/ported/beardifier.rs` | 517 | `compute_beard_contribution_int` |
