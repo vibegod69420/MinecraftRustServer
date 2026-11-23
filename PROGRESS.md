@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 04:57:55 UTC
+- **Updated**: 2026-11-23 04:58:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 7317 / 66676 (10.974%)
 - **Mapped Java Classes**: 1561 / 7163 (21.793%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 1980 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorSettings` -> `mc-worldgen` (1079.1s)
 - [PASS] `net.minecraft.world.level.levelgen.Beardifier` -> `mc-worldgen` (1859.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.WorldDimensions` -> `mc-worldgen` (1154.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature` -> `mc-worldgen` (923.2s)
@@ -28,4 +29,3 @@
 - [PASS] `net.minecraft.world.level.levelgen.flat.FlatLevelGeneratorPresets` -> `mc-worldgen` (853.1s)
 - [PASS] `net.minecraft.world.level.levelgen.structure.structures.ShipwreckPieces` -> `mc-worldgen` (180.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (992.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.IglooPieces` -> `mc-worldgen` (1114.8s)
