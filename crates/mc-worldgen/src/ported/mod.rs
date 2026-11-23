@@ -324,3 +324,8 @@ pub mod structure_access;
 pub mod global_palette;
 pub mod paletted_container_ro;
 pub mod carving_mask;
+pub mod world_gen_context;
+pub mod chunk_dependencies;
+pub mod single_value_palette;
+pub mod hash_map_palette;
+pub mod linear_palette;

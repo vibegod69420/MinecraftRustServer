@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **7557** across **1603** classes.
+Total mapped Java symbols: **7600** across **1608** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -619,8 +619,14 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.core.HolderSet#stream` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 43 | `stream` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-data/build.rs` | 132 | `by_id` |
 | `net.minecraft.core.IdMap#byId` | `crates/mc-worldgen/src/ported/global_palette.rs` | 7 | `by_id` |
+| `net.minecraft.core.IdMap#byIdOrThrow` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 69 | `by_id_or_throw` |
+| `net.minecraft.core.IdMap#byIdOrThrow` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 69 | `by_id_or_throw` |
+| `net.minecraft.core.IdMap#byIdOrThrow` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 69 | `by_id_or_throw` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-data/build.rs` | 128 | `get_id` |
 | `net.minecraft.core.IdMap#getId` | `crates/mc-worldgen/src/ported/global_palette.rs` | 5 | `get_id` |
+| `net.minecraft.core.IdMap#getId` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 71 | `get_id` |
+| `net.minecraft.core.IdMap#getId` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 71 | `get_id` |
+| `net.minecraft.core.IdMap#getId` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 71 | `get_id` |
 | `net.minecraft.core.IdMap#size` | `crates/mc-worldgen/src/ported/global_palette.rs` | 9 | `size` |
 | `net.minecraft.core.IdMapper#<init>()` | `crates/mc-math/src/ported/id_mapper.rs` | 30 | `new` |
 | `net.minecraft.core.IdMapper#<init>(int)` | `crates/mc-math/src/ported/id_mapper.rs` | 35 | `with_expected_size` |
@@ -1745,6 +1751,9 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/serverbound_set_jigsaw_block_packet.rs` | 81 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 127 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-protocol/src/ported/status_protocols.rs` | 24 | `new` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 25 | `new` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 25 | `new` |
+| `net.minecraft.network.FriendlyByteBuf#<init>` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 25 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>()` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 58 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>()` | `crates/mc-protocol/src/ported/handshake_protocols.rs` | 35 | `new` |
 | `net.minecraft.network.FriendlyByteBuf#<init>()` | `crates/mc-protocol/src/ported/serverbound_key_packet.rs` | 56 | `new` |
@@ -2001,6 +2010,9 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_use_item_on_packet.rs` | 13 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/serverbound_use_item_packet.rs` | 30 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 152 | `read_varint` |
+| `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 36 | `read_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 36 | `read_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#readVarInt` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 36 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt()` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 95 | `read_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt()` | `crates/mc-protocol/src/ported/clientbound_level_chunk_with_light_packet.rs` | 56 | `read_varint` |
 | `net.minecraft.network.FriendlyByteBuf#readVarInt()` | `crates/mc-protocol/src/ported/clientbound_login_packet.rs` | 94 | `read_var_int` |
@@ -2267,6 +2279,9 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_use_item_on_packet.rs` | 34 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/serverbound_use_item_packet.rs` | 47 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 174 | `write_varint` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 53 | `write_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 53 | `write_var_int` |
+| `net.minecraft.network.FriendlyByteBuf#writeVarInt` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 53 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt(int)` | `crates/mc-protocol/src/ported/clientbound_custom_query_packet.rs` | 112 | `write_var_int` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt(int)` | `crates/mc-protocol/src/ported/clientbound_level_chunk_with_light_packet.rs` | 74 | `write_varint` |
 | `net.minecraft.network.FriendlyByteBuf#writeVarInt(int)` | `crates/mc-protocol/src/ported/clientbound_login_packet.rs` | 114 | `write_var_int` |
@@ -2372,6 +2387,9 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.network.Utf8String#write` | `crates/mc-protocol/src/ported/utf8_string.rs` | 116 | `write` |
 | `net.minecraft.network.VarInt#getByteSize` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 50 | `varint_get_byte_size` |
 | `net.minecraft.network.VarInt#getByteSize` | `crates/mc-protocol/src/ported/varint21_length_field_prepender.rs` | 113 | `get_byte_size` |
+| `net.minecraft.network.VarInt#getByteSize` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 4 | `var_int_byte_size` |
+| `net.minecraft.network.VarInt#getByteSize` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 4 | `var_int_byte_size` |
+| `net.minecraft.network.VarInt#getByteSize` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 4 | `var_int_byte_size` |
 | `net.minecraft.network.VarInt#hasContinuationBit` | `crates/mc-protocol/src/ported/varint21_frame_decoder.rs` | 28 | `varint_has_continuation_bit` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/clientbound_cookie_request_packet.rs` | 17 | `read_varint` |
 | `net.minecraft.network.VarInt#read` | `crates/mc-protocol/src/ported/compression_decoder.rs` | 15 | `varint_read_buf` |
@@ -4981,25 +4999,34 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.util.CommonColors#class` | `crates/mc-math/src/ported/common_colors.rs` | 1 | `<item>` |
 | `net.minecraft.util.CommonLinks#extendRealms` | `crates/mc-math/src/ported/common_links.rs` | 47 | `extend_realms` |
 | `net.minecraft.util.CommonLinks#extendRealms` | `crates/mc-math/src/ported/common_links.rs` | 59 | `extend_realms_with_profile` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 96 | `<item>` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#<init>(Object[],int[],Object[],int,int)` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 26 | `from_parts` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#<init>(int)` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 15 | `new` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#add` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 83 | `add` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#add` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 118 | `add` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#addMapping` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 120 | `add_mapping` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#byId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 55 | `by_id` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#byId` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 125 | `by_id` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#clear` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 193 | `clear` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#clear` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 138 | `clear` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#contains` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 73 | `contains_key` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#contains` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 78 | `contains_id` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#copy` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 210 | `copy` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#copy` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 148 | `copy_map` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#create` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 43 | `create` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#create` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 103 | `create` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#findEmpty` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 173 | `find_empty` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#getId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 49 | `get_id` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#getId` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 108 | `get_id` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#getValue` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 64 | `get_value` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#grow` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 100 | `grow` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#hash` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 142 | `hash` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#indexOf` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 152 | `index_of` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#iterator` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 188 | `iter` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#iterator` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 143 | `iter` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#nextId` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 90 | `next_id_slot` |
 | `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#size` | `crates/mc-math/src/ported/crude_incremental_int_identity_hash_bi_map.rs` | 205 | `size` |
+| `net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap#size` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 133 | `size` |
 | `net.minecraft.util.CryptException#<init>` | `crates/mc-math/src/ported/crypt_exception.rs` | 14 | `new` |
 | `net.minecraft.util.CsvOutput#<init>` | `crates/mc-math/src/ported/csv_output.rs` | 16 | `new` |
 | `net.minecraft.util.CsvOutput#builder` | `crates/mc-math/src/ported/csv_output.rs` | 10 | `builder` |
@@ -6453,11 +6480,34 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.world.level.chunk.GlobalPalette#valueFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 79 | `value_for_id` |
 | `net.minecraft.world.level.chunk.GlobalPalette#valueFor` | `crates/mc-worldgen/src/ported/global_palette.rs` | 99 | `value_for` |
 | `net.minecraft.world.level.chunk.GlobalPalette#write` | `crates/mc-worldgen/src/ported/global_palette.rs` | 107 | `write` |
+| `net.minecraft.world.level.chunk.HashMapPalette#<init>(int)` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 173 | `with_bits` |
+| `net.minecraft.world.level.chunk.HashMapPalette#<init>(int,List)` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 164 | `new` |
+| `net.minecraft.world.level.chunk.HashMapPalette#copy` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 276 | `copy` |
+| `net.minecraft.world.level.chunk.HashMapPalette#create` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 181 | `create` |
+| `net.minecraft.world.level.chunk.HashMapPalette#getEntries` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 230 | `get_entries` |
+| `net.minecraft.world.level.chunk.HashMapPalette#getSerializedSize` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 263 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.HashMapPalette#getSize` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 225 | `get_size` |
+| `net.minecraft.world.level.chunk.HashMapPalette#idFor` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 186 | `id_for` |
+| `net.minecraft.world.level.chunk.HashMapPalette#maybeHas` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 202 | `maybe_has` |
+| `net.minecraft.world.level.chunk.HashMapPalette#read` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 240 | `read` |
+| `net.minecraft.world.level.chunk.HashMapPalette#valueFor` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 217 | `value_for` |
+| `net.minecraft.world.level.chunk.HashMapPalette#write` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 251 | `write` |
 | `net.minecraft.world.level.chunk.LightChunk#findBlockLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 28 | `find_block_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunk#getSkyLightSources` | `crates/mc-worldgen/src/ported/light_chunk.rs` | 31 | `get_sky_light_sources` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#getChunkForLighting` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 32 | `get_chunk_for_lighting` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#getLevel` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 38 | `get_level` |
 | `net.minecraft.world.level.chunk.LightChunkGetter#onLightUpdate` | `crates/mc-worldgen/src/ported/light_chunk_getter.rs` | 35 | `on_light_update` |
+| `net.minecraft.world.level.chunk.LinearPalette#<init>(Object[],int,int)` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 124 | `from_parts` |
+| `net.minecraft.world.level.chunk.LinearPalette#<init>(int,List)` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 102 | `new_with_values` |
+| `net.minecraft.world.level.chunk.LinearPalette#copy` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 230 | `copy` |
+| `net.minecraft.world.level.chunk.LinearPalette#create` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 129 | `create` |
+| `net.minecraft.world.level.chunk.LinearPalette#getSerializedSize` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 216 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.LinearPalette#getSize` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 186 | `get_size` |
+| `net.minecraft.world.level.chunk.LinearPalette#idFor` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 134 | `id_for` |
+| `net.minecraft.world.level.chunk.LinearPalette#maybeHas` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 162 | `maybe_has` |
+| `net.minecraft.world.level.chunk.LinearPalette#read` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 193 | `read` |
+| `net.minecraft.world.level.chunk.LinearPalette#valueFor` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 176 | `value_for` |
+| `net.minecraft.world.level.chunk.LinearPalette#write` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 203 | `write` |
 | `net.minecraft.world.level.chunk.MissingPaletteEntryException#<init>` | `crates/mc-worldgen/src/ported/global_palette.rs` | 24 | `new` |
 | `net.minecraft.world.level.chunk.MissingPaletteEntryException#<init>` | `crates/mc-worldgen/src/ported/missing_palette_entry_exception.rs` | 11 | `new` |
 | `net.minecraft.world.level.chunk.Palette#copy` | `crates/mc-worldgen/src/ported/global_palette.rs` | 55 | `copy_palette` |
@@ -6479,9 +6529,12 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.world.level.chunk.Palette$Factory#create` | `crates/mc-worldgen/src/ported/palette.rs` | 48 | `create` |
 | `net.minecraft.world.level.chunk.PaletteResize#noResizeExpected` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 38 | `no_resize_expected` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/global_palette.rs` | 14 | `on_resize` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/hash_map_palette.rs` | 77 | `on_resize` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/linear_palette.rs` | 77 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette.rs` | 15 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 5 | `on_resize` |
 | `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/palette_resize.rs` | 29 | `on_resize` |
+| `net.minecraft.world.level.chunk.PaletteResize#onResize` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 77 | `on_resize` |
 | `net.minecraft.world.level.chunk.PalettedContainer$CountConsumer#accept` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 13 | `accept` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO#bitsPerEntry` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 64 | `bits_per_entry` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO#copy` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 73 | `copy_container` |
@@ -6496,6 +6549,16 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 27 | `new` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO$PackedData#<init>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 36 | `with_bits` |
 | `net.minecraft.world.level.chunk.PalettedContainerRO$Unpacker#read` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 47 | `read` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#<init>` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 87 | `new` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#copy` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 169 | `copy` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#create` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 102 | `create` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#getSerializedSize` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 160 | `get_serialized_size` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#getSize` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 107 | `get_size` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#idFor` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 114 | `id_for` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#maybeHas` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 126 | `maybe_has` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#read` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 146 | `read` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#valueFor` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 134 | `value_for` |
+| `net.minecraft.world.level.chunk.SingleValuePalette#write` | `crates/mc-worldgen/src/ported/single_value_palette.rs` | 151 | `write` |
 | `net.minecraft.world.level.chunk.Strategy#<placeholder>` | `crates/mc-worldgen/src/ported/paletted_container_ro.rs` | 6 | `strategy_id` |
 | `net.minecraft.world.level.chunk.StructureAccess#addReferenceForStructure` | `crates/mc-worldgen/src/ported/structure_access.rs` | 29 | `add_reference_for_structure` |
 | `net.minecraft.world.level.chunk.StructureAccess#getAllReferences` | `crates/mc-worldgen/src/ported/structure_access.rs` | 32 | `get_all_references` |
@@ -6503,9 +6566,17 @@ Total mapped Java symbols: **7557** across **1603** classes.
 | `net.minecraft.world.level.chunk.StructureAccess#getStartForStructure` | `crates/mc-worldgen/src/ported/structure_access.rs` | 20 | `get_start_for_structure` |
 | `net.minecraft.world.level.chunk.StructureAccess#setAllReferences` | `crates/mc-worldgen/src/ported/structure_access.rs` | 35 | `set_all_references` |
 | `net.minecraft.world.level.chunk.StructureAccess#setStartForStructure` | `crates/mc-worldgen/src/ported/structure_access.rs` | 23 | `set_start_for_structure` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#<init>` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 17 | `new` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#asList` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 45 | `as_list` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#get` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 73 | `get` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#getRadius` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 67 | `get_radius` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#getRadiusOf` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 55 | `get_radius_of` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#size` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 50 | `size` |
+| `net.minecraft.world.level.chunk.status.ChunkDependencies#toString` | `crates/mc-worldgen/src/ported/chunk_dependencies.rs` | 80 | `fmt` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 42 | `do_work` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 78 | `do_work` |
 | `net.minecraft.world.level.chunk.status.ChunkStatusTask#doWork` | `crates/mc-worldgen/src/ported/chunk_status_task.rs` | 92 | `do_work` |
+| `net.minecraft.world.level.chunk.status.WorldGenContext#<init>` | `crates/mc-worldgen/src/ported/world_gen_context.rs` | 22 | `new` |
 | `net.minecraft.world.level.chunk.storage.ChunkScanAccess#scanChunk` | `crates/mc-worldgen/src/ported/chunk_scan_access.rs` | 22 | `scan_chunk` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 28 | `apply_fix` |
 | `net.minecraft.world.level.chunk.storage.LegacyTagFixer#applyFix` | `crates/mc-worldgen/src/ported/legacy_tag_fixer.rs` | 45 | `apply_fix` |
