@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 14:32:21 UTC
+- **Updated**: 2026-11-23 14:43:33 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9221 / 66676 (13.830%)
 - **Mapped Java Classes**: 2114 / 7163 (29.513%)
@@ -14,6 +14,12 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.util.datafix.fixes.ItemPotionFix` -> `mc-math` (1525.3s)
+- [PASS] `net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix` -> `mc-math` (1524.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (1524.8s)
+- [PASS] `net.minecraft.util.datafix.schemas.V1451_6` -> `mc-math` (1525.3s)
+- [PASS] `net.minecraft.util.datafix.fixes.AdvancementsFix` -> `mc-math` (1525.2s)
+- [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (1525.2s)
 - [PASS] `net.minecraft.util.datafix.fixes.EquipmentFormatFix` -> `mc-math` (482.3s)
 - [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (1546.2s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (3042.0s)
@@ -23,9 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.schemas.V2832` -> `mc-math` (5438.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (3041.8s)
 - [PASS] `net.minecraft.util.datafix.fixes.EntitySpawnerItemVariantComponentFix` -> `mc-math` (3041.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix` -> `mc-math` (4007.6s)
-- [PASS] `net.minecraft.util.datafix.fixes.OptionsKeyLwjgl3Fix` -> `mc-math` (1610.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.TooltipDisplayComponentFix` -> `mc-math` (1610.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.TrappedChestBlockEntityFix` -> `mc-math` (1610.9s)
-- [PASS] `net.minecraft.util.datafix.fixes.EntityEquipmentToArmorAndHandFix` -> `mc-math` (1610.9s)
-- [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (4007.5s)

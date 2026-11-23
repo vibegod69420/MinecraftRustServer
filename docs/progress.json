@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23 14:32:40 UTC",
-  "updated_epoch": 1795444360,
+  "updated_at": "2026-11-23 14:43:33 UTC",
+  "updated_epoch": 1795445013,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 9221,
     "class_coverage_pct": 29.5128,
     "method_coverage_pct": 13.8296,
-    "harness_verified_classes": 1344,
-    "harness_failed_attempts": 382
+    "harness_verified_classes": 1348,
+    "harness_failed_attempts": 384
   },
   "crates": [
     {
@@ -54,6 +54,54 @@
     "avg_latency_s": 222.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ItemPotionFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1525.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1524.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1524.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1451_6",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1525.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.datafix.fixes.AdvancementsFix",
+      "crate": "mc-math",
+      "verified": true,
+      "seconds": 1525.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-23T14:32:41Z",
+      "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1525.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-23T14:15:18Z",
       "class_name": "net.minecraft.util.datafix.fixes.EquipmentFormatFix",
@@ -325,57 +373,14 @@
       "verified": true,
       "seconds": 2536.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:36:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityProjectileOwnerFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2536.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:36:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkRenamesFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2535.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:36:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemBannerColorFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2535.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.profiling.metrics.MetricsRegistry",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 6999.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.NewVillageFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2213.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T12:31:15Z",
-      "class_name": "net.minecraft.util.datafix.fixes.SaddleEquipmentSlotFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 2213.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "c32720e",
+      "ts": "2026-11-23T14:32:41+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "ee27b34",
       "ts": "2026-11-23T14:32:27+00:00",
@@ -445,11 +450,6 @@
       "sha": "79ed85a",
       "ts": "2026-11-23T13:07:41+00:00",
       "message": "Port 5 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "0b237a6",
-      "ts": "2026-11-23T13:02:23+00:00",
-      "message": "Worker sync: 9099 mapped Java methods"
     }
   ]
 }
