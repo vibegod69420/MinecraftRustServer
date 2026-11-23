@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5524** across **1282** classes.
+Total mapped Java symbols: **5592** across **1285** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3491,6 +3491,76 @@ Total mapped Java symbols: **5524** across **1282** classes.
 | `net.minecraft.util.AbstractListBuilder#mapError` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 237 | `map_error` |
 | `net.minecraft.util.AbstractListBuilder#ops` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 196 | `ops` |
 | `net.minecraft.util.AbstractListBuilder#withErrorsFrom` | `crates/mc-math/src/ported/abstract_list_builder.rs` | 230 | `with_errors_from` |
+| `net.minecraft.util.ArrayListDeque#<init>` | `crates/mc-math/src/ported/array_list_deque.rs` | 13 | `new` |
+| `net.minecraft.util.ArrayListDeque#<init>` | `crates/mc-math/src/ported/array_list_deque.rs` | 18 | `with_capacity` |
+| `net.minecraft.util.ArrayListDeque#add` | `crates/mc-math/src/ported/array_list_deque.rs` | 88 | `add` |
+| `net.minecraft.util.ArrayListDeque#addFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 237 | `add_first` |
+| `net.minecraft.util.ArrayListDeque#addLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 242 | `add_last` |
+| `net.minecraft.util.ArrayListDeque#capacity` | `crates/mc-math/src/ported/array_list_deque.rs` | 36 | `capacity` |
+| `net.minecraft.util.ArrayListDeque#clear` | `crates/mc-math/src/ported/array_list_deque.rs` | 418 | `clear` |
+| `net.minecraft.util.ArrayListDeque#contains` | `crates/mc-math/src/ported/array_list_deque.rs` | 380 | `contains` |
+| `net.minecraft.util.ArrayListDeque#copyCount` | `crates/mc-math/src/ported/array_list_deque.rs` | 137 | `copy_count` |
+| `net.minecraft.util.ArrayListDeque#descendingIterator` | `crates/mc-math/src/ported/array_list_deque.rs` | 364 | `descending_iterator` |
+| `net.minecraft.util.ArrayListDeque#forEach` | `crates/mc-math/src/ported/array_list_deque.rs` | 225 | `for_each` |
+| `net.minecraft.util.ArrayListDeque#get` | `crates/mc-math/src/ported/array_list_deque.rs` | 70 | `get` |
+| `net.minecraft.util.ArrayListDeque#getFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 298 | `get_first` |
+| `net.minecraft.util.ArrayListDeque#getIndex` | `crates/mc-math/src/ported/array_list_deque.rs` | 41 | `get_index` |
+| `net.minecraft.util.ArrayListDeque#getInner` | `crates/mc-math/src/ported/array_list_deque.rs` | 63 | `get_inner` |
+| `net.minecraft.util.ArrayListDeque#getLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 306 | `get_last` |
+| `net.minecraft.util.ArrayListDeque#grow` | `crates/mc-math/src/ported/array_list_deque.rs` | 121 | `grow` |
+| `net.minecraft.util.ArrayListDeque#indexOf` | `crates/mc-math/src/ported/array_list_deque.rs` | 388 | `index_of` |
+| `net.minecraft.util.ArrayListDeque#isEmpty` | `crates/mc-math/src/ported/array_list_deque.rs` | 375 | `is_empty` |
+| `net.minecraft.util.ArrayListDeque#iterator` | `crates/mc-math/src/ported/array_list_deque.rs` | 370 | `iterator` |
+| `net.minecraft.util.ArrayListDeque#lastIndexOf` | `crates/mc-math/src/ported/array_list_deque.rs` | 403 | `last_index_of` |
+| `net.minecraft.util.ArrayListDeque#offerFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 247 | `offer_first` |
+| `net.minecraft.util.ArrayListDeque#offerLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 253 | `offer_last` |
+| `net.minecraft.util.ArrayListDeque#peekFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 314 | `peek_first` |
+| `net.minecraft.util.ArrayListDeque#peekLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 323 | `peek_last` |
+| `net.minecraft.util.ArrayListDeque#pollFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 280 | `poll_first` |
+| `net.minecraft.util.ArrayListDeque#pollLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 289 | `poll_last` |
+| `net.minecraft.util.ArrayListDeque#remove` | `crates/mc-math/src/ported/array_list_deque.rs` | 147 | `remove` |
+| `net.minecraft.util.ArrayListDeque#removeFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 259 | `remove_first` |
+| `net.minecraft.util.ArrayListDeque#removeFirstOccurrence` | `crates/mc-math/src/ported/array_list_deque.rs` | 332 | `remove_first_occurrence` |
+| `net.minecraft.util.ArrayListDeque#removeIf` | `crates/mc-math/src/ported/array_list_deque.rs` | 176 | `remove_if` |
+| `net.minecraft.util.ArrayListDeque#removeLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 267 | `remove_last` |
+| `net.minecraft.util.ArrayListDeque#removeLastOccurrence` | `crates/mc-math/src/ported/array_list_deque.rs` | 348 | `remove_last_occurrence` |
+| `net.minecraft.util.ArrayListDeque#replaceAll` | `crates/mc-math/src/ported/array_list_deque.rs` | 208 | `replace_all` |
+| `net.minecraft.util.ArrayListDeque#reversed` | `crates/mc-math/src/ported/array_list_deque.rs` | 275 | `reversed` |
+| `net.minecraft.util.ArrayListDeque#set` | `crates/mc-math/src/ported/array_list_deque.rs` | 77 | `set` |
+| `net.minecraft.util.ArrayListDeque#size` | `crates/mc-math/src/ported/array_list_deque.rs` | 31 | `size` |
+| `net.minecraft.util.ArrayListDeque#verifyIndexInRange` | `crates/mc-math/src/ported/array_list_deque.rs` | 51 | `verify_index_in_range_static` |
+| `net.minecraft.util.ArrayListDeque#verifyIndexInRange` | `crates/mc-math/src/ported/array_list_deque.rs` | 58 | `verify_index_in_range` |
+| `net.minecraft.util.ArrayListDeque$DescendingIterator#hasNext` | `crates/mc-math/src/ported/array_list_deque.rs` | 470 | `has_next` |
+| `net.minecraft.util.ArrayListDeque$DescendingIterator#next` | `crates/mc-math/src/ported/array_list_deque.rs` | 475 | `next` |
+| `net.minecraft.util.ArrayListDeque$DescendingIterator#remove` | `crates/mc-math/src/ported/array_list_deque.rs` | 482 | `remove` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#add` | `crates/mc-math/src/ported/array_list_deque.rs` | 609 | `add` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#addFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 508 | `add_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#addLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 513 | `add_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#clear` | `crates/mc-math/src/ported/array_list_deque.rs` | 642 | `clear` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#contains` | `crates/mc-math/src/ported/array_list_deque.rs` | 589 | `contains` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#descendingIterator` | `crates/mc-math/src/ported/array_list_deque.rs` | 574 | `descending_iterator` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#get` | `crates/mc-math/src/ported/array_list_deque.rs` | 597 | `get` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#getFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 498 | `get_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#getLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 503 | `get_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#indexOf` | `crates/mc-math/src/ported/array_list_deque.rs` | 621 | `index_of` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#isEmpty` | `crates/mc-math/src/ported/array_list_deque.rs` | 584 | `is_empty` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#iterator` | `crates/mc-math/src/ported/array_list_deque.rs` | 637 | `iterator` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#lastIndexOf` | `crates/mc-math/src/ported/array_list_deque.rs` | 629 | `last_index_of` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#offerFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 518 | `offer_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#offerLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 523 | `offer_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#peekFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 538 | `peek_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#peekLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 543 | `peek_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#pollFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 528 | `poll_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#pollLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 533 | `poll_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#remove` | `crates/mc-math/src/ported/array_list_deque.rs` | 615 | `remove` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#removeFirst` | `crates/mc-math/src/ported/array_list_deque.rs` | 548 | `remove_first` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#removeFirstOccurrence` | `crates/mc-math/src/ported/array_list_deque.rs` | 558 | `remove_first_occurrence` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#removeLast` | `crates/mc-math/src/ported/array_list_deque.rs` | 553 | `remove_last` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#removeLastOccurrence` | `crates/mc-math/src/ported/array_list_deque.rs` | 566 | `remove_last_occurrence` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#reverseIndex` | `crates/mc-math/src/ported/array_list_deque.rs` | 647 | `reverse_index` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#reversed` | `crates/mc-math/src/ported/array_list_deque.rs` | 493 | `reversed` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#set` | `crates/mc-math/src/ported/array_list_deque.rs` | 603 | `set` |
+| `net.minecraft.util.ArrayListDeque$ReversedView#size` | `crates/mc-math/src/ported/array_list_deque.rs` | 579 | `size` |
 | `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 24 | `with_easing` |
 | `net.minecraft.util.BinaryAnimator#BinaryAnimator` | `crates/mc-math/src/ported/binary_animator.rs` | 34 | `new` |
 | `net.minecraft.util.BinaryAnimator#getFactor` | `crates/mc-math/src/ported/binary_animator.rs` | 51 | `get_factor` |
