@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-23 00:27:58 UTC
+- **Updated**: 2026-11-23 00:29:19 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 3725 / 66676 (5.587%)
 - **Mapped Java Classes**: 934 / 7163 (13.039%)
@@ -14,6 +14,14 @@
 - `mc-worldgen`: 961 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.IdentifierPattern` -> `mc-math` (738.8s)
+- [PASS] `net.minecraft.util.AbstractListBuilder` -> `mc-math` (738.8s)
+- [PASS] `net.minecraft.util.SegmentedAnglePrecision` -> `mc-math` (738.8s)
+- [PASS] `net.minecraft.util.ModCheck` -> `mc-math` (738.8s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.BlockPileFeature` -> `mc-worldgen` (874.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.DiskFeature` -> `mc-worldgen` (874.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (874.9s)
+- [PASS] `net.minecraft.world.level.levelgen.feature.VoidStartPlatformFeature` -> `mc-worldgen` (874.9s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.ScatteredOreFeature` -> `mc-worldgen` (1176.7s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.EndGatewayFeature` -> `mc-worldgen` (1176.7s)
 - [PASS] `net.minecraft.world.level.levelgen.feature.NetherForestVegetationFeature` -> `mc-worldgen` (1176.7s)
@@ -21,11 +29,3 @@
 - [FAIL] `net.minecraft.network.protocol.configuration.ClientboundUpdateEnabledFeaturesPacket` -> `mc-protocol` (728.6s)
 - [PASS] `net.minecraft.world.level.levelgen.heightproviders.VeryBiasedToBottomHeight` -> `mc-worldgen` (582.6s)
 - [PASS] `net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight` -> `mc-worldgen` (582.6s)
-- [PASS] `net.minecraft.world.level.levelgen.heightproviders.UniformHeight` -> `mc-worldgen` (582.6s)
-- [FAIL] `net.minecraft.util.BoundedFloatFunction` -> `mc-math` (529.3s)
-- [PASS] `net.minecraft.util.FutureChain` -> `mc-math` (529.3s)
-- [PASS] `net.minecraft.util.ZeroBitStorage` -> `mc-math` (529.3s)
-- [PASS] `net.minecraft.util.StrictJsonParser` -> `mc-math` (529.3s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetContainerLootTable` -> `mc-nbt` (402.0s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetBannerPatternFunction` -> `mc-nbt` (402.0s)
-- [PASS] `net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration` -> `mc-worldgen` (2169.4s)
