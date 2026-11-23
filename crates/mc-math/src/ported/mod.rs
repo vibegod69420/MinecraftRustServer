@@ -318,3 +318,7 @@ pub mod chunk_region_write_event;
 pub mod client_fps_event;
 pub mod server_tick_time_event;
 pub mod packet_event;
+pub mod v1451;
+pub mod v3204;
+pub mod v1928;
+pub mod v3818;
