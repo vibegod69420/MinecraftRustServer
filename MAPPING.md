@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9156** across **2102** classes.
+Total mapped Java symbols: **9160** across **2103** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6421,6 +6421,19 @@ Total mapped Java symbols: **9156** across **2102** classes.
 | `net.minecraft.util.datafix.fixes.EntityRenameFix#fix` | `crates/mc-math/src/ported/entity_rename_fix.rs` | 69 | `fix` |
 | `net.minecraft.util.datafix.fixes.EntityRenameFix#getEntity` | `crates/mc-math/src/ported/entity_rename_fix.rs` | 64 | `get_entity` |
 | `net.minecraft.util.datafix.fixes.EntityRenameFix#makeRule` | `crates/mc-math/src/ported/entity_rename_fix.rs` | 58 | `make_rule` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#<init>` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 161 | `new` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 101 | `convert_riding_to_passengers` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 142 | `fix_entity_tree` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 147 | `apply_fix` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 152 | `transform_entity_tree` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 169 | `fix` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#cap` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 174 | `fix_value` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#fix` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 3 | `fix_entity_riding_to_passengers` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#fix` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 70 | `fix` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#fix` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 75 | `apply` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#fix` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 80 | `transform` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#fix` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 85 | `entity_riding_to_passengers` |
+| `net.minecraft.util.datafix.fixes.EntityRidingToPassengersFix#makeRule` | `crates/mc-math/src/ported/entity_riding_to_passengers_fix.rs` | 166 | `make_rule` |
 | `net.minecraft.util.datafix.fixes.EntitySalmonSizeFix#<init>` | `crates/mc-math/src/ported/entity_salmon_size_fix.rs` | 72 | `new` |
 | `net.minecraft.util.datafix.fixes.EntitySalmonSizeFix#fix` | `crates/mc-math/src/ported/entity_salmon_size_fix.rs` | 77 | `fix` |
 | `net.minecraft.util.datafix.fixes.EntityShulkerColorFix#<init>` | `crates/mc-math/src/ported/entity_shulker_color_fix.rs` | 124 | `new` |

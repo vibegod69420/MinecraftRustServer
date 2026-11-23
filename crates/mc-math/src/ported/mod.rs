@@ -581,3 +581,4 @@ pub mod entity_equipment_to_armor_and_hand_fix;
 pub mod tooltip_display_component_fix;
 pub mod item_stack_enchantment_names_fix;
 pub mod recipes_fix;
+pub mod entity_riding_to_passengers_fix;
