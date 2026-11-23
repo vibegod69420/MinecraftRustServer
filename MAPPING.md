@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **5825** across **1322** classes.
+Total mapped Java symbols: **5837** across **1324** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2207,6 +2207,16 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/data_source.rs` | 41 | `get_data` |
 | `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 69 | `get_data` |
 | `net.minecraft.network.chat.contents.data.DataSources#<clinit>` | `crates/mc-protocol/src/ported/data_sources.rs` | 60 | `init_data_sources` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#<init>` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 101 | `new` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#<init>` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 110 | `with_compiled` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#codec` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 146 | `codec` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#compileSelector` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 121 | `compile_selector` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#compiledSelector` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 156 | `compiled_selector` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#equals` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 170 | `eq` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#getData` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 130 | `get_data` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#hashCode` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 179 | `hash` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#selectorPattern` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 151 | `selector_pattern` |
+| `net.minecraft.network.chat.contents.data.EntityDataSource#toString` | `crates/mc-protocol/src/ported/entity_data_source.rs` | 163 | `fmt` |
 | `net.minecraft.network.chat.contents.data.StorageDataSource#<init>` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 88 | `new` |
 | `net.minecraft.network.chat.contents.data.StorageDataSource#codec` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 109 | `codec` |
 | `net.minecraft.network.chat.contents.data.StorageDataSource#getData` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 100 | `get_data` |
@@ -4856,6 +4866,7 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.util.valueproviders.FloatProvider#getType` | `crates/mc-math/src/ported/float_provider.rs` | 30 | `get_type` |
 | `net.minecraft.util.valueproviders.FloatProviderType#codec` | `crates/mc-math/src/ported/float_provider_type.rs` | 18 | `codec_name` |
 | `net.minecraft.util.valueproviders.FloatProviderType#register` | `crates/mc-math/src/ported/float_provider_type.rs` | 23 | `register` |
+| `net.minecraft.util.valueproviders.IntProvider` | `crates/mc-worldgen/src/ported/geode_configuration.rs` | 44 | `<item>` |
 | `net.minecraft.util.valueproviders.IntProvider#getMaxValue` | `crates/mc-math/src/ported/biased_to_bottom_int.rs` | 21 | `get_max_value` |
 | `net.minecraft.util.valueproviders.IntProvider#getMaxValue` | `crates/mc-math/src/ported/clamped_int.rs` | 22 | `get_max_value` |
 | `net.minecraft.util.valueproviders.IntProvider#getMaxValue` | `crates/mc-math/src/ported/uniform_int.rs` | 21 | `get_max_value` |
@@ -4903,6 +4914,7 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.util.valueproviders.UniformFloat#of` | `crates/mc-math/src/ported/uniform_float.rs` | 27 | `of` |
 | `net.minecraft.util.valueproviders.UniformFloat#sample` | `crates/mc-math/src/ported/uniform_float.rs` | 35 | `sample` |
 | `net.minecraft.util.valueproviders.UniformFloat#toString` | `crates/mc-math/src/ported/uniform_float.rs` | 55 | `java_to_string` |
+| `net.minecraft.util.valueproviders.UniformInt` | `crates/mc-worldgen/src/ported/geode_configuration.rs` | 25 | `<item>` |
 | `net.minecraft.util.valueproviders.UniformInt#<init>` | `crates/mc-math/src/ported/uniform_int.rs` | 34 | `new` |
 | `net.minecraft.util.valueproviders.UniformInt#getMaxValue` | `crates/mc-math/src/ported/uniform_int.rs` | 59 | `get_max_value` |
 | `net.minecraft.util.valueproviders.UniformInt#getMaxValue` | `crates/mc-math/src/ported/uniform_int.rs` | 81 | `get_max_value` |
@@ -4912,6 +4924,7 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.util.valueproviders.UniformInt#getType` | `crates/mc-math/src/ported/uniform_int.rs` | 86 | `get_type` |
 | `net.minecraft.util.valueproviders.UniformInt#of` | `crates/mc-math/src/ported/time_util.rs` | 16 | `of` |
 | `net.minecraft.util.valueproviders.UniformInt#of` | `crates/mc-math/src/ported/uniform_int.rs` | 42 | `of` |
+| `net.minecraft.util.valueproviders.UniformInt#of` | `crates/mc-worldgen/src/ported/geode_configuration.rs` | 33 | `of` |
 | `net.minecraft.util.valueproviders.UniformInt#sample` | `crates/mc-math/src/ported/uniform_int.rs` | 47 | `sample` |
 | `net.minecraft.util.valueproviders.UniformInt#sample` | `crates/mc-math/src/ported/uniform_int.rs` | 71 | `sample` |
 | `net.minecraft.util.valueproviders.WeightedListInt#<init>` | `crates/mc-math/src/ported/weighted_list_int.rs` | 96 | `new` |
@@ -5545,6 +5558,7 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/column_feature_configuration.rs` | 2 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/count_configuration.rs` | 29 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/feature_configuration.rs` | 8 | `<item>` |
+| `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/geode_configuration.rs` | 8 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 2 | `<item>` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/none_feature_configuration.rs` | 11 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration` | `crates/mc-worldgen/src/ported/probability_feature_configuration.rs` | 5 | `get_features` |
@@ -5560,6 +5574,7 @@ Total mapped Java symbols: **5825** across **1322** classes.
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/random_patch_configuration.rs` | 7 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/replace_block_configuration.rs` | 13 | `get_features` |
 | `net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration#getFeatures` | `crates/mc-worldgen/src/ported/simple_random_feature_configuration.rs` | 9 | `get_features` |
+| `net.minecraft.world.level.levelgen.feature.configurations.GeodeConfiguration#<init>` | `crates/mc-worldgen/src/ported/geode_configuration.rs` | 86 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration#<init>` | `crates/mc-worldgen/src/ported/huge_mushroom_feature_configuration.rs` | 27 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.LargeDripstoneConfiguration#<init>` | `crates/mc-worldgen/src/ported/large_dripstone_configuration.rs` | 25 | `new` |
 | `net.minecraft.world.level.levelgen.feature.configurations.LayerConfiguration` | `crates/mc-worldgen/src/ported/layer_configuration.rs` | 17 | `<item>` |

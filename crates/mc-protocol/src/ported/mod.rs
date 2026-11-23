@@ -285,3 +285,4 @@ pub mod clientbound_recipe_book_add_packet;
 pub mod serverbound_set_command_minecart_packet;
 pub mod clientbound_map_item_data_packet;
 pub mod packet_utils;
+pub mod entity_data_source;
