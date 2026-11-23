@@ -233,3 +233,5 @@ pub mod builtin_structures;
 pub mod scattered_feature_piece;
 pub mod vegetation_patch_configuration;
 pub mod dripstone_cluster_configuration;
+pub mod bonus_chest_feature;
+pub mod pointed_dripstone_feature;
