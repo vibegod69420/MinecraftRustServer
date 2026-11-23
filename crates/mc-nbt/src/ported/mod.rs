@@ -133,3 +133,4 @@ pub mod set_lore_function;
 pub mod primary_level_data;
 pub mod tag_value_input;
 pub mod level_storage_source;
+pub mod enchanted_count_increase_function;
