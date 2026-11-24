@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 16:42:02 UTC
+- **Updated**: 2026-11-24 16:48:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9652 / 66676 (14.476%)
 - **Mapped Java Classes**: 2175 / 7163 (30.364%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (2666.4s)
+- [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (3222.2s)
 - [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (1683.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix` -> `mc-math` (1059.7s)
 - [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (1286.6s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (1052.5s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkAccess` -> `mc-worldgen` (1139.0s)
 - [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (1293.0s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (1024.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (1443.4s)
