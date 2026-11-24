@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 11:54:03 UTC",
-  "updated_epoch": 1795521243,
+  "updated_at": "2026-11-24 12:00:15 UTC",
+  "updated_epoch": 1795521615,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 722
+    "harness_failed_attempts": 726
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 2748,
-    "prompt_tokens": 9479321,
-    "completion_tokens": 46400988,
-    "reasoning_tokens": 33055866,
-    "avg_latency_s": 272.3
+    "calls_total": 2752,
+    "prompt_tokens": 9500776,
+    "completion_tokens": 46443993,
+    "reasoning_tokens": 33074933,
+    "avg_latency_s": 271.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T12:00:13Z",
+      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 726.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T12:00:13Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 726.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T12:00:13Z",
+      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 726.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T12:00:13Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 726.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T11:48:03Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 1325.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:39:11Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1325.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:36:11Z",
-      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1145.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:36:00Z",
-      "class_name": "net.minecraft.util.Crypt",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1135.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:33:14Z",
-      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 968.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a2d2537",
+      "ts": "2026-11-24T11:54:04+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "4fc2573",
       "ts": "2026-11-24T11:46:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "b913a97",
       "ts": "2026-11-24T10:46:07+00:00",
       "message": "Worker sync: 9551 mapped Java methods"
-    },
-    {
-      "sha": "ee275c4",
-      "ts": "2026-11-24T10:40:02+00:00",
-      "message": "Worker sync: 9544 mapped Java methods"
     }
   ]
 }
