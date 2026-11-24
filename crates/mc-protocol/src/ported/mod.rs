@@ -358,3 +358,4 @@ pub mod component_utils;
 pub mod signable_command;
 pub mod block_data_source;
 pub mod connection;
+pub mod synched_entity_data;

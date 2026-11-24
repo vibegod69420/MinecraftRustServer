@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 15:16:02 UTC
+- **Updated**: 2026-11-24 15:17:07 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 9628 / 66676 (14.440%)
-- **Mapped Java Classes**: 2171 / 7163 (30.308%)
+- **Mapped Java Methods**: 9652 / 66676 (14.476%)
+- **Mapped Java Classes**: 2175 / 7163 (30.364%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 4163 mapped methods
 - `mc-nbt`: 1864 mapped methods
-- `mc-protocol`: 3561 mapped methods
+- `mc-protocol`: 3587 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.syncher.SynchedEntityData` -> `mc-protocol` (1703.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.DensityFunction` -> `mc-worldgen` (1599.6s)
 - [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (1582.4s)
 - [PASS] `net.minecraft.network.Connection` -> `mc-protocol` (1555.9s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer` -> `mc-worldgen` (929.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DesertWellFeature` -> `mc-worldgen` (784.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (754.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (743.9s)

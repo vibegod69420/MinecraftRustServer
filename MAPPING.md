@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9628** across **2171** classes.
+Total mapped Java symbols: **9652** across **2175** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -5353,6 +5353,32 @@ Total mapped Java symbols: **9628** across **2171** classes.
 | `net.minecraft.network.syncher.EntityDataSerializers#registerSerializer` | `crates/mc-protocol/src/ported/entity_data_serializers.rs` | 121 | `register_serializer` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 41 | `on_synced_data_updated_accessor` |
 | `net.minecraft.network.syncher.SyncedDataHolder#onSyncedDataUpdated` | `crates/mc-protocol/src/ported/synced_data_holder.rs` | 44 | `on_synced_data_updated_values` |
+| `net.minecraft.network.syncher.SynchedEntityData#<init>` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 198 | `new` |
+| `net.minecraft.network.syncher.SynchedEntityData#assignValue` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 295 | `assign_value` |
+| `net.minecraft.network.syncher.SynchedEntityData#assignValues` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 285 | `assign_values` |
+| `net.minecraft.network.syncher.SynchedEntityData#defineId` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 207 | `define_id` |
+| `net.minecraft.network.syncher.SynchedEntityData#get` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 224 | `get` |
+| `net.minecraft.network.syncher.SynchedEntityData#getItem` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 219 | `get_item` |
+| `net.minecraft.network.syncher.SynchedEntityData#getNonDefaultValues` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 274 | `get_non_default_values` |
+| `net.minecraft.network.syncher.SynchedEntityData#isDirty` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 253 | `is_dirty` |
+| `net.minecraft.network.syncher.SynchedEntityData#packDirty` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 258 | `pack_dirty` |
+| `net.minecraft.network.syncher.SynchedEntityData#set` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 229 | `set` |
+| `net.minecraft.network.syncher.SynchedEntityData#set` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 234 | `set_force` |
+| `net.minecraft.network.syncher.SynchedEntityData$Builder#<init>` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 316 | `new` |
+| `net.minecraft.network.syncher.SynchedEntityData$Builder#build` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 358 | `build` |
+| `net.minecraft.network.syncher.SynchedEntityData$Builder#define` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 329 | `define` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#<init>` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 386 | `new` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#getAccessor` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 398 | `get_accessor` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#getValue` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 408 | `get_value` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#isDirty` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 415 | `is_dirty` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#isSetToDefault` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 425 | `is_set_to_default` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#setDirty` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 420 | `set_dirty` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#setValue` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 403 | `set_value` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataItem#value` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 431 | `value` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataValue#create` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 444 | `create` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataValue#read` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 489 | `read` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataValue#read` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 497 | `read_with_serializer` |
+| `net.minecraft.network.syncher.SynchedEntityData$DataValue#write` | `crates/mc-protocol/src/ported/synched_entity_data.rs` | 478 | `write` |
 | `net.minecraft.network.syncher.SynchedEntityData.DataValue#read` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 117 | `read` |
 | `net.minecraft.network.syncher.SynchedEntityData.DataValue#write` | `crates/mc-protocol/src/ported/clientbound_set_entity_data_packet.rs` | 109 | `write` |
 | `net.minecraft.resources.Identifier` | `crates/mc-math/src/ported/context_key.rs` | 9 | `<item>` |
