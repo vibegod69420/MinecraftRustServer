@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 15:46:01 UTC",
-  "updated_epoch": 1795535161,
+  "updated_at": "2026-11-24 15:52:02 UTC",
+  "updated_epoch": 1795535522,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 797
+    "harness_failed_attempts": 798
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 2949,
+    "calls_total": 2950,
     "prompt_tokens": 10176342,
     "completion_tokens": 49963558,
     "reasoning_tokens": 35672775,
-    "avg_latency_s": 267.2
+    "avg_latency_s": 267.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T15:50:51Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2156.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T15:36:26Z",
       "class_name": "net.minecraft.world.level.levelgen.blending.Blender",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1562.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T14:47:37Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1511.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1a6d410",
+      "ts": "2026-11-24T15:46:01+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "f261748",
       "ts": "2026-11-24T15:40:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "37ff95e",
       "ts": "2026-11-24T14:38:02+00:00",
-      "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "c4cf548",
-      "ts": "2026-11-24T14:32:02+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
     }
   ]
