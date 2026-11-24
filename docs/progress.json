@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 18:22:01 UTC",
-  "updated_epoch": 1795544521,
+  "updated_at": "2026-11-24 18:28:02 UTC",
+  "updated_epoch": 1795544882,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 908
+    "harness_failed_attempts": 910
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 3250,
+    "calls_total": 3252,
     "prompt_tokens": 11629127,
     "completion_tokens": 55164285,
     "reasoning_tokens": 39211368,
-    "avg_latency_s": 288.1
+    "avg_latency_s": 290.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T18:25:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseChunk",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1949.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T18:22:57Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1816.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T18:18:58Z",
       "class_name": "net.minecraft.util.datafix.fixes.ItemStackComponentizationFix",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1326.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T17:31:30Z",
-      "class_name": "net.minecraft.world.level.chunk.PalettedContainer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1952.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T17:30:48Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AttributeModifierIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 998.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "983c34c",
+      "ts": "2026-11-24T18:22:01+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "b639900",
       "ts": "2026-11-24T18:16:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "420f8e0",
       "ts": "2026-11-24T16:54:02+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "0d4836c",
-      "ts": "2026-11-24T16:48:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
