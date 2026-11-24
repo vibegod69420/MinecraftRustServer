@@ -1,1 +1,1 @@
-{"state": "idle", "class_name": null, "crate": null, "attempt": 0, "verified_count": 1379, "workers": 18, "active_classes": [], "ts": "2026-11-24T21:06:04Z"}
+{"state": "generating", "class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry", "crate": "mc-nbt", "attempt": 3, "verified_count": 1379, "workers": 18, "active_classes": [{"class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry", "crate": "mc-nbt", "attempt": 3, "state": "generating"}], "ts": "2026-11-24T21:19:10Z"}
