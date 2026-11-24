@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 18:10:03 UTC
+- **Updated**: 2026-11-24 18:16:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9652 / 66676 (14.476%)
 - **Mapped Java Classes**: 2175 / 7163 (30.364%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (1343.3s)
+- [FAIL] `net.minecraft.util.profiling.jfr.JfrProfiler` -> `mc-math` (1321.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (1236.4s)
 - [FAIL] `net.minecraft.util.parsing.packrat.commands.Grammar` -> `mc-math` (971.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkProtoTickListFix` -> `mc-math` (957.4s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (821.8s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix` -> `mc-math` (658.1s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix` -> `mc-math` (658.1s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityBlockStateFix` -> `mc-math` (629.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.MemoryExpiryDataFix` -> `mc-math` (560.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (560.8s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (554.5s)
