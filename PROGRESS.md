@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 14:24:09 UTC
+- **Updated**: 2026-11-24 14:30:06 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9577 / 66676 (14.364%)
 - **Mapped Java Classes**: 2170 / 7163 (30.295%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration` -> `mc-worldgen` (459.6s)
+- [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (431.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (352.7s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (2194.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (652.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (556.0s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (1333.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (458.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (447.7s)
-- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (414.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (1289.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (1289.8s)
