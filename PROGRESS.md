@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 09:18:02 UTC
+- **Updated**: 2026-11-24 09:24:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9539 / 66676 (14.306%)
 - **Mapped Java Classes**: 2164 / 7163 (30.211%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (659.1s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (659.1s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (659.1s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (364.5s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (364.5s)
 - [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (364.5s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.entries.SequentialEntry` -> `mc-nbt` (336.2s)
 - [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (322.4s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (248.3s)
-- [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (248.3s)
-- [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (248.3s)
-- [FAIL] `net.minecraft.world.level.storage.loot.entries.CompositeEntryBase` -> `mc-nbt` (377.6s)
