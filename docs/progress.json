@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 02:24:02 UTC",
-  "updated_epoch": 1795487042,
+  "updated_at": "2026-11-24 02:30:01 UTC",
+  "updated_epoch": 1795487401,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2108,
     "method_coverage_pct": 14.3065,
     "harness_verified_classes": 1374,
-    "harness_failed_attempts": 550
+    "harness_failed_attempts": 560
   },
   "crates": [
     {
@@ -47,13 +47,93 @@
     }
   ],
   "usage": {
-    "calls_total": 2415,
-    "prompt_tokens": 7863431,
-    "completion_tokens": 40068274,
-    "reasoning_tokens": 28728741,
-    "avg_latency_s": 260.3
+    "calls_total": 2433,
+    "prompt_tokens": 7941155,
+    "completion_tokens": 40634815,
+    "reasoning_tokens": 29153834,
+    "avg_latency_s": 268.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T02:29:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1283.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:29:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.WorldDimensions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1116.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:29:12Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheck",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 888.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:28:43Z",
+      "class_name": "net.minecraft.network.syncher.SynchedEntityData",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 1809.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:27:18Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1095.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:26:17Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1663.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:25:32Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 468.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:25:06Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 642.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:24:42Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1568.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:24:21Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1547.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T02:22:51Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
@@ -293,89 +373,14 @@
       "verified": false,
       "seconds": 4989.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3251.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.world.level.chunk.PalettedContainer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4829.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.world.level.levelgen.blending.Blender",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 5278.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:58:50Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V2832",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 441.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:58:44Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2028.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:53:52Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseRouterData",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1927.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:52:48Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.IOWorker",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1670.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:52:38Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2296.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:51:51Z",
-      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 562.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T22:51:51Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelUUIDFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 562.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "61458e1",
+      "ts": "2026-11-24T02:24:02+00:00",
+      "message": "Worker sync: 9539 mapped Java methods"
+    },
     {
       "sha": "33ddbb8",
       "ts": "2026-11-24T02:18:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "8c9d33b",
       "ts": "2026-11-23T23:38:21+00:00",
-      "message": "Worker sync: 9513 mapped Java methods"
-    },
-    {
-      "sha": "eb277d7",
-      "ts": "2026-11-23T23:36:11+00:00",
       "message": "Worker sync: 9513 mapped Java methods"
     }
   ]
