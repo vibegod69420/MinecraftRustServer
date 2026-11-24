@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 11:14:01 UTC",
-  "updated_epoch": 1795518841,
+  "updated_at": "2026-11-24 11:20:02 UTC",
+  "updated_epoch": 1795519202,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 711
+    "harness_failed_attempts": 715
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 2738,
+    "calls_total": 2739,
     "prompt_tokens": 9447861,
     "completion_tokens": 46261368,
     "reasoning_tokens": 32953127,
-    "avg_latency_s": 270.6
+    "avg_latency_s": 271.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T11:15:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2010.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T11:15:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2010.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T11:15:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2010.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T11:15:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2010.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T11:01:09Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 385.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:23:30Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 385.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:23:30Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 385.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:21:33Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 267.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:21:33Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 267.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "64a8a9a",
+      "ts": "2026-11-24T11:14:01+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "420b890",
       "ts": "2026-11-24T11:08:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "cb5b266",
       "ts": "2026-11-24T10:22:17+00:00",
-      "message": "Worker sync: 9539 mapped Java methods"
-    },
-    {
-      "sha": "536c1b6",
-      "ts": "2026-11-24T10:16:02+00:00",
       "message": "Worker sync: 9539 mapped Java methods"
     }
   ]
