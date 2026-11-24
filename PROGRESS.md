@@ -1,19 +1,20 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 01:58:19 UTC
+- **Updated**: 2026-11-24 02:06:45 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 9530 / 66676 (14.293%)
-- **Mapped Java Classes**: 2163 / 7163 (30.197%)
+- **Mapped Java Methods**: 9539 / 66676 (14.306%)
+- **Mapped Java Classes**: 2164 / 7163 (30.211%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 4163 mapped methods
 - `mc-nbt`: 1837 mapped methods
-- `mc-protocol`: 3478 mapped methods
+- `mc-protocol`: 3493 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [PASS] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (490.3s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (10682.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (10292.7s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (6456.7s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (4065.7s)
 - [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (4926.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (4096.0s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (4096.0s)

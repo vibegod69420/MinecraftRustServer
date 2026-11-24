@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9530** across **2163** classes.
+Total mapped Java symbols: **9539** across **2164** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2971,6 +2971,21 @@ Total mapped Java symbols: **9530** across **2163** classes.
 | `net.minecraft.network.chat.ComponentSerialization#TRUSTED_STREAM_CODEC` | `crates/mc-protocol/src/ported/clientbound_tab_list_packet.rs` | 115 | `read_trusted` |
 | `net.minecraft.network.chat.ComponentSerialization#TRUSTED_STREAM_CODEC (stub decode)` | `crates/mc-protocol/src/ported/clientbound_open_screen_packet.rs` | 41 | `read` |
 | `net.minecraft.network.chat.ComponentSerialization#TRUSTED_STREAM_CODEC (stub encode)` | `crates/mc-protocol/src/ported/clientbound_open_screen_packet.rs` | 49 | `write` |
+| `net.minecraft.network.chat.ComponentUtils#copyOnClickText` | `crates/mc-protocol/src/ported/component_utils.rs` | 441 | `copy_on_click_text` |
+| `net.minecraft.network.chat.ComponentUtils#formatAndSortList` | `crates/mc-protocol/src/ported/component_utils.rs` | 349 | `format_and_sort_list` |
+| `net.minecraft.network.chat.ComponentUtils#formatList` | `crates/mc-protocol/src/ported/component_utils.rs` | 342 | `format_string_list` |
+| `net.minecraft.network.chat.ComponentUtils#formatList` | `crates/mc-protocol/src/ported/component_utils.rs` | 365 | `format_list_default` |
+| `net.minecraft.network.chat.ComponentUtils#formatList` | `crates/mc-protocol/src/ported/component_utils.rs` | 373 | `format_list_optional_separator` |
+| `net.minecraft.network.chat.ComponentUtils#formatList` | `crates/mc-protocol/src/ported/component_utils.rs` | 386 | `format_component_list` |
+| `net.minecraft.network.chat.ComponentUtils#formatList` | `crates/mc-protocol/src/ported/component_utils.rs` | 391 | `format_list` |
+| `net.minecraft.network.chat.ComponentUtils#fromMessage` | `crates/mc-protocol/src/ported/component_utils.rs` | 419 | `from_message` |
+| `net.minecraft.network.chat.ComponentUtils#isTranslationResolvable` | `crates/mc-protocol/src/ported/component_utils.rs` | 428 | `is_translation_resolvable` |
+| `net.minecraft.network.chat.ComponentUtils#mergeStyles` | `crates/mc-protocol/src/ported/component_utils.rs` | 260 | `merge_styles_mutable` |
+| `net.minecraft.network.chat.ComponentUtils#mergeStyles` | `crates/mc-protocol/src/ported/component_utils.rs` | 275 | `merge_styles` |
+| `net.minecraft.network.chat.ComponentUtils#resolveStyle` | `crates/mc-protocol/src/ported/component_utils.rs` | 328 | `resolve_style` |
+| `net.minecraft.network.chat.ComponentUtils#updateForEntity` | `crates/mc-protocol/src/ported/component_utils.rs` | 290 | `update_for_entity_optional` |
+| `net.minecraft.network.chat.ComponentUtils#updateForEntity` | `crates/mc-protocol/src/ported/component_utils.rs` | 303 | `update_for_entity` |
+| `net.minecraft.network.chat.ComponentUtils#wrapInSquareBrackets` | `crates/mc-protocol/src/ported/component_utils.rs` | 414 | `wrap_in_square_brackets` |
 | `net.minecraft.network.chat.FilterMask` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 245 | `<item>` |
 | `net.minecraft.network.chat.FilterMask#read(net.minecraft.network.FriendlyByteBuf)` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 252 | `read` |
 | `net.minecraft.network.chat.FilterMask#write(net.minecraft.network.FriendlyByteBuf, net.minecraft.network.chat.FilterMask)` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 269 | `write` |
