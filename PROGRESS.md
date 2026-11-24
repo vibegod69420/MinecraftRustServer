@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 02:06:45 UTC
+- **Updated**: 2026-11-24 02:12:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9539 / 66676 (14.306%)
 - **Mapped Java Classes**: 2164 / 7163 (30.211%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (729.4s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure` -> `mc-worldgen` (685.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.DesertWellFeature` -> `mc-worldgen` (629.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.HugeFungusFeature` -> `mc-worldgen` (572.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration` -> `mc-worldgen` (512.1s)
 - [PASS] `net.minecraft.network.chat.ComponentUtils` -> `mc-protocol` (490.3s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (10682.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (10292.7s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (449.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (9542.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (7734.5s)
-- [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (4562.5s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (9345.2s)
-- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (4065.7s)
-- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (4926.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (4096.0s)
