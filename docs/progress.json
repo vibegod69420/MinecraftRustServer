@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 21:40:01 UTC",
-  "updated_epoch": 1795556401,
+  "updated_at": "2026-11-24 21:46:01 UTC",
+  "updated_epoch": 1795556761,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 932
+    "harness_failed_attempts": 935
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 3279,
-    "prompt_tokens": 11704837,
-    "completion_tokens": 55315288,
-    "reasoning_tokens": 39307568,
-    "avg_latency_s": 283.5
+    "calls_total": 3280,
+    "prompt_tokens": 11708598,
+    "completion_tokens": 55320784,
+    "reasoning_tokens": 39311254,
+    "avg_latency_s": 283.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T21:41:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 320.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:41:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 320.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:41:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 320.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T21:35:49Z",
       "class_name": "net.minecraft.core.particles.DustColorTransitionOptions",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 672.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:03:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 658.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:03:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 658.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:03:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 658.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6760543",
+      "ts": "2026-11-24T21:40:01+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "cc40d7a",
       "ts": "2026-11-24T21:34:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "15acbf5",
       "ts": "2026-11-24T20:16:02+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "17807ec",
-      "ts": "2026-11-24T20:10:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
