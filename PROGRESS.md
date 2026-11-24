@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 02:18:02 UTC
+- **Updated**: 2026-11-24 02:24:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9539 / 66676 (14.306%)
 - **Mapped Java Classes**: 2164 / 7163 (30.211%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (1457.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.presets.WorldPresets` -> `mc-worldgen` (584.1s)
 - [FAIL] `net.minecraft.util.debug.TrackingDebugSynchronizer` -> `mc-math` (1150.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer` -> `mc-worldgen` (960.6s)
 - [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (950.6s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (10682.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (10292.7s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (6456.7s)
-- [FAIL] `net.minecraft.util.datafix.fixes.NewVillageFix` -> `mc-math` (9346.0s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (9346.0s)
