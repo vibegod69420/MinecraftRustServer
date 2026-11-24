@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 14:38:02 UTC",
-  "updated_epoch": 1795531082,
+  "updated_at": "2026-11-24 14:44:23 UTC",
+  "updated_epoch": 1795531463,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 754
+    "harness_failed_attempts": 757
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 2831,
-    "prompt_tokens": 9782911,
-    "completion_tokens": 47653995,
-    "reasoning_tokens": 33948508,
-    "avg_latency_s": 259.8
+    "calls_total": 2836,
+    "prompt_tokens": 9797356,
+    "completion_tokens": 47772916,
+    "reasoning_tokens": 34041385,
+    "avg_latency_s": 262.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T14:41:49Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1163.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T14:40:22Z",
+      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1076.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T14:38:25Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 959.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T14:36:57Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1040.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T11:32:44Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1040.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T11:32:44Z",
-      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1040.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T11:15:01Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2010.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "37ff95e",
+      "ts": "2026-11-24T14:38:02+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "c4cf548",
       "ts": "2026-11-24T14:32:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "c85d55a",
       "ts": "2026-11-24T13:14:10+00:00",
-      "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "f0217c3",
-      "ts": "2026-11-24T13:08:01+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
     }
   ]
