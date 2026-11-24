@@ -143,3 +143,4 @@ pub mod loot_context_param_sets;
 pub mod text_component_tag_visitor;
 pub mod loot_pool_entry_container;
 pub mod alternatives_entry;
+pub mod tag_entry;

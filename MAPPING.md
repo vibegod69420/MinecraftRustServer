@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9669** across **2179** classes.
+Total mapped Java symbols: **9675** across **2180** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11651,6 +11651,14 @@ Total mapped Java symbols: **9669** across **2179** classes.
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#createItemStack` | `crates/mc-nbt/src/ported/slot_loot.rs` | 174 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#getType` | `crates/mc-nbt/src/ported/slot_loot.rs` | 169 | `get_type` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#validate` | `crates/mc-nbt/src/ported/slot_loot.rs` | 183 | `validate` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#<init>` | `crates/mc-nbt/src/ported/tag_entry.rs` | 171 | `new` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#createItemStack` | `crates/mc-nbt/src/ported/tag_entry.rs` | 157 | `create_item_stack` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#createItemStack` | `crates/mc-nbt/src/ported/tag_entry.rs` | 201 | `create_item_stack` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#expand` | `crates/mc-nbt/src/ported/tag_entry.rs` | 233 | `expand` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#expandTag` | `crates/mc-nbt/src/ported/tag_entry.rs` | 208 | `expand_tag_inner` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#expandTag` | `crates/mc-nbt/src/ported/tag_entry.rs` | 261 | `expand_tag` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#getType` | `crates/mc-nbt/src/ported/tag_entry.rs` | 196 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.TagEntry#tagContents` | `crates/mc-nbt/src/ported/tag_entry.rs` | 249 | `tag_contents` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyBonusCount#<init>` | `crates/mc-nbt/src/ported/apply_bonus_count.rs` | 254 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyBonusCount#addBonusBinomialDistributionCount` | `crates/mc-nbt/src/ported/apply_bonus_count.rs` | 289 | `add_bonus_binomial_distribution_count` |
 | `net.minecraft.world.level.storage.loot.functions.ApplyBonusCount#addOreBonusCount` | `crates/mc-nbt/src/ported/apply_bonus_count.rs` | 304 | `add_ore_bonus_count` |
