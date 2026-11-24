@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 23:36:01 UTC",
-  "updated_epoch": 1795563361,
+  "updated_at": "2026-11-24 23:42:02 UTC",
+  "updated_epoch": 1795563722,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 955
+    "harness_failed_attempts": 959
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3327,
-    "prompt_tokens": 11894331,
-    "completion_tokens": 56076918,
-    "reasoning_tokens": 39842553,
-    "avg_latency_s": 284.6
+    "calls_total": 3334,
+    "prompt_tokens": 11926025,
+    "completion_tokens": 56206844,
+    "reasoning_tokens": 39905357,
+    "avg_latency_s": 282.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T23:38:04Z",
+      "class_name": "net.minecraft.util.Crypt",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 431.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:37:08Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 375.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:37:08Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 375.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:37:08Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LocationCheck",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 375.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T23:35:48Z",
       "class_name": "net.minecraft.world.level.storage.loot.entries.TagEntry",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 401.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T21:28:52Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 401.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T21:28:03Z",
-      "class_name": "net.minecraft.world.level.storage.WorldData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 352.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T21:28:03Z",
-      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 352.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T21:28:03Z",
-      "class_name": "net.minecraft.world.level.storage.ValueOutput",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 352.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "c264420",
+      "ts": "2026-11-24T23:36:01+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "9230377",
       "ts": "2026-11-24T23:35:50+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "36d1974",
       "ts": "2026-11-24T22:22:02+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "7a4e40a",
-      "ts": "2026-11-24T22:16:01+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
