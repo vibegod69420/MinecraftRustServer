@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9544** across **2166** classes.
+Total mapped Java symbols: **9551** across **2167** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3250,6 +3250,14 @@ Total mapped Java symbols: **9544** across **2166** classes.
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 11 | `new_parse_error` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 19 | `new_invalid_index` |
 | `net.minecraft.network.chat.contents.TranslatableFormatException#<init>` | `crates/mc-protocol/src/ported/translatable_format_exception.rs` | 27 | `new_with_cause` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#<init>` | `crates/mc-protocol/src/ported/block_data_source.rs` | 189 | `new` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#<init>` | `crates/mc-protocol/src/ported/block_data_source.rs` | 198 | `with_compiled` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#codec` | `crates/mc-protocol/src/ported/block_data_source.rs` | 231 | `codec` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#compilePos` | `crates/mc-protocol/src/ported/block_data_source.rs` | 206 | `compile_pos` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#equals` | `crates/mc-protocol/src/ported/block_data_source.rs` | 278 | `eq` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#getData` | `crates/mc-protocol/src/ported/block_data_source.rs` | 246 | `get_data` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#hashCode` | `crates/mc-protocol/src/ported/block_data_source.rs` | 287 | `hash` |
+| `net.minecraft.network.chat.contents.data.BlockDataSource#toString` | `crates/mc-protocol/src/ported/block_data_source.rs` | 262 | `fmt` |
 | `net.minecraft.network.chat.contents.data.DataSource#codec` | `crates/mc-protocol/src/ported/data_source.rs` | 47 | `codec` |
 | `net.minecraft.network.chat.contents.data.DataSource#codec` | `crates/mc-protocol/src/ported/storage_data_source.rs` | 75 | `codec` |
 | `net.minecraft.network.chat.contents.data.DataSource#getData` | `crates/mc-protocol/src/ported/data_source.rs` | 41 | `get_data` |

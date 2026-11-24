@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 10:40:02 UTC",
-  "updated_epoch": 1795516802,
+  "updated_at": "2026-11-24 10:46:07 UTC",
+  "updated_epoch": 1795517167,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,12 +17,12 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 2166,
-    "mapped_methods": 9544,
-    "class_coverage_pct": 30.2387,
-    "method_coverage_pct": 14.314,
-    "harness_verified_classes": 1375,
-    "harness_failed_attempts": 691
+    "mapped_classes": 2167,
+    "mapped_methods": 9551,
+    "class_coverage_pct": 30.2527,
+    "method_coverage_pct": 14.3245,
+    "harness_verified_classes": 1376,
+    "harness_failed_attempts": 693
   },
   "crates": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 3498
+      "mapped_methods": 3506
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 2705,
-    "prompt_tokens": 9320604,
-    "completion_tokens": 45685422,
-    "reasoning_tokens": 32539215,
-    "avg_latency_s": 274.6
+    "calls_total": 2712,
+    "prompt_tokens": 9338201,
+    "completion_tokens": 45743183,
+    "reasoning_tokens": 32577899,
+    "avg_latency_s": 273.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T10:46:06Z",
+      "class_name": "net.minecraft.network.chat.contents.data.BlockDataSource",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 275.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T10:40:34Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1409.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T10:40:34Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1409.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T10:39:11Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 336.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T09:10:27Z",
-      "class_name": "net.minecraft.core.particles.DustColorTransitionOptions",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 322.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T09:09:13Z",
-      "class_name": "net.minecraft.world.level.storage.WorldData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 248.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T09:09:13Z",
-      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 248.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "ee275c4",
+      "ts": "2026-11-24T10:40:02+00:00",
+      "message": "Worker sync: 9544 mapped Java methods"
+    },
     {
       "sha": "2bf4dc5",
       "ts": "2026-11-24T10:34:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "1524088",
       "ts": "2026-11-24T09:28:01+00:00",
-      "message": "Worker sync: 9539 mapped Java methods"
-    },
-    {
-      "sha": "cca11d9",
-      "ts": "2026-11-24T09:22:01+00:00",
       "message": "Worker sync: 9539 mapped Java methods"
     }
   ]
