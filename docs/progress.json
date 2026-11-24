@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 14:56:07 UTC",
-  "updated_epoch": 1795532167,
+  "updated_at": "2026-11-24 15:02:02 UTC",
+  "updated_epoch": 1795532522,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 761
+    "harness_failed_attempts": 766
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 2859,
-    "prompt_tokens": 9860878,
-    "completion_tokens": 48157138,
-    "reasoning_tokens": 34342337,
-    "avg_latency_s": 265.2
+    "calls_total": 2877,
+    "prompt_tokens": 9908655,
+    "completion_tokens": 48458581,
+    "reasoning_tokens": 34563245,
+    "avg_latency_s": 264.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T15:01:36Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 784.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:01:07Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 754.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:00:56Z",
+      "class_name": "net.minecraft.world.level.levelgen.carver.CaveWorldCarver",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 743.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:00:16Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 703.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T14:59:25Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 653.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T14:48:28Z",
       "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 768.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:00:13Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 726.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:00:13Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 726.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:00:13Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 726.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:00:13Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 726.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T11:48:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1959.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "b7b7200",
+      "ts": "2026-11-24T14:56:07+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "5ccd598",
       "ts": "2026-11-24T14:50:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "b3fe4d3",
       "ts": "2026-11-24T13:32:15+00:00",
-      "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "2e07422",
-      "ts": "2026-11-24T13:26:02+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
     }
   ]
