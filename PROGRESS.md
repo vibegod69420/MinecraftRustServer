@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 12:24:02 UTC
+- **Updated**: 2026-11-24 12:30:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9577 / 66676 (14.364%)
 - **Mapped Java Classes**: 2170 / 7163 (30.295%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (414.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (1289.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (1289.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (1289.8s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (726.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (726.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (1959.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.DeltaFeature` -> `mc-worldgen` (1959.9s)

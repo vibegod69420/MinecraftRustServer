@@ -1,1 +1,1 @@
-{"state": "generating", "class_name": "net.minecraft.util.datafix.PackedBitStorage", "crate": "mc-math", "attempt": 1, "verified_count": 1377, "workers": 18, "active_classes": [{"class_name": "net.minecraft.util.datafix.PackedBitStorage", "crate": "mc-math", "attempt": 1, "state": "generating"}], "ts": "2026-11-24T12:22:57Z"}
+{"state": "idle", "class_name": null, "crate": null, "attempt": 0, "verified_count": 1377, "workers": 18, "active_classes": [], "ts": "2026-11-24T12:29:57Z"}
