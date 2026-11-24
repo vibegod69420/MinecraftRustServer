@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 17:06:02 UTC",
-  "updated_epoch": 1795539962,
+  "updated_at": "2026-11-24 17:12:18 UTC",
+  "updated_epoch": 1795540338,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 844
+    "harness_failed_attempts": 849
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 3093,
-    "prompt_tokens": 10736617,
-    "completion_tokens": 52702281,
-    "reasoning_tokens": 37633097,
-    "avg_latency_s": 280.3
+    "calls_total": 3109,
+    "prompt_tokens": 10826512,
+    "completion_tokens": 52966004,
+    "reasoning_tokens": 37787773,
+    "avg_latency_s": 278.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T17:12:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.NewVillageFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 799.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T17:12:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.MemoryExpiryDataFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 799.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T17:12:16Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 799.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T17:10:44Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 707.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T17:09:47Z",
+      "class_name": "net.minecraft.util.parsing.packrat.commands.Grammar",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 649.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T16:58:53Z",
       "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 354.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:08:12Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1018.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:07:17Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 963.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:07:13Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 959.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:05:08Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 834.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:05:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 829.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "355752c",
+      "ts": "2026-11-24T17:06:02+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "f16400d",
       "ts": "2026-11-24T17:00:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "f261748",
       "ts": "2026-11-24T15:40:01+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "22c629f",
-      "ts": "2026-11-24T15:34:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
