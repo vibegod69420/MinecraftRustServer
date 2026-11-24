@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 09:58:02 UTC",
-  "updated_epoch": 1795514282,
+  "updated_at": "2026-11-24 10:04:02 UTC",
+  "updated_epoch": 1795514642,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2108,
     "method_coverage_pct": 14.3065,
     "harness_verified_classes": 1374,
-    "harness_failed_attempts": 668
+    "harness_failed_attempts": 669
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 2660,
-    "prompt_tokens": 9155950,
-    "completion_tokens": 44879741,
-    "reasoning_tokens": 32074303,
-    "avg_latency_s": 274.7
+    "calls_total": 2663,
+    "prompt_tokens": 9166550,
+    "completion_tokens": 44915889,
+    "reasoning_tokens": 32093858,
+    "avg_latency_s": 275.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T10:02:03Z",
+      "class_name": "net.minecraft.core.RegistrySynchronization",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 581.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T09:22:16Z",
       "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1149.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T04:06:47Z",
-      "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 971.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "4fd2bbc",
+      "ts": "2026-11-24T09:58:02+00:00",
+      "message": "Worker sync: 9539 mapped Java methods"
+    },
     {
       "sha": "fba4bfe",
       "ts": "2026-11-24T09:52:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "ce31600",
       "ts": "2026-11-24T08:34:01+00:00",
-      "message": "Worker sync: 9539 mapped Java methods"
-    },
-    {
-      "sha": "b75da82",
-      "ts": "2026-11-24T08:28:01+00:00",
       "message": "Worker sync: 9539 mapped Java methods"
     }
   ]
