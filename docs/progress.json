@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 17:38:03 UTC",
-  "updated_epoch": 1795541883,
+  "updated_at": "2026-11-24 17:44:02 UTC",
+  "updated_epoch": 1795542242,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 879
+    "harness_failed_attempts": 881
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 3182,
-    "prompt_tokens": 11201545,
-    "completion_tokens": 54157363,
-    "reasoning_tokens": 38595977,
-    "avg_latency_s": 288.9
+    "calls_total": 3187,
+    "prompt_tokens": 11242122,
+    "completion_tokens": 54241400,
+    "reasoning_tokens": 38637524,
+    "avg_latency_s": 289.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T17:42:18Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFile",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2601.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T17:40:47Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 598.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T17:35:44Z",
       "class_name": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1783.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:50:51Z",
-      "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2020.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:46:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2666.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1847e0f",
+      "ts": "2026-11-24T17:38:03+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "049c66a",
       "ts": "2026-11-24T17:30:22+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "4460365",
       "ts": "2026-11-24T16:10:01+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "79512ac",
-      "ts": "2026-11-24T16:04:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
