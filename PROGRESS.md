@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 02:56:01 UTC
+- **Updated**: 2026-11-24 03:02:18 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9539 / 66676 (14.306%)
 - **Mapped Java Classes**: 2164 / 7163 (30.211%)
@@ -14,6 +14,13 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (899.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix` -> `mc-math` (771.0s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix` -> `mc-math` (313.2s)
+- [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (768.0s)
+- [FAIL] `net.minecraft.util.datafix.fixes.NewVillageFix` -> `mc-math` (912.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.MemoryExpiryDataFix` -> `mc-math` (912.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (912.5s)
 - [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (884.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (1792.4s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (972.3s)
@@ -22,10 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (2909.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (1318.9s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (936.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.blending.Blender` -> `mc-worldgen` (1500.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator` -> `mc-worldgen` (1243.7s)
-- [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (829.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (893.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.SurfaceRules` -> `mc-worldgen` (875.4s)
-- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (765.2s)
-- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (624.7s)
