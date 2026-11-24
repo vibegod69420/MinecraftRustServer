@@ -1,1 +1,1 @@
-{"state": "idle", "class_name": null, "crate": null, "attempt": 0, "verified_count": 1379, "workers": 18, "active_classes": [], "ts": "2026-11-24T20:52:40Z"}
+{"state": "generating", "class_name": "net.minecraft.world.level.levelgen.GenerationStep", "crate": "mc-worldgen", "attempt": 1, "verified_count": 1379, "workers": 18, "active_classes": [{"class_name": "net.minecraft.world.level.levelgen.GenerationStep", "crate": "mc-worldgen", "attempt": 1, "state": "generating"}], "ts": "2026-11-24T21:03:16Z"}
