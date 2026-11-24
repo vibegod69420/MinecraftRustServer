@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 02:30:01 UTC",
-  "updated_epoch": 1795487401,
+  "updated_at": "2026-11-24 02:36:02 UTC",
+  "updated_epoch": 1795487762,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2108,
     "method_coverage_pct": 14.3065,
     "harness_verified_classes": 1374,
-    "harness_failed_attempts": 560
+    "harness_failed_attempts": 566
   },
   "crates": [
     {
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 2433,
-    "prompt_tokens": 7941155,
-    "completion_tokens": 40634815,
-    "reasoning_tokens": 29153834,
-    "avg_latency_s": 268.5
+    "calls_total": 2449,
+    "prompt_tokens": 8019922,
+    "completion_tokens": 40989185,
+    "reasoning_tokens": 29409967,
+    "avg_latency_s": 270.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T02:35:02Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1677.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:34:28Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 315.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:34:28Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RecreatingSimpleRegionStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 315.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:34:28Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 315.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:31:21Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1007.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T02:30:42Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1929.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T02:29:29Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
@@ -325,57 +373,14 @@
       "verified": false,
       "seconds": 4065.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkStep",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4926.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4096.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4096.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4096.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkBiomeFix",
-      "crate": "mc-math",
-      "verified": true,
-      "seconds": 4096.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-23T23:45:40Z",
-      "class_name": "net.minecraft.world.level.levelgen.SurfaceRules",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4989.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "19cecf5",
+      "ts": "2026-11-24T02:30:02+00:00",
+      "message": "Worker sync: 9539 mapped Java methods"
+    },
     {
       "sha": "61458e1",
       "ts": "2026-11-24T02:24:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "cffc968",
       "ts": "2026-11-23T23:45:40+00:00",
       "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "8c9d33b",
-      "ts": "2026-11-23T23:38:21+00:00",
-      "message": "Worker sync: 9513 mapped Java methods"
     }
   ]
 }
