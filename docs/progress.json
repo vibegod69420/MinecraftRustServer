@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 15:02:02 UTC",
-  "updated_epoch": 1795532522,
+  "updated_at": "2026-11-24 15:08:11 UTC",
+  "updated_epoch": 1795532891,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 766
+    "harness_failed_attempts": 771
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 2877,
-    "prompt_tokens": 9908655,
-    "completion_tokens": 48458581,
-    "reasoning_tokens": 34563245,
-    "avg_latency_s": 264.9
+    "calls_total": 2888,
+    "prompt_tokens": 9932925,
+    "completion_tokens": 48709893,
+    "reasoning_tokens": 34766318,
+    "avg_latency_s": 266.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T15:08:11Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1178.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:08:00Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1168.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:06:48Z",
+      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1096.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:06:17Z",
+      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1065.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:04:02Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 929.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T15:01:36Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 1180.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:13:17Z",
-      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 714.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:01:18Z",
-      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 791.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:01:18Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelUUIDFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 791.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:01:18Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 791.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T12:00:55Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 768.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7e23d75",
+      "ts": "2026-11-24T15:02:02+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "b7b7200",
       "ts": "2026-11-24T14:56:07+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "0179190",
       "ts": "2026-11-24T13:38:03+00:00",
-      "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "b3fe4d3",
-      "ts": "2026-11-24T13:32:15+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
     }
   ]
