@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 15:14:28 UTC
+- **Updated**: 2026-11-24 15:16:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9628 / 66676 (14.440%)
 - **Mapped Java Classes**: 2171 / 7163 (30.308%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.DensityFunction` -> `mc-worldgen` (1599.6s)
+- [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (1582.4s)
 - [PASS] `net.minecraft.network.Connection` -> `mc-protocol` (1555.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.presets.WorldPresets` -> `mc-worldgen` (746.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeFungusFeature` -> `mc-worldgen` (1485.3s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DesertWellFeature` -> `mc-worldgen` (784.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (754.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (743.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration` -> `mc-worldgen` (703.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (653.0s)
