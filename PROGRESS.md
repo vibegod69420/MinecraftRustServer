@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 22:52:02 UTC
+- **Updated**: 2026-11-24 23:10:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9652 / 66676 (14.476%)
 - **Mapped Java Classes**: 2175 / 7163 (30.364%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.FunctionReference` -> `mc-nbt` (255.8s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction` -> `mc-nbt` (255.8s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction` -> `mc-nbt` (255.8s)
+- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1248.9s)
 - [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (423.0s)
 - [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (761.4s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (320.6s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (355.6s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (294.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (294.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (294.1s)
-- [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (423.8s)
-- [FAIL] `net.minecraft.world.level.storage.loot.entries.CompositeEntryBase` -> `mc-nbt` (401.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.entries.EntryGroup` -> `mc-nbt` (401.1s)

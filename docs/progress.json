@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 23:04:02 UTC",
-  "updated_epoch": 1795561442,
+  "updated_at": "2026-11-24 23:10:03 UTC",
+  "updated_epoch": 1795561803,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 937
+    "harness_failed_attempts": 941
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3288,
-    "prompt_tokens": 11736803,
-    "completion_tokens": 55447635,
-    "reasoning_tokens": 39409974,
-    "avg_latency_s": 283.5
+    "calls_total": 3302,
+    "prompt_tokens": 11798425,
+    "completion_tokens": 55600750,
+    "reasoning_tokens": 39511392,
+    "avg_latency_s": 282.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T23:09:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.FunctionReference",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 255.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:09:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 255.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:09:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 255.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T23:04:53Z",
+      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1248.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T22:51:07Z",
       "class_name": "net.minecraft.core.RegistrySynchronization",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 971.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:08:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 957.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:06:22Z",
-      "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 821.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:06:08Z",
-      "class_name": "net.minecraft.util.datafix.fixes.GameRuleRegistryFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 808.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:04:59Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 738.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "2e35e96",
+      "ts": "2026-11-24T23:04:02+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "ce26329",
       "ts": "2026-11-24T22:58:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6760543",
       "ts": "2026-11-24T21:40:01+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "cc40d7a",
-      "ts": "2026-11-24T21:34:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
