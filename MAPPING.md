@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9577** across **2170** classes.
+Total mapped Java symbols: **9628** across **2171** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -2169,6 +2169,61 @@ Total mapped Java symbols: **9577** across **2170** classes.
 | `net.minecraft.network.CompressionEncoder#encode` | `crates/mc-protocol/src/ported/compression_encoder.rs` | 32 | `encode` |
 | `net.minecraft.network.CompressionEncoder#getThreshold` | `crates/mc-protocol/src/ported/compression_encoder.rs` | 64 | `get_threshold` |
 | `net.minecraft.network.CompressionEncoder#setThreshold` | `crates/mc-protocol/src/ported/compression_encoder.rs` | 69 | `set_threshold` |
+| `net.minecraft.network.Connection#<init>` | `crates/mc-protocol/src/ported/connection.rs` | 288 | `new` |
+| `net.minecraft.network.Connection#channelActive` | `crates/mc-protocol/src/ported/connection.rs` | 314 | `channel_active` |
+| `net.minecraft.network.Connection#channelInactive` | `crates/mc-protocol/src/ported/connection.rs` | 323 | `channel_inactive` |
+| `net.minecraft.network.Connection#channelRead0` | `crates/mc-protocol/src/ported/connection.rs` | 387 | `channel_read0` |
+| `net.minecraft.network.Connection#configureInMemoryPipeline` | `crates/mc-protocol/src/ported/connection.rs` | 877 | `configure_in_memory_pipeline` |
+| `net.minecraft.network.Connection#configurePacketHandler` | `crates/mc-protocol/src/ported/connection.rs` | 849 | `configure_packet_handler` |
+| `net.minecraft.network.Connection#configureSerialization` | `crates/mc-protocol/src/ported/connection.rs` | 854 | `configure_serialization` |
+| `net.minecraft.network.Connection#connect` | `crates/mc-protocol/src/ported/connection.rs` | 826 | `connect` |
+| `net.minecraft.network.Connection#connectToLocalServer` | `crates/mc-protocol/src/ported/connection.rs` | 882 | `connect_to_local_server` |
+| `net.minecraft.network.Connection#connectToServer` | `crates/mc-protocol/src/ported/connection.rs` | 818 | `connect_to_server` |
+| `net.minecraft.network.Connection#createFrameDecoder` | `crates/mc-protocol/src/ported/connection.rs` | 868 | `create_frame_decoder` |
+| `net.minecraft.network.Connection#createFrameEncoder` | `crates/mc-protocol/src/ported/connection.rs` | 859 | `create_frame_encoder` |
+| `net.minecraft.network.Connection#disconnect` | `crates/mc-protocol/src/ported/connection.rs` | 781 | `disconnect` |
+| `net.minecraft.network.Connection#disconnect` | `crates/mc-protocol/src/ported/connection.rs` | 786 | `disconnect_with_details` |
+| `net.minecraft.network.Connection#doSendPacket` | `crates/mc-protocol/src/ported/connection.rs` | 655 | `do_send_packet` |
+| `net.minecraft.network.Connection#exceptionCaught` | `crates/mc-protocol/src/ported/connection.rs` | 328 | `exception_caught` |
+| `net.minecraft.network.Connection#flush` | `crates/mc-protocol/src/ported/connection.rs` | 688 | `flush` |
+| `net.minecraft.network.Connection#flushChannel` | `crates/mc-protocol/src/ported/connection.rs` | 679 | `flush_channel` |
+| `net.minecraft.network.Connection#flushQueue` | `crates/mc-protocol/src/ported/connection.rs` | 695 | `flush_queue` |
+| `net.minecraft.network.Connection#genericsFtw` | `crates/mc-protocol/src/ported/connection.rs` | 975 | `generics_ftw` |
+| `net.minecraft.network.Connection#getAverageReceivedPackets` | `crates/mc-protocol/src/ported/connection.rs` | 959 | `get_average_received_packets` |
+| `net.minecraft.network.Connection#getAverageSentPackets` | `crates/mc-protocol/src/ported/connection.rs` | 964 | `get_average_sent_packets` |
+| `net.minecraft.network.Connection#getDisconnectionDetails` | `crates/mc-protocol/src/ported/connection.rs` | 914 | `get_disconnection_details` |
+| `net.minecraft.network.Connection#getLoggableAddress` | `crates/mc-protocol/src/ported/connection.rs` | 767 | `get_loggable_address` |
+| `net.minecraft.network.Connection#getPacketListener` | `crates/mc-protocol/src/ported/connection.rs` | 909 | `get_packet_listener` |
+| `net.minecraft.network.Connection#getReceiving` | `crates/mc-protocol/src/ported/connection.rs` | 808 | `get_receiving` |
+| `net.minecraft.network.Connection#getRemoteAddress` | `crates/mc-protocol/src/ported/connection.rs` | 762 | `get_remote_address` |
+| `net.minecraft.network.Connection#getSending` | `crates/mc-protocol/src/ported/connection.rs` | 813 | `get_sending` |
+| `net.minecraft.network.Connection#handleDisconnection` | `crates/mc-protocol/src/ported/connection.rs` | 937 | `handle_disconnection` |
+| `net.minecraft.network.Connection#inboundHandlerName` | `crates/mc-protocol/src/ported/connection.rs` | 840 | `inbound_handler_name` |
+| `net.minecraft.network.Connection#initiateServerboundConnection` | `crates/mc-protocol/src/ported/connection.rs` | 568 | `initiate_serverbound_connection` |
+| `net.minecraft.network.Connection#initiateServerboundPlayConnection` | `crates/mc-protocol/src/ported/connection.rs` | 516 | `initiate_serverbound_play_connection` |
+| `net.minecraft.network.Connection#initiateServerboundPlayConnection` | `crates/mc-protocol/src/ported/connection.rs` | 543 | `initiate_serverbound_play_connection_with_transfer` |
+| `net.minecraft.network.Connection#initiateServerboundStatusConnection` | `crates/mc-protocol/src/ported/connection.rs` | 489 | `initiate_serverbound_status_connection` |
+| `net.minecraft.network.Connection#isConnected` | `crates/mc-protocol/src/ported/connection.rs` | 899 | `is_connected` |
+| `net.minecraft.network.Connection#isConnecting` | `crates/mc-protocol/src/ported/connection.rs` | 904 | `is_connecting` |
+| `net.minecraft.network.Connection#isEncrypted` | `crates/mc-protocol/src/ported/connection.rs` | 894 | `is_encrypted` |
+| `net.minecraft.network.Connection#isMemoryConnection` | `crates/mc-protocol/src/ported/connection.rs` | 800 | `is_memory_connection` |
+| `net.minecraft.network.Connection#outboundHandlerName` | `crates/mc-protocol/src/ported/connection.rs` | 831 | `outbound_handler_name` |
+| `net.minecraft.network.Connection#runOnceConnected` | `crates/mc-protocol/src/ported/connection.rs` | 628 | `run_once_connected` |
+| `net.minecraft.network.Connection#send` | `crates/mc-protocol/src/ported/connection.rs` | 601 | `send` |
+| `net.minecraft.network.Connection#send` | `crates/mc-protocol/src/ported/connection.rs` | 606 | `send_with_listener` |
+| `net.minecraft.network.Connection#send` | `crates/mc-protocol/src/ported/connection.rs` | 611 | `send_with_listener_and_flush` |
+| `net.minecraft.network.Connection#sendPacket` | `crates/mc-protocol/src/ported/connection.rs` | 638 | `send_packet` |
+| `net.minecraft.network.Connection#setBandwidthLogger` | `crates/mc-protocol/src/ported/connection.rs` | 969 | `set_bandwidth_logger` |
+| `net.minecraft.network.Connection#setEncryptionKey` | `crates/mc-protocol/src/ported/connection.rs` | 889 | `set_encryption_key` |
+| `net.minecraft.network.Connection#setListenerForServerboundHandshake` | `crates/mc-protocol/src/ported/connection.rs` | 474 | `set_listener_for_serverbound_handshake` |
+| `net.minecraft.network.Connection#setReadOnly` | `crates/mc-protocol/src/ported/connection.rs` | 919 | `set_read_only` |
+| `net.minecraft.network.Connection#setupCompression` | `crates/mc-protocol/src/ported/connection.rs` | 926 | `setup_compression` |
+| `net.minecraft.network.Connection#setupInboundProtocol` | `crates/mc-protocol/src/ported/connection.rs` | 447 | `setup_inbound_protocol` |
+| `net.minecraft.network.Connection#setupOutboundProtocol` | `crates/mc-protocol/src/ported/connection.rs` | 463 | `setup_outbound_protocol` |
+| `net.minecraft.network.Connection#syncAfterConfigurationChange` | `crates/mc-protocol/src/ported/connection.rs` | 442 | `sync_after_configuration_change` |
+| `net.minecraft.network.Connection#tick` | `crates/mc-protocol/src/ported/connection.rs` | 717 | `tick` |
+| `net.minecraft.network.Connection#tickSecond` | `crates/mc-protocol/src/ported/connection.rs` | 746 | `tick_second` |
+| `net.minecraft.network.Connection#validateListener` | `crates/mc-protocol/src/ported/connection.rs` | 424 | `validate_listener` |
 | `net.minecraft.network.ConnectionProtocol#id` | `crates/mc-protocol/src/ported/connection_protocol.rs` | 14 | `id` |
 | `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 30 | `new` |
 | `net.minecraft.network.DisconnectionDetails#<init>` | `crates/mc-protocol/src/ported/disconnection_details.rs` | 39 | `from_reason` |

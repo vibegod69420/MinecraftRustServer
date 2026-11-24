@@ -357,3 +357,4 @@ pub mod translatable_contents;
 pub mod component_utils;
 pub mod signable_command;
 pub mod block_data_source;
+pub mod connection;
