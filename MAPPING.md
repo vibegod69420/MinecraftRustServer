@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9513** across **2162** classes.
+Total mapped Java symbols: **9530** across **2163** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -6942,6 +6942,26 @@ Total mapped Java symbols: **9513** across **2162** classes.
 | `net.minecraft.util.datafix.fixes.OverreachingTickFix#OverreachingTickFix` | `crates/mc-math/src/ported/overreaching_tick_fix.rs` | 110 | `new` |
 | `net.minecraft.util.datafix.fixes.OverreachingTickFix#extractOverreachingTicks` | `crates/mc-math/src/ported/overreaching_tick_fix.rs` | 136 | `extract_overreaching_ticks` |
 | `net.minecraft.util.datafix.fixes.OverreachingTickFix#makeRule` | `crates/mc-math/src/ported/overreaching_tick_fix.rs` | 115 | `fix_chunk` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#fix` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 491 | `fix` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#fix (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 23 | `create_string` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#fix (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 30 | `create_int` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#fix (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 44 | `create_map` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#fix (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 76 | `as_string` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#parseBlockProperties` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 619 | `parse_block_properties` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#parseTag` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 237 | `parse_tag` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#readVector` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 657 | `read_vector` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#readVector (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 62 | `create_list` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateBlock` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 590 | `update_block` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateBlock (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 55 | `empty_map` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateDust` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 671 | `update_dust` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateDust (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 37 | `create_float` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateDustTransition` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 692 | `update_dust_transition` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateItem` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 567 | `update_item` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateItem (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 85 | `set` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateSculkCharge` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 716 | `update_sculk_charge` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateShriek` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 771 | `update_shriek` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateVibration` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 733 | `update_vibration` |
+| `net.minecraft.util.datafix.fixes.ParticleUnflatteningFix#updateVibration (helper` | `crates/mc-math/src/ported/particle_unflattening_fix.rs` | 69 | `create_int_list` |
 | `net.minecraft.util.datafix.fixes.PlayerEquipmentFix#PlayerEquipmentFix` | `crates/mc-math/src/ported/player_equipment_fix.rs` | 141 | `new` |
 | `net.minecraft.util.datafix.fixes.PlayerEquipmentFix#SLOT_TRANSLATIONS` | `crates/mc-math/src/ported/player_equipment_fix.rs` | 126 | `slot_translation` |
 | `net.minecraft.util.datafix.fixes.PlayerEquipmentFix#makeRule` | `crates/mc-math/src/ported/player_equipment_fix.rs` | 146 | `apply` |

@@ -603,3 +603,4 @@ pub mod map_banner_block_pos_format_fix;
 pub mod gc_heap_stat;
 pub mod v2832;
 pub mod chunk_biome_fix;
+pub mod particle_unflattening_fix;
