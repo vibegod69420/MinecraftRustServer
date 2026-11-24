@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9551** across **2167** classes.
+Total mapped Java symbols: **9577** across **2170** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -34,6 +34,7 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `Math.round(float)` | `crates/mc-nbt/src/ported/enchanted_count_increase_function.rs` | 97 | `<item>` |
 | `NewVillageFix chunk transformation` | `crates/mc-math/src/ported/new_village_fix.rs` | 143 | `fix_chunk` |
 | `NewVillageFix structure feature id transformation` | `crates/mc-math/src/ported/new_village_fix.rs` | 153 | `fix_structure_feature` |
+| `Pattern` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 192 | `<item>` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 51 | `is_reserved_windows_filename` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 55 | `is_reserved_windows_filename` |
 | `Pattern.compile(` | `crates/mc-math/src/ported/file_util.rs` | 86 | `is_strict_path_segment` |
@@ -53,6 +54,7 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `StatsRenameFix#createStatRule()` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 56 | `apply_stat_renames` |
 | `StatsRenameFix.<init>(Schema, String, Map<String, String>)` | `crates/mc-math/src/ported/stats_rename_fix.rs` | 19 | `new` |
 | `StreamCodec.composite(GameType.STREAM_CODEC, mode getter, constructor)` | `crates/mc-protocol/src/ported/serverbound_change_game_mode_packet.rs` | 31 | `<item>` |
+| `Strings.repeat` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 202 | `<item>` |
 | `Util.pauseInIde(...) is an IDE debug hook` | `crates/mc-math/src/ported/weighted_random.rs` | 42 | `<item>` |
 | `VERSION_CUSTOM (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 172 | `<item>` |
 | `VERSION_DEFLATE (id` | `crates/mc-worldgen/src/ported/region_file_version.rs` | 148 | `<item>` |
@@ -1979,6 +1981,7 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `net.minecraft.nbt.StringTag#quoteAndEscape` | `crates/mc-nbt/src/ported/snbt_printer_tag_visitor.rs` | 40 | `quote_and_escape` |
 | `net.minecraft.nbt.StringTag#quoteAndEscape` | `crates/mc-nbt/src/ported/string_tag.rs` | 204 | `quote_and_escape` |
 | `net.minecraft.nbt.StringTag#quoteAndEscape` | `crates/mc-nbt/src/ported/string_tag.rs` | 211 | `quote_and_escape_to` |
+| `net.minecraft.nbt.StringTag#quoteAndEscape` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 163 | `quote_and_escape` |
 | `net.minecraft.nbt.StringTag#readAccounted` | `crates/mc-nbt/src/ported/string_tag.rs` | 187 | `read_accounted` |
 | `net.minecraft.nbt.StringTag#sizeInBytes` | `crates/mc-nbt/src/ported/string_tag.rs` | 100 | `size_in_bytes` |
 | `net.minecraft.nbt.StringTag#skip` | `crates/mc-nbt/src/ported/string_tag.rs` | 167 | `skip` |
@@ -2018,6 +2021,7 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `net.minecraft.nbt.StringTagVisitor#visitString` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 21 | `visit_string` |
 | `net.minecraft.nbt.StringTagVisitor#visitTag` | `crates/mc-nbt/src/ported/string_tag_visitor.rs` | 146 | `visit_tag` |
 | `net.minecraft.nbt.Tag` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 2 | `copy_tag` |
+| `net.minecraft.nbt.Tag#accept (dispatch)` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 135 | `accept` |
 | `net.minecraft.nbt.Tag#copy` | `crates/mc-nbt/src/ported/primitive_tag.rs` | 4 | `copy_tag` |
 | `net.minecraft.nbt.TagParser#ERROR_EXPECTED_COMPOUND` | `crates/mc-nbt/src/ported/tag_parser.rs` | 131 | `make_error_expected_compound` |
 | `net.minecraft.nbt.TagParser#ERROR_TRAILING_DATA` | `crates/mc-nbt/src/ported/tag_parser.rs` | 126 | `make_error_trailing_data` |
@@ -2051,6 +2055,24 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `net.minecraft.nbt.TagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 35 | `visit_long_array` |
 | `net.minecraft.nbt.TagVisitor#visitShort` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 14 | `visit_short` |
 | `net.minecraft.nbt.TagVisitor#visitString` | `crates/mc-nbt/src/ported/tag_visitor.rs` | 8 | `visit_string` |
+| `net.minecraft.nbt.TextComponentTagVisitor#<init>` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 282 | `new` |
+| `net.minecraft.nbt.TextComponentTagVisitor#appendSubTag` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 558 | `append_sub_tag` |
+| `net.minecraft.nbt.TextComponentTagVisitor#handleEscapePretty` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 576 | `handle_escape_pretty` |
+| `net.minecraft.nbt.TextComponentTagVisitor#shouldWrapListElements` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 430 | `should_wrap_list_elements` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visit` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 292 | `visit` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitByte` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 309 | `visit_byte` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitByteArray` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 350 | `visit_byte_array` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitCompound` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 506 | `visit_compound` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitDouble` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 343 | `visit_double` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitEnd` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 594 | `visit_end` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitFloat` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 336 | `visit_float` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitInt` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 323 | `visit_int` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitIntArray` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 377 | `visit_int_array` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitList` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 445 | `visit_list` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitLong` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 329 | `visit_long` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitLongArray` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 403 | `visit_long_array` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitShort` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 316 | `visit_short` |
+| `net.minecraft.nbt.TextComponentTagVisitor#visitString` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 298 | `visit_string` |
 | `net.minecraft.nbt.visitors.CollectFields#<init>` | `crates/mc-nbt/src/ported/collect_fields.rs` | 194 | `new` |
 | `net.minecraft.nbt.visitors.CollectFields#getMissingFieldCount` | `crates/mc-nbt/src/ported/collect_fields.rs` | 282 | `get_missing_field_count` |
 | `net.minecraft.nbt.visitors.CollectFields#visitContainerEnd` | `crates/mc-nbt/src/ported/collect_fields.rs` | 268 | `visit_container_end` |
@@ -2954,7 +2976,9 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `net.minecraft.network.chat.Component` | `crates/mc-protocol/src/ported/clientbound_player_chat_packet.rs` | 238 | `<item>` |
 | `net.minecraft.network.chat.Component#copy` | `crates/mc-protocol/src/ported/fixed_format.rs` | 31 | `copy` |
 | `net.minecraft.network.chat.Component#empty` | `crates/mc-protocol/src/ported/blank_format.rs` | 24 | `empty` |
+| `net.minecraft.network.chat.Component#empty (adapted)` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 27 | `empty` |
 | `net.minecraft.network.chat.Component#literal` | `crates/mc-protocol/src/ported/hover_event.rs` | 53 | `literal` |
+| `net.minecraft.network.chat.Component#literal (adapted)` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 34 | `literal` |
 | `net.minecraft.network.chat.Component#literal(String)` | `crates/mc-protocol/src/ported/chat_type.rs` | 16 | `literal` |
 | `net.minecraft.network.chat.Component#translatable` | `crates/mc-nbt/src/ported/tag_parser.rs` | 13 | `translatable` |
 | `net.minecraft.network.chat.Component#translatable` | `crates/mc-protocol/src/ported/hover_event.rs` | 58 | `translatable` |
@@ -3094,7 +3118,10 @@ Total mapped Java symbols: **9551** across **2167** classes.
 | `net.minecraft.network.chat.MessageSignatureCache#push` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 80 | `push_list` |
 | `net.minecraft.network.chat.MessageSignatureCache#push` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 85 | `push_deque` |
 | `net.minecraft.network.chat.MessageSignatureCache#unpack` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 62 | `unpack` |
+| `net.minecraft.network.chat.MutableComponent#append(Component` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 76 | `append_component` |
+| `net.minecraft.network.chat.MutableComponent#append(String) (adapted)` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 67 | `append_str` |
 | `net.minecraft.network.chat.MutableComponent#create` | `crates/mc-protocol/src/ported/component_contents.rs` | 42 | `create` |
+| `net.minecraft.network.chat.MutableComponent#withStyle (adapted)` | `crates/mc-nbt/src/ported/text_component_tag_visitor.rs` | 59 | `with_style` |
 | `net.minecraft.network.chat.OutgoingChatMessage#content` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 110 | `content` |
 | `net.minecraft.network.chat.OutgoingChatMessage#create` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 126 | `create` |
 | `net.minecraft.network.chat.OutgoingChatMessage#sendToPlayer` | `crates/mc-protocol/src/ported/outgoing_chat_message.rs` | 118 | `send_to_player` |
