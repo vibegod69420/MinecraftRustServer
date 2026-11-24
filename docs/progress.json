@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 16:54:02 UTC",
-  "updated_epoch": 1795539242,
+  "updated_at": "2026-11-24 17:00:02 UTC",
+  "updated_epoch": 1795539602,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 843
+    "harness_failed_attempts": 844
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3078,
-    "prompt_tokens": 10648633,
-    "completion_tokens": 52412168,
-    "reasoning_tokens": 37425913,
-    "avg_latency_s": 278.3
+    "calls_total": 3079,
+    "prompt_tokens": 10652274,
+    "completion_tokens": 52436240,
+    "reasoning_tokens": 37443715,
+    "avg_latency_s": 278.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T16:58:53Z",
+      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3225.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T16:52:42Z",
       "class_name": "net.minecraft.util.profiling.FilledProfileResults",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 829.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T16:04:44Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 810.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "420f8e0",
+      "ts": "2026-11-24T16:54:02+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "0d4836c",
       "ts": "2026-11-24T16:48:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "d1e6525",
       "ts": "2026-11-24T15:28:04+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "ccbae2e",
-      "ts": "2026-11-24T15:22:10+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
