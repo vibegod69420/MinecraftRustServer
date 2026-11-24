@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 10:28:04 UTC",
-  "updated_epoch": 1795516084,
+  "updated_at": "2026-11-24 10:34:02 UTC",
+  "updated_epoch": 1795516442,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2387,
     "method_coverage_pct": 14.314,
     "harness_verified_classes": 1375,
-    "harness_failed_attempts": 681
+    "harness_failed_attempts": 685
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 2696,
-    "prompt_tokens": 9289603,
-    "completion_tokens": 45455106,
-    "reasoning_tokens": 32440281,
-    "avg_latency_s": 273.0
+    "calls_total": 2702,
+    "prompt_tokens": 9311671,
+    "completion_tokens": 45595986,
+    "reasoning_tokens": 32521896,
+    "avg_latency_s": 274.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T10:33:14Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 968.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T10:32:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 936.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T10:32:29Z",
+      "class_name": "net.minecraft.util.CubicSpline",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 924.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T10:32:04Z",
+      "class_name": "net.minecraft.nbt.TextComponentTagVisitor",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 899.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T10:27:39Z",
       "class_name": "net.minecraft.core.RegistrySynchronization",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 98.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T08:56:32Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 64.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T08:55:25Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 57.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T04:44:04Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3209.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T04:38:27Z",
-      "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2871.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0370918",
+      "ts": "2026-11-24T10:28:04+00:00",
+      "message": "Worker sync: 9544 mapped Java methods"
+    },
     {
       "sha": "91e8fbd",
       "ts": "2026-11-24T10:24:25+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "3f36014",
       "ts": "2026-11-24T09:16:02+00:00",
-      "message": "Worker sync: 9539 mapped Java methods"
-    },
-    {
-      "sha": "791221b",
-      "ts": "2026-11-24T09:10:02+00:00",
       "message": "Worker sync: 9539 mapped Java methods"
     }
   ]

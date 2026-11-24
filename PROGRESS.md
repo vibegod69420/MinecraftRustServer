@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-24 10:28:04 UTC
+- **Updated**: 2026-11-24 10:34:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9544 / 66676 (14.314%)
 - **Mapped Java Classes**: 2166 / 7163 (30.239%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (968.8s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (936.0s)
+- [FAIL] `net.minecraft.util.CubicSpline` -> `mc-math` (924.1s)
+- [FAIL] `net.minecraft.nbt.TextComponentTagVisitor` -> `mc-nbt` (899.0s)
 - [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (634.1s)
 - [PASS] `net.minecraft.network.chat.SignableCommand` -> `mc-protocol` (435.2s)
 - [FAIL] `net.minecraft.network.chat.contents.data.BlockDataSource` -> `mc-protocol` (405.1s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.LocationCheck` -> `mc-nbt` (267.6s)
 - [FAIL] `net.minecraft.world.level.storage.loot.entries.AlternativesEntry` -> `mc-nbt` (263.8s)
 - [FAIL] `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer` -> `mc-nbt` (263.8s)
-- [FAIL] `net.minecraft.world.level.storage.loot.entries.TagEntry` -> `mc-nbt` (263.8s)
-- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1480.3s)
-- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (581.5s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (659.1s)
