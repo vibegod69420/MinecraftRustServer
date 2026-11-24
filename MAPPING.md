@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9652** across **2175** classes.
+Total mapped Java symbols: **9669** across **2179** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11584,8 +11584,16 @@ Total mapped Java symbols: **9652** across **2175** classes.
 | `net.minecraft.world.level.storage.loot.LootPool$Builder#setRolls` | `crates/mc-nbt/src/ported/loot_pool.rs` | 249 | `set_rolls` |
 | `net.minecraft.world.level.storage.loot.LootPool$Builder#unwrap` | `crates/mc-nbt/src/ported/loot_pool.rs` | 255 | `unwrap` |
 | `net.minecraft.world.level.storage.loot.LootPool$Builder#when` | `crates/mc-nbt/src/ported/loot_pool.rs` | 272 | `when` |
+| `net.minecraft.world.level.storage.loot.ValidationContext#forChild` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 30 | `for_child` |
+| `net.minecraft.world.level.storage.loot.ValidationContext#forChild` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 35 | `for_child` |
 | `net.minecraft.world.level.storage.loot.ValidationContext#forChild` | `crates/mc-nbt/src/ported/slot_loot.rs` | 75 | `for_child` |
 | `net.minecraft.world.level.storage.loot.ValidationContext#forChild (FieldPathElement simplified)` | `crates/mc-nbt/src/ported/modify_container_contents.rs` | 43 | `for_child` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 1 | `<item>` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry#UNREACHABLE_PROBLEM` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 121 | `unreachable_problem` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry#compose` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 137 | `compose` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry#getType` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 132 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry#validate` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 146 | `validate` |
+| `net.minecraft.world.level.storage.loot.entries.AlternativesEntry.Builder#build` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 184 | `build` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_FALSE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 45 | `always_false` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 50 | `always_true` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#and` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 64 | `and` |
@@ -11616,6 +11624,17 @@ Total mapped Java symbols: **9652** across **2175** classes.
 | `net.minecraft.world.level.storage.loot.entries.LootPoolEntries#register` | `crates/mc-nbt/src/ported/loot_pool_entries.rs` | 26 | `register` |
 | `net.minecraft.world.level.storage.loot.entries.LootPoolEntry#createItemStack` | `crates/mc-nbt/src/ported/loot_pool_entry.rs` | 46 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.LootPoolEntry#getWeight` | `crates/mc-nbt/src/ported/loot_pool_entry.rs` | 43 | `get_weight` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 1 | `<item>` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer#canRun` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 77 | `can_run` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer#getType` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 82 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer#validate` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 66 | `validate` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer#validate (base behavior)` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 86 | `validate` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#append` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 124 | `append` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#getConditions` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 114 | `get_conditions` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#getThis` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 99 | `get_this` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#otherwise` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 119 | `otherwise` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#then` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 129 | `then` |
+| `net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer.Builder#when` | `crates/mc-nbt/src/ported/loot_pool_entry_container.rs` | 104 | `when` |
 | `net.minecraft.world.level.storage.loot.entries.LootPoolEntryType#LootPoolEntryType` | `crates/mc-nbt/src/ported/loot_pool_entry_type.rs` | 35 | `new` |
 | `net.minecraft.world.level.storage.loot.entries.LootPoolEntryType#codec` | `crates/mc-nbt/src/ported/loot_pool_entry_type.rs` | 40 | `codec` |
 | `net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer#simpleBuilder` | `crates/mc-nbt/src/ported/dynamic_loot.rs` | 103 | `simple_builder` |
