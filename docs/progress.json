@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 12:08:03 UTC",
-  "updated_epoch": 1795522083,
+  "updated_at": "2026-11-24 12:14:02 UTC",
+  "updated_epoch": 1795522442,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.2946,
     "method_coverage_pct": 14.3635,
     "harness_verified_classes": 1377,
-    "harness_failed_attempts": 730
+    "harness_failed_attempts": 731
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 2758,
-    "prompt_tokens": 9519470,
-    "completion_tokens": 46532610,
-    "reasoning_tokens": 33144343,
-    "avg_latency_s": 271.5
+    "calls_total": 2761,
+    "prompt_tokens": 9531158,
+    "completion_tokens": 46591075,
+    "reasoning_tokens": 33193217,
+    "avg_latency_s": 271.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T12:13:17Z",
+      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 714.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T12:01:18Z",
       "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
@@ -365,17 +373,14 @@
       "verified": true,
       "seconds": 275.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T10:40:34Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1409.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "2576eae",
+      "ts": "2026-11-24T12:08:03+00:00",
+      "message": "Worker sync: 9577 mapped Java methods"
+    },
     {
       "sha": "c663e1b",
       "ts": "2026-11-24T12:00:15+00:00",
@@ -445,11 +450,6 @@
       "sha": "3e7bfa8",
       "ts": "2026-11-24T10:48:03+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "8f1ea88",
-      "ts": "2026-11-24T10:46:47+00:00",
-      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
     }
   ]
 }
