@@ -355,3 +355,4 @@ pub mod hashed_patch_map;
 pub mod clientbound_set_objective_packet;
 pub mod translatable_contents;
 pub mod component_utils;
+pub mod signable_command;

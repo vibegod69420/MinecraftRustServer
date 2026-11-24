@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9539** across **2164** classes.
+Total mapped Java symbols: **9544** across **2166** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -3117,6 +3117,11 @@ Total mapped Java symbols: **9539** across **2164** classes.
 | `net.minecraft.network.chat.RemoteChatSession$Data#validate` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 175 | `validate` |
 | `net.minecraft.network.chat.RemoteChatSession$Data#write` | `crates/mc-protocol/src/ported/remote_chat_session.rs` | 169 | `write` |
 | `net.minecraft.network.chat.RemoteChatSession$Data#write` | `crates/mc-protocol/src/ported/serverbound_chat_session_update_packet.rs` | 86 | `write` |
+| `net.minecraft.network.chat.SignableCommand#collectArguments` | `crates/mc-protocol/src/ported/signable_command.rs` | 115 | `collect_arguments` |
+| `net.minecraft.network.chat.SignableCommand#getArgument` | `crates/mc-protocol/src/ported/signable_command.rs` | 133 | `get_argument` |
+| `net.minecraft.network.chat.SignableCommand#hasSignableArguments` | `crates/mc-protocol/src/ported/signable_command.rs` | 92 | `has_signable_arguments` |
+| `net.minecraft.network.chat.SignableCommand#of` | `crates/mc-protocol/src/ported/signable_command.rs` | 97 | `of` |
+| `net.minecraft.network.chat.SignableCommand$Argument#name` | `crates/mc-protocol/src/ported/signable_command.rs` | 57 | `name` |
 | `net.minecraft.network.chat.SignedMessageBody#lastSeen` | `crates/mc-protocol/src/ported/message_signature_cache.rs` | 27 | `last_seen` |
 | `net.minecraft.network.chat.SignedMessageBody#pack` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 251 | `pack` |
 | `net.minecraft.network.chat.SignedMessageBody#unsigned` | `crates/mc-protocol/src/ported/signed_message_body.rs` | 226 | `unsigned` |
