@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 15:58:01 UTC",
-  "updated_epoch": 1795535881,
+  "updated_at": "2026-11-24 16:04:02 UTC",
+  "updated_epoch": 1795536242,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 798
+    "harness_failed_attempts": 803
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 2972,
-    "prompt_tokens": 10224339,
-    "completion_tokens": 50188943,
-    "reasoning_tokens": 35826042,
-    "avg_latency_s": 262.9
+    "calls_total": 2989,
+    "prompt_tokens": 10281914,
+    "completion_tokens": 50566566,
+    "reasoning_tokens": 36106124,
+    "avg_latency_s": 263.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T16:03:34Z",
+      "class_name": "net.minecraft.world.level.levelgen.blending.Blender",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 740.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T16:02:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 655.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T16:00:06Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 532.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:59:22Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 488.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T15:59:17Z",
+      "class_name": "net.minecraft.world.level.levelgen.WorldDimensions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 483.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T15:50:51Z",
       "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 784.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T15:01:07Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 754.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T15:00:56Z",
-      "class_name": "net.minecraft.world.level.levelgen.carver.CaveWorldCarver",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 743.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T15:00:16Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 703.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T14:59:25Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 653.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T14:48:28Z",
-      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1562.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0141982",
+      "ts": "2026-11-24T15:58:01+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "1267bec",
       "ts": "2026-11-24T15:52:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "5ccd598",
       "ts": "2026-11-24T14:50:02+00:00",
-      "message": "Worker sync: 9577 mapped Java methods"
-    },
-    {
-      "sha": "c0ae866",
-      "ts": "2026-11-24T14:44:24+00:00",
       "message": "Worker sync: 9577 mapped Java methods"
     }
   ]
