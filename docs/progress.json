@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24 21:34:02 UTC",
-  "updated_epoch": 1795556042,
+  "updated_at": "2026-11-24 21:40:01 UTC",
+  "updated_epoch": 1795556401,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.3644,
     "method_coverage_pct": 14.476,
     "harness_verified_classes": 1379,
-    "harness_failed_attempts": 925
+    "harness_failed_attempts": 932
   },
   "crates": [
     {
@@ -47,13 +47,69 @@
     }
   ],
   "usage": {
-    "calls_total": 3274,
-    "prompt_tokens": 11686740,
-    "completion_tokens": 55290907,
-    "reasoning_tokens": 39292069,
-    "avg_latency_s": 285.5
+    "calls_total": 3279,
+    "prompt_tokens": 11704837,
+    "completion_tokens": 55315288,
+    "reasoning_tokens": 39307568,
+    "avg_latency_s": 283.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-24T21:35:49Z",
+      "class_name": "net.minecraft.core.particles.DustColorTransitionOptions",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 391.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:35:13Z",
+      "class_name": "net.minecraft.world.level.storage.WorldData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 355.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:35:13Z",
+      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 355.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:35:13Z",
+      "class_name": "net.minecraft.world.level.storage.ValueOutput",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 355.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:34:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 294.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:34:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 294.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-24T21:34:12Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 294.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-24T21:29:15Z",
       "class_name": "net.minecraft.core.particles.DustColorTransitionOptions",
@@ -317,65 +373,14 @@
       "verified": false,
       "seconds": 658.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:03:38Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 658.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:03:09Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 629.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:02:01Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MemoryExpiryDataFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 560.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:02:01Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 560.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T18:01:55Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1460",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 554.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T17:52:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1488.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T17:48:38Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1460",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1356.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "cc40d7a",
+      "ts": "2026-11-24T21:34:02+00:00",
+      "message": "Worker sync: 9652 mapped Java methods"
+    },
     {
       "sha": "bc335a3",
       "ts": "2026-11-24T21:28:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "17807ec",
       "ts": "2026-11-24T20:10:02+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "8b1138e",
-      "ts": "2026-11-24T20:04:01+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
