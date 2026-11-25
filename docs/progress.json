@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 14:34:03 UTC",
-  "updated_epoch": 1795617243,
+  "updated_at": "2026-11-25 14:40:21 UTC",
+  "updated_epoch": 1795617621,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1245
+    "harness_failed_attempts": 1246
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3941,
-    "prompt_tokens": 14418110,
-    "completion_tokens": 67025906,
-    "reasoning_tokens": 47473938,
-    "avg_latency_s": 263.0
+    "calls_total": 3946,
+    "prompt_tokens": 14433066,
+    "completion_tokens": 67068488,
+    "reasoning_tokens": 47493331,
+    "avg_latency_s": 261.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T14:36:56Z",
+      "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 555.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T14:17:36Z",
       "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 801.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T12:22:34Z",
-      "class_name": "net.minecraft.util.CubicSpline",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 696.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "38ed1cc",
+      "ts": "2026-11-25T14:34:03+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "4251713",
       "ts": "2026-11-25T14:28:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "e664558",
       "ts": "2026-11-25T13:06:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "681f987",
-      "ts": "2026-11-25T13:00:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
