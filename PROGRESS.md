@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 23:38:02 UTC
+- **Updated**: 2026-11-25 23:44:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9745 / 66676 (14.616%)
 - **Mapped Java Classes**: 2203 / 7163 (30.755%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (1238.2s)
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (2984.2s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix` -> `mc-math` (774.2s)
+- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (2846.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix` -> `mc-math` (1228.9s)
 - [FAIL] `net.minecraft.world.level.chunk.PalettedContainer` -> `mc-worldgen` (2590.7s)
 - [FAIL] `net.minecraft.util.profiling.jfr.parse.JfrStatsParser` -> `mc-math` (1391.9s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.util.profiling.jfr.JfrProfiler` -> `mc-math` (470.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.SurfaceRules` -> `mc-worldgen` (1634.8s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V704` -> `mc-math` (551.9s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkProtoTickListFix` -> `mc-math` (351.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces` -> `mc-worldgen` (1373.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (1369.8s)
-- [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (1201.4s)

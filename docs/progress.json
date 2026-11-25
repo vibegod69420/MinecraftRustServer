@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 23:38:02 UTC",
-  "updated_epoch": 1795649882,
+  "updated_at": "2026-11-25 23:44:03 UTC",
+  "updated_epoch": 1795650243,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1359
+    "harness_failed_attempts": 1363
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 4265,
-    "prompt_tokens": 15703679,
-    "completion_tokens": 73743016,
-    "reasoning_tokens": 52487439,
-    "avg_latency_s": 267.7
+    "calls_total": 4270,
+    "prompt_tokens": 15745465,
+    "completion_tokens": 73852027,
+    "reasoning_tokens": 52548423,
+    "avg_latency_s": 270.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T23:42:35Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1460",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1238.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:40:57Z",
+      "class_name": "net.minecraft.world.level.chunk.LevelChunk",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2984.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:38:54Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 774.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:38:39Z",
+      "class_name": "net.minecraft.world.level.chunk.status.ChunkStep",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2846.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T23:37:34Z",
       "class_name": "net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 1364.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:49:59Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseRouterData",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1642.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:43:53Z",
-      "class_name": "net.minecraft.world.level.levelgen.SurfaceRules",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1191.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:42:52Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1985.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:41:50Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1922.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f950541",
+      "ts": "2026-11-25T23:38:02+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "14c341f",
       "ts": "2026-11-25T23:32:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "2badd4b",
       "ts": "2026-11-25T22:12:01+00:00",
-      "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "6fec050",
-      "ts": "2026-11-25T22:06:02+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
     }
   ]
