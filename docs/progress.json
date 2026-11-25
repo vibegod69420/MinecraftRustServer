@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 08:28:02 UTC",
-  "updated_epoch": 1795595282,
+  "updated_at": "2026-11-25 08:34:01 UTC",
+  "updated_epoch": 1795595641,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1121
+    "harness_failed_attempts": 1124
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 3713,
-    "prompt_tokens": 13414907,
-    "completion_tokens": 63350927,
-    "reasoning_tokens": 44921048,
-    "avg_latency_s": 263.9
+    "calls_total": 3715,
+    "prompt_tokens": 13424965,
+    "completion_tokens": 63413648,
+    "reasoning_tokens": 44965110,
+    "avg_latency_s": 265.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T08:32:39Z",
+      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 5914.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T08:29:36Z",
+      "class_name": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 2946.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T08:28:54Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3361.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T08:27:00Z",
       "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1008.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:23:02Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2958.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:21:01Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2214.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:20:36Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 3453.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "87c2c9c",
+      "ts": "2026-11-25T08:28:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "1cd1463",
       "ts": "2026-11-25T08:22:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "b30b48a",
       "ts": "2026-11-25T07:02:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "b1c3e89",
-      "ts": "2026-11-25T06:56:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]

@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 08:28:02 UTC
+- **Updated**: 2026-11-25 08:34:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStatusTasks` -> `mc-worldgen` (5914.3s)
+- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (2946.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkProtoTickListFix` -> `mc-math` (3361.4s)
 - [FAIL] `net.minecraft.util.profiling.jfr.JfrProfiler` -> `mc-math` (3203.1s)
 - [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (3680.5s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (4562.2s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix` -> `mc-math` (433.3s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (3624.1s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V705` -> `mc-math` (583.6s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityBlockStateFix` -> `mc-math` (475.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (4242.2s)
-- [FAIL] `net.minecraft.util.profiling.FilledProfileResults` -> `mc-math` (1079.6s)
