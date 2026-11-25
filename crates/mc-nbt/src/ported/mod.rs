@@ -148,3 +148,5 @@ pub mod composite_entry_base;
 pub mod location_check;
 pub mod set_firework_explosion_function;
 pub mod function_reference;
+pub mod loot_item_random_chance_with_enchanted_bonus_condition;
+pub mod set_item_damage_function;
