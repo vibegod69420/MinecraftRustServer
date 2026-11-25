@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 19:34:02 UTC",
-  "updated_epoch": 1795635242,
+  "updated_at": "2026-11-25 19:40:02 UTC",
+  "updated_epoch": 1795635602,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1268
+    "harness_failed_attempts": 1270
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4008,
-    "prompt_tokens": 14629831,
-    "completion_tokens": 68088099,
-    "reasoning_tokens": 48308121,
-    "avg_latency_s": 257.9
+    "calls_total": 4028,
+    "prompt_tokens": 14678081,
+    "completion_tokens": 68519247,
+    "reasoning_tokens": 48662520,
+    "avg_latency_s": 254.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T19:39:57Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 565.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:39:40Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 548.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T19:30:28Z",
       "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 2095.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:38:37Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2095.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:38:37Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2095.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "57c2035",
+      "ts": "2026-11-25T19:34:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "bba03e9",
       "ts": "2026-11-25T19:28:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "2a12d78",
       "ts": "2026-11-25T18:10:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "95f1647",
-      "ts": "2026-11-25T18:04:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
