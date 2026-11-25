@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 05:32:02 UTC",
-  "updated_epoch": 1795584722,
+  "updated_at": "2026-11-25 05:38:05 UTC",
+  "updated_epoch": 1795585085,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1031
+    "harness_failed_attempts": 1035
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3505,
-    "prompt_tokens": 12459930,
-    "completion_tokens": 59205366,
-    "reasoning_tokens": 42082399,
-    "avg_latency_s": 270.0
+    "calls_total": 3514,
+    "prompt_tokens": 12497205,
+    "completion_tokens": 59418328,
+    "reasoning_tokens": 42246492,
+    "avg_latency_s": 272.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T05:38:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2247.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:35:52Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheck",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1169.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:34:31Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 999.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:34:19Z",
+      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 2021.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T05:30:14Z",
       "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 1179.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T01:11:46Z",
-      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1003.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T01:10:11Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 908.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T01:10:11Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 908.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T01:10:11Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 908.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "40a5d22",
+      "ts": "2026-11-25T05:32:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "8bc19bd",
       "ts": "2026-11-25T05:26:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "fc33dfd",
       "ts": "2026-11-25T04:08:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "78895fb",
-      "ts": "2026-11-25T04:02:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
