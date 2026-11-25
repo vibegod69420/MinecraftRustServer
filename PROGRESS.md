@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 12:24:20 UTC
+- **Updated**: 2026-11-25 12:31:27 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9709 / 66676 (14.562%)
 - **Mapped Java Classes**: 2194 / 7163 (30.630%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.storage.loot.predicates.ConditionReference` -> `mc-nbt` (1227.0s)
+- [PASS] `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition` -> `mc-nbt` (1227.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (801.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (801.0s)
 - [FAIL] `net.minecraft.util.CubicSpline` -> `mc-math` (696.4s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (1051.1s)
 - [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (1014.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction` -> `mc-nbt` (751.5s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.FunctionReference` -> `mc-nbt` (751.5s)
-- [PASS] `net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction` -> `mc-nbt` (751.5s)
