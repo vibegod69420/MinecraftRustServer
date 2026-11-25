@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9695** across **2188** classes.
+Total mapped Java symbols: **9699** across **2190** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -567,6 +567,7 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.advancements.criterion.DamageSourcePredicate$Builder#build` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 115 | `build` |
 | `net.minecraft.advancements.criterion.EnchantmentPredicate#containedIn` | `crates/mc-math/src/ported/enchantments_predicate.rs` | 61 | `contained_in` |
 | `net.minecraft.advancements.criterion.ItemPredicate#test` | `crates/mc-nbt/src/ported/match_tool.rs` | 56 | `test` |
+| `net.minecraft.advancements.criterion.LocationPredicate#matches` | `crates/mc-nbt/src/ported/location_check.rs` | 43 | `matches` |
 | `net.minecraft.advancements.criterion.MinMaxBounds$Ints#matches(int)` | `crates/mc-math/src/ported/damage_predicate.rs` | 42 | `matches` |
 | `net.minecraft.advancements.criterion.MinMaxBounds.Ints#matches` | `crates/mc-math/src/ported/fireworks_predicate.rs` | 41 | `matches` |
 | `net.minecraft.advancements.criterion.StatePropertiesPredicate#checkState` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 157 | `check_state` |
@@ -602,6 +603,7 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.core.BlockPos` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 70 | `<item>` |
 | `net.minecraft.core.BlockPos` | `crates/mc-worldgen/src/ported/monster_room_feature.rs` | 5 | `<item>` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-math/src/packing.rs` | 27 | `new` |
+| `net.minecraft.core.BlockPos#<init>` | `crates/mc-nbt/src/ported/location_check.rs` | 11 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/clientbound_block_event_packet.rs` | 16 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/clientbound_section_blocks_update_packet.rs` | 298 | `new` |
 | `net.minecraft.core.BlockPos#<init>` | `crates/mc-protocol/src/ported/serverbound_set_test_block_packet.rs` | 161 | `new` |
@@ -1224,6 +1226,7 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.core.Vec3i#equals` | `crates/mc-math/src/ported/vec3i.rs` | 369 | `eq` |
 | `net.minecraft.core.Vec3i#get` | `crates/mc-math/src/ported/vec3i.rs` | 357 | `get` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-math/src/ported/vec3i.rs` | 89 | `get_x` |
+| `net.minecraft.core.Vec3i#getX` | `crates/mc-nbt/src/ported/location_check.rs` | 16 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 31 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 14 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 48 | `get_x` |
@@ -1236,6 +1239,7 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/spring_feature.rs` | 14 | `get_x` |
 | `net.minecraft.core.Vec3i#getX` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 19 | `get_x` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-math/src/ported/vec3i.rs` | 94 | `get_y` |
+| `net.minecraft.core.Vec3i#getY` | `crates/mc-nbt/src/ported/location_check.rs` | 21 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 36 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 19 | `get_y` |
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 53 | `get_y` |
@@ -1250,6 +1254,7 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.core.Vec3i#getY` | `crates/mc-worldgen/src/ported/void_start_platform_feature.rs` | 24 | `get_y` |
 | `net.minecraft.core.Vec3i#getY()` | `crates/mc-worldgen/src/ported/creaking_heart_decorator.rs` | 28 | `get_y` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-math/src/ported/vec3i.rs` | 99 | `get_z` |
+| `net.minecraft.core.Vec3i#getZ` | `crates/mc-nbt/src/ported/location_check.rs` | 26 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/axis_aligned_linear_pos_test.rs` | 41 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 24 | `get_z` |
 | `net.minecraft.core.Vec3i#getZ` | `crates/mc-worldgen/src/ported/bamboo_feature.rs` | 58 | `get_z` |
@@ -11528,9 +11533,11 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.world.level.storage.loot.LootContext#addDynamicDrops` | `crates/mc-nbt/src/ported/dynamic_loot.rs` | 70 | `add_dynamic_drops` |
 | `net.minecraft.world.level.storage.loot.LootContext#getLevel` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 23 | `get_level` |
 | `net.minecraft.world.level.storage.loot.LootContext#getLevel` | `crates/mc-nbt/src/ported/exploration_map_function.rs` | 195 | `get_level` |
+| `net.minecraft.world.level.storage.loot.LootContext#getLevel` | `crates/mc-nbt/src/ported/location_check.rs` | 60 | `get_level` |
 | `net.minecraft.world.level.storage.loot.LootContext#getOptionalParameter` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 13 | `get_optional_parameter_damage_source` |
 | `net.minecraft.world.level.storage.loot.LootContext#getOptionalParameter` | `crates/mc-nbt/src/ported/damage_source_condition.rs` | 18 | `get_optional_parameter_origin` |
 | `net.minecraft.world.level.storage.loot.LootContext#getOptionalParameter` | `crates/mc-nbt/src/ported/exploration_map_function.rs` | 190 | `get_optional_parameter_origin` |
+| `net.minecraft.world.level.storage.loot.LootContext#getOptionalParameter` | `crates/mc-nbt/src/ported/location_check.rs` | 55 | `get_optional_parameter_origin` |
 | `net.minecraft.world.level.storage.loot.LootContext#getOptionalParameter` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 140 | `get_optional_parameter` |
 | `net.minecraft.world.level.storage.loot.LootContext#getRandom` | `crates/mc-nbt/src/ported/set_attributes_function.rs` | 34 | `get_random` |
 | `net.minecraft.world.level.storage.loot.LootContext#hasParameter` | `crates/mc-nbt/src/ported/loot_item_killed_by_player_condition.rs` | 36 | `has_parameter` |
@@ -12085,6 +12092,10 @@ Total mapped Java symbols: **9695** across **2188** classes.
 | `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#term` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 37 | `term` |
 | `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#test` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 47 | `test` |
 | `net.minecraft.world.level.storage.loot.predicates.InvertedLootItemCondition#validate` | `crates/mc-nbt/src/ported/inverted_loot_item_condition.rs` | 57 | `validate` |
+| `net.minecraft.world.level.storage.loot.predicates.LocationCheck#checkLocation` | `crates/mc-nbt/src/ported/location_check.rs` | 98 | `check_location` |
+| `net.minecraft.world.level.storage.loot.predicates.LocationCheck#checkLocation` | `crates/mc-nbt/src/ported/location_check.rs` | 106 | `check_location_with_offset` |
+| `net.minecraft.world.level.storage.loot.predicates.LocationCheck#getReferencedContextParams` | `crates/mc-nbt/src/ported/location_check.rs` | 90 | `get_referenced_context_params` |
+| `net.minecraft.world.level.storage.loot.predicates.LocationCheck#test` | `crates/mc-nbt/src/ported/location_check.rs` | 73 | `test` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition#getReferencedContextParams` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 249 | `get_referenced_context_params` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition#getType` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 244 | `get_type` |
 | `net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition#hasBlockStateProperties` | `crates/mc-nbt/src/ported/loot_item_block_state_property_condition.rs` | 237 | `has_block_state_properties` |
