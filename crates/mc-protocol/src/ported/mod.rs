@@ -359,3 +359,4 @@ pub mod signable_command;
 pub mod block_data_source;
 pub mod connection;
 pub mod synched_entity_data;
+pub mod clientbound_commands_packet;

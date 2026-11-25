@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 21:10:02 UTC",
-  "updated_epoch": 1795641002,
+  "updated_at": "2026-11-25 21:16:18 UTC",
+  "updated_epoch": 1795641378,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -17,11 +17,11 @@
   "totals": {
     "server_classes": 7163,
     "server_methods": 66676,
-    "mapped_classes": 2194,
-    "mapped_methods": 9709,
-    "class_coverage_pct": 30.6296,
-    "method_coverage_pct": 14.5615,
-    "harness_verified_classes": 1388,
+    "mapped_classes": 2203,
+    "mapped_methods": 9745,
+    "class_coverage_pct": 30.7553,
+    "method_coverage_pct": 14.6155,
+    "harness_verified_classes": 1389,
     "harness_failed_attempts": 1303
   },
   "crates": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "mc-protocol",
-      "mapped_methods": 3587
+      "mapped_methods": 3640
     },
     {
       "name": "mc-worldgen",
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 4100,
-    "prompt_tokens": 14941672,
-    "completion_tokens": 70396134,
-    "reasoning_tokens": 50197361,
-    "avg_latency_s": 266.6
+    "calls_total": 4120,
+    "prompt_tokens": 14992372,
+    "completion_tokens": 70713099,
+    "reasoning_tokens": 50437025,
+    "avg_latency_s": 261.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T21:16:16Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
+      "crate": "mc-protocol",
+      "verified": true,
+      "seconds": 389.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T21:09:43Z",
       "class_name": "net.minecraft.world.level.levelgen.blending.Blender",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1243.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T18:32:14Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1233.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9f1109b",
+      "ts": "2026-11-25T21:10:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "ce86bef",
       "ts": "2026-11-25T21:04:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "9ba8802",
       "ts": "2026-11-25T19:46:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "e40556a",
-      "ts": "2026-11-25T19:40:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
