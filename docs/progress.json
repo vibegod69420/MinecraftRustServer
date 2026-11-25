@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 07:14:02 UTC",
-  "updated_epoch": 1795590842,
+  "updated_at": "2026-11-25 07:20:02 UTC",
+  "updated_epoch": 1795591202,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1078
+    "harness_failed_attempts": 1081
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 3632,
-    "prompt_tokens": 12968679,
-    "completion_tokens": 62007115,
-    "reasoning_tokens": 44128807,
-    "avg_latency_s": 266.8
+    "calls_total": 3636,
+    "prompt_tokens": 12992354,
+    "completion_tokens": 62097800,
+    "reasoning_tokens": 44188957,
+    "avg_latency_s": 264.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T07:16:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3182.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T07:15:52Z",
+      "class_name": "net.minecraft.world.level.chunk.ChunkAccess",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 748.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T07:15:48Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3165.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T07:11:06Z",
       "class_name": "net.minecraft.world.level.chunk.UpgradeData",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 2778.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T05:46:52Z",
-      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2774.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T05:42:18Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2501.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T05:41:10Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2432.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6b52799",
+      "ts": "2026-11-25T07:14:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "dec78d8",
       "ts": "2026-11-25T07:08:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "957806f",
       "ts": "2026-11-25T05:50:01+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "e222ce9",
-      "ts": "2026-11-25T05:44:01+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
