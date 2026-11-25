@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 09:40:16 UTC",
-  "updated_epoch": 1795599616,
+  "updated_at": "2026-11-25 09:46:02 UTC",
+  "updated_epoch": 1795599962,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1141
+    "harness_failed_attempts": 1146
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 3765,
-    "prompt_tokens": 13678252,
-    "completion_tokens": 64302089,
-    "reasoning_tokens": 45583056,
-    "avg_latency_s": 256.6
+    "calls_total": 3777,
+    "prompt_tokens": 13734156,
+    "completion_tokens": 64475092,
+    "reasoning_tokens": 45701845,
+    "avg_latency_s": 257.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T09:43:54Z",
+      "class_name": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 587.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:43:51Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.SerializableChunkData",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1665.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:43:34Z",
+      "class_name": "net.minecraft.util.datafix.fixes.GameRuleRegistryFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 385.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:43:18Z",
+      "class_name": "net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1580.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:43:07Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V704",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 464.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T09:37:09Z",
       "class_name": "net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 1079.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:48:28Z",
-      "class_name": "net.minecraft.util.datafix.fixes.GameRuleRegistryFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 940.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:48:11Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1654.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:47:14Z",
-      "class_name": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1371.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:44:46Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StatsCounterFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 544.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:43:08Z",
-      "class_name": "net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1622.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1f9a9e7",
+      "ts": "2026-11-25T09:40:16+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "7002fb1",
       "ts": "2026-11-25T09:34:08+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "4ca7390",
       "ts": "2026-11-25T08:10:23+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "7ae5b1b",
-      "ts": "2026-11-25T08:04:08+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
