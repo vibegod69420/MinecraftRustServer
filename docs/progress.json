@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 00:30:02 UTC",
-  "updated_epoch": 1795566602,
+  "updated_at": "2026-11-25 00:36:02 UTC",
+  "updated_epoch": 1795566962,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 978
+    "harness_failed_attempts": 982
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3352,
-    "prompt_tokens": 11988702,
-    "completion_tokens": 56571561,
-    "reasoning_tokens": 40133674,
-    "avg_latency_s": 280.8
+    "calls_total": 3353,
+    "prompt_tokens": 11995692,
+    "completion_tokens": 56610188,
+    "reasoning_tokens": 40133881,
+    "avg_latency_s": 281.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T00:35:27Z",
+      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1296.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:35:27Z",
+      "class_name": "net.minecraft.util.datafix.fixes.LevelUUIDFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1296.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:35:27Z",
+      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1296.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:35:27Z",
+      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1296.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T00:27:09Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
@@ -341,41 +373,14 @@
       "verified": true,
       "seconds": 594.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:14:52Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 594.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:11:21Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 384.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:11:21Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 384.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:11:21Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.LocationCheck",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 384.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f31d2d3",
+      "ts": "2026-11-25T00:30:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "e454187",
       "ts": "2026-11-25T00:24:10+00:00",
@@ -445,11 +450,6 @@
       "sha": "910c5b0",
       "ts": "2026-11-24T23:14:53+00:00",
       "message": "Port 2 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
-    },
-    {
-      "sha": "fe6b0bb",
-      "ts": "2026-11-24T23:10:04+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
 }
