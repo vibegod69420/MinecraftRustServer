@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 08:20:02 UTC
+- **Updated**: 2026-11-25 08:28:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.profiling.jfr.JfrProfiler` -> `mc-math` (3203.1s)
+- [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (3680.5s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (4562.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.AttributeModifierIdFix` -> `mc-math` (2636.1s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (1481.7s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityBlockStateFix` -> `mc-math` (475.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (4242.2s)
 - [FAIL] `net.minecraft.util.profiling.FilledProfileResults` -> `mc-math` (1079.6s)
-- [FAIL] `net.minecraft.util.datafix.fixes.GameRuleRegistryFix` -> `mc-math` (940.9s)
-- [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (1654.5s)
