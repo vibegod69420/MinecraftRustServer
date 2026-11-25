@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 10:42:01 UTC
+- **Updated**: 2026-11-25 10:52:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (5691.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (3266.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces` -> `mc-worldgen` (5129.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkProtoTickListFix` -> `mc-math` (2843.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (4406.7s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.chunk.status.ChunkStatusTasks` -> `mc-worldgen` (2855.6s)
 - [FAIL] `net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix` -> `mc-math` (1118.1s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (517.7s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V705` -> `mc-math` (939.1s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (2628.3s)
