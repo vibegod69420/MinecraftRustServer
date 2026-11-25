@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 22:30:02 UTC",
-  "updated_epoch": 1795645802,
+  "updated_at": "2026-11-25 22:36:02 UTC",
+  "updated_epoch": 1795646162,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1328
+    "harness_failed_attempts": 1329
   },
   "crates": [
     {
@@ -54,6 +54,14 @@
     "avg_latency_s": 269.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T22:35:57Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 5170.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T22:06:16Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1118.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T20:19:42Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1769.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "45776e0",
+      "ts": "2026-11-25T22:30:02+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "1ee1ac2",
       "ts": "2026-11-25T22:24:02+00:00",
@@ -445,11 +450,6 @@
       "sha": "46f3843",
       "ts": "2026-11-25T21:16:18+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "9f1109b",
-      "ts": "2026-11-25T21:10:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
 }
