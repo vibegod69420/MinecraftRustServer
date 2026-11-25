@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 00:42:03 UTC",
-  "updated_epoch": 1795567323,
+  "updated_at": "2026-11-25 00:48:12 UTC",
+  "updated_epoch": 1795567692,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 982
+    "harness_failed_attempts": 989
   },
   "crates": [
     {
@@ -47,13 +47,69 @@
     }
   ],
   "usage": {
-    "calls_total": 3357,
-    "prompt_tokens": 12008843,
-    "completion_tokens": 56676521,
-    "reasoning_tokens": 40184556,
-    "avg_latency_s": 281.6
+    "calls_total": 3363,
+    "prompt_tokens": 12038557,
+    "completion_tokens": 56745903,
+    "reasoning_tokens": 40225785,
+    "avg_latency_s": 281.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T00:48:11Z",
+      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 759.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:48:11Z",
+      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 759.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:48:11Z",
+      "class_name": "net.minecraft.util.datafix.fixes.LevelUUIDFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 759.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:47:06Z",
+      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 694.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:47:06Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 694.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:47:06Z",
+      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 694.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:47:06Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 694.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T00:35:27Z",
       "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
@@ -317,65 +373,14 @@
       "verified": false,
       "seconds": 1183.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:21:12Z",
-      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 975.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:20:55Z",
-      "class_name": "net.minecraft.util.CubicSpline",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 958.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:17:27Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 750.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:16:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 702.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:16:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 702.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:14:52Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.TagEntry",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 594.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:14:52Z",
-      "class_name": "net.minecraft.world.level.storage.loot.entries.AlternativesEntry",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 594.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f2ee840",
+      "ts": "2026-11-25T00:42:03+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "0c457ea",
       "ts": "2026-11-25T00:36:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "8484645",
       "ts": "2026-11-24T23:22:02+00:00",
-      "message": "Worker sync: 9669 mapped Java methods"
-    },
-    {
-      "sha": "e5862db",
-      "ts": "2026-11-24T23:16:09+00:00",
       "message": "Worker sync: 9669 mapped Java methods"
     }
   ]
