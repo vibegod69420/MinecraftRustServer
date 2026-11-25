@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 09:58:01 UTC",
-  "updated_epoch": 1795600681,
+  "updated_at": "2026-11-25 10:04:01 UTC",
+  "updated_epoch": 1795601041,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1151
+    "harness_failed_attempts": 1157
   },
   "crates": [
     {
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 3795,
-    "prompt_tokens": 13825443,
-    "completion_tokens": 64840603,
-    "reasoning_tokens": 45989280,
-    "avg_latency_s": 262.6
+    "calls_total": 3806,
+    "prompt_tokens": 13882693,
+    "completion_tokens": 65041130,
+    "reasoning_tokens": 46134174,
+    "avg_latency_s": 262.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T10:03:41Z",
+      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2855.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T10:02:30Z",
+      "class_name": "net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1118.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T10:02:26Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V1460",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 517.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T10:01:53Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V705",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 939.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:59:54Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.IOWorker",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2628.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:59:45Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.SectionStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2619.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T09:55:19Z",
       "class_name": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
@@ -325,57 +373,14 @@
       "verified": false,
       "seconds": 2636.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T08:11:56Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1460",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1481.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T08:09:28Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1813.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T08:08:35Z",
-      "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4487.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T08:06:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1105.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:57:16Z",
-      "class_name": "net.minecraft.world.level.chunk.PalettedContainer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 3473.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:56:52Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 433.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "2aa3254",
+      "ts": "2026-11-25T09:58:01+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "126a080",
       "ts": "2026-11-25T09:52:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "87c2c9c",
       "ts": "2026-11-25T08:28:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "1cd1463",
-      "ts": "2026-11-25T08:22:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
