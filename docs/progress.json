@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 15:22:01 UTC",
-  "updated_epoch": 1795620121,
+  "updated_at": "2026-11-25 15:28:11 UTC",
+  "updated_epoch": 1795620491,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1254
+    "harness_failed_attempts": 1255
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3969,
-    "prompt_tokens": 14515030,
-    "completion_tokens": 67339381,
-    "reasoning_tokens": 47697419,
-    "avg_latency_s": 258.8
+    "calls_total": 3975,
+    "prompt_tokens": 14537400,
+    "completion_tokens": 67404126,
+    "reasoning_tokens": 47747346,
+    "avg_latency_s": 256.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T15:22:56Z",
+      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 850.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T15:17:46Z",
       "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1422.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:02:16Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1422.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "98f2846",
+      "ts": "2026-11-25T15:22:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "db6d6a9",
       "ts": "2026-11-25T15:16:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "5ddf63f",
       "ts": "2026-11-25T13:58:03+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "3382e44",
-      "ts": "2026-11-25T13:50:03+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
