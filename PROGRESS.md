@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 12:01:24 UTC
+- **Updated**: 2026-11-25 12:06:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9701 / 66676 (14.550%)
 - **Mapped Java Classes**: 2192 / 7163 (30.602%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (1014.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction` -> `mc-nbt` (751.5s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.FunctionReference` -> `mc-nbt` (751.5s)
 - [PASS] `net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction` -> `mc-nbt` (751.5s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (475.9s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (475.9s)
 - [FAIL] `net.minecraft.world.level.storage.loot.entries.SequentialEntry` -> `mc-nbt` (387.4s)
-- [FAIL] `net.minecraft.world.level.storage.loot.entries.EntryGroup` -> `mc-nbt` (387.4s)
