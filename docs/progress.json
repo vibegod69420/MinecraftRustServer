@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 12:06:02 UTC",
-  "updated_epoch": 1795608362,
+  "updated_at": "2026-11-25 12:09:54 UTC",
+  "updated_epoch": 1795608594,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 9701,
     "class_coverage_pct": 30.6017,
     "method_coverage_pct": 14.5495,
-    "harness_verified_classes": 1385,
-    "harness_failed_attempts": 1200
+    "harness_verified_classes": 1386,
+    "harness_failed_attempts": 1203
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3878,
+    "calls_total": 3880,
     "prompt_tokens": 14190223,
     "completion_tokens": 66055296,
     "reasoning_tokens": 46787987,
-    "avg_latency_s": 257.6
+    "avg_latency_s": 259.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T12:09:53Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 1262.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:09:53Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 1262.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:09:53Z",
+      "class_name": "net.minecraft.world.level.storage.loot.predicates.LocationCheck",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 1262.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:06:21Z",
+      "class_name": "net.minecraft.util.Crypt",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1051.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T12:05:44Z",
       "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 3266.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:41:35Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 5129.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:30:31Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2843.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:29:32Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseChunk",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4406.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:26:37Z",
-      "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3655.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9e17aaa",
+      "ts": "2026-11-25T12:06:02+00:00",
+      "message": "Worker sync: 9701 mapped Java methods"
+    },
     {
       "sha": "ae1c28b",
       "ts": "2026-11-25T12:01:24+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "3ba8fe9",
       "ts": "2026-11-25T11:04:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "059120a",
-      "ts": "2026-11-25T10:58:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
