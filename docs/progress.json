@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 19:58:01 UTC",
-  "updated_epoch": 1795636681,
+  "updated_at": "2026-11-25 20:04:02 UTC",
+  "updated_epoch": 1795637042,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1279
+    "harness_failed_attempts": 1280
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 4058,
-    "prompt_tokens": 14759390,
-    "completion_tokens": 69334777,
-    "reasoning_tokens": 49357178,
-    "avg_latency_s": 259.7
+    "calls_total": 4065,
+    "prompt_tokens": 14786546,
+    "completion_tokens": 69541690,
+    "reasoning_tokens": 49528308,
+    "avg_latency_s": 263.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T20:01:47Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1875.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T19:56:56Z",
       "class_name": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 496.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:58:31Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1190.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "563048a",
+      "ts": "2026-11-25T19:58:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "4f14ca7",
       "ts": "2026-11-25T19:52:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "34567ec",
       "ts": "2026-11-25T18:34:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "779b2f5",
-      "ts": "2026-11-25T18:28:01+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
