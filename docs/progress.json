@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 11:38:03 UTC",
-  "updated_epoch": 1795606683,
+  "updated_at": "2026-11-25 11:40:02 UTC",
+  "updated_epoch": 1795606802,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.5459,
     "method_coverage_pct": 14.5405,
     "harness_verified_classes": 1383,
-    "harness_failed_attempts": 1188
+    "harness_failed_attempts": 1191
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 3853,
-    "prompt_tokens": 14083503,
-    "completion_tokens": 65700331,
-    "reasoning_tokens": 46605737,
-    "avg_latency_s": 261.7
+    "calls_total": 3855,
+    "prompt_tokens": 14090907,
+    "completion_tokens": 65709753,
+    "reasoning_tokens": 46610918,
+    "avg_latency_s": 261.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T11:39:30Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 475.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T11:39:30Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 475.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T11:39:30Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 475.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T11:38:01Z",
       "class_name": "net.minecraft.world.level.storage.loot.entries.SequentialEntry",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 2628.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T09:59:45Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.SectionStorage",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2619.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T09:55:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 474.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T09:53:49Z",
-      "class_name": "net.minecraft.util.profiling.FilledProfileResults",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1059.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "598823d",
+      "ts": "2026-11-25T11:38:04+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "5a77587",
       "ts": "2026-11-25T11:34:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "599a6f5",
       "ts": "2026-11-25T10:16:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "9e63dfe",
-      "ts": "2026-11-25T10:10:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
