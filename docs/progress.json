@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 15:04:02 UTC",
-  "updated_epoch": 1795619042,
+  "updated_at": "2026-11-25 15:10:01 UTC",
+  "updated_epoch": 1795619401,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1249
+    "harness_failed_attempts": 1250
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3953,
-    "prompt_tokens": 14458679,
-    "completion_tokens": 67147672,
-    "reasoning_tokens": 47551956,
-    "avg_latency_s": 260.3
+    "calls_total": 3955,
+    "prompt_tokens": 14466529,
+    "completion_tokens": 67202528,
+    "reasoning_tokens": 47594022,
+    "avg_latency_s": 260.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T15:08:42Z",
+      "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1901.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T14:48:08Z",
       "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1637.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T12:31:25Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.ConditionReference",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 1227.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8ac8f03",
+      "ts": "2026-11-25T15:04:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "acabfd4",
       "ts": "2026-11-25T14:58:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "c2a3eba",
       "ts": "2026-11-25T13:36:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "d941acf",
-      "ts": "2026-11-25T13:30:01+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
