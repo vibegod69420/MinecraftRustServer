@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 12:21:27 UTC",
-  "updated_epoch": 1795609287,
+  "updated_at": "2026-11-25 12:24:20 UTC",
+  "updated_epoch": 1795609460,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1387,
-    "harness_failed_attempts": 1205
+    "harness_failed_attempts": 1209
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3898,
-    "prompt_tokens": 14267071,
-    "completion_tokens": 66238194,
-    "reasoning_tokens": 46902698,
-    "avg_latency_s": 261.4
+    "calls_total": 3900,
+    "prompt_tokens": 14276280,
+    "completion_tokens": 66260656,
+    "reasoning_tokens": 46913358,
+    "avg_latency_s": 262.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T12:24:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 801.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:24:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 801.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:22:34Z",
+      "class_name": "net.minecraft.util.CubicSpline",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 696.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:22:00Z",
+      "class_name": "net.minecraft.util.Crypt",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 662.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T12:21:24Z",
       "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 398.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T11:03:44Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworksFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 398.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T11:03:44Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 398.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:58:56Z",
-      "class_name": "net.minecraft.world.level.levelgen.GenerationStep",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 110.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:58:32Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 86.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "900046c",
+      "ts": "2026-11-25T12:21:27+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "b093468",
       "ts": "2026-11-25T12:18:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a8d9c9d",
       "ts": "2026-11-25T11:28:01+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "728caaa",
-      "ts": "2026-11-25T11:22:01+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
