@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 19:52:01 UTC",
-  "updated_epoch": 1795636321,
+  "updated_at": "2026-11-25 19:58:01 UTC",
+  "updated_epoch": 1795636681,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1274
+    "harness_failed_attempts": 1279
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 4047,
-    "prompt_tokens": 14727859,
-    "completion_tokens": 69073470,
-    "reasoning_tokens": 49141362,
-    "avg_latency_s": 254.7
+    "calls_total": 4058,
+    "prompt_tokens": 14759390,
+    "completion_tokens": 69334777,
+    "reasoning_tokens": 49357178,
+    "avg_latency_s": 259.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T19:56:56Z",
+      "class_name": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
+      "crate": "mc-protocol",
+      "verified": false,
+      "seconds": 1584.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:55:54Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1522.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:55:03Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1471.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:54:42Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1450.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:52:18Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1306.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T19:50:12Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 1190.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:57:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1118.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:57:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1118.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:57:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1118.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:57:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1118.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:53:00Z",
-      "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 859.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "4f14ca7",
+      "ts": "2026-11-25T19:52:01+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "9ba8802",
       "ts": "2026-11-25T19:46:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "779b2f5",
       "ts": "2026-11-25T18:28:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "a9e7bab",
-      "ts": "2026-11-25T18:22:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
