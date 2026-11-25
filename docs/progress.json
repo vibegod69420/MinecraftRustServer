@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 23:32:03 UTC",
-  "updated_epoch": 1795649523,
+  "updated_at": "2026-11-25 23:38:02 UTC",
+  "updated_epoch": 1795649882,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1357
+    "harness_failed_attempts": 1359
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4262,
-    "prompt_tokens": 15688016,
-    "completion_tokens": 73645038,
-    "reasoning_tokens": 52415740,
-    "avg_latency_s": 267.5
+    "calls_total": 4265,
+    "prompt_tokens": 15703679,
+    "completion_tokens": 73743016,
+    "reasoning_tokens": 52487439,
+    "avg_latency_s": 267.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T23:37:34Z",
+      "class_name": "net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1228.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:34:23Z",
+      "class_name": "net.minecraft.world.level.chunk.PalettedContainer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2590.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T23:27:33Z",
       "class_name": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1922.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:39:31Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 876.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:38:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1697.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "14c341f",
+      "ts": "2026-11-25T23:32:03+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "01bb301",
       "ts": "2026-11-25T23:26:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6fec050",
       "ts": "2026-11-25T22:06:02+00:00",
-      "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "9c08df6",
-      "ts": "2026-11-25T22:00:02+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
     }
   ]
