@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 12:40:01 UTC
+- **Updated**: 2026-11-25 12:54:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9709 / 66676 (14.562%)
 - **Mapped Java Classes**: 2194 / 7163 (30.630%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (889.6s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (889.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1637.9s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.ConditionReference` -> `mc-nbt` (1227.0s)
 - [PASS] `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition` -> `mc-nbt` (1227.0s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition` -> `mc-nbt` (1262.7s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.ConditionReference` -> `mc-nbt` (1262.7s)
 - [PASS] `net.minecraft.world.level.storage.loot.predicates.LocationCheck` -> `mc-nbt` (1262.7s)
-- [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (1051.1s)
-- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (1014.1s)
