@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 21:24:02 UTC",
-  "updated_epoch": 1795641842,
+  "updated_at": "2026-11-25 21:30:01 UTC",
+  "updated_epoch": 1795642201,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1306
+    "harness_failed_attempts": 1310
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 4135,
-    "prompt_tokens": 15049196,
-    "completion_tokens": 71071841,
-    "reasoning_tokens": 50719858,
-    "avg_latency_s": 261.4
+    "calls_total": 4148,
+    "prompt_tokens": 15102628,
+    "completion_tokens": 71375420,
+    "reasoning_tokens": 50952772,
+    "avg_latency_s": 263.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T21:28:51Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1143.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T21:28:35Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1127.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T21:25:45Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 440.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T21:24:55Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 908.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T21:24:02Z",
       "class_name": "net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 955.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T19:46:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 366.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T19:39:57Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 565.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T19:39:40Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.IglooPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 548.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T19:30:28Z",
-      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 4728.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5702ebd",
+      "ts": "2026-11-25T21:24:02+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "dab919b",
       "ts": "2026-11-25T21:18:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "3d4867a",
       "ts": "2026-11-25T20:10:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "fd61ed0",
-      "ts": "2026-11-25T20:04:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]

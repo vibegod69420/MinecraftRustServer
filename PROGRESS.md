@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 21:24:02 UTC
+- **Updated**: 2026-11-25 21:30:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9745 / 66676 (14.616%)
 - **Mapped Java Classes**: 2203 / 7163 (30.755%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature` -> `mc-worldgen` (1143.8s)
+- [FAIL] `net.minecraft.world.level.levelgen.DensityFunction` -> `mc-worldgen` (1127.9s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (440.5s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (908.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator` -> `mc-worldgen` (450.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (769.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (517.5s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseRouterData` -> `mc-worldgen` (2615.9s)
 - [FAIL] `net.minecraft.util.debug.TrackingDebugSynchronizer` -> `mc-math` (4052.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature` -> `mc-worldgen` (3855.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (3738.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (3496.5s)
-- [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (1147.2s)
-- [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (1193.0s)
