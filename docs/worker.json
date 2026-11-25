@@ -1,1 +1,1 @@
-{"state": "idle", "class_name": null, "crate": null, "attempt": 0, "verified_count": 1382, "workers": 18, "active_classes": [], "ts": "2026-11-25T01:34:48Z"}
+{"state": "generating", "class_name": "net.minecraft.util.eventlog.EventLogDirectory", "crate": "mc-math", "attempt": 2, "verified_count": 1382, "workers": 18, "active_classes": [{"class_name": "net.minecraft.util.eventlog.EventLogDirectory", "crate": "mc-math", "attempt": 2, "state": "generating"}], "ts": "2026-11-25T01:48:31Z"}
