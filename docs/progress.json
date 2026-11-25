@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 10:52:01 UTC",
-  "updated_epoch": 1795603921,
+  "updated_at": "2026-11-25 10:58:01 UTC",
+  "updated_epoch": 1795604281,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1169
+    "harness_failed_attempts": 1170
   },
   "crates": [
     {
@@ -54,6 +54,14 @@
     "avg_latency_s": 263.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T10:57:02Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3792.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T10:50:57Z",
       "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 660.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T09:27:06Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 660.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1f8753e",
+      "ts": "2026-11-25T10:52:01+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "88d9ee2",
       "ts": "2026-11-25T10:46:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "1ffd3a3",
       "ts": "2026-11-25T09:28:04+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "11ab0fd",
-      "ts": "2026-11-25T09:16:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
