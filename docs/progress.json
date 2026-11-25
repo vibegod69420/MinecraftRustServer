@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 09:34:08 UTC",
-  "updated_epoch": 1795599248,
+  "updated_at": "2026-11-25 09:40:16 UTC",
+  "updated_epoch": 1795599616,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1135
+    "harness_failed_attempts": 1141
   },
   "crates": [
     {
@@ -47,13 +47,61 @@
     }
   ],
   "usage": {
-    "calls_total": 3754,
-    "prompt_tokens": 13638056,
-    "completion_tokens": 64117187,
-    "reasoning_tokens": 45436597,
-    "avg_latency_s": 252.3
+    "calls_total": 3765,
+    "prompt_tokens": 13678252,
+    "completion_tokens": 64302089,
+    "reasoning_tokens": 45583056,
+    "avg_latency_s": 256.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T09:37:09Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1263.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:37:09Z",
+      "class_name": "net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1263.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:37:09Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1263.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:37:09Z",
+      "class_name": "net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1263.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:36:10Z",
+      "class_name": "net.minecraft.util.parsing.packrat.commands.Grammar",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1204.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T09:35:23Z",
+      "class_name": "net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 497.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T09:34:07Z",
       "class_name": "net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix",
@@ -325,57 +373,14 @@
       "verified": false,
       "seconds": 1622.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:40:29Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 554.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:39:15Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V704",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 466.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:35:42Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1475.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:35:42Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1475.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:35:42Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1475.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T07:35:42Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1475.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7002fb1",
+      "ts": "2026-11-25T09:34:08+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "1ffd3a3",
       "ts": "2026-11-25T09:28:04+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "7ae5b1b",
       "ts": "2026-11-25T08:04:08+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "e933f3b",
-      "ts": "2026-11-25T07:58:03+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
