@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 02:20:02 UTC",
-  "updated_epoch": 1795573202,
+  "updated_at": "2026-11-25 02:26:02 UTC",
+  "updated_epoch": 1795573562,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1000
+    "harness_failed_attempts": 1002
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 3389,
-    "prompt_tokens": 12133567,
-    "completion_tokens": 57194540,
-    "reasoning_tokens": 40522470,
-    "avg_latency_s": 278.0
+    "calls_total": 3392,
+    "prompt_tokens": 12146241,
+    "completion_tokens": 57240372,
+    "reasoning_tokens": 40555338,
+    "avg_latency_s": 278.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T02:24:19Z",
+      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 883.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T02:21:29Z",
+      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 713.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T02:19:55Z",
       "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1124.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:48:00Z",
-      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1027.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:45:02Z",
-      "class_name": "net.minecraft.util.CubicSpline",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 849.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "73446e3",
+      "ts": "2026-11-25T02:20:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "cc7090a",
       "ts": "2026-11-25T02:14:15+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6bb2591",
       "ts": "2026-11-25T00:54:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "2229860",
-      "ts": "2026-11-25T00:48:12+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]

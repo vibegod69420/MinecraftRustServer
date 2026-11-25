@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 02:20:02 UTC
+- **Updated**: 2026-11-25 02:26:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (883.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (713.8s)
 - [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (619.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (417.6s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (384.2s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1135.9s)
 - [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (759.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (759.7s)
-- [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (759.7s)
-- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (694.8s)
