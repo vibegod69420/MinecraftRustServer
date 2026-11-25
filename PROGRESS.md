@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 21:16:18 UTC
+- **Updated**: 2026-11-25 21:24:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9745 / 66676 (14.616%)
 - **Mapped Java Classes**: 2203 / 7163 (30.755%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator` -> `mc-worldgen` (450.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (769.8s)
+- [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (517.5s)
 - [PASS] `net.minecraft.network.protocol.game.ClientboundCommandsPacket` -> `mc-protocol` (389.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.blending.Blender` -> `mc-worldgen` (4501.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (5216.0s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (3496.5s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (1147.2s)
 - [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (1193.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (2217.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (1118.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1769.4s)
