@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 19:46:01 UTC",
-  "updated_epoch": 1795635961,
+  "updated_at": "2026-11-25 19:52:01 UTC",
+  "updated_epoch": 1795636321,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1270
+    "harness_failed_attempts": 1274
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 4037,
-    "prompt_tokens": 14701671,
-    "completion_tokens": 68764368,
-    "reasoning_tokens": 48870683,
-    "avg_latency_s": 254.3
+    "calls_total": 4047,
+    "prompt_tokens": 14727859,
+    "completion_tokens": 69073470,
+    "reasoning_tokens": 49141362,
+    "avg_latency_s": 254.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T19:50:12Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1180.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:49:57Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1165.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:46:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 955.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T19:46:04Z",
+      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 366.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T19:39:57Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 859.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:53:00Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelUUIDFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 859.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:53:00Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 859.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:46:59Z",
-      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 498.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T13:38:37Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2095.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "9ba8802",
+      "ts": "2026-11-25T19:46:01+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "e40556a",
       "ts": "2026-11-25T19:40:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a9e7bab",
       "ts": "2026-11-25T18:22:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "2ae6bc9",
-      "ts": "2026-11-25T18:16:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
