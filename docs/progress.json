@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 05:56:01 UTC",
-  "updated_epoch": 1795586161,
+  "updated_at": "2026-11-25 06:02:01 UTC",
+  "updated_epoch": 1795586521,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1049
+    "harness_failed_attempts": 1054
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 3542,
-    "prompt_tokens": 12631683,
-    "completion_tokens": 60110470,
-    "reasoning_tokens": 42762539,
-    "avg_latency_s": 270.3
+    "calls_total": 3545,
+    "prompt_tokens": 12645985,
+    "completion_tokens": 60211572,
+    "reasoning_tokens": 42838649,
+    "avg_latency_s": 270.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T05:58:31Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2241.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:57:16Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RecreatingSimpleRegionStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1284.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:57:16Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1284.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:57:16Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.ChunkIOErrorReporter",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1284.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:56:36Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1762.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T05:53:44Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 996.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T04:07:14Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 980.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T04:07:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 969.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T04:06:43Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 948.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T03:58:49Z",
-      "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 475.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T03:55:57Z",
-      "class_name": "net.minecraft.world.level.storage.loot.LootTable",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 303.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d277338",
+      "ts": "2026-11-25T05:56:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "957806f",
       "ts": "2026-11-25T05:50:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "52a9837",
       "ts": "2026-11-25T04:32:01+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "2c87af6",
-      "ts": "2026-11-25T04:26:01+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
