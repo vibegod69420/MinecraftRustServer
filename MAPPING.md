@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9699** across **2190** classes.
+Total mapped Java symbols: **9701** across **2192** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11823,6 +11823,7 @@ Total mapped Java symbols: **9699** across **2190** classes.
 | `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#getThis` | `crates/mc-nbt/src/ported/filtered_function.rs` | 188 | `get_this` |
 | `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#onFail` | `crates/mc-nbt/src/ported/filtered_function.rs` | 199 | `on_fail` |
 | `net.minecraft.world.level.storage.loot.functions.FilteredFunction$Builder#onPass` | `crates/mc-nbt/src/ported/filtered_function.rs` | 193 | `on_pass` |
+| `net.minecraft.world.level.storage.loot.functions.FunctionReference` | `crates/mc-nbt/src/ported/function_reference.rs` | 1 | `<item>` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 19 | `apply` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 22 | `apply_iterable` |
 | `net.minecraft.world.level.storage.loot.functions.FunctionUserBuilder#apply` | `crates/mc-nbt/src/ported/function_user_builder.rs` | 35 | `apply_array` |
@@ -11943,6 +11944,7 @@ Total mapped Java symbols: **9699** across **2190** classes.
 | `net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction$Builder#build` | `crates/mc-nbt/src/ported/set_enchantments_function.rs` | 253 | `build` |
 | `net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction$Builder#getThis` | `crates/mc-nbt/src/ported/set_enchantments_function.rs` | 231 | `get_this` |
 | `net.minecraft.world.level.storage.loot.functions.SetEnchantmentsFunction$Builder#withEnchantment` | `crates/mc-nbt/src/ported/set_enchantments_function.rs` | 236 | `with_enchantment` |
+| `net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction` | `crates/mc-nbt/src/ported/set_firework_explosion_function.rs` | 1 | `<item>` |
 | `net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction#<init>` | `crates/mc-nbt/src/ported/set_instrument_function.rs` | 97 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction#CODEC` | `crates/mc-nbt/src/ported/set_instrument_function.rs` | 93 | `new` |
 | `net.minecraft.world.level.storage.loot.functions.SetInstrumentFunction#getType` | `crates/mc-nbt/src/ported/set_instrument_function.rs` | 102 | `get_type` |

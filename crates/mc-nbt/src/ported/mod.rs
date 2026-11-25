@@ -146,3 +146,5 @@ pub mod alternatives_entry;
 pub mod tag_entry;
 pub mod composite_entry_base;
 pub mod location_check;
+pub mod set_firework_explosion_function;
+pub mod function_reference;
