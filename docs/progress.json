@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 23:26:02 UTC",
-  "updated_epoch": 1795649162,
+  "updated_at": "2026-11-25 23:32:03 UTC",
+  "updated_epoch": 1795649523,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1354
+    "harness_failed_attempts": 1357
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4252,
-    "prompt_tokens": 15616866,
-    "completion_tokens": 73322122,
-    "reasoning_tokens": 52191104,
-    "avg_latency_s": 264.6
+    "calls_total": 4262,
+    "prompt_tokens": 15688016,
+    "completion_tokens": 73645038,
+    "reasoning_tokens": 52415740,
+    "avg_latency_s": 267.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T23:27:33Z",
+      "class_name": "net.minecraft.util.profiling.jfr.parse.JfrStatsParser",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1391.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:26:57Z",
+      "class_name": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1262.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T23:26:50Z",
+      "class_name": "net.minecraft.util.profiling.FilledProfileResults",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1014.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T23:25:59Z",
       "class_name": "net.minecraft.util.datafix.schemas.V705",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1697.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:34:01Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1453.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:32:23Z",
-      "class_name": "net.minecraft.world.level.levelgen.WorldDimensions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1355.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T21:31:50Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheck",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1323.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "01bb301",
+      "ts": "2026-11-25T23:26:02+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "95d4b18",
       "ts": "2026-11-25T23:20:05+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "9c08df6",
       "ts": "2026-11-25T22:00:02+00:00",
-      "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "289e5c8",
-      "ts": "2026-11-25T21:54:01+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
     }
   ]
