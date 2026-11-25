@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 12:09:54 UTC
+- **Updated**: 2026-11-25 12:12:09 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9701 / 66676 (14.550%)
 - **Mapped Java Classes**: 2192 / 7163 (30.602%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1312.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition` -> `mc-nbt` (1262.7s)
 - [FAIL] `net.minecraft.world.level.storage.loot.predicates.ConditionReference` -> `mc-nbt` (1262.7s)
 - [PASS] `net.minecraft.world.level.storage.loot.predicates.LocationCheck` -> `mc-nbt` (1262.7s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (688.7s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (532.8s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (532.8s)
-- [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (532.8s)

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 12:09:54 UTC",
-  "updated_epoch": 1795608594,
+  "updated_at": "2026-11-25 12:12:09 UTC",
+  "updated_epoch": 1795608729,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6017,
     "method_coverage_pct": 14.5495,
     "harness_verified_classes": 1386,
-    "harness_failed_attempts": 1203
+    "harness_failed_attempts": 1204
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3880,
-    "prompt_tokens": 14190223,
-    "completion_tokens": 66055296,
-    "reasoning_tokens": 46787987,
-    "avg_latency_s": 259.7
+    "calls_total": 3882,
+    "prompt_tokens": 14201829,
+    "completion_tokens": 66103586,
+    "reasoning_tokens": 46825737,
+    "avg_latency_s": 260.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T12:10:42Z",
+      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1312.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T12:09:53Z",
       "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 5691.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:49:45Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackComponentizationFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3266.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e449a8d",
+      "ts": "2026-11-25T12:09:54+00:00",
+      "message": "Port 1 Java class(es) via DeepSeek V4.1 Flash [Phase A]"
+    },
     {
       "sha": "9e17aaa",
       "ts": "2026-11-25T12:06:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "2219238",
       "ts": "2026-11-25T11:10:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "3ba8fe9",
-      "ts": "2026-11-25T11:04:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
