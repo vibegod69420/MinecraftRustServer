@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 20:34:01 UTC",
-  "updated_epoch": 1795638841,
+  "updated_at": "2026-11-25 20:40:01 UTC",
+  "updated_epoch": 1795639201,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1296
+    "harness_failed_attempts": 1298
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4096,
-    "prompt_tokens": 14921413,
-    "completion_tokens": 70276884,
-    "reasoning_tokens": 50107969,
-    "avg_latency_s": 266.5
+    "calls_total": 4097,
+    "prompt_tokens": 14923542,
+    "completion_tokens": 70325254,
+    "reasoning_tokens": 50151072,
+    "avg_latency_s": 267.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T20:38:04Z",
+      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 4052.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T20:34:47Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3855.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T20:32:50Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 4053.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T17:04:01Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Term",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1760.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T15:34:32Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 691.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1ec8179",
+      "ts": "2026-11-25T20:34:01+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "feb4848",
       "ts": "2026-11-25T20:28:07+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "67eb420",
       "ts": "2026-11-25T19:10:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "35bbd3f",
-      "ts": "2026-11-25T19:04:01+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
