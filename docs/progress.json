@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 14:46:02 UTC",
-  "updated_epoch": 1795617962,
+  "updated_at": "2026-11-25 14:52:01 UTC",
+  "updated_epoch": 1795618321,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1248
+    "harness_failed_attempts": 1249
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3951,
-    "prompt_tokens": 14451592,
-    "completion_tokens": 67117050,
-    "reasoning_tokens": 47526806,
-    "avg_latency_s": 260.5
+    "calls_total": 3953,
+    "prompt_tokens": 14458679,
+    "completion_tokens": 67147672,
+    "reasoning_tokens": 47551956,
+    "avg_latency_s": 260.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T14:48:08Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 667.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T14:44:25Z",
       "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1227.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T12:31:25Z",
-      "class_name": "net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition",
-      "crate": "mc-nbt",
-      "verified": true,
-      "seconds": 1227.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8087977",
+      "ts": "2026-11-25T14:46:02+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "6257eca",
       "ts": "2026-11-25T14:40:21+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a078d1b",
       "ts": "2026-11-25T13:18:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "6388f32",
-      "ts": "2026-11-25T13:12:23+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
