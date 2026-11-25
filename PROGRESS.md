@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 11:20:01 UTC
+- **Updated**: 2026-11-25 11:32:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (2064.3s)
+- [FAIL] `net.minecraft.world.level.chunk.storage.RegionFile` -> `mc-worldgen` (2013.9s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (1342.1s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (1342.1s)
 - [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (1342.1s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (398.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (110.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (86.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (3792.6s)
-- [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (5691.5s)
