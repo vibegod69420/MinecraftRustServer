@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 21:36:02 UTC",
-  "updated_epoch": 1795642562,
+  "updated_at": "2026-11-25 21:42:02 UTC",
+  "updated_epoch": 1795642922,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.7553,
     "method_coverage_pct": 14.6155,
     "harness_verified_classes": 1389,
-    "harness_failed_attempts": 1317
+    "harness_failed_attempts": 1320
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4159,
-    "prompt_tokens": 15151581,
-    "completion_tokens": 71646084,
-    "reasoning_tokens": 51130381,
-    "avg_latency_s": 265.0
+    "calls_total": 4164,
+    "prompt_tokens": 15174592,
+    "completion_tokens": 71814660,
+    "reasoning_tokens": 51257316,
+    "avg_latency_s": 264.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T21:41:50Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1922.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T21:39:31Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 876.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T21:38:04Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1697.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T21:34:01Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 946.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T20:05:31Z",
-      "class_name": "net.minecraft.world.level.storage.loot.LootTable",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 2099.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T20:01:47Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1875.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T19:56:56Z",
-      "class_name": "net.minecraft.network.protocol.game.ClientboundCommandsPacket",
-      "crate": "mc-protocol",
-      "verified": false,
-      "seconds": 1584.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0d3ce60",
+      "ts": "2026-11-25T21:36:02+00:00",
+      "message": "Worker sync: 9745 mapped Java methods"
+    },
     {
       "sha": "ec4b369",
       "ts": "2026-11-25T21:30:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "36db843",
       "ts": "2026-11-25T20:22:02+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "f7d8148",
-      "ts": "2026-11-25T20:16:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]

@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 21:34:01 UTC
+- **Updated**: 2026-11-25 21:42:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9745 / 66676 (14.616%)
 - **Mapped Java Classes**: 2203 / 7163 (30.755%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature` -> `mc-worldgen` (1922.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.DensityFunctions` -> `mc-worldgen` (876.0s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature` -> `mc-worldgen` (1697.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1453.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.WorldDimensions` -> `mc-worldgen` (1355.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheck` -> `mc-worldgen` (1323.0s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement` -> `mc-worldgen` (440.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer` -> `mc-worldgen` (908.2s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator` -> `mc-worldgen` (450.7s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.IcebergFeature` -> `mc-worldgen` (769.8s)
-- [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (517.5s)
-- [PASS] `net.minecraft.network.protocol.game.ClientboundCommandsPacket` -> `mc-protocol` (389.1s)
