@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 00:56:01 UTC
+- **Updated**: 2026-11-25 01:12:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1003.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (908.9s)
+- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (908.9s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (908.9s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (1167.4s)
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1135.9s)
 - [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (759.7s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (694.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (1296.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (1296.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (1296.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (1296.4s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (799.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.DeltaFeature` -> `mc-worldgen` (799.2s)
