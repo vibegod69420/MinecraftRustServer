@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 04:56:02 UTC",
-  "updated_epoch": 1795582562,
+  "updated_at": "2026-11-25 05:02:02 UTC",
+  "updated_epoch": 1795582922,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1019
+    "harness_failed_attempts": 1020
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3444,
-    "prompt_tokens": 12295637,
-    "completion_tokens": 57989257,
-    "reasoning_tokens": 41131242,
+    "calls_total": 3445,
+    "prompt_tokens": 12300886,
+    "completion_tokens": 58013977,
+    "reasoning_tokens": 41150968,
     "avg_latency_s": 272.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T05:00:34Z",
+      "class_name": "net.minecraft.util.debug.TrackingDebugSynchronizer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 4179.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T04:31:13Z",
       "class_name": "net.minecraft.util.parsing.packrat.Term",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1296.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T00:35:27Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1296.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a5426fb",
+      "ts": "2026-11-25T04:56:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "f659fa6",
       "ts": "2026-11-25T04:50:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a024e00",
       "ts": "2026-11-25T03:32:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "3cf92fc",
-      "ts": "2026-11-25T03:26:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
