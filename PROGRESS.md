@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 07:40:03 UTC
+- **Updated**: 2026-11-25 07:46:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.StatsCounterFix` -> `mc-math` (544.3s)
+- [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (1622.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix` -> `mc-math` (554.0s)
 - [FAIL] `net.minecraft.util.datafix.schemas.V704` -> `mc-math` (466.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix` -> `mc-math` (1475.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix` -> `mc-math` (1475.7s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.SurfaceRules` -> `mc-worldgen` (3269.8s)
 - [FAIL] `net.minecraft.world.level.chunk.status.ChunkStep` -> `mc-worldgen` (2499.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix` -> `mc-math` (348.8s)
-- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (1312.9s)
-- [FAIL] `net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix` -> `mc-math` (410.1s)
-- [FAIL] `net.minecraft.util.parsing.packrat.commands.Grammar` -> `mc-math` (587.6s)
