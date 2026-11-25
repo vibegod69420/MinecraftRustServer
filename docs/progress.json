@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 20:28:07 UTC",
-  "updated_epoch": 1795638487,
+  "updated_at": "2026-11-25 20:34:01 UTC",
+  "updated_epoch": 1795638841,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.6296,
     "method_coverage_pct": 14.5615,
     "harness_verified_classes": 1388,
-    "harness_failed_attempts": 1294
+    "harness_failed_attempts": 1296
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4095,
+    "calls_total": 4096,
     "prompt_tokens": 14921413,
     "completion_tokens": 70276884,
     "reasoning_tokens": 50107969,
-    "avg_latency_s": 265.3
+    "avg_latency_s": 266.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T20:32:50Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.GeodeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3738.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T20:28:48Z",
+      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 3496.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T20:28:05Z",
       "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 691.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T15:28:42Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 341.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T15:22:56Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 850.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "feb4848",
+      "ts": "2026-11-25T20:28:07+00:00",
+      "message": "Worker sync: 9709 mapped Java methods"
+    },
     {
       "sha": "36db843",
       "ts": "2026-11-25T20:22:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "35bbd3f",
       "ts": "2026-11-25T19:04:01+00:00",
-      "message": "Worker sync: 9709 mapped Java methods"
-    },
-    {
-      "sha": "455ecd9",
-      "ts": "2026-11-25T18:58:02+00:00",
       "message": "Worker sync: 9709 mapped Java methods"
     }
   ]
