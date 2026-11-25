@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 00:24:10 UTC",
-  "updated_epoch": 1795566250,
+  "updated_at": "2026-11-25 00:30:02 UTC",
+  "updated_epoch": 1795566602,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 975
+    "harness_failed_attempts": 978
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 3351,
-    "prompt_tokens": 11984541,
-    "completion_tokens": 56528956,
-    "reasoning_tokens": 40100161,
-    "avg_latency_s": 281.1
+    "calls_total": 3352,
+    "prompt_tokens": 11988702,
+    "completion_tokens": 56571561,
+    "reasoning_tokens": 40133674,
+    "avg_latency_s": 280.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T00:27:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 799.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:27:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 799.2,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T00:27:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 799.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T00:13:47Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 384.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:09:12Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.FunctionReference",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 255.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:09:12Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 255.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-24T23:09:12Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 255.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e454187",
+      "ts": "2026-11-25T00:24:10+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "ed8637f",
       "ts": "2026-11-25T00:18:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "fe6b0bb",
       "ts": "2026-11-24T23:10:04+00:00",
-      "message": "Worker sync: 9652 mapped Java methods"
-    },
-    {
-      "sha": "2e35e96",
-      "ts": "2026-11-24T23:04:02+00:00",
       "message": "Worker sync: 9652 mapped Java methods"
     }
   ]
