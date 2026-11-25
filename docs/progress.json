@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 03:56:05 UTC",
-  "updated_epoch": 1795578965,
+  "updated_at": "2026-11-25 04:02:02 UTC",
+  "updated_epoch": 1795579322,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1010
+    "harness_failed_attempts": 1011
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 3426,
-    "prompt_tokens": 12255747,
-    "completion_tokens": 57637500,
-    "reasoning_tokens": 40842319,
-    "avg_latency_s": 272.2
+    "calls_total": 3432,
+    "prompt_tokens": 12268449,
+    "completion_tokens": 57697769,
+    "reasoning_tokens": 40884532,
+    "avg_latency_s": 271.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T03:58:49Z",
+      "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 475.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T03:55:57Z",
       "class_name": "net.minecraft.world.level.storage.loot.LootTable",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1224.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T00:05:34Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 731.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "51d4684",
+      "ts": "2026-11-25T03:56:05+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "843baed",
       "ts": "2026-11-25T03:50:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "1143cd7",
       "ts": "2026-11-25T02:32:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "6eb7632",
-      "ts": "2026-11-25T02:26:02+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
