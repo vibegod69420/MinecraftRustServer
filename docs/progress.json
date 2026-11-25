@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 05:26:02 UTC",
-  "updated_epoch": 1795584362,
+  "updated_at": "2026-11-25 05:32:02 UTC",
+  "updated_epoch": 1795584722,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.4342,
     "method_coverage_pct": 14.5105,
     "harness_verified_classes": 1382,
-    "harness_failed_attempts": 1029
+    "harness_failed_attempts": 1031
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 3501,
-    "prompt_tokens": 12449638,
-    "completion_tokens": 59160742,
-    "reasoning_tokens": 42059570,
-    "avg_latency_s": 270.8
+    "calls_total": 3505,
+    "prompt_tokens": 12459930,
+    "completion_tokens": 59205366,
+    "reasoning_tokens": 42082399,
+    "avg_latency_s": 270.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T05:30:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 909.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T05:27:13Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1596.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T05:22:41Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 908.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T00:54:59Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1167.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T00:54:27Z",
-      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1135.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8bc19bd",
+      "ts": "2026-11-25T05:26:02+00:00",
+      "message": "Worker sync: 9675 mapped Java methods"
+    },
     {
       "sha": "7fe47c8",
       "ts": "2026-11-25T05:20:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "78895fb",
       "ts": "2026-11-25T04:02:02+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "51d4684",
-      "ts": "2026-11-25T03:56:05+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
