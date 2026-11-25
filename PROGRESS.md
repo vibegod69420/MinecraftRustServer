@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 23:06:09 UTC
+- **Updated**: 2026-11-25 23:14:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9745 / 66676 (14.616%)
 - **Mapped Java Classes**: 2203 / 7163 (30.755%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (1369.8s)
+- [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (1201.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix` -> `mc-math` (353.1s)
+- [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (1123.0s)
+- [FAIL] `net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix` -> `mc-math` (547.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.NewVillageFix` -> `mc-math` (882.0s)
 - [FAIL] `net.minecraft.util.datafix.fixes.MemoryExpiryDataFix` -> `mc-math` (882.0s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (882.0s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix` -> `mc-math` (788.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix` -> `mc-math` (788.4s)
 - [FAIL] `net.minecraft.util.parsing.packrat.commands.Grammar` -> `mc-math` (484.5s)
-- [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (457.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.blending.Blender` -> `mc-worldgen` (6066.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (5170.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece` -> `mc-worldgen` (3389.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.carver.CaveWorldCarver` -> `mc-worldgen` (2591.2s)
