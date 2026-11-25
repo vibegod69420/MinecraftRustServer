@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25 12:00:02 UTC",
-  "updated_epoch": 1795608002,
+  "updated_at": "2026-11-25 12:01:24 UTC",
+  "updated_epoch": 1795608084,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -21,8 +21,8 @@
     "mapped_methods": 9701,
     "class_coverage_pct": 30.6017,
     "method_coverage_pct": 14.5495,
-    "harness_verified_classes": 1383,
-    "harness_failed_attempts": 1197
+    "harness_verified_classes": 1385,
+    "harness_failed_attempts": 1199
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 3875,
-    "prompt_tokens": 14176119,
-    "completion_tokens": 65934182,
-    "reasoning_tokens": 46738028,
-    "avg_latency_s": 257.8
+    "calls_total": 3877,
+    "prompt_tokens": 14181815,
+    "completion_tokens": 65989760,
+    "reasoning_tokens": 46787958,
+    "avg_latency_s": 256.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-25T12:01:22Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 751.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:01:22Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.FunctionReference",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 751.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:01:22Z",
+      "class_name": "net.minecraft.world.level.storage.loot.functions.SetFireworkExplosionFunction",
+      "crate": "mc-nbt",
+      "verified": true,
+      "seconds": 751.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-25T12:01:11Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 741.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-25T11:57:29Z",
       "class_name": "net.minecraft.util.CubicSpline",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 1143.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:18:32Z",
-      "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2114.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:15:21Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.RegionFile",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 3555.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:05:26Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AttributeModifierIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2112.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T10:05:22Z",
-      "class_name": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1287.7,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "2f90b52",
+      "ts": "2026-11-25T12:00:02+00:00",
+      "message": "Worker sync: 9701 mapped Java methods"
+    },
     {
       "sha": "c64b3d3",
       "ts": "2026-11-25T11:58:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "1f8753e",
       "ts": "2026-11-25T10:52:01+00:00",
-      "message": "Worker sync: 9675 mapped Java methods"
-    },
-    {
-      "sha": "88d9ee2",
-      "ts": "2026-11-25T10:46:01+00:00",
       "message": "Worker sync: 9675 mapped Java methods"
     }
   ]
