@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-25 08:34:01 UTC
+- **Updated**: 2026-11-25 09:28:04 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9675 / 66676 (14.511%)
 - **Mapped Java Classes**: 2180 / 7163 (30.434%)
@@ -14,6 +14,14 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (599.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.NewVillageFix` -> `mc-math` (660.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (660.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.MemoryExpiryDataFix` -> `mc-math` (660.5s)
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (576.2s)
+- [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (117.8s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (51.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (5254.3s)
 - [FAIL] `net.minecraft.world.level.chunk.status.ChunkStatusTasks` -> `mc-worldgen` (5914.3s)
 - [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (2946.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkProtoTickListFix` -> `mc-math` (3361.4s)
@@ -21,11 +29,3 @@
 - [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (3680.5s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (4562.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.AttributeModifierIdFix` -> `mc-math` (2636.1s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (1481.7s)
-- [FAIL] `net.minecraft.util.datafix.fixes.TrialSpawnerConfigInRegistryFix` -> `mc-math` (1813.0s)
-- [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (4487.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (1105.8s)
-- [FAIL] `net.minecraft.world.level.chunk.PalettedContainer` -> `mc-worldgen` (3473.5s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix` -> `mc-math` (433.3s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (3624.1s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V705` -> `mc-math` (583.6s)
