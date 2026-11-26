@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 00:20:03 UTC
+- **Updated**: 2026-11-26 00:26:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9761 / 66676 (14.639%)
 - **Mapped Java Classes**: 2207 / 7163 (30.811%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (1129.8s)
+- [FAIL] `net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix` -> `mc-math` (379.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix` -> `mc-math` (447.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces` -> `mc-worldgen` (772.6s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (672.9s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (672.9s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (373.6s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (373.6s)
 - [PASS] `net.minecraft.world.level.storage.loot.entries.EntryGroup` -> `mc-nbt` (252.0s)
-- [PASS] `net.minecraft.world.level.storage.loot.entries.SequentialEntry` -> `mc-nbt` (252.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (100.9s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (31.7s)
