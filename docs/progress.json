@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 22:40:01 UTC",
-  "updated_epoch": 1795732801,
+  "updated_at": "2026-11-26 22:46:01 UTC",
+  "updated_epoch": 1795733161,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1742
+    "harness_failed_attempts": 1743
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5105,
-    "prompt_tokens": 19242169,
-    "completion_tokens": 89717858,
-    "reasoning_tokens": 63933066,
-    "avg_latency_s": 281.3
+    "calls_total": 5110,
+    "prompt_tokens": 19252820,
+    "completion_tokens": 89823109,
+    "reasoning_tokens": 64018591,
+    "avg_latency_s": 279.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T22:41:55Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1767.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T22:35:10Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 476.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T18:06:25Z",
-      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 461.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a38d6fe",
+      "ts": "2026-11-26T22:40:01+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "df2a2ed",
       "ts": "2026-11-26T22:34:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "c2d7bfa",
       "ts": "2026-11-26T21:16:03+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "64da342",
-      "ts": "2026-11-26T21:10:02+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
