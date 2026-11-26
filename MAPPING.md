@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9761** across **2207** classes.
+Total mapped Java symbols: **9767** across **2208** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -12144,6 +12144,12 @@ Total mapped Java symbols: **9761** across **2207** classes.
 | `net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition$Builder#addTerm` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 149 | `add_term` |
 | `net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition$Builder#build` | `crates/mc-nbt/src/ported/all_of_condition.rs` | 92 | `build` |
 | `net.minecraft.world.level.storage.loot.predicates.CompositeLootItemCondition$Builder#build` | `crates/mc-nbt/src/ported/any_of_condition.rs` | 167 | `build` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#ConditionReference` | `crates/mc-nbt/src/ported/condition_reference.rs` | 122 | `new` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#conditionReference` | `crates/mc-nbt/src/ported/condition_reference.rs` | 132 | `condition_reference` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#getType` | `crates/mc-nbt/src/ported/condition_reference.rs` | 139 | `get_type` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#name` | `crates/mc-nbt/src/ported/condition_reference.rs` | 127 | `name` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#test` | `crates/mc-nbt/src/ported/condition_reference.rs` | 167 | `test` |
+| `net.minecraft.world.level.storage.loot.predicates.ConditionReference#validate` | `crates/mc-nbt/src/ported/condition_reference.rs` | 144 | `validate` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 9 | `when_condition` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#unwrap` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 28 | `unwrap_builder` |
 | `net.minecraft.world.level.storage.loot.predicates.ConditionUserBuilder#when` | `crates/mc-nbt/src/ported/condition_user_builder.rs` | 11 | `when_condition` |
