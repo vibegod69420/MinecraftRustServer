@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 03:42:03 UTC
+- **Updated**: 2026-11-26 03:46:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,9 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (1477.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1439.3s)
+- [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (1409.3s)
 - [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (1269.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (1113.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (1113.1s)
@@ -26,6 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (1046.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (1046.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (995.1s)
-- [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (912.3s)
-- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (858.4s)
-- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (775.3s)

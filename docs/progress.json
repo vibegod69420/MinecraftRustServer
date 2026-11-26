@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 03:44:01 UTC",
-  "updated_epoch": 1795664641,
+  "updated_at": "2026-11-26 03:50:01 UTC",
+  "updated_epoch": 1795665001,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1472
+    "harness_failed_attempts": 1475
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4489,
-    "prompt_tokens": 16820579,
-    "completion_tokens": 77762510,
-    "reasoning_tokens": 55191275,
-    "avg_latency_s": 266.5
+    "calls_total": 4492,
+    "prompt_tokens": 16827196,
+    "completion_tokens": 77846503,
+    "reasoning_tokens": 55265234,
+    "avg_latency_s": 268.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T03:45:30Z",
+      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1477.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:44:52Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1439.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:44:22Z",
+      "class_name": "net.minecraft.util.Crypt",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1409.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T03:42:02Z",
       "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 900.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:56:51Z",
-      "class_name": "net.minecraft.world.level.storage.WorldData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 580.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:56:51Z",
-      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 580.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:56:51Z",
-      "class_name": "net.minecraft.world.level.storage.ValueOutput",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 580.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "be25533",
+      "ts": "2026-11-26T03:44:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "8a498b2",
       "ts": "2026-11-26T03:38:20+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "d0aefd7",
       "ts": "2026-11-26T02:20:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "7291dd8",
-      "ts": "2026-11-26T02:14:15+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
