@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 15:34:02 UTC",
-  "updated_epoch": 1795707242,
+  "updated_at": "2026-11-26 15:40:03 UTC",
+  "updated_epoch": 1795707603,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.839,
     "method_coverage_pct": 14.6844,
     "harness_verified_classes": 1393,
-    "harness_failed_attempts": 1637
+    "harness_failed_attempts": 1639
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4898,
-    "prompt_tokens": 18414356,
-    "completion_tokens": 86041008,
-    "reasoning_tokens": 61251899,
-    "avg_latency_s": 281.1
+    "calls_total": 4910,
+    "prompt_tokens": 18473904,
+    "completion_tokens": 86330531,
+    "reasoning_tokens": 61484180,
+    "avg_latency_s": 281.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T15:37:27Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.SerializableChunkData",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1742.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T15:37:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseChunk",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1729.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T15:32:32Z",
       "class_name": "net.minecraft.util.datafix.fixes.NewVillageFix",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 2737.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T14:19:30Z",
-      "class_name": "net.minecraft.world.level.chunk.UpgradeData",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2718.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T14:19:24Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2712.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f03626e",
+      "ts": "2026-11-26T15:34:03+00:00",
+      "message": "Worker sync: 9791 mapped Java methods"
+    },
     {
       "sha": "6922c73",
       "ts": "2026-11-26T15:28:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a2b02cf",
       "ts": "2026-11-26T14:22:03+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "57f7dbc",
-      "ts": "2026-11-26T14:16:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
