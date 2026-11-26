@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 14:10:03 UTC",
-  "updated_epoch": 1795702203,
+  "updated_at": "2026-11-26 14:16:01 UTC",
+  "updated_epoch": 1795702561,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1590
+    "harness_failed_attempts": 1593
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4793,
-    "prompt_tokens": 17918197,
-    "completion_tokens": 84122650,
-    "reasoning_tokens": 59962320,
-    "avg_latency_s": 278.6
+    "calls_total": 4803,
+    "prompt_tokens": 17958934,
+    "completion_tokens": 84358147,
+    "reasoning_tokens": 60076904,
+    "avg_latency_s": 281.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T14:15:26Z",
+      "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2474.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T14:14:17Z",
+      "class_name": "net.minecraft.world.level.levelgen.SurfaceRules",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2405.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T14:12:53Z",
+      "class_name": "net.minecraft.util.datafix.schemas.V704",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 646.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T14:09:55Z",
       "class_name": "net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1065.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T12:38:50Z",
-      "class_name": "net.minecraft.world.level.levelgen.WorldDimensions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 894.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T12:32:24Z",
-      "class_name": "net.minecraft.world.level.levelgen.carver.CaveWorldCarver",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 507.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T12:23:53Z",
-      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4925.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7a78b81",
+      "ts": "2026-11-26T14:10:03+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "6d952b3",
       "ts": "2026-11-26T14:04:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "d46c181",
       "ts": "2026-11-26T12:46:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "8eb1d85",
-      "ts": "2026-11-26T12:40:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
