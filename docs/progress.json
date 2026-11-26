@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 21:58:01 UTC",
-  "updated_epoch": 1795730281,
+  "updated_at": "2026-11-26 22:04:02 UTC",
+  "updated_epoch": 1795730642,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -377,6 +377,11 @@
   ],
   "recent_commits": [
     {
+      "sha": "a427ce0",
+      "ts": "2026-11-26T21:58:02+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
+    {
       "sha": "fed7e63",
       "ts": "2026-11-26T21:52:01+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
@@ -444,11 +449,6 @@
     {
       "sha": "aeac7e3",
       "ts": "2026-11-26T20:34:02+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "2b1d939",
-      "ts": "2026-11-26T20:28:02+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
