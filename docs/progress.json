@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 17:26:10 UTC",
-  "updated_epoch": 1795713970,
+  "updated_at": "2026-11-26 17:32:30 UTC",
+  "updated_epoch": 1795714350,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1688
+    "harness_failed_attempts": 1695
   },
   "crates": [
     {
@@ -47,13 +47,69 @@
     }
   ],
   "usage": {
-    "calls_total": 5004,
-    "prompt_tokens": 18932203,
-    "completion_tokens": 87979517,
-    "reasoning_tokens": 62629488,
-    "avg_latency_s": 283.8
+    "calls_total": 5009,
+    "prompt_tokens": 18964754,
+    "completion_tokens": 88084607,
+    "reasoning_tokens": 62656227,
+    "avg_latency_s": 284.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T17:32:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1701.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:32:29Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1701.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:31:18Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 641.7,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:27:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1373.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:27:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1373.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:27:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1373.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T17:26:21Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1333.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T17:25:36Z",
       "class_name": "net.minecraft.util.datafix.fixes.EntityIdFix",
@@ -317,65 +373,14 @@
       "verified": false,
       "seconds": 3062.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:31:09Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4964.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:30:51Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackComponentizationFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2763.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:23:05Z",
-      "class_name": "net.minecraft.world.level.chunk.PalettedContainer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4480.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:19:01Z",
-      "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3079.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:13:49Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.IOWorker",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 3924.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:13:32Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AttributeModifierIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3264.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:03:12Z",
-      "class_name": "net.minecraft.util.datafix.fixes.LevelDataGeneratorOptionsFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2508.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "8287689",
+      "ts": "2026-11-26T17:26:10+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "daebcec",
       "ts": "2026-11-26T17:25:36+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "b1eda9c",
       "ts": "2026-11-26T16:10:02+00:00",
-      "message": "Worker sync: 9791 mapped Java methods"
-    },
-    {
-      "sha": "d50597d",
-      "ts": "2026-11-26T16:04:03+00:00",
       "message": "Worker sync: 9791 mapped Java methods"
     }
   ]
