@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 17:32:30 UTC
+- **Updated**: 2026-11-26 17:34:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9830 / 66676 (14.743%)
 - **Mapped Java Classes**: 2211 / 7163 (30.867%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (969.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (1701.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (1701.1s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (641.7s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (1026.1s)
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1096.9s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (1106.6s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (1106.6s)

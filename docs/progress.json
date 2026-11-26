@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 17:32:30 UTC",
-  "updated_epoch": 1795714350,
+  "updated_at": "2026-11-26 17:38:01 UTC",
+  "updated_epoch": 1795714681,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1695
+    "harness_failed_attempts": 1696
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5009,
-    "prompt_tokens": 18964754,
-    "completion_tokens": 88084607,
-    "reasoning_tokens": 62656227,
+    "calls_total": 5010,
+    "prompt_tokens": 18968744,
+    "completion_tokens": 88110766,
+    "reasoning_tokens": 62678849,
     "avg_latency_s": 284.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T17:33:43Z",
+      "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 969.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T17:32:29Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 4653.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T16:32:06Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1460",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3062.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "764f845",
+      "ts": "2026-11-26T17:32:30+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "8287689",
       "ts": "2026-11-26T17:26:10+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "7b25635",
       "ts": "2026-11-26T16:16:01+00:00",
-      "message": "Worker sync: 9791 mapped Java methods"
-    },
-    {
-      "sha": "b1eda9c",
-      "ts": "2026-11-26T16:10:02+00:00",
       "message": "Worker sync: 9791 mapped Java methods"
     }
   ]
