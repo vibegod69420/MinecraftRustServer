@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 03:22:02 UTC
+- **Updated**: 2026-11-26 03:32:19 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (685.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (685.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (685.4s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (685.4s)
 - [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (5604.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (2686.6s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.RegionFile` -> `mc-worldgen` (2672.5s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (1624.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (1624.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (1624.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (1424.7s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1081.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (988.5s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (988.5s)
