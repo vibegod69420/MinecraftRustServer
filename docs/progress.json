@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 03:32:19 UTC",
-  "updated_epoch": 1795663939,
+  "updated_at": "2026-11-26 03:38:20 UTC",
+  "updated_epoch": 1795664300,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1456
+    "harness_failed_attempts": 1465
   },
   "crates": [
     {
@@ -47,13 +47,85 @@
     }
   ],
   "usage": {
-    "calls_total": 4471,
-    "prompt_tokens": 16743282,
-    "completion_tokens": 77371060,
-    "reasoning_tokens": 54960185,
-    "avg_latency_s": 264.8
+    "calls_total": 4484,
+    "prompt_tokens": 16796464,
+    "completion_tokens": 77642696,
+    "reasoning_tokens": 55133072,
+    "avg_latency_s": 266.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T03:38:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1046.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:38:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1046.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:38:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1046.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:38:19Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1046.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:37:28Z",
+      "class_name": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 995.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:36:05Z",
+      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 912.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:35:11Z",
+      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 858.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:33:48Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 775.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T03:32:58Z",
+      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 725.8,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T03:32:18Z",
       "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
@@ -301,81 +373,14 @@
       "verified": false,
       "seconds": 86.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:48:23Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 73.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:46:52Z",
-      "class_name": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3950.2,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:30:03Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ItemStackComponentizationFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2585.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:23:17Z",
-      "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2987.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:17:34Z",
-      "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 3668.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:14:35Z",
-      "class_name": "net.minecraft.world.level.chunk.ChunkGeneratorStructureState",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 4137.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:04:26Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityBlockStateFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1298.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T01:02:25Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V1460",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 966.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:59:30Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkPalettedStorageFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 717.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "c140138",
+      "ts": "2026-11-26T03:32:20+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "1f8c276",
       "ts": "2026-11-26T03:26:27+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "d2ac9d1",
       "ts": "2026-11-26T02:08:01+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "d5d5643",
-      "ts": "2026-11-26T02:02:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
