@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 09:16:02 UTC",
-  "updated_epoch": 1795684562,
+  "updated_at": "2026-11-26 09:22:02 UTC",
+  "updated_epoch": 1795684922,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1510
+    "harness_failed_attempts": 1513
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4577,
-    "prompt_tokens": 17075404,
-    "completion_tokens": 79568992,
-    "reasoning_tokens": 56649395,
-    "avg_latency_s": 260.5
+    "calls_total": 4581,
+    "prompt_tokens": 17088936,
+    "completion_tokens": 79708408,
+    "reasoning_tokens": 56764010,
+    "avg_latency_s": 261.3
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T09:20:02Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1352.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T09:19:47Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1337.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T09:16:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1124.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T09:14:24Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1439.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:44:22Z",
-      "class_name": "net.minecraft.util.Crypt",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1409.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:42:02Z",
-      "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1269.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:39:26Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1113.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "acf369b",
+      "ts": "2026-11-26T09:16:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "0c0207a",
       "ts": "2026-11-26T09:10:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "7bb8382",
       "ts": "2026-11-26T07:52:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "b139ee2",
-      "ts": "2026-11-26T07:46:02+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
