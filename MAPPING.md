@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9767** across **2208** classes.
+Total mapped Java symbols: **9791** across **2209** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11389,6 +11389,30 @@ Total mapped Java symbols: **9767** across **2208** classes.
 | `net.minecraft.world.level.storage.PrimaryLevelData#worldGenOptions` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 877 | `world_gen_options` |
 | `net.minecraft.world.level.storage.PrimaryLevelData#worldGenSettingsLifecycle` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 892 | `world_gen_settings_lifecycle` |
 | `net.minecraft.world.level.storage.PrimaryLevelData$SpecialWorldProperty` | `crates/mc-nbt/src/ported/primary_level_data.rs` | 205 | `<item>` |
+| `net.minecraft.world.level.storage.ServerLevelData#getClearWeatherTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 45 | `get_clear_weather_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#getGameRules` | `crates/mc-nbt/src/ported/server_level_data.rs` | 93 | `get_game_rules` |
+| `net.minecraft.world.level.storage.ServerLevelData#getGameType` | `crates/mc-nbt/src/ported/server_level_data.rs` | 69 | `get_game_type` |
+| `net.minecraft.world.level.storage.ServerLevelData#getLevelName` | `crates/mc-nbt/src/ported/server_level_data.rs` | 27 | `get_level_name` |
+| `net.minecraft.world.level.storage.ServerLevelData#getRainTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 33 | `get_rain_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#getScheduledEvents` | `crates/mc-nbt/src/ported/server_level_data.rs` | 96 | `get_scheduled_events` |
+| `net.minecraft.world.level.storage.ServerLevelData#getThunderTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 42 | `get_thunder_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#getWanderingTraderId` | `crates/mc-nbt/src/ported/server_level_data.rs` | 63 | `get_wandering_trader_id` |
+| `net.minecraft.world.level.storage.ServerLevelData#getWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/server_level_data.rs` | 57 | `get_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.ServerLevelData#getWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/server_level_data.rs` | 51 | `get_wandering_trader_spawn_delay` |
+| `net.minecraft.world.level.storage.ServerLevelData#isAllowCommands` | `crates/mc-nbt/src/ported/server_level_data.rs` | 81 | `is_allow_commands` |
+| `net.minecraft.world.level.storage.ServerLevelData#isInitialized` | `crates/mc-nbt/src/ported/server_level_data.rs` | 75 | `is_initialized` |
+| `net.minecraft.world.level.storage.ServerLevelData#setAllowCommands` | `crates/mc-nbt/src/ported/server_level_data.rs` | 84 | `set_allow_commands` |
+| `net.minecraft.world.level.storage.ServerLevelData#setClearWeatherTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 48 | `set_clear_weather_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#setDayTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 90 | `set_day_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#setGameTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 87 | `set_game_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#setGameType` | `crates/mc-nbt/src/ported/server_level_data.rs` | 72 | `set_game_type` |
+| `net.minecraft.world.level.storage.ServerLevelData#setInitialized` | `crates/mc-nbt/src/ported/server_level_data.rs` | 78 | `set_initialized` |
+| `net.minecraft.world.level.storage.ServerLevelData#setRainTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 36 | `set_rain_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#setThunderTime` | `crates/mc-nbt/src/ported/server_level_data.rs` | 39 | `set_thunder_time` |
+| `net.minecraft.world.level.storage.ServerLevelData#setThundering` | `crates/mc-nbt/src/ported/server_level_data.rs` | 30 | `set_thundering` |
+| `net.minecraft.world.level.storage.ServerLevelData#setWanderingTraderId` | `crates/mc-nbt/src/ported/server_level_data.rs` | 66 | `set_wandering_trader_id` |
+| `net.minecraft.world.level.storage.ServerLevelData#setWanderingTraderSpawnChance` | `crates/mc-nbt/src/ported/server_level_data.rs` | 60 | `set_wandering_trader_spawn_chance` |
+| `net.minecraft.world.level.storage.ServerLevelData#setWanderingTraderSpawnDelay` | `crates/mc-nbt/src/ported/server_level_data.rs` | 54 | `set_wandering_trader_spawn_delay` |
 | `net.minecraft.world.level.storage.TagValueInput#<init>` | `crates/mc-nbt/src/ported/tag_value_input.rs` | 353 | `new` |
 | `net.minecraft.world.level.storage.TagValueInput#child` | `crates/mc-nbt/src/ported/tag_value_input.rs` | 463 | `child` |
 | `net.minecraft.world.level.storage.TagValueInput#childOrEmpty` | `crates/mc-nbt/src/ported/tag_value_input.rs` | 473 | `child_or_empty` |
