@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 12:22:02 UTC",
-  "updated_epoch": 1795695722,
+  "updated_at": "2026-11-26 12:28:01 UTC",
+  "updated_epoch": 1795696081,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1550
+    "harness_failed_attempts": 1551
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 4675,
-    "prompt_tokens": 17395683,
-    "completion_tokens": 81830895,
-    "reasoning_tokens": 58406945,
-    "avg_latency_s": 269.1
+    "calls_total": 4689,
+    "prompt_tokens": 17467455,
+    "completion_tokens": 82046151,
+    "reasoning_tokens": 58519416,
+    "avg_latency_s": 269.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T12:23:53Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 4925.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T12:01:57Z",
       "class_name": "net.minecraft.world.level.levelgen.carver.CaveWorldCarver",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1337.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T09:16:14Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1124.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e245c04",
+      "ts": "2026-11-26T12:22:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "8d117a9",
       "ts": "2026-11-26T12:16:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "4a79e79",
       "ts": "2026-11-26T10:58:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "f57aada",
-      "ts": "2026-11-26T10:52:02+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
