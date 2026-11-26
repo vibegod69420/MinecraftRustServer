@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 21:20:02 UTC
+- **Updated**: 2026-11-26 22:12:24 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9830 / 66676 (14.743%)
 - **Mapped Java Classes**: 2211 / 7163 (30.867%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (3779.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (631.1s)
 - [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (478.5s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (1845.3s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (1497.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (1497.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (1403.0s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (1360.7s)
