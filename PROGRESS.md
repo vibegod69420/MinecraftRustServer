@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 15:28:03 UTC
+- **Updated**: 2026-11-26 15:34:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9791 / 66676 (14.684%)
 - **Mapped Java Classes**: 2209 / 7163 (30.839%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.NewVillageFix` -> `mc-math` (1447.0s)
+- [FAIL] `net.minecraft.util.datafix.fixes.MemoryExpiryDataFix` -> `mc-math` (1447.0s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix` -> `mc-math` (1447.0s)
+- [FAIL] `net.minecraft.util.datafix.schemas.V704` -> `mc-math` (458.1s)
+- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (1299.5s)
 - [FAIL] `net.minecraft.util.profiling.jfr.parse.JfrStatsParser` -> `mc-math` (677.6s)
 - [FAIL] `net.minecraft.world.level.chunk.ChunkAccess` -> `mc-worldgen` (1117.3s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix` -> `mc-math` (470.3s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder` -> `mc-math` (768.6s)
 - [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (778.9s)
 - [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (643.4s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (625.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (625.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (625.1s)
-- [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (480.0s)
-- [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (385.5s)
