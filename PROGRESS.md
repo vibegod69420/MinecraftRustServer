@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 03:38:20 UTC
+- **Updated**: 2026-11-26 03:42:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,13 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (1269.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (1113.1s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (1113.1s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (1089.1s)
+- [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (1089.1s)
+- [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (1089.1s)
+- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (1089.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (1046.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (1046.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (1046.5s)
@@ -22,10 +29,3 @@
 - [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (912.3s)
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (858.4s)
 - [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (775.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (725.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (685.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (685.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (685.4s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (685.4s)
-- [FAIL] `net.minecraft.util.debug.LevelDebugSynchronizers` -> `mc-math` (5604.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (2686.6s)
