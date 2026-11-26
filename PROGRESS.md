@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 04:58:02 UTC
+- **Updated**: 2026-11-26 05:02:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (279.0s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (1452.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (1452.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (1452.4s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (707.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (707.5s)
 - [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (610.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (602.0s)
