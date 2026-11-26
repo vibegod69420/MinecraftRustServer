@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 10:04:02 UTC",
-  "updated_epoch": 1795687442,
+  "updated_at": "2026-11-26 10:10:01 UTC",
+  "updated_epoch": 1795687801,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1524
+    "harness_failed_attempts": 1525
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 4609,
+    "calls_total": 4611,
     "prompt_tokens": 17184991,
     "completion_tokens": 80249414,
     "reasoning_tokens": 57152512,
-    "avg_latency_s": 258.8
+    "avg_latency_s": 259.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T10:08:28Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2221.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T09:55:51Z",
       "class_name": "net.minecraft.world.level.levelgen.DensityFunction",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 794.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T04:44:12Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 707.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "663316d",
+      "ts": "2026-11-26T10:04:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "55f77bf",
       "ts": "2026-11-26T09:58:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6c5f0af",
       "ts": "2026-11-26T08:40:01+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "60edafe",
-      "ts": "2026-11-26T08:34:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
