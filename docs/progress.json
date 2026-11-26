@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 22:22:01 UTC",
-  "updated_epoch": 1795731721,
+  "updated_at": "2026-11-26 22:28:06 UTC",
+  "updated_epoch": 1795732086,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1736
+    "harness_failed_attempts": 1740
   },
   "crates": [
     {
@@ -47,13 +47,45 @@
     }
   ],
   "usage": {
-    "calls_total": 5095,
-    "prompt_tokens": 19219419,
-    "completion_tokens": 89457887,
-    "reasoning_tokens": 63708818,
-    "avg_latency_s": 278.9
+    "calls_total": 5102,
+    "prompt_tokens": 19237785,
+    "completion_tokens": 89641898,
+    "reasoning_tokens": 63867215,
+    "avg_latency_s": 281.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T22:28:05Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 937.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T22:27:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 886.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T22:26:47Z",
+      "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 859.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T22:26:15Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 826.9,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T22:20:30Z",
       "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
@@ -341,41 +373,14 @@
       "verified": false,
       "seconds": 3259.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:50:06Z",
-      "class_name": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1887.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:45:03Z",
-      "class_name": "net.minecraft.world.level.levelgen.NoiseChunk",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2455.0,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:41:21Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1886.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:39:44Z",
-      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 2136.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "fea9e8b",
+      "ts": "2026-11-26T22:22:02+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "16934b1",
       "ts": "2026-11-26T22:16:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "08fa429",
       "ts": "2026-11-26T20:58:02+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "c6436a5",
-      "ts": "2026-11-26T20:52:02+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
