@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 02:14:15 UTC",
-  "updated_epoch": 1795659255,
+  "updated_at": "2026-11-26 02:20:02 UTC",
+  "updated_epoch": 1795659602,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1445
+    "harness_failed_attempts": 1448
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4446,
-    "prompt_tokens": 16631361,
-    "completion_tokens": 76905077,
-    "reasoning_tokens": 54628743,
-    "avg_latency_s": 262.1
+    "calls_total": 4448,
+    "prompt_tokens": 16641938,
+    "completion_tokens": 76943949,
+    "reasoning_tokens": 54649913,
+    "avg_latency_s": 262.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T02:18:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1864.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:18:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1864.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:18:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DeltaFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1864.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T02:14:14Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1209.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:49:05Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.SectionStorage",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2607.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:48:15Z",
-      "class_name": "net.minecraft.world.level.chunk.status.ChunkStatusTasks",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2557.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:47:33Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.RegionFile",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2515.4,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7291dd8",
+      "ts": "2026-11-26T02:14:15+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "d2ac9d1",
       "ts": "2026-11-26T02:08:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6252004",
       "ts": "2026-11-26T00:56:01+00:00",
-      "message": "Worker sync: 9761 mapped Java methods"
-    },
-    {
-      "sha": "a989c93",
-      "ts": "2026-11-26T00:50:02+00:00",
       "message": "Worker sync: 9761 mapped Java methods"
     }
   ]
