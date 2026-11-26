@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 01:44:02 UTC",
-  "updated_epoch": 1795657442,
+  "updated_at": "2026-11-26 01:50:03 UTC",
+  "updated_epoch": 1795657803,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8111,
     "method_coverage_pct": 14.6395,
     "harness_verified_classes": 1391,
-    "harness_failed_attempts": 1424
+    "harness_failed_attempts": 1427
   },
   "crates": [
     {
@@ -47,13 +47,37 @@
     }
   ],
   "usage": {
-    "calls_total": 4404,
-    "prompt_tokens": 16457305,
-    "completion_tokens": 76219893,
-    "reasoning_tokens": 54207774,
-    "avg_latency_s": 264.6
+    "calls_total": 4413,
+    "prompt_tokens": 16483983,
+    "completion_tokens": 76267288,
+    "reasoning_tokens": 54235446,
+    "avg_latency_s": 261.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T01:48:36Z",
+      "class_name": "net.minecraft.world.level.levelgen.GenerationStep",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 86.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T01:48:23Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheckResult",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 73.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T01:46:52Z",
+      "class_name": "net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 3950.2,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T01:30:03Z",
       "class_name": "net.minecraft.util.datafix.fixes.ItemStackComponentizationFix",
@@ -349,33 +373,14 @@
       "verified": false,
       "seconds": 1129.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:23:10Z",
-      "class_name": "net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 379.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:21:08Z",
-      "class_name": "net.minecraft.util.datafix.fixes.TextComponentHoverAndClickEventFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 447.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:18:30Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 772.6,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a8bb824",
+      "ts": "2026-11-26T01:44:02+00:00",
+      "message": "Worker sync: 9761 mapped Java methods"
+    },
     {
       "sha": "33b8bc2",
       "ts": "2026-11-26T01:38:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "69d6b7d",
       "ts": "2026-11-26T00:20:03+00:00",
-      "message": "Worker sync: 9761 mapped Java methods"
-    },
-    {
-      "sha": "1a5c969",
-      "ts": "2026-11-26T00:14:02+00:00",
       "message": "Worker sync: 9761 mapped Java methods"
     }
   ]
