@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 07:22:02 UTC",
-  "updated_epoch": 1795677722,
+  "updated_at": "2026-11-26 07:28:01 UTC",
+  "updated_epoch": 1795678081,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1496
+    "harness_failed_attempts": 1497
   },
   "crates": [
     {
@@ -54,6 +54,14 @@
     "avg_latency_s": 266.6
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T07:23:16Z",
+      "class_name": "net.minecraft.util.parsing.packrat.Term",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 4238.1,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T05:08:57Z",
       "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 775.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:32:58Z",
-      "class_name": "net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 725.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "6def83a",
+      "ts": "2026-11-26T07:22:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "5d14513",
       "ts": "2026-11-26T07:16:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "26727f2",
       "ts": "2026-11-26T05:58:01+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "af8654b",
-      "ts": "2026-11-26T05:52:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
