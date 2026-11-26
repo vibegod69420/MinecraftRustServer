@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9745** across **2203** classes.
+Total mapped Java symbols: **9761** across **2207** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -11668,9 +11668,15 @@ Total mapped Java symbols: **9745** across **2203** classes.
 | `net.minecraft.world.level.storage.loot.entries.AlternativesEntry.Builder#build` | `crates/mc-nbt/src/ported/alternatives_entry.rs` | 184 | `build` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_FALSE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 45 | `always_false` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 50 | `always_true` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/entry_group.rs` | 44 | `always_true` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 44 | `always_true` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#and` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 64 | `and` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#and` | `crates/mc-nbt/src/ported/entry_group.rs` | 36 | `and` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#and` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 36 | `and` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#expand` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 55 | `expand` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#expand` | `crates/mc-nbt/src/ported/composite_entry_base.rs` | 73 | `expand` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#expand` | `crates/mc-nbt/src/ported/entry_group.rs` | 31 | `expand` |
+| `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#expand` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 31 | `expand` |
 | `net.minecraft.world.level.storage.loot.entries.ComposableEntryContainer#or` | `crates/mc-nbt/src/ported/composable_entry_container.rs` | 72 | `or` |
 | `net.minecraft.world.level.storage.loot.entries.CompositeEntryBase#<init>` | `crates/mc-nbt/src/ported/composite_entry_base.rs` | 124 | `new` |
 | `net.minecraft.world.level.storage.loot.entries.CompositeEntryBase#ALWAYS_TRUE` | `crates/mc-nbt/src/ported/composite_entry_base.rs` | 105 | `expand` |
@@ -11688,6 +11694,14 @@ Total mapped Java symbols: **9745** across **2203** classes.
 | `net.minecraft.world.level.storage.loot.entries.EmptyLootItem#createItemStack` | `crates/mc-nbt/src/ported/empty_loot_item.rs` | 125 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.EmptyLootItem#emptyItem` | `crates/mc-nbt/src/ported/empty_loot_item.rs` | 128 | `empty_item` |
 | `net.minecraft.world.level.storage.loot.entries.EmptyLootItem#getType` | `crates/mc-nbt/src/ported/empty_loot_item.rs` | 120 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup#<init>` | `crates/mc-nbt/src/ported/entry_group.rs` | 75 | `new` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup#compose` | `crates/mc-nbt/src/ported/entry_group.rs` | 88 | `compose` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup#getType` | `crates/mc-nbt/src/ported/entry_group.rs` | 83 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup#list` | `crates/mc-nbt/src/ported/entry_group.rs` | 113 | `list` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup$Builder#<init>` | `crates/mc-nbt/src/ported/entry_group.rs` | 124 | `new` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup$Builder#append` | `crates/mc-nbt/src/ported/entry_group.rs` | 137 | `append` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup$Builder#build` | `crates/mc-nbt/src/ported/entry_group.rs` | 143 | `build` |
+| `net.minecraft.world.level.storage.loot.entries.EntryGroup$Builder#getThis` | `crates/mc-nbt/src/ported/entry_group.rs` | 132 | `get_this` |
 | `net.minecraft.world.level.storage.loot.entries.LootItem#<init>` | `crates/mc-nbt/src/ported/loot_item.rs` | 134 | `new` |
 | `net.minecraft.world.level.storage.loot.entries.LootItem#createItemStack` | `crates/mc-nbt/src/ported/loot_item.rs` | 156 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.LootItem#getType` | `crates/mc-nbt/src/ported/loot_item.rs` | 151 | `get_type` |
@@ -11733,6 +11747,14 @@ Total mapped Java symbols: **9745** across **2203** classes.
 | `net.minecraft.world.level.storage.loot.entries.NestedLootTable#lootTableReference` | `crates/mc-nbt/src/ported/nested_loot_table.rs` | 336 | `loot_table_reference` |
 | `net.minecraft.world.level.storage.loot.entries.NestedLootTable#validate` | `crates/mc-nbt/src/ported/nested_loot_table.rs` | 250 | `validate` |
 | `net.minecraft.world.level.storage.loot.entries.NestedLootTable$1#get` | `crates/mc-nbt/src/ported/nested_loot_table.rs` | 18 | `get` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry#<init>` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 75 | `new` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry#compose` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 88 | `compose` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry#getType` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 83 | `get_type` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry#sequential` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 111 | `sequential` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder#<init>` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 122 | `new` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder#build` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 141 | `build` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder#getThis` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 130 | `get_this` |
+| `net.minecraft.world.level.storage.loot.entries.SequentialEntry$Builder#then` | `crates/mc-nbt/src/ported/sequential_entry.rs` | 135 | `then` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#<init>` | `crates/mc-nbt/src/ported/slot_loot.rs` | 147 | `new` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#createItemStack` | `crates/mc-nbt/src/ported/slot_loot.rs` | 174 | `create_item_stack` |
 | `net.minecraft.world.level.storage.loot.entries.SlotLoot#getType` | `crates/mc-nbt/src/ported/slot_loot.rs` | 169 | `get_type` |
