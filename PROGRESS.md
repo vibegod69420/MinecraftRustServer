@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 01:58:01 UTC
+- **Updated**: 2026-11-26 02:06:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1081.6s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (988.5s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (988.5s)
+- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (946.9s)
+- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (900.5s)
 - [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (580.9s)
 - [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (580.9s)
 - [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (580.9s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (273.1s)
 - [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (273.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (86.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (73.1s)
-- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (3950.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (2585.8s)
-- [FAIL] `net.minecraft.util.profiling.jfr.JfrProfiler` -> `mc-math` (2987.6s)
-- [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (3668.3s)

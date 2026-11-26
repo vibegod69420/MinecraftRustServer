@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 02:02:01 UTC",
-  "updated_epoch": 1795658521,
+  "updated_at": "2026-11-26 02:08:01 UTC",
+  "updated_epoch": 1795658881,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1435
+    "harness_failed_attempts": 1440
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 4438,
-    "prompt_tokens": 16591296,
-    "completion_tokens": 76656701,
-    "reasoning_tokens": 54508924,
-    "avg_latency_s": 260.1
+    "calls_total": 4444,
+    "prompt_tokens": 16616385,
+    "completion_tokens": 76864186,
+    "reasoning_tokens": 54612926,
+    "avg_latency_s": 261.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T02:05:12Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1081.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:03:38Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 988.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:03:38Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 988.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:02:57Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 946.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:02:10Z",
+      "class_name": "net.minecraft.core.RegistrySynchronization",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 900.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T01:56:51Z",
       "class_name": "net.minecraft.world.level.storage.WorldData",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 1812.3,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:42:03Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityZombieVillagerTypeFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1812.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:42:03Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MemoryExpiryDataFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1812.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:41:02Z",
-      "class_name": "net.minecraft.util.parsing.packrat.commands.Grammar",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1720.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:39:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1784.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:39:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1784.8,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d5d5643",
+      "ts": "2026-11-26T02:02:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "ae3ba2f",
       "ts": "2026-11-26T01:56:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "90bc0e9",
       "ts": "2026-11-26T00:44:03+00:00",
-      "message": "Worker sync: 9761 mapped Java methods"
-    },
-    {
-      "sha": "b722904",
-      "ts": "2026-11-26T00:38:03+00:00",
       "message": "Worker sync: 9761 mapped Java methods"
     }
   ]
