@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 13:40:03 UTC
+- **Updated**: 2026-11-26 13:44:23 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,10 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.AbstractBlockPropertyFix` -> `mc-math` (609.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkTicketUnpackPosFix` -> `mc-math` (609.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityFallDistanceFloatToDoubleFix` -> `mc-math` (609.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.BlockPropertyRenameAndFix` -> `mc-math` (609.7s)
 - [FAIL] `net.minecraft.util.parsing.packrat.commands.Grammar` -> `mc-math` (337.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.BasaltColumnsFeature` -> `mc-worldgen` (4212.2s)
 - [FAIL] `net.minecraft.world.level.storage.loot.LootTable` -> `mc-nbt` (3381.1s)
@@ -25,7 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DripstoneClusterFeature` -> `mc-worldgen` (1779.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.SavedDataFeaturePoolElementFix` -> `mc-math` (685.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.SurfaceRules` -> `mc-worldgen` (1725.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.GeodeFeature` -> `mc-worldgen` (1711.3s)
-- [FAIL] `net.minecraft.world.level.chunk.LevelChunkSection` -> `mc-worldgen` (1703.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.RuinedPortalStructure` -> `mc-worldgen` (1655.6s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.IglooPieces` -> `mc-worldgen` (1643.8s)
