@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 18:16:04 UTC
+- **Updated**: 2026-11-26 18:22:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9830 / 66676 (14.743%)
 - **Mapped Java Classes**: 2211 / 7163 (30.867%)
@@ -14,6 +14,12 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (1360.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (1360.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (1360.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (1360.7s)
+- [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (1110.1s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1092.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (1038.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (1038.1s)
 - [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1007.0s)
@@ -23,9 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (962.8s)
 - [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (962.8s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (814.5s)
-- [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (581.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (476.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (461.6s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (351.7s)
-- [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (3259.0s)
-- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (1887.6s)
