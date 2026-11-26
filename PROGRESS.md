@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 00:14:02 UTC
+- **Updated**: 2026-11-26 00:20:03 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9761 / 66676 (14.639%)
 - **Mapped Java Classes**: 2207 / 7163 (30.811%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces` -> `mc-worldgen` (772.6s)
+- [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (672.9s)
+- [FAIL] `net.minecraft.world.level.storage.ServerLevelData` -> `mc-nbt` (672.9s)
+- [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (672.9s)
+- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (648.6s)
 - [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (483.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (455.1s)
 - [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (403.8s)
@@ -24,8 +29,3 @@
 - [PASS] `net.minecraft.world.level.storage.loot.entries.SequentialEntry` -> `mc-nbt` (252.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (100.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (31.7s)
-- [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (4004.3s)
-- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStatusTasks` -> `mc-worldgen` (4261.3s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (4116.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (2015.7s)
-- [FAIL] `net.minecraft.util.datafix.fixes.AttributeModifierIdFix` -> `mc-math` (3041.3s)

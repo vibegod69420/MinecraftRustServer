@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 00:14:02 UTC",
-  "updated_epoch": 1795652042,
+  "updated_at": "2026-11-26 00:20:03 UTC",
+  "updated_epoch": 1795652403,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8111,
     "method_coverage_pct": 14.6395,
     "harness_verified_classes": 1391,
-    "harness_failed_attempts": 1380
+    "harness_failed_attempts": 1385
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 4312,
-    "prompt_tokens": 15978730,
-    "completion_tokens": 74532770,
-    "reasoning_tokens": 52983598,
-    "avg_latency_s": 265.8
+    "calls_total": 4322,
+    "prompt_tokens": 16030415,
+    "completion_tokens": 74701352,
+    "reasoning_tokens": 53080657,
+    "avg_latency_s": 263.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T00:18:30Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 772.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T00:16:50Z",
+      "class_name": "net.minecraft.world.level.storage.WorldData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 672.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T00:16:50Z",
+      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 672.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T00:16:50Z",
+      "class_name": "net.minecraft.world.level.storage.ValueOutput",
+      "crate": "mc-nbt",
+      "verified": false,
+      "seconds": 672.9,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T00:16:26Z",
+      "class_name": "net.minecraft.core.RegistrySynchronization",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 648.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T00:13:41Z",
       "class_name": "net.minecraft.world.level.chunk.UpgradeData",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 351.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-25T23:14:06Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.WoodlandMansionPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1373.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T23:14:02Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1369.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T23:11:14Z",
-      "class_name": "net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1201.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T23:10:27Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkStructuresTemplateRenameFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 353.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-25T23:09:55Z",
-      "class_name": "net.minecraft.world.level.chunk.UpgradeData",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1123.0,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "1a5c969",
+      "ts": "2026-11-26T00:14:02+00:00",
+      "message": "Worker sync: 9761 mapped Java methods"
+    },
     {
       "sha": "7e5e696",
       "ts": "2026-11-26T00:09:51+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "094edc1",
       "ts": "2026-11-25T22:56:06+00:00",
-      "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "18950e0",
-      "ts": "2026-11-25T22:48:01+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
     }
   ]
