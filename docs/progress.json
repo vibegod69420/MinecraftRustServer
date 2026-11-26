@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 09:46:01 UTC",
-  "updated_epoch": 1795686361,
+  "updated_at": "2026-11-26 09:52:01 UTC",
+  "updated_epoch": 1795686721,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1520
+    "harness_failed_attempts": 1522
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4604,
-    "prompt_tokens": 17166747,
-    "completion_tokens": 80132867,
-    "reasoning_tokens": 57069697,
-    "avg_latency_s": 256.6
+    "calls_total": 4607,
+    "prompt_tokens": 17179132,
+    "completion_tokens": 80230176,
+    "reasoning_tokens": 57148193,
+    "avg_latency_s": 257.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T09:51:09Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1181.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T09:49:39Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LargeDripstoneFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1091.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T09:44:04Z",
       "class_name": "net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 707.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T04:44:12Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 707.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T04:42:35Z",
-      "class_name": "net.minecraft.util.datafix.fixes.MobEffectIdFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 610.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "4ab217c",
+      "ts": "2026-11-26T09:46:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "62b7b84",
       "ts": "2026-11-26T09:40:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6227df0",
       "ts": "2026-11-26T08:22:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "1e57f17",
-      "ts": "2026-11-26T08:16:02+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
