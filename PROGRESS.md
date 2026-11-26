@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 08:44:02 UTC
+- **Updated**: 2026-11-26 08:52:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.DesertWellFeature` -> `mc-worldgen` (1220.5s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration` -> `mc-worldgen` (1125.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure` -> `mc-worldgen` (1018.4s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.LakeFeature` -> `mc-worldgen` (980.1s)
+- [FAIL] `net.minecraft.util.profiling.metrics.storage.MetricsPersister` -> `mc-math` (974.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.presets.WorldPresets` -> `mc-worldgen` (704.0s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (4029.9s)
 - [FAIL] `net.minecraft.util.parsing.packrat.Term` -> `mc-math` (4238.1s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (1452.4s)
 - [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (1452.4s)
 - [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (1422.3s)
-- [FAIL] `net.minecraft.util.datafix.fixes.BitStorageAlignFix` -> `mc-math` (1363.4s)
-- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1231.8s)
-- [FAIL] `net.minecraft.util.datafix.fixes.WorldGenSettingsHeightAndBiomeFix` -> `mc-math` (1024.9s)
-- [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (794.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (707.5s)

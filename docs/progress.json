@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 08:46:01 UTC",
-  "updated_epoch": 1795682761,
+  "updated_at": "2026-11-26 08:52:01 UTC",
+  "updated_epoch": 1795683121,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1499
+    "harness_failed_attempts": 1504
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 4549,
-    "prompt_tokens": 17008807,
-    "completion_tokens": 78940198,
-    "reasoning_tokens": 56127711,
-    "avg_latency_s": 263.7
+    "calls_total": 4554,
+    "prompt_tokens": 17022776,
+    "completion_tokens": 79116908,
+    "reasoning_tokens": 56282924,
+    "avg_latency_s": 264.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T08:50:52Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1220.5,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T08:49:17Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.configurations.MultifaceGrowthConfiguration",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1125.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T08:47:30Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1018.4,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T08:46:52Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.LakeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 980.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T08:46:46Z",
+      "class_name": "net.minecraft.util.profiling.metrics.storage.MetricsPersister",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 974.4,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T08:42:16Z",
       "class_name": "net.minecraft.world.level.levelgen.presets.WorldPresets",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 1046.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:38:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1046.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:38:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1046.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:38:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1046.5,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:37:28Z",
-      "class_name": "net.minecraft.util.datafix.fixes.BitStorageAlignFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 995.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:36:05Z",
-      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 912.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "e41e947",
+      "ts": "2026-11-26T08:46:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "6c5f0af",
       "ts": "2026-11-26T08:40:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "6def83a",
       "ts": "2026-11-26T07:22:02+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "5d14513",
-      "ts": "2026-11-26T07:16:02+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
