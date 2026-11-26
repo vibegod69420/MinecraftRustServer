@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 02:26:02 UTC",
-  "updated_epoch": 1795659962,
+  "updated_at": "2026-11-26 02:32:01 UTC",
+  "updated_epoch": 1795660321,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1449
+    "harness_failed_attempts": 1451
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4449,
-    "prompt_tokens": 16647293,
-    "completion_tokens": 76993401,
-    "reasoning_tokens": 54693987,
+    "calls_total": 4451,
+    "prompt_tokens": 16659293,
+    "completion_tokens": 77050601,
+    "reasoning_tokens": 54736418,
     "avg_latency_s": 263.8
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T02:31:56Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseChunk",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2686.6,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:31:42Z",
+      "class_name": "net.minecraft.world.level.chunk.storage.RegionFile",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2672.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T02:25:20Z",
       "class_name": "net.minecraft.util.CubicSpline",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 828.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:53:07Z",
-      "class_name": "net.minecraft.util.datafix.schemas.V705",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 663.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:52:49Z",
-      "class_name": "net.minecraft.world.level.chunk.storage.IOWorker",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 2831.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "023c875",
+      "ts": "2026-11-26T02:26:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "d0aefd7",
       "ts": "2026-11-26T02:20:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "f08616c",
       "ts": "2026-11-26T01:08:02+00:00",
-      "message": "Worker sync: 9761 mapped Java methods"
-    },
-    {
-      "sha": "33d7b9f",
-      "ts": "2026-11-26T01:02:23+00:00",
       "message": "Worker sync: 9761 mapped Java methods"
     }
   ]

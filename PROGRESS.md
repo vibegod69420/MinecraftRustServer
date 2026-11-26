@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 02:26:02 UTC
+- **Updated**: 2026-11-26 02:32:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,8 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.NoiseChunk` -> `mc-worldgen` (2686.6s)
+- [FAIL] `net.minecraft.world.level.chunk.storage.RegionFile` -> `mc-worldgen` (2672.5s)
 - [FAIL] `net.minecraft.util.CubicSpline` -> `mc-math` (2289.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.MultifaceGrowthFeature` -> `mc-worldgen` (1864.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (1864.6s)
@@ -27,5 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (988.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (988.5s)
 - [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (946.9s)
-- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (900.5s)
-- [FAIL] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (580.9s)
