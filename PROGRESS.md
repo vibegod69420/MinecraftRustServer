@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 04:34:01 UTC
+- **Updated**: 2026-11-26 04:44:14 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,12 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (707.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (707.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (707.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (707.5s)
+- [FAIL] `net.minecraft.util.datafix.fixes.MobEffectIdFix` -> `mc-math` (610.3s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityIdFix` -> `mc-math` (602.0s)
 - [FAIL] `net.minecraft.util.CubicSpline` -> `mc-math` (4288.4s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature` -> `mc-worldgen` (2168.8s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DeltaFeature` -> `mc-worldgen` (2168.8s)
@@ -23,9 +29,3 @@
 - [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (1409.3s)
 - [FAIL] `net.minecraft.util.eventlog.EventLogDirectory` -> `mc-math` (1269.3s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (1113.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (1113.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (1089.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (1089.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (1089.1s)
-- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (1089.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (1046.5s)
