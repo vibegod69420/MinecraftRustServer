@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 08:52:01 UTC",
-  "updated_epoch": 1795683121,
+  "updated_at": "2026-11-26 08:58:02 UTC",
+  "updated_epoch": 1795683482,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1504
+    "harness_failed_attempts": 1506
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 4554,
-    "prompt_tokens": 17022776,
-    "completion_tokens": 79116908,
-    "reasoning_tokens": 56282924,
+    "calls_total": 4557,
+    "prompt_tokens": 17028203,
+    "completion_tokens": 79206576,
+    "reasoning_tokens": 56362556,
     "avg_latency_s": 264.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T08:57:27Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.HugeFungusFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1615.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T08:53:01Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1349.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T08:50:52Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1089.1,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:39:02Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1089.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T03:38:19Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1046.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "7d6905e",
+      "ts": "2026-11-26T08:52:02+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "e41e947",
       "ts": "2026-11-26T08:46:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "53b8bc2",
       "ts": "2026-11-26T07:28:01+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "6def83a",
-      "ts": "2026-11-26T07:22:02+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
