@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 00:09:51 UTC
+- **Updated**: 2026-11-26 00:14:02 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9761 / 66676 (14.639%)
 - **Mapped Java Classes**: 2207 / 7163 (30.811%)
@@ -14,6 +14,12 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.chunk.UpgradeData` -> `mc-worldgen` (483.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces` -> `mc-worldgen` (455.1s)
+- [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (403.8s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (373.6s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (373.6s)
+- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (373.6s)
 - [PASS] `net.minecraft.world.level.storage.loot.entries.EntryGroup` -> `mc-nbt` (252.0s)
 - [PASS] `net.minecraft.world.level.storage.loot.entries.SequentialEntry` -> `mc-nbt` (252.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (100.9s)
@@ -23,9 +29,3 @@
 - [FAIL] `net.minecraft.world.level.chunk.storage.IOWorker` -> `mc-worldgen` (4116.2s)
 - [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (2015.7s)
 - [FAIL] `net.minecraft.util.datafix.fixes.AttributeModifierIdFix` -> `mc-math` (3041.3s)
-- [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (3701.3s)
-- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (2090.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.EntityBlockStateFix` -> `mc-math` (1643.5s)
-- [FAIL] `net.minecraft.world.level.chunk.storage.SectionStorage` -> `mc-worldgen` (3195.3s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (1238.2s)
-- [FAIL] `net.minecraft.world.level.chunk.LevelChunk` -> `mc-worldgen` (2984.2s)
