@@ -1,6 +1,6 @@
 # Java-to-Rust Symbol Mapping (`MAPPING.md`)
 
-Total mapped Java symbols: **9791** across **2209** classes.
+Total mapped Java symbols: **9830** across **2211** classes.
 
 | Java Symbol (`Class#method`) | Rust File | Line | Rust Symbol |
 |---|---|---:|---|
@@ -523,6 +523,7 @@ Total mapped Java symbols: **9791** across **2209** classes.
 | `net.minecraft.CrashReport#getTitle` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 16 | `message` |
 | `net.minecraft.CrashReportCategory (minimal self` | `crates/mc-math/src/ported/threading_detector.rs` | 35 | `<item>` |
 | `net.minecraft.CrashReportCategory#formatLocation` | `crates/mc-nbt/src/ported/level_data.rs` | 119 | `format_location` |
+| `net.minecraft.CrashReportCategory#setDetail` | `crates/mc-nbt/src/ported/world_data.rs` | 23 | `set_detail` |
 | `net.minecraft.CrashReportCategory#setDetail(String, Object)` | `crates/mc-math/src/ported/threading_detector.rs` | 64 | `set_detail` |
 | `net.minecraft.ReportedException` | `crates/mc-nbt/src/ported/reported_nbt_exception.rs` | 23 | `<item>` |
 | `net.minecraft.ReportedException` | `crates/mc-protocol/src/ported/packet_processor.rs` | 48 | `<item>` |
@@ -8804,6 +8805,7 @@ Total mapped Java symbols: **9791** across **2209** classes.
 | `net.minecraft.world.level.LevelReader#isEmptyBlock` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 104 | `is_empty_block` |
 | `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 36 | `get_server` |
 | `net.minecraft.world.level.ServerLevel#getServer` | `crates/mc-worldgen/src/ported/structure_piece_serialization_context.rs` | 41 | `get_server` |
+| `net.minecraft.world.level.WorldDataConfiguration#enabledFeatures` | `crates/mc-nbt/src/ported/world_data.rs` | 42 | `enabled_features` |
 | `net.minecraft.world.level.WorldGenLevel#isOutsideBuildHeight(net.minecraft.core.BlockPos)` | `crates/mc-worldgen/src/ported/inside_world_bounds_predicate.rs` | 35 | `is_outside_build_height` |
 | `net.minecraft.world.level.WorldGenLevel#isUnobstructed(...)` | `crates/mc-worldgen/src/ported/unobstructed_predicate.rs` | 53 | `is_unobstructed` |
 | `net.minecraft.world.level.WorldGenLevel#setBlock` | `crates/mc-worldgen/src/ported/block_blob_feature.rs` | 108 | `set_block` |
@@ -11586,6 +11588,44 @@ Total mapped Java symbols: **9791** across **2209** classes.
 | `net.minecraft.world.level.storage.ValueInputContextHelper#read` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 187 | `read_map` |
 | `net.minecraft.world.level.storage.ValueInputContextHelper#stream` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 75 | `stream` |
 | `net.minecraft.world.level.storage.ValueInputContextHelper#stream` | `crates/mc-nbt/src/ported/value_input_context_helper.rs` | 104 | `stream` |
+| `net.minecraft.world.level.storage.WorldData` | `crates/mc-nbt/src/ported/world_data.rs` | 94 | `get_data_configuration` |
+| `net.minecraft.world.level.storage.WorldData#ANVIL_VERSION_ID` | `crates/mc-nbt/src/ported/world_data.rs` | 10 | `<item>` |
+| `net.minecraft.world.level.storage.WorldData#MCREGION_VERSION_ID` | `crates/mc-nbt/src/ported/world_data.rs` | 12 | `<item>` |
+| `net.minecraft.world.level.storage.WorldData#createTag` | `crates/mc-nbt/src/ported/world_data.rs` | 150 | `create_tag` |
+| `net.minecraft.world.level.storage.WorldData#enabledFeatures` | `crates/mc-nbt/src/ported/world_data.rs` | 214 | `enabled_features` |
+| `net.minecraft.world.level.storage.WorldData#endDragonFightData` | `crates/mc-nbt/src/ported/world_data.rs` | 196 | `end_dragon_fight_data` |
+| `net.minecraft.world.level.storage.WorldData#fillCrashReportCategory` | `crates/mc-nbt/src/ported/world_data.rs` | 114 | `fill_crash_report_category` |
+| `net.minecraft.world.level.storage.WorldData#getCustomBossEvents` | `crates/mc-nbt/src/ported/world_data.rs` | 135 | `get_custom_boss_events` |
+| `net.minecraft.world.level.storage.WorldData#getDataConfiguration` | `crates/mc-nbt/src/ported/world_data.rs` | 96 | `get_data_configuration` |
+| `net.minecraft.world.level.storage.WorldData#getDifficulty` | `crates/mc-nbt/src/ported/world_data.rs` | 175 | `get_difficulty` |
+| `net.minecraft.world.level.storage.WorldData#getGameRules` | `crates/mc-nbt/src/ported/world_data.rs` | 187 | `get_game_rules` |
+| `net.minecraft.world.level.storage.WorldData#getGameRules (mutable access helper)` | `crates/mc-nbt/src/ported/world_data.rs` | 190 | `get_game_rules_mut` |
+| `net.minecraft.world.level.storage.WorldData#getGameType` | `crates/mc-nbt/src/ported/world_data.rs` | 166 | `get_game_type` |
+| `net.minecraft.world.level.storage.WorldData#getKnownServerBrands` | `crates/mc-nbt/src/ported/world_data.rs` | 105 | `get_known_server_brands` |
+| `net.minecraft.world.level.storage.WorldData#getLevelName` | `crates/mc-nbt/src/ported/world_data.rs` | 163 | `get_level_name` |
+| `net.minecraft.world.level.storage.WorldData#getLevelSettings` | `crates/mc-nbt/src/ported/world_data.rs` | 147 | `get_level_settings` |
+| `net.minecraft.world.level.storage.WorldData#getLoadedPlayerTag` | `crates/mc-nbt/src/ported/world_data.rs` | 193 | `get_loaded_player_tag` |
+| `net.minecraft.world.level.storage.WorldData#getRemovedFeatureFlags` | `crates/mc-nbt/src/ported/world_data.rs` | 108 | `get_removed_feature_flags` |
+| `net.minecraft.world.level.storage.WorldData#getStorageVersionName` | `crates/mc-nbt/src/ported/world_data.rs` | 130 | `get_storage_version_name` |
+| `net.minecraft.world.level.storage.WorldData#getStorageVersionName` | `crates/mc-nbt/src/ported/world_data.rs` | 220 | `get_storage_version_name` |
+| `net.minecraft.world.level.storage.WorldData#getVersion` | `crates/mc-nbt/src/ported/world_data.rs` | 160 | `get_version` |
+| `net.minecraft.world.level.storage.WorldData#isAllowCommands` | `crates/mc-nbt/src/ported/world_data.rs` | 172 | `is_allow_commands` |
+| `net.minecraft.world.level.storage.WorldData#isDebugWorld` | `crates/mc-nbt/src/ported/world_data.rs` | 208 | `is_debug_world` |
+| `net.minecraft.world.level.storage.WorldData#isDifficultyLocked` | `crates/mc-nbt/src/ported/world_data.rs` | 181 | `is_difficulty_locked` |
+| `net.minecraft.world.level.storage.WorldData#isFlatWorld` | `crates/mc-nbt/src/ported/world_data.rs` | 205 | `is_flat_world` |
+| `net.minecraft.world.level.storage.WorldData#isHardcore` | `crates/mc-nbt/src/ported/world_data.rs` | 157 | `is_hardcore` |
+| `net.minecraft.world.level.storage.WorldData#overworldData` | `crates/mc-nbt/src/ported/world_data.rs` | 141 | `overworld_data` |
+| `net.minecraft.world.level.storage.WorldData#overworldData (mutable access helper)` | `crates/mc-nbt/src/ported/world_data.rs` | 144 | `overworld_data_mut` |
+| `net.minecraft.world.level.storage.WorldData#setCustomBossEvents` | `crates/mc-nbt/src/ported/world_data.rs` | 138 | `set_custom_boss_events` |
+| `net.minecraft.world.level.storage.WorldData#setDataConfiguration` | `crates/mc-nbt/src/ported/world_data.rs` | 99 | `set_data_configuration` |
+| `net.minecraft.world.level.storage.WorldData#setDifficulty` | `crates/mc-nbt/src/ported/world_data.rs` | 178 | `set_difficulty` |
+| `net.minecraft.world.level.storage.WorldData#setDifficultyLocked` | `crates/mc-nbt/src/ported/world_data.rs` | 184 | `set_difficulty_locked` |
+| `net.minecraft.world.level.storage.WorldData#setEndDragonFightData` | `crates/mc-nbt/src/ported/world_data.rs` | 199 | `set_end_dragon_fight_data` |
+| `net.minecraft.world.level.storage.WorldData#setGameType` | `crates/mc-nbt/src/ported/world_data.rs` | 169 | `set_game_type` |
+| `net.minecraft.world.level.storage.WorldData#setModdedInfo` | `crates/mc-nbt/src/ported/world_data.rs` | 111 | `set_modded_info` |
+| `net.minecraft.world.level.storage.WorldData#wasModded` | `crates/mc-nbt/src/ported/world_data.rs` | 102 | `was_modded` |
+| `net.minecraft.world.level.storage.WorldData#worldGenOptions` | `crates/mc-nbt/src/ported/world_data.rs` | 202 | `world_gen_options` |
+| `net.minecraft.world.level.storage.WorldData#worldGenSettingsLifecycle` | `crates/mc-nbt/src/ported/world_data.rs` | 211 | `world_gen_settings_lifecycle` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 10 | `set_spawn` |
 | `net.minecraft.world.level.storage.WritableLevelData#setSpawn` | `crates/mc-nbt/src/ported/writable_level_data.rs` | 27 | `set_spawn` |
 | `net.minecraft.world.level.storage.loot.BuiltInLootTables (minimal)` | `crates/mc-worldgen/src/ported/jungle_temple_piece.rs` | 346 | `<item>` |

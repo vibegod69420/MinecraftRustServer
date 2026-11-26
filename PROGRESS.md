@@ -1,31 +1,31 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 17:18:18 UTC
+- **Updated**: 2026-11-26 17:24:15 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
-- **Mapped Java Methods**: 9791 / 66676 (14.684%)
-- **Mapped Java Classes**: 2209 / 7163 (30.839%)
+- **Mapped Java Methods**: 9830 / 66676 (14.743%)
+- **Mapped Java Classes**: 2211 / 7163 (30.867%)
 - **Oracle Step 0**: Deterministic self-test PASSING (world Merkle + RNG trace bit-identical)
 
 ## Crates
 - `mc-data`: 6 mapped methods
 - `mc-math`: 4163 mapped methods
-- `mc-nbt`: 1993 mapped methods
+- `mc-nbt`: 2033 mapped methods
 - `mc-protocol`: 3640 mapped methods
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
-- [FAIL] `net.minecraft.util.CubicSpline` -> `mc-math` (805.6s)
-- [FAIL] `net.minecraft.core.dispenser.DispenseItemBehavior` -> `mc-math` (529.7s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (461.3s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (461.3s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (461.3s)
-- [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (347.2s)
-- [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (125.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.structure.StructureCheckResult` -> `mc-worldgen` (52.9s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (4933.1s)
-- [FAIL] `net.minecraft.util.profiling.jfr.serialize.JfrResultJsonSerializer` -> `mc-math` (5399.6s)
-- [FAIL] `net.minecraft.world.level.chunk.ChunkGeneratorStructureState` -> `mc-worldgen` (6252.2s)
-- [FAIL] `net.minecraft.util.parsing.packrat.CachedParseState` -> `mc-math` (4653.3s)
-- [FAIL] `net.minecraft.util.datafix.schemas.V1460` -> `mc-math` (3062.0s)
-- [FAIL] `net.minecraft.world.level.chunk.status.ChunkStatusTasks` -> `mc-worldgen` (4964.2s)
-- [FAIL] `net.minecraft.util.datafix.fixes.ItemStackComponentizationFix` -> `mc-math` (2763.3s)
+- [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (1205.9s)
+- [PASS] `net.minecraft.world.level.storage.WorldData` -> `mc-nbt` (1205.9s)
+- [FAIL] `net.minecraft.util.parsing.packrat.Dictionary` -> `mc-math` (1026.1s)
+- [FAIL] `net.minecraft.util.datafix.PackedBitStorage` -> `mc-math` (1096.9s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityHealthFix` -> `mc-math` (1106.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.AddFieldFix` -> `mc-math` (1106.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix` -> `mc-math` (1106.6s)
+- [FAIL] `net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix` -> `mc-math` (1106.6s)
+- [FAIL] `net.minecraft.world.level.chunk.storage.RegionFile` -> `mc-worldgen` (1028.2s)
+- [FAIL] `net.minecraft.core.RegistrySynchronization` -> `mc-math` (1000.3s)
+- [FAIL] `net.minecraft.util.datafix.fixes.DropChancesFormatFix` -> `mc-math` (988.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.LevelUUIDFix` -> `mc-math` (988.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.FoodToConsumableFix` -> `mc-math` (988.7s)
+- [FAIL] `net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix` -> `mc-math` (988.7s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (871.3s)
