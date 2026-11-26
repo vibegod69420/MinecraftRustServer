@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 18:28:01 UTC",
-  "updated_epoch": 1795717681,
+  "updated_at": "2026-11-26 18:34:02 UTC",
+  "updated_epoch": 1795718042,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1725
+    "harness_failed_attempts": 1726
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5065,
+    "calls_total": 5066,
     "prompt_tokens": 19131402,
     "completion_tokens": 89003795,
     "reasoning_tokens": 63365976,
-    "avg_latency_s": 280.7
+    "avg_latency_s": 282.0
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T18:28:45Z",
+      "class_name": "net.minecraft.util.debug.LevelDebugSynchronizers",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1800.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T18:23:41Z",
       "class_name": "net.minecraft.util.datafix.fixes.DropChancesFormatFix",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 826.8,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:24:13Z",
-      "class_name": "net.minecraft.world.level.storage.ValueOutput",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 1205.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "fa4f80d",
+      "ts": "2026-11-26T18:28:01+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "9a74813",
       "ts": "2026-11-26T18:22:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "8a49512",
       "ts": "2026-11-26T17:10:19+00:00",
-      "message": "Worker sync: 9791 mapped Java methods"
-    },
-    {
-      "sha": "91a27ab",
-      "ts": "2026-11-26T17:04:06+00:00",
       "message": "Worker sync: 9791 mapped Java methods"
     }
   ]
