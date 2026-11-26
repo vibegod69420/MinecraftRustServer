@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 01:20:01 UTC",
-  "updated_epoch": 1795656001,
+  "updated_at": "2026-11-26 01:26:01 UTC",
+  "updated_epoch": 1795656361,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8111,
     "method_coverage_pct": 14.6395,
     "harness_verified_classes": 1391,
-    "harness_failed_attempts": 1422
+    "harness_failed_attempts": 1423
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 4402,
+    "calls_total": 4403,
     "prompt_tokens": 16446909,
     "completion_tokens": 76197319,
     "reasoning_tokens": 54200416,
-    "avg_latency_s": 263.5
+    "avg_latency_s": 264.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T01:23:17Z",
+      "class_name": "net.minecraft.util.profiling.jfr.JfrProfiler",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 2987.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T01:17:34Z",
       "class_name": "net.minecraft.util.parsing.packrat.CachedParseState",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 672.9,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:16:50Z",
-      "class_name": "net.minecraft.world.level.storage.ServerLevelData",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 672.9,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "a9f1f83",
+      "ts": "2026-11-26T01:20:01+00:00",
+      "message": "Worker sync: 9761 mapped Java methods"
+    },
     {
       "sha": "e8e4da3",
       "ts": "2026-11-26T01:14:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "c943dc6",
       "ts": "2026-11-26T00:02:01+00:00",
-      "message": "Worker sync: 9745 mapped Java methods"
-    },
-    {
-      "sha": "660834f",
-      "ts": "2026-11-25T23:56:02+00:00",
       "message": "Worker sync: 9745 mapped Java methods"
     }
   ]
