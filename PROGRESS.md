@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 10:12:01 UTC
+- **Updated**: 2026-11-26 10:42:01 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,7 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.util.debug.TrackingDebugSynchronizer` -> `mc-math` (4150.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.Heightmap` -> `mc-worldgen` (2365.9s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer` -> `mc-worldgen` (2221.0s)
 - [FAIL] `net.minecraft.world.level.levelgen.DensityFunction` -> `mc-worldgen` (1463.5s)
@@ -28,4 +29,3 @@
 - [FAIL] `net.minecraft.world.level.levelgen.feature.HugeFungusFeature` -> `mc-worldgen` (2034.2s)
 - [FAIL] `net.minecraft.util.debug.TrackingDebugSynchronizer` -> `mc-math` (2007.1s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.DesertWellFeature` -> `mc-worldgen` (1352.3s)
-- [FAIL] `net.minecraft.world.level.levelgen.feature.trunkplacers.DarkOakTrunkPlacer` -> `mc-worldgen` (1337.5s)
