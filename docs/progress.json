@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 18:10:03 UTC",
-  "updated_epoch": 1795716603,
+  "updated_at": "2026-11-26 18:16:04 UTC",
+  "updated_epoch": 1795716964,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1705
+    "harness_failed_attempts": 1714
   },
   "crates": [
     {
@@ -47,13 +47,85 @@
     }
   ],
   "usage": {
-    "calls_total": 5050,
-    "prompt_tokens": 19083832,
-    "completion_tokens": 88663911,
-    "reasoning_tokens": 63094679,
-    "avg_latency_s": 278.1
+    "calls_total": 5057,
+    "prompt_tokens": 19111999,
+    "completion_tokens": 88863604,
+    "reasoning_tokens": 63262856,
+    "avg_latency_s": 277.5
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T18:16:02Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1038.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:16:02Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1038.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:15:31Z",
+      "class_name": "net.minecraft.util.datafix.PackedBitStorage",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1007.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:15:11Z",
+      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 987.1,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:14:47Z",
+      "class_name": "net.minecraft.util.datafix.fixes.AddFieldFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 962.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:14:47Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingMotiveFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 962.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:14:47Z",
+      "class_name": "net.minecraft.util.datafix.fixes.StructureSettingsFlattenFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 962.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:14:47Z",
+      "class_name": "net.minecraft.util.datafix.fixes.EntityHealthFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 962.8,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T18:12:18Z",
+      "class_name": "net.minecraft.util.parsing.packrat.Dictionary",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 814.5,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T18:08:26Z",
       "class_name": "net.minecraft.util.eventlog.EventLogDirectory",
@@ -301,81 +373,14 @@
       "verified": false,
       "seconds": 988.7,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:20:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.FoodToConsumableFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 988.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:20:36Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 988.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:18:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 871.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:18:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 871.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:18:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 871.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:18:39Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 871.3,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:17:33Z",
-      "class_name": "net.minecraft.util.CubicSpline",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 805.6,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:12:57Z",
-      "class_name": "net.minecraft.core.dispenser.DispenseItemBehavior",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 529.7,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T17:11:49Z",
-      "class_name": "net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction",
-      "crate": "mc-nbt",
-      "verified": false,
-      "seconds": 461.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f82d2be",
+      "ts": "2026-11-26T18:10:03+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "b760cf3",
       "ts": "2026-11-26T18:04:03+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "af90e4f",
       "ts": "2026-11-26T16:52:02+00:00",
-      "message": "Worker sync: 9791 mapped Java methods"
-    },
-    {
-      "sha": "572a4ac",
-      "ts": "2026-11-26T16:46:01+00:00",
       "message": "Worker sync: 9791 mapped Java methods"
     }
   ]
