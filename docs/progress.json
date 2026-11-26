@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 13:10:01 UTC",
-  "updated_epoch": 1795698601,
+  "updated_at": "2026-11-26 13:16:02 UTC",
+  "updated_epoch": 1795698962,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1568
+    "harness_failed_attempts": 1569
   },
   "crates": [
     {
@@ -54,6 +54,14 @@
     "avg_latency_s": 276.2
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T13:11:21Z",
+      "class_name": "net.minecraft.world.level.levelgen.NoiseRouterData",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2845.3,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T13:06:36Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.structures.MineshaftPieces",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1356.2,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T11:01:48Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.rootplacers.MangroveRootPlacer",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1267.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "f9cf0f7",
+      "ts": "2026-11-26T13:10:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "19fce09",
       "ts": "2026-11-26T13:04:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "c943d2f",
       "ts": "2026-11-26T11:46:01+00:00",
-      "message": "Worker sync: 9767 mapped Java methods"
-    },
-    {
-      "sha": "e9d0904",
-      "ts": "2026-11-26T11:40:01+00:00",
       "message": "Worker sync: 9767 mapped Java methods"
     }
   ]
