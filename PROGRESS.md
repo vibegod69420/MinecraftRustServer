@@ -1,6 +1,6 @@
 # Progress Log (`PROGRESS.md`)
 
-- **Updated**: 2026-11-26 02:06:02 UTC
+- **Updated**: 2026-11-26 02:14:15 UTC
 - **Phase**: Phase A (Faithful 1:1 Port)
 - **Mapped Java Methods**: 9767 / 66676 (14.648%)
 - **Mapped Java Classes**: 2208 / 7163 (30.825%)
@@ -14,6 +14,11 @@
 - `mc-worldgen`: 2648 mapped methods
 
 ## Recent Verified Work
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature` -> `mc-worldgen` (1624.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.CoralTreeFeature` -> `mc-worldgen` (1624.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SeaPickleFeature` -> `mc-worldgen` (1624.3s)
+- [FAIL] `net.minecraft.world.level.levelgen.feature.SimpleBlockFeature` -> `mc-worldgen` (1624.3s)
+- [FAIL] `net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix` -> `mc-math` (1424.7s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.SculkPatchFeature` -> `mc-worldgen` (1081.6s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator` -> `mc-worldgen` (988.5s)
 - [FAIL] `net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator` -> `mc-worldgen` (988.5s)
@@ -24,8 +29,3 @@
 - [FAIL] `net.minecraft.world.level.storage.ValueOutput` -> `mc-nbt` (580.9s)
 - [FAIL] `net.minecraft.core.particles.DustColorTransitionOptions` -> `mc-math` (477.1s)
 - [FAIL] `net.minecraft.util.Crypt` -> `mc-math` (358.1s)
-- [PASS] `net.minecraft.world.level.storage.loot.predicates.ConditionReference` -> `mc-nbt` (317.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetBookCoverFunction` -> `mc-nbt` (273.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetFireworksFunction` -> `mc-nbt` (273.1s)
-- [FAIL] `net.minecraft.world.level.storage.loot.functions.SetOminousBottleAmplifierFunction` -> `mc-nbt` (273.1s)
-- [FAIL] `net.minecraft.world.level.levelgen.GenerationStep` -> `mc-worldgen` (86.3s)

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 02:08:01 UTC",
-  "updated_epoch": 1795658881,
+  "updated_at": "2026-11-26 02:14:15 UTC",
+  "updated_epoch": 1795659255,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.8251,
     "method_coverage_pct": 14.6484,
     "harness_verified_classes": 1392,
-    "harness_failed_attempts": 1440
+    "harness_failed_attempts": 1445
   },
   "crates": [
     {
@@ -47,13 +47,53 @@
     }
   ],
   "usage": {
-    "calls_total": 4444,
-    "prompt_tokens": 16616385,
-    "completion_tokens": 76864186,
-    "reasoning_tokens": 54612926,
-    "avg_latency_s": 261.7
+    "calls_total": 4446,
+    "prompt_tokens": 16631361,
+    "completion_tokens": 76905077,
+    "reasoning_tokens": 54628743,
+    "avg_latency_s": 262.1
   },
   "recent_work": [
+    {
+      "ts": "2026-11-26T02:14:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SnowAndFreezeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1624.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:14:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.CoralTreeFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1624.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:14:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SeaPickleFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1624.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:14:14Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.SimpleBlockFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 1624.3,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-26T02:10:55Z",
+      "class_name": "net.minecraft.util.datafix.fixes.ChunkHeightAndBiomeFix",
+      "crate": "mc-math",
+      "verified": false,
+      "seconds": 1424.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T02:05:12Z",
       "class_name": "net.minecraft.world.level.levelgen.feature.SculkPatchFeature",
@@ -333,49 +373,14 @@
       "verified": false,
       "seconds": 2515.4,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:46:57Z",
-      "class_name": "net.minecraft.util.datafix.fixes.ChunkProtoTickListFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 827.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:46:56Z",
-      "class_name": "net.minecraft.util.datafix.fixes.GameRuleRegistryFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 904.8,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:46:19Z",
-      "class_name": "net.minecraft.util.datafix.fixes.StatsCounterFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 542.1,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:42:47Z",
-      "class_name": "net.minecraft.util.profiling.metrics.profiling.ActiveMetricsRecorder",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1774.4,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T00:42:03Z",
-      "class_name": "net.minecraft.util.datafix.fixes.NewVillageFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1812.3,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "d2ac9d1",
+      "ts": "2026-11-26T02:08:01+00:00",
+      "message": "Worker sync: 9767 mapped Java methods"
+    },
     {
       "sha": "d5d5643",
       "ts": "2026-11-26T02:02:01+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "a989c93",
       "ts": "2026-11-26T00:50:02+00:00",
-      "message": "Worker sync: 9761 mapped Java methods"
-    },
-    {
-      "sha": "90bc0e9",
-      "ts": "2026-11-26T00:44:03+00:00",
       "message": "Worker sync: 9761 mapped Java methods"
     }
   ]
