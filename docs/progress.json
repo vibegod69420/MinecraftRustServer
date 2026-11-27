@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 01:52:02 UTC",
-  "updated_epoch": 1795744322,
+  "updated_at": "2026-11-27 01:58:02 UTC",
+  "updated_epoch": 1795744682,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1780
+    "harness_failed_attempts": 1782
   },
   "crates": [
     {
@@ -47,13 +47,29 @@
     }
   ],
   "usage": {
-    "calls_total": 5208,
-    "prompt_tokens": 19551674,
-    "completion_tokens": 92115324,
-    "reasoning_tokens": 65677605,
-    "avg_latency_s": 276.9
+    "calls_total": 5210,
+    "prompt_tokens": 19555673,
+    "completion_tokens": 92143564,
+    "reasoning_tokens": 65698730,
+    "avg_latency_s": 277.7
   },
   "recent_work": [
+    {
+      "ts": "2026-11-27T01:55:55Z",
+      "class_name": "net.minecraft.world.level.levelgen.DensityFunctions",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2951.0,
+      "note": ""
+    },
+    {
+      "ts": "2026-11-27T01:54:59Z",
+      "class_name": "net.minecraft.world.level.levelgen.structure.structures.SwampHutPiece",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 2895.0,
+      "note": ""
+    },
     {
       "ts": "2026-11-27T01:47:39Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.StructureCheck",
@@ -357,25 +373,14 @@
       "verified": false,
       "seconds": 1767.6,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T22:35:10Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.DesertWellFeature",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1361.9,
-      "note": ""
-    },
-    {
-      "ts": "2026-11-26T22:35:04Z",
-      "class_name": "net.minecraft.world.level.levelgen.structure.structures.DesertPyramidStructure",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1356.2,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "bceed0d",
+      "ts": "2026-11-27T01:52:02+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "9c56e05",
       "ts": "2026-11-27T01:46:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "169e3b8",
       "ts": "2026-11-27T00:28:02+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "259c297",
-      "ts": "2026-11-27T00:22:02+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
