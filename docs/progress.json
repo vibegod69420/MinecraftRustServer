@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27 01:04:01 UTC",
-  "updated_epoch": 1795741441,
+  "updated_at": "2026-11-27 01:10:01 UTC",
+  "updated_epoch": 1795741801,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1761
+    "harness_failed_attempts": 1762
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5155,
-    "prompt_tokens": 19394763,
-    "completion_tokens": 90804551,
-    "reasoning_tokens": 64710016,
-    "avg_latency_s": 274.6
+    "calls_total": 5166,
+    "prompt_tokens": 19414658,
+    "completion_tokens": 90897567,
+    "reasoning_tokens": 64758534,
+    "avg_latency_s": 267.9
   },
   "recent_work": [
+    {
+      "ts": "2026-11-27T01:06:41Z",
+      "class_name": "net.minecraft.world.level.levelgen.Heightmap",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 4719.6,
+      "note": ""
+    },
     {
       "ts": "2026-11-27T00:28:00Z",
       "class_name": "net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1497.5,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T18:23:41Z",
-      "class_name": "net.minecraft.util.datafix.fixes.EntityPaintingItemFrameDirectionFix",
-      "crate": "mc-math",
-      "verified": false,
-      "seconds": 1497.5,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "0ee26b0",
+      "ts": "2026-11-27T01:04:01+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "849d44e",
       "ts": "2026-11-27T00:58:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "91cb7dd",
       "ts": "2026-11-26T23:40:01+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "fe7208e",
-      "ts": "2026-11-26T23:34:01+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
