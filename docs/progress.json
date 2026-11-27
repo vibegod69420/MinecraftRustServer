@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26 23:58:03 UTC",
-  "updated_epoch": 1795737483,
+  "updated_at": "2026-11-27 00:04:01 UTC",
+  "updated_epoch": 1795737841,
   "target": "Minecraft Java Edition 1.21.11 Server",
   "phase": "Phase A (Faithful 1:1 Port)",
   "model": {
@@ -22,7 +22,7 @@
     "class_coverage_pct": 30.867,
     "method_coverage_pct": 14.7429,
     "harness_verified_classes": 1394,
-    "harness_failed_attempts": 1753
+    "harness_failed_attempts": 1754
   },
   "crates": [
     {
@@ -47,13 +47,21 @@
     }
   ],
   "usage": {
-    "calls_total": 5140,
-    "prompt_tokens": 19345146,
-    "completion_tokens": 90440709,
-    "reasoning_tokens": 64504502,
+    "calls_total": 5145,
+    "prompt_tokens": 19363804,
+    "completion_tokens": 90557382,
+    "reasoning_tokens": 64580535,
     "avg_latency_s": 276.4
   },
   "recent_work": [
+    {
+      "ts": "2026-11-27T00:02:11Z",
+      "class_name": "net.minecraft.world.level.levelgen.feature.IcebergFeature",
+      "crate": "mc-worldgen",
+      "verified": false,
+      "seconds": 849.7,
+      "note": ""
+    },
     {
       "ts": "2026-11-26T23:55:57Z",
       "class_name": "net.minecraft.world.level.chunk.storage.RegionFileStorage",
@@ -365,17 +373,14 @@
       "verified": false,
       "seconds": 1092.0,
       "note": ""
-    },
-    {
-      "ts": "2026-11-26T18:16:02Z",
-      "class_name": "net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator",
-      "crate": "mc-worldgen",
-      "verified": false,
-      "seconds": 1038.1,
-      "note": ""
     }
   ],
   "recent_commits": [
+    {
+      "sha": "5ef0c02",
+      "ts": "2026-11-26T23:58:03+00:00",
+      "message": "Worker sync: 9830 mapped Java methods"
+    },
     {
       "sha": "9b9c38c",
       "ts": "2026-11-26T23:52:02+00:00",
@@ -444,11 +449,6 @@
     {
       "sha": "df2a2ed",
       "ts": "2026-11-26T22:34:02+00:00",
-      "message": "Worker sync: 9830 mapped Java methods"
-    },
-    {
-      "sha": "0641dea",
-      "ts": "2026-11-26T22:28:06+00:00",
       "message": "Worker sync: 9830 mapped Java methods"
     }
   ]
